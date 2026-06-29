@@ -1,0 +1,3976 @@
+{
+	"Activate Account": "Activeer account",
+	"Administration": "Toediening",
+	"Announcement": "Aankondiging",
+	"Announcements": "Mededelingen",
+	"Appointments": "Afspraken",
+	"Articles": "Artikelen",
+	"Assigned Project": "Toegewezen project",
+	"Backup Database": "Back-up database",
+	"Calendar": "Kalender",
+	"Change Email": "Wijzig e-mail",
+	"Clients": "Cliënten",
+	"Company Detail": "Bedrijfsdetail",
+	"Complete Projects": "Voltooi projecten",
+	"Cronjob": "Cron Baan",
+	"Custom Fields": "Aangepaste velden",
+	"Dashboard": "Dashboard",
+	"Dashboard Settings": "Dashboard-Instellingen",
+	"Defect Assigned": "Defect toegewezen",
+	"Defect Attachment": "Defecte bijlage",
+	"Defect Comments": "Defecte opmerkingen",
+	"Defect Updated": "Defect bijgewerkt",
+	"Defects": "Gebreken",
+	"Departments": "Afdelingen",
+	"Email Notifications": "E-mail notificaties",
+	"Email Settings": "Email Instellingen",
+	"Email Templates": "E-mailsjablonen",
+	"Estimates": "schattingen",
+	"File Manager": "Bestandsbeheer",
+	"Forgot Password": "Wachtwoord vergeten",
+	"HRM": "Menselijke hulpbronnen",
+	"Holidays": "vakantie",
+	"Incident Assigned": "Toegekend incident",
+	"Incident Attachment": "Incident Attachment",
+	"Incident Comments": "Incident opmerkingen",
+	"Incident Updated": "Incident bijgewerkt",
+	"Incidents": "Incidenten",
+	"Invoices": "Facturen",
+	"Items": "items",
+	"Knowledge Base": "Kennis Basis",
+	"Leaves": "Bladeren",
+	"Mailbox": "Postbus",
+	"Meeting": "Vergadering",
+	"Meetings": "Vergaderingen",
+	"Menu Allocation": "Menu Toewijzing",
+	"Notification Client": "Kennisgeving Client",
+	"PM": "P.M",
+	"Payments": "betalingen",
+	"Project Attachment": "Project bijlage",
+	"Project Comments": "Project opmerkingen",
+	"Project Management": "Project management",
+	"Project Planner": "Projectplanner",
+	"Projects": "Projecten",
+	"Register Email": "Registreer E-mail",
+	"Reports": "Verslagen",
+	"Reset Password": "Reset wachtwoord",
+	"Roles": "Rollen",
+	"Sales": "verkoop",
+	"Settings": "Instellingen",
+	"System Settings": "Systeem Instellingen",
+	"System Update": "Systeem update",
+	"Task Assigned": "Taak toegewezen",
+	"Task Board": "Taakbord",
+	"Task Comments": "Taakcommentaar",
+	"Task Updated": "Taak bijgewerkt",
+	"Tasks": "Taken",
+	"Tasks Attachment": "Taken bijlage",
+	"Taxes": "Belastingen",
+	"Team Boards": "Teambesturen",
+	"Teams": "Teams",
+	"Theme Settings": "Thema Instellingen",
+	"Timesheet": "Rooster",
+	"Todos": "Todos",
+	"Users": "Gebruikers",
+	"Welcome Email": "Welkom e-mail",
+	"activities": {
+		"columns": {
+			"activity": "Activiteit",
+			"date": "Datum",
+			"description": "Omschrijving",
+			"module": "module",
+			"photo": "Foto",
+			"username": "Gebruikersnaam"
+		},
+		"title": "Activiteiten"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "acties",
+			"creator": "Schepper",
+			"end_date": "Einddatum",
+			"start_date": "Begin datum",
+			"status": "staat",
+			"title": "titel"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige titel voor de aankondiging in.",
+				"message2": "De titel van een aankondiging mag maximaal 100 tekens lang zijn.",
+				"message3": "Selecteer een geldige startdatum.",
+				"message4": "Selecteer een geldige einddatum."
+			},
+			"fields": {
+				"all_clients": "Alle klanten",
+				"description": "Omschrijving",
+				"end_date": "Einddatum",
+				"publish": "Publiceren",
+				"start_date": "Begin datum",
+				"status": "staat",
+				"title": "titel",
+				"unpublish": "Publicatie ongedaan maken"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de titel van de aankondiging in",
+				"placeholder2": "Selecteer Startdatum",
+				"placeholder3": "Selecteer Einddatum"
+			},
+			"title1": "Aankondiging maken",
+			"title2": "Aankondiging bewerken"
+		},
+		"messages": {
+			"create": "Aankondiging met succes gemaakt.",
+			"delete": "Aankondiging succesvol verwijderd.",
+			"update": "Aankondiging succesvol bijgewerkt."
+		},
+		"title": "Mededelingen"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "Geboekte slots"
+		},
+		"columns": {
+			"actions": "acties",
+			"end_time": "Eindtijd",
+			"id": "ID kaart",
+			"location": "Plaats",
+			"provider": "Leverancier",
+			"requester": "Aanvrager",
+			"start_time": "Starttijd",
+			"status": "staat",
+			"title": "titel"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Selecteer een geldige provider.",
+				"message2": "Selecteer een geldige startdatum.",
+				"message3": "Selecteer een geldige einddatum.",
+				"message4": "Voer een geldige titel voor de afspraak in.",
+				"message5": "Afspraaktitel mag max. 255 tekens lang zijn.",
+				"message6": "Selecteer een geldige klant.",
+				"message7": "Voer een geldige deelnemer in.",
+				"message8": "Selecteer een geldige status.",
+				"message9": "Selecteer een geldige provider."
+			},
+			"fields": {
+				"attendees": "Deelnemers",
+				"client": "Cliënt",
+				"end_date": "Einddatum",
+				"location": "Plaats",
+				"notes": "aantekeningen",
+				"provider": "Leverancier",
+				"start_date": "Begin datum",
+				"status": "staat",
+				"title": "titel"
+			},
+			"placeholders": {
+				"placeholder1": "Selecteer Startdatum",
+				"placeholder2": "Selecteer Einddatum",
+				"placeholder3": "Voer de titel van de afspraak in",
+				"placeholder4": "- Selecteer Client -",
+				"placeholder5": "Plaats",
+				"placeholder6": "Deelnemers",
+				"placeholder7": "- Selecteer Status -",
+				"placeholder8": "Zoek naar maand"
+			}
+		},
+		"messages": {
+			"create": "Afspraak met succes gemaakt.",
+			"delete": "Afspraak succesvol verwijderd.",
+			"edit": "Afspraak succesvol bewerkt.",
+			"status": "Status gewijzigd."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Gereserveerd"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "BEVESTIGD"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "Afgewerkt"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "geannuleerd"
+			}
+		],
+		"title": "Afspraken"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "acties",
+			"attachment": "gehechtheid",
+			"file_title": "Bestandsnaam"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige bestandstitel in.",
+				"message2": "Zet bestanden hier neer of klik om te uploaden.",
+				"message3": "Selecteer een geldig bestand.",
+				"message4": "Voer een geldige opmerking in.",
+				"message5": "De bestandstitel mag maximaal 255 tekens lang zijn."
+			},
+			"fields": {
+				"attachment": "gehechtheid",
+				"description": "Omschrijving",
+				"file_title": "Bestandsnaam"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de bestandstitel in"
+			}
+		},
+		"messages": {
+			"create": "Bijlage succesvol aangemaakt.",
+			"delete": "Bijlage succesvol verwijderd."
+		},
+		"title": "Bijlagen"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "Mededelingen",
+			"title": "Mededelingen"
+		},
+		"appointments": {
+			"text": "afspraken",
+			"title": "afspraken"
+		},
+		"article": {
+			"text": "Artikel",
+			"title": "Artikel"
+		},
+		"calendar": {
+			"text": "Kalender",
+			"title": "Kalender"
+		},
+		"category": {
+			"text": "Categorie",
+			"title": "Categorie"
+		},
+		"clients": {
+			"text": "cliënten",
+			"title": "cliënten"
+		},
+		"dashboard": {
+			"title": "Dashboard"
+		},
+		"defects": {
+			"text": "Gebreken",
+			"title": "Gebreken"
+		},
+		"departments": {
+			"text": "afdelingen",
+			"title": "afdelingen"
+		},
+		"email_templates": {
+			"text": "E-mailsjablonen",
+			"title": "E-mailsjablonen"
+		},
+		"estimates": {
+			"text": "schattingen",
+			"title": "schattingen"
+		},
+		"file_browser": {
+			"text": "bestandsbeheer",
+			"title": "bestandsbeheer"
+		},
+		"holidays": {
+			"text": "vakantie",
+			"title": "vakantie"
+		},
+		"incidents": {
+			"text": "Incidenten",
+			"title": "Incidenten"
+		},
+		"invoices": {
+			"text": "Facturen",
+			"title": "Facturen"
+		},
+		"items": {
+			"text": "items",
+			"title": "items"
+		},
+		"knowledgebase": {
+			"text": "Kennis basis",
+			"title": "Kennis basis"
+		},
+		"leave_types": {
+			"text": "Verlof typen",
+			"title": "Verlof typen"
+		},
+		"leaves": {
+			"text": "Bladeren",
+			"title": "Bladeren"
+		},
+		"mailbox": {
+			"text": "Postbus",
+			"title": "Postbus"
+		},
+		"meetings": {
+			"text": "VERGADERINGEN",
+			"title": "VERGADERINGEN"
+		},
+		"payments": {
+			"text": "betalingen",
+			"title": "betalingen"
+		},
+		"projects": {
+			"text": "projecten",
+			"title": "projecten"
+		},
+		"projects_planner": {
+			"text": "Projectplanner",
+			"title": "Projectplanner"
+		},
+		"providers": {
+			"text": "Aanbieders",
+			"title": "Aanbieders"
+		},
+		"reports": {
+			"text": "VERSLAGEN",
+			"title": "VERSLAGEN"
+		},
+		"roles": {
+			"text": "rollen",
+			"title": "rollen"
+		},
+		"settings": {
+			"text": "instellingen",
+			"title": "instellingen"
+		},
+		"taskboard": {
+			"text": "Taakbord",
+			"title": "Taakbord"
+		},
+		"tasks": {
+			"text": "taken",
+			"title": "taken"
+		},
+		"taxes": {
+			"text": "Belastingen",
+			"title": "Belastingen"
+		},
+		"teamboard": {
+			"text": "Teambestuur",
+			"title": "Teambestuur"
+		},
+		"teams": {
+			"text": "Teams",
+			"title": "Teams"
+		},
+		"timesheet": {
+			"text": "Rooster",
+			"title": "Rooster"
+		},
+		"todos": {
+			"text": "Todos",
+			"title": "Te doen"
+		},
+		"users": {
+			"text": "gebruikers",
+			"title": "gebruikers"
+		}
+	},
+	"calendar": {
+		"day": "dag",
+		"month": "maand",
+		"title": "Kalender",
+		"today": "Vandaag",
+		"week": "Week"
+	},
+	"clients": {
+		"columns": {
+			"actions": "acties",
+			"company_email": "Bedrijf email",
+			"company_name": "Bedrijfsnaam",
+			"departments_roles": "Afdelingen / Rollen",
+			"first_name": "Voornaam",
+			"last_name": "Achternaam",
+			"photo": "Foto",
+			"status": "staat",
+			"username": "Gebruikersnaam"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige voornaam in.",
+				"message10": "Wachtwoord en bevestig wachtwoord komen niet overeen.",
+				"message12": "Telefoonnummer moet een geldig nummer zijn.",
+				"message14": "Mobiel nummer moet een geldig nummer zijn.",
+				"message15": "Voer een geldige bedrijfswebsite in.",
+				"message17": "Voer een geldige door de klant gegenereerde ID in.",
+				"message18": "Voer een geldig dienstverband in.",
+				"message19": "Vul alstublieft een geldige gebruikersnaam in.",
+				"message2": "De voornaam mag maximaal 20 tekens lang zijn.",
+				"message20": "De gebruikersnaam kan minimaal 3 tot maximaal 30 tekens lang zijn zonder spaties.",
+				"message21": "Voer een geldig mobiel nummer in.",
+				"message22": "Voer alstublieft een geldig telefoonnummer in.",
+				"message23": "Zet bestanden hier neer of klik om te uploaden.",
+				"message24": "Selecteer een geldige afdeling met rollen.",
+				"message3": "Geef alstublieft een geldige achternaam.",
+				"message4": "De achternaam mag maximaal 20 tekens lang zijn.",
+				"message5": "Gelieve een geldig e-mailadres in te vullen.",
+				"message6": "E-mail kan een geldig e-mailadres zijn.",
+				"message7": "Vul alstublieft een geldig wachtwoord in.",
+				"message8": "Wachtwoord kan minimaal 3 tot maximaal 30 tekens lang zijn.",
+				"message9": "Voer een geldig bevestigingswachtwoord in."
+			},
+			"fields": {
+				"address": "Adres",
+				"client_ID": "klant identificatie",
+				"company_address": "bedrijfsadres",
+				"company_city": "Bedrijfsstad",
+				"company_country": "Land van bedrijf",
+				"company_email": "Bedrijf email",
+				"company_fax": "Bedrijfsfax",
+				"company_mobile": "Bedrijf Mobiel",
+				"company_name": "Bedrijfsnaam",
+				"company_phone": "Bedrijfstelefoon",
+				"company_website": "Bedrijfswebsite",
+				"confirm_password": "Bevestig wachtwoord",
+				"country": "land",
+				"departments_roles": "Afdelingen / Rollen",
+				"email": "E-mail",
+				"facebook_URL": "Facebook URL",
+				"first_name": "Voornaam",
+				"hosting_company": "Hostingbedrijf",
+				"language": "Taal",
+				"last_name": "Achternaam",
+				"linkedIn_URL": "LinkedIn-URL",
+				"mobile": "mobiel",
+				"password": "Wachtwoord",
+				"phone": "Telefoon",
+				"port": "Haven",
+				"profile_photo": "Profielfoto",
+				"skype": "Skype",
+				"twitter_URL": "Twitter-URL",
+				"username": "Gebruikersnaam",
+				"zip_code": "Postcode"
+			},
+			"placeholders": {
+				"placeholder1": "Vul voornaam in",
+				"placeholder10": "Voer de postcode van het bedrijf in",
+				"placeholder11": "Bedrijfsfax invoeren",
+				"placeholder12": "Ga naar de bedrijfswebsite",
+				"placeholder13": "Voer bedrijfsskype in",
+				"placeholder14": "Voer het bedrijfsadres in",
+				"placeholder15": "Voer hostingbedrijf in",
+				"placeholder16": "Voer Hosting-gebruikersnaam in",
+				"placeholder17": "Voer Hosting-wachtwoord in",
+				"placeholder18": "Voer Hosting Port in",
+				"placeholder19": "Vul je gebruikersnaam in",
+				"placeholder2": "Voer achternaam in",
+				"placeholder20": "Voer Skype in",
+				"placeholder21": "-- Selecteer land --",
+				"placeholder22": "- Selecteer taal -",
+				"placeholder23": "- Selecteer afdelingen / rollen -",
+				"placeholder24": "Voer Facebook-URL in",
+				"placeholder25": "Voer Twitter-URL in",
+				"placeholder26": "Voer LinkedIn-URL in",
+				"placeholder27": "Vul adres in",
+				"placeholder3": "Voer email in",
+				"placeholder4": "Voer wachtwoord in",
+				"placeholder5": "Voer Wachtwoord bevestigen in",
+				"placeholder6": "Voer bedrijfsnaam in",
+				"placeholder7": "Voer het e-mailadres van het bedrijf in",
+				"placeholder8": "- Selecteer bedrijfsland -",
+				"placeholder9": "Voer bedrijfsstad in"
+			}
+		},
+		"headings": {
+			"head1": "persoonlijke informatie",
+			"head2": "Bedrijfsinfo",
+			"head3": "Hosting Info",
+			"head4": "Over de klant",
+			"head5": "Contact Info & Bio",
+			"head6": "VEREISTEN",
+			"head7": "Sociale info"
+		},
+		"inline_edit": {
+			"first_name": "Voornaam",
+			"last_name": "Achternaam"
+		},
+		"messages": {
+			"create": "Client succesvol aangemaakt.",
+			"delete": "Client succesvol verwijderd.",
+			"invite": "Uitnodiging succesvol verzonden.",
+			"status": "Status gewijzigd.",
+			"update": "Client succesvol bijgewerkt."
+		},
+		"title": "Cliënten",
+		"title1": "Klant maken",
+		"title2": "Klant bewerken"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "Voeg opmerking toe",
+			"button2": "Antwoord"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige opmerking in.",
+				"message2": "Zet bestanden hier neer of klik om te uploaden."
+			},
+			"placeholders": {
+				"placeholder1": "Voer commentaar in",
+				"placeholder2": "Reactie beantwoorden"
+			}
+		},
+		"messages": {
+			"create": "Reactie is gemaakt.",
+			"delete": "Reactie succesvol verwijderd.",
+			"update": "Reactie succesvol bijgewerkt."
+		},
+		"title": "Comments"
+	},
+	"common": {
+		"12_hours": "12 uren",
+		"24_hours": "24 uur",
+		"action": "Actie",
+		"actions": "acties",
+		"add": "Toevoegen",
+		"add_to_timesheet": "Toevoegen aan urenstaat",
+		"apply": "Van toepassing zijn",
+		"assign": "toewijzen",
+		"back": "terug",
+		"calendar": "Kalender",
+		"calendar_view": "Kalenderweergave",
+		"cancel": "annuleren",
+		"change": "verandering",
+		"close": "Dichtbij",
+		"comment": "commentaar",
+		"copy": "Kopiëren",
+		"create": "creëren",
+		"create_comment": "Maak commentaar",
+		"created": "aangemaakt",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": ": activeer om de kolom oplopend te sorteren",
+				"sSortDescending": ": activeer om de kolom aflopend te sorteren"
+			},
+			"oPaginate": {
+				"sFirst": "eerste",
+				"sLast": "laatste",
+				"sNext": "volgende",
+				"sPrevious": "voorgaand"
+			},
+			"sEmptyTable": "Geen data beschikbaar in de tabel",
+			"sInfo": "Toont _START_ tot _END_ van _TOTAL_ items",
+			"sInfoEmpty": "Toont 0 tot 0 van 0 vermeldingen",
+			"sInfoFiltered": "(gefilterd op basis van _MAX_ items)",
+			"sInfoPostFix": "",
+			"sInfoThousands": ",",
+			"sLengthMenu": "Laat het _MENU_",
+			"sLoadingRecords": "Bezig met laden...",
+			"sProcessing": "Verwerken...",
+			"sSearchPlaceholder": "Zoeken ...",
+			"sZeroRecords": "Geen overeenkomende records gevonden"
+		},
+		"days": "Dagen",
+		"delete": "Verwijder",
+		"detail": "Detail",
+		"details": "Details",
+		"download": "Download",
+		"drag_file": "Sleep een bestand of Bladeren",
+		"edit": "BEWERK",
+		"empty_message": {
+			"activities": "Er zijn geen activiteiten",
+			"announcements": "Er zijn geen aankondigingen.",
+			"articles": "Er zijn geen artikelen.",
+			"attachments": "Er zijn geen bijlagen.",
+			"categories": "Er zijn geen categorieën.",
+			"clients": "Er zijn geen klanten.",
+			"custom_fields": "Er zijn geen aangepaste velden.",
+			"database_backups": "Er zijn geen databaseback-ups.",
+			"defects": "Er zijn geen gebreken.",
+			"departments": "Er zijn geen afdelingen.",
+			"estimates": "Er zijn geen schattingen.",
+			"file_browser": "Er zijn geen mappen / bestanden.",
+			"histories": "Er zijn geen geschiedenissen.",
+			"holidays": "Er zijn geen vakanties.",
+			"incidents": "Er zijn geen incidenten.",
+			"invoices": "Er zijn geen facturen.",
+			"leaves": "Er zijn geen bladeren.",
+			"mails": "Er zijn geen mails.",
+			"meetings": "Er zijn geen vergaderingen.",
+			"notifications": "Er zijn geen meldingen.",
+			"projects": "Er zijn geen projecten.",
+			"providers": "Er zijn geen providers.",
+			"roles": "Er zijn geen rollen.",
+			"sprints": "Er is geen sprint.",
+			"tasks": "Er zijn geen taken.",
+			"teams": "Er zijn geen teams.",
+			"timesheet": "Er is geen urenstaat.",
+			"todos": "Er zijn geen todos.",
+			"translations": "Er zijn geen vertalingen.",
+			"users": "Er zijn geen gebruikers."
+		},
+		"error_messages": {
+			"message1": "Mogelijk beschikt u niet over de juiste rechten om toegang te krijgen tot het bestand of de bronnen.",
+			"message2": "Ongeautoriseerde gebruiker - In geval van verificatietoken verlopen.",
+			"message3": "In het geval van Auth Token verlopen.",
+			"message4": "Sorry, maar de pagina die je zocht kon niet worden gevonden.",
+			"message5": "Er is iets misgegaan!",
+			"message6": "Je bent succesvol uitgelogd."
+		},
+		"errors_keys": {
+			"key1": "Toegang is geweigerd",
+			"key2": "Foutief verzoek",
+			"key3": "onbevoegd",
+			"key4": "Toegang is geweigerd",
+			"key5": "Niet gevonden",
+			"key6": "Onverwerkbare entiteit"
+		},
+		"false": "vals",
+		"fullscreen": "Volledig scherm",
+		"hours": "uur",
+		"import": "Importeren",
+		"invite": "Nodig uit",
+		"issues": "Problemen",
+		"kanban": "Kanban",
+		"last_updated": "Laatst bijgewerkt",
+		"list": "Lijst",
+		"lists": "Lijstweergave",
+		"methods": "Methoden",
+		"move": "verhuizing",
+		"new": "nieuwe",
+		"not_allowed": "Niet toegestaan in demo.",
+		"offline": "offline",
+		"online": "online",
+		"options": "Opties",
+		"overdue": "ACHTERSTALLIG",
+		"pending": "In Afwachting",
+		"placeholders": {
+			"placeholder1": "- Selecteer Project -"
+		},
+		"priorities": {
+			"high": "Hoog",
+			"low": "Laag",
+			"medium": "Medium",
+			"urgent": "Dringend",
+			"very_high": "Heel hoog"
+		},
+		"profile": "Profiel",
+		"remove": "Verwijderen",
+		"remove_file": "bestand verwijderen",
+		"report": "Verslag doen van",
+		"request": "Verzoek",
+		"reset": "Reset",
+		"restore": "Herstellen",
+		"save": "Opslaan",
+		"search": "Zoeken ...",
+		"show": "Laten zien",
+		"status": {
+			"In Progress": "Bezig",
+			"Not Started": "Niet begonnen",
+			"On Hold": "In de wacht",
+			"accepted": "Geaccepteerd",
+			"active": "Actief",
+			"all": "Allemaal",
+			"approved": "Goedgekeurd",
+			"assigned": "toegewezen",
+			"cancel": "annuleren",
+			"canceled": "geannuleerd",
+			"closed": "Gesloten",
+			"completed": "voltooid",
+			"confirmed": "BEVESTIGD",
+			"deactive": "Deactief",
+			"declined": "Afgewezen",
+			"deferred": "uitgestelde",
+			"draft": "Droogte",
+			"error": "Fout",
+			"expired": "Niet meer geldig",
+			"finished": "Afgewerkt",
+			"in_progress": "Bezig",
+			"inactive": "INACTIEF",
+			"my": "Mijn",
+			"on_hold": "In de wacht",
+			"open": "Open",
+			"overdue": "ACHTERSTALLIG",
+			"paid": "Betaald",
+			"partially_paid": "GEDEELTELIJK BETAALD",
+			"pending": "In Afwachting",
+			"published": "Gepubliceerd",
+			"rejected": "Afgekeurd",
+			"released": "Vrijgelaten",
+			"reopen": "Open opnieuw",
+			"reserved": "Gereserveerd",
+			"sent": "Verzonden",
+			"solved": "Opgelost",
+			"success": "succes",
+			"taken": "Genomen",
+			"total": "Totaal",
+			"unpaid": "onbetaald",
+			"unpublished": "onuitgegeven",
+			"waiting": "AAN HET WACHTEN"
+		},
+		"submit": "voorleggen",
+		"swal": {
+			"cancelButtonText": "Nee, hou het !",
+			"confirmButtonText": "Ja, verwijder het !",
+			"text": "U kunt dit niet herstellen",
+			"text1": "U kunt deze afdeling niet herstellen !. Zorg er vóór het verwijderen voor dat u alle gebruikers met betrekking tot deze afdeling hebt verwijderd.",
+			"text2": "U kunt deze gebruiker niet herstellen !. Voordat u gaat verwijderen, moet u ervoor zorgen dat u de gebruiker verwijdert uit teams, projecten, taken, defecten en incidenten enz.",
+			"text3": "U kunt deze client niet herstellen !. Zorg er voor het verwijderen voor dat u de klant verwijdert uit teams, projecten, taken, defecten en incidenten enz.",
+			"text4": "U kunt dit project niet herstellen !. Zorg er voordat u gaat verwijderen voor dat u alle taken, defecten en incidenten met betrekking tot dit project hebt verwijderd.",
+			"title": "Weet je het zeker?"
+		},
+		"switch_to_calendar": "Schakel over naar Agenda",
+		"switch_to_kanban": "Schakel over naar Kanban",
+		"switch_to_list": "Schakel over naar lijst",
+		"test": "Test",
+		"toggle_dropdown": "Toggle Dropdown",
+		"tooltip": {
+			"project_csv_sample": "Voorbeeldproject CSV",
+			"task_csv_sample": "Voorbeeldtaak CSV",
+			"team_csv_sample": "Voorbeeld Team CSV",
+			"user_csv_sample": "Voorbeeld van gebruikers-CSV"
+		},
+		"total": "Totaal",
+		"true": "Waar",
+		"unassign": "Toewijzing ongedaan maken",
+		"unassigned": "Niet-toegewezen",
+		"update": "Bijwerken",
+		"updated": "bijgewerkt",
+		"upload": "Upload bestand",
+		"view": "Uitzicht",
+		"view_comments": "Bekijk de reacties",
+		"view_more": "Bekijk meer"
+	},
+	"customFieldsType": [
+		{
+			"label": "Tekst",
+			"value": "text"
+		},
+		{
+			"label": "Tekstgebied",
+			"value": "textarea"
+		},
+		{
+			"label": "Laten vallen",
+			"value": "dropdown"
+		},
+		{
+			"label": "Datum",
+			"value": "date"
+		},
+		{
+			"label": "checkbox",
+			"value": "checkbox"
+		},
+		{
+			"label": "numerieke",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "Taken Status",
+		"chart2": "Project status",
+		"chart3": "Maandelijks rapport",
+		"estimate": "schattingen",
+		"invoices": "Meest vervallen facturen",
+		"widgets": {
+			"approved_request": "aangenomen",
+			"due_payment": "Ten gevolge",
+			"received_request": "Ontvangen",
+			"recieved_payment": "Ontvangen"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "acties",
+			"actual_hours": "Uren",
+			"assigned": "toegewezen",
+			"assigned_group": "Toegewezen groep",
+			"creator": "Schepper",
+			"defect_name": "Naam defect",
+			"end_date": "Einddatum",
+			"id": "ID kaart",
+			"project": "project",
+			"project_version": "Projectversie",
+			"severity": "strengheid",
+			"start_date": "Startdatum",
+			"status": "staat",
+			"type": "Type"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige defectnaam in.",
+				"message10": "Zet bestanden hier neer of klik om te uploaden.",
+				"message11": "Selecteer een geldige startdatum.",
+				"message12": "Selecteer een geldige einddatum.",
+				"message13": "Geschatte uren staan alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens.",
+				"message2": "De naam van het defect mag maximaal 255 tekens lang zijn.",
+				"message3": "Voer een uniek en geldig door fouten gegenereerd ID in.",
+				"message4": "Selecteer een geldig defecttype.",
+				"message5": "Selecteer een geldige defectstatus.",
+				"message6": "Selecteer een geldige ernst van het defect.",
+				"message8": "Selecteer een geldig project."
+			},
+			"fields": {
+				"actual_hours": "Werkelijke uren",
+				"assigned_To": "Toegewezen aan",
+				"assigned_group": "Toegewezen groep",
+				"choose_file": "SELECTEER BESTAND",
+				"completed": "voltooid",
+				"created_by": "Gemaakt door",
+				"defect_ID": "Defect ID",
+				"defect_name": "Naam defect",
+				"defect_type": "Type defect",
+				"description": "Omschrijving",
+				"end_date": "Einddatum",
+				"estimate_hours": "Geschatte uren",
+				"project_name": "Naam van het project",
+				"project_version": "Projectversie",
+				"severity": "strengheid",
+				"start_date": "Begin datum",
+				"status": "staat"
+			},
+			"placeholders": {
+				"placeholder1": "Voer defectnaam in",
+				"placeholder2": "- Selecteer defect type -",
+				"placeholder3": "- Selecteer Defect Status -",
+				"placeholder4": "- Selecteer Ernst van defect -",
+				"placeholder5": "- Selecteer toegewezen groep -",
+				"placeholder6": "- Selecteer Project -",
+				"placeholder7": "- Selecteer Projectversie -",
+				"placeholder8": "Selecteer Startdatum",
+				"placeholder9": "Selecteer Einddatum"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "Gebreken",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Verbetering",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "Aangepaste velden",
+			"title2": "Omschrijving"
+		},
+		"headings": {
+			"head1": "Defect Info",
+			"head2": "Project Info",
+			"head3": "Upload bestanden",
+			"head4": "Aangepaste velden",
+			"head5": "Omschrijving"
+		},
+		"inline_edit": {
+			"defect_name": "Naam defect",
+			"defect_type": "Type defect",
+			"description": "Omschrijving",
+			"estimate_hours": "Geschatte uren",
+			"notes": "aantekeningen"
+		},
+		"messages": {
+			"create": "Defect succesvol aangemaakt.",
+			"delete": "Defect succesvol verwijderd.",
+			"severity": "Ernst is bijgewerkt.",
+			"status": "Status gewijzigd.",
+			"update": "Defect succesvol bijgewerkt."
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Laag"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Medium"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Hoog"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Heel hoog"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Dringend"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "Toegekend"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "Gesloten"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Bezig"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "Open"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "Opgelost"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Open opnieuw"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "uitgestelde"
+			}
+		],
+		"title": "Gebreken",
+		"title1": "Maak defect",
+		"title2": "Defect bewerken",
+		"tooltips": {
+			"attachment": "gehechtheid"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "acties",
+			"designation": "Aanwijzing"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige afdelingsnaam in.",
+				"message2": "Afdelingsnaam mag maximaal 20 tekens lang zijn.",
+				"message3": "Selecteer een geldige afdelingsrol."
+			},
+			"fields": {
+				"department": "Afdeling",
+				"department_name": "Afdelingsnaam",
+				"department_roles": "Afdelingsrollen",
+				"designation": "Aanwijzing",
+				"permission": "Toestemming"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de naam van de afdeling in"
+			}
+		},
+		"messages": {
+			"create": "Afdeling succesvol aangemaakt.",
+			"delete": "Afdeling succesvol verwijderd.",
+			"update": "Afdeling succesvol bijgewerkt."
+		},
+		"title": "afdelingen",
+		"title1": "Detailafdeling",
+		"title2": "Afdelingsrol",
+		"tooltip": {
+			"tooltip1": "Selecteer alle rechten",
+			"tooltip10": "Selecteer alles",
+			"tooltip11": "Toestemming",
+			"tooltip2": "Als u maken / bewerken / verwijderen selecteert, hoeft u de weergave niet te selecteren",
+			"tooltip3": "Selecteer Alles maken",
+			"tooltip4": "Selecteer Alles bewerken",
+			"tooltip5": "Selecteer Alles verwijderen",
+			"tooltip6": "kiezen",
+			"tooltip7": "Kan maken",
+			"tooltip8": "Kan bewerken",
+			"tooltip9": "Kan verwijderen"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "Klant",
+			"estimate_date": "Datum",
+			"estimate_number": "Schatting",
+			"status": "staat",
+			"total_amount": "Bedrag",
+			"valid_till": "Geldig tot"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Selecteer een geldige klant.",
+				"message2": "Selecteer een geldige schattingsdatum.",
+				"message3": "Selecteer een geldige vervaldatum.",
+				"message4": "Selecteer een geldige status.",
+				"message5": "Voeg ten minste één item toe.",
+				"message6": "Voer het artikel, de hoeveelheid en de eenheidsprijs in.",
+				"message7": "Selecteer een geldig kortingstype."
+			},
+			"fields": {
+				"adjustment": "Aanpassing",
+				"customer": "Klant",
+				"discount": "Korting",
+				"discount_type": "Kortingstype",
+				"estimate_date": "Geschatte datum",
+				"estimate_number": "Geschat aantal",
+				"item_description": "Omschrijving",
+				"item_name": "Item",
+				"item_tax": "Belasting",
+				"quantity": "aantal",
+				"reference": "Referentie",
+				"status": "staat",
+				"sub_total": "Subtotaal",
+				"total_amount": "Totaal",
+				"total_item_amount": "Bedrag",
+				"unit": "Eenheid",
+				"unit_price": "eenheid prijs",
+				"valid_till": "Vervaldatum"
+			},
+			"placeholders": {
+				"placeholder1": "- Selecteer klant -",
+				"placeholder10": "aantal",
+				"placeholder11": "eenheid prijs",
+				"placeholder12": "- Selecteer BTW -",
+				"placeholder2": "Selecteer Geschatte datum",
+				"placeholder3": "Selecteer Vervaldatum",
+				"placeholder4": "Voer referentie in",
+				"placeholder5": "- Selecteer kortingstype -",
+				"placeholder6": "- Selecteer Status -",
+				"placeholder7": "-- Selecteer item --",
+				"placeholder8": "Item",
+				"placeholder9": "Omschrijving"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "procent"
+			},
+			{
+				"id": "fixed",
+				"label": "vast"
+			}
+		],
+		"headings": {
+			"head1": "Klantinfo",
+			"head2": "Data",
+			"head3": "Andere informatie",
+			"head4": "Items Info"
+		},
+		"inline_edit": {
+			"item_description": "Omschrijving",
+			"item_name": "Item",
+			"item_tax": "Belasting",
+			"quantity": "aantal",
+			"unit_price": "eenheid prijs"
+		},
+		"messages": {
+			"create": "Schatting succesvol gemaakt.",
+			"delete": "Schatting succesvol verwijderd.",
+			"status": "Status gewijzigd.",
+			"update": "Schatting succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "DROOGTE"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "verzonden"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "Verlopen"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "Afgewezen"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "Aanvaard"
+			}
+		],
+		"title": "schattingen",
+		"title1": "Schatting !",
+		"title2": "Maak een schatting",
+		"title3": "Update schatting",
+		"title4": "Schatting",
+		"view": {
+			"accept": "Aanvaarden",
+			"accepted": "Aanvaard",
+			"balance_due": "Saldo verschuldigd",
+			"bill_to": "Rekening naar",
+			"decline": "afwijzen",
+			"declined": "Afgewezen",
+			"download": "Download",
+			"draft": "DROOGTE",
+			"due_date": "Opleveringsdatum",
+			"due_on_receipt": "Verschuldigd op ontvangstbewijs",
+			"estimate_date": "Geschatte datum",
+			"expired": "Verlopen",
+			"sent": "verzonden",
+			"terms": "Regels en voorwaarden",
+			"total_due": "Totaal verschuldigd"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "acties",
+			"name": "Naam",
+			"progress": "Vooruitgang",
+			"size": "Grootte",
+			"status": "staat"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige mapnaam in.",
+				"message2": "Sleep hierheen om te uploaden ...",
+				"message3": "Voer een geldige bestandsnaam in."
+			},
+			"fields": {
+				"description": "Omschrijving",
+				"file_name": "Bestandsnaam",
+				"folder_name": "Naam van de map"
+			},
+			"placeholders": {
+				"placeholder1": "Voer mapnaam in",
+				"placeholder2": "Voer omschrijving in",
+				"placeholder3": "Voer Bestandsnaam in"
+			}
+		},
+		"messages": {
+			"create_folder": "Map succesvol aangemaakt.",
+			"delete_file": "Bestand succesvol verwijderd.",
+			"delete_folder": "Map succesvol verwijderd.",
+			"update_file": "Bestand succesvol bijgewerkt.",
+			"update_folder": "Map succesvol bijgewerkt.",
+			"upload_file": "Bestand succesvol geüpload."
+		},
+		"title": "Bestandsbeheer",
+		"title1": "Map aanmaken",
+		"title2": "Bewerk map",
+		"title3": "Upload bestanden",
+		"title4": "Bestand bewerken",
+		"title5": "het dossier",
+		"title6": "Map",
+		"title7": "Toegevoegd"
+	},
+	"footer": {
+		"copyright": "auteursrechten",
+		"text1": "Alle rechten voorbehouden"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Gelieve een geldig e-mailadres in te vullen.",
+				"message2": "E-mail moet een geldig e-mailadres zijn."
+			},
+			"placeholders": {
+				"placeholder1": "Voer email in"
+			}
+		},
+		"messages": {
+			"success": "Controleer uw e-mail voor instructies over hoe u uw wachtwoord opnieuw kunt instellen."
+		},
+		"title": "Wachtwoord vergeten",
+		"title1": "Voer hieronder uw e-mailadres in en we sturen u informatie om uw wachtwoord te wijzigen."
+	},
+	"header": {
+		"heading": {
+			"head1": "Jij hebt",
+			"head2": "nieuwe mails",
+			"head3": "Zie alle mails",
+			"head4": "Update beschikbaar"
+		},
+		"inbox": "Mijn inbox",
+		"languages": "talen",
+		"logout": "Uitloggen",
+		"mails": "e-mails",
+		"notifications": "meldingen",
+		"profile": "Profiel",
+		"search": {
+			"text": "Zoek hier ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "Activiteit",
+			"closed_by": "Gesloten door",
+			"commentor": "Commentor",
+			"creator": "Schepper",
+			"date": "Datum",
+			"solved_by": "Opgelost door",
+			"updated_by": "Bijgewerkt door"
+		},
+		"title": "Geschiedenissen"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "acties",
+			"color": "Kleur",
+			"date": "Datum",
+			"event_name": "Evenement naam",
+			"location": "Plaats"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige evenementnaam in.",
+				"message2": "De naam van een afspraak mag maximaal 50 tekens bevatten.",
+				"message3": "Selecteer een geldige datum alstublieft."
+			},
+			"fields": {
+				"color": "Kleur",
+				"date": "Datum",
+				"description": "Omschrijving",
+				"event_name": "Evenement naam",
+				"location": "Plaats"
+			},
+			"placeholders": {
+				"placeholder1": "Voer gebeurtenisnaam in",
+				"placeholder2": "Selecteer een datum",
+				"placeholder3": "Voer locatie in"
+			}
+		},
+		"inline_edit": {
+			"event_name": "Evenement naam",
+			"holiday_date": "Vakantiedatum",
+			"location": "Plaats"
+		},
+		"messages": {
+			"create": "Vakantie met succes gemaakt.",
+			"delete": "Vakantie succesvol verwijderd.",
+			"update": "Vakantie succesvol bijgewerkt."
+		},
+		"title": "vakantie"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "acties",
+			"actual_hours": "Uren",
+			"assigned": "toegewezen",
+			"assigned_group": "Toegewezen groep",
+			"client": "Cliënt",
+			"client_company": "Klant bedrijf",
+			"creator": "Schepper",
+			"end_date": "Einddatum",
+			"id": "ID kaart",
+			"incident_name": "Naam incident",
+			"priority": "Prioriteit",
+			"project": "project",
+			"project_version": "Projectversie",
+			"start_date": "Startdatum",
+			"status": "staat",
+			"type": "Type"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige incidentnaam in.",
+				"message2": "De naam van het incident mag maximaal 255 tekens bevatten.",
+				"message3": "Voer een unieke en geldige door een incident gegenereerde ID in.",
+				"message4": "Selecteer een geldige incidentstatus.",
+				"message5": "Selecteer een geldige incidentprioriteit.",
+				"message6": "Selecteer een geldig incidenttype.",
+				"message7": "Selecteer een geldige startdatum.",
+				"message8": "Selecteer een geldige einddatum.",
+				"message9": "Geschatte uren staan alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens."
+			},
+			"fields": {
+				"actual_hours": "Werkelijke uren",
+				"assigned_To": "Toegewezen aan",
+				"assigned_group": "Toegewezen groep",
+				"created_by": "Gemaakt door",
+				"description": "Omschrijving",
+				"end_date": "Einddatum",
+				"estimate_hours": "Geschatte uren",
+				"incident_ID": "Incident-ID",
+				"incident_name": "Naam incident",
+				"incident_type": "Incident type",
+				"priority": "Prioriteit",
+				"project": "project",
+				"project_name": "Naam van het project",
+				"project_version": "Projectversie",
+				"start_date": "Begin datum",
+				"status": "staat"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de naam van het incident in",
+				"placeholder2": "- Selecteer Incident Status -",
+				"placeholder3": "- Selecteer Incidentprioriteit -",
+				"placeholder4": "- Selecteer Incident Type -",
+				"placeholder5": "- Selecteer toegewezen groep -",
+				"placeholder6": "- Selecteer Project -",
+				"placeholder7": "- Selecteer Projectversie -",
+				"placeholder8": "Selecteer Startdatum",
+				"placeholder9": "Selecteer Einddatum"
+			}
+		},
+		"details": {
+			"title1": "Aangepaste velden",
+			"title2": "Omschrijving"
+		},
+		"headings": {
+			"head1": "Incident Info",
+			"head2": "Project Info",
+			"head3": "Aangepaste velden",
+			"head4": "Omschrijving",
+			"head5": "Andere informatie"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "Dienstverzoek",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Informatieverzoek",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "Omschrijving",
+			"estimate_hours": "Geschatte uren",
+			"incident_name": "Naam incident",
+			"incident_type": "Incident type",
+			"notes": "aantekeningen"
+		},
+		"messages": {
+			"create": "Incident succesvol aangemaakt.",
+			"delete": "Incident succesvol verwijderd.",
+			"import": "Incident succesvol geïmporteerd.",
+			"priority": "Prioriteit is succesvol gewijzigd.",
+			"status": "Status gewijzigd.",
+			"update": "Incident succesvol bijgewerkt."
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Laag"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Medium"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Hoog"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Heel hoog"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Dringend"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "toegewezen"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Bezig"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "Opgelost"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "uitgestelde"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Open opnieuw"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "Gesloten"
+			}
+		],
+		"title": "Incidenten",
+		"title1": "Incident maken",
+		"title2": "Incident bewerken"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "Klant",
+			"due_date": "Opleveringsdatum",
+			"invoice_date": "Datum",
+			"invoice_number": "Factuur",
+			"status": "staat",
+			"total_amount": "Bedrag"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Selecteer een geldige klant.",
+				"message2": "Selecteer een geldige factuurdatum.",
+				"message3": "Selecteer een geldige vervaldatum.",
+				"message4": "Selecteer een geldige status.",
+				"message5": "Voeg ten minste één item toe.",
+				"message6": "Voer het artikel, de hoeveelheid en de eenheidsprijs in.",
+				"message7": "Selecteer een geldig kortingstype."
+			},
+			"fields": {
+				"adjustment": "Aanpassing",
+				"customer": "Klant",
+				"discount": "Korting",
+				"discount_type": "Kortingstype",
+				"due_date": "Opleveringsdatum",
+				"invoice_date": "Factuur datum",
+				"invoice_number": "Factuurnummer",
+				"item_description": "Omschrijving",
+				"item_name": "Item",
+				"item_tax": "Belasting",
+				"project": "project",
+				"quantity": "aantal",
+				"reference": "Referentie",
+				"status": "staat",
+				"sub_total": "Subtotaal",
+				"total_amount": "Totaal",
+				"total_amount_due": "Verschuldigd bedrag",
+				"total_item_amount": "Bedrag",
+				"unit": "Eenheid",
+				"unit_price": "eenheid prijs"
+			},
+			"placeholders": {
+				"placeholder1": "- Selecteer klant -",
+				"placeholder10": "aantal",
+				"placeholder11": "eenheid prijs",
+				"placeholder12": "- Selecteer BTW -",
+				"placeholder13": "- Selecteer Project -",
+				"placeholder2": "Selecteer Factuurdatum",
+				"placeholder3": "Selecteer Vervaldatum",
+				"placeholder4": "Voer referentie in",
+				"placeholder5": "- Selecteer kortingstype -",
+				"placeholder6": "- Selecteer Status -",
+				"placeholder7": "-- Selecteer item --",
+				"placeholder8": "Item",
+				"placeholder9": "Omschrijving"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "procent"
+			},
+			{
+				"id": "fixed",
+				"label": "vast"
+			}
+		],
+		"headings": {
+			"head1": "Klantinfo",
+			"head2": "Data",
+			"head3": "Andere informatie",
+			"head4": "Items Info"
+		},
+		"inline_edit": {
+			"item_description": "Omschrijving",
+			"item_name": "Item",
+			"item_tax": "Belasting",
+			"quantity": "aantal",
+			"unit_price": "eenheid prijs"
+		},
+		"messages": {
+			"create": "Factuur succesvol aangemaakt.",
+			"delete": "Factuur succesvol verwijderd.",
+			"payments": "Geen betalingen gevonden voor deze factuur",
+			"status": "Status gewijzigd.",
+			"update": "Factuur succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "Betaald"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "GEDEELTELIJK BETAALD"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "onbetaald"
+			}
+		],
+		"title": "Facturen",
+		"title1": "Factuur!",
+		"title2": "Factuur maken",
+		"title3": "Update factuur",
+		"title4": "Factuur",
+		"view": {
+			"add_payment": "Voeg betaling toe",
+			"amount": "Bedrag",
+			"balance_due": "Saldo verschuldigd",
+			"bank": "Bank",
+			"bill_to": "Rekening naar",
+			"date": "Datum",
+			"download": "Download",
+			"due_amount": "Te betalen bedrag",
+			"due_date": "Opleveringsdatum",
+			"due_on_receipt": "Verschuldigd op ontvangstbewijs",
+			"gst_number": "GST IN",
+			"invoice_date": "Factuur datum",
+			"offline_payment": "Offline betaling",
+			"online_payment": "Online betaling",
+			"paid": "Betaald",
+			"partially_paid": "GEDEELTELIJK BETAALD",
+			"payment": "Betaling",
+			"payment_mode": "Betaalmethode",
+			"paypal": "Paypal",
+			"status": "staat",
+			"stripe": "streep",
+			"terms": "Regels en voorwaarden",
+			"total_due": "Totaal verschuldigd",
+			"transactions": "transacties",
+			"unpaid": "onbetaald"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "Omschrijving",
+			"name": "Itemnaam",
+			"price": "Prijs",
+			"tax": "Belasting",
+			"unit": "Eenheid"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige artikelnaam in.",
+				"message2": "Voer een geldige prijs in.",
+				"message3": "De prijs moet een getal zijn."
+			},
+			"fields": {
+				"description": "Omschrijving",
+				"name": "Itemnaam",
+				"price": "Prijs",
+				"tax": "Belasting",
+				"unit": "Eenheid"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de itemnaam in",
+				"placeholder2": "Voer prijs in",
+				"placeholder3": "Voer eenheid in",
+				"placeholder4": "- Selecteer BTW -",
+				"placeholder5": "Voer omschrijving in"
+			}
+		},
+		"labels": {
+			"label1": "Het wijzigen van artikelinformatie heeft geen invloed op de gemaakte schattingen en facturen."
+		},
+		"messages": {
+			"create": "Item succesvol aangemaakt.",
+			"delete": "Item succesvol verwijderd.",
+			"update": "Item succesvol bijgewerkt."
+		},
+		"title": "items",
+		"title1": "Artikel!",
+		"title2": "Item maken",
+		"title3": "Item bijwerken"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "Sleep taak tussen lijst"
+		},
+		"title1": "Defect Kanban",
+		"title2": "Incident Kanban"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "acties",
+				"article_name": "Artikel titel"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldige artikeltitel in.",
+					"message2": "De titel van een artikel mag maximaal 50 tekens lang zijn.",
+					"message3": "Selecteer een geldige categorie.",
+					"message4": "Zet bestanden hier neer of klik om te uploaden.",
+					"message5": "Voer een geldige beschrijving in."
+				},
+				"fields": {
+					"article_title": "Artikel titel",
+					"category": "Categorie",
+					"description": "Omschrijving",
+					"file": "het dossier"
+				},
+				"placeholders": {
+					"placeholder1": "Voer de titel van het artikel in",
+					"placeholder2": "-- Selecteer categorie --",
+					"placeholder3": "Voer omschrijving in"
+				}
+			},
+			"messages": {
+				"create": "Artikel succesvol aangemaakt.",
+				"delete": "Artikel succesvol verwijderd.",
+				"update": "Artikel succesvol bijgewerkt."
+			},
+			"title": "Artikel",
+			"title1": "Artikelen",
+			"title2": "Artikel"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldige categorienaam in.",
+					"message2": "De categorienaam mag maximaal 50 tekens lang zijn.",
+					"message3": "Zet bestanden hier neer of klik om te uploaden.",
+					"message4": "Selecteer een geldig bestand."
+				},
+				"fields": {
+					"category_logo": "Categorie Logo",
+					"category_name": "categorie naam"
+				},
+				"placeholders": {
+					"placeholder1": "Voer categorienaam in",
+					"placeholder2": "Zoeken .."
+				}
+			},
+			"messages": {
+				"create": "Categorie succesvol aangemaakt.",
+				"delete": "Categorie is verwijderd.",
+				"update": "Categorie succesvol bijgewerkt."
+			},
+			"title": "Categorie",
+			"title1": "Categorie",
+			"title2": "Categorieën"
+		},
+		"title": "Kennis Basis"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "Goedgekeurd verlof",
+			"pending_leave": "In afwachting van verlof",
+			"user": "gebruiker"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "Datumbereik",
+				"employee_name": "Naam werknemer"
+			},
+			"placeholders": {
+				"placeholder1": "Selecteer datumbereik",
+				"placeholder2": "Allemaal"
+			}
+		},
+		"title": "Laat het rapport achter",
+		"title1": "Laat details achter"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "Kleur",
+			"leave_type": "Verlaat Type",
+			"no_of_leaves": "Totaal verlof"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een uniek en geldig verloftype in.",
+				"message2": "Het verloftype mag maximaal 20 tekens lang zijn.",
+				"message3": "Voer een geldig totaal verlof in.",
+				"message4": "Het totale verlof moet een getal zijn.",
+				"message5": "Selecteer een geldige kleur."
+			},
+			"fields": {
+				"color": "Kleur",
+				"leave_type": "Verlaat Type",
+				"no_of_leaves": "Totaal verlof"
+			},
+			"placeholders": {
+				"placeholder1": "Voer het verloftype in",
+				"placeholder2": "Voer Totaal verlof in"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "Verlaat Type",
+			"no_of_leaves": "Totaal verlof"
+		},
+		"messages": {
+			"create": "Verlof met succes aangemaakt.",
+			"delete": "Laat het type succesvol verwijderd.",
+			"update": "Laat het type succesvol bijgewerkt."
+		},
+		"title": "Verlof typen",
+		"title1": "Type verlaten!",
+		"title2": "Maak verloftype aan",
+		"title3": "Voeg verloftype toe"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "Aanvaarden",
+			"reject": "afwijzen"
+		},
+		"columns": {
+			"duration": "Looptijd",
+			"leave_date": "Datum",
+			"leave_type": "Verlaat Type",
+			"reason": "Reden",
+			"status": "staat",
+			"user": "gebruiker"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Selecteer een geldige gebruiker.",
+				"message2": "Selecteer een geldig verloftype.",
+				"message3": "Selecteer een geldige verlofdatum.",
+				"message4": "Selecteer een geldige status.",
+				"message5": "Voer een geldige reden in.",
+				"message6": "Zet bestanden hier neer of klik om te uploaden."
+			},
+			"fields": {
+				"attachments": "Bijlagen",
+				"duration": "Looptijd",
+				"duration_type": "Verlaat Type",
+				"leave_date": "Datum",
+				"leave_type": "vertrekken",
+				"reason": "Reden",
+				"reject_reason": "Reden afwijzen? (Optioneel)",
+				"status": "staat",
+				"user": "gebruiker"
+			},
+			"placeholders": {
+				"placeholder1": "-- Selecteer gebruiker --",
+				"placeholder2": "- Selecteer verloftype -",
+				"placeholder3": "Selecteer een datum",
+				"placeholder4": "- Selecteer Status -",
+				"placeholder5": "Voer de reden in"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "eerste helft"
+			},
+			{
+				"id": "second_half",
+				"label": "tweede helft"
+			}
+		],
+		"labels": {
+			"approved": "aangenomen",
+			"first_half_day": "Eerste halve dag",
+			"full_day": "Volledige dag",
+			"half_day": "Halve dag",
+			"multiple": "Meerdere",
+			"remaining": "overblijvende",
+			"second_half_day": "Tweede halve dag",
+			"single": "single",
+			"taken": "Genomen",
+			"total_leaves": "Totaal aantal bladeren"
+		},
+		"messages": {
+			"approve": "Verlof met succes goedgekeurd.",
+			"create": "Verlof succesvol aangemaakt.",
+			"delete": "Laat succesvol verwijderd.",
+			"reject": "Verlof succesvol afgewezen.",
+			"status": "Status gewijzigd.",
+			"update": "Verlof succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "In afwachting"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "aangenomen"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "Verworpen"
+			}
+		],
+		"title": "Bladeren",
+		"title1": "Vertrekken !",
+		"title2": "Verzoek om te vertrekken",
+		"title3": "Alle bladeren",
+		"title4": "Verzoek om te vertrekken",
+		"title5": "Bladeren Kalender",
+		"title6": "Creëer verlof",
+		"title7": "Update Verlof"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "beheerder",
+			"client_login": "Cliënt",
+			"forgot_password": "Wachtwoord vergeten?",
+			"hr_manager_login": "HR Manager",
+			"manager_login": "Manager",
+			"project_manager_login": "Projectleider",
+			"quick_login": "Snel inloggen",
+			"register": {
+				"button": "REGISTREREN",
+				"text": "Heb je geen account?"
+			},
+			"sales_manager_login": "Verkoopsmanager",
+			"user_login": "gebruiker"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "Voer een geldige gebruikersnaam of e-mailadres in."
+				},
+				"placeholder": "Gebruikersnaam / e-mailadres"
+			},
+			"password": {
+				"errors": {
+					"email": "Wachtwoord kan minimaal 3 tot maximaal 30 tekens lang zijn.",
+					"required": "Vul alstublieft een geldig wachtwoord in."
+				},
+				"placeholder": "Wachtwoord"
+			}
+		},
+		"title": "log in"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "acties",
+				"name": "Naam",
+				"progress": "Vooruitgang",
+				"size": "Grootte",
+				"status": "staat"
+			},
+			"error_messages": {
+				"message1": "Selecteer een geldig e-mailadres.",
+				"message2": "Voer een geldig onderwerp in."
+			},
+			"fields": {
+				"from": "van",
+				"subject": "Onderwerpen",
+				"to": "Naar"
+			},
+			"placeholders": {
+				"placeholder1": "- Selecteer gebruikers -",
+				"placeholder2": "Voer onderwerp in"
+			}
+		},
+		"messages": {
+			"message": "Bestand succesvol geüpload.",
+			"message1": "Bestand succesvol verwijderd.",
+			"message2": "Selecteer ten minste één e-mail.",
+			"message3": "Mail succesvol verzonden.",
+			"message4": "De mail is naar de prullenbak verplaatst.",
+			"message5": " mail verplaatst naar de prullenbak.",
+			"message6": "Mail is met succes niet favoriet gemaakt.",
+			"message7": " e-mails gemarkeerd als favoriet.",
+			"message8": "E-mails gemarkeerd als gelezen.",
+			"message9": "De mail is verplaatst naar het concept."
+		},
+		"title": "Postbus",
+		"title1": "Zoek mail ...",
+		"title10": "Sturen",
+		"title11": "Bijlagen",
+		"title12": "REFRESH",
+		"title13": "Markeer als gelezen",
+		"title14": "Markeer als favoriet",
+		"title15": "Ga naar de prullenbak",
+		"title16": "Ga naar Concept",
+		"title17": "E-mail weggooien",
+		"title18": "Mailweergave",
+		"title19": "Mappen",
+		"title2": "Componeren",
+		"title20": "Mail",
+		"title3": "E-mail opstellen",
+		"title4": "Postvak IN",
+		"title5": "verzonden",
+		"title6": "DROOGTE",
+		"title7": "Favoriete",
+		"title8": "uitschot",
+		"title9": "afdanken"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "acties",
+			"end": "Einde",
+			"hours": "uur",
+			"id": "ID",
+			"organizer": "Organisator",
+			"peoples": "Nodig volkeren uit",
+			"start": "Begin",
+			"status": "staat",
+			"title": "titel"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige titel voor de vergadering in.",
+				"message2": "De titel van de vergadering mag maximaal 255 tekens bevatten.",
+				"message3": "Selecteer een geldige startdatum.",
+				"message4": "Selecteer een geldige einddatum.",
+				"message5": "Selecteer een geldige vergadering.",
+				"message6": "Selecteer de juiste datum en tijd om te vergaderen.",
+				"message7": "Selecteer een geldige status."
+			},
+			"fields": {
+				"client_name": "klantnaam",
+				"description": "Omschrijving",
+				"end_date": "Einddatum",
+				"location": "Plaats",
+				"peoples": "Nodig volkeren uit",
+				"start_date": "Begin datum",
+				"status": "staat",
+				"title": "titel"
+			},
+			"placeholders": {
+				"placeholder1": "Titel van het evenement",
+				"placeholder2": "Selecteer Startdatum",
+				"placeholder3": "Selecteer Einddatum",
+				"placeholder4": "- Selecteer leden -",
+				"placeholder5": "Plaats",
+				"placeholder6": "- Selecteer Client -",
+				"placeholder7": "- Selecteer Status -"
+			}
+		},
+		"details": {
+			"title1": "Omschrijving"
+		},
+		"inline_edit": {
+			"title": "titel"
+		},
+		"messages": {
+			"create": "Vergadering succesvol gemaakt.",
+			"delete": "Vergadering succesvol verwijderd.",
+			"status": "Status succesvol gewijzigd.",
+			"update": "Vergadering succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "annuleren"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "voltooid"
+			}
+		],
+		"title": "Vergaderingen"
+	},
+	"months": [
+		"Jan",
+		"februari",
+		"bederven",
+		"april",
+		"mei",
+		"Juni",
+		"Juli",
+		"augustus",
+		"september",
+		"oktober",
+		"november",
+		"december"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "aantekeningen"
+			}
+		},
+		"messages": {
+			"update": "Notities succesvol bijgewerkt."
+		},
+		"title": "aantekeningen"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "Omschrijving",
+			"method_name": "Methode naam",
+			"status": "staat"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige methode naam in."
+			},
+			"fields": {
+				"description": "Omschrijving",
+				"method_name": "Methode naam",
+				"show_on_pdf": "Toon beschrijving op factuur-pdf"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de methode naam in",
+				"placeholder2": "Voer omschrijving in"
+			}
+		},
+		"messages": {
+			"create": "Betaalmethode succesvol aangemaakt.",
+			"delete": "Betaalmethode succesvol verwijderd.",
+			"status": "Status gewijzigd.",
+			"update": "Betaalmethode succesvol bijgewerkt."
+		},
+		"title": "Betaalmethodes",
+		"title1": "Betalingsmiddel !",
+		"title2": "Creëer betaalmethode",
+		"title3": "Update betaalmethode"
+	},
+	"payments": {
+		"columns": {
+			"amount": "Bedrag",
+			"client": "Cliënt",
+			"date": "Datum",
+			"invoice": "Factuur",
+			"method_name": "Betaling",
+			"payment_mode": "Betaalmethode",
+			"status": "staat"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldig bedrag in.",
+				"message2": "Voer een geldige betalingsdatum in.",
+				"message3": "Selecteer een geldige betalingswijze."
+			},
+			"fields": {
+				"amount": "Bedrag ontvangen",
+				"date": "Betaaldatum",
+				"notes": "Laat een notitie achter",
+				"payment_mode": "Betaalmethode",
+				"transaction_id": "Transactie ID"
+			},
+			"placeholders": {
+				"placeholder1": "Selecteer een datum",
+				"placeholder2": "- Selecteer betalingsmodus -",
+				"placeholder3": "Beheerdersnota",
+				"placeholder4": "Voer transactie-ID in"
+			}
+		},
+		"info": "Opmerking: de onderstaande betalingsmodi zijn offline modi. Betalingsgateways kunnen worden geconfigureerd in Instellingen-> Paypal / Stripe.",
+		"info1": "Paypal, Stripe, Bankoverschrijving, Contant geld of anderen.",
+		"messages": {
+			"create": "De betaling is succesvol gemaakt.",
+			"delete": "De betaling is succesvol verwijderd.",
+			"failed": "Betaling mislukt.",
+			"status": "Status gewijzigd.",
+			"update": "Betaling succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "Bezig"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "geslaagd"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "mislukt"
+			}
+		],
+		"title": "betalingen",
+		"title1": "Betalingen!",
+		"title2": "Maak een betaling aan",
+		"title3": "Update betaling",
+		"view": {
+			"failed": "mislukt",
+			"in_progress": "Bezig",
+			"invoice_amount": "Factuurbedrag",
+			"invoice_date": "Factuur datum",
+			"invoice_number": "Factuurnummer",
+			"payment_amount": "Te betalen bedrag",
+			"payment_for": "Betaling voor",
+			"payment_receipt": "Betaling voor factuur",
+			"successful": "geslaagd"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "acties",
+			"creator": "Schepper",
+			"end_date": "Einddatum",
+			"hours": "uur",
+			"name": "Naam",
+			"progress": "Vooruitgang",
+			"responsible": "verantwoordelijk",
+			"sprint": "Sprint",
+			"start_date": "Begin datum",
+			"status": "staat",
+			"type": "Type"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Selecteer een geldig project.",
+					"message2": "Selecteer een geldige projectsprint."
+				},
+				"fields": {
+					"project": "project",
+					"sprint": "Sprint"
+				},
+				"placeholders": {
+					"placeholder1": "- Selecteer Project -",
+					"placeholder2": "- Selecteer Project Sprint -"
+				}
+			},
+			"messages": {
+				"move": " Taak is verplaatst."
+			},
+			"title": "Verplaats taak"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een unieke en geldige sprintnaam in.",
+					"message2": "Sprintnaam mag maximaal 255 tekens lang zijn.",
+					"message4": "Selecteer een geldige startdatum.",
+					"message5": "Selecteer een geldige einddatum.",
+					"message6": "Selecteer een geldige status.",
+					"message7": "Geschatte uren staan alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens.",
+					"message8": "De geschatte uren moeten minder zijn dan"
+				},
+				"fields": {
+					"description": "Omschrijving",
+					"end_date": "Einddatum",
+					"estimate_hours": "Geschatte uren",
+					"responsible": "verantwoordelijk",
+					"sprint_name": "Naam project Sprint",
+					"start_date": "Begin datum",
+					"status": "staat"
+				},
+				"placeholders": {
+					"placeholder1": "Voer Project Sprint Name in",
+					"placeholder2": "-- Selecteer gebruiker --",
+					"placeholder3": "Selecteer Startdatum",
+					"placeholder4": "Selecteer Einddatum",
+					"placeholder5": "- Selecteer Status -",
+					"placeholder6": "Voer omschrijving in"
+				}
+			},
+			"messages": {
+				"create": "Sprint met succes gemaakt.",
+				"delete": "Sprint succesvol verwijderd.",
+				"update": "Sprint succesvol bijgewerkt."
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Open"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Bezig"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Gesloten"
+				}
+			],
+			"title": "Sprint",
+			"title1": "Maak Sprint",
+			"title2": "Sprint bewerken"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een uniek en geldig in",
+					"message2": " naam mag maximaal 255 tekens lang zijn.",
+					"message3": "Selecteer een geldige gebruiker.",
+					"message4": "Selecteer een geldige startdatum.",
+					"message5": "Selecteer een geldige einddatum.",
+					"message6": "Selecteer een geldige status.",
+					"message7": "Geschatte uren staan alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens.",
+					"message8": "De geschatte uren moeten minder zijn dan"
+				},
+				"fields": {
+					"description": "Omschrijving",
+					"end_date": "Einddatum",
+					"estimate_hours": "Geschatte uren",
+					"name": "Naam",
+					"responsible": "verantwoordelijk",
+					"start_date": "Begin datum",
+					"status": "staat"
+				},
+				"placeholders": {
+					"placeholder1": "Voer Project Sprint in ",
+					"placeholder2": "-- Selecteer gebruiker --",
+					"placeholder3": "Selecteer Startdatum",
+					"placeholder4": "Selecteer Einddatum",
+					"placeholder5": "- Selecteer Status -",
+					"placeholder6": "Voer omschrijving in",
+					"placeholder7": "Voer Project in "
+				}
+			},
+			"messages": {
+				"create": " succesvol gemaakt.",
+				"released": "Taak succesvol vrijgegeven.",
+				"story_delete": "Sprintverhaal succesvol verwijderd.",
+				"task_delete": "Sprinttaak succesvol verwijderd.",
+				"update": " succesvol geupdatet."
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Open"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Bezig"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Gesloten"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Open"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "In de wacht"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Gesloten"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "Vrijgelaten"
+				}
+			],
+			"title": "Sprinttaak",
+			"title1": "Maak Sprint",
+			"title2": "Sprint bewerken",
+			"title3": "Naam",
+			"title4": "taak",
+			"title5": "Verhaal"
+		},
+		"title": "Projectplanner",
+		"title1": "Taak maken",
+		"title2": "Verhaal maken",
+		"title3": "Maak Sprint",
+		"title4": "project",
+		"title5": "Sprint"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "Vaste rente",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Uurtarief",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "Afronding met",
+			"csv_file": "Voordat u begint met het importeren van projecten, moet u ervoor zorgen dat u gebruikers en hun teams hebt geïmporteerd.",
+			"current_version": "Huidige versie",
+			"version": "Versie"
+		},
+		"columns": {
+			"actions": "acties",
+			"assigned_To": "Toegewezen aan",
+			"billing": "Billing",
+			"budget": "Begroting",
+			"client": "Cliënt",
+			"completion": "voltooiing",
+			"creator": "Schepper",
+			"duration": "Looptijd",
+			"end": "Einde",
+			"hours": "uur",
+			"id": "ID kaart",
+			"logo": "LOGO",
+			"progress": "Vooruitgang",
+			"project_name": "Naam van het project",
+			"start": "Begin",
+			"status": "staat",
+			"version": "Versie"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige projectnaam in.",
+				"message10": "Selecteer een geldige einddatum.",
+				"message11": "Geschatte uren staan alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens.",
+				"message12": "De vaste prijs moet hoger zijn dan 0.",
+				"message13": "Vaste prijs laat alleen cijfers toe.",
+				"message14": "Zet bestanden hier neer of klik om te uploaden.",
+				"message15": "Dit bestand is geen csv-bestand. Selecteer alleen csv-bestand.",
+				"message16": "Selecteer CSV-bestand om te importeren.",
+				"message2": "De projectnaam mag maximaal 255 tekens lang zijn.",
+				"message3": "Voer een unieke en geldige projectversie in.",
+				"message4": "Projectversie kan zijn als 1.0.",
+				"message6": "Selecteer een geldige status.",
+				"message8": "Voer een geldige demo-URL in.",
+				"message9": "Selecteer een geldige startdatum."
+			},
+			"fields": {
+				"actual_hours": "Werkelijke uren",
+				"assigned_To": "Toegewezen aan",
+				"assigned_group": "Toegewezen groep",
+				"billing_type": "Factureringstype",
+				"budget": "Begroting",
+				"client_name": "klantnaam",
+				"completed": "voltooid",
+				"created_by": "Gemaakt door",
+				"csv_file": "Selecteer het CSV-bestand van het project",
+				"demo_URL": "Demo-URL",
+				"description": "Omschrijving",
+				"end_date": "Einddatum",
+				"estimate_hours": "Geschatte uren",
+				"fixed_price": "Vaste prijs ($)",
+				"hourly_rate": "Uurtarief ($)",
+				"progress": "Vooruitgang",
+				"project_hours": "Automatische voortgang",
+				"project_id": "Project-ID",
+				"project_logo": "Project Logo",
+				"project_name": "Naam van het project",
+				"start_date": "Begin datum",
+				"status": "staat",
+				"version": "Versie"
+			},
+			"placeholders": {
+				"placeholder1": "Voer Projectnaam in",
+				"placeholder10": "Voer het tarief in",
+				"placeholder11": "Voer omschrijving in",
+				"placeholder2": "Voer versie in",
+				"placeholder3": "- Selecteer Client -",
+				"placeholder4": "- Selecteer Status -",
+				"placeholder5": "- Selecteer toegewezen groep -",
+				"placeholder6": "Niet-toegewezen",
+				"placeholder7": "Selecteer Startdatum",
+				"placeholder8": "Selecteer Einddatum",
+				"placeholder9": "- Selecteer factureringstype -"
+			}
+		},
+		"details": {
+			"title1": "Aangepaste velden",
+			"title2": "Omschrijving"
+		},
+		"headings": {
+			"head1": "Project Info",
+			"head2": "Projectdata",
+			"head3": "Andere informatie",
+			"head4": "Aangepaste velden",
+			"head5": "Omschrijving"
+		},
+		"inline_edit": {
+			"billing_type": "Factureringstype",
+			"budget": "Begroting",
+			"client": "Cliënt",
+			"demo_url": "Demo-URL",
+			"description": "Omschrijving",
+			"end_date": "Einddatum",
+			"estimate_hours": "Geschatte uren",
+			"notes": "aantekeningen",
+			"project_name": "Naam van het project",
+			"start_date": "Begin datum"
+		},
+		"messages": {
+			"create": "Project succesvol gemaakt.",
+			"delete": "Project succesvol verwijderd.",
+			"import": "Project succesvol geïmporteerd.",
+			"status": "Status gewijzigd.",
+			"update": "Project succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "In de wacht"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "annuleren"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "voltooid"
+			}
+		],
+		"title": "Projecten",
+		"title1": "Maak een project",
+		"title2": "Bewerk project",
+		"title3": "Project importeren"
+	},
+	"providers": {
+		"columns": {
+			"actions": "acties",
+			"color": "Kleur",
+			"email": "E-mail",
+			"firstname": "Voornaam",
+			"lastname": "Achternaam"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige voornaam in.",
+				"message2": "De voornaam mag maximaal 50 tekens lang zijn.",
+				"message3": "Geef alstublieft een geldige achternaam.",
+				"message4": "De achternaam mag maximaal 50 tekens bevatten.",
+				"message5": "Gelieve een geldig e-mailadres in te vullen.",
+				"message6": "E-mailadres moet een geldig e-mailadres zijn.",
+				"message7": "Selecteer een geldige kleur."
+			},
+			"fields": {
+				"color": "Kleur",
+				"email": "E-mail",
+				"first_name": "Voornaam",
+				"last_name": "Achternaam"
+			},
+			"placeholders": {
+				"placeholder1": "Vul voornaam in",
+				"placeholder2": "Voer achternaam in",
+				"placeholder3": "Voer email in"
+			}
+		},
+		"messages": {
+			"create": "Provider succesvol aangemaakt.",
+			"delete": "Provider succesvol verwijderd.",
+			"edit": "Provider succesvol bewerkt."
+		},
+		"title": "Aanbieders"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "Vul alstublieft een geldige gebruikersnaam in.",
+				"message10": "Wachtwoord en bevestig wachtwoord komen niet overeen.",
+				"message2": "De gebruikersnaam kan minimaal 3 tot maximaal 30 tekens lang zijn zonder spaties.",
+				"message3": "Voer een geldige voornaam in.",
+				"message4": "Geef alstublieft een geldige achternaam.",
+				"message5": "Gelieve een geldig e-mailadres in te vullen.",
+				"message6": "E-mailadres moet een geldig e-mailadres zijn.",
+				"message7": "Vul alstublieft een geldig wachtwoord in.",
+				"message8": "Wachtwoord kan minimaal 3 tot maximaal 30 tekens lang zijn.",
+				"message9": "Voer een geldig bevestigingswachtwoord in."
+			},
+			"placeholders": {
+				"placeholder1": "Vul je gebruikersnaam in",
+				"placeholder2": "Vul voornaam in",
+				"placeholder3": "Voer achternaam in",
+				"placeholder4": "Voer email in",
+				"placeholder5": "Voer wachtwoord in",
+				"placeholder6": "Voer Wachtwoord bevestigen in"
+			}
+		},
+		"messages": {
+			"success": "U bent succesvol geregistreerd."
+		},
+		"title": "REGISTREREN",
+		"title1": "Heb je al een account?"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "defect",
+			"incident_report": "Incident",
+			"project_report": "project",
+			"task_report": "taak"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Vul alstublieft een geldig wachtwoord in.",
+				"message2": "Wachtwoord kan minimaal 3 tot maximaal 30 tekens lang zijn.",
+				"message3": "Voer een geldig bevestigingswachtwoord in.",
+				"message4": "Wachtwoord en bevestig wachtwoord komen niet overeen.",
+				"message5": "Geef een geldig e-mailadres of token op."
+			},
+			"placeholders": {
+				"placeholder1": "Voer wachtwoord in",
+				"placeholder2": "Voer Wachtwoord bevestigen in"
+			}
+		},
+		"messages": {
+			"success": "Wachtwoord opnieuw ingesteld."
+		},
+		"title": "Reset wachtwoord"
+	},
+	"roles": {
+		"columns": {
+			"actions": "acties",
+			"description": "Omschrijving",
+			"role_name": "rol naam",
+			"role_slug": "Rol Slug"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige rolnaam in.",
+				"message2": "De rolnaam mag maximaal 50 tekens lang zijn.",
+				"message3": "Rolslak kan maximaal 50 tekens lang zijn.",
+				"message4": "Rolslak kan alleen letters zijn, onderstreping.",
+				"message5": "Voer een geldige rolslak in."
+			},
+			"fields": {
+				"description": "Omschrijving",
+				"role_name": "rol naam",
+				"role_slug": "Rol Slug"
+			},
+			"placeholders": {
+				"placeholder1": "Voer rolnaam in",
+				"placeholder2": "Voer Role Slug in"
+			}
+		},
+		"inline_edit": {
+			"description": "Omschrijving",
+			"role_name": "rol naam"
+		},
+		"messages": {
+			"create": "Rol succesvol aangemaakt.",
+			"delete": "Rol succesvol verwijderd.",
+			"update": "Rol succesvol bijgewerkt."
+		},
+		"title": "Rollen"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldige bedrijfsnaam in.",
+					"message10": "De postcode kan maximaal 10 cijfers bevatten.",
+					"message11": "Voer een geldig bedrijfsadres in.",
+					"message2": "Voer een geldige bedrijfsnaam in.",
+					"message3": "Voer een geldige korte bedrijfsnaam in.",
+					"message4": "De korte naam van het bedrijf mag maximaal 10 tekens lang zijn.",
+					"message5": "Voer een geldig bedrijfse-mailadres in.",
+					"message6": "E-mail moet een geldig e-mailadres zijn.",
+					"message7": "Bedrijfstelefoon moet een geldig telefoonnummerformaat hebben.",
+					"message8": "Bedrijfswebsite moet een geldige URL zijn.",
+					"message9": "Geef alstublieft een geldige postcode op."
+				},
+				"fields": {
+					"city": "stad",
+					"company_address": "bedrijfsadres",
+					"company_country": "Land van bedrijf",
+					"company_email": "Bedrijf email",
+					"company_name": "Bedrijfsnaam",
+					"company_phone": "Bedrijfstelefoon",
+					"company_website": "Bedrijfswebsite",
+					"company_zipcode": "Postcode",
+					"contact_person": "Contactpersoon",
+					"legal_name": "Legale naam",
+					"short_name": "Korte naam"
+				},
+				"placeholders": {
+					"placeholder1": "Voer bedrijfsnaam in",
+					"placeholder10": "Contactpersoon invoeren",
+					"placeholder11": "Voer het bedrijfsadres in",
+					"placeholder2": "Voer wettelijke naam in",
+					"placeholder3": "Voer korte naam in",
+					"placeholder4": "Voer het e-mailadres van het bedrijf in",
+					"placeholder5": "Voer de bedrijfstelefoon in",
+					"placeholder6": "Ga naar de bedrijfswebsite",
+					"placeholder7": "-- Selecteer land --",
+					"placeholder8": "Voer stad in",
+					"placeholder9": "Vul de zip code in"
+				}
+			},
+			"title": "Bedrijfsgegevens"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "Actieve cron baan",
+					"automatic_backup": "Automatische back-updatabase",
+					"daily_report_emails": "Dagelijkse rapport-e-mails",
+					"last_cronjob_run": "Laatste cron baan-run"
+				},
+				"messages": {
+					"message1": "Dit schakelt de cron baan-functie in, als deze correct is ingesteld.",
+					"message2": "Maakt elke 7 dagen een databaseback-up. Vereist dat cron baan wordt geactiveerd!"
+				},
+				"placeholders": {
+					"placeholder1": "Voer e-mails in"
+				}
+			},
+			"title": "cron baan"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "acties",
+				"custom_field_for": "Aangepast veld voor",
+				"label": "Label",
+				"status": "staat",
+				"type": "Type",
+				"value": "waarde"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Selecteer een geldig aangepast veldformulier.",
+					"message2": "Voer een geldig veldlabel in.",
+					"message3": "Voer een geldige helptekst in.",
+					"message4": "Selecteer een geldig veldtype.",
+					"message5": "Voer een geldig label in.",
+					"message6": "Vul alstublieft een geldige waarde in."
+				},
+				"fields": {
+					"custom_field_for": "Aangepast veld voor",
+					"field_label": "veld Label",
+					"field_type": "Veld soort",
+					"help_text": "hulp tekst",
+					"is_required_field": "Is verplicht veld",
+					"show_on_detail": "Weergeven op detailpagina"
+				},
+				"placeholders": {
+					"placeholder1": "- Selecteer aangepast veldformulier -",
+					"placeholder2": "Voer veldlabel in",
+					"placeholder3": "Voer Help-tekst in",
+					"placeholder4": "- Selecteer veldtype -"
+				}
+			},
+			"headings": {
+				"head1": "Voer label en waarde in voor vervolgkeuzelijst."
+			},
+			"messages": {
+				"create": "Aangepast veld is gemaakt.",
+				"delete": "Aangepast veld succesvol verwijderd.",
+				"status": "Status gewijzigd.",
+				"update": "Aangepast veld succesvol bijgewerkt."
+			},
+			"title": "Aangepaste velden",
+			"title1": "aangepast veld"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "Instellingen"
+			},
+			"title": "Dashboard",
+			"title1": "Mededelingen",
+			"title10": "schattingen",
+			"title11": "Facturen",
+			"title12": "betalingen",
+			"title13": "Bladeren",
+			"title14": "Teams",
+			"title15": "gebruikers",
+			"title16": "cliënten",
+			"title17": "artikelen",
+			"title18": "Projecten Status",
+			"title19": "Takenstatus",
+			"title2": "Recente activiteiten",
+			"title20": "Maandelijks rapport",
+			"title21": "WIDGETS",
+			"title22": "Grafieken",
+			"title23": "lijsten",
+			"title3": "ToDos-lijst",
+			"title4": "Vergaderingen",
+			"title5": "Projecten",
+			"title6": "Taken",
+			"title7": "Gebreken",
+			"title8": "Incidenten",
+			"title9": "Verschuldigde facturen"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "acties",
+				"date": "Datum",
+				"file_name": "Bestandsnaam"
+			},
+			"messages": {
+				"create": "Databaseback-up succesvol gemaakt.",
+				"delete": "Databaseback-up succesvol verwijderd.",
+				"restore": "Database succesvol hersteld."
+			},
+			"title": "Database back-ups",
+			"title1": "Database back-up",
+			"title2": "backup"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "Kennisgeving"
+			},
+			"title": "E-mail notificaties",
+			"title1": "Aankondigingse-mail"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldig bedrijfse-mailadres in.",
+					"message2": "E-mail moet een geldig e-mailadres zijn.",
+					"message3": "Selecteer een geldig e-mailprotocol.",
+					"message4": "Voer een geldige SMTP-host in.",
+					"message5": "Voer een geldige SMTP-gebruiker in.",
+					"message6": "SMTP-gebruiker moet een geldig e-mailadres zijn.",
+					"message7": "Voer een geldig SMTP-wachtwoord in.",
+					"message8": "Voer een geldige SMTP-poort in."
+				},
+				"fields": {
+					"company_email": "Bedrijf email",
+					"email_encryption": "E-mailversleuteling",
+					"email_protocol": "E-mailprotocol",
+					"mailgun_domain": "Mailgun-domein",
+					"mailgun_secret": "Mailgun Secret",
+					"mandrill_secret": "Mandrill Secret",
+					"smtp_host": "SMTP-host",
+					"smtp_password": "SMTP-wachtwoord",
+					"smtp_port": "SMTP-poort",
+					"smtp_user": "SMTP-gebruiker",
+					"sparkpost_secret": "Sparkpost Secret"
+				},
+				"placeholders": {
+					"placeholder1": "Voer het e-mailadres van het bedrijf in",
+					"placeholder2": "- Selecteer Email Protocol -",
+					"placeholder3": "Voer wachtwoord in",
+					"placeholder4": "- Selecteer E-mailversleuteling -",
+					"placeholder5": "Voer Sparkpost Secret in",
+					"placeholder6": "Voer Mailgun Domain in",
+					"placeholder7": "Voer Mailgun Secret in",
+					"placeholder8": "Voer Mandrill Secret in"
+				}
+			},
+			"title": "E-mail",
+			"title1": "E-mail verzonden op "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "Lichaam",
+					"subject": "Onderwerpen"
+				},
+				"placeholders": {
+					"placeholder1": "- Selecteer E-mailgroep -",
+					"placeholder2": "Voer onderwerp in"
+				}
+			},
+			"messages": {
+				"update": "E-mailsjabloon succesvol bijgewerkt."
+			},
+			"title": "E-mailsjablonen"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldig voorvoegsel voor de schatting in.",
+					"message2": "Het voorvoegsel voor een schatting mag maximaal 10 tekens lang zijn.",
+					"message3": "Voer een geldige inleverdatum in na.",
+					"message4": "Zet bestanden hier neer of klik om te uploaden."
+				},
+				"fields": {
+					"auto_remind": "Herinnering automatisch verzenden?",
+					"auto_remind_before": "Herinnering verzenden vóór (dagen)",
+					"client_note": "Opmerking van de klant",
+					"due_after": "Vervaldatum (dagen)",
+					"estimate_logo": "Schatting Logo",
+					"estimate_prefix": "Voorvoegsel voor schatting",
+					"terms_conditions": "algemene voorwaarden"
+				},
+				"placeholders": {
+					"placeholder1": "Voer het voorvoegsel voor de schatting in",
+					"placeholder2": "Voer Vervalt na in",
+					"placeholder3": "Voer Client Note in",
+					"placeholder4": "Voer de algemene voorwaarden in",
+					"placeholder5": "Voer Herinnering voor dagen in"
+				}
+			},
+			"title": "Schatting"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldig factuurvoorvoegsel in.",
+					"message2": "Factuurvoorvoegsel mag maximaal 10 tekens lang zijn.",
+					"message3": "Voer een geldige inleverdatum in na.",
+					"message4": "Zet bestanden hier neer of klik om te uploaden."
+				},
+				"fields": {
+					"auto_remind": "Herinnering automatisch verzenden?",
+					"auto_remind_after": "Herinnering verzenden na (dagen) Ex. 1,3",
+					"client_note": "Opmerking van de klant",
+					"due_after": "Vervaldatum (dagen)",
+					"gst_number": "GST-nummer",
+					"invoice_logo": "Factuur Logo",
+					"invoice_prefix": "Voorvoegsel factuur",
+					"show_gst_number": "GST-nummer op factuur weergeven?",
+					"terms_conditions": "algemene voorwaarden"
+				},
+				"placeholders": {
+					"placeholder1": "Voer het factuurnummer in",
+					"placeholder2": "Voer Vervalt na in",
+					"placeholder3": "Voer Client Note in",
+					"placeholder4": "Voer de algemene voorwaarden in",
+					"placeholder5": "Voer Herinnering na dagen in",
+					"placeholder6": "Voer het GST-nummer in"
+				}
+			},
+			"title": "Factuur"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "Menu succesvol bijgewerkt."
+			},
+			"title": "Menu Toewijzing",
+			"title1": "Alles uitvouwen",
+			"title2": "Alles inklappen"
+		},
+		"messages": {
+			"update": "Instelling succesvol bijgewerkt."
+		},
+		"payment_gateway_settings": {
+			"title": "Betalingsgateway"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldige PayPal-clientID in."
+				},
+				"fields": {
+					"paypal_checkout_client_id": "PayPal-klant-ID",
+					"paypal_checkout_label": "Paypal-label",
+					"paypal_checkout_status": "staat"
+				},
+				"placeholders": {
+					"placeholder1": "Voer het Paypal-label in",
+					"placeholder2": "Voer Paypal Client Id in"
+				}
+			},
+			"title": "Paypal"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldige Slack-client-ID in.",
+					"message2": "Voer een geldig slack-clientgeheim in.",
+					"message3": "Voer een geldige slappe omleidings-URL in."
+				},
+				"fields": {
+					"slack_client_id": "Slack-client-id",
+					"slack_client_secret": "Slack Client-geheim",
+					"slack_redirect_url": "Slack-omleidings-URL",
+					"slack_status": "Slappe status"
+				},
+				"placeholders": {
+					"placeholder1": "Voer Slack Client-ID in",
+					"placeholder2": "Voer Slack Client Secret in",
+					"placeholder3": "Voer Slack Redirect URL in"
+				}
+			},
+			"title": "Slap"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Voer een geldige stripe api-sleutel in.",
+					"message2": "Voer een geldig stripe api-geheim in."
+				},
+				"fields": {
+					"stripe_api_key": "Stripe API-sleutel",
+					"stripe_label": "Streep label",
+					"stripe_secret_key": "Streep geheime sleutel",
+					"stripe_status": "staat"
+				},
+				"placeholders": {
+					"placeholder1": "Voer Stripe Label in",
+					"placeholder2": "Voer Stripe API Key in",
+					"placeholder3": "Voer Stripe Secret Key in"
+				}
+			},
+			"title": "streep",
+			"title1": "Betalen"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Geef een geldige limiet op voor paginering van tabellen.",
+					"message2": "Selecteer een geldige datumnotatie.",
+					"message3": "Selecteer een geldig tijdformaat.",
+					"message4": "Selecteer een geldige valuta.",
+					"message5": "Selecteer een geldige standaardtaal."
+				},
+				"fields": {
+					"allowed_for_registration": "Toegestaan voor registratie?",
+					"date_format": "Datumnotatie",
+					"default_currency": "Standaard valuta",
+					"default_language": "Standaard taal",
+					"default_locale": "Standaardlocale",
+					"tables_pagination_limit": "Tabellen Paginagelimiet",
+					"time_format": "Tijd formaat",
+					"timezone": "Tijdzone"
+				},
+				"placeholders": {
+					"placeholder1": "- Selecteer taal -",
+					"placeholder2": "- Selecteer landinstelling -",
+					"placeholder3": "- Selecteer Tijdzone -",
+					"placeholder4": "Voer tabellen Paginagelimiet in",
+					"placeholder5": "- Selecteer datumnotatie -",
+					"placeholder6": "- Selecteer Tijdformaat -",
+					"placeholder7": "- Selecteer standaardvaluta -"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Voer een geldig gokvoorvoegsel in.",
+						"message2": "Het voorvoegsel voor de schatting kan maximaal 10 tekens bevatten.",
+						"message3": "Voer daarna een geldige vervaldatum in.",
+						"message4": "Sleep bestanden hierheen of klik om te uploaden."
+					},
+					"fields": {
+						"auto_remind": "Automatisch herinneringen verzenden?",
+						"auto_remind_before": "Herinnering verzenden (dagen geleden)",
+						"client_note": "klant nota",
+						"due_after": "Vervaldatum (dagen)",
+						"estimate_logo": "Waardeer het logo",
+						"estimate_prefix": "Waardeer het voorvoegsel",
+						"terms_conditions": "Servicevoorwaarden"
+					},
+					"placeholders": {
+						"placeholder1": "Voer het voorvoegsel Schatting in",
+						"placeholder2": "Voer vervolgens de datum in",
+						"placeholder3": "Voer een klantnota in",
+						"placeholder4": "Vul de voorwaarden in",
+						"placeholder5": "Voer Herinnering dagen geleden in"
+					}
+				},
+				"title": "Schatting"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Voer een geldig factuurvoorvoegsel in.",
+						"message2": "Het factuurvoorvoegsel mag maximaal 10 tekens lang zijn.",
+						"message3": "Voer daarna een geldige vervaldatum in.",
+						"message4": "Sleep bestanden hierheen of klik om te uploaden."
+					},
+					"fields": {
+						"auto_remind": "Automatisch herinneringen verzenden?",
+						"auto_remind_after": "Herinnering verzenden na (dagen) Voorbeeld 1.3",
+						"client_note": "klant nota",
+						"due_after": "Vervaldatum (dagen)",
+						"gst_number": "GST-nummer",
+						"invoice_logo": "Factuur Logo",
+						"invoice_prefix": "Voorvoegsel factuur",
+						"show_gst_number": "GST-nummer op factuur weergeven?",
+						"terms_conditions": "Servicevoorwaarden"
+					},
+					"placeholders": {
+						"placeholder1": "Voer het factuurvoorvoegsel in",
+						"placeholder2": "Voer vervolgens de datum in",
+						"placeholder3": "Voer een klantnota in",
+						"placeholder4": "Vul de voorwaarden in",
+						"placeholder5": "Voer herinneren op dagen in",
+						"placeholder6": "Voer het GST-nummer in"
+					}
+				},
+				"title": "Factuur"
+			},
+			"payment_gateway_settings": {
+				"title": "Betaling Gateways"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Voer een geldige PayPal-klant-ID in."
+					},
+					"fields": {
+						"paypal_checkout_client_id": "PayPal-klant-ID",
+						"paypal_checkout_label": "Paypal-label",
+						"paypal_checkout_status": "positie"
+					},
+					"placeholders": {
+						"placeholder1": "Voer het Paypal-label in",
+						"placeholder2": "Voer uw PayPal-klant-ID in"
+					}
+				},
+				"title": "Paypal"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Voer een geldige Slack-client-ID in.",
+						"message2": "Voer een geldig client geheim wachtwoord in.",
+						"message3": "Voer een geldige gratis omleidings-URL in."
+					},
+					"fields": {
+						"slack_client_id": "Slack-client-id",
+						"slack_client_secret": "Het geheim van de cliënt wordt openbaar gemaakt",
+						"slack_redirect_url": "Slack-omleidings-URL",
+						"slack_status": "Goedkeuringsstatus"
+					},
+					"placeholders": {
+						"placeholder1": "Voer de Slack-client-ID in",
+						"placeholder2": "Voer het geheime wachtwoord van de klant in",
+						"placeholder3": "Voer de Slack Redirect-URL in"
+					}
+				},
+				"title": "Slap"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Voer een geldige API-sleutel voor de balk in."
+					},
+					"fields": {
+						"stripe_api_key": "Stripe API-sleutel",
+						"stripe_label": "Stripe label",
+						"stripe_status": "positie"
+					},
+					"placeholders": {
+						"placeholder1": "Voer een bannerlabel in",
+						"placeholder2": "Voer de Stripe API-sleutel in"
+					}
+				},
+				"title": "Strepen"
+			},
+			"title": "Systeem"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "koper",
+					"purchase_key": "Aankoopsleutel",
+					"url": "url"
+				},
+				"placeholders": {
+					"placeholder1": "Voer de productaankoopcode in",
+					"placeholder2": "Voer de productinkopercode in"
+				}
+			},
+			"title": "Systeem update"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zet bestanden hier neer of klik om te uploaden."
+				},
+				"fields": {
+					"compnay_logo": "Bedrijfslogo",
+					"compnay_sidebar_logo": "Bedrijf zijbalk Logo",
+					"login_background": "Login achtergrond",
+					"sidebar_background_images": "Zijbalk achtergrondafbeeldingen"
+				}
+			},
+			"title": "Thema"
+		},
+		"title": "Instellingen",
+		"translations": {
+			"columns": {
+				"actions": "acties",
+				"icon": "Icoon",
+				"language": "Taal",
+				"status": "staat"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Selecteer een geldige taal.",
+					"message2": "Selecteer een geldig pictogram.",
+					"message3": "Zet bestanden hier neer of klik om te uploaden."
+				},
+				"fields": {
+					"icon": "Icoon",
+					"language": "Taal"
+				},
+				"placeholders": {
+					"placeholder1": "- Selecteer taal -"
+				}
+			},
+			"messages": {
+				"create": "Vertaling met succes gemaakt.",
+				"delete": "Vertaling succesvol verwijderd.",
+				"status": "Status gewijzigd.",
+				"update": "Vertaling succesvol bijgewerkt."
+			},
+			"title": "vertaalwerk",
+			"title1": "Vertaling"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} is verplicht.",
+				"message2": "{{elementFor}} sta alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens.",
+				"message3": "Voer een geldige {{elementFor}}in.",
+				"message4": "{{elementFor}} kan minimaal {{minLength}} tekens lang zijn."
+			},
+			"placeholders": {
+				"placeholder1": "Voer {{elementFor}}in",
+				"placeholder2": "- Selecteer {{elementFor}} -",
+				"placeholder3": "Selecteer {{elementFor}}"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "Voer een geldige {{custom_field}} in.",
+				"message2": "Selecteer een geldige {{custom_field}}."
+			},
+			"placeholders": {
+				"placeholder1": "Voer {{custom_field}} in",
+				"placeholder2": "- Selecteer {{custom_field}} -"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "To Dos",
+			"head2": "Bezig",
+			"head3": "voltooid"
+		},
+		"title": "Taak Kanban"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "Afronding met",
+			"csv_file": "Voordat u begint met het importeren van projecten, moet u ervoor zorgen dat u gebruikers en hun teams hebt geïmporteerd."
+		},
+		"columns": {
+			"actions": "acties",
+			"actual_end": "Werkelijk einde",
+			"actual_start": "Werkelijke start",
+			"assigned": "toegewezen",
+			"creator": "Schepper",
+			"end": "Einde",
+			"end_date": "Einddatum",
+			"hours": "uur",
+			"id": "ID kaart",
+			"planned_end": "Gepland einde",
+			"planned_start": "Geplande start",
+			"priority": "Prioriteit",
+			"progress": "Vooruitgang",
+			"project": "project",
+			"project_version": "Projectversie",
+			"start": "Begin",
+			"start_date": "Begin datum",
+			"status": "staat",
+			"task_ID": "Taak-ID",
+			"task_name": "Opdrachtnaam"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige taaknaam in.",
+				"message11": "Selecteer een geldige taakstatus.",
+				"message12": "Selecteer een geldige taakprioriteit.",
+				"message13": "Geschatte uren staan alleen cijfers toe, 2 cijfers na dubbele punt (minder dan 60) zonder speciale tekens.",
+				"message14": "De geschatte uren moeten minder zijn dan",
+				"message15": "Selecteer CSV-bestand om te importeren.",
+				"message2": "Taaknaam mag maximaal 255 tekens lang zijn.",
+				"message3": "Voer een unieke en geldige taak gegenereerde ID in.",
+				"message4": "Selecteer een geldige geplande startdatum.",
+				"message5": "Selecteer een geldige geplande einddatum.",
+				"message6": "Selecteer een geldige startdatum.",
+				"message7": "Selecteer een geldige einddatum.",
+				"message8": "Selecteer een geldige projectnaam."
+			},
+			"fields": {
+				"actual_enddate": "Einddatum",
+				"actual_hours": "Werkelijke uren",
+				"actual_startdate": "Startdatum",
+				"assigned_To": "Toegewezen aan",
+				"completed": "voltooid",
+				"created_by": "Gemaakt door",
+				"csv_file": "Selecteer Taak CSV-bestand",
+				"description": "Omschrijving",
+				"estimate_hours": "Geschatte uren",
+				"parent_taskID": "Oudertaak-ID",
+				"plan_enddate": "Einddatum van plan",
+				"plan_startdate": "Startdatum plan",
+				"priority": "Prioriteit",
+				"progress": "Vooruitgang",
+				"project_name": "Naam van het project",
+				"project_version": "Projectversie",
+				"status": "staat",
+				"subtask_Id": "Subtaak-ID",
+				"task_ID": "Taak-ID",
+				"task_name": "Opdrachtnaam"
+			},
+			"placeholders": {
+				"placeholder1": "Voer taaknaam in",
+				"placeholder10": "- Selecteer prioriteit -",
+				"placeholder2": "Selecteer Geplande startdatum",
+				"placeholder3": "Selecteer Geplande einddatum",
+				"placeholder4": "Selecteer Startdatum",
+				"placeholder5": "Selecteer Einddatum",
+				"placeholder6": "- Selecteer Projectnaam -",
+				"placeholder7": "- Selecteer Projectversie -",
+				"placeholder8": "- Selecteer Toewijzen aan -",
+				"placeholder9": "- Selecteer Status -"
+			}
+		},
+		"details": {
+			"title1": "Aangepaste velden",
+			"title2": "Omschrijving",
+			"title3": "Subtaak"
+		},
+		"headings": {
+			"head1": "Taakinfo",
+			"head2": "Taakdata",
+			"head3": "Vooruitgang",
+			"head4": "Project Info",
+			"head5": "VEREISTEN",
+			"head6": "Aangepaste velden",
+			"head7": "Omschrijving"
+		},
+		"inline_edit": {
+			"description": "Omschrijving",
+			"estimate_hours": "Geschatte uren",
+			"notes": "aantekeningen",
+			"task_name": "Opdrachtnaam"
+		},
+		"messages": {
+			"copy": "Taak succesvol gekopieerd.",
+			"create": "Taak met succes gemaakt.",
+			"delete": "Taak succesvol verwijderd.",
+			"import": "Taak succesvol geïmporteerd.",
+			"priority": "Prioriteit is succesvol gewijzigd.",
+			"status": "Status gewijzigd.",
+			"update": "Taak succesvol bijgewerkt."
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "Open"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"id": 3,
+				"label": "In de wacht"
+			},
+			{
+				"id": 4,
+				"label": "AAN HET WACHTEN"
+			},
+			{
+				"id": 5,
+				"label": "annuleren"
+			},
+			{
+				"id": 6,
+				"label": "voltooid"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"id": 3,
+				"label": "In de wacht"
+			},
+			{
+				"id": 5,
+				"label": "annuleren"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"id": 4,
+				"label": "AAN HET WACHTEN"
+			},
+			{
+				"id": 5,
+				"label": "annuleren"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "annuleren"
+			},
+			{
+				"id": 2,
+				"label": "Bezig"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"id": 4,
+				"label": "annuleren"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "Dringend"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "Heel hoog"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Hoog"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "Medium"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "Laag"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "In de wacht"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "AAN HET WACHTEN"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "voltooid"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "In de wacht"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "AAN HET WACHTEN"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "voltooid"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "In de wacht"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "AAN HET WACHTEN"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuleren"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "voltooid"
+			}
+		],
+		"title": "Taken",
+		"title1": "Taak maken",
+		"title2": "Subtaak maken",
+		"title3": "Taken importeren",
+		"title4": "Taak bewerken",
+		"title5": "Subtaak bewerken",
+		"title6": "Kopieer taak",
+		"tooltips": {
+			"sub_task": "Subtaak maken"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "Belastingsnaam",
+			"tax_rate": "Belastingtarief"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een unieke en geldige belastingnaam in.",
+				"message2": "Voer een geldig belastingtarief in.",
+				"message3": "Het belastingtarief moet een getal zijn."
+			},
+			"fields": {
+				"tax_name": "Belastingsnaam",
+				"tax_rate": "Belastingtarief"
+			},
+			"placeholders": {
+				"placeholder1": "Voer de belastingnaam in",
+				"placeholder2": "Voer het belastingtarief in"
+			}
+		},
+		"messages": {
+			"create": "Belasting succesvol aangemaakt.",
+			"delete": "Belasting is succesvol verwijderd.",
+			"update": "Belasting succesvol bijgewerkt."
+		},
+		"title": "Belastingen",
+		"title1": "BELASTINGTARIEVEN",
+		"title2": "Belasting!",
+		"title3": "Maak belasting",
+		"title4": "Update belasting"
+	},
+	"teams": {
+		"columns": {
+			"actions": "acties",
+			"leader": "Leider",
+			"members": "leden",
+			"team_name": "Teamnaam"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige teamnaam in.",
+				"message2": "De teamnaam mag maximaal 30 tekens lang zijn.",
+				"message3": "Selecteer een geldige teamleden.",
+				"message4": "Selecteer een geldige teamleider.",
+				"message5": "Selecteer CSV-bestand om te importeren.",
+				"message6": "Dit bestand is geen csv-bestand. Selecteer alleen csv-bestand."
+			},
+			"fields": {
+				"actions": "acties",
+				"csv_file": "Selecteer het CSV-bestand van het team",
+				"description": "Omschrijving",
+				"leader": "Leider",
+				"members": "leden",
+				"team_name": "Teamnaam"
+			},
+			"placeholders": {
+				"placeholder1": "Voer Teamnaam in",
+				"placeholder2": "- Selecteer Teamleden -",
+				"placeholder3": "- Selecteer Teamleider -"
+			}
+		},
+		"inline_edit": {
+			"team_name": "Teamnaam"
+		},
+		"labels": {
+			"label1": "Voordat u begint met het importeren van teams, moet u ervoor zorgen dat u gebruikers heeft geïmporteerd."
+		},
+		"messages": {
+			"create": "Team succesvol aangemaakt.",
+			"delete": "Team succesvol verwijderd.",
+			"import": "Team is geïmporteerd.",
+			"update": "Team succesvol bijgewerkt."
+		},
+		"title": "Teams",
+		"title1": "Teams importeren",
+		"title2": "Teamleider",
+		"title3": "Teambesturen"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "Kleuropties zijbalk",
+			"head10": "Letterkleuren zijbalk",
+			"head11": "Opties voor zijbalklay-out",
+			"head12": "configuraties",
+			"head13": "Samengevouwen menu",
+			"head14": "Breedte zijbalk",
+			"head15": "Verloop zijbalk",
+			"head2": "Kleurenpaletten",
+			"head3": "Kleuren opties",
+			"head4": "Achtergrondkleuren zijbalk",
+			"head5": "Zijbalk achtergrondafbeeldingen",
+			"head6": "Achtergrond afbeelding",
+			"head7": "Achtergrondkleuren",
+			"head8": "Achtergrondafbeeldingen",
+			"head9": "Achtergrondkleuren zijbalk"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "Vooraf gebouwde kleuren"
+			},
+			{
+				"key": "custom-colors",
+				"value": "Aangepaste kleuren"
+			},
+			{
+				"key": "Aangepaste kleuren",
+				"value": "Aangepaste kleuren"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "- Selecteer lay-out -",
+			"placeholder2": "- Selecteer breedte zijbalk -"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "Klein"
+			},
+			{
+				"key": "medium",
+				"value": "Medium"
+			},
+			{
+				"key": "large",
+				"value": "Groot"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "acties",
+			"end_time": "Eindtijd",
+			"entry": "binnenkomst",
+			"note": "Notitie",
+			"photo": "Foto",
+			"project_name": "project",
+			"start_time": "Starttijd",
+			"time_h": "uur",
+			"user": "gebruiker"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Selecteer een geldige starttijd.",
+				"message2": "Selecteer een geldige eindtijd.",
+				"message3": "Selecteer de juiste datum en tijd voor de urenstaat.",
+				"message4": "Voer een geldige notitie in."
+			},
+			"fields": {
+				"end_time": "Eindtijd",
+				"note": "Notitie",
+				"start_time": "Starttijd"
+			},
+			"placeholders": {
+				"placeholder1": "Selecteer Starttijd",
+				"placeholder2": "Selecteer Eindtijd",
+				"placeholder3": "Notitie invoeren"
+			},
+			"title1": "Maak een urenstaat",
+			"title2": "Urenstaat bewerken"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "Selecteer een geldig bereik.",
+				"message2": "Selecteer een geldige periode van.",
+				"message3": "Selecteer een geldige periode voor."
+			},
+			"placeholders": {
+				"placeholder1": "- Selecteer Project -",
+				"placeholder2": "- Selecteer Client -",
+				"placeholder3": "Selecteer Periode van",
+				"placeholder4": "Selecteer Periode tot",
+				"placeholder5": "-- Selecteer gebruiker --"
+			}
+		},
+		"inline_edit": {
+			"note": "Notitie"
+		},
+		"messages": {
+			"create": "Urenstaat succesvol aangemaakt.",
+			"delete": "Urenstaat succesvol verwijderd.",
+			"update": "Urenstaat succesvol bijgewerkt."
+		},
+		"range": {
+			"last_month": "Vorige maand",
+			"last_week": "Vorige week",
+			"period": "Periode",
+			"this_month": "Deze maand",
+			"this_week": "deze week",
+			"today": "Vandaag"
+		},
+		"title": "Rooster",
+		"title1": "Mijn rooster",
+		"title2": "Alle urenstaat"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige beschrijving in.",
+				"message2": "De beschrijving mag maximaal 5 tekens lang zijn.",
+				"message3": "De beschrijving mag maximaal 255 tekens bevatten.",
+				"message4": "Selecteer een geldige todo-status.",
+				"message5": "Selecteer een geldige vervaldatum."
+			},
+			"fields": {
+				"description": "Omschrijving",
+				"due_date": "Opleveringsdatum",
+				"status": "staat"
+			},
+			"placeholders": {
+				"placeholder1": "Voer omschrijving in",
+				"placeholder2": "- Selecteer Status -",
+				"placeholder3": "Selecteer Vervaldatum"
+			}
+		},
+		"inline_edit": {
+			"description": "Omschrijving",
+			"due_date": "Opleveringsdatum"
+		},
+		"messages": {
+			"create": "Todo is met succes gemaakt.",
+			"delete": "Todo is succesvol verwijderd.",
+			"status": "Status succesvol bijgewerkt.",
+			"update": "Todo succesvol bijgewerkt."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "open"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "Completed"
+			}
+		],
+		"title": "Todos"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "Toestemmingsmodal toewijzen"
+		},
+		"columns": {
+			"actions": "acties",
+			"departments_roles": "Afdelingen / Rollen",
+			"first_name": "Voornaam",
+			"last_name": "Achternaam",
+			"photo": "Foto",
+			"status": "staat",
+			"username": "Gebruikersnaam"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Voer een geldige voornaam in.",
+				"message10": "Wachtwoord en bevestig wachtwoord komen niet overeen.",
+				"message11": "Zet bestanden hier neer of klik om te uploaden.",
+				"message12": "Selecteer een geldige afdeling met rollen.",
+				"message13": "Selecteer een geldige gebruikersmachtiging.",
+				"message14": "Voer een geldige door de gebruiker gegenereerde ID in.",
+				"message15": "Voer een geldig dienstverband in.",
+				"message16": "Vul alstublieft een geldige gebruikersnaam in.",
+				"message17": "De gebruikersnaam kan minimaal 3 tot maximaal 30 tekens lang zijn zonder spaties.",
+				"message18": "Voer een geldig mobiel nummer in.",
+				"message19": "Voer alstublieft een geldig telefoonnummer in.",
+				"message2": "De voornaam mag maximaal 20 tekens lang zijn.",
+				"message20": "Selecteer een geldige gebruikersmachtiging.",
+				"message21": "Selecteer CSV-bestand om te importeren.",
+				"message22": "Dit bestand is geen csv-bestand. Selecteer alleen csv-bestand.",
+				"message3": "Geef alstublieft een geldige achternaam.",
+				"message4": "De achternaam mag maximaal 20 tekens lang zijn.",
+				"message5": "Gelieve een geldig e-mailadres in te vullen.",
+				"message6": "E-mail kan een geldig e-mailadres zijn.",
+				"message7": "Vul alstublieft een geldig wachtwoord in.",
+				"message8": "Wachtwoord kan minimaal 3 tot maximaal 30 tekens lang zijn.",
+				"message9": "Voer een geldig bevestigingswachtwoord in."
+			},
+			"fields": {
+				"address": "Adres",
+				"assigned_to": "Toegewezen aan",
+				"confirm_password": "Bevestig wachtwoord",
+				"country": "land",
+				"csv_file": "Selecteer het CSV-bestand van de gebruiker",
+				"customize_permission": "Toestemming aanpassen",
+				"departments_roles": "Afdelingen / Rollen",
+				"dob": "Geboortedatum",
+				"email": "E-mail",
+				"employment_ID": "Werkgelegenheid-ID",
+				"everyone": "Iedereen",
+				"father_name": "Naam van de vader",
+				"first_name": "Voornaam",
+				"gender": "Geslacht",
+				"is_departmenthead": "Is hij / zij afdelingshoofd?",
+				"joining_date": "Lid worden van datum",
+				"language": "Taal",
+				"last_name": "Achternaam",
+				"marital_status": "Burgerlijke staat",
+				"mobile": "mobiel",
+				"mother_name": "Moeders naam",
+				"new_password": "nieuw paswoord",
+				"old_password": "Oud wachtwoord",
+				"password": "Wachtwoord",
+				"phone": "Telefoon",
+				"primary_manager": "Primaire manager",
+				"profile_photo": "Profielfoto",
+				"secondary_manager": "Secundaire manager",
+				"select_users": "Selecteer Gebruikers",
+				"skype": "Skype",
+				"userid": "Gebruikersnaam",
+				"username": "Gebruikersnaam"
+			},
+			"placeholders": {
+				"placeholder1": "Vul voornaam in",
+				"placeholder10": "- Selecteer taal -",
+				"placeholder11": "Voer oud wachtwoord in",
+				"placeholder12": "-- Selecteer Primaire manager --",
+				"placeholder13": "-- Selecteer Secondary Manager --",
+				"placeholder14": "Vul adres in",
+				"placeholder2": "Voer achternaam in",
+				"placeholder3": "Voer email in",
+				"placeholder4": "Voer wachtwoord in",
+				"placeholder5": "Voer Wachtwoord bevestigen in",
+				"placeholder6": "- Selecteer afdelingen / rollen -",
+				"placeholder7": "Vul je gebruikersnaam in",
+				"placeholder8": "Voer Skype in",
+				"placeholder9": "-- Selecteer land --"
+			}
+		},
+		"gender_options": [
+			{
+				"label": "Mannetje",
+				"value": "male"
+			},
+			{
+				"label": "Vrouw",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "persoonlijke informatie",
+			"head2": "VEREISTEN",
+			"head3": "Over de gebruiker",
+			"head4": "Contact informatie"
+		},
+		"inline_edit": {
+			"address": "Adres",
+			"country": "land",
+			"dob": "DOB",
+			"father_name": "Vader naam",
+			"first_name": "Voornaam",
+			"gender": "Geslacht",
+			"joining_date": "Lid worden van datum",
+			"language": "Taal",
+			"last_name": "Achternaam",
+			"maritial_status": "Burgerlijke staat",
+			"mobile": "mobiel",
+			"mother_name": "Naam moeder",
+			"phone": "Telefoon",
+			"primary_manager": "Primaire manager",
+			"secondary_manager": "Secundaire manager",
+			"skype": "Skype",
+			"username": "Gebruikersnaam",
+			"state": "Staat",
+			"city": "stad",
+			"postal_code": "Postcode"
+		},
+		"marital_status": [
+			{
+				"label": "Getrouwd",
+				"value": "married"
+			},
+			{
+				"label": "Ongehuwd",
+				"value": "unmarried"
+			},
+			{
+				"label": "Weduwnaar",
+				"value": "widowed"
+			},
+			{
+				"label": "Gescheiden",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "Avatar is succesvol gewijzigd.",
+			"create": "Gebruiker is succesvol aangemaakt.",
+			"delete": "Gebruiker is succesvol verwijderd.",
+			"email_change": "Verzoek om wijziging van e-mail verzonden. Controleer je inbox en verander je e-mailadres.",
+			"import": "Gebruiker is succesvol geïmporteerd.",
+			"invite": "Uitnodiging succesvol verzonden.",
+			"password_change": "Verzoek voor wachtwoordwijziging succesvol verzonden. Controleer je inbox en verander je e-mailadres.",
+			"status": "Status gewijzigd.",
+			"update": "Gebruiker is succesvol bijgewerkt."
+		},
+		"profile": {
+			"activities": "Activiteiten",
+			"articles": "Artikelen",
+			"comments": "Comments",
+			"defect_hours": "Defecte uren",
+			"defects": "Gebreken",
+			"incident_hours": "Incidenturen",
+			"incidents": "Incidenten",
+			"leave_hours": "Verlof uren",
+			"leave_other_hours": "Verlof / andere uren",
+			"meeting_hours": "Vergaderuren",
+			"other_hours": "Andere uren",
+			"projects": "Projecten",
+			"task_hours": "Taakuren",
+			"tasks": "Taken",
+			"total_hours": "Uren in totaal",
+			"total_messages": "Totaal berichten"
+		},
+		"title": "Gebruikers",
+		"title1": "Gebruiker maken",
+		"title2": "bewerk gebruiker",
+		"title3": "Gebruikersrechten",
+		"title4": "Wijzig e-mail",
+		"title5": "Wachtwoord wijzigen",
+		"title6": "Gebruiker importeren",
+		"title7": "Verander Avatar"
+	},
+	"timer_logs": {
+		"title": "Start de timer",
+		"title1": "Stop de timer",
+		"error_messages": {
+			"message1": "Kan timer niet starten omdat deze al loopt.",
+			"message2": "Tijd moet langer zijn dan 1 minuut.",
+			"message3": "Tijd moet minder zijn dan 12 uur."
+		}
+	}
+}

@@ -1,0 +1,36 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Akses Lokasi</h4>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+
+                <l-select2 [data]="dataselectOrganisasi" formControlName="lokasi_id"
+                  [options]="{multiple:'true','closeOnSelect':'true'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

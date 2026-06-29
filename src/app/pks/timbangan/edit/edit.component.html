@@ -1,0 +1,306 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Timbangan</h4>
+              <div class="form-group label-floating">
+                <label class="control-label">Mill</label>
+                <l-select2 [data]="dataSelectMill" formControlName="mill_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.mill_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.mill_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tanggal</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Produk</label>
+                <l-select2 [data]="dataSelectItem" formControlName="item_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.item_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.item_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Tipe</label>
+                <l-select2 [data]="dataSelectTipe" formControlName="tipe" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.tipe.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tipe.errors.required && userControl.tipe.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Estate</label>
+                <l-select2 [data]="dataSelectEstate" formControlName="estate_id" [options]="{ placeholder: 'Pilih',
+                     allowClear: true,width:'90%'}">
+                </l-select2>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Rayon</label>
+                <l-select2 [data]="dataSelectRayon" formControlName="rayon_id" [options]="{ placeholder: 'Pilih',
+                     allowClear: true,width:'90%'}">
+                </l-select2>
+              </div>
+              <!-- <div class="form-group label-floating">
+                <label class="control-label">Divisi</label>
+                <l-select2 [data]="dataSelectDivisi" formControlName="divisi_id" [options]="{ placeholder: 'Pilih',
+                     allowClear: true,width:'90%'}">
+                </l-select2>
+              </div> -->
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Blok</mat-label>
+                  <input matInput formControlName="blok" type="text">
+                </mat-form-field>
+
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Supplier</label>
+                <l-select2 [data]="dataSelectSupplier" formControlName="supplier_id" [options]="{ placeholder: 'Pilih',
+                     allowClear: true,width:'90%'}">
+                </l-select2>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Transportir</label>
+                <l-select2 [data]="dataSelectTransportir" formControlName="transportir_id" [options]="{ placeholder: 'Pilih',
+                     allowClear: true,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.transportir_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.transportir_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No tiket</mat-label>
+                  <input matInput formControlName="no_tiket" required type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_tiket.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_tiket.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No SPAT</mat-label>
+                  <input matInput formControlName="no_spat" required type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_spat.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_spat.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-content">
+
+
+              <div class="form-group label-floating col-md-6">
+                <label class="control-label">Jam Masuk</label>
+                <timepicker [showMeridian]="false" formControlName="jam_masuk"></timepicker>
+                <div class="form-control-position"><i class="ft-calendar"></i></div>
+                <div *ngIf="isFormSubmitted && userControl.jam_masuk.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jam_masuk.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating col-md-6">
+                <label class="control-label">Jam Keluar</label>
+                <timepicker [showMeridian]="false" formControlName="jam_keluar"></timepicker>
+                <div class="form-control-position"><i class="ft-calendar"></i></div>
+                <div *ngIf="isFormSubmitted && userControl.jam_keluar.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jam_keluar.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="xexample-full-width col-md-6" hidden>
+                  <mat-form-field>
+                    <mat-label>Jumlah Item</mat-label>
+                    <input matInput formControlName="jumlah_item" required type="number">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.jumlah_item.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.jumlah_item.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="xexample-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Jumlah Berondolan</mat-label>
+                    <input matInput formControlName="jumlah_item" required type="number">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.jumlah_item.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.jumlah_item.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Kendaraan</mat-label>
+                  <input matInput formControlName="no_kendaraan" required type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_kendaraan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_kendaraan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama Supir</mat-label>
+                  <input matInput formControlName="nama_supir" required type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama_supir.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama_supir.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="xexample-full-width col-md-4">
+                  <mat-form-field>
+                    <mat-label>Berat Isi</mat-label>
+                    <input matInput formControlName="berat_isi" required (change)="totalKg()">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.berat_isi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.berat_isi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="xexample-full-width col-md-4">
+                  <mat-form-field>
+                    <mat-label>Berat Kosong</mat-label>
+                    <input matInput formControlName="berat_kosong" required (change)="totalKg()">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.berat_kosong.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.berat_kosong.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="xexample-full-width col-md-4">
+                  <mat-form-field>
+                    <mat-label>Berat Bersih</mat-label>
+                    <input matInput formControlName="berat_bersih" required type="number" readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.berat_bersih.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.berat_bersih.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="xexample-full-width col-md-4">
+                  <mat-form-field>
+                    <mat-label>Potongan(%)</mat-label>
+                    <input matInput formControlName="berat_potongan_persen" (change)="totalKg()">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.berat_potongan_persen.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.berat_potongan_persen.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="xexample-full-width col-md-4">
+                  <mat-form-field>
+                    <mat-label>Potongan(Kg)</mat-label>
+                    <input matInput formControlName="berat_potongan" readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.berat_potongan.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.berat_potongan.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                <div class="xexample-full-width col-md-4">
+                  <mat-form-field>
+                    <mat-label>Berat Terima</mat-label>
+                    <input matInput formControlName="berat_terima" required readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.berat_terima.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.berat_terima.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Keterangan</mat-label>
+                  <input matInput formControlName="keterangan" type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.keterangan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.keterangan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+</div>

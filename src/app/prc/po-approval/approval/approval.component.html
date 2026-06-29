@@ -1,0 +1,143 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Approval Purchase Order</h4>
+              <p class="label label-success"> {{PrcPo.no_po}}</p>
+              <p *ngIf="PrcPo.revisi_ke!=0" class="label label-warning">Revisi Ke: {{PrcPo.revisi_ke}}</p>
+              <br>
+              <br>
+              <!-- <label id="example-radio-group-label">Status</label> -->
+              <mat-radio-group formControlName="status_id" aria-labelledby="example-radio-group-label"
+                class="example-radio-group" (change)="statusChange($event)">
+                <mat-radio-button value="1">APPROVE </mat-radio-button>
+                <mat-radio-button value="0">REJECTED</mat-radio-button>
+
+              </mat-radio-group>
+              <div class="form-group label-floating" *ngIf="status_id=='1'">
+
+                <label class="control-label">Diajukan Kepada</label>
+                <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Status</mat-label>
+                  <input matInput formControlName="status" required readonly>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.status.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.status.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width" *ngIf="PrcPo.revisi_ke!=0">
+                <mat-form-field>
+                  <mat-label>Catatan Revisi Dari Procurement</mat-label>
+                  <input matInput formControlName="catatan_revisi" required readonly>
+                </mat-form-field>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Catatan Approval</mat-label>
+                  <input matInput formControlName="note_approve" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.note_approve.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.note_approve.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                <!-- ===================== PP (THREE) ===================== -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      <h4 class="panel-title">
+                        Rincian Purchase Request (PP)
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree">
+                    <div class="panel-body">
+                      <div style="display:flex; align-items:center; justify-content:center;">
+                        <iframe #if_purchase_request width="800" height="500"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ===================== PO (ONE) ===================== -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      <h4 class="panel-title">
+                        Rincian Purchase Order
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div style="display:flex; align-items:center; justify-content:center;">
+                        <iframe #if_purchase_order width="800" height="500"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ===================== QUOTATION (TWO) ===================== -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      <h4 class="panel-title">
+                        Quotation
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <div style="display:flex; align-items:center; justify-content:center;">
+                        <iframe #if_quotation width="800" height="500"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button *ngIf="status_id=='1'" type="submit" class="btn btn-fill btn-rose">Approve dan Ajukan</button>
+              <button *ngIf="status_id!='1'" type="button" class="btn btn-fill btn-danger"
+                onclick="event.preventDefault()" (click)="reject()">Reject/Tolak</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,573 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+
+
+      <div class="col-md-12">
+
+        <div class=" col-md-4 col-sm-3">
+          <!-- <select class="selectpicker" data-style="btn btn-info btn-round" data-size="7" -->
+          <select data-style="btn btn-info btn-round" data-size="7" (change)="onChangeBulan('bulan')"
+            [(ngModel)]="selectedBulan">
+            <!-- <option value="" disabled selected="selected">By User</option> -->
+            <option *ngFor="let bulan of pilihanBulan" [ngValue]="bulan">{{bulan.nama}}</option>
+          </select>
+          <select data-style="btn btn-info btn-round" data-size="7" (change)="onChangeBulan('tahun')"
+            [(ngModel)]="selectedTahun">
+            <!-- <option value="" disabled selected="selected">By User</option> -->
+            <option *ngFor="let tahun of pilihanTahun" [ngValue]="tahun">{{tahun.nama}}</option>
+          </select>
+          <!-- <l-select2 [data]="pilihanTahun"  (ngModelChange)="onChangeBulan('tahun')" [(ngModel)]="selectedTahun" [options]="{ placeholder: 'Pilih',
+          allowClear: false}">
+            </l-select2> -->
+        </div>
+
+        <div class=" col-md-4 col-sm-3">
+
+          <!-- <select class="selectpicker" data-style="btn btn-info btn-round" data-size="7" -->
+
+        </div>
+      </div>
+      <!-- <div class="col-md-12">
+        <ul class="nav nav-pills nav-pills-info">
+          <li class="active">
+            <a href="#pill1" data-toggle="tab" (click)="getDataBulanIni()">Bulan Ini</a>
+          </li>
+          <li>
+            <a href="#pill2" data-toggle="tab" (click)="getDataBulanLalu()">Bulan Lalu</a>
+          </li>
+
+        </ul>
+      </div> -->
+
+      <!-- <div class="col-md-2">
+        <h6><strong>Tangki</strong>&nbsp; ST500</h6>
+        <ngx-charts-gauge [view]="viewGauge"  [results]="single" min="0" max="5000" units="Ton"
+         >
+        </ngx-charts-gauge>
+      </div> -->
+
+      <div class="col-md-4" *ngIf="isShow('PKS_TANGKI') && tangkiChart">
+        <!-- <h4><strong>Stok Tangki</strong>&nbsp; </h4> -->
+        <div class="card card-chart">
+          <div class="col-md-12">
+            <h4><strong>Stok</strong>Tangki </h4>
+          </div>
+          <div class="card-content">
+            <ngx-gauge type="arch" [value]="tangkiChart[0]?.stok || 0" min="0" [max]="tangkiChart[0]?.kapasitas || 0"
+              thick="7" size="125" [label]="tangkiChart[0]?.nama_tanki || '-'" append="Ton" foregroundColor="#2980b9"
+              backgroundColor="#ecf0f1">
+            </ngx-gauge>
+
+            <ngx-gauge type="arch" [value]="tangkiChart[1]?.stok || 0" min="0" [max]="tangkiChart[1]?.kapasitas || 0"
+              thick="12" size="150" [label]="tangkiChart[1]?.nama_tanki || '-'" append="Ton" foregroundColor="#2ecc71"
+              backgroundColor="#ecf0f1">
+            </ngx-gauge>
+
+            <ngx-gauge type="arch" [value]="tangkiChart[2]?.stok || 0" min="0" [max]="tangkiChart[2]?.kapasitas || 0"
+              thick="12" size="150" [label]="tangkiChart[2]?.nama_tanki || '-'" append="Ton" foregroundColor="#e74c3c"
+              backgroundColor="#ecf0f1">
+            </ngx-gauge>
+
+            <ngx-gauge type="arch" [value]="tangkiChart[3]?.stok || 0" min="0" [max]="tangkiChart[3]?.kapasitas || 0"
+              thick="7" size="125" [label]="tangkiChart[3]?.nama_tanki || '-'" append="Ton" foregroundColor="#2980b9"
+              backgroundColor="#ecf0f1">
+            </ngx-gauge>
+          </div>
+
+          <!-- <p class="category">
+            <span class="text-success">
+
+            </span>Stok Tangki.
+          </p> -->
+        </div>
+
+      </div>
+      <!-- <div class="col-md-4">
+        <div class="card card-chart">
+          <div class="card-header" data-background-color="blue" data-header-animation="true">
+            <div style="height: 240px;" class="ct-chart" id="tangkiChart"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-actions">
+              <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                <i class="material-icons">build</i> Fix Header!
+              </button>
+              <button type="button" class="btn btn-info btn-simple" rel="tooltip" data-placement="bottom"
+                title="Refresh">
+                <i class="material-icons">refresh</i>
+              </button>
+
+            </div>
+                <p class="category">Data Stok Tangki (Ton)</p>
+          </div>
+
+        </div>
+      </div> -->
+      <div class="col-md-8" *ngIf="isShow('PKS_PENERIMAAN_TBS_01')">
+        <div class="card card-chart">
+          <div class="card-header" data-background-color="blue" data-header-animation="true">
+            <div style="height: 350px;" class="ct-chart" id="PenerimaanTBSHarian"></div>
+            <!-- <div style="height: 200px;width:100px">
+              <ngx-charts-line-chart [view]="view2" [scheme]="colorScheme2" [legend]="legend"
+                [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+                [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabelTbsOlah"  [results]="tbsOlah"
+                (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+              </ngx-charts-line-chart>
+            </div> -->
+          </div>
+          <div class="card-content">
+            <div class="card-actions">
+              <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                <i class="material-icons">build</i> Fix Header!
+              </button>
+              <button type="button" class="btn btn-info btn-simple" rel="tooltip" data-placement="bottom"
+                title="Refresh">
+                <i class="material-icons">refresh</i>
+              </button>
+              <!-- <button type="button" class="btn btn-default btn-simple" rel="tooltip" data-placement="bottom" title="Change Date">
+                                <i class="material-icons">edit</i>
+                            </button> -->
+            </div>
+            <!-- <h4 class="card-title">Penerimaan TBS</h4> -->
+            <p class="category">
+              <span class="text-success">
+                <!-- <i class="fa fa-long-arrow-up"></i> 55%  -->
+              </span><strong>Rekap Penerimaan TBS (Ton) .</strong>
+            </p>
+          </div>
+          <!-- <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">access_time</i> updated ..
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="row" *ngIf="pengumuman?.length != 0">
+      <div *ngFor="let p of pengumuman; index as i">
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-product">
+            <div class="card-image" data-header-animation="true">
+              <a href="#pablo">
+                <img style="height: 200px;  object-fit: cover; background-color: white;"
+                  src="../../assets/img/image_placeholder.jpg" alt="..." *ngIf="p?.foto==null">
+                <img style="height: 200px;  object-fit: cover; background-color: white;"
+                  src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{p.foto}}" *ngIf="p?.foto!=null" />
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="card-actions">
+                <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                  <i class="material-icons">build</i> Fix Header!
+                </button>
+                <button type="button" class="btn btn-info " rel="tooltip" data-placement="bottom"
+                  title="Lihat pengumuman" (click)="detailPengumuman(p.id)">Lihat Pengumuman
+                  <i class="material-icons">art_track</i>
+                </button>
+                <button class="btn btn-simple btn-linkedin " (click)="detailPengumuman(p.id)">
+                  <i class="material-icons">art_track</i> Lihat Pengumuman
+                </button>
+                <button type="button" class="btn btn-success btn-simple" rel="tooltip" data-placement="bottom" title="Edit">
+                                    <i class="material-icons">edit</i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-simple" rel="tooltip" data-placement="bottom" title="Remove">
+                                    <i class="material-icons">close</i>
+                                </button>
+              </div>
+              <h4 class="card-title">
+                <a>{{p.judul}}</a>
+              </h4>
+              <div class="card-description">
+                                {{p.konten}}
+                            </div>
+            </div>
+            <div class="card-footer">
+              <div class="price">
+                <h4>{{p.tampil_public == 0 ? 'Pengumuman' : 'Berita'}}</h4>
+              </div>
+              <div class="stats pull-right">
+                <p class="category"><i class="material-icons">name</i> {{p.nama}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- <div class="col-lg-4 col-md-6">
+                <div class="card card-product">
+                    <div class="card-image" data-header-animation="true">
+                        <a href="#pablo">
+                            <img class="img" src="../assets/img/card-3.jpeg">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-actions">
+                            <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                                <i class="material-icons">build</i> Fix Header!
+                            </button>
+                            <button type="button" class="btn btn-default btn-simple" rel="tooltip" data-placement="bottom" title="View">
+                                <i class="material-icons">art_track</i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-simple" rel="tooltip" data-placement="bottom" title="Edit">
+                                <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-simple" rel="tooltip" data-placement="bottom" title="Remove">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#pablo">Office Studio</a>
+                        </h4>
+                        <div class="card-description">
+                            The place is close to Metro Station and bus stop just 2 min by walk and near...
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price">
+                            <h4>$1.119/night</h4>
+                        </div>
+                        <div class="stats pull-right">
+                            <p class="category"><i class="material-icons">place</i> London, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-product">
+                    <div class="card-image" data-header-animation="true">
+                        <a href="#pablo">
+                            <img class="img" src="../assets/img/card-1.jpeg">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-actions">
+                            <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                                <i class="material-icons">build</i> Fix Header!
+                            </button>
+                            <button type="button" class="btn btn-default btn-simple" rel="tooltip" data-placement="bottom" title="View">
+                                <i class="material-icons">art_track</i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-simple" rel="tooltip" data-placement="bottom" title="Edit">
+                                <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-simple" rel="tooltip" data-placement="bottom" title="Remove">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                        <h4 class="card-title">
+                            <a href="#pablo">Beautiful Castle</a>
+                        </h4>
+                        <div class="card-description">
+                            The place is close to Metro Station and bus stop just 2 min by walk and near...
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="price">
+                            <h4>$459/night</h4>
+                        </div>
+                        <div class="stats pull-right">
+                            <p class="category"><i class="material-icons">place</i> Milan, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>-->
+
+
+
+    <div class="row">
+      <div class="col-md-12" *ngIf="isShow('PKS_PENERIMAAN_TBS_02')">
+        <div class="card card-chart">
+
+          <div class="card-content">
+            <h4><strong>Penerimaan TBS </strong>&nbsp; </h4>
+            <ngx-charts-line-chart [view]="view2" [scheme]="colorScheme2" [legend]="legend" [legendPosition]="legendPosition"
+              [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+              [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabelPnerimaanTbsBySupp" [timeline]="timeline" [results]="penerimaanTbsbySupp"
+              (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-line-chart>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-12" *ngIf="isShow('PKS_PRODUKSI')">
+        <div class="card card-chart">
+
+          <div class="card-content">
+            <h4><strong>MILL</strong>&nbsp; Produksi</h4> 
+            <ngx-charts-line-chart [view]="view2" [scheme]="colorScheme2" [legend]="legend" [legendPosition]="legendPosition"
+              [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+              [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabelTbsOlah" [timeline]="timeline" [results]="tbsOlah"
+              (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-line-chart>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-12" *ngIf="isShow('EST_PANEN_HARIAN')">
+        <div class="card card-chart">
+
+          <div class="card-content">
+            <h4><strong>Panen</strong>&nbsp; Harian</h4>
+            <ngx-charts-line-chart [view]="view2" [scheme]="colorScheme2" [legend]="legend" [legendPosition]="legendPosition"
+              [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+              [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel" [timeline]="timeline" [results]="panenHarian"
+              (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-line-chart>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-5" *ngIf="isShow('HRMS_KARYAWAN')">
+        <div class="card card-chart">
+          <div class="card-content">
+            <h4><strong>{{totalKaryawan}}</strong>&nbsp; Karyawan</h4>
+            <ngx-charts-pie-chart [view]="view" [scheme]="colorScheme" [results]="karyawan" [gradient]="gradient"
+              [legend]="showLegend" [legendPosition]="legendPosition" [labels]="showLabels" [doughnut]="isDoughnut"
+              (select)="onSelect($event)" (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+            </ngx-charts-pie-chart>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7" *ngIf="isShow('EST_PANEN_BULANAN')">
+        <div class="card card-chart">
+          <div class="card-content">
+            <h4><strong>Panen PerBulan</strong>&nbsp; </h4>
+            <ngx-charts-bar-vertical [view]="viewPanenPerbulan" [scheme]="colorScheme" [results]="panenPerbulan" [legendPosition]="legendPosition"
+              [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis" [legend]="showLegend"
+              [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabelPanenPerbulan"
+              [xAxisLabel]="xAxisLabelPanenPerbulan" [yAxisLabel]="yAxisLabelPanenPerbulan" (select)="onSelect($event)">
+            </ngx-charts-bar-vertical>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8" *ngIf="isShow('PKS_PENGIRIMAN_CPO')">
+        <div class="card card-chart">
+          <div class="card-header" data-background-color="green" data-header-animation="true">
+            <div style="height: 300px;" class="ct-chart" id="PengirimanCPOHarian"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-actions">
+              <button type="button" class="btn btn-danger btn-simple fix-broken-card">
+                <i class="material-icons">build</i> Fix Header!
+              </button>
+              <button type="button" class="btn btn-info btn-simple" rel="tooltip" data-placement="bottom"
+                title="Refresh">
+                <i class="material-icons">refresh</i>
+              </button>
+
+            </div>
+            <p class="category">
+              <span class="text-success">
+              </span><strong>Pengiriman CPO (Ton) .</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" *ngIf="isShow('EST_PANEN_PEMELIHARAAN')">
+        <div class="col-md-12">
+          <div class="card card-chart">
+            <div class="card-content">
+              <h4><strong>HK Panen,Pemeliharaan</strong>&nbsp; </h4>
+              <ngx-charts-bar-vertical-stacked [view]="viewAllHkAfdeling" [scheme]="colorScheme" [legendPosition]="legendPosition"
+                [results]="hkAllAfdelingPerbulan" [gradient]="gradient" [xAxis]="showXAxis" [yAxis]="showYAxis"
+                [legend]="showLegend" [showXAxisLabel]="showYAxisLabelAllHkAfdeling" [showYAxisLabel]="showXAxisLabel"
+                [xAxisLabel]="xAxisLabelAllHkAfdeling" [yAxisLabel]="yAxisLabelAllHkAfdeling" [animations]="animations"
+                (select)="onSelect($event)">
+              </ngx-charts-bar-vertical-stacked>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" *ngIf="isShow('TRK_TOP_20_PEMAKAIAN_SOLAR')">
+        <div class="card card-chart">
+          <div class="card-content">
+            <h4><strong>Top 20 Pemakaian Solar Kendaraan</strong>&nbsp; </h4>
+            <ngx-charts-bar-vertical [view]="viewPemakaianSolarPerbulan" [results]="pemakaianSolar" [xAxis]="showXAxis"
+              [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [legendPosition]="legendPosition"
+              [showYAxisLabel]="showYAxisLabelPanenPerbulan" xAxisLabel="Kendaraan" yAxisLabel="Liter"
+              (select)="onSelect($event)">
+            </ngx-charts-bar-vertical>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12" *ngIf="isShow('EST_CURAH_HUJAN')">
+        <div class="card card-chart">
+
+          <div class="card-content">
+            <h4><strong>Curah</strong>&nbsp; Hujan</h4>
+            <ngx-charts-line-chart [view]="view2" [scheme]="colorScheme2" [legend]="legend" [legendPosition]="legendPosition"
+              [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis" [yAxis]="yAxis"
+              [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabelCurahHujan" [timeline]="timeline"
+              [results]="CurahHujanHarian" (select)="onSelect($event)" (activate)="onActivate($event)"
+              (deactivate)="onDeactivate($event)">
+            </ngx-charts-line-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row" *ngIf="auth['is_siswa']=='1' || auth['is_admin']=='1'">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Data</h4>
+            <div class="row">
+              <div>
+                <div class="content table-responsive">
+                  <table class="table">
+                    <tbody *ngIf="tugasTerbaru?.length!=0">
+
+                      <tr *ngFor="let p of tugasTerbaru">
+
+                        <td>
+                          <div>
+                            <img src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{p.foto}}" alt=""
+                              style="height: 100px; width: 100px;">
+                          </div>
+                        </td>
+                        <td>
+                          <strong> {{p.judul}}</strong>
+                          <p> <small>dibuat oleh:{{p.nama_pengajar}}</small></p>
+                          <p> <small>mapel:{{p.nama_mapel}}</small></p>
+                        </td>
+                        <td class="text-right">
+                          <small>{{p.tgl_buat}}</small>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Data</h4>
+            <div class="row">
+              <div>
+
+                <div class="content table-responsive">
+                  <table class="table">
+                    <tbody *ngIf="materiTerbaru?.length!=0">
+                      <tr *ngFor="let m of materiTerbaru">
+
+                        <td>
+                          <div>
+                            <img src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{m.foto}}" alt=""
+                              style="height: 100px; width: 100px;">
+                          </div>
+                        </td>
+                        <td>
+                          <strong>{{m.judul}}</strong>
+                          <p> <small>dibuat oleh:{{m.nama_pengajar}}</small></p>
+                          <p> <small>mapel:{{m.nama_mapel}}</small></p>
+                        </td>
+                        <td class="text-right">
+                          <small>{{m.tgl_posting}}</small>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-icon" data-background-color="red">
+                        <i class="material-icons">language</i>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">Global Sales by Top Locations</h4>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <md-table
+                                  [data]="tableData">
+                              </md-table>
+                            </div>
+                            <div class="col-md-6 col-md-offset-1">
+                                <div id="worldMap" class="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+  </div>
+</div>
+<ng-template #announcementTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title">
+      PEMBERITAHUAN PERUBAHAN SISTEM ANTECH
+    </h4>
+    <button type="button" class="close" (click)="closeAnnouncement()">
+      &times;
+    </button>
+  </div>
+
+  <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+    <p>
+      Diberitahukan kepada Bapak/Ibu sekalian,
+    </p>
+
+    <p>
+      Sehubungan dengan implementasi kebijakan akuntansi dan anggaran tahun 2026,
+      telah dilakukan beberapa <strong>penyesuaian dan migrasi data</strong> pada Aplikasi ERP Antech.
+    </p>
+
+    <p><strong>Ruang Lingkup Perubahan:</strong></p>
+    <ul>
+      <li>Perubahan struktur <strong>Chart of Account (COA) 2026</strong></li>
+      <li>Penyesuaian dan migrasi <strong>Budget berbasis COA 2026</strong></li>
+      <li>Penyeragaman format <strong>laporan Sales Invoice</strong></li>
+      <li>Penyesuaian menu aplikasi terhadap struktur COA 2026</li>
+      <li>Perbaikan laporan buku besar</li>
+      <li>Penyesuaian inputan BKM panen terhadap penyesuaian COA 2026</li>
+    </ul>
+
+    <p>
+      Perubahan ini bertujuan untuk meningkatkan konsistensi data,
+      akurasi pelaporan, serta kesiapan sistem dalam mendukung operasional tahun 2026.
+    </p>
+
+    <p>
+      Apabila terdapat perbedaan data atau kendala setelah implementasi,
+      mohon segera menghubungi Tim IT.
+    </p>
+
+    <p style="margin-top:15px;">
+      Hormat kami,<br>
+      <strong>Tim IT</strong>
+    </p>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn btn-primary" (click)="closeAnnouncement()">
+      Saya Mengerti
+    </button>
+  </div>
+</ng-template>

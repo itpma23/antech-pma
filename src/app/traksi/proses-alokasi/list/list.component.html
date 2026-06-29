@@ -1,0 +1,81 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">event</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Proses Alokasi Traksi</h4>
+
+            <div class="toolbar">
+              <form [formGroup]="listForm">
+                <div class="form-group label-floating">
+                  <label class="control-label">Lokasi</label>
+
+                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+              allowClear: false,width:'50%'}">
+                  </l-select2>
+
+                </div>
+              </form>
+            </div>
+            <div class="">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+                <!-- <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="tables table-striped table-no-bordered table-hover" cellspacing="0"
+              width="90%" style="width:90%"> -->
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Lokasi</th>
+                    <th>Periode</th>
+                    <th>Tgl Awal</th>
+                    <th>Tgl Akhir </th>
+                    <!-- <th>status</th> -->
+
+                    <th></th>
+                </thead>
+                <tbody *ngIf="periodeAkunting?.length != 0">
+                  <tr *ngFor="let p of periodeAkunting; index as i">
+                    <td>{{p.nama_organisasi}} </td>
+                    <td>{{p.nama}} </td>
+                    <td>{{ p.tgl_awal}}</td>
+                    <td>{{ p.tgl_akhir}}</td>
+                    <!-- <td>{{ p.status}}</td> -->
+                    <!-- <td>
+                      <span class="label label-info" *ngIf="p.status=='1'">Sudah diproses</span>
+                      <span class="label label-success" *ngIf="p.status=='0'">Belum Diproses</span>
+                      <span class="label label-success" *ngIf="p.status=='2'">Sudah Ditutup</span>
+                    </td> -->
+                    <td class="text-right">
+                      <button *ngIf=" (p.is_proses_traksi!='1')" class="btn  btn-warning btn-sm"
+                        (click)="proses(p.id)">Proses</button>
+                      <button *ngIf=" (p.is_proses_traksi=='1')" class="btn  btn-success btn-sm "
+                        (click)="proses(p.id)">Proses</button>
+
+                      <!-- <button *ngIf="(p.status=='1')" class="btn  btn-danger " (click)="proses(p.id)">Proses
+                        Ulang</button>
+                        <button *ngIf="(p.status!='0')" class="btn  btn-info " (click)="view(p.id)">Tampilkan</button> -->
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="periodeAkunting?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

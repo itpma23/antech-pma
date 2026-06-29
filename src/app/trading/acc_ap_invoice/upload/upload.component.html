@@ -1,0 +1,112 @@
+<div class="main-content upload-wrapper">
+  <div class="container-fluid">
+
+    <div class="card upload-card">
+
+      <!-- HEADER -->
+      <div class="upload-header">
+        <div class="icon-box">
+          <i class="material-icons">attach_file</i>
+        </div>
+        <div>
+          <h4 class="title">Upload Dokumen</h4>
+          <p class="subtitle">Invoice Supplier & Faktur Pajak</p>
+        </div>
+      </div>
+
+      <!-- ================= INVOICE ================= -->
+      <div class="upload-section">
+
+        <div class="section-header">
+          <div>
+            <label>Invoice Supplier</label>
+            <span class="required">*</span>
+          </div>
+
+          <div class="status-badge"
+               [ngClass]="accApInvoice?.upload_invoice ? 'success' : 'danger'">
+            <i class="material-icons">
+              {{ accApInvoice?.upload_invoice ? 'check_circle' : 'cancel' }}
+            </i>
+            {{ accApInvoice?.upload_invoice ? 'Sudah Upload' : 'Belum Upload' }}
+          </div>
+        </div>
+
+        <!-- 🔥 FILE VIEW -->
+        <div *ngIf="accApInvoice?.upload_invoice" class="file-box">
+          <i class="material-icons file-icon">insert_drive_file</i>
+          <span class="file-name">{{ accApInvoice.upload_invoice }}</span>
+        </div>
+
+        <!-- 🔥 FILE INPUT -->
+        <div *ngIf="!accApInvoice?.upload_invoice" class="upload-box">
+          <input type="file" (change)="onFileChange($event, 'INVOICE')">
+        </div>
+
+        <!-- ACTION -->
+        <div class="action-row" *ngIf="accApInvoice?.upload_invoice">
+          <button class="btn btn-preview" (click)="preview('INVOICE')">
+            <i class="material-icons">visibility</i> Preview
+          </button>
+
+          <button class="btn btn-delete" (click)="deleteFile('INVOICE')">
+            <i class="material-icons">delete</i> Hapus
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ================= FAKTUR ================= -->
+      <div class="upload-section">
+
+        <div class="section-header">
+          <div>
+            <label>Faktur Pajak</label>
+          </div>
+
+          <div class="status-badge"
+               [ngClass]="accApInvoice?.upload_faktur ? 'success' : 'danger'">
+            <i class="material-icons">
+              {{ accApInvoice?.upload_faktur ? 'check_circle' : 'cancel' }}
+            </i>
+            {{ accApInvoice?.upload_faktur ? 'Sudah Upload' : 'Belum Upload' }}
+          </div>
+        </div>
+
+        <!-- FILE VIEW -->
+        <div *ngIf="accApInvoice?.upload_faktur" class="file-box">
+          <i class="material-icons file-icon">insert_drive_file</i>
+          <span class="file-name">{{ accApInvoice.upload_faktur }}</span>
+        </div>
+
+        <!-- FILE INPUT -->
+        <div *ngIf="!accApInvoice?.upload_faktur" class="upload-box">
+          <input type="file" (change)="onFileChange($event, 'FAKTUR')">
+        </div>
+
+        <!-- ACTION -->
+        <div class="action-row" *ngIf="accApInvoice?.upload_faktur">
+          <button class="btn btn-preview" (click)="preview('FAKTUR')">
+            <i class="material-icons">visibility</i> Preview
+          </button>
+
+          <button class="btn btn-delete" (click)="deleteFile('FAKTUR')">
+            <i class="material-icons">delete</i> Hapus
+          </button>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="upload-footer">
+        <div class="info-box">
+          Format File Ekstensi diperbolehkan: PDF, JPG, JPEG, PNG
+        </div>
+
+        <button class="btn btn-close" (click)="onClose()">Tutup</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

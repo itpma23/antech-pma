@@ -1,0 +1,57 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Approval Pengajuan Cuti</h4>
+              <!-- <p class="label label-success"> {{HrmsPengajuanCuti.no_po}}</p> -->
+              <div class="form-group label-floating" >
+                <label class="control-label">Diajukan Kepada</label>
+                <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+
+              </div>
+              <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      <h4 class="panel-title">
+                        Rincian Purchase Order
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <p>Data Purchase Order</p>
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <iframe width="800" height="500" src="" type="application/pdf"></iframe>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan dan Ajukan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

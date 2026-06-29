@@ -1,0 +1,272 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content" style="background-color: rgb(233, 233, 243);">
+              <h4 class="card-title">Status Permintaan Pembelian</h4>
+              <p class="label label-success"> {{PrcPp.no_pp}}</p>
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseStatus"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      <h4 class="panel-title">
+                        Status
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+                  <div id="collapseStatus" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="card card-plain">
+                            <div class="card-content">
+                              <ul class="timeline">
+                                <li >
+                                  <div class="timeline-badge success">
+                                    <i class="material-icons">add</i>
+
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <span class="label label-success">Dibuat</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p><strong><small>oleh:{{PrcPp['pembuat']['nama']}}</small></strong></p>
+
+                                    </div>
+                                    <h6>
+                                      <i class="ti-time"></i> {{PrcPp.dibuat_tanggal}}
+                                    </h6>
+                                  </div>
+                                </li>
+                                <li class="timeline-inverted"  *ngIf="(PrcPp.tgl_approve1 && PrcPp.tgl_approve1!='0000-00-00')">
+                                  <div class="timeline-badge info">
+                                    <i class="material-icons">card_travel</i>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <span class="label label-info">PP1</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p><strong><small>oleh:{{namaKaryawan1}}</small></strong></p>
+                                      <span *ngIf="PrcPp.status_approve1!='REJECTED'" class="label label-info">{{PrcPp.status_approve1}}</span>
+                                      <span *ngIf="PrcPp.status_approve1=='REJECTED'" class="label label-danger">{{PrcPp.status_approve1}}</span>
+                                      <p>{{PrcPp.note_approve1}}.</p>
+                                    </div>
+                                    <h6>
+                                      <i class="ti-time"></i>{{PrcPp.tgl_approve1}}
+                                    </h6>
+                                  </div>
+                                </li>
+                                <li  *ngIf="(PrcPp.tgl_approve2 && PrcPp.tgl_approve2!='0000-00-00 00:00:00')">
+                                  <div class="timeline-badge success">
+                                    <i class="material-icons">extension</i>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <span class="label label-success">PP2</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p><strong><small>oleh:{{namaKaryawan2}}</small></strong></p>
+                                      <span *ngIf="PrcPp.status_approve2!='REJECTED'" class="label label-info">{{PrcPp.status_approve2}}</span>
+                                      <span *ngIf="PrcPp.status_approve2=='REJECTED'" class="label label-danger">{{PrcPp.status_approve2}}</span>
+                                      <p>{{PrcPp.note_approve2}}.</p>
+                                    </div>
+                                    <h6>
+                                      <i class="ti-time"></i>{{PrcPp.tgl_approve2}}
+                                    </h6>
+                                  </div>
+                                </li>
+                                <li class="timeline-inverted" *ngIf="(PrcPp.tgl_approve3 && PrcPp.tgl_approve3!='0000-00-00 00:00:00')" >
+                                  <div class="timeline-badge info">
+                                    <i class="material-icons">fingerprint</i>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <span class="label label-info">PP3</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p><strong><small>oleh:{{namaKaryawan3}}</small></strong></p>
+                                      <span *ngIf="PrcPp.status_approve3!='REJECTED'" class="label label-info">{{PrcPp.status_approve3}}</span>
+                                      <span *ngIf="PrcPp.status_approve3=='REJECTED'" class="label label-danger">{{PrcPp.status_approve3}}</span>
+                                      <p>{{PrcPp.note_approve3}}.</p>
+                                    </div>
+                                    <h6>
+                                      <i class="ti-time"></i>{{PrcPp.tgl_approve3}}
+                                    </h6>
+                                  </div>
+                                </li>
+                                <li   *ngIf="(PrcPp.tgl_approve4 && PrcPp.tgl_approve4!='0000-00-00 00:00:00')">
+                                  <div class="timeline-badge warning">
+                                    <i class="material-icons">flight_land</i>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <span class="label label-warning">PP4</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p><strong><small>oleh:{{namaKaryawan4}}</small></strong></p>
+                                      <span *ngIf="PrcPp.status_approve4!='REJECTED'" class="label label-info">{{PrcPp.status_approve4}}</span>
+                                      <span *ngIf="PrcPp.status_approve4=='REJECTED'" class="label label-danger">{{PrcPp.status_approve4}}</span>
+                                      <p>{{PrcPp.note_approve4}}.</p>
+                                    </div>
+                                    <h6>
+                                      <i class="ti-time"></i>{{PrcPp.tgl_approve4}}
+                                    </h6>
+                                  </div>
+                                </li>
+                                <li class="timeline-inverted"  *ngIf="(PrcPp.tgl_approve5 && PrcPp.tgl_approve5!='0000-00-00 00:00:00')">
+                                  <div class="timeline-badge danger">
+                                    <i class="material-icons">card_travel</i>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <span class="label label-danger">PP5</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p><strong><small>oleh:{{namaKaryawan5}}</small></strong></p>
+                                      <span *ngIf="PrcPp.status_approve5!='REJECTED'" class="label label-info">{{PrcPp.status_approve5}}</span>
+                                      <span *ngIf="PrcPp.status_approve5=='REJECTED'" class="label label-danger">{{PrcPp.status_approve5}}</span>
+                                      <p>{{PrcPp.note_approve5}}.</p>
+                                    </div>
+                                    <h6>
+                                      <i class="ti-time"></i>{{PrcPp.tgl_approve5}}
+                                    </h6>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      <h4 class="panel-title">
+                        Rincian Permintaan Pembelian
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <!-- <p>Data Permintaan Pembelian</p> -->
+                      <div class="form-group label-floating">
+                        <label class="control-label">Lokasi</label>
+                        <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: true}" disabled="disabled">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">tanggal</label>
+                        <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                          class="form-control" formControlName="tanggal" readonly>
+                        <div class="form-control-position"><i class="ft-calendar"></i></div>
+                        <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No PP</mat-label>
+                          <input matInput formControlName="no_pp" required readonly>
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.no_pp.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.no_pp.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Catatan</mat-label>
+                          <input matInput formControlName="catatan" readonly>
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.catatan.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.catatan.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+
+                      <div formArrayName="details">
+                        <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                          width="100%" style="width:100%">
+                          <thead>
+                            <tr>
+
+                              <th style="width: 30%;">Item</th>
+                              <th>UOM</th>
+                              <th>Qty</th>
+                              <th>Keterangan</th>
+
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                            <tr [formGroupName]="i" *ngFor="let blok of details.controls; let i=index; let odd=odd;">
+                              <td hidden>
+                                <input type="text" formControlName="id" style="text-align: center;" class="form-control"
+                                  hidden>
+                              </td>
+                              <td>
+
+                                <l-select2 [data]="dataSelectItem" formControlName="item" [options]="{ placeholder: 'Pilih',
+                                allowClear: true}" (ngModelChange)="getUOM(blok)" disabled="disabled">
+                                </l-select2>
+                              </td>
+                              <td> <input type="text" formControlName="uom" style="text-align: center;"
+                                  class="form-control" readonly></td>
+                              <td> <input type="number" formControlName="qty" style="text-align: right;"
+                                  class="form-control"></td>
+                              <td> <input type="text" formControlName="ket" style="text-align: left;"
+                                  class="form-control" readonly></td>
+                              <td>
+                                <!-- <button (click)="removeBlok(blok)"
+                                  class="btn btn-danger btn-round btn-fab btn-fab-mini">
+                                  <i class="material-icons">close</i></button> -->
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn btn-fill btn-rose" data-dismiss="modal" (click)="onClose()">OK</button>
+              <!-- <button type="submit" class="btn btn-fill btn-rose">Approve dan Ajukan</button> -->
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

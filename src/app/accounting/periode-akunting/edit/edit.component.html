@@ -1,0 +1,85 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">event</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Periode Akunting</h4>
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id"
+                (valueChange)="valueChange($event)" [options]="{ placeholder: 'Pilih',
+                allowClear: false}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required "
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama</mat-label>
+                  <input matInput required formControlName="nama" >
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tanggal Mulai</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tgl_awal" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tgl_awal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tgl_awal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tanggal Akhir</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tgl_akhir" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tgl_akhir.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tgl_akhir.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating ">
+                <label class="control-label ">Status</label>
+                <l-select2 [data]="dataSelectStatus" formControlName="status" [options]="{ placeholder: 'Pilih',
+                   allowClear: false,width:'100%'}" >
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.status.errors" class="invalid-feedback">
+                  <small
+                    [hidden]="!userControl.status.errors.required && userControl.status.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+              <!-- </form> -->
+            </div>
+
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
+</div>

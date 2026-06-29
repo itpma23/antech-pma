@@ -1,0 +1,221 @@
+.monitor-card{
+  min-height:120px;
+  transition:.3s;
+}
+
+.monitor-card:hover{
+  transform:translateY(-3px);
+}
+
+.monitor-card .card-title{
+  font-size:32px;
+  font-weight:600;
+}
+
+.monitor-card .category{
+  font-size:14px;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+.monitor-card.draft{
+  border-left:4px solid #9E9E9E;
+}
+
+.monitor-card.aktif{
+  border-left:4px solid #2196F3;
+}
+
+.monitor-card.invoice{
+  border-left:4px solid #4CAF50;
+}
+
+.monitor-card.close{
+  border-left:4px solid #8BC34A;
+}
+
+.badge{
+  padding:5px 8px;
+  border-radius:12px;
+}
+
+.badge-warning{
+  background:#ff9800;
+  color:#fff;
+}
+
+.badge-danger{
+  background:#f44336;
+  color:#fff;
+}
+
+.monitor-box{
+  background:#fff;
+  border-radius:6px;
+  overflow:hidden;
+  display:flex;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  margin-bottom:20px;
+  min-height:90px;
+}
+
+.monitor-icon{
+  width:90px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+.monitor-icon i{
+  font-size:34px;
+}
+
+.monitor-info{
+  flex:1;
+  padding:15px;
+  text-align:right;
+}
+
+.monitor-title{
+  font-size:12px;
+  color:#999;
+  font-weight:600;
+}
+
+.monitor-value{
+  font-size:38px;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.monitor-desc{
+  color:#777;
+  font-size:12px;
+}
+
+
+.monitor-box.active .monitor-icon{
+  background:#2196F3;
+}
+
+.monitor-box.invoice .monitor-icon{
+  background:#4CAF50;
+}
+.monitor-box.invoice1 .monitor-icon{
+background:#cddc39;
+}
+.monitor-box.close .monitor-icon{
+  
+}
+
+.monitor-card{
+  border-radius:6px;
+}
+
+.monitor-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  font-weight:600;
+  border-bottom:1px solid #eee;
+}
+
+.monitor-header.warning{
+  color:#ff9800;
+}
+
+.monitor-header.success{
+  color:#4CAF50;
+}
+
+.status-badge{
+  padding:4px 10px;
+  border-radius:20px;
+  color:#fff;
+  font-size:11px;
+  font-weight:600;
+}
+
+.status-badge.warning{
+  background:#ff9800;
+}
+
+.status-badge.success{
+  background:#4CAF50;
+}
+
+.monitor-info{
+  color:#000 !important;
+}
+
+.monitor-title{
+  color:#666 !important;
+  font-weight:600;
+}
+
+.monitor-value{
+  color:#000 !important;
+  font-size:36px;
+  font-weight:700;
+}
+
+.monitor-desc{
+  color:#555 !important;
+}
+
+.export-toolbar{
+  display:flex;
+  gap:10px;
+}
+
+.btn-export{
+  border:none;
+  background:#f5f7fa;
+  color:#546e7a;
+  height:40px;
+  padding:0 18px;
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  font-weight:600;
+  transition:.2s;
+}
+
+.btn-export:hover{
+  background:#e3f2fd;
+  color:#1976d2;
+}
+
+.btn-add-contract{
+  border:none;
+  background:#2196f3;
+  color:#fff;
+  height:42px;
+  padding:0 20px;
+  border-radius:8px;
+  font-weight:600;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  box-shadow:0 3px 10px rgba(33,150,243,.25);
+  transition:.2s;
+}
+
+.btn-add-contract:hover{
+  background:#1976d2;
+  transform:translateY(-1px);
+}
+
+.modal-onlyoffice .modal-dialog{
+  width:98%;
+  max-width:1800px;
+  margin:10px auto;
+}
+
+.modal-onlyoffice .modal-content{
+  height:95vh;
+}

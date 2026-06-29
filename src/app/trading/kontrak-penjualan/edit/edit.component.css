@@ -1,0 +1,197 @@
+/* Custom Modal Size Overwrite ke Modal Large (modal-lg) */
+.modal-dialog.modal-lg {
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Container Utama */
+.main-content-wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Base Card Style */
+.modern-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+/* Card Header */
+.card-badge-header {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid #f1f3f5;
+  background: #fafbfe;
+}
+
+.badge-icon {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 15px;
+  box-shadow: 0 4px 10px rgba(30, 136, 229, 0.2);
+}
+
+.badge-icon.preview-badge {
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+}
+
+.card-form-title {
+  margin: 0;
+  font-size: 1.2rem;          /* Diperbesar sedikit agar proporsional */
+  font-weight: 600;
+  color: #343a40;
+}
+
+.section-subtitle {
+  font-size: 0.9rem;          /* Diperbesar dari 0.85rem */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  font-weight: 700;
+}
+
+.card-body-content {
+  padding: 24px;
+}
+
+/* UKURAN LABEL: Diperbesar, Tebal, dan Jelas */
+.form-label-custom {
+  font-size: 1rem;            /* Diperbesar ke 1rem (setara sekitar 16px) agar sangat terbaca */
+  font-weight: 600;           /* Ketebalan semi-bold kuat */
+  color: #1a1d20;             /* Warna dihitamkan pekat agar kontras */
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.text-blue {
+  color: #0d6efd;
+}
+
+/* INPUT FIELD: Diperbesar agar seimbang dengan Label */
+.custom-input {
+  height: 46px;               /* Ditinggikan ke 46px agar terlihat kokoh dan mudah di-klik */
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;            /* Ukuran font input disamakan 1rem */
+  color: #212529;
+  padding: 0.375rem 0.75rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15) !important;
+}
+
+.custom-textarea {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+.custom-textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15) !important;
+}
+
+/* Select2 Customization Sync */
+::v-deep .select2-container--default .select2-selection--single {
+  border: 1px solid #ced4da !important;
+  border-radius: 6px !important;
+  height: 46px !important;    /* Tinggi select2 disamakan dengan input box */
+  display: flex;
+  align-items: center;
+  box-shadow: none !important;
+}
+
+::v-deep .select2-container .select2-selection--single .select2-selection__rendered {
+  font-size: 1rem !important; /* Ukuran teks di dalam pilihan select2 */
+  color: #212529 !important;
+}
+
+/* Pricing Highlight Section */
+.pricing-section {
+  background-color: #f0f7ff;
+  border: 1px dashed #b6d4fe;
+}
+
+.readonly-input {
+  background-color: #e9ecef !important;
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.total-highlight-input {
+  background-color: #ffffff !important;
+  border: 2px solid #0d6efd !important;
+  color: #0d6efd !important;
+  font-weight: bold;
+}
+
+/* Error Typography */
+.error-msg {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* ACTION BUTTONS: Batal Merah, Simpan Biru */
+.btn-danger-custom {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-danger-custom:hover {
+  background-color: #bd2130;
+  color: white;
+}
+
+.btn-primary-custom {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #0b5ed7;
+  color: white;
+}
+
+/* OnlyOffice Container Area & Iframe Fixes */
+#onlyoffice-editor-container {
+  width: 100% !important;
+  height: 1200px !important;
+  min-height: 1200px !important;
+  position: relative;
+  overflow: auto !important;
+  background: #fff;
+}
+
+#onlyoffice-editor-container iframe {
+  width: 100% !important;
+  height: 1200px !important;
+  min-height: 1200px !important;
+  display: block;
+}

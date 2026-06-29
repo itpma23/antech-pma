@@ -1,0 +1,145 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Umum</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-success nav-stacked" role="tablist">
+                  <!--
+                  color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+              -->
+                  <!-- <li class="active"> -->
+
+
+                  <li class="active">
+                    <a href="#detail_umum" role="tab" data-toggle="tab">
+                      <i class="material-icons">business</i>Rincian Umum
+                    </a>
+                  </li>
+                  <!-- <li class="">
+                    <a href="#pemeliharaan_perkaryawan" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance_wallet</i>pemeliharaan pertanggal
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#pemeliharaan_wb" role="tab" data-toggle="tab">
+                      <i class="material-icons">local_atm</i>pemeliharaan vs WB
+                    </a>
+                  </li> -->
+
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="tab-content">
+
+
+                  <div class="tab-pane active" id="detail_umum">
+                    <form [formGroup]="detailPemeliharaanForm" (ngSubmit)="reportPemeliharaanDetail()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Detail Umum </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">estate</label>
+
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <!-- <div *ngIf="isFormSubmitted && detailPemeliharaanForm.controls['estate'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!detailPemeliharaanForm.controls['estate'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div> -->
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Afdeling</label>
+
+                            <l-select2 [data]="dataSelectAfdeling" formControlName="afdeling" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                            <!-- <div *ngIf="isFormSubmitted && pemeliharaanPerkaryawanForm.controls['estate'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!pemeliharaanPerkaryawanForm.controls['estate'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div> -->
+
+                          </div>
+
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">blok</label>
+
+                            <l-select2 [data]="dataSelectBlok" formControlName="blok" [options]="{ placeholder: 'Pilih',
+                              allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && detailPemeliharaanForm.controls['blok'].errors" class="invalid-feedback">
+                              <small [hidden]="!detailPemeliharaanForm.controls['blok'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div> -->
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+
+                </div>
+              </div> <!--    md col 8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+.card .card-title {
+  font-weight: 600;
+}
+
+
+.card.card-danger {
+  background-color: #e53935;
+  color: white;
+}
+.card.card-warning {
+  background-color: #ffa726;
+  color: black;
+}
+.card.card-success {
+  background-color: #43a047;
+  color: white;
+}
+.card.card-info {
+  background-color: #1e88e5;
+  color: white;
+}
+
+/* Bungkus search input agar maksimal lebarnya 100% dalam container col-sm-12 col-md-6 */
+.dataTables_filter {
+  padding: 0;
+  margin-bottom: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Batasi lebar input search */
+.dataTables_filter input {
+  width: 100% !important;
+  max-width: 250px; /* sesuaikan lebar maksimum search */
+  display: inline-block;
+  box-sizing: border-box;
+}

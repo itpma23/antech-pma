@@ -1,0 +1,756 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Keuangan</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-success nav-stacked" role="tablist">
+                  <!--
+                  color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+              -->
+                  <!-- <li class="active"> -->
+
+
+                  <li class="active">
+                    <a href="#buku_besar" role="tab" data-toggle="tab">
+                      <i class="material-icons">business</i>Buku Besar
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#jurnal" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance_wallet</i>Jurnal
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#neraca_saldo_summary" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Trial Balance
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#neraca_saldo_mutasi" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Trial Balance(Mutasi)
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#neraca_saldo_all_unit" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Trial Balance All Unit
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#neraca" role="tab" data-toggle="tab">
+                      <i class="material-icons">local_atm</i>Neraca (Balance Sheet)
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#laba_rugi" role="tab" data-toggle="tab">
+                      <i class="material-icons">local_atm</i>Laba Rugi (Profit Loss)
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#export_jurnal" role="tab" data-toggle="tab">
+                      <i class="material-icons">local_atm</i>Export Jurnal
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#equitas" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Equitas
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <div class="tab-content">
+                  <div class="tab-pane  " id="neraca_saldo_mutasi">
+                    <form [formGroup]="NeracaSaldoMutasiForm" (ngSubmit)="reportNeracaSaldoMutasi()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Trial Balance(Mutasi) </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && NeracaSaldoForm.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoForm.controls['lokasi'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div> -->
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Dari Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_dari" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted5 && NeracaSaldoMutasiForm.controls['akun_dari'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoMutasiForm.controls['akun_dari'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Sampai Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_sampai" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted5 && NeracaSaldoMutasiForm.controls['akun_sampai'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoMutasiForm.controls['akun_sampai'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <label id="example-radio-group-label">Versi Laporan</label>
+                        <mat-radio-group formControlName="tipe_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="v1">All  </mat-radio-button>
+                          <mat-radio-button value="v2">Inti</mat-radio-button>
+                          <mat-radio-button value="v3">Plasma</mat-radio-button>
+                        </mat-radio-group>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane  " id="neraca_saldo_summary">
+                    <form [formGroup]="NeracaSaldoForm" (ngSubmit)="reportNeracaSaldo()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Trial Balance(Summary) </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && NeracaSaldoForm.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoForm.controls['lokasi'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Dari Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_dari" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && NeracaSaldoForm.controls['akun_dari'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoForm.controls['akun_dari'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Sampai Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_sampai" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && NeracaSaldoForm.controls['akun_sampai'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoForm.controls['akun_sampai'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <!-- <label id="example-radio-group-label">Versi Laporan</label>
+                        <mat-radio-group formControlName="versi_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="v1">Versi 1 </mat-radio-button>
+                          <mat-radio-button value="v2">Versi 2</mat-radio-button>
+                        </mat-radio-group> -->
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane  " id="neraca_saldo_all_unit">
+                    <form [formGroup]="NeracaSaldoAllUnitForm" (ngSubmit)="reportNeracaSaldoAllUnit()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Trial Balance By Unit </h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>per Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Dari Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_dari" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted3 && NeracaSaldoAllUnitForm.controls['akun_dari'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoAllUnitForm.controls['akun_dari'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Sampai Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_sampai" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted3 && NeracaSaldoAllUnitForm.controls['akun_sampai'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!NeracaSaldoAllUnitForm.controls['akun_sampai'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <label id="example-radio-group-label">Versi Laporan</label>
+                          <mat-radio-group formControlName="versi_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="v1">All  </mat-radio-button>
+                            <mat-radio-button value="v2">Inti</mat-radio-button>
+                            <mat-radio-button value="v3">Plasma</mat-radio-button>
+                          </mat-radio-group>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane  " id="neraca">
+                    <form [formGroup]="NeracaForm" (ngSubmit)="reportNeraca()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Neraca (Balance Sheet) </h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>per Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+                          </div>
+                        </div>
+                        <label id="example-radio-group-label">Tipe</label>
+                        <mat-radio-group formControlName="tipe_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="v1">Semua Unit</mat-radio-button>
+                          <mat-radio-button value="v2">Inti</mat-radio-button>
+                          <mat-radio-button value="v3">Plasma</mat-radio-button>
+                         </mat-radio-group>
+                        <label id="example-radio-group-label">Versi Laporan</label>
+                        <mat-radio-group formControlName="versi_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="v1">Versi 1 </mat-radio-button>
+                          <mat-radio-button value="v2">Versi 2</mat-radio-button>
+                          <mat-radio-button value="v3">Versi 3</mat-radio-button>
+                          <!-- <mat-radio-button value="v3">Versi 4</mat-radio-button> -->
+
+                        </mat-radio-group>
+                        <label id="example-radio-group-label">Format Laporan</label>
+                        <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="view">View </mat-radio-button>
+                          <mat-radio-button value="xls">XLS</mat-radio-button>
+                          <mat-radio-button value="pdf">PDF</mat-radio-button>
+
+                        </mat-radio-group>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane " id="jurnal">
+                    <form [formGroup]="JurnalForm" (ngSubmit)="reportJurnal()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Jurnal </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && JurnalForm.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!JurnalForm.controls['lokasi'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>No Jurnal</mat-label>
+                              <input type="text" matInput class="form-control" formControlName="no_jurnal">
+                            </mat-form-field>
+
+                          </div>
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>No Referensi</mat-label>
+                              <input type="text" matInput class="form-control" formControlName="no_ref">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>Keterangan</mat-label>
+                              <input type="text" matInput class="form-control" formControlName="ket">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Dari Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_dari" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && JurnalForm.controls['akun_dari'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!JurnalForm.controls['akun_dari'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Sampai Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_sampai" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && JurnalForm.controls['akun_sampai'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!JurnalForm.controls['akun_sampai'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane active" id="buku_besar">
+                    <form [formGroup]="BukuBesarForm" (ngSubmit)="reportBukuBesar()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Buku Besar </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && BukuBesarForm.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!BukuBesarForm.controls['lokasi'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && BukuBesarForm.controls['akun'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!BukuBesarForm.controls['akun'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div> -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Dari Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_dari" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && BukuBesarForm.controls['akun_dari'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!BukuBesarForm.controls['akun_dari'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Sampai Akun</label>
+
+                            <l-select2 [data]="dataSelectAkun" formControlName="akun_sampai" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && BukuBesarForm.controls['akun_sampai'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!BukuBesarForm.controls['akun_sampai'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+
+                  </div>
+                  <div class="tab-pane  " id="laba_rugi">
+                    <form [formGroup]="LabaRugiForm" (ngSubmit)="reportLabaRugi()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Laba Rugi </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && LabaRugiForm.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!LabaRugiForm.controls['lokasi'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div> -->
+                          <label id="example-radio-group-label">Tipe</label>
+                          <mat-radio-group formControlName="tipe_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="v1">Semua Unit</mat-radio-button>
+                            <mat-radio-button value="v2">Inti</mat-radio-button>
+                            <mat-radio-button value="v3">Plasma</mat-radio-button>
+                          </mat-radio-group>
+                          <label id="example-radio-group-label">Versi Laporan</label>
+                          <mat-radio-group formControlName="versi_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="v1">Versi 1 </mat-radio-button>
+                            <mat-radio-button value="v2">Versi 2</mat-radio-button>
+                            <!-- <mat-radio-button value="v3">Versi 3</mat-radio-button> -->
+
+                          </mat-radio-group>
+                          <div>
+                            <label>
+                              <input formControlName="is_include_jurnal_reclass" type="checkbox" name="optionsCheckboxes">&nbsp;&nbsp; Termasuk Jurnal Reclass
+                            </label>
+                          </div>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane " id="export_jurnal">
+                    <form [formGroup]="ExportJurnalForm" (ngSubmit)="ExportJurnal()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Export Jurnal </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                            <!-- <div *ngIf="isFormSubmitted && JurnalForm.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!ExportJurnalForm.controls['lokasi'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div> -->
+
+                          </div>
+                          
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Export</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane  " id="equitas">
+                    <form [formGroup]="EquitasForm" (ngSubmit)="reportEquitas()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Equitas </h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>per Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+                          </div>
+                        </div>
+
+                        <label id="example-radio-group-label">Format Laporan</label>
+                        <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="view">View </mat-radio-button>
+                          <mat-radio-button value="xls">XLS</mat-radio-button>
+                          <mat-radio-button value="pdf">PDF</mat-radio-button>
+
+                        </mat-radio-group>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+
+                </div>
+              </div> <!--    md col 8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

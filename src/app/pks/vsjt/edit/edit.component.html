@@ -1,0 +1,332 @@
+<div class="main-content" style="background-color: transparent !important;">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Validasi Timbangan Customer</h4>
+
+
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi Pabrik</label>
+                <l-select2 disabled="disabled" [data]="dataSelectMill" formControlName="mill_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.mill_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.mill_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div hidden>
+                <!-- <div class="form-group label-floating">
+                <label class="control-label">Tanki</label>
+                <l-select2 [data]="dataSelectTanki" formControlName="tanki_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.tanki_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanki_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+                <!-- <div class="form-group label-floating">
+                <label class="control-label">Produk</label>
+                <l-select2 [data]="dataSelectProduk" formControlName="produk_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.produk_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.produk_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+                <div class="form-group label-floating">
+                  <label class="control-label">No Instruksi Kirim</label>
+                  <l-select2 [data]="dataSelectIntruksi" formControlName="intruksi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.intruksi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.intruksi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <!-- <div class="form-group label-floating">
+                <label class="control-label">Kontrak</label>
+                <l-select2 [data]="dataSelectKontrak" formControlName="kontrak_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.kontrak_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.kontrak_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+                <!-- <div class="form-group label-floating">
+                <label class="control-label">Transport</label>
+                <l-select2 [data]="dataSelectTransport" formControlName="transport_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.transport_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.transport_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+              </div>
+
+
+
+              <div class="form-group label-floating">
+                <label class="control-label">Tanggal Terima</label>
+                <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                  formControlName="tanggal_customer">
+                <div class="form-control-position"><i class="ft-calendar"></i></div>
+                <div *ngIf="isFormSubmitted && userControl.tanggal_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="form-group label-floating">
+                <label class="control-label">Tanggal Kirim</label>
+                <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                  formControlName="tanggal">
+                <div class="form-control-position"><i class="ft-calendar"></i></div>
+                <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Surat Jalan</mat-label>
+                  <input readonly matInput required formControlName="no_surat">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_surat.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_surat.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Tiket</mat-label>
+                  <input readonly matInput required formControlName="no_tiket">
+                </mat-form-field>
+
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama Pelanggan</mat-label>
+                  <input matInput required formControlName="nama_pelanggan">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama_pelanggan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama_pelanggan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width " hidden>
+                <mat-form-field>
+                  <mat-label>Alamat Pengiriman</mat-label>
+                  <input matInput required formControlName="alamat_pengiriman">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.alamat_pengiriman.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.alamat_pengiriman.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <!-- <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Berat Kirim</mat-label>
+                  <input matInput required formControlName="berat_kirim" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.berat_kirim.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.berat_kirim.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+
+              <!-- <button type="button" class="btn btn-primary btn-raised btn-sm btn-round" (click)="showTimbangan()">
+                Pilih Timbangan Kirim
+              </button> -->
+
+              <!-- <input matInput  formControlName="pks_timbangan_kirim_id" hidden>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama Pengemudi</mat-label>
+                  <input matInput required formControlName="nama_pengemudi">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama_pengemudi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama_pengemudi.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Polisi</mat-label>
+                  <input matInput required formControlName="no_polisi">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_polisi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_polisi.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nomor Kendaraan</mat-label>
+                  <input matInput required formControlName="no_kendaraan">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_kendaraan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_kendaraan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nomor Kartu Timbang</mat-label>
+                  <input matInput required formControlName="no_kartu_timbang">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_kartu_timbang.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_kartu_timbang.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+
+              <!-- <hr> -->
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <!-- <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div> -->
+            <div class="card-content">
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>FFA</mat-label>
+                  <input matInput required formControlName="ffa_customer" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.ffa_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.ffa_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Dirt</mat-label>
+                  <input matInput required formControlName="dirt_customer" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.dirt_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.dirt_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Dobi</mat-label>
+                  <input matInput required formControlName="dobi_customer" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.dobi_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.dobi_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Moist</mat-label>
+                  <input matInput required formControlName="moist_customer" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.moist_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.moist_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Bruto Terima</mat-label>
+                  <input matInput required formControlName="bruto_customer" (change)="hitungnetto()">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.bruto_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.bruto_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tara Terima</mat-label>
+                  <input matInput required formControlName="tara_customer" (change)="hitungnetto()">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tara_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tara_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Netto Terima</mat-label>
+                  <input matInput required formControlName="netto_customer">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.netto_customer.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.netto_customer.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+          <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1064 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Laporan Harian Produksi</h4>
+
+              <div class="col-md-12">
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">MILL</label>
+                  <l-select2 [data]="dataSelectMill" formControlName="mill_id" [options]="{ placeholder: 'Pilih',
+                allowClear:false}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.mill_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.mill_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">tanggal</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="tanggal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card-content">
+                  <button type="button" class="btn btn-primary btn-raised btn-sm btn-round" (click)="getData()"
+                    onclick="event.preventDefault()">
+                    Get Data
+                  </button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 container-fluid">
+                  <div class="box row">
+                    <h6>TBS DITERIMA</h6>
+                    <!-- satu inti -->
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Inti Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_inti_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_inti_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_inti_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Inti s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_inti_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_inti_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_inti_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Inti s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="satu_inti_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_inti_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_inti_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <!-- satu plasma -->
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Plasma Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_plasma_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_plasma_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_plasma_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Plasma s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_plasma_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_plasma_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_plasma_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Plasma s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="satu_plasma_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_plasma_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_plasma_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <!-- satu p3 ex.pt -->
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>P3 Ex.PT Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_p3expt_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_p3expt_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_p3expt_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>P3 Ex.PT s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_p3expt_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_p3expt_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_p3expt_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>P3 Ex.PT s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="satu_p3expt_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_p3expt_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_p3expt_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <!-- satu p3 ex.person -->
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>P3 Ex.Person Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_p3experson_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_p3experson_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_p3experson_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>P3 Ex.Person s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_p3experson_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_p3experson_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_p3experson_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>P3 Ex.Person s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="satu_p3experson_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_p3experson_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_p3experson_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <!-- satu total -->
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Total Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_total_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_total_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_total_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Total s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="satu_total_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_total_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_total_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-4">
+                      <mat-form-field>
+                        <mat-label>Total s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="satu_total_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.satu_total_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.satu_total_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="box row">
+                    <h6>TBS DIOLAH</h6>
+                    <!-- dua tbs diolah -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Hari Ini</mat-label>
+                        <input matInput required formControlName="dua_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.dua_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.dua_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="dua_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.dua_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.dua_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="dua_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.dua_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.dua_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Restan</mat-label>
+                        <input matInput required formControlName="dua_restan" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.dua_restan.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.dua_restan.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <h6>HASIL PENGOLAHAN</h6>
+                    <!-- tiga hasil pengolahan -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Minyak Sawit Hari Ini</mat-label>
+                        <input matInput required formControlName="tiga_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Minyak Sawit s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="tiga_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Minyak Sawit s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="tiga_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Rendemen Hari Ini</mat-label>
+                        <input matInput required formControlName="tiga_rendemen_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_rendemen_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_rendemen_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Rendemen s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="tiga_rendemen_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_rendemen_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_rendemen_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Rendemen s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="tiga_rendemen_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_rendemen_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_rendemen_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>FFA</mat-label>
+                        <input matInput required formControlName="tiga_ffa" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_ffa.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_ffa.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Kadar Air</mat-label>
+                        <input matInput required formControlName="tiga_kadar_air" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_kadar_air.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_kadar_air.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Kadar Kotoran</mat-label>
+                        <input matInput required formControlName="tiga_kadar_kotoran" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tiga_kadar_kotoran.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tiga_kadar_kotoran.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <h6>PERSEDIAAN MINYAK SAWIT</h6>
+                    <!-- empat persediaan minyak sawit -->
+                    <div class="box">
+                      <!-- tanki 1 -->
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Tanki No.01 - Kap. 500 T</mat-label>
+                          <input matInput required formControlName="empat_tank1_kg" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank1_kg.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank1_kg.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>FFA</mat-label>
+                          <input matInput required formControlName="empat_tank1_ffa" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank1_ffa.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank1_ffa.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Kadar Air</mat-label>
+                          <input matInput required formControlName="empat_tank1_kadar_air"
+                            (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank1_kadar_air.errors"
+                          class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank1_kadar_air.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Kadar Kotoran</mat-label>
+                          <input matInput required formControlName="empat_tank1_kadar_kotoran"
+                            (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank1_kadar_kotoran.errors"
+                          class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank1_kadar_kotoran.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>DOBI</mat-label>
+                          <input matInput required formControlName="empat_tank1_dobi" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank1_dobi.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank1_dobi.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+
+                      <!-- tank 2 -->
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Tanki No.02 - Kap. 2,000 T</mat-label>
+                          <input matInput required formControlName="empat_tank2_kg" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank2_kg.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank2_kg.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>FFA</mat-label>
+                          <input matInput required formControlName="empat_tank2_ffa" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank2_ffa.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank2_ffa.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Kadar Air</mat-label>
+                          <input matInput required formControlName="empat_tank2_kadar_air"
+                            (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank2_kadar_air.errors"
+                          class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank2_kadar_air.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Kadar Kotoran</mat-label>
+                          <input matInput required formControlName="empat_tank2_kadar_kotoran"
+                            (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank2_kadar_kotoran.errors"
+                          class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank2_kadar_kotoran.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>DOBI</mat-label>
+                          <input matInput required formControlName="empat_tank2_dobi" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank2_dobi.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank2_dobi.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box">
+
+                      <!-- tank 3 -->
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Tanki No.03 - Kap. 2000 T</mat-label>
+                          <input matInput required formControlName="empat_tank3_kg" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank3_kg.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank3_kg.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>FFA</mat-label>
+                          <input matInput required formControlName="empat_tank3_ffa" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank3_ffa.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank3_ffa.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Kadar Air</mat-label>
+                          <input matInput required formControlName="empat_tank3_kadar_air"
+                            (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank3_kadar_air.errors"
+                          class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank3_kadar_air.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>Kadar Kotoran</mat-label>
+                          <input matInput required formControlName="empat_tank3_kadar_kotoran"
+                            (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank3_kadar_kotoran.errors"
+                          class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank3_kadar_kotoran.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width">
+                        <mat-form-field>
+                          <mat-label>DOBI</mat-label>
+                          <input matInput required formControlName="empat_tank3_dobi" (change)="formatNumber($event)">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.empat_tank3_dobi.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.empat_tank3_dobi.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Jumlah Persediaan MS</mat-label>
+                        <input matInput required formControlName="empat_total" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.empat_total.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.empat_total.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <h6>PERSEDIAAN INTI SAWIT</h6>
+                    <!-- lima persediaan inti sawit -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Persediaan Inti Sawit</mat-label>
+                        <input matInput required formControlName="lima_kg" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.lima_kg.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.lima_kg.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>FFA</mat-label>
+                        <input matInput required formControlName="lima_ffa" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.lima_ffa.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.lima_ffa.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>KAdar Air</mat-label>
+                        <input matInput required formControlName="lima_kadar_air" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.lima_kadar_air.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.lima_kadar_air.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Kadar Kotoran</mat-label>
+                        <input matInput required formControlName="lima_kadar_kotoran" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.lima_kadar_kotoran.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.lima_kadar_kotoran.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <h6>JAM EFEKTIF PENGOALAHAN</h6>
+                    <!-- enam jam efektif pengolahan -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Hari ini</mat-label>
+                        <input matInput required formControlName="enam_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.enam_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.enam_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Hari ini</mat-label>
+                        <input matInput required formControlName="enam_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.enam_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.enam_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Bulan ini</mat-label>
+                        <input matInput required formControlName="enam_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.enam_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.enam_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <h6>KAPASITAS OLAH</h6>
+                    <!-- tujuh kapasitas olah -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Hari ini</mat-label>
+                        <input matInput required formControlName="tujuh_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tujuh_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tujuh_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Hari ini</mat-label>
+                        <input matInput required formControlName="tujuh_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tujuh_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tujuh_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Bulan ini</mat-label>
+                        <input matInput required formControlName="tujuh_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.tujuh_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.tujuh_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="box row">
+                    <h4>INTI SAWIT PRODUKSI</h4>
+                    <!-- delapan inti sawit produksi -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Inti Sawit Hari Ini</mat-label>
+                        <input matInput required formControlName="delapan_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Inti Sawit s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="delapan_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Inti Sawit s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="delapan_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Rendemen Hari Ini</mat-label>
+                        <input matInput required formControlName="delapan_rendemen_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_rendemen_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_rendemen_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Rendemen s/d Hari Ini</mat-label>
+                        <input matInput required formControlName="delapan_rendemen_sdhi"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_rendemen_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_rendemen_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Rendemen s/d Bulan Ini</mat-label>
+                        <input matInput required formControlName="delapan_rendemen_sdbi"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_rendemen_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_rendemen_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>FFA</mat-label>
+                        <input matInput required formControlName="delapan_ffa_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_ffa_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_ffa_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Kadar Air</mat-label>
+                        <input matInput required formControlName="delapan_kadar_air_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_kadar_air_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_kadar_air_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Kadar Kotoran</mat-label>
+                        <input matInput required formControlName="delapan_kadar_kotoran_hi"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.delapan_kadar_kotoran_hi.errors"
+                        class="invalid-feedback">
+                        <small [hidden]="!userControl.delapan_kadar_kotoran_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <h4>PENGIRIMAN MINYAK SAWIT</h4>
+                    <!-- sembilan pengiriman minyak sawit -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Hari ini</mat-label>
+                        <input matInput required formControlName="sembilan_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sembilan_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sembilan_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Hari ini</mat-label>
+                        <input matInput required formControlName="sembilan_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sembilan_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sembilan_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Bulan ini</mat-label>
+                        <input matInput required formControlName="sembilan_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sembilan_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sembilan_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <!-- PENGIRIMAN INTI SAWIT -->
+                    <h4>PENGIRIMAN INTI SAWIT</h4>
+                    <!-- sepuluh pengiriman inti sawit -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Hari ini</mat-label>
+                        <input matInput required formControlName="sepuluh_hi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sepuluh_hi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sepuluh_hi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Hari ini</mat-label>
+                        <input matInput required formControlName="sepuluh_sdhi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sepuluh_sdhi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sepuluh_sdhi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>s/d Bulan ini</mat-label>
+                        <input matInput required formControlName="sepuluh_sdbi" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sepuluh_sdbi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sepuluh_sdbi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box row">
+                    <!-- sebelas loses -->
+                    <h4>LOSSES</h4>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Press</mat-label>
+                        <input matInput required formControlName="sebelas_oil_press" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_oil_press.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_oil_press.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Nut</mat-label>
+                        <input matInput required formControlName="sebelas_oil_nut" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_oil_nut.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_oil_nut.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>E Bunch</mat-label>
+                        <input matInput required formControlName="sebelas_oil_e_bunch" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_oil_e_bunch.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_oil_e_bunch.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Final Effluent</mat-label>
+                        <input matInput required formControlName="sebelas_oil_final_effluent"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_oil_final_effluent.errors"
+                        class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_oil_final_effluent.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Fruit Loss</mat-label>
+                        <input matInput required formControlName="sebelas_oil_fruit_loss"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_oil_fruit_loss.errors"
+                        class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_oil_fruit_loss.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>TOTAL</mat-label>
+                        <input matInput required formControlName="sebelas_oil_total" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_oil_total.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_oil_total.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <hr>
+                    <!-- kernel -->
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Fruit Loss</mat-label>
+                        <input matInput required formControlName="sebelas_kernel_fruit_loss"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_kernel_fruit_loss.errors"
+                        class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_kernel_fruit_loss.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Fibre Cyclone</mat-label>
+                        <input matInput required formControlName="sebelas_kernel_fibre_cyclone"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_kernel_fibre_cyclone.errors"
+                        class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_kernel_fibre_cyclone.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>LTDS 1</mat-label>
+                        <input matInput required formControlName="sebelas_kernel_ltds_1"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_kernel_ltds_1.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_kernel_ltds_1.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>LTDS 2</mat-label>
+                        <input matInput required formControlName="sebelas_kernel_ltds_2"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_kernel_ltds_2.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_kernel_ltds_2.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>Claybath</mat-label>
+                        <input matInput required formControlName="sebelas_kernel_claybath"
+                          (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_kernel_claybath.errors"
+                        class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_kernel_claybath.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width">
+                      <mat-form-field>
+                        <mat-label>TOTAL</mat-label>
+                        <input matInput required formControlName="sebelas_kernel_total" (change)="formatNumber($event)">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.sebelas_kernel_total.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.sebelas_kernel_total.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- duabelas keterangan -->
+                  <div class="example-full-width">
+                    <!-- <mat-form-field>
+                      <mat-label>Keterangan</mat-label>
+                      <input matInput required formControlName="duabelas_ket">
+                    </mat-form-field> -->
+                    <mat-form-field>
+                      <mat-label>Keterangan</mat-label>
+                      <textarea matInput formControlName="duabelas_ket" rows="4"></textarea>
+                    </mat-form-field>
+                    <div *ngIf="isFormSubmitted && userControl.duabelas_ket.errors" class="invalid-feedback">
+                      <small [hidden]="!userControl.duabelas_ket.errors.required" class="text-danger">
+                        Tidak boleh kosong!
+                      </small>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

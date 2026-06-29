@@ -1,0 +1,163 @@
+import { Component, OnInit, EventEmitter, AfterViewInit } from '@angular/core';
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { BsModalRef } from 'ngx-bootstrap/modal';
+
+// import * as $ from "jquery";
+import { PksShiftService } from 'src/app/shared/services/pks_shift.service';
+import { Pengajar } from 'src/app/shared/models/pengajar.model';
+import { formatDate } from '@angular/common';
+import * as QuillNamespace from 'quill';
+let Quill: any = QuillNamespace;
+import ImageResize from 'quill-image-resize-module';
+import { TranslateService } from '@ngx-translate/core';
+import { PksShift } from 'src/app/shared/models/pks_shift.model';
+Quill.register('modules/imageResize', ImageResize);
+
+// (global):variable
+declare var $: any;
+declare var swal: any;
+
+// interface
+interface Tipe {
+  value: string;
+  viewValue: string;
+}
+
+// component
+@Component({
+  moduleId: module.id,
+  selector: 'add-cmp',
+  templateUrl: 'add.component.html',
+  styleUrls: ['add.component.css'],
+})
+
+// class component
+export class AddComponent implements OnInit, AfterViewInit {
+  
+  // class(global):variable
+  editor_modules: any;
+  isFormSubmitted = false;
+  datepickerConfig = {
+    dateInputFormat: 'DD-MM-YYYY',
+    containerClass: 'theme-red'
+  }
+  entryForm: FormGroup;
+  categories: any[] = [];
+  event: EventEmitter<any> = new EventEmitter();
+  tipes: Tipe[] = [
+    { value: '0', viewValue: 'KAS' },
+    { value: '1', viewValue: 'Bank' },
+    { value: '2', viewValue: 'Piutang' }
+  ];
+  
+  // class:method constructor
+  constructor(private builder: FormBuilder,
+    private bsModalRef: BsModalRef,
+    private pksShiftService: PksShiftService,
+    private translate: TranslateService
+  ) {
+    this.entryForm = this.builder.group({
+
+      nama: new FormControl(null, Validators.required),
+
+    });
+  }
+  
+
+  get userControl() { return this.entryForm.controls; }
+  
+  // class:method initialize after view
+  ngAfterViewInit(): void {
+    this.loadSelect2();
+  }
+
+  // class(public):variable 
+  public dataSelect: any[] = [];
+  public options: any;
+
+  // class(private): {select2}
+  private loadSelect2(): void {
+    let m = this.translate.instant('holidays.messages.update');
+
+    this.dataSelect = [
+      { id: 'Laki-laki', text: 'Laki-laki' },
+      { id: 'Perempuan', text: 'Perempuan' },
+    ];
+    this.dataSelect.unshift({ id: -1, text: 'Pilih' });
+  }
+  // class:method trigger on submitted form 
+  onSubmit() {
+    this.isFormSubmitted = true;
+    if (this.entryForm.invalid) {
+      return;
+    }
+    let frmData = new FormData();
+
+    let dataSubmit :PksShift = {
+      'nama': this.entryForm.get('nama').value,
+    };
+    this.pksShiftService.create(dataSubmit).subscribe(data => {
+      if( data['status']=='OK'){
+        console.log('ok');
+        swal({
+          title: 'Info!',
+          text: 'Simpan berhasil',
+          type: 'success',
+          confirmButtonClass: "btn btn-success",
+          buttonsStyling: false
+        })
+
+        this.event.emit('OK');
+        this.bsModalRef.hide();
+      }else{
+        swal({
+          title: 'Perhatian!',
+          text: 'Proses Simpan Gagal' ,
+          type: 'warning',
+          confirmButtonClass: "btn btn-success",
+          buttonsStyling: false
+        })
+        return;
+      }
+    });
+  }
+
+  // class:method upload
+  upload(event) {
+    const file = (event.target as HTMLInputElement).files[0];
+    this.entryForm.patchValue({
+      img: file
+    });
+    this.entryForm.get('img').updateValueAndValidity()
+    console.log(file);
+  }
+
+  // class:method trigger on close
+  onClose() {
+    this.bsModalRef.hide();
+  }
+
+  // class:method trigger on initialize
+  ngOnInit() {
+    this.editor_modules = {
+      toolbar: {
+        container: [
+          [{ 'font': [] }],
+          [{ 'size': ['small', false, 'large', 'huge'] }],
+          ['bold', 'italic', 'underline', 'strike'],
+          [{ 'header': 1 }, { 'header': 2 }],
+          [{ 'color': [] }, { 'background': [] }],
+          [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+          [{ 'align': [] }],
+          ['link', 'image']
+        ]
+      },
+      imageResize: true
+    };
+  }
+
+  // class:method valueChange
+  valueChange($event) {
+    console.log($event);
+  }
+}

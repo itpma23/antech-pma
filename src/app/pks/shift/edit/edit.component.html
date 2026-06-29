@@ -1,0 +1,37 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Shift</h4>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama</mat-label>
+                  <input matInput required formControlName="nama">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

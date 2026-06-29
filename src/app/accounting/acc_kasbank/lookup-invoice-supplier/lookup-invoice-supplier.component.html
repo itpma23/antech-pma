@@ -1,0 +1,72 @@
+<div class="main-content">
+  <div class="container-fluid" style="background-color: rgb(140, 201, 236);">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <!-- <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">person</i>
+          </div> -->
+
+          <div class="card-content">
+            <h4 class="card-title">Daftar Data Invoice</h4>
+
+            <div>
+              <button type="button" data-dismiss="modal" (click)="onClose()" class="btn btn-primary btn-info btn-sm ">
+                Tutup</button>
+
+            </div>
+
+            <div class="content table-responsive">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+
+                <thead>
+                  <tr>
+                    <!-- <th>ID</th> -->
+                    <th>Lokasi</th>
+                    <th>Supplier</th>
+                    <th>No Invoice</th>
+                    <th>Tanggal Tempo</th>
+                    <th>No Invoice Supplier</th>
+                    <th>Nilai</th>
+                    <th>Sisa</th>
+                    <!-- <th>ID</th> -->
+
+                    <th></th>
+                </thead>
+                <tbody *ngIf="apInvoice?.length != 0">
+                  <tr *ngFor="let p of apInvoice; index as i">
+
+                    <td>{{p.lokasi}}</td>
+                    <td>{{p.nama_supplier}}</td>
+                    <td>{{p.no_invoice}}</td>
+                    <td>{{p.tanggal_tempo}}</td>
+                    <td>{{p.no_invoice_supplier}}</td>
+                    <td>{{p.nilai_invoice | number}}</td>
+                    <td>{{p.sisa | number}}</td>
+                    <!-- <td>{{p.invoice_id}}</td> -->
+                    <td class="text-right">
+
+                      <button (click)="addItem(p)" class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="apInvoice?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+            <!-- end content-->
+          </div>
+          <!--  end card  -->
+        </div>
+        <!-- end col-md-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+  </div>

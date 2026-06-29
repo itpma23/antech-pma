@@ -1,0 +1,174 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Gaji Karyawan</h4>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false}" disabled="disabled">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Karyawan</label>
+
+                <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false}" disabled="disabled">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Gaji Pokok</mat-label>
+                  <input matInput required formControlName="gapok" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.gapok.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.gapok.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Gapok BPJS</mat-label>
+                  <input matInput required formControlName="gapok_bpjs" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.gapok_bpjs.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.gapok_bpjs.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Gapok BPJS Kesehatan</mat-label>
+                  <input matInput required formControlName="gapok_bpjs_kes" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.gapok_bpjs_kes.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.gapok_bpjs_kes.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Pot BPJS JHT(%)</mat-label>
+                  <input matInput required formControlName="pot_bpjs_jht" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.pot_bpjs_jht.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.pot_bpjs_jht.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Pot BPJS JP(%)</mat-label>
+                  <input matInput required formControlName="pot_bpjs_jp" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.pot_bpjs_jp.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.pot_bpjs_jp.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Pot BPJS Kesehatan(%)</mat-label>
+                  <input matInput required formControlName="pot_bpjs_kes" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.pot_bpjs_kes.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.pot_bpjs_kes.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <input type="checkbox" formControlName="is_catu" (change)="changeSelected($event);"> &nbsp;Dapat Catu?
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Tanggal efektif Catu</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal_efektif_catu" required>
+                </mat-form-field>
+                <!-- <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+              </div>
+              <br><br>
+
+              <div formArrayName="invoiceItems">
+                <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                  width="100%" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th style="width: 40%;">Komponen Gaji</th>
+                      <th>Nilai</th>
+                      <th>Tanggal Efektif</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr [formGroupName]="i" *ngFor="let item of invoiceItems.controls; let i=index; let odd=odd;">
+                      <td>
+                        <l-select2 [data]="dataSelectKomponenGaji" formControlName="komponenGaji" [options]="{ placeholder: 'Pilih',
+                        allowClear: true}">
+                        </l-select2>
+                        <!-- <div *ngIf="isFormSubmitted && item.akun.errors" class="invalid-feedback">
+                          <small [hidden]="!item.akun.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div> -->
+                      </td>
+                      <td> <input type="number" class="form-control" formControlName="nilai" style="text-align: right;">
+                      </td>
+                      <td> <input type="text" class="form-control" formControlName="tanggal_efektif"
+                          style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                      </td>
+                      <td><button (click)="removeItem(item)" onclick="event.preventDefault()"
+                          class="btn btn-danger btn-round btn-fab btn-fab-mini">
+                          <i class="material-icons">close</i></button></td>
+
+                    </tr>
+
+                  </tbody>
+
+                  <button (click)="addItem()" onclick="event.preventDefault()"
+                    class="btn btn-info btn-round btn-fab btn-fab-mini">
+                    <i class="material-icons">add</i>
+                  </button>
+                </table>
+              </div>
+
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,97 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <h3 class="card-title">Profile Saya</h3>
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-content">
+
+
+            <div style="text-align: center;">
+              <!-- <legend>Avatar</legend> -->
+              <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                <div class="fileinput-new thumbnail" style="margin-left: auto; margin-right: auto;">
+                  <img style="object-fit: cover;" src="../../assets/img/image_placeholder.jpg" alt="..."
+                    *ngIf="myProfile?.foto==null">
+                  <img style="object-fit: cover;" src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{myProfile.foto}}"
+                    *ngIf="myProfile?.foto!=null" />
+                </div>
+                <div class="fileinput-preview fileinput-exists thumbnail img-circle"></div>
+                <!-- <div>
+                  <span class="btn btn-round btn-rose btn-file">
+                    <span class="fileinput-new">Add Photo</span>
+                    <span class="fileinput-exists">Change</span>
+                    <input type="file" name="..." />
+                  </span>
+                  <br />
+                  <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i
+                      class="fa fa-times"></i> Remove</a>
+                </div> -->
+              </div>
+            </div>
+
+
+            <div class="form-group label-floating col-md-6">
+              <label class="control-label">Nama</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.user_full_name" disabled>
+            </div>
+            <div class="form-group label-floating col-md-6">
+              <label class="control-label">Jumlah Cuti</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.saldo" disabled>
+            </div>
+            <div class="form-group label-floating col-md-6">
+              <label class="control-label">Jenis Kelamin</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.jenis_kelamin" disabled>
+            </div>
+            <!-- <div class="form-group label-floating col-md-6">
+              <label class="control-label">Status</label>
+              <input type="text" class="form-control" [(ngModel)]="status" disabled>
+            </div> -->
+            <div class="form-group label-floating col-md-6">
+              <label class="control-label">Tempat Lahir</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.tempat_lahir" disabled>
+            </div>
+            <div class="form-group label-floating col-md-6">
+              <label class="control-label">Tanggal Lahir</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.tgl_lahir" disabled>
+            </div>
+            <div class="form-group label-floating col-md-6">
+              <label class="control-label">E-Mail</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.email" disabled>
+            </div>
+            <div class="form-group label-floating col-md-12">
+              <label class="control-label">Alamat</label>
+              <input type="text" class="form-control" [(ngModel)]="myProfile.alamat" disabled>
+            </div>
+
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+      <div class="col-md-6">
+        <br>
+        <legend>Account</legend>
+        <div class="card">
+          <div class="card-content">
+
+            <div class="form-group label-floating col-md-12">
+              <label class="control-label">Password</label>
+              <input type="password" class="form-control" [(ngModel)]="password">
+            </div>
+            <div class="form-group label-floating col-md-12">
+              <label class="control-label">Ulang Password</label>
+              <input type="password" class="form-control" [(ngModel)]="ulang_password">
+            </div>
+
+            <button class="btn btn-rose pull-right" onclick="event.preventDefault()" (click)="changePassword()">Ganti
+              Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end row -->
+  </div>
+</div>

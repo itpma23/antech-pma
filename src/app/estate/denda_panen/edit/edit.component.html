@@ -1,0 +1,81 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Denda Panen</h4>
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+                <l-select2 [data]="dataSelectEstate" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+              allowClear:false}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Kode Denda Panen</label>
+
+                <l-select2 [data]="dataSelectKodeDendaPanen" formControlName="kode_denda_panen_id" [options]="{ placeholder: 'Pilih',
+              allowClear: false}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.kode_denda_panen_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.kode_denda_panen_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <mat-form-field>
+                <mat-label>Tipe Denda</mat-label>
+                <select style="width: '20%';" matNativeControl required formControlName="tipe">
+                  <!-- <option  disabled>Pilih</option> -->
+                  <option value="JANJANG" selected>JANJANG</option>
+                  <option value="RUPIAH">RUPIAH</option>
+
+                </select>
+              </mat-form-field>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tanggal Efektif</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal_efektif" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tanggal_efektif.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal_efektif.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nilai</mat-label>
+                  <input type="number" matInput required formControlName="nilai">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nilai.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nilai.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+          </div>
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
+</div>

@@ -1,0 +1,197 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">person</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Purchase Order</h4>
+
+            <div class="toolbar">
+
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                      aria-expanded="false" aria-controls="collapseOne">
+                      <h4 class="panel-title">
+                        Filter Data
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div class="card-content">
+                        <form [formGroup]="parameterForm" (ngSubmit)="showData()">
+                          <div class="card">
+
+                            <div class="card-content">
+
+                              <div class="example-full-width ">
+                                <mat-form-field>
+                                  <mat-label>dari Tanggal</mat-label>
+                                  <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker"
+                                    bsDatepicker class="form-control" formControlName="tanggal_mulai">
+                                </mat-form-field>
+
+                              </div>
+                              <div class="example-full-width ">
+                                <mat-form-field>
+                                  <mat-label>s/d Tanggal</mat-label>
+                                  <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker"
+                                    bsDatepicker class="form-control" formControlName="tanggal_akhir">
+                                </mat-form-field>
+                              </div>
+                              <div class="form-group label-floating">
+                                <label class="control-label">Supplier</label>
+                                <l-select2 [data]="dataSelectSupp" formControlName="supplier" [options]="{ placeholder: 'Semua',
+                            allowClear: true,width:'50%'}">
+                                </l-select2>
+                              </div>
+
+                            </div>
+
+                            <div class="form-group ">
+
+                              &nbsp; &nbsp; <button type="submit" class="btn btn-primary btn-sm">Filter</button>
+
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="btn-group" *ngIf="accessButton?.print_==true">
+                <button type="button" (click)="exportFiles('csv')"
+                  class="btn btn-round btn-info btn-sm btn-rose">csv</button>
+                <button type="button" (click)="exportFiles('xlsx')"
+                  class="btn btn-round btn-info btn-sm btn-rose">excel</button>
+                <!-- <button type="button" class="btn btn-round btn-info">3</button>  -->
+                <button type="button" (click)="exportFiles('pdf')"
+                  class="btn btn-round btn-info btn-sm btn-rose">pdf</button>
+              </div>
+              <button type="button" (click)="add()"
+              *ngIf="accessButton?.new_==true" class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">Tambah Purchase Order</button>
+              <!-- <buton  type="button"(click)="add()" class="btn btn-primary btn-sm btn-pull-right">Tambah Pengajar</button> -->
+
+            </div>
+            <div class="table-responsive">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+                <!-- <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="tables table-striped table-no-bordered table-hover" cellspacing="0"
+              width="90%" style="width:90%"> -->
+                <thead>
+                  <tr>
+                    <th>ID</th>
+
+                    <th>Lokasi</th>
+                    <th>No Po</th>
+                    <th>Tanggal</th>
+                    <th>Supplier</th>
+                    <th>No Ref</th>
+                    <th>No PP</th>
+                    <th>Catatan</th>
+                    <th>Status</th>
+                    <th>#Rev</th>
+                    <th width="10%"></th>
+                </thead>
+                <tbody *ngIf="PrcPo?.length != 0">
+                  <tr *ngFor="let p of PrcPo; index as i">
+
+                    <td>{{p.lokasi}}</td>
+                    <td>{{p.no_po}}</td>
+                    <td>{{p.tanggal}}</td>
+                    <td>{{p.nama_supplier}}</td>
+                    <!-- <td><p  *ngIf="p.quotation_id !=null && p.quotation_id>0 "><small >No Quotation:&nbsp;{{p.no_quotation}}</small></p><small class="text-info"  *ngIf="p.quotation_id !=null && p.quotation_id>0 ">No referensi: &nbsp;{{p.no_referensi}}</small></td> -->
+                    <td>{{p.no_quotation}}</td>
+                    <td> <div *ngFor="let pp of p['pp_detail']; index as ii">
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlipPP(pp.pp_id)" class="text-info"> {{pp['no_pp']}}
+                     </a>
+
+                      </div>
+
+                    </td>
+                    <td>{{p.catatan}}</td>
+                    <td>{{getStatusPo(p)}}</td>
+                    <td>{{p.revisi_ke}}</td>
+
+                    <!-- <td><span *ngIf="p.is_posting==1" class="label label-success">Sudah Posting</span>
+                      <span *ngIf="p.is_posting!=1" class="label label-danger">Belum Posting</span></td> -->
+
+                    <!-- <td class="text-right">
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon "><i class="material-icons">picture_as_pdf</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                        class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                        class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                    </td> -->
+                    <td style="width:10%" class="text-right">
+                    <!-- <a href="#" onclick="event.preventDefault()" (click)="posting(p.id)"
+                        class="btn btn-simple btn-warning btn-icon" rel="tooltip" data-placement="bottom"
+                        title="Posting" *ngIf="p.is_posting!=1"><i class="material-icons">person</i></a> -->
+                        <a href="#" onclick="event.preventDefault()" (click)="viewCekHarga(p.id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="View Check harga PO"><i class="material-icons">info</i></a>
+                        <a href="#" onclick="event.preventDefault()" (click)="showQuotation(p.quotation_id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="Quotation"  *ngIf="p.quotation_id !=null && p.quotation_id>0 "><i class="material-icons">list</i></a>
+                        <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="View Slip PO"><i class="material-icons">picture_as_pdf</i></a>
+                        <!-- <div *ngIf="p.proses_approval!=0" >
+                          <a href="#" onclick="event.preventDefault()" (click)="statusApproval(p.id)"
+                            class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                            title="Status"><i class="material-icons">list</i></a>
+                        </div> -->
+                        <div *ngIf="(p.proses_approval==0  && p.status!='REJECTED' && p.status!='RELEASE' && p.status!='CLOSED')">
+                           <a href="#" onclick="event.preventDefault()"
+                          (click)="approval(p.id)" class="btn btn-simple btn-warning btn-icon " rel="tooltip"
+                          data-placement="bottom" title="Approval"><i class="material-icons">person</i></a>
+
+
+                        <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                        *ngIf="accessButton?.edit_==true" class="btn btn-simple btn-warning btn-icon edit" rel="tooltip" data-placement="bottom"
+                          title="Edit"><i class="material-icons">edit</i></a>
+                        <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                        *ngIf="accessButton?.delete_==true" class="btn btn-simple btn-danger btn-icon remove" rel="tooltip" data-placement="bottom"
+                          title="Delete"><i class="material-icons">close</i></a>
+                      </div>
+
+                      <!-- <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon "><i class="material-icons">picture_as_pdf</i></a>
+
+                      <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                        *ngIf="accessButton?.edit_==true &&  p.is_posting!=1"
+                        class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                        *ngIf="accessButton?.delete_==true &&  p.is_posting!=1"
+                        class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                    </td> -->
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="PrcPo?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

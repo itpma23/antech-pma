@@ -1,0 +1,135 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">event</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Absensi Karyawan</h4>
+            <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+              <div class="toolbar">
+                <div class="form-group label-floating myClass ">
+                  <label class="control-label ">Tgl Mulai</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="tgl_awal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.tgl_awal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tgl_awal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating myClass ">
+                  <label class="control-label ">Tgl Akhir</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="tgl_akhir">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.tgl_akhir.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tgl_akhir.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating">
+                  <label class="control-label">Lokasi</label>
+
+                  <l-select2 [data]="dataSelectLokasi" (valueChange)="KelasChange($event)" [options]="{ width:'50%',placeholder: 'Pilih',
+                allowClear: false}" formControlName="lokasi_id">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating">
+                  <label class="control-label">Afdeling</label>
+
+                  <l-select2 [data]="dataSelectAfdeling" [options]="{ width:'50%',placeholder: 'Semua',
+                allowClear: true}" formControlName="afdeling_id">
+                  </l-select2>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.afdeling_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.afdeling_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                </div>
+                <mat-radio-group formControlName="tipe">
+                  <mat-radio-button value="kehadiran">Kehadiran</mat-radio-button>
+                  <mat-radio-button value="upah">Upah</mat-radio-button>
+                  <mat-radio-button value="absensi">Absensi</mat-radio-button>
+                </mat-radio-group>
+                <br>
+
+              </div>
+              <button type="submit" class="btn btn-fill btn-rose">Tampilkan</button>
+              <button type="button" class="btn btn-fill btn-rose" (click)="exportExcel()">Excel</button>
+            </form>
+            <div class="isiContent" *ngIf="html_data">
+              <div class="mb-2">
+                <h6>Rekap Absensi Karyawan</h6>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge" style="background-color: yellow;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Libur</small>
+                  <span class="badge" style="background-color: red;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Absensi > 1 (Periksa)</small>
+                </div>
+                <!-- MUNCUL SAAT tipe == 'absensi' DAN html_data sudah terisi -->
+                <div *ngIf="entryForm.get('tipe').value == 'absensi' && html_data" class="d-flex align-items-center gap-2 flex-wrap mt-2">
+                  <span class="badge" style="background-color: lightblue;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Hadir (H)</small>
+
+                  <span class="badge" style="background-color: lightgreen;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Mangkir (M)</small>
+
+                  <span class="badge" style="background-color: powderblue;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Izin Tidak Dibayar (P2)</small>
+
+                  <span class="badge" style="background-color: lavender;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Izin Dibayar (P1)</small>
+
+                  <span class="badge" style="background-color: lightcyan;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Sakit Dibayar (S1)</small>
+
+                  <span class="badge" style="background-color: wheat;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Sakit Tidak Dibayar (S2)</small>
+
+                  <span class="badge" style="background-color: thistle;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Cuti Dibayar (CT)</small>
+
+                  <span class="badge" style="background-color: honeydew;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Cuti Bersama Dibayar (CB)</small>
+
+                  <span class="badge" style="background-color: aliceblue;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Cuti Melahirkan Dibayar (CM)</small>
+
+                  <span class="badge" style="background-color: lightgoldenrodyellow;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Hadir Hari Libur (HL)</small>
+
+                  <span class="badge" style="background-color: beige;">&nbsp;&nbsp;&nbsp;</span>
+                  <small>Resign (R)</small>
+                </div>
+              </div>
+
+              <div id="content_data" [innerHTML]="html_data"
+                style="overflow-x: auto; border: 1px solid #ccc; padding: 10px; max-width: 100%; height: 400px;">
+              </div>
+
+            </div>
+
+
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

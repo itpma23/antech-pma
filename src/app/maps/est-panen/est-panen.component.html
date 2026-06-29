@@ -1,0 +1,98 @@
+<div class="main-content">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne">
+                <h4 class="panel-title">
+                  Filter Data
+                  <i class="material-icons">keyboard_arrow_down</i>
+                </h4>
+              </a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <div class="card-content">
+                  <form [formGroup]="parameterForm"><!-- (ngSubmit)="showData()">  ini component.ts nya di component enggak bisa dibuild jadinya-->
+                    <div class="card">
+
+                      <div class="card-content">
+
+                        <div class="example-full-width ">
+                          <mat-form-field>
+                            <mat-label>dari Tanggal</mat-label>
+                            <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                              class="form-control" formControlName="tanggal_mulai">
+                          </mat-form-field>
+
+                        </div>
+                        <div class="example-full-width ">
+                          <mat-form-field>
+                            <mat-label>s/d Tanggal</mat-label>
+                            <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                              class="form-control" formControlName="tanggal_akhir">
+                          </mat-form-field>
+
+                        </div>
+
+
+                      </div>
+
+                      <div class="form-group ">
+
+                        &nbsp; &nbsp; <button type="submit" class="btn btn-primary btn-sm">Filter</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+
+        <div class="card">
+          <div class="card-header card-header-text" data-background-color="rose">
+            <h4 class="card-title"> Map</h4>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Regular Map</h4>
+            <div class="map" leaflet [leafletOptions]="options" (leafletMapReady)="onMapReady($event)"
+              (leafletClick)="mapClicked($event)">>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- <div class="col-md-6">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">add_location</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Regular Map</h4>
+                   </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">room</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title"> Map</h4>
+
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

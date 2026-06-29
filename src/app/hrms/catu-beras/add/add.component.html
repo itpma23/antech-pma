@@ -1,0 +1,63 @@
+<div class="main-content" >
+  <div class="container-fluid"  >
+    <div class="row" >
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div> 
+            <div class="card-content">
+              <h4 class="card-title">Catu Beras</h4>
+             
+              
+
+              <div class="form-group label-floating">
+                <label class="control-label">Status Karyawan</label>
+                <l-select2 [data]="dataSelectTipe" formControlName="status_karyawan"
+                  [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.status_karyawan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.status_karyawan.errors.required && userControl.status_karyawan.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Jumlah (KG)</mat-label>
+                  <input matInput required formControlName="jumlah_kg" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.jumlah_kg.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jumlah_kg.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Jumlah (RP)</mat-label>
+                  <input matInput required formControlName="jumlah_rupiah" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.jumlah_rupiah.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jumlah_rupiah.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+                        
+            </div>
+          </div>
+        </div>
+        
+        
+     
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+mat-form-field {
+  width: 100%;
+}
+.shift_content {
+  border: 1px solid #5bc0de;
+  margin-bottom: 15px;
+}
+.shift_content>legend {
+  text-align: right;
+  color: #5bc0de;
+  display: inline;
+  width: auto;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+.text-center {
+  text-align: center;
+}

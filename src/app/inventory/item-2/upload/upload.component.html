@@ -1,0 +1,43 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">list</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Upload Photo</h4>
+            <div class="col-md-12">
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Tutup</button>
+              <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                <!-- <div class="fileinput-new thumbnail"> -->
+                  <div class="fileinput-new "> 
+
+                  <img src="../../assets/img/image_placeholder.jpg" alt="..." *ngIf="invItem.foto==null" style="width:auto;height:500px;">
+                  <img src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{invItem.foto}}" *ngIf="invItem.foto!=null"  style="width:auto;height:500px;"/>
+                </div>
+                <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                <div>
+                  <span class="btn btn-rose btn-round btn-file">
+                    <span class="fileinput-new">Pilih photo</span>
+                    <span class="fileinput-exists">ubah</span>
+                    <input type="file" (change)="upload($event)" name="..." />
+                  </span>
+                  <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i
+                      class="fa fa-times"></i> Hapus</a>
+                </div>
+              </div>
+              <button type="button" (click)="updatePhoto()" onclick="event.preventDefault()"
+                class="btn btn-fill btn-rose" *ngIf="isChangePhoto">Simpan photo</button>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

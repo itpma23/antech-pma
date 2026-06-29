@@ -1,0 +1,25 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">VIEW</h4>
+              <!-- <ngx-json-viewer [json]="data"></ngx-json-viewer> -->
+              <ngx-json-viewer [json]="data" [expanded]="false"></ngx-json-viewer>
+               <!-- <ngx-json-viewer [json]="data" [depth]="3"></ngx-json-viewer> -->
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Tutup</button>
+
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

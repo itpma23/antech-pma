@@ -1,0 +1,224 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Supplier</h4>
+
+
+              <div class="row">
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Tipe Supplier</label>
+                  <l-select2 [data]="dataSelectTipe" formControlName="tipe_supplier" [options]="{ placeholder: 'Pilih',
+                       allowClear: false,width:'90%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.tipe_supplier.errors" class="invalid-feedback">
+                    <small
+                      [hidden]="!userControl.tipe_supplier.errors.required && userControl.tipe_supplier.value.text!='Pilih'"
+                      class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Kelompok</label>
+                  <l-select2 [data]="dataSelectKelompok" formControlName="kelompok_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: true,width:'90%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.kelompok_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kelompok_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Akun</label>
+                  <l-select2 [data]="dataSelectAkun" formControlName="acc_akun_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: true,width:'90%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.acc_akun_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.acc_akun_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Tipe Pajak</label>
+                  <l-select2 [data]="dataSelectTipePajak" formControlName="tipe_pajak" [options]="{ placeholder: 'Pilih',
+                       allowClear: false,width:'90%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.tipe_pajak.errors" class="invalid-feedback">
+                    <small
+                      [hidden]="!userControl.tipe_pajak.errors.required && userControl.tipe_supplier.value.text!='Pilih'"
+                      class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Kode Supplier</mat-label>
+                    <input matInput formControlName="kode_supplier"  type="text" readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kode_supplier.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kode_supplier.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Nama Supplier</mat-label>
+                    <input matInput formControlName="nama_supplier" required type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.nama_supplier.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.nama_supplier.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-12  ">
+                  <mat-form-field>
+                    <mat-label>Alamat</mat-label>
+                    <input matInput formControlName="alamat" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.alamat.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.alamat.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                </div>
+              </div>
+
+
+
+
+
+              <div class="row">
+
+                <div class="example-full-width col-md-12">
+                  <mat-form-field>
+                    <mat-label>No Telp</mat-label>
+                    <input matInput formControlName="no_telpon" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Contact</mat-label>
+                    <input matInput formControlName="contact_person" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>No Hp</mat-label>
+                    <input matInput formControlName="no_hp" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Nama Bank</mat-label>
+                    <input matInput formControlName="nama_bank" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Cabang Bank</mat-label>
+                    <input matInput formControlName="cabang_bank" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>No Rekening</mat-label>
+                    <input matInput formControlName="no_rekening" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Atas Nama</mat-label>
+                    <input matInput formControlName="atas_nama" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>No NPWP</mat-label>
+                    <input matInput formControlName="npwp" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-12 ">
+                  <mat-form-field>
+                    <mat-label>Alamat NPWP</mat-label>
+                    <input matInput formControlName="alamat_npwp" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+                <div class="example-full-width col-md-12 ">
+                  <mat-form-field>
+                    <mat-label>Tempo Pembayaran</mat-label>
+                    <input matInput formControlName="tempo_pembayaran" type="number">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_telpon.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_telpon.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

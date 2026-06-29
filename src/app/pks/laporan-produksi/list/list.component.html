@@ -1,0 +1,223 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Produksi</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-warning nav-stacked" role="tablist">
+
+                  <li class="active">
+                    <a href="#laporan_produksi_harian" role="tab" data-toggle="tab">
+                      <i class="material-icons">list</i>Harian
+                    </a>
+                  </li>
+                  <!-- <li>
+                    <a href="#laporan_produksi_bulanan" role="tab" data-toggle="tab">
+                      <i class="material-icons">person</i>Bulanan
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#laporan_produksi_rekap" role="tab" data-toggle="tab">
+                      <i class="material-icons">person</i>Rekap
+                    </a>
+                  </li> -->
+
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="tab-content">
+
+
+                  <div class="tab-pane active" id="laporan_produksi_harian">
+                    <form [formGroup]="ProduksiForm" (ngSubmit)="reportProduksi()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Harian</h4>
+                        </div>
+                        <div class="card-content">
+
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectOrganisasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+                          </div>
+
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-sm btn-rose">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+
+
+
+
+                  <div class="tab-pane" id="laporan_produksi_bulanan">
+                    <form [formGroup]="ProduksiBulananForm" (ngSubmit)="reportProduksiBulanan()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Bulanan</h4>
+                        </div>
+                        <div class="card-content">
+
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectOrganisasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'49%'}">
+                            </l-select2>
+                          </div>
+
+                          <div style="display:flex">
+                            <div class="form-group label-floating" style="width:50%">
+                              <label class="control-label">Bulan Mulai</label>
+                              <l-select2 [data]="dataSelectBulan" formControlName="bulan_mulai" [options]="{ placeholder: 'Pilih',
+                          allowClear: false,width:'100%'}">
+                              </l-select2>
+                              <!-- <div *ngIf="isFormPenerimaanTbsHarianSubmitted && penerimaanTbsHarianForm.controls['bulan'].errors" class="invalid-feedback">
+                                <small [hidden]="!penerimaanTbsHarianForm.controls['bulan'].errors.required" class="text-danger">
+                                  Tidak boleh kosong!
+                                </small>
+                              </div> -->
+                            </div>
+                            <div style="width:2%"></div>
+                            <div class="form-group label-floating" style="width:50%">
+                              <label class="control-label">Tahun Mulai</label>
+                              <l-select2 [data]="dataSelectTahun" formControlName="tahun_mulai" [options]="{ placeholder: 'Pilih',
+                          allowClear: false,width:'100%'}">
+                              </l-select2>
+                              <!-- <div *ngIf="isFormPenerimaanTbsHarianSubmitted && penerimaanTbsHarianForm.controls['tahun'].errors" class="invalid-feedback">
+                                <small [hidden]="!penerimaanTbsHarianForm.controls['tahun'].errors.required" class="text-danger">
+                                  Tidak boleh kosong!
+                                </small>
+                              </div> -->
+                            </div>
+                          </div>
+
+                          <div style="display:flex">
+                            <div class="form-group label-floating" style="width:50%">
+                              <label class="control-label">Bulan Akhir</label>
+                              <l-select2 [data]="dataSelectBulan" formControlName="bulan_akhir" [options]="{ placeholder: 'Pilih',
+                          allowClear: false,width:'100%'}">
+                              </l-select2>
+                              <!-- <div *ngIf="isFormPenerimaanTbsHarianSubmitted && penerimaanTbsHarianForm.controls['bulan'].errors" class="invalid-feedback">
+                                <small [hidden]="!penerimaanTbsHarianForm.controls['bulan'].errors.required" class="text-danger">
+                                  Tidak boleh kosong!
+                                </small>
+                              </div> -->
+                            </div>
+                            <div style="width:2%"></div>
+                            <div class="form-group label-floating" style="width:50%">
+                              <label class="control-label">Tahun Akhir</label>
+                              <l-select2 [data]="dataSelectTahun" formControlName="tahun_akhir" [options]="{ placeholder: 'Pilih',
+                          allowClear: false,width:'100%'}">
+                              </l-select2>
+                              <!-- <div *ngIf="isFormPenerimaanTbsHarianSubmitted && penerimaanTbsHarianForm.controls['tahun'].errors" class="invalid-feedback">
+                                <small [hidden]="!penerimaanTbsHarianForm.controls['tahun'].errors.required" class="text-danger">
+                                  Tidak boleh kosong!
+                                </small>
+                              </div> -->
+                            </div>
+                          </div>
+
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-sm btn-rose">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+
+                  <div class="tab-pane" id="laporan_produksi_rekap">
+                    <form [formGroup]="ProduksiRekapForm" (ngSubmit)="reportProduksiRekap()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Rekap</h4>
+                        </div>
+                        <div class="card-content">
+
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectOrganisasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal">
+                            </mat-form-field>
+                          </div>
+                          <!-- <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+                          </div> -->
+
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-sm btn-rose">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

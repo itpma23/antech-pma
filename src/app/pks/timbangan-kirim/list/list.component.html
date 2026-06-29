@@ -1,0 +1,150 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">PKS Timbangan Kirim</h4>
+
+            <div class="toolbar">
+
+              <div class="toolbar">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        <h4 class="panel-title">
+                          Filter Data
+                          <i class="material-icons">keyboard_arrow_down</i>
+                        </h4>
+                      </a>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <div class="card-content">
+                          <form [formGroup]="parameterForm" (ngSubmit)="showData()">
+                            <div class="card">
+
+                              <div class="card-content">
+
+                                <div class="example-full-width ">
+                                  <mat-form-field>
+                                    <mat-label>dari Tanggal</mat-label>
+                                    <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker"
+                                      bsDatepicker class="form-control" formControlName="tanggal_mulai">
+                                  </mat-form-field>
+
+                                </div>
+                                <div class="example-full-width ">
+                                  <mat-form-field>
+                                    <mat-label>s/d Tanggal</mat-label>
+                                    <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker"
+                                      bsDatepicker class="form-control" formControlName="tanggal_akhir">
+                                  </mat-form-field>
+                                </div>
+
+                                <div class="form-group label-floating">
+                                  <label class="control-label">Lokasi</label>
+                                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                            allowClear: true,width:'50%'}">
+                                  </l-select2>
+                                </div>
+
+                                <div class="form-group label-floating">
+                                  <label class="control-label">Customer</label>
+                                  <l-select2 [data]="dataSelectCustomer" formControlName="customer" [options]="{ placeholder: 'Semua',
+                            allowClear: true,width:'50%'}">
+                                  </l-select2>
+                                </div>
+
+                              </div>
+
+                              <div class="form-group ">
+
+                                &nbsp; &nbsp; <button type="submit" class="btn btn-primary btn-sm">Filter</button>
+                              </div>
+                            </div>
+                          </form>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="btn-group  " *ngIf="accessButton?.print_==true">
+                <button type="button" (click)="exportFiles('csv')" class="btn btn-round btn-info btn-sm btn-rose">csv</button>
+                <button type="button" (click)="exportFiles('xlsx')" class="btn btn-round btn-info btn-sm btn-rose">excel</button>
+                <!-- <button type="button" class="btn btn-round btn-info">3</button>  -->
+                <button type="button" (click)="exportFiles('pdf')" class="btn btn-round btn-info btn-sm btn-rose">pdf</button>
+              </div>
+              <button type="button" (click)="add()" *ngIf="accessButton?.new_==true" class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">Tambah Timbangan Kirim</button>
+              <!-- <buton  type="button"(click)="add()" class="btn btn-primary btn-sm btn-pull-right">Tambah Pengajar</button> -->
+
+            </div>
+            <div class="">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+                <!-- <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="tables table-striped table-no-bordered table-hover" cellspacing="0"
+              width="90%" style="width:90%"> -->
+                <thead>
+                  <tr>
+                    <th>ID</th>
+
+                    <th>No Tiket</th>
+                    <th>Customer</th>
+                    <th>Tanggal</th>
+                    <th>Tara</th>
+                    <th>Bruto</th>
+                    <th>Netto</th>
+                    <th>Transportir</th>
+                    <th>NoKontrak</th>
+                    <th>NoIP</th>
+
+                    <th width="10%"></th>
+                </thead>
+                <tbody *ngIf="PksTimbanganKirim?.length != 0">
+                  <tr *ngFor="let p of PksTimbanganKirim; index as i">
+
+                    <td>{{p.no_tiket}}</td>
+                    <td>{{p.nama_customer}}</td>
+                    <td>{{p.tanggal}}</td>
+                    <td>{{p.tara_kirim}}</td>
+                    <td>{{p.bruto_kirim}}</td>
+                    <td>{{p.netto_kirim}}</td>
+                    <td>{{p.nama_transportir}}</td>
+                    <td>{{p.no_kontrak}}</td>
+                    <td>{{p.no_ip}}</td>
+
+                    <td class="text-right">
+                      <!-- <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon "><i class="material-icons">picture_as_pdf</i></a> -->
+                      <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                      *ngIf="accessButton?.edit_==true" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                      *ngIf="accessButton?.delete_==true" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="PksTimbanganKirim?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

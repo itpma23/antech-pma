@@ -1,0 +1,382 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Kas Bank</h4>
+
+
+              <div class="row">
+                <input matInput formControlName="ref_id" type="text" hidden>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Lokasi</label>
+                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Pilih Supplier (Opsional)</label>
+                  <l-select2 [data]="dataSelectSupplier" formControlName="supplier_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.supplier_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.supplier_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                <div *ngIf="showPermohonanBayar" class="form-group col-md-6">
+
+                  <label>No. Permohonan Bayar</label>
+
+                  <!-- LOOKUP -->
+                  <div class="lookup-container">
+
+                    <textarea class="lookup-textarea" rows="3" formControlName="permohonan_id" readonly
+                      (click)="lookupPermohonan()">
+                    </textarea>
+
+                    <div class="lookup-icon" (click)="lookupPermohonan()">
+
+                      <i class="material-icons">search</i>
+
+                    </div>
+
+                  </div>
+
+                  <!-- LIST PERMOHONAN -->
+                  <div class="selected-permohonan" *ngIf="permohonanIds.length > 0">
+
+                    <span *ngFor="let p of dataSelectPermohonan">
+
+                      <span *ngIf="permohonanIds.includes(p.id)" class="label label-info permohonan-chip">
+
+                        {{p.no_transaksi}}
+
+                        <i class="material-icons remove-icon" (click)="removePermohonan(p.id)">
+
+                          close
+
+                        </i>
+
+                      </span>
+
+                    </span>
+
+                  </div>
+
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Tipe</label>
+                  <l-select2 [data]="dataSelectTipeJurnal" formControlName="tipe_jurnal" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'100%'}" (ngModelChange)="TipeChange($event)">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.tipe_jurnal.errors" class="invalid-feedback">
+                    <small
+                      [hidden]="!userControl.tipe_jurnal.errors.required && userControl.tipe_jurnal.value.text!='Pilih'"
+                      class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+
+
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>No Transaksi</mat-label>
+                    <input matInput formControlName="no_transaksi" type="text" readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.no_transaksi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>No Referensi</mat-label>
+                    <input matInput formControlName="no_referensi" type="text">
+                  </mat-form-field>
+
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Akun Kas Bank</label>
+                  <l-select2 [data]="dataSelectAkunKasbank" formControlName="akun_kasbank_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.akun_kasbank_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.akun_kasbank_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Tanggal </mat-label>
+                    <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                      class="form-control" formControlName="tanggal" required>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Tipe Pembayaran</label>
+                  <l-select2 [data]="dataSelectTipePembayaran" formControlName="tipe_bayar" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'100%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.tipe_bayar.errors" class="invalid-feedback">
+                    <small
+                      [hidden]="!userControl.tipe_bayar.errors.required && userControl.tipe_bayar.value.text!='Pilih'"
+                      class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Sumber Dokumen</label>
+                  <l-select2 [data]="dataSelectSumberDokumen" formControlName="sumber_dokumen" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'100%'}" (ngModelChange)="SumberDokumenChange($event)">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.sumber_dokumen.errors" class="invalid-feedback">
+                    <small
+                      [hidden]="!userControl.sumber_dokumen.errors.required && userControl.sumber_dokumen.value.text!='Pilih'"
+                      class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Keterangan</mat-label>
+                    <input matInput formControlName="keterangan" type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.keterangan.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.keterangan.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Nilai</mat-label>
+                    <input matInput formControlName="nilai" type="text" readonly>
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.deskripsi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.deskripsi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                </div>
+              </div>
+              <button type="button" (click)="import()"
+                class="btn btn-primary btn-info btn-sm btn pull-left btn-info">Import Data Detail </button>
+
+              <div class="col-md-12">
+                <div class="card-content">
+
+                  <button *ngIf="sumberDoc=='INVOICE_AP' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addInvoiceSupplier()">
+                    Ambil Data Invoice Supplier
+                  </button>
+
+                  <button *ngIf="sumberDoc=='INVOICE_AR' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addInvoiceCustomer()">
+                    Ambil Data Invoice Customer
+                  </button>
+
+                  <button *ngIf="sumberDoc=='BAPP_SEWA_KENDARAAN' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addBappSewaKendaraan()">
+                    Ambil Data BAPP Sewa Kendaraan
+                  </button>
+
+                  <button *ngIf="sumberDoc=='INVOICE_TBS' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addInvoiceTBS()">
+                    Ambil Data INVOICE TBS
+                  </button>
+
+                  <button *ngIf="sumberDoc=='BAPP_SPK_KEBUN' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addBappSpkKebun()">
+                    Ambil Data BAPP SPK Kebun
+                  </button>
+
+                  <button *ngIf="sumberDoc=='INVOICE_ANGKUT_CPO' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addInvoiceAngkutCpo()">
+                    Ambil Data INVOICE ANGKUT CPO/PK
+                  </button>
+
+                  <button *ngIf="sumberDoc=='KUITANSI_PEMBELIAN_TBS' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addKuitansiTBS()">
+                    Ambil Data KUITANSI PEMBELIAN TBS
+                  </button>
+
+                  <button *ngIf="sumberDoc=='PERMINTAAN_DANA' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addPermintaanDana()">
+                    Ambil Data PERMINTAAN DANA
+                  </button>
+
+                  <button *ngIf="sumberDoc=='UANG_MUKA' && permohonanIds.length==0" type="button"
+                    class="btn btn-primary btn-raised btn-sm btn-round" (click)="addUangMuka()">
+                    Ambil Data UANG MUKA
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header card-header-tabs" data-background-color="rose">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <!-- <span class="nav-tabs-title">Tasks:</span> -->
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="active">
+                          <a href="#" data-toggle="tab">
+                            <i class="material-icons">list</i> Detail
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div formArrayName="details">
+                  <fieldset class="container-fluid shift_content" [formGroupName]="i"
+                    *ngFor="let blok of details.controls; let i=index; let odd=odd;">
+
+                    <legend>
+                      <span class="label label-info">{{i+1}}</span>
+                      <button type="button" (keydown.enter)="$event.preventDefault()" (click)="removeBlokItem(blok)"
+                        class="btn btn-danger btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </legend>
+
+                    <div class="form-group ">
+                      <div class="xform-group col-md-6">
+                        <label class="control-label">Lokasi</label>
+                        <l-select2 [data]="dataSelectLokasiDetail" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                      allowClear: true}" (ngModelChange)="LokasiDtlChange(blok)">
+                        </l-select2>
+                      </div>
+                      <div class="xform-group col-md-6">
+                        <label class="control-label">Akun</label>
+                        <l-select2 [data]="dataSelectAkun[blok.get('lokasi_id').value['id']]"
+                          formControlName="acc_akun_id" [options]="{ placeholder: 'Pilih',
+                      allowClear: true}">
+                        </l-select2>
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <mat-form-field>
+                          <mat-label>Debet</mat-label>
+                          <input matInput formControlName="debet" (change)="formatNumbering(blok)">
+                        </mat-form-field>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <mat-form-field>
+                          <mat-label>Kredit</mat-label>
+                          <input matInput formControlName="kredit" (change)="formatNumbering(blok)">
+                        </mat-form-field>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <mat-form-field>
+                          <mat-label>Keterangan</mat-label>
+                          <input matInput formControlName="ket" type="text">
+                        </mat-form-field>
+                      </div>
+                      <div class="form-group col-md-12" hidden>
+                        <mat-form-field>
+                          <mat-label>Invoice ID</mat-label>
+                          <input matInput formControlName="invoice_id" type="text">
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <div class="panel panel-default" style="width: 95%;">
+                        <div class="panel-heading " role="tab" id={{awalanHeading}}{{i}} style="width: 500px;">
+                          <a role="button" data-toggle="collapse" href="#{{awalanCollapse}}{{i}}" aria-expanded="false"
+                            aria-controls="collapseExample" class="collapsed">
+                            <h4 class="panel-title ">
+                              Rincian
+                              <i class="material-icons">keyboard_arrow_down</i>
+                            </h4>
+                          </a>
+                        </div>
+
+
+                        <div id={{awalanCollapse}}{{i}} class="panel-collapse collapse" role="tabpanel">
+                          <div class="panel-body">
+                            <div class="xform-group col-md-6">
+                              <label class="control-label">Traksi(Kendaraan/AB/Mesin) </label>
+                              <l-select2 [data]="dataSelectTraksi" formControlName="traksi_id" [options]="{ placeholder: 'Pilih',
+                    allowClear: true}">
+                              </l-select2>
+                            </div>
+
+                            <div class="xform-group col-md-6">
+                              <label class="control-label">Blok/Mesin</label>
+                              <l-select2 [data]="dataSelectBlok" formControlName="blok_id" [options]="{ placeholder: 'Pilih',
+                    allowClear: true}">
+                              </l-select2>
+                            </div>
+                            <div class="xform-group col-md-6">
+                              <label class="control-label">Kegiatan/Alokasi</label>
+                              <l-select2 [data]="dataSelectKegiatan" formControlName="kegiatan_id" [options]="{ placeholder: 'Pilih',
+                    allowClear: true}">
+                              </l-select2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="xform-group col-md-6">
+                      <br>
+
+                    </div>
+
+                  </fieldset>
+                  <br>
+                  <button type="button" (click)="addBlokItem()" class="btn btn-info btn-round btn-fab btn-fab-mini">
+                    <i class="material-icons">add</i>
+                  </button>
+                </div>
+              </div>
+
+              <table width="100%" style="width:100%" hidden>
+                <tr>
+                  <td style="width: 30%;">&nbsp;</td>
+                  <td style="width: 40%;">Jumlah</td>
+
+
+                  <td></td>
+                </tr>
+              </table>
+
+              <br><br>
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="button" class="btn btn-default" (click)="onSubmitClear()">Simpan & Lanjutkan</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

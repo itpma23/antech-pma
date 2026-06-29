@@ -1,0 +1,18 @@
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-body .form-control {
+  font-size: 13px;
+}
+
+.alert-info {
+  background-color: #eaf4ff;
+  border-left: 4px solid #007bff;
+  color: #004085;
+}

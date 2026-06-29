@@ -1,0 +1,147 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="toolbar">
+          <button type="button" (click)="kembali();" class="btn btn-primary btn-info btn-sm ">
+            Kembali</button>
+        </div>
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">list</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Quotation</h4>
+
+          </div>
+        </div>
+        <div>
+          <div>
+            <div id="wrap">
+              <div class="container">
+                <!-- <h1 class="title">{{ quotation?.no_quotation }}</h1>
+                <h4 class="title">{{ quotation?.no_referensi }}</h4> -->
+                <dl class="dl-horizontal">
+                  <dt>No Quotation</dt>
+                  <dd>{{ quotation?.no_referensi }}</dd>
+                  <dt>No Referensi</dt>
+                  <dd>{{ quotation?.no_referensi }}</dd>
+                  <dt>Catatan</dt>
+                  <dd>{{ quotation?.catatan }}</dd>
+
+                </dl>
+
+
+
+                <hr class="hr-top">
+                <div class="wrap-content">
+                  <div class="content">
+                    <!-- <p>Catatan:</p> -->
+                    <!-- <div  [innerHTML]="quotation?.catatan">
+
+                    </div> -->
+
+                    <div >
+                      <dl class="dl-horizontal">
+                        <dt>File Name</dt>
+                        <dd>{{ (quotation?.file_info?.name ==null) ? 'noname' : quotation?.file_info?.name }}
+                        </dd>
+                        <dt>Size</dt>
+                        <dd>{{ (quotation?.file_info?.size) }}</dd>
+                        <dt>Modified</dt>
+                        <dd>{{ quotation?.file_info?.date }}</dd>
+                        <dt>Mime</dt>
+                        <dd>{{ quotation?.file_info?.mime }}</dd>
+                        <dt></dt>
+
+                        <dd><br><a href="#" onclick="event.preventDefault()"
+                            (click)="download( quotation?.id,quotation?.file_info?.name)"
+                            class="btn btn-warning"><i class="icon-download"></i>
+                            Download File</a></dd>
+                      </dl>
+                    </div>
+                    <!-- {% endif %} -->
+
+                    <br>
+                    <!-- <div class="row-fluid">
+                      <div class="span8">
+                        <h4>
+                          <i class="icon-pencil"></i> Tulis komentar
+                          <div class="pull-right" style="font-size: 14px;">{{ form_error('komentar')|raw }}</div>
+                        </h4>
+                        <div class="bg-form-komentar" id="form-komentar">
+                          <form method="post" action="{{ site_url('quotation/detail/' ~ quotation.id) }}">
+                            <p><textarea class="span12 texteditor" id="komentar"
+                                name="komentar">{{ set_value('komentar')|raw }}</textarea></p>
+                            <p>
+                              <button class="btn btn-primary pull-right">Post komentar</button>
+                              <img
+                                src="{{ get_url_image_session(get_sess_data('user', 'foto'), 'medium', get_sess_data('user', 'jenis_kelamin')) }}"
+                                style="height:30px;width:30px; margin-right:5px;" class="img-circle img-polaroid">
+                              {{ get_sess_data('user', 'nama') }}
+                            </p>
+                            <div class="clear"></div>
+                          </form>
+                        </div>
+                        <br>
+
+                        {% if quotation.jml_komentar > 0 %}
+                        <h4><i class="icon-comments"></i> {{ quotation.jml_komentar }} Komentar</h4>
+
+                        {% for k in quotation.komentar %}
+                        <div class="komentar" id="komentar-{{ k.id }}">
+                          <img src="{{ k.login.link_image }}" style="height:25px;width:25px; margin-left:5px;"
+                            class="img-circle img-polaroid pull-right">
+                          <p><a href="{{ k.login.link_profil }}"><b>{{ k.login.nama }}</b></a>, <small>{{
+                              k.tgl_posting|date('d F Y') }}</small>, <small><a
+                                href="{{ site_url('quotation/detail/' ~ quotation.id ~ '/laporkan/' ~ k.id) }}"
+                                class="text-muted iframe-laporkan"><i class="icon-bug"></i> laporkan</a></small></p>
+                          {{ k.konten|raw }}
+                        </div>
+                        {% endfor %}
+
+                        <div style="font-size:12px;">
+                          {{ quotation.komentar_pagination|raw }}
+                        </div>
+                        {% endif %}
+                      </div>
+                      <div class="span4">
+                        <h4><i class="icon-file"></i> quotation lainnya</h4>
+                        <ul class="unstyled ul-quotation">
+                          {% for t in terkait %}
+                          <li>
+                            <div class="quotation">
+                              <a href="{{ site_url('quotation/detail/' ~ t.id) }}"><i
+                                  class="{{ (t.file is empty) ? 'icon-file' : 'icon-download' }} img-circle img-polaroid {{ (strlen(t.judul) > 33) ? 'pull-left' }}"
+                                  style="padding:10px; margin-right:10px;"></i>{{ t.judul|raw }}</a>
+                            </div>
+                          </li>
+                          {% endfor %}
+
+                          {% if terkait is empty %}
+                          <div class="alert alert-info">Tidak ada quotation terkait</div>
+                          {% endif %}
+                        </ul>
+                      </div>
+                    </div> -->
+
+                    <!-- {% else %}
+                    <div class="alert alert-danger">
+                      <h3>{{ error }}</h3>
+                    </div>
+                    {% endif %} -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

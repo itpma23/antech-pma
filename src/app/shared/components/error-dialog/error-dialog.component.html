@@ -1,0 +1,14 @@
+<div class="modal-header">
+	<h1 class="mb-0">Errors</h1>
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="bsModalRef.hide()"><span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+	<h5 class="mb-0"><strong>Status:</strong> {{error.status}}</h5>
+	<h5 class="mt-0"><strong>Status Text:</strong> {{error.statusText}}</h5>
+	<hr>
+	<div class="alert alert-danger" role="alert" *ngIf="errorMessages?.length != 0">
+		<ul class="mb-0">
+			<li *ngFor="let error of errorMessages; index as i">{{error}}</li>
+		</ul>
+	</div>
+</div>

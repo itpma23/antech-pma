@@ -1,0 +1,3976 @@
+{
+	"Activate Account": "激活账户",
+	"Administration": "管理",
+	"Announcement": "公告",
+	"Announcements": "通告",
+	"Appointments": "预约时间",
+	"Articles": "用品",
+	"Assigned Project": "分配项目",
+	"Backup Database": "备份数据库",
+	"Calendar": "日历",
+	"Change Email": "更改电子邮件",
+	"Clients": "客户",
+	"Company Detail": "公司详细资料",
+	"Complete Projects": "完成项目",
+	"Cronjob": "计划工作",
+	"Custom Fields": "自定义字段",
+	"Dashboard": "仪表板",
+	"Dashboard Settings": "仪表板设置",
+	"Defect Assigned": "缺陷分配",
+	"Defect Attachment": "缺陷附件",
+	"Defect Comments": "缺陷评论",
+	"Defect Updated": "缺陷已更新",
+	"Defects": "瑕疵",
+	"Departments": "部门",
+	"Email Notifications": "邮件通知",
+	"Email Settings": "电邮设定",
+	"Email Templates": "邮件模板",
+	"Estimates": "估算值",
+	"File Manager": "文件管理器",
+	"Forgot Password": "忘记密码",
+	"HRM": "人力资源",
+	"Holidays": "假期",
+	"Incident Assigned": "分配的事件",
+	"Incident Attachment": "事件附件",
+	"Incident Comments": "事件注释",
+	"Incident Updated": "事件已更新",
+	"Incidents": "突发事件",
+	"Invoices": "发票",
+	"Items": "项目",
+	"Knowledge Base": "知识库",
+	"Leaves": "树叶",
+	"Mailbox": "邮箱",
+	"Meeting": "会议",
+	"Meetings": "会议",
+	"Menu Allocation": "菜单分配",
+	"Notification Client": "通知客户端",
+	"PM": "PM",
+	"Payments": "支付",
+	"Project Attachment": "项目附件",
+	"Project Comments": "项目评论",
+	"Project Management": "项目管理",
+	"Project Planner": "项目策划师",
+	"Projects": "项目",
+	"Register Email": "注册邮件",
+	"Reports": "报告",
+	"Reset Password": "重设密码",
+	"Roles": "角色",
+	"Sales": "销售",
+	"Settings": "设置",
+	"System Settings": "系统设置",
+	"System Update": "系统更新",
+	"Task Assigned": "任务分配",
+	"Task Board": "任务板",
+	"Task Comments": "任务注释",
+	"Task Updated": "任务已更新",
+	"Tasks": "任务",
+	"Tasks Attachment": "任务附件",
+	"Taxes": "税收",
+	"Team Boards": "团队板",
+	"Teams": "小组",
+	"Theme Settings": "主题设定",
+	"Timesheet": "时间表",
+	"Todos": "托多斯",
+	"Users": "用户",
+	"Welcome Email": "欢迎电邮",
+	"activities": {
+		"columns": {
+			"activity": "活动",
+			"date": "日期",
+			"description": "描述",
+			"module": "模",
+			"photo": "照片",
+			"username": "用户名"
+		},
+		"title": "活动"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "操作",
+			"creator": "创造者",
+			"end_date": "结束日期",
+			"start_date": "开始日期",
+			"status": "状态",
+			"title": "标题"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的公告标题。",
+				"message2": "公告标题最多可以包含100个字符。",
+				"message3": "请选择一个有效的开始日期。",
+				"message4": "请选择一个有效的结束日期。"
+			},
+			"fields": {
+				"all_clients": "所有客户",
+				"description": "描述",
+				"end_date": "结束日期",
+				"publish": "发布",
+				"start_date": "开始日期",
+				"status": "状态",
+				"title": "标题",
+				"unpublish": "取消发布"
+			},
+			"placeholders": {
+				"placeholder1": "输入公告标题",
+				"placeholder2": "选择开始日期",
+				"placeholder3": "选择结束日期"
+			},
+			"title1": "创建公告",
+			"title2": "编辑公告"
+		},
+		"messages": {
+			"create": "公告创建成功。",
+			"delete": "公告已成功删除。",
+			"update": "公告已成功更新。"
+		},
+		"title": "通告"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "预订插槽"
+		},
+		"columns": {
+			"actions": "操作",
+			"end_time": "时间结束",
+			"id": "证件号码",
+			"location": "地点",
+			"provider": "提供商",
+			"requester": "请求者",
+			"start_time": "开始时间",
+			"status": "状态",
+			"title": "标题"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请选择一个有效的提供者。",
+				"message2": "请选择一个有效的开始日期。",
+				"message3": "请选择一个有效的结束日期。",
+				"message4": "请输入有效的约会标题。",
+				"message5": "约会标题最多可包含255个字符。",
+				"message6": "请选择一个有效的客户。",
+				"message7": "请输入有效的参加者。",
+				"message8": "请选择一个有效的状态。",
+				"message9": "请选择一个有效的提供者。"
+			},
+			"fields": {
+				"attendees": "参会者",
+				"client": "客户",
+				"end_date": "结束日期",
+				"location": "地点",
+				"notes": "笔记",
+				"provider": "提供商",
+				"start_date": "开始日期",
+				"status": "状态",
+				"title": "标题"
+			},
+			"placeholders": {
+				"placeholder1": "选择开始日期",
+				"placeholder2": "选择结束日期",
+				"placeholder3": "输入约会标题",
+				"placeholder4": "-选择客户-",
+				"placeholder5": "地点",
+				"placeholder6": "参会者",
+				"placeholder7": "-选择状态-",
+				"placeholder8": "搜索月份"
+			}
+		},
+		"messages": {
+			"create": "约会创建成功。",
+			"delete": "约会已成功删除。",
+			"edit": "约会编辑成功。",
+			"status": "状态已成功更改。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "保留的"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "确认"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "成品"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "取消"
+			}
+		],
+		"title": "预约时间"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "操作",
+			"attachment": "附件",
+			"file_title": "档案标题"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一有效的文件标题。",
+				"message2": "将文件放在此处或单击以上传。",
+				"message3": "请选择一个有效的文件。",
+				"message4": "请输入有效的评论。",
+				"message5": "文件标题的最大长度为255个字符。"
+			},
+			"fields": {
+				"attachment": "附件",
+				"description": "描述",
+				"file_title": "档案标题"
+			},
+			"placeholders": {
+				"placeholder1": "输入文件标题"
+			}
+		},
+		"messages": {
+			"create": "附件创建成功。",
+			"delete": "附件已成功删除。"
+		},
+		"title": "附件"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "通告",
+			"title": "通告"
+		},
+		"appointments": {
+			"text": "预约时间",
+			"title": "预约时间"
+		},
+		"article": {
+			"text": "文章",
+			"title": "文章"
+		},
+		"calendar": {
+			"text": "日历",
+			"title": "日历"
+		},
+		"category": {
+			"text": "类别",
+			"title": "类别"
+		},
+		"clients": {
+			"text": "客户",
+			"title": "客户"
+		},
+		"dashboard": {
+			"title": "仪表板"
+		},
+		"defects": {
+			"text": "瑕疵",
+			"title": "瑕疵"
+		},
+		"departments": {
+			"text": "部门",
+			"title": "部门"
+		},
+		"email_templates": {
+			"text": "邮件模板",
+			"title": "邮件模板"
+		},
+		"estimates": {
+			"text": "估算值",
+			"title": "估算值"
+		},
+		"file_browser": {
+			"text": "文件管理器",
+			"title": "文件管理器"
+		},
+		"holidays": {
+			"text": "假期",
+			"title": "假期"
+		},
+		"incidents": {
+			"text": "突发事件",
+			"title": "突发事件"
+		},
+		"invoices": {
+			"text": "发票",
+			"title": "发票"
+		},
+		"items": {
+			"text": "项目",
+			"title": "项目"
+		},
+		"knowledgebase": {
+			"text": "知识库",
+			"title": "知识库"
+		},
+		"leave_types": {
+			"text": "休假类型",
+			"title": "休假类型"
+		},
+		"leaves": {
+			"text": "树叶",
+			"title": "树叶"
+		},
+		"mailbox": {
+			"text": "邮箱",
+			"title": "邮箱"
+		},
+		"meetings": {
+			"text": "会议",
+			"title": "会议"
+		},
+		"payments": {
+			"text": "支付",
+			"title": "支付"
+		},
+		"projects": {
+			"text": "项目",
+			"title": "项目"
+		},
+		"projects_planner": {
+			"text": "项目策划师",
+			"title": "项目策划师"
+		},
+		"providers": {
+			"text": "供应商",
+			"title": "供应商"
+		},
+		"reports": {
+			"text": "报告",
+			"title": "报告"
+		},
+		"roles": {
+			"text": "角色",
+			"title": "角色"
+		},
+		"settings": {
+			"text": "设置",
+			"title": "设置"
+		},
+		"taskboard": {
+			"text": "任务板",
+			"title": "任务板"
+		},
+		"tasks": {
+			"text": "任务",
+			"title": "任务"
+		},
+		"taxes": {
+			"text": "税收",
+			"title": "税收"
+		},
+		"teamboard": {
+			"text": "团队板",
+			"title": "团队板"
+		},
+		"teams": {
+			"text": "小组",
+			"title": "小组"
+		},
+		"timesheet": {
+			"text": "时间表",
+			"title": "时间表"
+		},
+		"todos": {
+			"text": "托多斯",
+			"title": "托多斯"
+		},
+		"users": {
+			"text": "用户",
+			"title": "用户"
+		}
+	},
+	"calendar": {
+		"day": "天",
+		"month": "月",
+		"title": "日历",
+		"today": "今天",
+		"week": "周"
+	},
+	"clients": {
+		"columns": {
+			"actions": "操作",
+			"company_email": "公司电邮",
+			"company_name": "公司名",
+			"departments_roles": "部门/角色",
+			"first_name": "名字",
+			"last_name": "姓",
+			"photo": "照片",
+			"status": "状态",
+			"username": "用户名"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入一个有效的名字。",
+				"message10": "密码和确认密码不匹配。",
+				"message12": "电话号码必须是有效号码。",
+				"message14": "手机号码必须是有效号码。",
+				"message15": "请输入有效的公司网站。",
+				"message17": "请输入有效的客户端生成的ID。",
+				"message18": "请输入有效的就业ID。",
+				"message19": "请输入有效的用户名。",
+				"message2": "名字最多可包含20个字符。",
+				"message20": "用户名的长度不得少于3个字符，最多不超过30个字符，不得带空格。",
+				"message21": "请输入有效的手机号码。",
+				"message22": "请输入一个有效的电话号码。",
+				"message23": "将文件放在此处或单击以上传。",
+				"message24": "请选择一个具有角色的有效部门。",
+				"message3": "请输入一个有效的姓氏。",
+				"message4": "姓氏最长为20个字符。",
+				"message5": "请输入有效电子邮件。",
+				"message6": "电子邮件可以是有效的电子邮件地址。",
+				"message7": "请输入有效密码。",
+				"message8": "密码长度至少为3到30个字符。",
+				"message9": "请输入有效的确认密码。"
+			},
+			"fields": {
+				"address": "地址",
+				"client_ID": "客户ID",
+				"company_address": "公司地址",
+				"company_city": "公司城市",
+				"company_country": "公司所在国家",
+				"company_email": "公司电邮",
+				"company_fax": "公司传真",
+				"company_mobile": "公司手机",
+				"company_name": "公司名",
+				"company_phone": "公司电话",
+				"company_website": "公司网站",
+				"confirm_password": "确认密码",
+				"country": "国家",
+				"departments_roles": "部门/角色",
+				"email": "电子邮件",
+				"facebook_URL": "Facebook网址",
+				"first_name": "名字",
+				"hosting_company": "托管公司",
+				"language": "语言",
+				"last_name": "姓",
+				"linkedIn_URL": "领英网址",
+				"mobile": "移动",
+				"password": "密码",
+				"phone": "电话",
+				"port": "港口",
+				"profile_photo": "头像照片",
+				"skype": "Skype的",
+				"twitter_URL": "Twitter网址",
+				"username": "用户名",
+				"zip_code": "邮政编码"
+			},
+			"placeholders": {
+				"placeholder1": "输入名字",
+				"placeholder10": "输入公司邮政编码",
+				"placeholder11": "输入公司传真",
+				"placeholder12": "输入公司网站",
+				"placeholder13": "输入公司Skype",
+				"placeholder14": "输入公司地址",
+				"placeholder15": "输入托管公司",
+				"placeholder16": "输入托管用户名",
+				"placeholder17": "输入托管密码",
+				"placeholder18": "输入托管端口",
+				"placeholder19": "输入用户名",
+				"placeholder2": "输入姓氏",
+				"placeholder20": "输入Skype",
+				"placeholder21": " -  选择国家  - ",
+				"placeholder22": " -  选择语言  - ",
+				"placeholder23": "-选择部门/角色-",
+				"placeholder24": "输入Facebook网址",
+				"placeholder25": "输入Twitter URL",
+				"placeholder26": "输入领英网址",
+				"placeholder27": "输入地址",
+				"placeholder3": "输入邮箱",
+				"placeholder4": "输入密码",
+				"placeholder5": "输入确认密码",
+				"placeholder6": "输入公司名称",
+				"placeholder7": "输入公司电子邮件",
+				"placeholder8": "-选择公司国家-",
+				"placeholder9": "输入公司城市"
+			}
+		},
+		"headings": {
+			"head1": "个人信息",
+			"head2": "公司介绍",
+			"head3": "托管信息",
+			"head4": "关于客户",
+			"head5": "联系信息和生物",
+			"head6": "要求",
+			"head7": "社会资讯"
+		},
+		"inline_edit": {
+			"first_name": "名字",
+			"last_name": "姓"
+		},
+		"messages": {
+			"create": "客户端创建成功。",
+			"delete": "客户端删除成功。",
+			"invite": "邀请发送成功。",
+			"status": "状态已成功更改。",
+			"update": "客户端更新成功。"
+		},
+		"title": "客户",
+		"title1": "创建客户端",
+		"title2": "编辑客户端"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "添加评论",
+			"button2": "答复"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的评论。",
+				"message2": "将文件放在此处或单击以上传。"
+			},
+			"placeholders": {
+				"placeholder1": "输入评论",
+				"placeholder2": "回复评论"
+			}
+		},
+		"messages": {
+			"create": "评论创建成功。",
+			"delete": "评论已成功删除。",
+			"update": "评论已成功更新。"
+		},
+		"title": "评论"
+	},
+	"common": {
+		"12_hours": "12小时",
+		"24_hours": "24小时",
+		"action": "行动",
+		"actions": "操作",
+		"add": "加",
+		"add_to_timesheet": "添加到时间表",
+		"apply": "应用",
+		"assign": "分配",
+		"back": "背部",
+		"calendar": "日历",
+		"calendar_view": "日历检视",
+		"cancel": "取消",
+		"change": "更改",
+		"close": "关",
+		"comment": "评论",
+		"copy": "复制",
+		"create": "创建",
+		"create_comment": "建立评论",
+		"created": "创建",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": "：激活以对列升序进行排序",
+				"sSortDescending": "：激活以对列降序排序"
+			},
+			"oPaginate": {
+				"sFirst": "第一",
+				"sLast": "持续",
+				"sNext": "下一个",
+				"sPrevious": "以前"
+			},
+			"sEmptyTable": "表中没有可用数据",
+			"sInfo": "显示的是 _TOTAL_ 个条目中的 _START_ 至 _END_",
+			"sInfoEmpty": "显示 0 项中的 0 到 0",
+			"sInfoFiltered": "（从 _MAX_ 个条目中筛选出）",
+			"sInfoPostFix": "",
+			"sInfoThousands": "，",
+			"sLengthMenu": "显示 _MENU_",
+			"sLoadingRecords": "载入中...",
+			"sProcessing": "处理中...",
+			"sSearchPlaceholder": "搜索...",
+			"sZeroRecords": "未能找到匹配的记录"
+		},
+		"days": "天",
+		"delete": "删除",
+		"detail": "详情",
+		"details": "细节",
+		"download": "下载",
+		"drag_file": "拖动文件或浏览",
+		"edit": "编辑",
+		"empty_message": {
+			"activities": "没有任何活动",
+			"announcements": "没有任何公告。",
+			"articles": "没有任何文章。",
+			"attachments": "没有任何附件。",
+			"categories": "没有任何类别。",
+			"clients": "没有任何客户。",
+			"custom_fields": "没有任何自定义字段。",
+			"database_backups": "没有任何数据库备份。",
+			"defects": "没有任何缺陷。",
+			"departments": "没有任何部门。",
+			"estimates": "没有任何估计。",
+			"file_browser": "没有任何文件夹/文件。",
+			"histories": "没有任何历史。",
+			"holidays": "没有任何假期。",
+			"incidents": "没有任何事件",
+			"invoices": "没有任何发票。",
+			"leaves": "没有叶子。",
+			"mails": "没有任何邮件。",
+			"meetings": "没有任何会议。",
+			"notifications": "没有任何通知。",
+			"projects": "没有任何项目。",
+			"providers": "没有任何提供者。",
+			"roles": "没有任何角色。",
+			"sprints": "没有任何冲刺。",
+			"tasks": "没有任何任务。",
+			"teams": "没有任何团队。",
+			"timesheet": "没有时间表。",
+			"todos": "没有待办事项。",
+			"translations": "没有任何翻译。",
+			"users": "没有任何用户。"
+		},
+		"error_messages": {
+			"message1": "您可能没有访问文件或资源的适当权限。",
+			"message2": "未经授权的用户-如果身份验证令牌已过期。",
+			"message3": "如果授权令牌已过期。",
+			"message4": "抱歉，找不到您要查找的页面。",
+			"message5": "出问题了！",
+			"message6": "您已成功註銷。"
+		},
+		"errors_keys": {
+			"key1": "访问被拒绝",
+			"key2": "错误的请求",
+			"key3": "擅自",
+			"key4": "访问被拒绝",
+			"key5": "未找到",
+			"key6": "不可处理实体"
+		},
+		"false": "假",
+		"fullscreen": "全屏",
+		"hours": "小时",
+		"import": "进口",
+		"invite": "邀请",
+		"issues": "问题",
+		"kanban": "看板",
+		"last_updated": "最近更新时间",
+		"list": "名单",
+		"lists": "列表显示",
+		"methods": "方法",
+		"move": "移动",
+		"new": "新",
+		"not_allowed": "演示中不允许使用。",
+		"offline": "离线",
+		"online": "线上",
+		"options": "选件",
+		"overdue": "过期的",
+		"pending": "有待",
+		"placeholders": {
+			"placeholder1": "-选择项目-"
+		},
+		"priorities": {
+			"high": "高",
+			"low": "低",
+			"medium": "介质",
+			"urgent": "紧急",
+			"very_high": "很高"
+		},
+		"profile": "轮廓",
+		"remove": "去掉",
+		"remove_file": "删除文件",
+		"report": "报告",
+		"request": "请求",
+		"reset": "重启",
+		"restore": "恢复",
+		"save": "保存",
+		"search": "搜索...",
+		"show": "节目",
+		"status": {
+			"In Progress": "进行中",
+			"Not Started": "没有开始",
+			"On Hold": "等候接听",
+			"accepted": "公认",
+			"active": "活性",
+			"all": "所有",
+			"approved": "已批准",
+			"assigned": "已分配",
+			"cancel": "取消",
+			"canceled": "取消",
+			"closed": "关闭",
+			"completed": "已完成",
+			"confirmed": "确认",
+			"deactive": "去活",
+			"declined": "拒绝",
+			"deferred": "递延",
+			"draft": "草案",
+			"error": "错误",
+			"expired": "已过期",
+			"finished": "成品",
+			"in_progress": "进行中",
+			"inactive": "待用",
+			"my": "我的",
+			"on_hold": "等候接听",
+			"open": "打开",
+			"overdue": "过期的",
+			"paid": "付费",
+			"partially_paid": "部分付款",
+			"pending": "有待",
+			"published": "发布时间",
+			"rejected": "拒绝",
+			"released": "已发行",
+			"reopen": "重新打开",
+			"reserved": "保留的",
+			"sent": "已发送",
+			"solved": "解决了",
+			"success": "成功",
+			"taken": "已采取",
+			"total": "总",
+			"unpaid": "未付",
+			"unpublished": "未发表",
+			"waiting": "等候"
+		},
+		"submit": "提交",
+		"swal": {
+			"cancelButtonText": "不，保留它 !",
+			"confirmButtonText": "是的，删除它 ！",
+			"text": "您将无法恢复",
+			"text1": "您将无法恢复该部门！删除之前，请确保已删除与该部门相关的所有用户。",
+			"text2": "您将无法恢复该用户！。删除之前，请确保已从团队，项目，任务，缺陷和事件等中删除用户。",
+			"text3": "您将无法恢复此客户端！。删除之前，请确保已从团队，项目，任务，缺陷和事件等中删除客户端。",
+			"text4": "您将无法恢复该项目！。删除之前，请确保已删除与该项目有关的所有任务，缺陷和事件。",
+			"title": "你确定吗？"
+		},
+		"switch_to_calendar": "切换到日历",
+		"switch_to_kanban": "切换到看板",
+		"switch_to_list": "切换到清单",
+		"test": "测试",
+		"toggle_dropdown": "切换下拉",
+		"tooltip": {
+			"project_csv_sample": "样本项目CSV",
+			"task_csv_sample": "样本任务CSV",
+			"team_csv_sample": "样本团队CSV",
+			"user_csv_sample": "样本用户CSV"
+		},
+		"total": "总",
+		"true": "真正",
+		"unassign": "联合国教科文组织",
+		"unassigned": "未分配",
+		"update": "更新",
+		"updated": "更新",
+		"upload": "上传文件",
+		"view": "视图",
+		"view_comments": "查看评论",
+		"view_more": "查看更多"
+	},
+	"customFieldsType": [
+		{
+			"label": "文本",
+			"value": "text"
+		},
+		{
+			"label": "文本区域",
+			"value": "textarea"
+		},
+		{
+			"label": "落下",
+			"value": "dropdown"
+		},
+		{
+			"label": "日期",
+			"value": "date"
+		},
+		{
+			"label": "复选框",
+			"value": "checkbox"
+		},
+		{
+			"label": "数字",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "任务状态",
+		"chart2": "项目状态",
+		"chart3": "月度报告",
+		"estimate": "估算值",
+		"invoices": "到期应付发票",
+		"widgets": {
+			"approved_request": "批准",
+			"due_payment": "应有",
+			"received_request": "收到",
+			"recieved_payment": "已收"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "操作",
+			"actual_hours": "小时",
+			"assigned": "已分配",
+			"assigned_group": "指派小组",
+			"creator": "创造者",
+			"defect_name": "缺陷名称",
+			"end_date": "结束日期",
+			"id": "ID",
+			"project": "项目",
+			"project_version": "项目版本",
+			"severity": "严重",
+			"start_date": "开始日期",
+			"status": "状态",
+			"type": "类型"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一且有效的缺陷名称。",
+				"message10": "将文件放在此处或单击以上传。",
+				"message11": "请选择一个有效的开始日期。",
+				"message12": "请选择一个有效的结束日期。",
+				"message13": "估计小时数仅允许数字，冒号后2位（小于60），无特殊字符。",
+				"message2": "缺陷名称的最大长度为255个字符。",
+				"message3": "请输入唯一且有效的缺陷生成ID。",
+				"message4": "请选择有效的缺陷类型。",
+				"message5": "请选择有效的缺陷状态。",
+				"message6": "请选择有效的缺陷严重性。",
+				"message8": "请选择一个有效的项目。"
+			},
+			"fields": {
+				"actual_hours": "实际营业时间",
+				"assigned_To": "分配给",
+				"assigned_group": "指派小组",
+				"choose_file": "选择文件",
+				"completed": "已完成",
+				"created_by": "由...制作",
+				"defect_ID": "缺陷编号",
+				"defect_name": "缺陷名称",
+				"defect_type": "缺陷类型",
+				"description": "描述",
+				"end_date": "结束日期",
+				"estimate_hours": "估计工时",
+				"project_name": "项目名",
+				"project_version": "项目版本",
+				"severity": "严重",
+				"start_date": "开始日期",
+				"status": "状态"
+			},
+			"placeholders": {
+				"placeholder1": "输入缺陷名称",
+				"placeholder2": "-选择缺陷类型-",
+				"placeholder3": "-选择缺陷状态-",
+				"placeholder4": "-选择缺陷严重程度-",
+				"placeholder5": "-选择分配的组-",
+				"placeholder6": "-选择项目-",
+				"placeholder7": "-选择项目版本-",
+				"placeholder8": "选择开始日期",
+				"placeholder9": "选择结束日期"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "瑕疵",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "增强功能",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "自定义字段",
+			"title2": "描述"
+		},
+		"headings": {
+			"head1": "缺陷信息",
+			"head2": "项目信息",
+			"head3": "上传文件",
+			"head4": "自定义字段",
+			"head5": "描述"
+		},
+		"inline_edit": {
+			"defect_name": "缺陷名称",
+			"defect_type": "缺陷类型",
+			"description": "描述",
+			"estimate_hours": "估计工时",
+			"notes": "笔记"
+		},
+		"messages": {
+			"create": "缺陷创建成功。",
+			"delete": "缺陷已成功删除。",
+			"severity": "严重性已成功更新。",
+			"status": "状态已成功更改。",
+			"update": "缺陷更新成功。"
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "低"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "介质"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "高"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "很高"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "紧急"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "已分配"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "关闭"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "进行中"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "打开"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "解决了"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "重新开启"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "递延"
+			}
+		],
+		"title": "瑕疵",
+		"title1": "创建缺陷",
+		"title2": "编辑缺陷",
+		"tooltips": {
+			"attachment": "附件"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "操作",
+			"designation": "指定"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的部门名称。",
+				"message2": "部门名称最多可以包含20个字符。",
+				"message3": "请选择一个有效的部门角色。"
+			},
+			"fields": {
+				"department": "部门",
+				"department_name": "部门名称",
+				"department_roles": "部门角色",
+				"designation": "指定",
+				"permission": "允许"
+			},
+			"placeholders": {
+				"placeholder1": "输入部门名称"
+			}
+		},
+		"messages": {
+			"create": "部门创建成功。",
+			"delete": "部门已成功删除。",
+			"update": "部门更新成功。"
+		},
+		"title": "部门",
+		"title1": "细节部",
+		"title2": "部门角色",
+		"tooltip": {
+			"tooltip1": "选择所有权限",
+			"tooltip10": "全选",
+			"tooltip11": "允许",
+			"tooltip2": "如果选择创建/编辑/删除，则无需选择视图",
+			"tooltip3": "全选创建",
+			"tooltip4": "全选编辑",
+			"tooltip5": "全选删除",
+			"tooltip6": "选择",
+			"tooltip7": "可以创造",
+			"tooltip8": "可编辑",
+			"tooltip9": "可以删除"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "顾客",
+			"estimate_date": "日期",
+			"estimate_number": "估计",
+			"status": "状态",
+			"total_amount": "量",
+			"valid_till": "有效期至"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请选择一个有效的客户。",
+				"message2": "请选择一个有效的估计日期。",
+				"message3": "请选择一个有效的到期日期。",
+				"message4": "请选择一个有效的状态。",
+				"message5": "请添加至少一项。",
+				"message6": "输入物料，数量和单价。",
+				"message7": "请选择一个有效的折扣类型。"
+			},
+			"fields": {
+				"adjustment": "调整",
+				"customer": "顾客",
+				"discount": "折扣",
+				"discount_type": "折扣类型",
+				"estimate_date": "估计日期",
+				"estimate_number": "估计数",
+				"item_description": "描述",
+				"item_name": "项目",
+				"item_tax": "税",
+				"quantity": "数量",
+				"reference": "参考",
+				"status": "状态",
+				"sub_total": "小计",
+				"total_amount": "总",
+				"total_item_amount": "量",
+				"unit": "单元",
+				"unit_price": "单价",
+				"valid_till": "到期日"
+			},
+			"placeholders": {
+				"placeholder1": "-选择客户-",
+				"placeholder10": "数量",
+				"placeholder11": "单价",
+				"placeholder12": "-选择税款-",
+				"placeholder2": "选择估计日期",
+				"placeholder3": "选择有效期",
+				"placeholder4": "输入参考",
+				"placeholder5": "-选择折扣类型-",
+				"placeholder6": "-选择状态-",
+				"placeholder7": " -  选择物品  - ",
+				"placeholder8": "项目",
+				"placeholder9": "描述"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "百分"
+			},
+			{
+				"id": "fixed",
+				"label": "固定"
+			}
+		],
+		"headings": {
+			"head1": "顾客信息",
+			"head2": "日期",
+			"head3": "其他资讯",
+			"head4": "物品信息"
+		},
+		"inline_edit": {
+			"item_description": "描述",
+			"item_name": "项目",
+			"item_tax": "税",
+			"quantity": "数量",
+			"unit_price": "单价"
+		},
+		"messages": {
+			"create": "估算创建成功。",
+			"delete": "估计删除成功。",
+			"status": "状态已成功更改。",
+			"update": "估算值已成功更新。"
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "草案"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "发送"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "过期"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "下降"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "公认"
+			}
+		],
+		"title": "估算值",
+		"title1": "估计！",
+		"title2": "创建估算",
+		"title3": "更新估算",
+		"title4": "估计",
+		"view": {
+			"accept": "接受",
+			"accepted": "公认",
+			"balance_due": "余额到期",
+			"bill_to": "记账到",
+			"decline": "下降",
+			"declined": "下降",
+			"download": "下载",
+			"draft": "草案",
+			"due_date": "截止日期",
+			"due_on_receipt": "收据到期",
+			"estimate_date": "估计日期",
+			"expired": "过期",
+			"sent": "发送",
+			"terms": "条款与协议",
+			"total_due": "应付总额"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "操作",
+			"name": "名称",
+			"progress": "进展",
+			"size": "尺寸",
+			"status": "状态"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的文件夹名称。",
+				"message2": "拖到这里上传...",
+				"message3": "请输入有效的文件名。"
+			},
+			"fields": {
+				"description": "描述",
+				"file_name": "文件名",
+				"folder_name": "文件夹名称"
+			},
+			"placeholders": {
+				"placeholder1": "输入文件夹名称",
+				"placeholder2": "输入说明",
+				"placeholder3": "输入文件名"
+			}
+		},
+		"messages": {
+			"create_folder": "文件夹创建成功。",
+			"delete_file": "文件已成功删除。",
+			"delete_folder": "文件夹已成功删除。",
+			"update_file": "文件更新成功。",
+			"update_folder": "文件夹更新成功。",
+			"upload_file": "文件上传成功。"
+		},
+		"title": "文件管理器",
+		"title1": "创建文件夹",
+		"title2": "编辑资料夹",
+		"title3": "上传文件",
+		"title4": "编辑档案",
+		"title5": "文件",
+		"title6": "夹",
+		"title7": "添加"
+	},
+	"footer": {
+		"copyright": "版权",
+		"text1": "版权所有"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效电子邮件。",
+				"message2": "电子邮件必须是有效的电子邮件地址。"
+			},
+			"placeholders": {
+				"placeholder1": "输入邮箱"
+			}
+		},
+		"messages": {
+			"success": "请检查您的电子邮件以获取有关如何重置密码的说明。"
+		},
+		"title": "忘记密码",
+		"title1": "请在下面输入您的电子邮件地址，我们将向您发送信息以更改密码。"
+	},
+	"header": {
+		"heading": {
+			"head1": "你有",
+			"head2": "新邮件",
+			"head3": "查看所有邮件",
+			"head4": "更新可用"
+		},
+		"inbox": "我的收件箱",
+		"languages": "语言",
+		"logout": "登出",
+		"mails": "邮件",
+		"notifications": "通知",
+		"profile": "轮廓",
+		"search": {
+			"text": "在这里搜索..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "活动",
+			"closed_by": "关闭时间",
+			"commentor": "评论者",
+			"creator": "创造者",
+			"date": "日期",
+			"solved_by": "解决者",
+			"updated_by": "更新者"
+		},
+		"title": "历史沿革"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "操作",
+			"color": "颜色",
+			"date": "日期",
+			"event_name": "活动名称",
+			"location": "地点"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的活动名称。",
+				"message2": "事件名称最多可以包含50个字符。",
+				"message3": "请选择一个有效日期。"
+			},
+			"fields": {
+				"color": "颜色",
+				"date": "日期",
+				"description": "描述",
+				"event_name": "活动名称",
+				"location": "地点"
+			},
+			"placeholders": {
+				"placeholder1": "输入事件名称",
+				"placeholder2": "选择日期",
+				"placeholder3": "输入位置"
+			}
+		},
+		"inline_edit": {
+			"event_name": "活动名称",
+			"holiday_date": "假期日期",
+			"location": "地点"
+		},
+		"messages": {
+			"create": "假日已成功创建。",
+			"delete": "假日已成功删除。",
+			"update": "假日已成功更新。"
+		},
+		"title": "假期"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "操作",
+			"actual_hours": "小时",
+			"assigned": "已分配",
+			"assigned_group": "指派小组",
+			"client": "客户",
+			"client_company": "客户公司",
+			"creator": "创造者",
+			"end_date": "结束日期",
+			"id": "ID",
+			"incident_name": "事件名称",
+			"priority": "优先",
+			"project": "项目",
+			"project_version": "项目版本",
+			"start_date": "开始日期",
+			"status": "状态",
+			"type": "类型"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一且有效的事件名称。",
+				"message2": "事件名称的最大长度为255个字符。",
+				"message3": "请输入唯一且有效的事件生成ID。",
+				"message4": "请选择一个有效的事件状态。",
+				"message5": "请选择有效的事件优先级。",
+				"message6": "请选择一个有效的事件类型。",
+				"message7": "请选择一个有效的开始日期。",
+				"message8": "请选择一个有效的结束日期。",
+				"message9": "估计小时数仅允许数字，冒号后2位（小于60），无特殊字符。"
+			},
+			"fields": {
+				"actual_hours": "实际营业时间",
+				"assigned_To": "分配给",
+				"assigned_group": "指派小组",
+				"created_by": "由...制作",
+				"description": "描述",
+				"end_date": "结束日期",
+				"estimate_hours": "估计工时",
+				"incident_ID": "事件ID",
+				"incident_name": "事件名称",
+				"incident_type": "事件类型",
+				"priority": "优先",
+				"project": "项目",
+				"project_name": "项目名",
+				"project_version": "项目版本",
+				"start_date": "开始日期",
+				"status": "状态"
+			},
+			"placeholders": {
+				"placeholder1": "输入事件名称",
+				"placeholder2": "-选择事件状态-",
+				"placeholder3": "-选择事件优先级-",
+				"placeholder4": "-选择事件类型-",
+				"placeholder5": "-选择分配的组-",
+				"placeholder6": "-选择项目-",
+				"placeholder7": "-选择项目版本-",
+				"placeholder8": "选择开始日期",
+				"placeholder9": "选择结束日期"
+			}
+		},
+		"details": {
+			"title1": "自定义字段",
+			"title2": "描述"
+		},
+		"headings": {
+			"head1": "事故信息",
+			"head2": "项目信息",
+			"head3": "自定义字段",
+			"head4": "描述",
+			"head5": "其他资讯"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "服务请求",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "信息索取",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "描述",
+			"estimate_hours": "估计工时",
+			"incident_name": "事件名称",
+			"incident_type": "事件类型",
+			"notes": "笔记"
+		},
+		"messages": {
+			"create": "事件已成功创建。",
+			"delete": "事件已成功删除。",
+			"import": "事件已成功导入。",
+			"priority": "优先级已成功更改。",
+			"status": "状态已成功更改。",
+			"update": "事件已成功更新。"
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "低"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "介质"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "高"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "很高"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "紧急"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "已分配"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "进行中"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "解决了"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "递延"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "重新开启"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "关闭"
+			}
+		],
+		"title": "突发事件",
+		"title1": "创建事件",
+		"title2": "编辑事件"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "顾客",
+			"due_date": "截止日期",
+			"invoice_date": "日期",
+			"invoice_number": "发票",
+			"status": "状态",
+			"total_amount": "量"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请选择一个有效的客户。",
+				"message2": "请选择一个有效的发票日期。",
+				"message3": "请选择一个有效的截止日期。",
+				"message4": "请选择一个有效的状态。",
+				"message5": "请添加至少一项。",
+				"message6": "输入物料，数量和单价。",
+				"message7": "请选择一个有效的折扣类型。"
+			},
+			"fields": {
+				"adjustment": "调整",
+				"customer": "顾客",
+				"discount": "折扣",
+				"discount_type": "折扣类型",
+				"due_date": "截止日期",
+				"invoice_date": "发票日期",
+				"invoice_number": "发票编号",
+				"item_description": "描述",
+				"item_name": "项目",
+				"item_tax": "税",
+				"project": "项目",
+				"quantity": "数量",
+				"reference": "参考",
+				"status": "状态",
+				"sub_total": "小计",
+				"total_amount": "总",
+				"total_amount_due": "到期金额",
+				"total_item_amount": "量",
+				"unit": "单元",
+				"unit_price": "单价"
+			},
+			"placeholders": {
+				"placeholder1": "-选择客户-",
+				"placeholder10": "数量",
+				"placeholder11": "单价",
+				"placeholder12": "-选择税款-",
+				"placeholder13": "-选择项目-",
+				"placeholder2": "选择发票日期",
+				"placeholder3": "选择截止日期",
+				"placeholder4": "输入参考",
+				"placeholder5": "-选择折扣类型-",
+				"placeholder6": "-选择状态-",
+				"placeholder7": " -  选择物品  - ",
+				"placeholder8": "项目",
+				"placeholder9": "描述"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "百分"
+			},
+			{
+				"id": "fixed",
+				"label": "固定"
+			}
+		],
+		"headings": {
+			"head1": "顾客信息",
+			"head2": "日期",
+			"head3": "其他资讯",
+			"head4": "物品信息"
+		},
+		"inline_edit": {
+			"item_description": "描述",
+			"item_name": "项目",
+			"item_tax": "税",
+			"quantity": "数量",
+			"unit_price": "单价"
+		},
+		"messages": {
+			"create": "发票创建成功。",
+			"delete": "发票已成功删除。",
+			"payments": "找不到此发票的付款",
+			"status": "状态已成功更改。",
+			"update": "发票已成功更新。"
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "付费"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "部分付款"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "未付"
+			}
+		],
+		"title": "发票",
+		"title1": "发票！",
+		"title2": "创建发票",
+		"title3": "更新发票",
+		"title4": "发票",
+		"view": {
+			"add_payment": "添加付款",
+			"amount": "量",
+			"balance_due": "余额到期",
+			"bank": "银行",
+			"bill_to": "记账到",
+			"date": "日期",
+			"download": "下载",
+			"due_amount": "到期金额",
+			"due_date": "截止日期",
+			"due_on_receipt": "收据到期",
+			"gst_number": "消费税",
+			"invoice_date": "发票日期",
+			"offline_payment": "离线付款",
+			"online_payment": "网上支付",
+			"paid": "付费",
+			"partially_paid": "部分付款",
+			"payment": "付款",
+			"payment_mode": "付款方式",
+			"paypal": "PAYPAL",
+			"status": "状态",
+			"stripe": "条纹",
+			"terms": "条款与协议",
+			"total_due": "应付总额",
+			"transactions": "交易",
+			"unpaid": "未付"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "描述",
+			"name": "项目名称",
+			"price": "价钱",
+			"tax": "税",
+			"unit": "单元"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一且有效的商品名称。",
+				"message2": "请输入有效价格。",
+				"message3": "价格必须是数字。"
+			},
+			"fields": {
+				"description": "描述",
+				"name": "项目名称",
+				"price": "价钱",
+				"tax": "税",
+				"unit": "单元"
+			},
+			"placeholders": {
+				"placeholder1": "输入商品名称",
+				"placeholder2": "输入价格",
+				"placeholder3": "输入单位",
+				"placeholder4": "-选择税款-",
+				"placeholder5": "输入说明"
+			}
+		},
+		"labels": {
+			"label1": "更改商品信息不会影响所创建的估算和发票。"
+		},
+		"messages": {
+			"create": "项目创建成功。",
+			"delete": "项目已成功删除。",
+			"update": "项目已成功更新。"
+		},
+		"title": "项目",
+		"title1": "项目！",
+		"title2": "创建项目",
+		"title3": "更新项目"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "在列表之间拖动任务"
+		},
+		"title1": "缺陷看板",
+		"title2": "事件看板"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "操作",
+				"article_name": "文章标题"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的文章标题。",
+					"message2": "文章标题最多可以包含50个字符。",
+					"message3": "请选择一个有效的类别。",
+					"message4": "将文件放在此处或单击以上传。",
+					"message5": "请输入有效的说明。"
+				},
+				"fields": {
+					"article_title": "文章标题",
+					"category": "类别",
+					"description": "描述",
+					"file": "文件"
+				},
+				"placeholders": {
+					"placeholder1": "输入文章标题",
+					"placeholder2": "-选择类别-",
+					"placeholder3": "输入说明"
+				}
+			},
+			"messages": {
+				"create": "文章创建成功。",
+				"delete": "文章删除成功。",
+				"update": "文章更新成功。"
+			},
+			"title": "文章",
+			"title1": "用品",
+			"title2": "文章"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的类别名称。",
+					"message2": "类别名称最多可以包含50个字符。",
+					"message3": "将文件放在此处或单击以上传。",
+					"message4": "请选择一个有效的文件。"
+				},
+				"fields": {
+					"category_logo": "分类徽标",
+					"category_name": "分类名称"
+				},
+				"placeholders": {
+					"placeholder1": "输入分类名称",
+					"placeholder2": "搜索.."
+				}
+			},
+			"messages": {
+				"create": "类别创建成功。",
+				"delete": "类别已成功删除。",
+				"update": "类别已成功更新。"
+			},
+			"title": "类别",
+			"title1": "类别",
+			"title2": "分类"
+		},
+		"title": "知识库"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "批准休假",
+			"pending_leave": "待休假",
+			"user": "用户"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "日期范围",
+				"employee_name": "员工姓名"
+			},
+			"placeholders": {
+				"placeholder1": "选择日期范围",
+				"placeholder2": "所有"
+			}
+		},
+		"title": "休假报告",
+		"title1": "休假详情"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "颜色",
+			"leave_type": "休假类型",
+			"no_of_leaves": "总休假"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一有效的休假类型。",
+				"message2": "请假类型最多可以包含20个字符。",
+				"message3": "请输入有效的总假期。",
+				"message4": "休假总数必须是数字。",
+				"message5": "请选择有效的颜色。"
+			},
+			"fields": {
+				"color": "颜色",
+				"leave_type": "休假类型",
+				"no_of_leaves": "总休假"
+			},
+			"placeholders": {
+				"placeholder1": "输入请假类型",
+				"placeholder2": "输入总休假"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "休假类型",
+			"no_of_leaves": "总休假"
+		},
+		"messages": {
+			"create": "请假类型创建成功。",
+			"delete": "保留类型成功删除。",
+			"update": "请假类型更新成功。"
+		},
+		"title": "休假类型",
+		"title1": "请假类型！",
+		"title2": "创建请假类型",
+		"title3": "添加休假类型"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "接受",
+			"reject": "拒绝"
+		},
+		"columns": {
+			"duration": "持续时间",
+			"leave_date": "日期",
+			"leave_type": "休假类型",
+			"reason": "原因",
+			"status": "状态",
+			"user": "用户"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请选择一个有效的用户。",
+				"message2": "请选择一个有效的休假类型。",
+				"message3": "请选择一个有效的休假日期。",
+				"message4": "请选择一个有效的状态。",
+				"message5": "请输入有效原因。",
+				"message6": "将文件放在此处或单击以上传。"
+			},
+			"fields": {
+				"attachments": "附件",
+				"duration": "持续时间",
+				"duration_type": "休假类型",
+				"leave_date": "日期",
+				"leave_type": "离开",
+				"reason": "原因",
+				"reject_reason": "拒绝原因？ （可选的）",
+				"status": "状态",
+				"user": "用户"
+			},
+			"placeholders": {
+				"placeholder1": "-选择用户-",
+				"placeholder2": "-选择休假类型-",
+				"placeholder3": "选择日期",
+				"placeholder4": "-选择状态-",
+				"placeholder5": "输入原因"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "上半场"
+			},
+			{
+				"id": "second_half",
+				"label": "下半场"
+			}
+		],
+		"labels": {
+			"approved": "批准",
+			"first_half_day": "前半天",
+			"full_day": "全日",
+			"half_day": "半天",
+			"multiple": "多",
+			"remaining": "其余",
+			"second_half_day": "下半天",
+			"single": "单",
+			"taken": "已采取",
+			"total_leaves": "总叶子"
+		},
+		"messages": {
+			"approve": "离开批准成功。",
+			"create": "离开已成功创建。",
+			"delete": "保留删除成功。",
+			"reject": "离开被成功拒绝。",
+			"status": "状态已成功更改。",
+			"update": "保留更新成功。"
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "有待"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "批准"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "被拒绝"
+			}
+		],
+		"title": "树叶",
+		"title1": "离开！",
+		"title2": "休假请求",
+		"title3": "所有叶子",
+		"title4": "休假请求",
+		"title5": "离开日历",
+		"title6": "创建请假",
+		"title7": "更新休假"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "管理员",
+			"client_login": "客户",
+			"forgot_password": "忘记密码？",
+			"hr_manager_login": "人力资源经理",
+			"manager_login": "经理",
+			"project_manager_login": "专案经理",
+			"quick_login": "快速登入",
+			"register": {
+				"button": "寄存器",
+				"text": "还没有账号？"
+			},
+			"sales_manager_login": "销售经理",
+			"user_login": "用户"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "请输入有效的用户名或电子邮件地址。"
+				},
+				"placeholder": "用户名/电子邮件"
+			},
+			"password": {
+				"errors": {
+					"email": "密码长度至少为3到30个字符。",
+					"required": "请输入有效密码。"
+				},
+				"placeholder": "密码"
+			}
+		},
+		"title": "登录"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "操作",
+				"name": "名称",
+				"progress": "进展",
+				"size": "尺寸",
+				"status": "状态"
+			},
+			"error_messages": {
+				"message1": "请选择一个有效的电子邮件地址。",
+				"message2": "请输入一个有效的主题。"
+			},
+			"fields": {
+				"from": "从",
+				"subject": "学科",
+				"to": "至"
+			},
+			"placeholders": {
+				"placeholder1": "-选择用户-",
+				"placeholder2": "输入主题"
+			}
+		},
+		"messages": {
+			"message": "文件上传成功。",
+			"message1": "文件已成功删除。",
+			"message2": "请选择至少一封邮件。",
+			"message3": "邮件发送成功。",
+			"message4": "邮件移至垃圾箱。",
+			"message5": " 邮件移至垃圾箱。",
+			"message6": "邮件成功收藏。",
+			"message7": " 标记为收藏的邮件。",
+			"message8": "邮件标记为已读。",
+			"message9": "邮件已移至草稿。"
+		},
+		"title": "邮箱",
+		"title1": "搜索邮件 ...",
+		"title10": "发送",
+		"title11": "附件",
+		"title12": "刷新",
+		"title13": "标记为已读",
+		"title14": "标记为收藏",
+		"title15": "移到废纸篓",
+		"title16": "移至草稿",
+		"title17": "丢弃邮件",
+		"title18": "邮件检视",
+		"title19": "文件夹",
+		"title2": "撰写",
+		"title20": "邮件",
+		"title3": "撰写邮件",
+		"title4": "收件箱",
+		"title5": "发送",
+		"title6": "草案",
+		"title7": "喜爱",
+		"title8": "垃圾",
+		"title9": "丢弃"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "操作",
+			"end": "结束",
+			"hours": "小时",
+			"id": "ID",
+			"organizer": "组织者",
+			"peoples": "邀请人民",
+			"start": "开始",
+			"status": "状态",
+			"title": "标题"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的会议标题。",
+				"message2": "会议标题最多可以包含255个字符。",
+				"message3": "请选择一个有效的开始日期。",
+				"message4": "请选择一个有效的结束日期。",
+				"message5": "请选择一个有效的会议成员。",
+				"message6": "请选择合适的会议日期和时间。",
+				"message7": "请选择一个有效的状态。"
+			},
+			"fields": {
+				"client_name": "客户名称",
+				"description": "描述",
+				"end_date": "结束日期",
+				"location": "地点",
+				"peoples": "邀请人民",
+				"start_date": "开始日期",
+				"status": "状态",
+				"title": "标题"
+			},
+			"placeholders": {
+				"placeholder1": "活动标题",
+				"placeholder2": "选择开始日期",
+				"placeholder3": "选择结束日期",
+				"placeholder4": "-选择成员-",
+				"placeholder5": "地点",
+				"placeholder6": "-选择客户-",
+				"placeholder7": "-选择状态-"
+			}
+		},
+		"details": {
+			"title1": "描述"
+		},
+		"inline_edit": {
+			"title": "标题"
+		},
+		"messages": {
+			"create": "会议创建成功。",
+			"delete": "会议已成功删除。",
+			"status": "状态已成功更改。",
+			"update": "会议已成功更新。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "取消"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "已完成"
+			}
+		],
+		"title": "会议"
+	},
+	"months": [
+		"一月",
+		"二月",
+		"损伤",
+		"四月",
+		"可以",
+		"君",
+		"七月",
+		"八月",
+		"九月",
+		"十月",
+		"十一月",
+		"十二月"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "笔记"
+			}
+		},
+		"messages": {
+			"update": "笔记更新成功。"
+		},
+		"title": "笔记"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "描述",
+			"method_name": "方法名称",
+			"status": "状态"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一有效的方法名称。"
+			},
+			"fields": {
+				"description": "描述",
+				"method_name": "方法名称",
+				"show_on_pdf": "在发票PDF上显示说明"
+			},
+			"placeholders": {
+				"placeholder1": "输入方法名称",
+				"placeholder2": "输入说明"
+			}
+		},
+		"messages": {
+			"create": "付款方式创建成功。",
+			"delete": "付款方式已成功删除。",
+			"status": "状态已成功更改。",
+			"update": "付款方式已成功更新。"
+		},
+		"title": "支付方式",
+		"title1": "付款方法 ！",
+		"title2": "创建付款方式",
+		"title3": "更新付款方式"
+	},
+	"payments": {
+		"columns": {
+			"amount": "量",
+			"client": "客户",
+			"date": "日期",
+			"invoice": "发票",
+			"method_name": "付款",
+			"payment_mode": "付款方式",
+			"status": "状态"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效金额。",
+				"message2": "请输入有效的付款日期。",
+				"message3": "请选择有效的付款方式。"
+			},
+			"fields": {
+				"amount": "收到的金额",
+				"date": "付款日期",
+				"notes": "留下笔记",
+				"payment_mode": "付款方式",
+				"transaction_id": "交易ID"
+			},
+			"placeholders": {
+				"placeholder1": "选择日期",
+				"placeholder2": "-选择付款方式-",
+				"placeholder3": "管理员说明",
+				"placeholder4": "输入交易ID"
+			}
+		},
+		"info": "注意：以下列出的付款模式是离线模式。可以在“设置”->“贝宝/条带”中配置支付网关。",
+		"info1": "贝宝，条纹，银行转账，现金或其他。",
+		"messages": {
+			"create": "付款创建成功。",
+			"delete": "付款已成功删除。",
+			"failed": "支付失败。",
+			"status": "状态已成功更改。",
+			"update": "付款已成功更新。"
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "进行中"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "成功的"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "失败"
+			}
+		],
+		"title": "支付",
+		"title1": "付款！",
+		"title2": "创建付款",
+		"title3": "更新付款",
+		"view": {
+			"failed": "失败",
+			"in_progress": "进行中",
+			"invoice_amount": "发票金额",
+			"invoice_date": "发票日期",
+			"invoice_number": "发票编号",
+			"payment_amount": "支付金额",
+			"payment_for": "付款",
+			"payment_receipt": "发票付款",
+			"successful": "成功的"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "操作",
+			"creator": "创造者",
+			"end_date": "结束日期",
+			"hours": "小时",
+			"name": "名称",
+			"progress": "进展",
+			"responsible": "负责任的",
+			"sprint": "短跑",
+			"start_date": "开始日期",
+			"status": "状态",
+			"type": "类型"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "请选择一个有效的项目。",
+					"message2": "请选择一个有效的项目冲刺。"
+				},
+				"fields": {
+					"project": "项目",
+					"sprint": "短跑"
+				},
+				"placeholders": {
+					"placeholder1": "-选择项目-",
+					"placeholder2": "-选择项目冲刺-"
+				}
+			},
+			"messages": {
+				"move": " 任务已成功移动。"
+			},
+			"title": "移动任务"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入唯一且有效的冲刺名称。",
+					"message2": "短跑 名称的最大长度为255个字符。",
+					"message4": "请选择一个有效的开始日期。",
+					"message5": "请选择一个有效的结束日期。",
+					"message6": "请选择一个有效的状态。",
+					"message7": "估计小时数仅允许数字，冒号后2位（小于60），不能包含任何特殊字符。",
+					"message8": "估计小时数必须少于"
+				},
+				"fields": {
+					"description": "描述",
+					"end_date": "结束日期",
+					"estimate_hours": "估计工时",
+					"responsible": "负责任的",
+					"sprint_name": "项目冲刺名称",
+					"start_date": "开始日期",
+					"status": "状态"
+				},
+				"placeholders": {
+					"placeholder1": "输入项目 短跑 名称",
+					"placeholder2": "-选择用户-",
+					"placeholder3": "选择开始日期",
+					"placeholder4": "选择结束日期",
+					"placeholder5": "-选择状态-",
+					"placeholder6": "输入说明"
+				}
+			},
+			"messages": {
+				"create": "短跑 创建成功。",
+				"delete": "冲刺成功删除。",
+				"update": "冲刺更新成功。"
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "打开"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "进行中"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "关闭"
+				}
+			],
+			"title": "短跑",
+			"title1": "创建冲刺",
+			"title2": "编辑冲刺"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入唯一有效的",
+					"message2": " 名称最多可包含255个字符。",
+					"message3": "请选择一个有效的用户。",
+					"message4": "请选择一个有效的开始日期。",
+					"message5": "请选择一个有效的结束日期。",
+					"message6": "请选择一个有效的状态。",
+					"message7": "估计小时数仅允许数字，冒号后2位（小于60），不能包含任何特殊字符。",
+					"message8": "估计小时数必须少于"
+				},
+				"fields": {
+					"description": "描述",
+					"end_date": "结束日期",
+					"estimate_hours": "估计工时",
+					"name": "名称",
+					"responsible": "负责任的",
+					"start_date": "开始日期",
+					"status": "状态"
+				},
+				"placeholders": {
+					"placeholder1": "输入项目冲刺 ",
+					"placeholder2": "-选择用户-",
+					"placeholder3": "选择开始日期",
+					"placeholder4": "选择结束日期",
+					"placeholder5": "-选择状态-",
+					"placeholder6": "输入说明",
+					"placeholder7": "输入项目 "
+				}
+			},
+			"messages": {
+				"create": " 创建成功。",
+				"released": "任务已成功释放。",
+				"story_delete": "短跑 故事已成功删除。",
+				"task_delete": "短跑 任务已成功删除。",
+				"update": " 更新成功。"
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "打开"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "进行中"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "关闭"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "打开"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "等候接听"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "关闭"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "已发行"
+				}
+			],
+			"title": "冲刺任务",
+			"title1": "创建冲刺",
+			"title2": "编辑冲刺",
+			"title3": "名称",
+			"title4": "任务",
+			"title5": "故事"
+		},
+		"title": "项目策划师",
+		"title1": "创造任务",
+		"title2": "建立故事",
+		"title3": "创建冲刺",
+		"title4": "项目",
+		"title5": "短跑"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "固定利率",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "每小时收费",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "完成与",
+			"csv_file": "在开始导入项目之前，请确保已导入用户及其团队。",
+			"current_version": "当前版本",
+			"version": "版"
+		},
+		"columns": {
+			"actions": "操作",
+			"assigned_To": "分配给",
+			"billing": "开票",
+			"budget": "预算",
+			"client": "客户",
+			"completion": "完成时间",
+			"creator": "创造者",
+			"duration": "持续时间",
+			"end": "结束",
+			"hours": "小时",
+			"id": "ID",
+			"logo": "商标",
+			"progress": "进展",
+			"project_name": "项目名",
+			"start": "开始",
+			"status": "状态",
+			"version": "版"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一且有效的项目名称。",
+				"message10": "请选择一个有效的结束日期。",
+				"message11": "估计小时数仅允许数字，冒号后2位（小于60），不能包含任何特殊字符。",
+				"message12": "固定价格必须是刨丝器，然后是0。",
+				"message13": "固定价格只允许数字。",
+				"message14": "将文件放在此处或单击以上传。",
+				"message15": "此文件不是csv文件。请仅选择csv文件。",
+				"message16": "请选择要导入的CSV文件。",
+				"message2": "项目名称的最大长度为255个字符。",
+				"message3": "请输入唯一有效的项目版本。",
+				"message4": "项目版本可以像1.0。",
+				"message6": "请选择一个有效的状态。",
+				"message8": "请输入有效的演示网址。",
+				"message9": "请选择一个有效的开始日期。"
+			},
+			"fields": {
+				"actual_hours": "实际营业时间",
+				"assigned_To": "分配给",
+				"assigned_group": "指派小组",
+				"billing_type": "帐单类型",
+				"budget": "预算",
+				"client_name": "客户名称",
+				"completed": "已完成",
+				"created_by": "由...制作",
+				"csv_file": "选择项目CSV文件",
+				"demo_URL": "演示网址",
+				"description": "描述",
+				"end_date": "结束日期",
+				"estimate_hours": "估计工时",
+				"fixed_price": "固定价格（$）",
+				"hourly_rate": "时薪（$）",
+				"progress": "进展",
+				"project_hours": "自动进度",
+				"project_id": "专案编号",
+				"project_logo": "项目徽标",
+				"project_name": "项目名",
+				"start_date": "开始日期",
+				"status": "状态",
+				"version": "版"
+			},
+			"placeholders": {
+				"placeholder1": "输入项目名称",
+				"placeholder10": "输入价格率",
+				"placeholder11": "输入说明",
+				"placeholder2": "输入版本",
+				"placeholder3": "-选择客户-",
+				"placeholder4": "-选择状态-",
+				"placeholder5": "-选择分配的组-",
+				"placeholder6": "未分配",
+				"placeholder7": "选择开始日期",
+				"placeholder8": "选择结束日期",
+				"placeholder9": "-选择结算类型-"
+			}
+		},
+		"details": {
+			"title1": "自定义字段",
+			"title2": "描述"
+		},
+		"headings": {
+			"head1": "项目信息",
+			"head2": "项目日期",
+			"head3": "其他资讯",
+			"head4": "自定义字段",
+			"head5": "描述"
+		},
+		"inline_edit": {
+			"billing_type": "帐单类型",
+			"budget": "预算",
+			"client": "客户",
+			"demo_url": "演示网址",
+			"description": "描述",
+			"end_date": "结束日期",
+			"estimate_hours": "估计工时",
+			"notes": "笔记",
+			"project_name": "项目名",
+			"start_date": "开始日期"
+		},
+		"messages": {
+			"create": "项目创建成功。",
+			"delete": "项目已成功删除。",
+			"import": "项目已成功导入。",
+			"status": "状态已成功更改。",
+			"update": "项目已成功更新。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "等候接听"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "取消"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "已完成"
+			}
+		],
+		"title": "项目",
+		"title1": "创建项目",
+		"title2": "编辑项目",
+		"title3": "导入项目"
+	},
+	"providers": {
+		"columns": {
+			"actions": "操作",
+			"color": "颜色",
+			"email": "电子邮件",
+			"firstname": "名字",
+			"lastname": "姓"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入一个有效的名字。",
+				"message2": "名字最长不能超过50个字符。",
+				"message3": "请输入一个有效的姓氏。",
+				"message4": "姓氏最长为50个字符。",
+				"message5": "请输入有效电子邮件。",
+				"message6": "电子邮件必须是有效的电子邮件。",
+				"message7": "请选择有效的颜色。"
+			},
+			"fields": {
+				"color": "颜色",
+				"email": "电子邮件",
+				"first_name": "名字",
+				"last_name": "姓"
+			},
+			"placeholders": {
+				"placeholder1": "输入名字",
+				"placeholder2": "输入姓氏",
+				"placeholder3": "输入电子邮件"
+			}
+		},
+		"messages": {
+			"create": "提供程序已成功创建。",
+			"delete": "提供程序已成功删除。",
+			"edit": "提供者已成功编辑。"
+		},
+		"title": "供应商"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的用户名。",
+				"message10": "密码和确认密码不匹配。",
+				"message2": "用户名的长度不得少于3个字符，最多不超过30个字符，不得带空格。",
+				"message3": "请输入一个有效的名字。",
+				"message4": "请输入一个有效的姓氏。",
+				"message5": "请输入有效电子邮件。",
+				"message6": "电子邮件必须是有效的电子邮件。",
+				"message7": "请输入有效密码。",
+				"message8": "密码长度至少为3到30个字符。",
+				"message9": "请输入有效的确认密码。"
+			},
+			"placeholders": {
+				"placeholder1": "输入用户名",
+				"placeholder2": "输入名字",
+				"placeholder3": "输入姓氏",
+				"placeholder4": "输入邮箱",
+				"placeholder5": "输入密码",
+				"placeholder6": "输入确认密码"
+			}
+		},
+		"messages": {
+			"success": "您已经成功注册了。"
+		},
+		"title": "寄存器",
+		"title1": "已经有账号？"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "缺陷",
+			"incident_report": "事件",
+			"project_report": "项目",
+			"task_report": "任务"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效密码。",
+				"message2": "密码长度至少为3到30个字符。",
+				"message3": "请输入有效的确认密码。",
+				"message4": "密码和确认密码不匹配。",
+				"message5": "请提供有效的电子邮件或令牌。"
+			},
+			"placeholders": {
+				"placeholder1": "输入密码",
+				"placeholder2": "输入确认密码"
+			}
+		},
+		"messages": {
+			"success": "密码重置成功。"
+		},
+		"title": "重设密码"
+	},
+	"roles": {
+		"columns": {
+			"actions": "操作",
+			"description": "描述",
+			"role_name": "角色名称",
+			"role_slug": "角色Sl"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的角色名称。",
+				"message2": "角色名称最多可以包含50个字符。",
+				"message3": "角色块最多可以包含50个字符。",
+				"message4": "角色只能是字母，下划线。",
+				"message5": "请输入有效的角色。"
+			},
+			"fields": {
+				"description": "描述",
+				"role_name": "角色名称",
+				"role_slug": "角色Sl"
+			},
+			"placeholders": {
+				"placeholder1": "输入角色名称",
+				"placeholder2": "输入角色Sl"
+			}
+		},
+		"inline_edit": {
+			"description": "描述",
+			"role_name": "角色名称"
+		},
+		"messages": {
+			"create": "角色创建成功。",
+			"delete": "角色已成功删除。",
+			"update": "角色更新成功。"
+		},
+		"title": "角色"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的公司名称。",
+					"message10": "邮政编码最多可以包含10位数字。",
+					"message11": "请输入有效的公司地址。",
+					"message2": "请输入有效的公司法定名称。",
+					"message3": "请输入有效的公司简称。",
+					"message4": "公司简称最多可以包含10个字符。",
+					"message5": "请输入有效的公司电子邮件。",
+					"message6": "电子邮件必须是有效的电子邮件地址。",
+					"message7": "公司电话必须是有效的电话号码格式。",
+					"message8": "公司网站必须是有效的URL。",
+					"message9": "请输入有效的邮政编码。"
+				},
+				"fields": {
+					"city": "市",
+					"company_address": "公司地址",
+					"company_country": "公司所在国家",
+					"company_email": "公司电邮",
+					"company_name": "公司名",
+					"company_phone": "公司电话",
+					"company_website": "公司网站",
+					"company_zipcode": "邮政编码",
+					"contact_person": "联系人",
+					"legal_name": "合法名称",
+					"short_name": "简称"
+				},
+				"placeholders": {
+					"placeholder1": "输入公司名称",
+					"placeholder10": "输入联系人",
+					"placeholder11": "输入公司地址",
+					"placeholder2": "输入法定名称",
+					"placeholder3": "输入简称",
+					"placeholder4": "输入公司电子邮件",
+					"placeholder5": "输入公司电话",
+					"placeholder6": "输入公司网站",
+					"placeholder7": " -  选择国家  - ",
+					"placeholder8": "输入城市",
+					"placeholder9": "输入邮政编号"
+				}
+			},
+			"title": "公司资料"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "活跃的Cronjob",
+					"automatic_backup": "自动备份数据库",
+					"daily_report_emails": "每日报告电子邮件",
+					"last_cronjob_run": "最后的Cronjob运行"
+				},
+				"messages": {
+					"message1": "如果设置正确，这将启用cronjob功能。",
+					"message2": "每7天创建一次数据库备份。需要激活cronjob！"
+				},
+				"placeholders": {
+					"placeholder1": "输入电子邮件"
+				}
+			},
+			"title": "计划工作"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "操作",
+				"custom_field_for": "自定义字段",
+				"label": "标签",
+				"status": "状态",
+				"type": "类型",
+				"value": "值"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "请选择一个有效的自定义字段表单。",
+					"message2": "请输入有效的字段标签。",
+					"message3": "请输入有效的帮助文本。",
+					"message4": "请选择一个有效的字段类型。",
+					"message5": "请输入有效的标签。",
+					"message6": "请输入一个有效的值。"
+				},
+				"fields": {
+					"custom_field_for": "自定义字段",
+					"field_label": "栏位标签",
+					"field_type": "栏位类型",
+					"help_text": "帮助文字",
+					"is_required_field": "是必填字段",
+					"show_on_detail": "显示在详细信息页面上"
+				},
+				"placeholders": {
+					"placeholder1": "-选择自定义字段表单-",
+					"placeholder2": "输入字段标签",
+					"placeholder3": "输入帮助文字",
+					"placeholder4": "-选择字段类型-"
+				}
+			},
+			"headings": {
+				"head1": "输入标签和值作为下拉框。"
+			},
+			"messages": {
+				"create": "自定义字段创建成功。",
+				"delete": "自定义字段已成功删除。",
+				"status": "状态已成功更改。",
+				"update": "自定义字段已成功更新。"
+			},
+			"title": "自定义字段",
+			"title1": "自定义字段"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "设置"
+			},
+			"title": "仪表板",
+			"title1": "通告",
+			"title10": "估算值",
+			"title11": "发票",
+			"title12": "支付",
+			"title13": "树叶",
+			"title14": "小组",
+			"title15": "用户",
+			"title16": "CLIENTS",
+			"title17": "用品",
+			"title18": "项目状态",
+			"title19": "任务状态",
+			"title2": "近期活动",
+			"title20": "月度报告",
+			"title21": "小工具",
+			"title22": "图表",
+			"title23": "清单",
+			"title3": "待办事项清单",
+			"title4": "会议",
+			"title5": "项目",
+			"title6": "任务",
+			"title7": "瑕疵",
+			"title8": "突发事件",
+			"title9": "到期应付发票"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "操作",
+				"date": "日期",
+				"file_name": "文件名"
+			},
+			"messages": {
+				"create": "数据库备份创建成功。",
+				"delete": "数据库备份已成功删除。",
+				"restore": "数据库还原成功。"
+			},
+			"title": "数据库备份",
+			"title1": "数据库备份",
+			"title2": "备用"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "通知"
+			},
+			"title": "邮件通知",
+			"title1": "公告电邮"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的公司电子邮件。",
+					"message2": "电子邮件必须是有效的电子邮件地址。",
+					"message3": "请选择一个有效的电子邮件协议。",
+					"message4": "请输入有效的SMTP主机。",
+					"message5": "请输入有效的SMTP用户。",
+					"message6": "SMTP用户必须是有效的电子邮件地址。",
+					"message7": "请输入有效的SMTP密码。",
+					"message8": "请输入有效的SMTP端口。"
+				},
+				"fields": {
+					"company_email": "公司电邮",
+					"email_encryption": "邮件加密",
+					"email_protocol": "电子邮件协议",
+					"mailgun_domain": "Mailgun域",
+					"mailgun_secret": "邮枪的秘密",
+					"mandrill_secret": "山d秘密",
+					"smtp_host": "SMTP主机",
+					"smtp_password": "SMTP密码",
+					"smtp_port": "SMTP端口",
+					"smtp_user": "SMTP用户",
+					"sparkpost_secret": "星火秘密"
+				},
+				"placeholders": {
+					"placeholder1": "输入公司电子邮件",
+					"placeholder2": "-选择电子邮件协议-",
+					"placeholder3": "输入密码",
+					"placeholder4": "-选择电子邮件加密-",
+					"placeholder5": "输入Sparkpost机密",
+					"placeholder6": "输入Mailgun域",
+					"placeholder7": "输入Mailgun Secret",
+					"placeholder8": "输入山d秘密"
+				}
+			},
+			"title": "电子邮件",
+			"title1": "电子邮件发送到 "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "身体",
+					"subject": "学科"
+				},
+				"placeholders": {
+					"placeholder1": "-选择电子邮件组-",
+					"placeholder2": "输入主题"
+				}
+			},
+			"messages": {
+				"update": "电子邮件模板已成功更新。"
+			},
+			"title": "邮件模板"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的估算前缀。",
+					"message2": "估计前缀的最大长度为10个字符。",
+					"message3": "请在此之后输入有效期限。",
+					"message4": "将文件放在此处或单击以上传。"
+				},
+				"fields": {
+					"auto_remind": "自动发送提醒？",
+					"auto_remind_before": "提前发送提醒（天）",
+					"client_note": "客户须知",
+					"due_after": "到期日（天）",
+					"estimate_logo": "估算徽标",
+					"estimate_prefix": "估计前缀",
+					"terms_conditions": "条款和条件"
+				},
+				"placeholders": {
+					"placeholder1": "输入估算前缀",
+					"placeholder2": "输入之后到期",
+					"placeholder3": "输入客户注释",
+					"placeholder4": "输入条款和条件",
+					"placeholder5": "在几天前输入提醒"
+				}
+			},
+			"title": "估计"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的发票前缀。",
+					"message2": "发票前缀最长不能超过10个字符。",
+					"message3": "请在此之后输入有效期限。",
+					"message4": "将文件放在此处或单击以上传。"
+				},
+				"fields": {
+					"auto_remind": "自动发送提醒？",
+					"auto_remind_after": "（天后）发送提醒1,3",
+					"client_note": "客户须知",
+					"due_after": "到期日（天）",
+					"gst_number": "消费税编号",
+					"invoice_logo": "发票徽标",
+					"invoice_prefix": "发票前缀",
+					"show_gst_number": "在发票上显示商品及服务税编号？",
+					"terms_conditions": "条款和条件"
+				},
+				"placeholders": {
+					"placeholder1": "输入发票前缀",
+					"placeholder2": "输入之后到期",
+					"placeholder3": "输入客户注释",
+					"placeholder4": "输入条款和条件",
+					"placeholder5": "输入几天后提醒",
+					"placeholder6": "输入商品及服务税编号"
+				}
+			},
+			"title": "发票"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "菜单已成功更新。"
+			},
+			"title": "菜单分配",
+			"title1": "展开全部",
+			"title2": "全部收缩"
+		},
+		"messages": {
+			"update": "设置更新成功。"
+		},
+		"payment_gateway_settings": {
+			"title": "支付网关"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的贝宝客户ID。"
+				},
+				"fields": {
+					"paypal_checkout_client_id": "贝宝客户ID",
+					"paypal_checkout_label": "贝宝标签",
+					"paypal_checkout_status": "状态"
+				},
+				"placeholders": {
+					"placeholder1": "输入贝宝标签",
+					"placeholder2": "输入贝宝客户ID"
+				}
+			},
+			"title": "PAYPAL"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的备用客户ID。",
+					"message2": "请输入有效的备用客户端机密。",
+					"message3": "请输入有效的备用重定向URL。"
+				},
+				"fields": {
+					"slack_client_id": "Slack客户端ID",
+					"slack_client_secret": "松弛的客户秘密",
+					"slack_redirect_url": "松弛重定向网址",
+					"slack_status": "松弛状态"
+				},
+				"placeholders": {
+					"placeholder1": "输入Slack客户ID",
+					"placeholder2": "输入Slack Client Secret",
+					"placeholder3": "输入松弛重定向网址"
+				}
+			},
+			"title": "松弛"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的Stripe API密钥。",
+					"message2": "请输入有效的Stripe API密码。"
+				},
+				"fields": {
+					"stripe_api_key": "Stripe API密钥",
+					"stripe_label": "条纹标签",
+					"stripe_secret_key": "条纹秘密钥匙",
+					"stripe_status": "状态"
+				},
+				"placeholders": {
+					"placeholder1": "输入条纹标签",
+					"placeholder2": "输入Stripe API密钥",
+					"placeholder3": "输入条纹秘密密钥"
+				}
+			},
+			"title": "条纹",
+			"title1": "工資"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "请输入有效的表格分页限制。",
+					"message2": "请选择一个有效的日期格式。",
+					"message3": "请选择一个有效的时间格式。",
+					"message4": "请选择一个有效的货币。",
+					"message5": "请选择有效的默认语言。"
+				},
+				"fields": {
+					"allowed_for_registration": "允许注册？",
+					"date_format": "日期格式",
+					"default_currency": "默认货币",
+					"default_language": "默认语言",
+					"default_locale": "默认区域设置",
+					"tables_pagination_limit": "表分页限制",
+					"time_format": "时间格式",
+					"timezone": "时区"
+				},
+				"placeholders": {
+					"placeholder1": " -  选择语言  - ",
+					"placeholder2": "-选择地区-",
+					"placeholder3": "-选择时区-",
+					"placeholder4": "输入表格分页限制",
+					"placeholder5": "-选择日期格式-",
+					"placeholder6": "-选择时间格式-",
+					"placeholder7": "-选择默认货币-"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "输入有效的猜测前缀。",
+						"message2": "估计前缀最多可以包含10个字符。",
+						"message3": "请在此之后输入有效的截止日期。",
+						"message4": "将文件拖到此处或单击以上传。"
+					},
+					"fields": {
+						"auto_remind": "自动发送提醒？",
+						"auto_remind_before": "发送提醒（几天前）",
+						"client_note": "客户须知",
+						"due_after": "截止日期（天）",
+						"estimate_logo": "欣赏徽标",
+						"estimate_prefix": "欣赏前缀",
+						"terms_conditions": "服务条款"
+					},
+					"placeholders": {
+						"placeholder1": "输入前缀Estimation",
+						"placeholder2": "然后输入日期",
+						"placeholder3": "输入客户备忘",
+						"placeholder4": "输入条件",
+						"placeholder5": "在几天前输入提醒"
+					}
+				},
+				"title": "估计"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "请输入有效的发票前缀。",
+						"message2": "发票前缀最长为10个字符。",
+						"message3": "请在此之后输入有效的截止日期。",
+						"message4": "将文件拖到此处或单击以上传。"
+					},
+					"fields": {
+						"auto_remind": "自动发送提醒？",
+						"auto_remind_after": "在（天）之后发送提醒Example 1.3",
+						"client_note": "客户须知",
+						"due_after": "截止日期（天）",
+						"gst_number": "消费税编号",
+						"invoice_logo": "发票徽标",
+						"invoice_prefix": "发票前缀",
+						"show_gst_number": "在发票上显示商品及服务税编号？",
+						"terms_conditions": "服务条款"
+					},
+					"placeholders": {
+						"placeholder1": "输入发票前缀",
+						"placeholder2": "然后输入日期",
+						"placeholder3": "输入客户备忘",
+						"placeholder4": "输入条件",
+						"placeholder5": "输入提醒天数",
+						"placeholder6": "输入商品及服务税（GST）编号"
+					}
+				},
+				"title": "发票"
+			},
+			"payment_gateway_settings": {
+				"title": "支付网关"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "请输入有效的PayPal客户ID。"
+					},
+					"fields": {
+						"paypal_checkout_client_id": "贝宝客户编号",
+						"paypal_checkout_label": "贝宝标签",
+						"paypal_checkout_status": "位置"
+					},
+					"placeholders": {
+						"placeholder1": "输入贝宝标签",
+						"placeholder2": "输入您的PayPal客户ID"
+					}
+				},
+				"title": "PAYPAL"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "输入有效的备用客户端ID。",
+						"message2": "输入有效的客户端密码。",
+						"message3": "请输入有效的免费重定向网址。"
+					},
+					"fields": {
+						"slack_client_id": "Slack客户端ID",
+						"slack_client_secret": "客户的秘密被公开",
+						"slack_redirect_url": "松弛重定向网址",
+						"slack_status": "审批状态"
+					},
+					"placeholders": {
+						"placeholder1": "输入Slack客户端ID",
+						"placeholder2": "输入客户的密码",
+						"placeholder3": "输入松弛重定向网址"
+					}
+				},
+				"title": "松弛"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "请输入有效的条形码API密钥。"
+					},
+					"fields": {
+						"stripe_api_key": "Stripe API密钥",
+						"stripe_label": "条纹标签",
+						"stripe_status": "位置"
+					},
+					"placeholders": {
+						"placeholder1": "输入横幅标签",
+						"placeholder2": "输入Stripe API密钥"
+					}
+				},
+				"title": "条纹"
+			},
+			"title": "系统"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "买方",
+					"purchase_key": "购买密钥",
+					"url": "网址"
+				},
+				"placeholders": {
+					"placeholder1": "输入产品购买密钥",
+					"placeholder2": "输入产品购买者代码"
+				}
+			},
+			"title": "系统更新"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "将文件放在此处或单击以上传。"
+				},
+				"fields": {
+					"compnay_logo": "公司标志",
+					"compnay_sidebar_logo": "公司侧栏徽标",
+					"login_background": "登录背景",
+					"sidebar_background_images": "侧边栏背景图片"
+				}
+			},
+			"title": "主题"
+		},
+		"title": "设置",
+		"translations": {
+			"columns": {
+				"actions": "操作",
+				"icon": "图标",
+				"language": "语言",
+				"status": "状态"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "请选择一种有效的语言。",
+					"message2": "请选择一个有效的图标。",
+					"message3": "将文件放在此处或单击以上传。"
+				},
+				"fields": {
+					"icon": "图标",
+					"language": "语言"
+				},
+				"placeholders": {
+					"placeholder1": " -  选择语言  - "
+				}
+			},
+			"messages": {
+				"create": "翻译创建成功。",
+				"delete": "翻译已成功删除。",
+				"status": "状态已成功更改。",
+				"update": "翻译成功更新。"
+			},
+			"title": "翻译",
+			"title1": "翻译"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} 是必需的。",
+				"message2": "{{elementFor}} 仅允许数字，冒号后2位（小于60），不能包含任何特殊字符。",
+				"message3": "请输入有效的 {{elementFor}}。",
+				"message4": "{{elementFor}} 的长度不得少于 {{minLength}} 个字符。"
+			},
+			"placeholders": {
+				"placeholder1": "输入 {{elementFor}}",
+				"placeholder2": "-选择 {{elementFor}} -",
+				"placeholder3": "选择 {{elementFor}}"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "请输入有效的 {{custom_field}}。",
+				"message2": "请选择一个有效的 {{custom_field}}。"
+			},
+			"placeholders": {
+				"placeholder1": "输入 {{custom_field}}",
+				"placeholder2": "-选择 {{custom_field}} -"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "待办事项",
+			"head2": "进行中",
+			"head3": "已完成"
+		},
+		"title": "任务看板"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "完成与",
+			"csv_file": "在开始导入项目之前，请确保已导入用户及其团队。"
+		},
+		"columns": {
+			"actions": "操作",
+			"actual_end": "实际结束",
+			"actual_start": "实际开始",
+			"assigned": "已分配",
+			"creator": "创造者",
+			"end": "结束",
+			"end_date": "结束日期",
+			"hours": "小时",
+			"id": "身分",
+			"planned_end": "计划结束",
+			"planned_start": "计划开始",
+			"priority": "优先",
+			"progress": "进展",
+			"project": "项目",
+			"project_version": "项目版本",
+			"start": "开始",
+			"start_date": "开始日期",
+			"status": "状态",
+			"task_ID": "任务ID",
+			"task_name": "任务名称"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一有效的任务名称。",
+				"message11": "请选择一个有效的任务状态。",
+				"message12": "请选择一个有效的任务优先级。",
+				"message13": "估计小时数仅允许数字，冒号后2位（小于60），不能包含任何特殊字符。",
+				"message14": "估计小时数必须少于",
+				"message15": "请选择要导入的CSV文件。",
+				"message2": "任务名称的最大长度为255个字符。",
+				"message3": "请输入唯一且有效的任务生成ID。",
+				"message4": "请选择一个有效的计划开始日期。",
+				"message5": "请选择一个有效的计划结束日期。",
+				"message6": "请选择一个有效的开始日期。",
+				"message7": "请选择一个有效的结束日期。",
+				"message8": "请选择一个有效的项目名称。"
+			},
+			"fields": {
+				"actual_enddate": "结束日期",
+				"actual_hours": "实际营业时间",
+				"actual_startdate": "开始日期",
+				"assigned_To": "分配给",
+				"completed": "已完成",
+				"created_by": "由...制作",
+				"csv_file": "选择任务CSV文件",
+				"description": "描述",
+				"estimate_hours": "估计工时",
+				"parent_taskID": "父任务ID",
+				"plan_enddate": "计划结束日期",
+				"plan_startdate": "计划开始日期",
+				"priority": "优先",
+				"progress": "进展",
+				"project_name": "项目名",
+				"project_version": "项目版本",
+				"status": "状态",
+				"subtask_Id": "子任务ID",
+				"task_ID": "任务ID",
+				"task_name": "任务名称"
+			},
+			"placeholders": {
+				"placeholder1": "输入任务名称",
+				"placeholder10": "-选择优先级-",
+				"placeholder2": "选择计划的开始日期",
+				"placeholder3": "选择计划的结束日期",
+				"placeholder4": "选择开始日期",
+				"placeholder5": "选择结束日期",
+				"placeholder6": "-选择项目名称-",
+				"placeholder7": "-选择项目版本-",
+				"placeholder8": "-选择分配给-",
+				"placeholder9": "-选择状态-"
+			}
+		},
+		"details": {
+			"title1": "自定义字段",
+			"title2": "描述",
+			"title3": "子任务"
+		},
+		"headings": {
+			"head1": "任务信息",
+			"head2": "任务日期",
+			"head3": "进展",
+			"head4": "项目信息",
+			"head5": "要求",
+			"head6": "自定义字段",
+			"head7": "描述"
+		},
+		"inline_edit": {
+			"description": "描述",
+			"estimate_hours": "估计工时",
+			"notes": "笔记",
+			"task_name": "任务名称"
+		},
+		"messages": {
+			"copy": "任务已成功复制。",
+			"create": "任务创建成功。",
+			"delete": "任务已成功删除。",
+			"import": "任务已成功导入。",
+			"priority": "优先级已成功更改。",
+			"status": "状态已成功更改。",
+			"update": "任务已成功更新。"
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "打开"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"id": 3,
+				"label": "等候接听"
+			},
+			{
+				"id": 4,
+				"label": "等候"
+			},
+			{
+				"id": 5,
+				"label": "取消"
+			},
+			{
+				"id": 6,
+				"label": "已完成"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"id": 3,
+				"label": "等候接听"
+			},
+			{
+				"id": 5,
+				"label": "取消"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"id": 4,
+				"label": "等候"
+			},
+			{
+				"id": 5,
+				"label": "取消"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "取消"
+			},
+			{
+				"id": 2,
+				"label": "进行中"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"id": 4,
+				"label": "取消"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "紧急"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "很高"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "高"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "介质"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "低"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "等候接听"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "等候"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "已完成"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "等候接听"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "等候"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "已完成"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "等候接听"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Bezig"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "等候"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "进行中"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "取消"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "已完成"
+			}
+		],
+		"title": "任务",
+		"title1": "创造任务",
+		"title2": "创建子任务",
+		"title3": "导入任务",
+		"title4": "编辑任务",
+		"title5": "编辑子任务",
+		"title6": "复制任务",
+		"tooltips": {
+			"sub_task": "创建子任务"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "税名",
+			"tax_rate": "税率"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入唯一有效的税名。",
+				"message2": "请输入有效的税率。",
+				"message3": "税率必须为数字。"
+			},
+			"fields": {
+				"tax_name": "税名",
+				"tax_rate": "税率"
+			},
+			"placeholders": {
+				"placeholder1": "输入税名",
+				"placeholder2": "输入税率"
+			}
+		},
+		"messages": {
+			"create": "税收创建成功。",
+			"delete": "税已成功删除。",
+			"update": "税务更新成功。"
+		},
+		"title": "税收",
+		"title1": "税率",
+		"title2": "税收！",
+		"title3": "建立税收",
+		"title4": "更新税"
+	},
+	"teams": {
+		"columns": {
+			"actions": "操作",
+			"leader": "领导",
+			"members": "会员",
+			"team_name": "队名"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的团队名称。",
+				"message2": "小组名称最多可以包含30个字符。",
+				"message3": "请选择一个有效的团队成员。",
+				"message4": "请选择一个有效的团队负责人。",
+				"message5": "请选择要导入的CSV文件。",
+				"message6": "此文件不是csv文件。请仅选择csv文件。"
+			},
+			"fields": {
+				"actions": "操作",
+				"csv_file": "选择团队CSV文件",
+				"description": "描述",
+				"leader": "领导",
+				"members": "会员",
+				"team_name": "队名"
+			},
+			"placeholders": {
+				"placeholder1": "输入团队名称",
+				"placeholder2": "-选择团队成员-",
+				"placeholder3": "-选择团队负责人-"
+			}
+		},
+		"inline_edit": {
+			"team_name": "队名"
+		},
+		"labels": {
+			"label1": "在开始导入团队之前，请确保您已导入用户。"
+		},
+		"messages": {
+			"create": "团队创建成功。",
+			"delete": "小组已成功删除。",
+			"import": "团队成功导入。",
+			"update": "团队更新成功。"
+		},
+		"title": "小组",
+		"title1": "导入团队",
+		"title2": "队长",
+		"title3": "团队板"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "侧栏颜色选项",
+			"head10": "侧边栏字体颜色",
+			"head11": "侧边栏布局选项",
+			"head12": "配置",
+			"head13": "折叠式菜单",
+			"head14": "边栏宽度",
+			"head15": "渐变边栏",
+			"head2": "调色板",
+			"head3": "颜色选项",
+			"head4": "侧边栏背景颜色",
+			"head5": "侧边栏背景图片",
+			"head6": "背景图片",
+			"head7": "背景颜色",
+			"head8": "背景图片",
+			"head9": "侧边栏背景颜色"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "预设颜色"
+			},
+			{
+				"key": "dark",
+				"value": "自定义颜色"
+			},
+			{
+				"key": "custom-colors",
+				"value": "自定义颜色"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "-选择布局-",
+			"placeholder2": "-选择侧边栏宽度-"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "小"
+			},
+			{
+				"key": "medium",
+				"value": "介质"
+			},
+			{
+				"key": "large",
+				"value": "大"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "操作",
+			"end_time": "时间结束",
+			"entry": "条目",
+			"note": "注意",
+			"photo": "照片",
+			"project_name": "项目",
+			"start_time": "开始时间",
+			"time_h": "小时",
+			"user": "用户"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请选择一个有效的开始时间。",
+				"message2": "请选择一个有效的结束时间。",
+				"message3": "请为时间表选择正确的日期和时间。",
+				"message4": "请输入有效的注释。"
+			},
+			"fields": {
+				"end_time": "时间结束",
+				"note": "注意",
+				"start_time": "开始时间"
+			},
+			"placeholders": {
+				"placeholder1": "选择开始时间",
+				"placeholder2": "选择结束时间",
+				"placeholder3": "输入备注"
+			},
+			"title1": "创建时间表",
+			"title2": "编辑时间表"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "请选择一个有效范围。",
+				"message2": "请从中选择一个有效期限。",
+				"message3": "请选择一个有效期。"
+			},
+			"placeholders": {
+				"placeholder1": "-选择项目-",
+				"placeholder2": "-选择客户-",
+				"placeholder3": "选择期间从",
+				"placeholder4": "选择期间到",
+				"placeholder5": "-选择用户-"
+			}
+		},
+		"inline_edit": {
+			"note": "注意"
+		},
+		"messages": {
+			"create": "时间表已成功创建。",
+			"delete": "时间表已成功删除。",
+			"update": "时间表已成功更新。"
+		},
+		"range": {
+			"last_month": "上个月",
+			"last_week": "上个星期",
+			"period": "期",
+			"this_month": "这个月",
+			"this_week": "本星期",
+			"today": "今天"
+		},
+		"title": "时间表",
+		"title1": "我的时间表",
+		"title2": "所有时间表"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "请输入有效的说明。",
+				"message2": "说明最多可以包含5个字符。",
+				"message3": "说明最多可包含255个字符。",
+				"message4": "请选择一个有效的待办事项状态。",
+				"message5": "请选择一个有效的截止日期。"
+			},
+			"fields": {
+				"description": "描述",
+				"due_date": "截止日期",
+				"status": "状态"
+			},
+			"placeholders": {
+				"placeholder1": "输入说明",
+				"placeholder2": "-选择状态-",
+				"placeholder3": "选择截止日期"
+			}
+		},
+		"inline_edit": {
+			"description": "描述",
+			"due_date": "截止日期"
+		},
+		"messages": {
+			"create": "Todo创建成功。",
+			"delete": "待办事项已成功删除。",
+			"status": "状态已成功更新。",
+			"update": "Todo更新成功。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "打开"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "已完成"
+			}
+		],
+		"title": "托多斯"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "分配权限模式"
+		},
+		"columns": {
+			"actions": "操作",
+			"departments_roles": "部门/角色",
+			"first_name": "名字",
+			"last_name": "姓",
+			"photo": "照片",
+			"status": "状态",
+			"username": "用户名"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "请输入一个有效的名字。",
+				"message10": "密码和确认密码不匹配。",
+				"message11": "将文件放在此处或单击以上传。",
+				"message12": "请选择一个具有角色的有效部门。",
+				"message13": "请选择一个有效的用户权限。",
+				"message14": "请输入一个有效的用户生成的ID。",
+				"message15": "请输入有效的就业ID。",
+				"message16": "请输入有效的用户名。",
+				"message17": "用户名的长度不得少于3个字符，最多不超过30个字符，不得带空格。",
+				"message18": "请输入有效的手机号码。",
+				"message19": "请输入一个有效的电话号码。",
+				"message2": "名字最多可包含20个字符。",
+				"message20": "请选择一个有效的用户权限。",
+				"message21": "请选择要导入的CSV文件。",
+				"message22": "此文件不是csv文件。请仅选择csv文件。",
+				"message3": "请输入一个有效的姓氏。",
+				"message4": "姓氏最长为20个字符。",
+				"message5": "请输入有效电子邮件。",
+				"message6": "电子邮件可以是有效的电子邮件地址。",
+				"message7": "请输入有效密码。",
+				"message8": "密码长度至少为3到30个字符。",
+				"message9": "请输入有效的确认密码。"
+			},
+			"fields": {
+				"address": "地址",
+				"assigned_to": "分配给",
+				"confirm_password": "确认密码",
+				"country": "国家",
+				"csv_file": "选择用户CSV文件",
+				"customize_permission": "自定义权限",
+				"departments_roles": "部门/角色",
+				"dob": "出生日期",
+				"email": "电子邮件",
+				"employment_ID": "就业证",
+				"everyone": "大家",
+				"father_name": "父亲的名字",
+				"first_name": "名字",
+				"gender": "性别",
+				"is_departmenthead": "他/她是部门负责人吗？",
+				"joining_date": "加盟日期",
+				"language": "语言",
+				"last_name": "姓",
+				"marital_status": "婚姻状况",
+				"mobile": "移动",
+				"mother_name": "母亲的名字",
+				"new_password": "新密码",
+				"old_password": "旧密码",
+				"password": "密码",
+				"phone": "电话",
+				"primary_manager": "主要经理",
+				"profile_photo": "头像照片",
+				"secondary_manager": "二级经理",
+				"select_users": "选择用户",
+				"skype": "Skype的",
+				"userid": "用户身份",
+				"username": "用户名"
+			},
+			"placeholders": {
+				"placeholder1": "输入名字",
+				"placeholder10": " -  选择语言  - ",
+				"placeholder11": "输入旧密码",
+				"placeholder12": "-- 选择主要经理 --",
+				"placeholder13": "-- 选择二级经理 --",
+				"placeholder14": "输入地址",
+				"placeholder2": "输入姓氏",
+				"placeholder3": "输入邮箱",
+				"placeholder4": "输入密码",
+				"placeholder5": "输入确认密码",
+				"placeholder6": "-选择部门/角色-",
+				"placeholder7": "输入用户名",
+				"placeholder8": "输入Skype",
+				"placeholder9": " -  选择国家  - "
+			}
+		},
+		"gender_options": [
+			{
+				"label": "男",
+				"value": "male"
+			},
+			{
+				"label": "女",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "个人信息",
+			"head2": "要求",
+			"head3": "关于用户",
+			"head4": "联络资料"
+		},
+		"inline_edit": {
+			"address": "地址",
+			"country": "国家",
+			"dob": "生日",
+			"father_name": "父亲姓名",
+			"first_name": "名字",
+			"gender": "性别",
+			"joining_date": "加盟日期",
+			"language": "语言",
+			"last_name": "姓",
+			"maritial_status": "婚姻状况",
+			"mobile": "移动",
+			"mother_name": "母亲名字",
+			"phone": "电话",
+			"primary_manager": "主要经理",
+			"secondary_manager": "二级经理",
+			"skype": "Skype的",
+			"username": "用户名",
+			"state": "州",
+			"city": "市",
+			"postal_code": "郵政編碼"
+		},
+		"marital_status": [
+			{
+				"label": "已婚",
+				"value": "married"
+			},
+			{
+				"label": "未婚",
+				"value": "unmarried"
+			},
+			{
+				"label": "寡",
+				"value": "widowed"
+			},
+			{
+				"label": "离婚了",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "头像成功更改。",
+			"create": "用户创建成功。",
+			"delete": "用户已成功删除。",
+			"email_change": "电子邮件更改请求已成功发送。请检查您的收件箱并更改您的电子邮件。",
+			"import": "用户已成功导入。",
+			"invite": "邀请发送成功。",
+			"password_change": "密码更改请求成功发送。请检查您的收件箱并更改您的电子邮件。",
+			"status": "状态已成功更改。",
+			"update": "用户更新成功。"
+		},
+		"profile": {
+			"activities": "活动",
+			"articles": "用品",
+			"comments": "评论",
+			"defect_hours": "缺陷时间",
+			"defects": "瑕疵",
+			"incident_hours": "事故时间",
+			"incidents": "突发事件",
+			"leave_hours": "休假时间",
+			"leave_other_hours": "休假/其他时间",
+			"meeting_hours": "会议时间",
+			"other_hours": "其他时间",
+			"projects": "项目",
+			"task_hours": "任务时间",
+			"tasks": "任务",
+			"total_hours": "全部小时数",
+			"total_messages": "消息总数"
+		},
+		"title": "用户",
+		"title1": "创建用户",
+		"title2": "编辑用户",
+		"title3": "用户权限",
+		"title4": "更改电子邮件",
+		"title5": "更改密码",
+		"title6": "导入用户",
+		"title7": "改变头像"
+	},
+	"timer_logs": {
+		"title": "啟動計時器",
+		"title1": "停止計時器",
+		"error_messages": {
+			"message1": "無法啟動計時器，因為它已經在運行。",
+			"message2": "時間必須大於1分鐘。",
+			"message3": "時間必須少於12小時。"
+		}
+	}
+}

@@ -1,0 +1,158 @@
+name: Auto Tag, Grouped Changelog & Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  auto_tag_release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get latest commit message
+        id: commit
+        run: |
+          msg=$(git log -1 --pretty=%B)
+          echo "message=$msg" >> $GITHUB_OUTPUT
+          echo "📝 Commit message: $msg"
+
+      - name: Determine commit type
+        id: type
+        run: |
+          msg=$(echo "${{ steps.commit.outputs.message }}" | tr '[:upper:]' '[:lower:]')
+          if [[ "$msg" == feature* || "$msg" == *"feature"* ]]; then
+            echo "type=feature" >> $GITHUB_OUTPUT
+          elif [[ "$msg" == fix* || "$msg" == *"fix"* ]]; then
+            echo "type=fix" >> $GITHUB_OUTPUT
+          else
+            echo "type=none" >> $GITHUB_OUTPUT
+          fi
+          echo "✅ Commit type detected: $(cat $GITHUB_OUTPUT)"
+
+      - name: Skip non-feature/fix commits
+        if: ${{ steps.type.outputs.type == 'none' }}
+        run: |
+          echo "⏭️ Skip: commit bukan feature/fix, tidak perlu tagging."
+          exit 78  # neutral exit → job dianggap sukses tapi berhenti
+
+      - name: Get latest tag
+        id: get_tag
+        run: |
+          git fetch --tags
+          latest_tag=$(git describe --tags `git rev-list --tags --max-count=1` 2>/dev/null || echo "v2.0.0")
+          echo "latest_tag=$latest_tag" >> $GITHUB_OUTPUT
+          echo "📦 Latest tag: $latest_tag"
+
+      - name: Calculate next version
+        id: next_tag
+        run: |
+          latest=${{ steps.get_tag.outputs.latest_tag }}
+          IFS='.' read -r major minor patch <<<"${latest#v}"
+          type=${{ steps.type.outputs.type }}
+          new_tag=""
+
+          if [ "$type" == "feature" ]; then
+            new_tag="v$major.$minor.$((patch + 1))"
+          elif [ "$type" == "fix" ]; then
+            new_tag="v$major.$((minor + 1)).0"
+          fi
+
+          echo "new_tag=$new_tag" >> $GITHUB_OUTPUT
+          echo "🆕 Next tag will be: ${new_tag:-'(none)'}"
+
+      - name: Generate grouped changelog
+        id: changelog
+        run: |
+          latest=${{ steps.get_tag.outputs.latest_tag }}
+          new_tag=${{ steps.next_tag.outputs.new_tag }}
+          echo "## ${new_tag:-Unreleased} - $(date +'%Y-%m-%d')" > new_changelog.md
+          echo "" >> new_changelog.md
+
+          features=$(git log ${latest}..HEAD --pretty=format:"- %s (%an)" | grep -i 'feature' || true)
+          fixes=$(git log ${latest}..HEAD --pretty=format:"- %s (%an)" | grep -i 'fix' || true)
+          others=$(git log ${latest}..HEAD --pretty=format:"- %s (%an)" | grep -Ev 'feature|fix' || true)
+
+          if [ -n "$features" ]; then
+            echo "### ✨ Features" >> new_changelog.md
+            echo "$features" >> new_changelog.md
+            echo "" >> new_changelog.md
+          fi
+
+          if [ -n "$fixes" ]; then
+            echo "### 🐞 Fixes" >> new_changelog.md
+            echo "$fixes" >> new_changelog.md
+            echo "" >> new_changelog.md
+          fi
+
+          if [ -n "$others" ]; then
+            echo "### 🧰 Others" >> new_changelog.md
+            echo "$others" >> new_changelog.md
+            echo "" >> new_changelog.md
+          fi
+
+          cat new_changelog.md
+          changelog=$(cat new_changelog.md)
+          echo "log<<EOF" >> $GITHUB_OUTPUT
+          echo "$changelog" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Update CHANGELOG.md
+        run: |
+          if [ -f CHANGELOG.md ]; then
+            echo -e "\n$(cat new_changelog.md)\n$(cat CHANGELOG.md)" > CHANGELOG.md
+          else
+            cp new_changelog.md CHANGELOG.md
+          fi
+          echo "✅ CHANGELOG.md updated."
+
+      - name: Commit and push changelog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          git commit -m "📝 Update changelog for ${{ steps.next_tag.outputs.new_tag || 'latest commits' }}" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+      - name: Create and push new tag
+        if: ${{ steps.next_tag.outputs.new_tag != '' }}
+        run: |
+          tag=${{ steps.next_tag.outputs.new_tag }}
+          echo "🔖 Creating tag $tag"
+          git tag "$tag"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git "$tag"
+
+      - name: Wait for tag to propagate
+        if: ${{ steps.next_tag.outputs.new_tag != '' }}
+        run: |
+          echo "⏳ Waiting 10s for GitHub to register tag..."
+          sleep 10
+          git fetch --tags
+          tag=${{ steps.next_tag.outputs.new_tag }}
+          if git ls-remote --tags origin | grep -q "refs/tags/$tag"; then
+            echo "✅ Tag $tag verified in remote."
+          else
+            echo "❌ Tag $tag not found remotely, skipping release."
+            exit 78
+          fi
+
+      - name: Create GitHub Release
+        if: ${{ steps.next_tag.outputs.new_tag != '' }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.next_tag.outputs.new_tag }}
+          name: "Release ${{ steps.next_tag.outputs.new_tag }}"
+          body: |
+            🚀 Auto release for **${{ steps.type.outputs.type }}** commit
+            ---
+            ${{ steps.changelog.outputs.log }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

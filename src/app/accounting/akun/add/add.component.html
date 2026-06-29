@@ -1,0 +1,112 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Akun</h4>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Kode</mat-label>
+                  <input matInput required formControlName="kode">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.kode.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.kode.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama</mat-label>
+                  <input matInput required formControlName="nama">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <mat-form-field>
+                <mat-label>Tipe</mat-label>
+                <select matNativeControl required formControlName="tipe">
+                  <!-- <option  disabled>Pilih</option> -->
+                  <option value="1">AKTIVA (ASET)</option>
+                  <option value="2">KEWAJIBAN (LIABILITIES)</option>
+                  <option value="3">MODAL(EKUITAS)</option>
+                  <option value="4">TRANSIT</option>
+                  <option value="5">TRANSIT LAIN</option>
+                  <option value="6">BIAYA</option>
+                  <option value="7">BIAYA LAIN - LAIN</option>
+                  <option value="8">PENDAPATAN LAIN</option>
+                  <option value="9">PENDAPATAN</option>
+
+                </select>
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.tipe.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.tipe.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div>
+              <!-- <mat-form-field hidden>
+                <mat-label>Jenis Piutang</mat-label>
+                <select matNativeControl  formControlName="jenis_piutang">
+                  <option value="0">Normal</option>
+                  <option value="1">Bulanan</option>
+                </select>
+              </mat-form-field> -->
+              <div>
+                <label>
+                  <input formControlName="is_transaksi_akun" type="checkbox" name="optionsCheckboxes"> Transaksi Akun
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <input formControlName="is_kasbank_akun" type="checkbox" name="optionsCheckboxes"> Kas Bank
+                </label>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+
+                <l-select2 [data]="dataselectOrganisasi" formControlName="lokasi_id"
+                  [options]="{multiple:'true','closeOnSelect':'true'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Jenis Biaya</label>
+                <l-select2 [data]="dataSelectJenisBiaya" formControlName="jenis_biaya_id" [options]="{ placeholder: 'None',
+                allowClear: true,width:'90%'}">
+                </l-select2>
+                <!-- <div *ngIf="isFormSubmitted && userControl.jenis_biaya_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jenis_biaya_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+              </div>
+              <br>
+              <div>
+                <label>
+                  <input formControlName="aktif" type="checkbox" name="optionsCheckboxes"> Aktif
+                </label>
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

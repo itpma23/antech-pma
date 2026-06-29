@@ -1,0 +1,3982 @@
+{
+	"pengajar":"Teacher",
+  "pengguna":"Users",
+  "siswa":"Student",
+  "pengumuman":"Announcement",
+  "materi_dan_tugas":"Material dan Task",
+  "data_master":"Master Data",
+  "Activate Account": "Activate Account",
+	"Administration": "Administration",
+	"Announcement": "Announcement",
+	"Announcements": "Announcements",
+	"Appointments": "Appointments",
+	"Articles": "Articles",
+	"Assigned Project": "Assigned Project",
+	"Backup Database": "Backup Database",
+	"Calendar": "Calendar",
+	"Change Email": "Change Email",
+	"Clients": "Clients",
+	"Company Detail": "Company Detail",
+	"Complete Projects": "Complete Projects",
+	"Cronjob": "Cronjob",
+	"Custom Fields": "Custom Fields",
+	"Dashboard": "Dashboard",
+	"Dashboard Settings": "Dashboard Settings",
+	"Defect Assigned": "Defect Assigned",
+	"Defect Attachment": "Defect Attachment",
+	"Defect Comments": "Defect Comments",
+	"Defect Updated": "Defect Updated",
+	"Defects": "Defects",
+	"Departments": "Departments",
+	"Email Notifications": "Email Notifications",
+	"Email Settings": "Email Settings",
+	"Email Templates": "Email Templates",
+	"Estimates": "Estimates",
+	"File Manager": "File Manager",
+	"Forgot Password": "Forgot Password",
+	"HRM": "HRM",
+	"Holidays": "Holidays",
+	"Incident Assigned": "Incident Assigned",
+	"Incident Attachment": "Incident Attachment",
+	"Incident Comments": "Incident Comments",
+	"Incident Updated": "Incident Updated",
+	"Incidents": "Incidents",
+	"Invoices": "Invoices",
+	"Items": "Items",
+	"Knowledge Base": "Knowledge Base",
+	"Leaves": "Leaves",
+	"Mailbox": "Mailbox",
+	"Meeting": "Meeting",
+	"Meetings": "Meetings",
+	"Menu Allocation": "Menu Allocation",
+	"Notification Client": "Notification Client",
+	"PM": "PM",
+	"Payments": "Payments",
+	"Project Attachment": "Project Attachment",
+	"Project Comments": "Project Comments",
+	"Project Management": "Project Management",
+	"Project Planner": "Project Planner",
+	"Projects": "Projects",
+	"Register Email": "Register Email",
+	"Reports": "Reports",
+	"Reset Password": "Reset Password",
+	"Roles": "Roles",
+	"Sales": "Sales",
+	"Settings": "Settings",
+	"System Settings": "System Settings",
+	"System Update": "System Update",
+	"Task Assigned": "Task Assigned",
+	"Task Board": "Task Board",
+	"Task Comments": "Task Comments",
+	"Task Updated": "Task Updated",
+	"Tasks": "Tasks",
+	"Tasks Attachment": "Tasks Attachment",
+	"Taxes": "Taxes",
+	"Team Boards": "Team Boards",
+	"Teams": "Teams",
+	"Theme Settings": "Theme Settings",
+	"Timesheet": "Timesheet",
+	"Todos": "ToDo",
+	"Users": "Users",
+	"Welcome Email": "Welcome Email",
+	"activities": {
+		"columns": {
+			"activity": "Activity",
+			"date": "Date",
+			"description": "Description",
+			"module": "Module",
+			"photo": "Photo",
+			"username": "Username"
+		},
+		"title": "Activities"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "Actions",
+			"creator": "Creator",
+			"end_date": "End Date",
+			"start_date": "Start Date",
+			"status": "Status",
+			"title": "Title"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid announcement title.",
+				"message2": "Announcement title can be max 100 characters long.",
+				"message3": "Please select a valid start date.",
+				"message4": "Please select a valid end date."
+			},
+			"fields": {
+				"all_clients": "All Clients",
+				"description": "Description",
+				"end_date": "End Date",
+				"publish": "Publish",
+				"start_date": "Start Date",
+				"status": "Status",
+				"title": "Title",
+				"unpublish": "Unpublish"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Announcement Title",
+				"placeholder2": "Select Start Date",
+				"placeholder3": "Select End Date"
+			},
+			"title1": "Create Announcement",
+			"title2": "Update Announcement"
+		},
+		"messages": {
+			"create": "Announcement created successfully.",
+			"delete": "Announcement deleted successfully.",
+			"update": "Announcement updated successfully."
+		},
+		"title": "Announcements"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "Booked Slots"
+		},
+		"columns": {
+			"actions": "Actions",
+			"end_time": "End Time",
+			"id": "ID",
+			"location": "Location",
+			"provider": "Provider",
+			"requester": "Requester",
+			"start_time": "Start Time",
+			"status": "Status",
+			"title": "Title"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please select a valid provider.",
+				"message2": "Please select a valid start date.",
+				"message3": "Please select a valid end date.",
+				"message4": "Please enter a valid appointment title.",
+				"message5": "Appointment title can be max 255 characters long.",
+				"message6": "Please select a valid client.",
+				"message7": "Please enter a valid attendees.",
+				"message8": "Please selct a valid status.",
+				"message9": "Please select a valid provider."
+			},
+			"fields": {
+				"attendees": "Attendees",
+				"client": "Client",
+				"end_date": "End Date",
+				"location": "Location",
+				"notes": "Notes",
+				"provider": "Provider",
+				"start_date": "Start Date",
+				"status": "Status",
+				"title": "Title"
+			},
+			"placeholders": {
+				"placeholder1": "Select Start Date",
+				"placeholder2": "Select End Date",
+				"placeholder3": "Enter Appointment Title",
+				"placeholder4": "-- Select Client --",
+				"placeholder5": "Location",
+				"placeholder6": "Attendees",
+				"placeholder7": "-- Select Status --",
+				"placeholder8": "Search For Month"
+			}
+		},
+		"messages": {
+			"create": "Appointment created successfully.",
+			"delete": "Appointment deleted successfully.",
+			"edit": "Appointment edited successfully.",
+			"status": "Status changed successfully."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Reserved"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Confirmed"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "Finished"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "Canceled"
+			}
+		],
+		"title": "Appointments"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "Actions",
+			"attachment": "Attachment",
+			"file_title": "File Title"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid file title.",
+				"message2": "Drop files here or click to upload.",
+				"message3": "Please select a valid file.",
+				"message4": "Please enter a valid comment.",
+				"message5": "File title can be max 255 characters long."
+			},
+			"fields": {
+				"attachment": "Attachment",
+				"description": "Description",
+				"file_title": "File Title"
+			},
+			"placeholders": {
+				"placeholder1": "Enter File Title"
+			}
+		},
+		"messages": {
+			"create": "Attachment created successfully.",
+			"delete": "Attachment deleted successfully."
+		},
+		"title": "Attachments"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "Announcements",
+			"title": "Announcements"
+		},
+		"appointments": {
+			"text": "Appointments",
+			"title": "Appointments"
+		},
+		"article": {
+			"text": "Article",
+			"title": "Article"
+		},
+		"calendar": {
+			"text": "Calendar",
+			"title": "Calendar"
+		},
+		"category": {
+			"text": "Category",
+			"title": "Category"
+		},
+		"clients": {
+			"text": "Clients",
+			"title": "Clients"
+		},
+		"dashboard": {
+			"title": "Dashboard"
+		},
+		"defects": {
+			"text": "Defects",
+			"title": "Defects"
+		},
+		"departments": {
+			"text": "Departments",
+			"title": "Departments"
+		},
+		"email_templates": {
+			"text": "Email Templates",
+			"title": "Email Templates"
+		},
+		"estimates": {
+			"text": "Estimates",
+			"title": "Estimates"
+		},
+		"file_browser": {
+			"text": "File manager",
+			"title": "File manager"
+		},
+		"holidays": {
+			"text": "Holidays",
+			"title": "Holidays"
+		},
+		"incidents": {
+			"text": "Incidents",
+			"title": "Incidents"
+		},
+		"invoices": {
+			"text": "Invoices",
+			"title": "Invoices"
+		},
+		"items": {
+			"text": "Items",
+			"title": "Items"
+		},
+		"knowledgebase": {
+			"text": "Knowledgebase",
+			"title": "Knowledgebase"
+		},
+		"leave_types": {
+			"text": "Leave Types",
+			"title": "Leave Types"
+		},
+		"leaves": {
+			"text": "Leaves",
+			"title": "Leaves"
+		},
+		"mailbox": {
+			"text": "Mailbox",
+			"title": "Mailbox"
+		},
+		"meetings": {
+			"text": "Meetings",
+			"title": "Meetings"
+		},
+		"payments": {
+			"text": "Payments",
+			"title": "Payments"
+		},
+		"projects": {
+			"text": "Projects",
+			"title": "Projects"
+		},
+		"projects_planner": {
+			"text": "Project Planner",
+			"title": "Project Planner"
+		},
+		"providers": {
+			"text": "Providers",
+			"title": "Providers"
+		},
+		"reports": {
+			"text": "Reports",
+			"title": "Reports"
+		},
+		"roles": {
+			"text": "Roles",
+			"title": "Roles"
+		},
+		"settings": {
+			"text": "Settings",
+			"title": "Settings"
+		},
+		"taskboard": {
+			"text": "Task Board",
+			"title": "Task Board"
+		},
+		"tasks": {
+			"text": "Tasks",
+			"title": "Tasks"
+		},
+		"taxes": {
+			"text": "Taxes",
+			"title": "Taxes"
+		},
+		"teamboard": {
+			"text": "Team Board",
+			"title": "Team Board"
+		},
+		"teams": {
+			"text": "Teams",
+			"title": "Teams"
+		},
+		"timesheet": {
+			"text": "Timesheet",
+			"title": "Timesheet"
+		},
+		"todos": {
+			"text": "Todos",
+			"title": "Todo"
+		},
+		"users": {
+			"text": "Users",
+			"title": "Users"
+		}
+	},
+	"calendar": {
+		"day": "Day",
+		"month": "Month",
+		"title": "Calendar",
+		"today": "Today",
+		"week": "Week"
+	},
+	"clients": {
+		"columns": {
+			"actions": "Actions",
+			"company_email": "Company Email",
+			"company_name": "Company Name",
+			"departments_roles": "Departments/Roles",
+			"first_name": "First Name",
+			"last_name": "Last Name",
+			"photo": "Photo",
+			"status": "Status",
+			"username": "Username"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid firstname.",
+				"message10": "Password and confirm password does not match.",
+				"message12": "Phone number must be a valid number.",
+				"message14": "Mobile number must be a valid number.",
+				"message15": "Please enter a valid company website.",
+				"message17": "Please enter a valid client generated ID.",
+				"message18": "Please enter a valid work ID.",
+				"message19": "Please enter a valid username.",
+				"message2": "Firstname can be max 20 characters long.",
+				"message20": "Username can be min 3 to max 30 characters long without white spaces.",
+				"message21": "Please enter a valid mobile number.",
+				"message22": "Please enter a valid phone number.",
+				"message23": "Drop files here or click to upload.",
+				"message24": "Please select a valid departments with roles.",
+				"message3": "Please enter a valid lastname.",
+				"message4": "Lastname can be max 20 characters long.",
+				"message5": "Please enter a valid email.",
+				"message6": "Email can be a valid email address.",
+				"message7": "Please enter a valid password.",
+				"message8": "Password can be min 3 to max 30 character long.",
+				"message9": "Please enter a valid confirm password."
+			},
+			"fields": {
+				"address": "Address",
+				"client_ID": "Client ID",
+				"company_address": "Company Address",
+				"company_city": "Company City",
+				"company_country": "Company Country",
+				"company_email": "Company Email",
+				"company_fax": "Company Fax",
+				"company_mobile": "Company Mobile",
+				"company_name": "Company Name",
+				"company_phone": "Company Phone",
+				"company_website": "Company Website",
+				"confirm_password": "Confirm Password",
+				"country": "Country",
+				"departments_roles": "Departments / Roles",
+				"email": "Email",
+				"facebook_URL": "Facebook URL",
+				"first_name": "First Name",
+				"hosting_company": "Hosting Company",
+				"language": "Language",
+				"last_name": "Last Name",
+				"linkedIn_URL": "LinkedIn URL",
+				"mobile": "Mobile",
+				"password": "Password",
+				"phone": "Phone",
+				"port": "Port",
+				"profile_photo": "Profile Photo",
+				"skype": "Skype",
+				"twitter_URL": "Twitter URL",
+				"username": "Username",
+				"zip_code": "Company Zip Code"
+			},
+			"placeholders": {
+				"placeholder1": "Enter First Name",
+				"placeholder10": "Enter Company Zipcode",
+				"placeholder11": "Enter Company Fax",
+				"placeholder12": "Enter Company Website",
+				"placeholder13": "Enter Company Skype",
+				"placeholder14": "Enter Company Address",
+				"placeholder15": "Enter Hosting Company",
+				"placeholder16": "Enter Hosting Username",
+				"placeholder17": "Enter Hosting Password",
+				"placeholder18": "Enter Hosting Port",
+				"placeholder19": "Enter Username",
+				"placeholder2": "Enter Last Name",
+				"placeholder20": "Enter Skype",
+				"placeholder21": "-- Select Country --",
+				"placeholder22": "-- Select Language --",
+				"placeholder23": "-- Select Departments/Roles --",
+				"placeholder24": "Enter Facebook URL",
+				"placeholder25": "Enter Twitter URL",
+				"placeholder26": "Enter LinkedIn URL",
+				"placeholder27": "Enter Address",
+				"placeholder3": "Enter Email",
+				"placeholder4": "Enter Password",
+				"placeholder5": "Enter Confirm Password",
+				"placeholder6": "Enter Company Name",
+				"placeholder7": "Enter Company Email",
+				"placeholder8": "-- Select Company Country --",
+				"placeholder9": "Enter Company City"
+			}
+		},
+		"headings": {
+			"head1": "Personal Info",
+			"head2": "Company Info",
+			"head3": "Hosting Info",
+			"head4": "About Client",
+			"head5": "Contact Info & Bio",
+			"head6": "Requirements",
+			"head7": "Social Info"
+		},
+		"inline_edit": {
+			"first_name": "First Name",
+			"last_name": "Last Name"
+		},
+		"messages": {
+			"create": "Client created successfully.",
+			"delete": "Client deleted successfully.",
+			"invite": "Invitation send successfully.",
+			"status": "Status changed successfully.",
+			"update": "Client updated successfully."
+		},
+		"title": "Clients",
+		"title1": "Create Client",
+		"title2": "Update Client"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "Add Comment",
+			"button2": "Reply"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid comment.",
+				"message2": "Drop files here or click to upload."
+			},
+			"placeholders": {
+				"placeholder1": "Enter Comment",
+				"placeholder2": "Reply Comment"
+			}
+		},
+		"messages": {
+			"create": "Comment created successfully.",
+			"delete": "Comment deleted successfully.",
+			"update": "Comment updated successfully."
+		},
+		"title": "Comments"
+	},
+	"common": {
+		"12_hours": "12 Hours",
+		"24_hours": "24 Hours",
+		"action": "Action",
+		"actions": "Actions",
+		"add": "Add",
+		"add_to_timesheet": "Add to Timesheet",
+		"apply": "Apply",
+		"assign": "Assign",
+		"back": "Back",
+		"calendar": "Calendar",
+		"calendar_view": "Calendar View",
+		"cancel": "Cancel",
+		"change": "Change",
+		"close": "Close",
+		"comment": "Comment",
+		"copy": "Copy",
+		"create": "Create",
+		"create_comment": "Create Comment",
+		"created": "Created",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": ": activate to sort column ascending",
+				"sSortDescending": ": activate to sort column descending"
+			},
+			"oPaginate": {
+				"sFirst": "First",
+				"sLast": "Last",
+				"sNext": "Next",
+				"sPrevious": "Previous"
+			},
+			"sEmptyTable": "No data available in table",
+			"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+			"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+			"sInfoFiltered": "(filtered from _MAX_ total entries)",
+			"sInfoPostFix": "",
+			"sInfoThousands": ",",
+			"sLengthMenu": "Show _MENU_",
+			"sLoadingRecords": "Loading...",
+			"sProcessing": "Processing...",
+			"sSearchPlaceholder": "Search ...",
+			"sZeroRecords": "No matching records found"
+		},
+		"days": "Days",
+		"delete": "Delete",
+		"detail": "Detail",
+		"details": "Details",
+		"download": "Download",
+		"drag_file": "Drag a file or Browse",
+		"edit": "Edit",
+		"empty_message": {
+			"activities": "There are no any activities",
+			"announcements": "There are no any announcements.",
+			"articles": "There are no any articles.",
+			"attachments": "There are no any attachments.",
+			"categories": "There are no any categories.",
+			"clients": "There are no any clients.",
+			"custom_fields": "There are no any custom fields.",
+			"database_backups": "There are no any database backups.",
+			"defects": "There are no any defects.",
+			"departments": "There are no any departments.",
+			"estimates": "There are no any estimates.",
+			"file_browser": "There are no any folders / files.",
+			"histories": "There are no any histories.",
+			"holidays": "There are no any holidays.",
+			"incidents": "There are no any incidents.",
+			"invoices": "There are no any invoices.",
+			"leaves": "There are no any leaves.",
+			"mails": "There are no any mails.",
+			"meetings": "There are no any meetings.",
+			"notifications": "There are no any notifications.",
+			"projects": "There are no any projects.",
+			"providers": "There are no any providers.",
+			"roles": "There are no any roles.",
+			"sprints": "There are no any sprint.",
+			"tasks": "There are no any tasks.",
+			"teams": "There are no any teams.",
+			"timesheet": "There are no any timesheet.",
+			"todos": "There are no any todos.",
+			"translations": "There are no any translations.",
+			"users": "There are no any users."
+		},
+		"error_messages": {
+			"message1": "You may not have the appropriate permissions to access the file or resources.",
+			"message2": "Unauthorized User - In case of Auth Token Expired.",
+			"message3": "In case of Auth Token Expired.",
+			"message4": "Sorry, but the page you were looking for could not be found.",
+			"message5": "Something went's wrong!",
+			"message6": "You have successfully logged out."
+		},
+		"errors_keys": {
+			"key1": "Access is denied",
+			"key2": "Bad Request",
+			"key3": "Unauthorized",
+			"key4": "Access is denied",
+			"key5": "Not Found",
+			"key6": "Unprocessable Entity"
+		},
+		"false": "False",
+		"fullscreen": "Fullscreen",
+		"hours": "hours",
+		"import": "Import",
+		"invite": "Invite",
+		"issues": "Issues",
+		"kanban": "Kanban",
+		"last_updated": "Last Updated",
+		"list": "List",
+		"lists": "List View",
+		"methods": "Methods",
+		"move": "Move",
+		"new": "new",
+		"not_allowed": "Not allowed in demo.",
+		"offline": "Offline",
+		"online": "Online",
+		"options": "Options",
+		"overdue": "Overdue",
+		"pending": "Pending",
+		"placeholders": {
+			"placeholder1": "-- Select Project --"
+		},
+		"priorities": {
+			"high": "High",
+			"low": "Low",
+			"medium": "Medium",
+			"urgent": "Urgent",
+			"very_high": "Very High"
+		},
+		"profile": "Profile",
+		"remove": "Remove",
+		"remove_file": "Remove File",
+		"report": "Report",
+		"request": "Request",
+		"reset": "Reset",
+		"restore": "Restore",
+		"save": "Save",
+		"search": "Search ...",
+		"show": "Show",
+		"status": {
+			"In Progress": "In Progress",
+			"Not Started": "Not Started",
+			"On Hold": "On Hold",
+			"accepted": "Accepted",
+			"active": "Active",
+			"all": "All",
+			"approved": "Approved",
+			"assigned": "Assigned",
+			"cancel": "Cancel",
+			"canceled": "Canceled",
+			"closed": "Closed",
+			"completed": "Completed",
+			"confirmed": "Confirmed",
+			"deactive": "Deactive",
+			"declined": "Declined",
+			"deferred": "Deferred",
+			"draft": "Draft",
+			"error": "Error",
+			"expired": "Expired",
+			"finished": "Finished",
+			"in_progress": "In Progress",
+			"inactive": "Inactive",
+			"my": "My",
+			"on_hold": "On Hold",
+			"open": "Open",
+			"overdue": "Overdue",
+			"paid": "Paid",
+			"partially_paid": "Partially Paid",
+			"pending": "Pending",
+			"published": "Published",
+			"rejected": "Rejected",
+			"released": "Released",
+			"reopen": "Re-open",
+			"reserved": "Reserved",
+			"sent": "Sent",
+			"solved": "Solved",
+			"success": "Success",
+			"taken": "Taken",
+			"total": "Total",
+			"unpaid": "Unpaid",
+			"unpublished": "Unpublished",
+			"waiting": "Waiting"
+		},
+		"submit": "Submit",
+		"swal": {
+			"cancelButtonText": "No, keep it !",
+			"confirmButtonText": "Yes, delete it !",
+			"text": "You will not be able to recover this ",
+			"text1": "You will not be able to recover this department!. Before delete, make sure that you have deleted all users related to this department.",
+			"text2": "You will not be able to recover this user!. Before delete, make sure that you have remove user from teams, projects, tasks, defects and incidents etc..",
+			"text3": "You will not be able to recover this client!. Before delete, make sure that you have remove client from teams, projects, tasks, defects and incidents etc..",
+			"text4": "You will not be able to recover this project!. Before delete, make sure that you have deleted all tasks, defects and incidents related to this project.",
+			"title": "Are you sure?"
+		},
+		"switch_to_calendar": "Switch to Calendar",
+		"switch_to_kanban": "Switch to Kanban",
+		"switch_to_list": "Switch to List",
+		"test": "Test",
+		"toggle_dropdown": "Toggle Dropdown",
+		"tooltip": {
+			"project_csv_sample": "Sample Project CSV",
+			"task_csv_sample": "Sample Task CSV",
+			"team_csv_sample": "Sample Team CSV",
+			"user_csv_sample": "Sample User CSV"
+		},
+		"total": "Total",
+		"true": "True",
+		"unassign": "Unassign",
+		"unassigned": "Unassigned",
+		"update": "Update",
+		"updated": "Updated",
+		"upload": "Upload File",
+		"view": "View",
+		"view_comments": "View Comments",
+		"view_more": "View More"
+	},
+	"customFieldsType": [
+		{
+			"label": "Text",
+			"value": "text"
+		},
+		{
+			"label": "Text Area",
+			"value": "textarea"
+		},
+		{
+			"label": "Drop Down",
+			"value": "dropdown"
+		},
+		{
+			"label": "Date",
+			"value": "date"
+		},
+		{
+			"label": "Checkbox",
+			"value": "checkbox"
+		},
+		{
+			"label": "Numeric",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "Tasks Status",
+		"chart2": "Project Status",
+		"chart3": "Monthly Report",
+		"estimate": "Estimates",
+		"invoices": "Due Invoices",
+		"widgets": {
+			"approved_request": "Approved",
+			"due_payment": "Due",
+			"received_request": "Received",
+			"recieved_payment": "Recieved"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "Actions",
+			"actual_hours": "Hours",
+			"assigned": "Assigned",
+			"assigned_group": "Assigned Group",
+			"creator": "Creator",
+			"defect_name": "Defect Name",
+			"end_date": "End Date",
+			"id": "ID",
+			"project": "Project",
+			"project_version": "Project Version",
+			"severity": "Severity",
+			"start_date": "Start Date",
+			"status": "Status",
+			"type": "Type"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid defect name.",
+				"message10": "Drop files here or click to upload.",
+				"message11": "Please select a valid start date.",
+				"message12": "Please select a valid end date.",
+				"message13": "Estimate hours allow only digits, 2 digits after colon(less than 60) without any special characters.",
+				"message2": "Defect name can be max 255 characters long.",
+				"message3": "Please enter an unique and valid defect generated ID.",
+				"message4": "Please select a valid defect type.",
+				"message5": "Please select a valid defect status.",
+				"message6": "Please select a valid defect severity.",
+				"message8": "Please select a valid project."
+			},
+			"fields": {
+				"actual_hours": "Actual Hours",
+				"assigned_To": "Assigned To",
+				"assigned_group": "Assigned Group",
+				"choose_file": "Select File",
+				"completed": "Completed",
+				"created_by": "Created By",
+				"defect_ID": "Defect ID",
+				"defect_name": "Defect Name",
+				"defect_type": "Defect Type",
+				"description": "Description",
+				"end_date": "End Date",
+				"estimate_hours": "Estimate Hours",
+				"project_name": "Project Name",
+				"project_version": "Project Version",
+				"severity": "Severity",
+				"start_date": "Start Date",
+				"status": "Status"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Defect Name",
+				"placeholder2": "-- Select Defect Type --",
+				"placeholder3": "-- Select Defect Status --",
+				"placeholder4": "-- Select Defect Severity --",
+				"placeholder5": "-- Select Assigned Group --",
+				"placeholder6": "-- Select Project --",
+				"placeholder7": "-- Select Project Version --",
+				"placeholder8": "Select Start Date",
+				"placeholder9": "Select End Date"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "Defects",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Enhancement",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "Custom Fields",
+			"title2": "Description"
+		},
+		"headings": {
+			"head1": "Defect Info",
+			"head2": "Project Info",
+			"head3": "Upload Files",
+			"head4": "Custom Fields",
+			"head5": "Description"
+		},
+		"inline_edit": {
+			"defect_name": "Defect Name",
+			"defect_type": "Defect Type",
+			"description": "Description",
+			"estimate_hours": "Estimate Hours",
+			"notes": "Notes"
+		},
+		"messages": {
+			"create": "Defect created successfully.",
+			"delete": "Defect deleted successfully.",
+			"severity": "Severity updated successfully.",
+			"status": "Status changed successfully.",
+			"update": "Defect updated successfully."
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Low"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Medium"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "High"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Very High"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Urgent"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "Assigned"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "Closed"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "In Progress"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "Open"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "Solved"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Re-open"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "Deferred"
+			}
+		],
+		"title": "Defects",
+		"title1": "Create Defect",
+		"title2": "Update Defect",
+		"tooltips": {
+			"attachment": "Attachment"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "Actions",
+			"designation": "Designation"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid department name.",
+				"message2": "Department name can be max 20 characters long.",
+				"message3": "Please select a valid department roles."
+			},
+			"fields": {
+				"department": "Department",
+				"department_name": "Department Name",
+				"department_roles": "Department Roles",
+				"designation": "Designation",
+				"permission": "Permission"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Department Name"
+			}
+		},
+		"messages": {
+			"create": "Department created successfully.",
+			"delete": "Department deleted successfully.",
+			"update": "Department updated successfully."
+		},
+		"title": "Departments",
+		"title1": "Detail Department",
+		"title2": "Department Role",
+		"tooltip": {
+			"tooltip1": "Select All Permissions",
+			"tooltip10": "Select All",
+			"tooltip11": "Permission",
+			"tooltip2": "If you select create/edit/delete no need to select the view",
+			"tooltip3": "Select All Create",
+			"tooltip4": "Select All Edit",
+			"tooltip5": "Select All Delete",
+			"tooltip6": "Select",
+			"tooltip7": "Can create",
+			"tooltip8": "Can Edit",
+			"tooltip9": "Can Delete"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "Customer",
+			"estimate_date": "Date",
+			"estimate_number": "Estimate",
+			"status": "Status",
+			"total_amount": "Amount",
+			"valid_till": "Valid Till"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please select a valid customer.",
+				"message2": "Please select a valid estimate date.",
+				"message3": "Please select a valid expiry date.",
+				"message4": "Please select a valid status.",
+				"message5": "Please add atleast one item.",
+				"message6": "Enter item, quantity and unit price.",
+				"message7": "Please select a valid discount type."
+			},
+			"fields": {
+				"adjustment": "Adjustment",
+				"customer": "Customer",
+				"discount": "Discount",
+				"discount_type": "Discount Type",
+				"estimate_date": "Estimate Date",
+				"estimate_number": "Estimate Number",
+				"item_description": "Description",
+				"item_name": "Item",
+				"item_tax": "Tax",
+				"quantity": "Qty",
+				"reference": "Reference",
+				"status": "Status",
+				"sub_total": "Sub Total",
+				"total_amount": "Total",
+				"total_item_amount": "Amount",
+				"unit": "Unit",
+				"unit_price": "Unit Price",
+				"valid_till": "Expiry Date"
+			},
+			"placeholders": {
+				"placeholder1": "-- Select Customer --",
+				"placeholder10": "Qty",
+				"placeholder11": "Unit Price",
+				"placeholder12": "-- Select Tax --",
+				"placeholder2": "Select Estimate Date",
+				"placeholder3": "Select Expiry Date",
+				"placeholder4": "Enter Reference",
+				"placeholder5": "-- Select Discount Type --",
+				"placeholder6": "-- Select Status --",
+				"placeholder7": "-- Select Item --",
+				"placeholder8": "Item",
+				"placeholder9": "Description"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Percent"
+			},
+			{
+				"id": "fixed",
+				"label": "Fixed"
+			}
+		],
+		"headings": {
+			"head1": "Customer Info",
+			"head2": "Dates",
+			"head3": "Other Info",
+			"head4": "Items Info"
+		},
+		"inline_edit": {
+			"item_description": "Description",
+			"item_name": "Item",
+			"item_tax": "Tax",
+			"quantity": "Qty",
+			"unit_price": "Unit Price"
+		},
+		"messages": {
+			"create": "Estimate created successfully.",
+			"delete": "Estimate deleted successfully.",
+			"status": "Status changed successfully.",
+			"update": "Estimate updated successfully."
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "Draft"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "Sent"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "Expired"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "Declined"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "Accepted"
+			}
+		],
+		"title": "Estimates",
+		"title1": "Estimate !",
+		"title2": "Create Estimate",
+		"title3": "Update Estimate",
+		"title4": "Estimate",
+		"view": {
+			"accept": "Accept",
+			"accepted": "Accepted",
+			"balance_due": "Balance Due",
+			"bill_to": "Bill To",
+			"decline": "Decline",
+			"declined": "Declined",
+			"download": "Download",
+			"draft": "Draft",
+			"due_date": "Due Date",
+			"due_on_receipt": "Due on Receipt",
+			"estimate_date": "Estimate Date",
+			"expired": "Expired",
+			"sent": "Sent",
+			"terms": "Terms & Condition",
+			"total_due": "Total due"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "Actions",
+			"name": "Name",
+			"progress": "Progress",
+			"size": "Size",
+			"status": "Status"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid folder name.",
+				"message2": "Drag here to upload...",
+				"message3": "Please enter a valid file name."
+			},
+			"fields": {
+				"description": "description",
+				"file_name": "File Name",
+				"folder_name": "Folder Name"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Folder Name",
+				"placeholder2": "Enter Description",
+				"placeholder3": "Enter File Name"
+			}
+		},
+		"messages": {
+			"create_folder": "Folder created successfully.",
+			"delete_file": "File deleted successfully.",
+			"delete_folder": "Folder deleted successfully.",
+			"update_file": "File updated successfully.",
+			"update_folder": "Folder updated successfully.",
+			"upload_file": "File uploaded successfully."
+		},
+		"title": "File Manager",
+		"title1": "Create Folder",
+		"title2": "Update Folder",
+		"title3": "Upload Files",
+		"title4": "Update File",
+		"title5": "file",
+		"title6": "folder",
+		"title7": "Added"
+	},
+	"footer": {
+		"copyright": "Copyright",
+		"text1": "All rights reserved"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid email.",
+				"message2": "Email must be a valid email address."
+			},
+			"placeholders": {
+				"placeholder1": "Enter Email"
+			}
+		},
+		"messages": {
+			"success": "Please check your email for instructions on how to reset your password."
+		},
+		"title": "Forgot Password",
+		"title1": "Please enter your email address below and we will send you information to change your password."
+	},
+	"header": {
+		"heading": {
+			"head1": "You have",
+			"head2": "new mails",
+			"head3": "See all mails",
+			"head4": "Update Available"
+		},
+		"inbox": "My Inbox",
+		"languages": "Languages",
+		"logout": "Logout",
+		"mails": "mails",
+		"notifications": "Notifications",
+		"profile": "Profile",
+		"search": {
+			"text": "Search here ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "Activity",
+			"closed_by": "Closed By",
+			"commentor": "Commentor",
+			"creator": "Creator",
+			"date": "Date",
+			"solved_by": "Solved By",
+			"updated_by": "Updated By"
+		},
+		"title": "Histories"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "Actions",
+			"color": "Color",
+			"date": "Date",
+			"event_name": "Event Name",
+			"location": "Location"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid event name.",
+				"message2": "Event name can be max 50 characters long.",
+				"message3": "Please select a valid date."
+			},
+			"fields": {
+				"color": "Color",
+				"date": "Date",
+				"description": "Description",
+				"event_name": "Event Name",
+				"location": "Location"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Event Name",
+				"placeholder2": "Select Date",
+				"placeholder3": "Enter Location"
+			}
+		},
+		"inline_edit": {
+			"event_name": "Event Name",
+			"holiday_date": "Holiday Date",
+			"location": "Location"
+		},
+		"messages": {
+			"create": "Holiday created successfully.",
+			"delete": "Holiday deleted successfully.",
+			"update": "Holiday updated successfully."
+		},
+		"title": "Holidays"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "Actions",
+			"actual_hours": "Hours",
+			"assigned": "Assigned",
+			"assigned_group": "Assigned Group",
+			"client": "Client",
+			"client_company": "Client Company",
+			"creator": "Creator",
+			"end_date": "End Date",
+			"id": "ID",
+			"incident_name": "Incident Name",
+			"priority": "Priority",
+			"project": "Project",
+			"project_version": "Project Version",
+			"start_date": "Start Date",
+			"status": "Status",
+			"type": "Type"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid incident name.",
+				"message2": "Incident name can be max 255 characters long.",
+				"message3": "Please enter an unique and valid incident generated ID.",
+				"message4": "Please select a valid incident status.",
+				"message5": "Please select a valid incident priority.",
+				"message6": "Please select a valid incident type.",
+				"message7": "Please select a valid start date.",
+				"message8": "Please select a valid end date.",
+				"message9": "Estimate hours allow only digits, 2 digits after colon(less than 60) without any special characters."
+			},
+			"fields": {
+				"actual_hours": "Actual Hours",
+				"assigned_To": "Assigned To",
+				"assigned_group": "Assigned Group",
+				"created_by": "Created By",
+				"description": "Description",
+				"end_date": "End Date",
+				"estimate_hours": "Estimate Hours",
+				"incident_ID": "Incident ID",
+				"incident_name": "Incident Name",
+				"incident_type": "Incident Type",
+				"priority": "Priority",
+				"project": "Project",
+				"project_name": "Project Name",
+				"project_version": "Project Version",
+				"start_date": "Start Date",
+				"status": "Status"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Incident Name",
+				"placeholder2": "-- Select Incident Status --",
+				"placeholder3": "-- Select Incident Priority --",
+				"placeholder4": "-- Select Incident Type --",
+				"placeholder5": "-- Select Assigned Group --",
+				"placeholder6": "-- Select Project --",
+				"placeholder7": "-- Select Project Version --",
+				"placeholder8": "Select Start Date",
+				"placeholder9": "Select End Date"
+			}
+		},
+		"details": {
+			"title1": "Custom Fields",
+			"title2": "Description"
+		},
+		"headings": {
+			"head1": "Incident Info",
+			"head2": "Project Info",
+			"head3": "Custom Fields",
+			"head4": "Description",
+			"head5": "Other Info"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "Service Request",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Info Request",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "Description",
+			"estimate_hours": "Estimate Hours",
+			"incident_name": "Incident Name",
+			"incident_type": "Incident Type",
+			"notes": "Notes"
+		},
+		"messages": {
+			"create": "Incident created successfully.",
+			"delete": "Incident deleted successfully.",
+			"import": "Incident imported successfully.",
+			"priority": "Priority changed successfully.",
+			"status": "Status changed successfully.",
+			"update": "Incident updated successfully."
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Low"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Medium"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "High"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Very High"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Urgent"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Assigned"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "In Progress"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "Solved"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "Deferred"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Re-open"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "Closed"
+			}
+		],
+		"title": "Incidents",
+		"title1": "Create Incident",
+		"title2": "Update Incident"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "Customer",
+			"due_date": "Due Date",
+			"invoice_date": "Date",
+			"invoice_number": "Invoice",
+			"status": "Status",
+			"total_amount": "Amount"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please select a valid customer.",
+				"message2": "Please select a valid invoice date.",
+				"message3": "Please select a valid due date.",
+				"message4": "Please select a valid status.",
+				"message5": "Please add atleast one item.",
+				"message6": "Enter item, quantity and unit price.",
+				"message7": "Please select a valid discount type."
+			},
+			"fields": {
+				"adjustment": "Adjustment",
+				"customer": "Customer",
+				"discount": "Discount",
+				"discount_type": "Discount Type",
+				"due_date": "Due Date",
+				"invoice_date": "Invoice Date",
+				"invoice_number": "Invoice Number",
+				"item_description": "Description",
+				"item_name": "Item",
+				"item_tax": "Tax",
+				"project": "Project",
+				"quantity": "Qty",
+				"reference": "Reference",
+				"status": "Status",
+				"sub_total": "Sub Total",
+				"total_amount": "Total",
+				"total_amount_due": "Amount Due",
+				"total_item_amount": "Amount",
+				"unit": "Unit",
+				"unit_price": "Unit Price"
+			},
+			"placeholders": {
+				"placeholder1": "-- Select Customer --",
+				"placeholder10": "Qty",
+				"placeholder11": "Unit Price",
+				"placeholder12": "-- Select Tax --",
+				"placeholder13": "-- Select Project --",
+				"placeholder2": "Select Invoice Date",
+				"placeholder3": "Select Due Date",
+				"placeholder4": "Enter Reference",
+				"placeholder5": "-- Select Discount Type --",
+				"placeholder6": "-- Select Status --",
+				"placeholder7": "-- Select Item --",
+				"placeholder8": "Item",
+				"placeholder9": "Description"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Percent"
+			},
+			{
+				"id": "fixed",
+				"label": "Fixed"
+			}
+		],
+		"headings": {
+			"head1": "Customer Info",
+			"head2": "Dates",
+			"head3": "Other Info",
+			"head4": "Items Info"
+		},
+		"inline_edit": {
+			"item_description": "Description",
+			"item_name": "Item",
+			"item_tax": "Tax",
+			"quantity": "Qty",
+			"unit_price": "Unit Price"
+		},
+		"messages": {
+			"create": "Invoice created successfully.",
+			"delete": "Invoice deleted successfully.",
+			"payments": "No payments found for this invoice",
+			"status": "Status changed successfully.",
+			"update": "Invoice updated successfully."
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "Paid"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "Partially Paid"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "Unpaid"
+			}
+		],
+		"title": "Invoices",
+		"title1": "Invoice !",
+		"title2": "Create Invoice",
+		"title3": "Update Invoice",
+		"title4": "Invoice",
+		"view": {
+			"add_payment": "Payment",
+			"amount": "Amount",
+			"balance_due": "Balance Due",
+			"bank": "Bank",
+			"bill_to": "Bill To",
+			"date": "Date",
+			"download": "Download",
+			"due_amount": "Due Amount",
+			"due_date": "Due Date",
+			"due_on_receipt": "Due on Receipt",
+			"gst_number": "GST IN",
+			"invoice_date": "Invoice Date",
+			"offline_payment": "Offline Payment",
+			"online_payment": "Online Payment",
+			"paid": "Paid",
+			"partially_paid": "Partially Paid",
+			"payment": "Payment",
+			"payment_mode": "Payment Mode",
+			"paypal": "Paypal",
+			"status": "Status",
+			"stripe": "Stripe",
+			"terms": "Terms & Condition",
+			"total_due": "Total due",
+			"transactions": "Transactions",
+			"unpaid": "Unpaid"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "Description",
+			"name": "Item Name",
+			"price": "Price",
+			"tax": "Tax",
+			"unit": "Unit"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid item name.",
+				"message2": "Please enter a valid price.",
+				"message3": "The price must be a number."
+			},
+			"fields": {
+				"description": "Description",
+				"name": "Item Name",
+				"price": "Price",
+				"tax": "Tax",
+				"unit": "Unit"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Item Name",
+				"placeholder2": "Enter Price",
+				"placeholder3": "Enter Unit",
+				"placeholder4": "-- Select Tax --",
+				"placeholder5": "Enter Description"
+			}
+		},
+		"labels": {
+			"label1": "Changing item info won't affect on the created estimates and invoices."
+		},
+		"messages": {
+			"create": "Item created successfully.",
+			"delete": "Item deleted successfully.",
+			"update": "Item updated successfully."
+		},
+		"title": "Items",
+		"title1": "Item !",
+		"title2": "Create Item",
+		"title3": "Update Item"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "Drag task between list"
+		},
+		"title1": "Defect Kanban",
+		"title2": "Incident Kanban"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "Actions",
+				"article_name": "Article Title"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid article title.",
+					"message2": "Article title can be max 50 characters long.",
+					"message3": "Please select a valid category.",
+					"message4": "Drop files here or click to upload.",
+					"message5": "Please enter a valid description."
+				},
+				"fields": {
+					"article_title": "Article Title",
+					"category": "Category",
+					"description": "Description",
+					"file": "File"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Article Title",
+					"placeholder2": "-- Select Category --",
+					"placeholder3": "Enter Description"
+				}
+			},
+			"messages": {
+				"create": "Article created successfully.",
+				"delete": "Article deleted successfully.",
+				"update": "Article updated successfully."
+			},
+			"title": "Article",
+			"title1": "Articles",
+			"title2": "article"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid category name.",
+					"message2": "Category name can be max 50 characters long.",
+					"message3": "Drop files here or click to upload.",
+					"message4": "Please select a valid file."
+				},
+				"fields": {
+					"category_logo": "Category Logo",
+					"category_name": "Category Name"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Category Name",
+					"placeholder2": "Search .."
+				}
+			},
+			"messages": {
+				"create": "Category created successfully.",
+				"delete": "Category deleted successfully.",
+				"update": "Category updated successfully."
+			},
+			"title": "Category",
+			"title1": "category",
+			"title2": "Categories"
+		},
+		"title": "Knowledge Base"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "Approved Leave",
+			"pending_leave": "Pending Leave",
+			"user": "User"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "Date Range",
+				"employee_name": "Employee Name"
+			},
+			"placeholders": {
+				"placeholder1": "Select Date Range",
+				"placeholder2": "All"
+			}
+		},
+		"title": "Leave Report",
+		"title1": "Leave Detail"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "Color",
+			"leave_type": "Leave Type",
+			"no_of_leaves": "Total Leave"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid leave type.",
+				"message2": "Leave type can be max 20 characters long.",
+				"message3": "Please enter a valid total leave.",
+				"message4": "The total leave must be a number.",
+				"message5": "Please select a valid color."
+			},
+			"fields": {
+				"color": "Color",
+				"leave_type": "Leave Type",
+				"no_of_leaves": "Total Leave"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Leave Type",
+				"placeholder2": "Enter Total Leave"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "Leave Type",
+			"no_of_leaves": "Total Leave"
+		},
+		"messages": {
+			"create": "Leave type created successfully.",
+			"delete": "Leave type deleted successfully.",
+			"update": "Leave type updated successfully."
+		},
+		"title": "Leave Types",
+		"title1": "Leave Type !",
+		"title2": "Create Leave Type",
+		"title3": "Add Leave Type"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "Accept",
+			"reject": "Reject"
+		},
+		"columns": {
+			"duration": "Duration",
+			"leave_date": "Date",
+			"leave_type": "Leave Type",
+			"reason": "Reason",
+			"status": "Status",
+			"user": "user"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please select a valid user.",
+				"message2": "Please select a valid leave type.",
+				"message3": "Please select a valid leave date.",
+				"message4": "Please select a valid status.",
+				"message5": "Please enter a valid reason.",
+				"message6": "Drop files here or click to upload."
+			},
+			"fields": {
+				"attachments": "Attachments",
+				"duration": "Duration",
+				"duration_type": "Leave Type",
+				"leave_date": "Date",
+				"leave_type": "Leave",
+				"reason": "Reason",
+				"reject_reason": "Reject Reason? (Optional)",
+				"status": "Status",
+				"user": "user"
+			},
+			"placeholders": {
+				"placeholder1": "-- Select User --",
+				"placeholder2": "-- Select Leave Type --",
+				"placeholder3": "Select Date",
+				"placeholder4": "-- Select Status --",
+				"placeholder5": "Enter Reason"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "First Half"
+			},
+			{
+				"id": "second_half",
+				"label": "Second Half"
+			}
+		],
+		"labels": {
+			"approved": "Approved",
+			"first_half_day": "First Half Day",
+			"full_day": "Full Day",
+			"half_day": "Half Day",
+			"multiple": "Multiple",
+			"remaining": "Remaining",
+			"second_half_day": "Second Half Day",
+			"single": "Single",
+			"taken": "Taken",
+			"total_leaves": "Total Leaves"
+		},
+		"messages": {
+			"approve": "Leave approved successfully.",
+			"create": "Leave created successfully.",
+			"delete": "Leave deleted successfully.",
+			"reject": "Leave rejected successfully.",
+			"status": "Status changed successfully.",
+			"update": "Leave updated successfully."
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "Pending"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "Approved"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "Rejected"
+			}
+		],
+		"title": "Leaves",
+		"title1": "Leave !",
+		"title2": "Leave Request",
+		"title3": "All Leaves",
+		"title4": "Leave Request",
+		"title5": "Leaves Calendar",
+		"title6": "Create Leave",
+		"title7": "Update Leave"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "Admin",
+			"client_login": "Client",
+			"forgot_password": "Forgot password?",
+			"hr_manager_login": "HR Manager",
+			"manager_login": "Manager",
+			"project_manager_login": "Project Manager",
+			"quick_login": "Demo Login",
+			"register": {
+				"button": "Register",
+				"text": "Do not have an account?"
+			},
+			"sales_manager_login": "Sales Manager",
+			"user_login": "User"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "Please enter a valid username or email address."
+				},
+				"placeholder": "Username/Email"
+			},
+			"password": {
+				"errors": {
+					"email": "Password can be min 3 to max 30 character long.",
+					"required": "Please enter a valid password."
+				},
+				"placeholder": "Password"
+			}
+		},
+		"title": "Login"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "Actions",
+				"name": "Name",
+				"progress": "Progress",
+				"size": "Size",
+				"status": "Status"
+			},
+			"error_messages": {
+				"message1": "Please select a valid email address.",
+				"message2": "Please enter a valid subject."
+			},
+			"fields": {
+				"from": "From",
+				"subject": "Subject",
+				"to": "To"
+			},
+			"placeholders": {
+				"placeholder1": "-- Select Users --",
+				"placeholder2": "Enter Subject"
+			}
+		},
+		"messages": {
+			"message": "File uploaded successfully.",
+			"message1": "File deleted successfully.",
+			"message2": "Please select atleast one mail.",
+			"message3": "Mail send successfully.",
+			"message4": "The mail moved to the Trash.",
+			"message5": " mail moved to the trash.",
+			"message6": "Mail unfavourited successfully.",
+			"message7": " mails marked as favourite.",
+			"message8": "Mails marked as read.",
+			"message9": "The mail moved to the draft."
+		},
+		"title": "Mailbox",
+		"title1": "Search mail ...",
+		"title10": "Send",
+		"title11": "Attachments",
+		"title12": "Refresh",
+		"title13": "Mark as Read",
+		"title14": "Mark as Favourite",
+		"title15": "Move to Trash",
+		"title16": "Move to Draft",
+		"title17": "Discard Mail",
+		"title18": "Mail View",
+		"title19": "Folders",
+		"title2": "Compose",
+		"title20": "mail",
+		"title3": "Compose Mail",
+		"title4": "Inbox",
+		"title5": "Sent",
+		"title6": "Draft",
+		"title7": "Favourite",
+		"title8": "Trash",
+		"title9": "Discard"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "Actions",
+			"end": "End",
+			"hours": "Hours",
+			"id": "ID",
+			"organizer": "Organizer",
+			"peoples": "Invite Peoples",
+			"start": "Start",
+			"status": "Status",
+			"title": "Title"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid meeting title.",
+				"message2": "Meeting title can be max 255 characters long.",
+				"message3": "Please select a valid start date.",
+				"message4": "Please select a valid end date.",
+				"message5": "Please select a valid meeting members.",
+				"message6": "Please select proper date and time for meeting.",
+				"message7": "Please select a valid status."
+			},
+			"fields": {
+				"client_name": "Client Name",
+				"description": "Description",
+				"end_date": "End Date",
+				"location": "Location",
+				"peoples": "Invite Peoples",
+				"start_date": "Start Date",
+				"status": "Status",
+				"title": "Title"
+			},
+			"placeholders": {
+				"placeholder1": "Event Title",
+				"placeholder2": "Select Start Date",
+				"placeholder3": "Select End Date",
+				"placeholder4": "-- Select Members --",
+				"placeholder5": "Location",
+				"placeholder6": "-- Select Client --",
+				"placeholder7": "-- Select Status --"
+			}
+		},
+		"details": {
+			"title1": "Description"
+		},
+		"inline_edit": {
+			"title": "Title"
+		},
+		"messages": {
+			"create": "Meeting created successfully.",
+			"delete": "Meeting deleted successfully.",
+			"status": "Status changed successfully.",
+			"update": "Meeting updated successfully."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "Cancel"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "Completed"
+			}
+		],
+		"title": "Meetings"
+	},
+	"months": [
+		"Jan",
+		"Feb",
+		"Mar",
+		"Apr",
+		"May",
+		"Jun",
+		"Jul",
+		"Aug",
+		"Sep",
+		"Oct",
+		"Nov",
+		"Dec"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "Notes"
+			}
+		},
+		"messages": {
+			"update": "Notes updated successfully."
+		},
+		"title": "Notes"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "Description",
+			"method_name": "Method Name",
+			"status": "status"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid method name."
+			},
+			"fields": {
+				"description": "Description",
+				"method_name": "Method Name",
+				"show_on_pdf": "Show Description on Invoice PDF"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Method Name",
+				"placeholder2": "Enter Description"
+			}
+		},
+		"messages": {
+			"create": "Payment method created successfully.",
+			"delete": "Payment method deleted successfully.",
+			"status": "Status changed successfully.",
+			"update": "Payment method updated successfully."
+		},
+		"title": "Payment Methods",
+		"title1": "Payment Method !",
+		"title2": "Create Payment Method",
+		"title3": "Update Payment Method"
+	},
+	"payments": {
+		"columns": {
+			"amount": "Amount",
+			"client": "Client",
+			"date": "Date",
+			"invoice": "Invoice",
+			"method_name": "Payment",
+			"payment_mode": "Payment Mode",
+			"status": "status"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid amount.",
+				"message2": "Please select a valid payment date.",
+				"message3": "Please select a valid payment mode."
+			},
+			"fields": {
+				"amount": "Amount Received",
+				"date": "Payment Date",
+				"notes": "Leave a note",
+				"payment_mode": "Payment Mode",
+				"transaction_id": "Transaction ID"
+			},
+			"placeholders": {
+				"placeholder1": "Select Date",
+				"placeholder2": "-- Select Payment Mode --",
+				"placeholder3": "Admin Note",
+				"placeholder4": "Enter Transaction Id"
+			}
+		},
+		"info": "Note: Payment modes listed below are offline modes. Payment gateways can be configured in Settings-> Paypal/Stripe.",
+		"info1": "Paypal, Stripe, Bank Transfer, Cash or others.",
+		"messages": {
+			"create": "Payment created successfully.",
+			"delete": "Payment deleted successfully.",
+			"failed": "Payment failed.",
+			"status": "Status changed successfully.",
+			"update": "Payment updated successfully."
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "In Progress"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "Successful"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "Failed"
+			}
+		],
+		"title": "Payments",
+		"title1": "Payments !",
+		"title2": "Create Payment",
+		"title3": "Update Payment",
+		"view": {
+			"failed": "Failed",
+			"in_progress": "In Progress",
+			"invoice_amount": "Invoice Amount",
+			"invoice_date": "Invoice Date",
+			"invoice_number": "Invoice Number",
+			"payment_amount": "Payment Amount",
+			"payment_for": "Payment For",
+			"payment_receipt": "Payment for Invoice",
+			"successful": "Successful"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "Actions",
+			"creator": "Creator",
+			"end_date": "End Date",
+			"hours": "Hours",
+			"name": "Name",
+			"progress": "Progress",
+			"responsible": "Responsible",
+			"sprint": "Sprint",
+			"start_date": "Start Date",
+			"status": "Status",
+			"type": "Type"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Please select a valid project.",
+					"message2": "Please select a valid project sprint."
+				},
+				"fields": {
+					"project": "Project",
+					"sprint": "Sprint"
+				},
+				"placeholders": {
+					"placeholder1": "-- Select Project --",
+					"placeholder2": "-- Select Project Sprint --"
+				}
+			},
+			"messages": {
+				"move": " Task moved successfully."
+			},
+			"title": "Move Task"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter an unique and valid sprint name.",
+					"message2": "Sprint name can be max 255 characters long.",
+					"message4": "Please select a valid start date.",
+					"message5": "Please select a valid end date.",
+					"message6": "Please select a valid status.",
+					"message7": "Estimate hours allow only digits, 2 digits after colon(less than 60) without any special characters.",
+					"message8": "Estimate hours must be less than "
+				},
+				"fields": {
+					"description": "Description",
+					"end_date": "End Date",
+					"estimate_hours": "Estimate Hours",
+					"responsible": "Responsible",
+					"sprint_name": "Project Sprint Name",
+					"start_date": "Start Date",
+					"status": "Status"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Project Sprint Name",
+					"placeholder2": "-- Select User --",
+					"placeholder3": "Select Start Date",
+					"placeholder4": "Select End Date",
+					"placeholder5": "-- Select Status --",
+					"placeholder6": "Enter Description"
+				}
+			},
+			"messages": {
+				"create": "Sprint created successfully.",
+				"delete": "Sprint deleted successfully.",
+				"update": "Sprint updated successfully."
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Open"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "In Progress"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Closed"
+				}
+			],
+			"title": "Sprint",
+			"title1": "Create Sprint",
+			"title2": "Update Sprint"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter an unique and valid ",
+					"message2": " name can be max 255 characters long.",
+					"message3": "Please select a valid users.",
+					"message4": "Please select a valid start date.",
+					"message5": "Please select a valid end date.",
+					"message6": "Please select a valid status.",
+					"message7": "Estimate hours allow only digits, 2 digits after colon(less than 60) without any special characters.",
+					"message8": "Estimate hours must be less than "
+				},
+				"fields": {
+					"description": "Description",
+					"end_date": "End Date",
+					"estimate_hours": "Estimate Hours",
+					"name": "Name",
+					"responsible": "Responsible",
+					"start_date": "Start Date",
+					"status": "Status"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Project Sprint ",
+					"placeholder2": "-- Select User --",
+					"placeholder3": "Select Start Date",
+					"placeholder4": "Select End Date",
+					"placeholder5": "-- Select Status --",
+					"placeholder6": "Enter Description",
+					"placeholder7": "Enter Project "
+				}
+			},
+			"messages": {
+				"create": " created successfully.",
+				"released": "Task released successfully.",
+				"story_delete": "Sprint story deleted successfully.",
+				"task_delete": "Sprint task deleted successfully.",
+				"update": " updated successfully."
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Open"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "In Progress"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Closed"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Open"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "On Hold"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Closed"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "Released"
+				}
+			],
+			"title": "Sprint Task",
+			"title1": "Create Sprint",
+			"title2": "Update Sprint",
+			"title3": "name",
+			"title4": "Task",
+			"title5": "Story"
+		},
+		"title": "Project Planner",
+		"title1": "Create Task",
+		"title2": "Create Story",
+		"title3": "Create Sprint",
+		"title4": "Project",
+		"title5": "Sprint"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "Fixed Rate",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Hourly Rate",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "Completion with",
+			"csv_file": "Before start importing projects, make sure that you have imported users and their teams.",
+			"current_version": "Current Version",
+			"version": "Version"
+		},
+		"columns": {
+			"actions": "Actions",
+			"assigned_To": "Assigned To",
+			"billing": "Billing",
+			"budget": "Budget",
+			"client": "Client",
+			"completion": "Completion",
+			"creator": "Creator",
+			"duration": "Duration",
+			"end": "End",
+			"hours": "Hours",
+			"id": "ID",
+			"logo": "Logo",
+			"progress": "Progress",
+			"project_name": "Project Name",
+			"start": "Start",
+			"status": "Status",
+			"version": "Version"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid project name.",
+				"message10": "Please select a valid end date.",
+				"message11": "Estimate hours allow only digits, 2 digits after colon(less than 60) without any special characters.",
+				"message12": "Fixed price must be grater then 0.",
+				"message13": "Fixed price allow only digits.",
+				"message14": "Drop files here or click to upload.",
+				"message15": "This file is not a csv file. Please select only csv file.",
+				"message16": "Please Select CSV file to import.",
+				"message2": "Project name can be max 255 characters long.",
+				"message3": "Please enter an unique and valid project version.",
+				"message4": "Project version can be like 1.0 .",
+				"message6": "Please select a valid status.",
+				"message8": "Please enter a valid demo url.",
+				"message9": "Please select a valid start date."
+			},
+			"fields": {
+				"actual_hours": "Actual Hours",
+				"assigned_To": "Assigned To",
+				"assigned_group": "Assigned Group",
+				"billing_type": "Billing Type",
+				"budget": "Budget",
+				"client_name": "Client Name",
+				"completed": "Completed",
+				"created_by": "Created By",
+				"csv_file": "Select project CSV file",
+				"demo_URL": "Demo URL",
+				"description": "Description",
+				"end_date": "End Date",
+				"estimate_hours": "Estimate Hours",
+				"fixed_price": "Fixed Price($)",
+				"hourly_rate": "Hourly Rate($)",
+				"progress": "Progress",
+				"project_hours": "Auto Progress",
+				"project_id": "Project ID",
+				"project_logo": "Project Logo",
+				"project_name": "Project Name",
+				"start_date": "Start Date",
+				"status": "Status",
+				"version": "Version"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Project Name",
+				"placeholder10": "Enter Price Rate",
+				"placeholder11": "Enter Description",
+				"placeholder2": "Enter Version",
+				"placeholder3": "-- Select Client --",
+				"placeholder4": "-- Select Status --",
+				"placeholder5": "-- Select Assigned Group --",
+				"placeholder6": "Unassigned",
+				"placeholder7": "Select Start Date",
+				"placeholder8": "Select End Date",
+				"placeholder9": "-- Select Billing Type --"
+			}
+		},
+		"details": {
+			"title1": "Custom Fields",
+			"title2": "Description"
+		},
+		"headings": {
+			"head1": "Project Info",
+			"head2": "Project Dates",
+			"head3": "Other Info",
+			"head4": "Custom Fields",
+			"head5": "Description"
+		},
+		"inline_edit": {
+			"billing_type": "Billing Type",
+			"budget": "Budget",
+			"client": "Client",
+			"demo_url": "Demo URL",
+			"description": "Description",
+			"end_date": "End Date",
+			"estimate_hours": "Estimate Hours",
+			"notes": "Notes",
+			"project_name": "Project Name",
+			"start_date": "Start Date"
+		},
+		"messages": {
+			"create": "Project created successfully.",
+			"delete": "Project deleted successfully.",
+			"import": "Project imported successfully.",
+			"status": "Status changed successfully.",
+			"update": "Project updated successfully."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "On Hold"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "Cancel"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "Completed"
+			}
+		],
+		"title": "Projects",
+		"title1": "Create Project",
+		"title2": "Update Project",
+		"title3": "Import Project"
+	},
+	"providers": {
+		"columns": {
+			"actions": "Actions",
+			"color": "Color",
+			"email": "Email",
+			"firstname": "Firstname",
+			"lastname": "Lastname"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid firstname.",
+				"message2": "Firstname can be max 50 characters long.",
+				"message3": "Please enter a valid lastname.",
+				"message4": "Lastname can be max 50 characters long.",
+				"message5": "Please enter a valid email.",
+				"message6": "Email must be a valid email.",
+				"message7": "Please select a valid color."
+			},
+			"fields": {
+				"color": "Color",
+				"email": "Email",
+				"first_name": "First Name",
+				"last_name": "Last Name"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Firstname",
+				"placeholder2": "Enter Lastname",
+				"placeholder3": "Enter Email"
+			}
+		},
+		"messages": {
+			"create": "Provider created successfully.",
+			"delete": "Provider deleted successfully.",
+			"edit": "Provider edited successfully."
+		},
+		"title": "Providers"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid username.",
+				"message10": "Password and confirm password does not match.",
+				"message2": "Username can be min 3 to max 30 characters long without white spaces.",
+				"message3": "Please enter a valid firstname.",
+				"message4": "Please enter a valid lastname.",
+				"message5": "Please enter a valid email.",
+				"message6": "Email must be a valid email.",
+				"message7": "Please enter a valid password.",
+				"message8": "Password can be min 3 to max 30 character long.",
+				"message9": "Please enter a valid confirm password."
+			},
+			"placeholders": {
+				"placeholder1": "Enter Username",
+				"placeholder2": "Enter First Name",
+				"placeholder3": "Enter Last Name",
+				"placeholder4": "Enter Email",
+				"placeholder5": "Enter Password",
+				"placeholder6": "Enter Confirm Password"
+			}
+		},
+		"messages": {
+			"success": "You have successfully registered."
+		},
+		"title": "Register",
+		"title1": "Already have an account?"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "Defect",
+			"incident_report": "Incident",
+			"project_report": "Project",
+			"task_report": "Task"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid password.",
+				"message2": "Password can be min 3 to max 30 character long.",
+				"message3": "Please enter a valid confirm password.",
+				"message4": "Password and confirm password does not match.",
+				"message5": "Please provide a valid email or token."
+			},
+			"placeholders": {
+				"placeholder1": "Enter Password",
+				"placeholder2": "Enter Confirm Password"
+			}
+		},
+		"messages": {
+			"success": "Password reset successfully."
+		},
+		"title": "Reset Password"
+	},
+	"roles": {
+		"columns": {
+			"actions": "Actions",
+			"description": "description",
+			"role_name": "Role Name",
+			"role_slug": "Role Slug"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid role name.",
+				"message2": "Role name can be max 50 characters long.",
+				"message3": "Role slug can be max 50 characters long.",
+				"message4": "Role slug can be only letters, underscore.",
+				"message5": "Please enter a valid role slug."
+			},
+			"fields": {
+				"description": "Description",
+				"role_name": "Role Name",
+				"role_slug": "Role Slug"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Role Name",
+				"placeholder2": "Enter Role Slug"
+			}
+		},
+		"inline_edit": {
+			"description": "Description",
+			"role_name": "Role Name"
+		},
+		"messages": {
+			"create": "Role created successfully.",
+			"delete": "Role deleted successfully.",
+			"update": "Role updated successfully."
+		},
+		"title": "Roles"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid company name.",
+					"message10": "Zipcode code can be allowed max 10 digits.",
+					"message11": "Please enter a valid company address.",
+					"message2": "Please enter a valid company legal name.",
+					"message3": "Please enter a valid company short name.",
+					"message4": "Company short name can be max 10 characters long.",
+					"message5": "Please enter a valid company email.",
+					"message6": "Email must be a valid email address.",
+					"message7": "Company phone must be a valid phone number format.",
+					"message8": "Company website must be a valid URL.",
+					"message9": "Please enter a valid zipcode."
+				},
+				"fields": {
+					"city": "City",
+					"company_address": "Company Address",
+					"company_country": "Company Country",
+					"company_email": "Company Email",
+					"company_name": "Company Name",
+					"company_phone": "Company Phone",
+					"company_website": "Company Website",
+					"company_zipcode": "Zip Code",
+					"contact_person": "Contact Person",
+					"legal_name": "Legal Name",
+					"short_name": "Short Name"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Company Name",
+					"placeholder10": "Enter Contact Person",
+					"placeholder11": "Enter Company Address",
+					"placeholder2": "Enter Legal Name",
+					"placeholder3": "Enter Short Name",
+					"placeholder4": "Enter Company Email",
+					"placeholder5": "Enter Company Phone",
+					"placeholder6": "Enter Company Website",
+					"placeholder7": "-- Select Country --",
+					"placeholder8": "Enter City",
+					"placeholder9": "Enter Zip Code"
+				}
+			},
+			"title": "Company Details"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "Active Cronjob",
+					"automatic_backup": "Automatic Backup Database",
+					"daily_report_emails": "Daily Report Emails",
+					"last_cronjob_run": "Last Cronjob Run"
+				},
+				"messages": {
+					"message1": "This enables the cronjob feature, if it is setup correctly.",
+					"message2": "Creates a database backup every 7 days. Requires cronjob to be activated!"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Emails"
+				}
+			},
+			"title": "Cron job"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "Actions",
+				"custom_field_for": "Custom Field For",
+				"label": "Label",
+				"status": "Status",
+				"type": "Type",
+				"value": "Value"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Please select a valid custom field form.",
+					"message2": "Please enter a valid field label.",
+					"message3": "Please enter a valid help text.",
+					"message4": "Please select a valid field type.",
+					"message5": "Please enter a valid label.",
+					"message6": "Please enter a valid value."
+				},
+				"fields": {
+					"custom_field_for": "Custom Field For",
+					"field_label": "Field Label",
+					"field_type": "Field Type",
+					"help_text": "Help Text",
+					"is_required_field": "Is Required Field",
+					"show_on_detail": "To Show On Detail Page"
+				},
+				"placeholders": {
+					"placeholder1": "-- Select Custom Field Form --",
+					"placeholder2": "Enter Field Label",
+					"placeholder3": "Enter Help Text",
+					"placeholder4": "-- Select Field Type --"
+				}
+			},
+			"headings": {
+				"head1": "Enter lable and value for dropdown box."
+			},
+			"messages": {
+				"create": "Custom field created successfully.",
+				"delete": "Custom field deleted successfully.",
+				"status": "Status changed successfully.",
+				"update": "Custom field updated successfully."
+			},
+			"title": "Custom Fields",
+			"title1": "custom field"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "Settings"
+			},
+			"title": "Dashboard",
+			"title1": "Announcements",
+			"title10": "Estimates",
+			"title11": "Invoices",
+			"title12": "Payments",
+			"title13": "Leaves",
+			"title14": "Teams",
+			"title15": "Users",
+			"title16": "Clients",
+			"title17": "Articles",
+			"title18": "Projects Status",
+			"title19": "Tasks Status",
+			"title2": "Recent Activities",
+			"title20": "Monthly Report",
+			"title21": "Widgets",
+			"title22": "Charts",
+			"title23": "Lists",
+			"title3": "ToDos",
+			"title4": "Meetings",
+			"title5": "Projects",
+			"title6": "Tasks",
+			"title7": "Defects",
+			"title8": "Incidents",
+			"title9": "Due Invoices"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "Actions",
+				"date": "Date",
+				"file_name": "File Name"
+			},
+			"messages": {
+				"create": "Database backup created successfully.",
+				"delete": "Database backup deleted successfully.",
+				"restore": "Database restored successfully."
+			},
+			"title": "Database Backups",
+			"title1": "database backup",
+			"title2": "Backup"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "Notification"
+			},
+			"title": "Email Notifications",
+			"title1": "Announcement Email"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid company email.",
+					"message2": "Email must be a valid email address.",
+					"message3": "Please select a valid email protocol.",
+					"message4": "Please enter a valid SMTP host.",
+					"message5": "Please enter a valid SMTP user.",
+					"message6": "SMTP user must be a valid email address.",
+					"message7": "Please enter a valid SMTP password.",
+					"message8": "Please enter a valid SMTP port."
+				},
+				"fields": {
+					"company_email": "Company Email",
+					"email_encryption": "Email Encryption",
+					"email_protocol": "Email Protocol",
+					"mailgun_domain": "Mailgun Domain",
+					"mailgun_secret": "Mailgun Secret",
+					"mandrill_secret": "Mandrill Secret",
+					"smtp_host": "SMTP Host",
+					"smtp_password": "SMTP Password",
+					"smtp_port": "SMTP Port",
+					"smtp_user": "SMTP User",
+					"sparkpost_secret": "Sparkpost Secret"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Company Email",
+					"placeholder2": "-- Select Email Protocol --",
+					"placeholder3": "Enter Password",
+					"placeholder4": "-- Select Email Encryption --",
+					"placeholder5": "Enter Sparkpost Secret",
+					"placeholder6": "Enter Mailgun Domain",
+					"placeholder7": "Enter Mailgun Secret",
+					"placeholder8": "Enter Mandrill Secret"
+				}
+			},
+			"title": "Email",
+			"title1": "Email sent at "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "Body",
+					"subject": "Subject"
+				},
+				"placeholders": {
+					"placeholder1": "-- Select Email group --",
+					"placeholder2": "Enter Subject"
+				}
+			},
+			"messages": {
+				"update": "Email template updated successfully."
+			},
+			"title": "Email Templates"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid estimate prefix.",
+					"message2": "Estimate prefix can be max 10 characters long.",
+					"message3": "Please enter a valid due after.",
+					"message4": "Drop files here or click to upload."
+				},
+				"fields": {
+					"auto_remind": "Auto Send Reminder ?",
+					"auto_remind_before": "Send Remind Before (Days)",
+					"client_note": "Client Note",
+					"due_after": "Due After (Days)",
+					"estimate_logo": "Estimate Logo",
+					"estimate_prefix": "Estimate Prefix",
+					"terms_conditions": "Terms & Conditions"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Estimate Prefix",
+					"placeholder2": "Enter Due After",
+					"placeholder3": "Enter Client Note",
+					"placeholder4": "Enter Terms & Conditions",
+					"placeholder5": "Enter Remind Before Days"
+				}
+			},
+			"title": "Estimate"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid invoice prefix.",
+					"message2": "Invoice prefix can be max 10 characters long.",
+					"message3": "Please enter a valid due after.",
+					"message4": "Drop files here or click to upload."
+				},
+				"fields": {
+					"auto_remind": "Auto Send Reminder ?",
+					"auto_remind_after": "Send Remind After (Days) Ex. 1,3",
+					"client_note": "Client Note",
+					"due_after": "Due After (Days)",
+					"gst_number": "GST Number",
+					"invoice_logo": "Invoice Logo",
+					"invoice_prefix": "Invoice Prefix",
+					"show_gst_number": "Show GST Number on Invoice ?",
+					"terms_conditions": "Terms & Conditions"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Invoice Prefix",
+					"placeholder2": "Enter Due After",
+					"placeholder3": "Enter Client Note",
+					"placeholder4": "Enter Terms & Conditions",
+					"placeholder5": "Enter Remind After Days",
+					"placeholder6": "Enter GST Number"
+				}
+			},
+			"title": "Invoice"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "Menu updated successfully."
+			},
+			"title": "Menu Allocation",
+			"title1": "Expand All",
+			"title2": "Collapse All"
+		},
+		"messages": {
+			"update": "Setting updated successfully."
+		},
+		"payment_gateway_settings": {
+			"title": "Payment Gateway"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid paypal clientID."
+				},
+				"fields": {
+					"paypal_checkout_client_id": "Paypal Client Id",
+					"paypal_checkout_label": "Paypal Label",
+					"paypal_checkout_status": "Status"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Paypal Label",
+					"placeholder2": "Enter Paypal Client Id"
+				}
+			},
+			"title": "Paypal"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid slack client ID.",
+					"message2": "Please enter a valid slack client secret.",
+					"message3": "Please enter a valid slack redirect URL."
+				},
+				"fields": {
+					"slack_client_id": "Slack Client Id",
+					"slack_client_secret": "Slack Client Secret",
+					"slack_redirect_url": "Slack Redirect URL",
+					"slack_status": "Slack Status"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Slack Client Id",
+					"placeholder2": "Enter Slack Client Secret",
+					"placeholder3": "Enter Slack Redirect URL"
+				}
+			},
+			"title": "Slack"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid stripe api key.",
+					"message2": "Please enter a valid stripe api secret."
+				},
+				"fields": {
+					"stripe_api_key": "Stripe API Key",
+					"stripe_label": "Stripe Label",
+					"stripe_secret_key": "Stripe Secret Key",
+					"stripe_status": "Status"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Stripe Label",
+					"placeholder2": "Enter Stripe API Key",
+					"placeholder3": "Enter Stripe Secret Key"
+				}
+			},
+			"title": "Stripe",
+			"title1": "Pay"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Please enter a valid table pagination limit.",
+					"message2": "Please select a valid date format.",
+					"message3": "Please select a valid time format.",
+					"message4": "Please select a valid default currency.",
+					"message5": "Please select a valid default language."
+				},
+				"fields": {
+					"allowed_for_registration": "Allowed for Registration ?",
+					"date_format": "Date Format",
+					"default_currency": "Default Currency",
+					"default_language": "Default Language",
+					"default_locale": "Default Locale",
+					"tables_pagination_limit": "Tables Pagination Limit",
+					"time_format": "Time Format",
+					"timezone": "Timezone"
+				},
+				"placeholders": {
+					"placeholder1": "-- Select Default Language --",
+					"placeholder2": "-- Select Locale --",
+					"placeholder3": "-- Select Timezone --",
+					"placeholder4": "Enter Tables Pagination Limit",
+					"placeholder5": "-- Select Date Format --",
+					"placeholder6": "-- Select Time Format --",
+					"placeholder7": "-- Select Default Currency --"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Enter a valid guess prefix.",
+						"message2": "The estimate prefix can contain a maximum of 10 characters.",
+						"message3": "Please enter a valid due date after.",
+						"message4": "Drag files here or click to upload."
+					},
+					"fields": {
+						"auto_remind": "Send reminders automatically?",
+						"auto_remind_before": "Send reminder (days ago)",
+						"client_note": "customer note",
+						"due_after": "Due date (days)",
+						"estimate_logo": "Appreciate the logo",
+						"estimate_prefix": "Appreciate the prefix",
+						"terms_conditions": "Terms of Service"
+					},
+					"placeholders": {
+						"placeholder1": "Enter the prefix Estimation",
+						"placeholder2": "Then enter the date",
+						"placeholder3": "Enter a customer note",
+						"placeholder4": "Enter the conditions",
+						"placeholder5": "Enter Remind days ago"
+					}
+				},
+				"title": "Estimate"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Please enter a valid invoice prefix.",
+						"message2": "The invoice prefix can be a maximum of 10 characters long.",
+						"message3": "Please enter a valid due date after.",
+						"message4": "Drag files here or click to upload."
+					},
+					"fields": {
+						"auto_remind": "Send reminders automatically?",
+						"auto_remind_after": "Send reminder after (days) Example 1.3",
+						"client_note": "customer note",
+						"due_after": "Due date (days)",
+						"gst_number": "GST Number",
+						"invoice_logo": "Invoice Logo",
+						"invoice_prefix": "Invoice Prefix",
+						"show_gst_number": "Show GST number on invoice?",
+						"terms_conditions": "Terms of Service"
+					},
+					"placeholders": {
+						"placeholder1": "Enter the invoice prefix",
+						"placeholder2": "Then enter the date",
+						"placeholder3": "Enter a customer note",
+						"placeholder4": "Enter the conditions",
+						"placeholder5": "Enter remind by days",
+						"placeholder6": "Enter the GST number"
+					}
+				},
+				"title": "Invoice"
+			},
+			"payment_gateway_settings": {
+				"title": "Payment Gateways"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Please enter a valid PayPal client ID."
+					},
+					"fields": {
+						"paypal_checkout_client_id": "PayPal customer ID",
+						"paypal_checkout_label": "Paypal Label",
+						"paypal_checkout_status": "Position"
+					},
+					"placeholders": {
+						"placeholder1": "Enter the Paypal label",
+						"placeholder2": "Enter your PayPal customer ID"
+					}
+				},
+				"title": "PayPal"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Enter a valid slack client ID.",
+						"message2": "Enter a valid client secret password.",
+						"message3": "Please enter a valid free redirect url."
+					},
+					"fields": {
+						"slack_client_id": "Slack Client ID",
+						"slack_client_secret": "The client's secret is made public",
+						"slack_redirect_url": "Slack Redirect URL",
+						"slack_status": "Approval status"
+					},
+					"placeholders": {
+						"placeholder1": "Enter the Slack client ID",
+						"placeholder2": "Enter the customer's secret password",
+						"placeholder3": "Enter the Slack Redirect URL"
+					}
+				},
+				"title": "Slack"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Please enter a valid bar API key."
+					},
+					"fields": {
+						"stripe_api_key": "Stripe API Key",
+						"stripe_label": "Stripe label",
+						"stripe_status": "Position"
+					},
+					"placeholders": {
+						"placeholder1": "Enter a banner label",
+						"placeholder2": "Enter the Stripe API key"
+					}
+				},
+				"title": "Stripes"
+			},
+			"title": "System"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "Buyer",
+					"purchase_key": "Purchase Key",
+					"url": "URL"
+				},
+				"placeholders": {
+					"placeholder1": "Enter Product Purchase Key",
+					"placeholder2": "Enter Product Buyer Code"
+				}
+			},
+			"title": "System Update"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Drop files here or click to upload."
+				},
+				"fields": {
+					"compnay_logo": "Company Logo",
+					"compnay_sidebar_logo": "Company Sidebar Logo",
+					"login_background": "Login Background",
+					"sidebar_background_images": "Sidebar Background Images"
+				}
+			},
+			"title": "Theme"
+		},
+		"title": "Settings",
+		"translations": {
+			"columns": {
+				"actions": "Actions",
+				"icon": "Icon",
+				"language": "Language",
+				"status": "Status"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Please select a valid language.",
+					"message2": "Please select a valid icon.",
+					"message3": "Drop files here or click to upload."
+				},
+				"fields": {
+					"icon": "Icon",
+					"language": "Language"
+				},
+				"placeholders": {
+					"placeholder1": "-- Select Language --"
+				}
+			},
+			"messages": {
+				"create": "Translation created successfully.",
+				"delete": "Translation deleted successfully.",
+				"status": "Status changed successfully.",
+				"update": "Translation updated successfully."
+			},
+			"title": "Translations",
+			"title1": "translation"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} is required.",
+				"message2": "{{elementFor}} allow only digits, 2 digits after colon(less than 60) without any special characters.",
+				"message3": "Please enter a valid {{elementFor}}.",
+				"message4": "{{elementFor}} can be min {{minLength}} characters long."
+			},
+			"placeholders": {
+				"placeholder1": "Enter {{elementFor}}",
+				"placeholder2": "-- Select {{elementFor}} --",
+				"placeholder3": "Select {{elementFor}}"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "Please enter a valid {{custom_field}}.",
+				"message2": "Please select a valid {{custom_field}}."
+			},
+			"placeholders": {
+				"placeholder1": "Enter {{custom_field}}",
+				"placeholder2": "-- Select {{custom_field}} --"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "To Dos",
+			"head2": "In Progress",
+			"head3": "Completed"
+		},
+		"title": "Task Kanban"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "Completion with",
+			"csv_file": "Before start importing tasks, make sure that you have imported projects, users and their teams."
+		},
+		"columns": {
+			"actions": "Actions",
+			"actual_end": "Actual End",
+			"actual_start": "Actual Start",
+			"assigned": "Assigned",
+			"creator": "Creator",
+			"end": "End",
+			"end_date": "End Date",
+			"hours": "Hours",
+			"id": "ID",
+			"planned_end": "Planned End",
+			"planned_start": "Planned Start",
+			"priority": "Priority",
+			"progress": "Progress",
+			"project": "Project",
+			"project_version": "Project Version",
+			"start": "Start",
+			"start_date": "Start Date",
+			"status": "Status",
+			"task_ID": "Task ID",
+			"task_name": "Task Name"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid task name.",
+				"message11": "Please select a valid task status.",
+				"message12": "Please select a valid task priority.",
+				"message13": "Estimate hours allow only digits, 2 digits after colon(less than 60) without any special characters.",
+				"message14": "Estimate hours must be less than",
+				"message15": "Please Select CSV file to import.",
+				"message2": "Task name can be max 255 characters long.",
+				"message3": "Please enter an unique and valid task generated ID.",
+				"message4": "Please select a valid planned start date.",
+				"message5": "Please select a valid planned end date.",
+				"message6": "Please select a valid start date.",
+				"message7": "Please select a valid end date.",
+				"message8": "Please select a valid project name."
+			},
+			"fields": {
+				"actual_enddate": "End Date",
+				"actual_hours": "Actual Hours",
+				"actual_startdate": "Start Date",
+				"assigned_To": "Assigned To",
+				"completed": "Completed",
+				"created_by": "Created By",
+				"csv_file": "Select Task CSV file",
+				"description": "Description",
+				"estimate_hours": "Estimate Hours",
+				"parent_taskID": "Parent Task ID",
+				"plan_enddate": "Plan End Date",
+				"plan_startdate": "Plan Start Date",
+				"priority": "Priority",
+				"progress": "Progress",
+				"project_name": "Project Name",
+				"project_version": "Project Version",
+				"status": "Status",
+				"subtask_Id": "Subtask Id",
+				"task_ID": "Task ID",
+				"task_name": "Task Name"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Task Name",
+				"placeholder10": "-- Select Priority --",
+				"placeholder2": "Select Planned Start Date",
+				"placeholder3": "Select Planned End Date",
+				"placeholder4": "Select Start Date",
+				"placeholder5": "Select End Date",
+				"placeholder6": "-- Select Project Name --",
+				"placeholder7": "-- Select Project Version --",
+				"placeholder8": "-- Select Assign To --",
+				"placeholder9": "-- Select Status --"
+			}
+		},
+		"details": {
+			"title1": "Custom Fields",
+			"title2": "Description",
+			"title3": "Sub Task"
+		},
+		"headings": {
+			"head1": "Task Info",
+			"head2": "Task Dates",
+			"head3": "Progress",
+			"head4": "Project Info",
+			"head5": "Requirements",
+			"head6": "Custom Fields",
+			"head7": "Description"
+		},
+		"inline_edit": {
+			"description": "Description",
+			"estimate_hours": "Estimate Hours",
+			"notes": "Notes",
+			"task_name": "Task Name"
+		},
+		"messages": {
+			"copy": "Task copied successfully.",
+			"create": "Task created successfully.",
+			"delete": "Task deleted successfully.",
+			"import": "Task imported successfully.",
+			"priority": "Priority changed successfully.",
+			"status": "Status changed successfully.",
+			"update": "Task updated successfully."
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "Open"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"id": 3,
+				"label": "On Hold"
+			},
+			{
+				"id": 4,
+				"label": "Waiting"
+			},
+			{
+				"id": 5,
+				"label": "Cancel"
+			},
+			{
+				"id": 6,
+				"label": "Completed"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"id": 3,
+				"label": "On Hold"
+			},
+			{
+				"id": 5,
+				"label": "Cancel"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"id": 4,
+				"label": "Waiting"
+			},
+			{
+				"id": 5,
+				"label": "Cancel"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "Cancel"
+			},
+			{
+				"id": 2,
+				"label": "In Progress"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"id": 4,
+				"label": "Cancel"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "Urgent"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "Very High"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "High"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "Medium"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "Low"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "On Hold"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Waiting"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Completed"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "On Hold"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Waiting"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Completed"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "On Hold"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Waiting"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Open"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "In Progress"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Cancel"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Completed"
+			}
+		],
+		"title": "Tasks",
+		"title1": "Create Task",
+		"title2": "Create Sub Task",
+		"title3": "Import Tasks",
+		"title4": "Update Task",
+		"title5": "Update Sub Task",
+		"title6": "Copy Task",
+		"tooltips": {
+			"sub_task": "Create Sub Task"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "Tax Name",
+			"tax_rate": "Tax Rate"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter an unique and valid tax name.",
+				"message2": "Please enter a valid tax rate.",
+				"message3": "The tax rate must be a number."
+			},
+			"fields": {
+				"tax_name": "Tax Name",
+				"tax_rate": "Tax Rate"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Tax Name",
+				"placeholder2": "Enter Tax Rate"
+			}
+		},
+		"messages": {
+			"create": "Tax created successfully.",
+			"delete": "Tax deleted successfully.",
+			"update": "Tax updated successfully."
+		},
+		"title": "Taxes",
+		"title1": "Tax Rates",
+		"title2": "Tax !",
+		"title3": "Create Tax",
+		"title4": "Update Tax"
+	},
+	"teams": {
+		"columns": {
+			"actions": "Actions",
+			"leader": "Leader",
+			"members": "Members",
+			"team_name": "Team Name"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter valid team name.",
+				"message2": "Team name can be max 30 characters long.",
+				"message3": "Please select a valid team members.",
+				"message4": "Please select a valid team leader.",
+				"message5": "Please Select CSV file to import.",
+				"message6": "This file is not a csv file. Please select only csv file."
+			},
+			"fields": {
+				"actions": "Actions",
+				"csv_file": "Select team CSV file",
+				"description": "Description",
+				"leader": "Leader",
+				"members": "Members",
+				"team_name": "Team Name"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Team Name",
+				"placeholder2": "-- Select Team Members --",
+				"placeholder3": "-- Select Team Leader --"
+			}
+		},
+		"inline_edit": {
+			"team_name": "Team Name"
+		},
+		"labels": {
+			"label1": "Before start importing teams, make sure that you have imported users."
+		},
+		"messages": {
+			"create": "Team created successfully.",
+			"delete": "Team deleted successfully.",
+			"import": "Team imported successfully.",
+			"update": "Team updated successfully."
+		},
+		"title": "Teams",
+		"title1": "Import Teams",
+		"title2": "Team Leader",
+		"title3": "Team Boards"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "Sidebar Color Options",
+			"head10": "Sidebar Font Colors",
+			"head11": "Sidebar Layout Options",
+			"head12": "Configurations",
+			"head13": "Collapsed Menu",
+			"head14": "Sidebar Width",
+			"head15": "Gradient Sidebar",
+			"head2": "Color Palettes",
+			"head3": "Layout Options",
+			"head4": "Transparent Sidebar",
+			"head5": "Sidebar Background Images",
+			"head6": "Background Image",
+			"head7": "Background Colors",
+			"head8": "Background Images",
+			"head9": "Transparent Sidebar"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "Pre-built"
+			},
+			{
+				"key": "dark",
+				"value": "Dark Layout"
+			},
+			{
+				"key": "custom-colors",
+				"value": "Custom Colors"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "-- Select Layout --",
+			"placeholder2": "-- Select Sidebar Width --"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "Small"
+			},
+			{
+				"key": "medium",
+				"value": "Medium"
+			},
+			{
+				"key": "large",
+				"value": "Large"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "Actions",
+			"end_time": "End Time",
+			"entry": "Entry",
+			"note": "Note",
+			"photo": "Photo",
+			"project_name": "Project",
+			"start_time": "Start Time",
+			"time_h": "Hours",
+			"user": "User"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please select a valid start time.",
+				"message2": "Please select a valid end time.",
+				"message3": "Please select proper date and time for timesheet.",
+				"message4": "Please enter a valid note."
+			},
+			"fields": {
+				"end_time": "End Time",
+				"note": "Note",
+				"start_time": "Start Time"
+			},
+			"placeholders": {
+				"placeholder1": "Select Start Time",
+				"placeholder2": "Select End Time",
+				"placeholder3": "Enter Note"
+			},
+			"title1": "Create Timesheet",
+			"title2": "Update Timesheet"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "Please select a valid range.",
+				"message2": "Please select a valid period from.",
+				"message3": "Please select a valid period to."
+			},
+			"placeholders": {
+				"placeholder1": "-- Select Project --",
+				"placeholder2": "-- Select Client --",
+				"placeholder3": "Select Period From",
+				"placeholder4": "Select Period To",
+				"placeholder5": "-- Select User --"
+			}
+		},
+		"inline_edit": {
+			"note": "Note"
+		},
+		"messages": {
+			"create": "Timesheet created successfully.",
+			"delete": "Timesheet deleted successfully.",
+			"update": "Timesheet updated successfully."
+		},
+		"range": {
+			"last_month": "Last Month",
+			"last_week": "Last Week",
+			"period": "Period",
+			"this_month": "This Month",
+			"this_week": "This Week",
+			"today": "Today"
+		},
+		"title": "Timesheet",
+		"title1": "My Timesheet",
+		"title2": "All Timesheet"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid description.",
+				"message2": "Description can be max 5 characters long.",
+				"message3": "Description can be max 255 characters long.",
+				"message4": "Please select a valid todo status.",
+				"message5": "Please select a valid due date."
+			},
+			"fields": {
+				"description": "Description",
+				"due_date": "Due Date",
+				"status": "Status"
+			},
+			"placeholders": {
+				"placeholder1": "Enter Description",
+				"placeholder2": "-- Select Status --",
+				"placeholder3": "Select Due Date"
+			}
+		},
+		"inline_edit": {
+			"description": "Description",
+			"due_date": "Due Date"
+		},
+		"messages": {
+			"create": "Todo created successfully.",
+			"delete": "Todo deleted successfully.",
+			"status": "Status updated successfully.",
+			"update": "Todo updated successfully."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "open"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "Completed"
+			}
+		],
+		"title": "ToDo"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "Assign Permission Modal"
+		},
+		"columns": {
+			"actions": "Actions",
+			"departments_roles": "Departments/Roles",
+			"first_name": "First Name",
+			"last_name": "Last Name",
+			"photo": "Photo",
+			"status": "Status",
+			"username": "Username"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Please enter a valid firstname.",
+				"message10": "Password and confirm password does not match.",
+				"message11": "Drop files here or click to upload.",
+				"message12": "Please select a valid departments with roles.",
+				"message13": "Please select a valid user permissions.",
+				"message14": "Please enter a valid user generated ID.",
+				"message15": "Please enter a valid employment ID.",
+				"message16": "Please enter a valid username.",
+				"message17": "Username can be min 3 to max 30 characters long without white spaces.",
+				"message18": "Please enter a valid mobile number.",
+				"message19": "Please enter a valid phone number.",
+				"message2": "Firstname can be max 20 characters long.",
+				"message20": "Please select a valid user permissions.",
+				"message21": "Please Select CSV file to import.",
+				"message22": "This file is not a csv file. Please select only csv file.",
+				"message3": "Please enter a valid lastname.",
+				"message4": "Lastname can be max 20 characters long.",
+				"message5": "Please enter a valid email.",
+				"message6": "Email can be a valid email address.",
+				"message7": "Please enter a valid password.",
+				"message8": "Password can be min 3 to max 30 character long.",
+				"message9": "Please enter a valid confirm password."
+			},
+			"fields": {
+				"address": "Address",
+				"assigned_to": "Assigned To",
+				"confirm_password": "Confirm Password",
+				"country": "Country",
+				"csv_file": "Select user CSV file",
+				"customize_permission": "Customize Permission",
+				"departments_roles": "Departments / Roles",
+				"dob": "Date of Birth",
+				"email": "Email",
+				"employment_ID": "Employment ID",
+				"everyone": "Everyone",
+				"father_name": "Father's Name",
+				"first_name": "First Name",
+				"gender": "Gender",
+				"is_departmenthead": "Is he/she Department head?",
+				"joining_date": "Joining Date",
+				"language": "Language",
+				"last_name": "Last Name",
+				"marital_status": "Marital Status",
+				"mobile": "Mobile",
+				"mother_name": "Mother's Name",
+				"new_password": "New Password",
+				"old_password": "Old Password",
+				"password": "Password",
+				"phone": "Phone",
+				"primary_manager": "Primary Manager",
+				"profile_photo": "Profile Photo",
+				"secondary_manager": "Secondary Manager",
+				"select_users": "Select Users",
+				"skype": "Skype",
+				"userid": "User ID",
+				"username": "Username"
+			},
+			"placeholders": {
+				"placeholder1": "Enter First Name",
+				"placeholder10": "-- Select Language --",
+				"placeholder11": "Enter Old Password",
+				"placeholder12": "-- Select Primary Manager --",
+				"placeholder13": "-- Select Secondary Manager --",
+				"placeholder14": "Enter Address",
+				"placeholder2": "Enter Last Name",
+				"placeholder3": "Enter Email",
+				"placeholder4": "Enter Password",
+				"placeholder5": "Enter Confirm Password",
+				"placeholder6": "-- Select Departments/Roles --",
+				"placeholder7": "Enter Username",
+				"placeholder8": "Enter Skype",
+				"placeholder9": "-- Select Country --"
+			}
+		},
+		"gender_options": [
+			{
+				"label": "Male",
+				"value": "male"
+			},
+			{
+				"label": "Female",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "Personal Info",
+			"head2": "Requirements",
+			"head3": "About User",
+			"head4": "Contact Info"
+		},
+		"inline_edit": {
+			"address": "Address",
+			"country": "Country",
+			"dob": "Birth Date",
+			"father_name": "Father Name",
+			"first_name": "First Name",
+			"gender": "Gender",
+			"joining_date": "Joining Date",
+			"language": "Language",
+			"last_name": "Last Name",
+			"maritial_status": "Maritial Status",
+			"mobile": "Mobile",
+			"mother_name": "Mother Name",
+			"phone": "Phone",
+			"primary_manager": "Primary Manager",
+			"secondary_manager": "Secondary Manager",
+			"skype": "Skype",
+			"username": "Username",
+			"state": "State",
+			"city": "City",
+			"postal_code": "Postal Code"
+		},
+		"marital_status": [
+			{
+				"label": "Married",
+				"value": "married"
+			},
+			{
+				"label": "Unmarried",
+				"value": "unmarried"
+			},
+			{
+				"label": "Widowed",
+				"value": "widowed"
+			},
+			{
+				"label": "Divorced",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "Avatar changed successfully.",
+			"create": "User created successfully.",
+			"delete": "User deleted successfully.",
+			"email_change": "Email change request send successfully. Please check your inbox and change your email.",
+			"import": "User imported successfully.",
+			"invite": "Invitation send successfully.",
+			"password_change": "Password change request send successfully. Please check your inbox and change your email.",
+			"status": "Status changed successfully.",
+			"update": "User updated successfully."
+		},
+		"profile": {
+			"activities": "Activities",
+			"articles": "Articles",
+			"comments": "Comments",
+			"defect_hours": "Defect Hours",
+			"defects": "Defects",
+			"incident_hours": "Incident Hours",
+			"incidents": "Incidents",
+			"leave_hours": "Leave Hours",
+			"leave_other_hours": "Leave/Other Hours",
+			"meeting_hours": "Meeting Hours",
+			"other_hours": "Other Hours",
+			"projects": "Projects",
+			"task_hours": "Task Hours",
+			"tasks": "Tasks",
+			"total_hours": "Total Hours",
+			"total_messages": "Total Messages"
+		},
+		"title": "Users",
+		"title1": "Create User",
+		"title2": "Update User",
+		"title3": "User Permissions",
+		"title4": "Change Email",
+		"title5": "Change Password",
+		"title6": "Import User",
+		"title7": "Change Avatar"
+	},
+	"timer_logs": {
+		"title": "Start Timer",
+		"title1": "Stop Timer",
+		"error_messages": {
+			"message1": "Cannot start timer because it is already running.",
+			"message2": "Time must be greater than 1 minutes.",
+			"message3": "Time must be less than 12 hours."
+		}
+	}
+}

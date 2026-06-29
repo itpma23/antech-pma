@@ -1,0 +1,41 @@
+mat-form-field {
+  width: 100%;
+}
+/* Styling swal DPA custom */
+.swal-popup-dpa {
+  font-size: 1.05rem !important;
+  border-radius: 10px !important;
+  padding: 1.6em !important;
+}
+
+.swal-title-dpa {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #333 !important;
+}
+
+.swal-confirm-dpa {
+  background-color: #007bff !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 0.95rem !important;
+  padding: 8px 20px !important;
+  margin: 0 4px !important;
+}
+
+.swal-confirm-dpa:hover {
+  background-color: #0069d9 !important;
+}
+
+.swal-cancel-dpa {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 0.95rem !important;
+  padding: 8px 20px !important;
+  margin: 0 4px !important;
+}
+
+.swal-cancel-dpa:hover {
+  background-color: #c82333 !important;
+}

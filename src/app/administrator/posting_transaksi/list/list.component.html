@@ -1,0 +1,70 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">event</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Posting Transaksi</h4>
+
+            <form [formGroup]="listForm" (ngSubmit)="onSubmit()">
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+              allowClear: false,width:'50%'}">
+                </l-select2>
+
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>dari Tanggal</mat-label>
+                  <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal_mulai">
+                </mat-form-field>
+
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>s/d Tanggal</mat-label>
+                  <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal_akhir">
+                </mat-form-field>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Modul</mat-label>
+                  <select matNativeControl required formControlName="modul">
+                    <!-- <option  disabled>Pilih</option> -->
+
+                    <option value="PANEN">BKM - PANEN</option>
+                    <option value="PEMELIHARAAN">BKM - PEMELIHARAAN</option>
+                    <option value="UMUM">BKM - ABSENSI UMUM</option>
+                    <option value="TRAKSI">BKM - TRAKSI</option>
+                    <option value="WORKSHOP">BKM - WORKSHOP</option>
+
+
+                  </select>
+                </mat-form-field>
+              </div>
+              <div class="form-group ">
+
+                &nbsp; &nbsp; <button type="submit" class="btn btn-primary btn-sm">Proses</button>
+              </div>
+
+            </form>
+
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

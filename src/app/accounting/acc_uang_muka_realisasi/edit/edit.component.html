@@ -1,0 +1,242 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Realisasi </h4>
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'90%' , disabled: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Jenis Pengajuan Dana</label>
+                <l-select2 [data]="dataSelectIsPermintaanDana" formControlName="is_permintaan_dana"
+                  [options]="{ placeholder: 'Pilih', allowClear: true, width:'90%', disabled: true}">
+                </l-select2>
+
+                <div *ngIf="isFormSubmitted && userControl.is_permintaan_dana.errors" class="invalid-feedback">
+                  <small class="text-danger" [hidden]="!userControl.is_permintaan_dana.errors.required">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group label-floating" *ngIf="entryForm.get('is_permintaan_dana').value?.id != 1">
+                <label class="control-label">No Uang Muka</label>
+
+                <l-select2 [data]="dataSelectUangMuka" formControlName="acc_uang_muka"
+                  [options]="{ width:'90%', disabled: true }">
+                </l-select2>
+              </div>
+
+
+              <div class="form-group label-floating" *ngIf="entryForm.get('is_permintaan_dana').value?.id == 1">
+                <label class="control-label">No Permintaan Dana</label>
+
+                <l-select2 [data]="dataSelectPermintaanDana" formControlName="acc_permintaan_dana"
+                  [options]="{ width:'90%', disabled: true }">
+                </l-select2>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Transaksi</mat-label>
+                  <input matInput required formControlName="no_transaksi" readonly>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_transaksi.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Tanggal</label>
+                <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                  formControlName="tanggal">
+                <div class="form-control-position"><i class="ft-calendar"></i></div>
+                <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Akun Kas Bank</label>
+                <l-select2 [data]="dataSelectAkunKasbank" formControlName="acc_akun_kasbank" [options]="{ placeholder: 'Pilih',
+              allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.acc_akun_kasbank.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.acc_akun_kasbank.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Keterangan</mat-label>
+                  <textarea matInput required formControlName="keterangan"></textarea>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.keterangan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.keterangan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+
+            <div class="card-content">
+              <div class="form-group label-floating col-md-12">
+                <label class="control-label col-md-6">{{ entryForm.get('is_permintaan_dana').value?.id == 1 
+      ? 'Akun Permintaan Dana' 
+      : 'Akun Uang Muka' }}</label>
+                <l-select2 [data]="dataSelectAkunUangMuka" formControlName="acc_akun_uang_muka" [options]="{ placeholder: 'Pilih',
+               allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.acc_akun_uang_muka.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.acc_akun_uang_muka.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>
+                    {{ entryForm.get('is_permintaan_dana').value?.id == 1 
+      ? 'Nilai Permintaan Dana' 
+      : 'Nilai Uang Muka' }}
+                  </mat-label>
+
+                  <input matInput required formControlName="nilai_uang_muka" (change)="valueChange($event)" readonly>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nilai_uang_muka.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nilai_uang_muka.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nilai Realisasi</mat-label>
+                  <input matInput required formControlName="nilai_realisasi" (change)="valueChange($event)" readonly>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nilai_realisasi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nilai_realisasi.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Selisih</mat-label>
+                  <input matInput required formControlName="selisih" readonly>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.selisih.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.selisih.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-tabs" data-background-color="rose">
+              <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                  <!-- <span class="nav-tabs-title">Tasks:</span> -->
+                  <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active">
+                      <a href="#" data-toggle="tab">
+                        <i class="material-icons">list</i> Detail Realisasi
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div formArrayName="details">
+              <fieldset class="container-fluid shift_content" [formGroupName]="i"
+                *ngFor="let blok of details.controls; let i=index; let odd=odd;">
+
+                <legend>
+                  <span class="label label-info">{{i+1}}</span>
+                  <button type="button" (keydown.enter)="$event.preventDefault()" (click)="removeBlokItem(blok)"
+                    onclick="event.preventDefault()" class="btn btn-danger btn-round btn-fab btn-fab-mini">
+                    <i class="material-icons">close</i>
+                  </button>
+                </legend>
+
+                <div class="form-group ">
+                  <div class="xform-group col-md-6">
+                    <label class="control-label">Lokasi</label>
+                    <l-select2 [data]="dataSelectLokasiDetail" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                    allowClear: true}">
+                    </l-select2>
+                  </div>
+                  <div class="xform-group col-md-6">
+                    <label class="control-label">Akun</label>
+                    <l-select2 [data]="dataSelectAkun" formControlName="acc_akun_id" [options]="{ placeholder: 'Pilih',
+                    allowClear: true}">
+                    </l-select2>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <mat-form-field>
+                      <mat-label>Debet</mat-label>
+                      <input matInput formControlName="debet" (change)="formatNumbering(blok)">
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <mat-form-field>
+                      <mat-label>Kredit</mat-label>
+                      <input matInput formControlName="kredit" (change)="formatNumbering(blok)">
+                    </mat-form-field>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <mat-form-field>
+                      <mat-label>Keterangan</mat-label>
+                      <input matInput formControlName="ket" type="text">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </fieldset>
+              <br>
+              <button type="button" (click)="addBlokItem()" class="btn btn-info btn-round btn-fab btn-fab-mini">
+                <i class="material-icons">add</i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+
+          <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

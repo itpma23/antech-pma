@@ -1,0 +1,219 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Karyawan</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-info nav-stacked" role="tablist">
+                  <!--
+                  color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+              -->
+                  <!-- <li class="active"> -->
+
+                  <li class="active">
+                    <a href="#laporan_karyawan" role="tab" data-toggle="tab">
+                      <i class="material-icons">person</i>Laporan Karyawan
+                    </a>
+                  </li>
+                  <!-- <li class="">
+                    <a href="#absensi" role="tab" data-toggle="tab">
+                      <i class="material-icons">business</i>Laporan Absensi
+                    </a>
+                  </li>
+                 <li>
+                    <a href="#lembur" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance_wallet</i>Laporan Lembur
+                    </a>
+                  </li> -->
+                  <!--  <li>
+                    <a href="#kasbank" role="tab" data-toggle="tab">
+                      <i class="material-icons">business</i>Transaksi Kas Bank
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#kasbank_saldo" role="tab" data-toggle="tab">
+                      <i class="material-icons">local_atm</i>Saldo Kas Bank
+                    </a>
+                  </li> -->
+
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <div class="tab-content">
+
+
+
+                  <div class="tab-pane  active" id="laporan_karyawan">
+                    <form [formGroup]="karyawanForm" (ngSubmit)="reportKaryawan()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Laporan Karyawan </h4>
+                        </div>
+                        <div class="card-content">
+                          <!-- <label id="example-radio-group-label">Jenis</label>
+                          <mat-radio-group formControlName="jenis" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="0">Rekap </mat-radio-button>
+                            <mat-radio-button value="1">Slip</mat-radio-button>
+                          </mat-radio-group> -->
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Sub Bagian(Afdeling/Stasiun/Div)</label>
+                            <l-select2 [data]="dataSelectSubBagian" formControlName="sub_bagian" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+
+                          </div>
+                          <br>
+                          <label id="example-radio-group-label">Status</label>
+                          <mat-radio-group formControlName="status" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="aktif">Aktif </mat-radio-button>
+                            <mat-radio-button value="no_aktif">Non Aktif</mat-radio-button>
+
+                          </mat-radio-group>
+                          <br>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane " id="absensi">
+                    <form [formGroup]="absensiForm" (ngSubmit)="reportAbsensi()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Absensi </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Karyawan</label>
+
+                            <l-select2 [data]="dataSelectKaryawanAbsensi" formControlName="karyawanAbsensi" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormAbsensiSubmitted && absensiForm.controls['karyawanAbsensi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!absensiForm.controls['karyawanAbsensi'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane " id="lembur">
+                    <form [formGroup]="lemburForm" (ngSubmit)="reportLembur()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Lembur </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Karyawan</label>
+
+                            <l-select2 [data]="dataSelectKaryawanLembur" formControlName="karyawanLembur" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormLemburSubmitted && lemburForm.controls['karyawanLembur'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!lemburForm.controls['karyawanLembur'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

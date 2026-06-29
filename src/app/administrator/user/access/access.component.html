@@ -1,0 +1,156 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+
+            <div class="card-content">
+              <br>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group label-floating">
+                    <label class="control-label">Copy Dari User:</label>
+                    <l-select2 [data]="dataSelectUserCopy" formControlName="user_copy" [options]="{ placeholder: 'Pilih',
+                allowClear:false}">
+                    </l-select2>
+                    <!-- <div *ngIf="isFormSubmitted && userControl.mandor_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.mandor_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                  </div>
+                </div>
+                <button type="button" class="btn btn-fill btn-warning" onclick="event.preventDefault()"
+                  (click)="copyAccess()">Copy</button>
+              </div>
+              <h4 class="card-title">User: {{user.user_full_name}}</h4>
+              <!-- <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput formControlName="user_name" required>
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.user_name.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.user_name.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+                <small [hidden]="!userControl.user_name.errors.minlength" class="text-danger">
+                  Minimal karakter 3 digit!
+                </small>
+              </div>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Full Name</mat-label>
+                  <input matInput formControlName="user_full_name" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.user_full_name.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.user_full_name.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+              <div class="nav-container">
+                <ul class="">
+
+                  <li routerLinkActive="active" *ngFor="let menu of menuData">
+                    <input type="checkbox" [(ngModel)]="menu['selected']" (change)="changeSelected();"
+                      [ngModelOptions]="{standalone: true}">
+                    <a data-toggle="collapse" href="#{{menu.id}}-menu">
+                      {{menu.text}}
+                      <b class="caret"></b>
+                    </a>
+
+                    <div class="collapse" id="{{menu.id}}-menu">
+
+                      <ul class="">
+                        <li routerLinkActive="active" *ngFor="let submenu of menu.children">
+                          <input type="checkbox" [(ngModel)]="submenu['selected']"
+                            [ngModelOptions]="{standalone: true}">
+                          <a *ngIf="(!submenu.hasOwnProperty('children') || submenu.children.length <= 0)">
+                            <span class="sidebar-normal">&nbsp;&nbsp;{{submenu.text}}</span>
+                          </a>
+                          &nbsp; &nbsp; &nbsp; &nbsp;
+                          <input type="checkbox" [(ngModel)]="submenu['new_']" (change)="changeSelected();"
+                            [ngModelOptions]="{standalone: true}" *ngIf="(submenu.is_child == '1')">{{(submenu.is_child
+                          == '1')?'New':''}}
+                          <input type="checkbox" [(ngModel)]="submenu['edit_']" (change)="changeSelected();"
+                            [ngModelOptions]="{standalone: true}" *ngIf="(submenu.is_child == '1')">{{(submenu.is_child
+                          == '1')?'Edit':''}}
+                          <input type="checkbox" [(ngModel)]="submenu['delete_']" (change)="changeSelected();"
+                            [ngModelOptions]="{standalone: true} " *ngIf="(submenu.is_child == '1')">{{(submenu.is_child
+                          == '1')?'Delete':''}}
+                          <input type="checkbox" [(ngModel)]="submenu['print_']" (change)="changeSelected();"
+                            [ngModelOptions]="{standalone: true}" *ngIf="(submenu.is_child == '1')">{{(submenu.is_child
+                          == '1')?'Print':''}}
+                          <input type="checkbox" [(ngModel)]="submenu['posting_']" (change)="changeSelected();"
+                            [ngModelOptions]="{standalone: true}" *ngIf="(submenu.is_child == '1')">{{(submenu.is_child
+                          == '1')?'Posting':''}}
+                          <a data-toggle="collapse" href="#{{submenu.id}}-menu"
+                            *ngIf="(submenu.hasOwnProperty('children') && submenu.children.length > 0)">
+                            &nbsp;&nbsp;{{submenu.text}}
+                            <b class="caret"></b>
+                          </a>
+                          <div class="collapse" id={{submenu.id}}-menu
+                            *ngIf="(submenu.hasOwnProperty('children') && submenu.children.length > 0)">
+                            <ul class="">
+                              <li routerLinkActive="active" *ngFor="let submenu2 of submenu.children">
+                                <input type="checkbox" [(ngModel)]="submenu2['selected']" (change)="changeSelected();"
+                                  [ngModelOptions]="{standalone: true}">
+                                <a *ngIf="(!submenu2.hasOwnProperty('children') || submenu2.children.length <= 0)">
+                                  <span class="sidebar-normal">&nbsp;&nbsp;{{submenu2.text}}</span>
+
+                                </a>
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <input type="checkbox" [(ngModel)]="submenu2['new_']" (change)="changeSelected();"
+                                  [ngModelOptions]="{standalone: true}"
+                                  *ngIf="(submenu2.is_child == '1')">{{(submenu2.is_child == '1')?'New':''}}
+                                <input type="checkbox" [(ngModel)]="submenu2['edit_']" (change)="changeSelected();"
+                                  [ngModelOptions]="{standalone: true}"
+                                  *ngIf="(submenu2.is_child == '1')">{{(submenu2.is_child == '1')?'Edit':''}}
+                                <input type="checkbox" [(ngModel)]="submenu2['delete_']" (change)="changeSelected();"
+                                  [ngModelOptions]="{standalone: true} "
+                                  *ngIf="(submenu2.is_child == '1')">{{(submenu2.is_child == '1')?'Delete':''}}
+                                <input type="checkbox" [(ngModel)]="submenu2['print_']" (change)="changeSelected();"
+                                  [ngModelOptions]="{standalone: true}"
+                                  *ngIf="(submenu2.is_child == '1')">{{(submenu2.is_child == '1')?'Print':''}}
+                                <input type="checkbox" [(ngModel)]="submenu2['posting_']" (change)="changeSelected();"
+                                  [ngModelOptions]="{standalone: true}"
+                                  *ngIf="(submenu2.is_child == '1')">{{(submenu2.is_child == '1')?'Posting':''}}
+                                <a data-toggle="collapse" href="#{{submenu2.id}}"
+                                  *ngIf="(submenu2.hasOwnProperty('children') && submenu2.children.length > 0)">
+                                  &nbsp;&nbsp;{{submenu2.text}}
+                                  <b class="caret"></b>
+
+                                </a>
+                                <div class="collapse" id={{submenu2.id}}
+                                  *ngIf="(submenu2.hasOwnProperty('children') && submenu2.children.length > 0)">
+
+                                </div>
+                              </li>
+                            </ul>
+
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

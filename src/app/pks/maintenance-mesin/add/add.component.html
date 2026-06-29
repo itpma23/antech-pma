@@ -1,0 +1,81 @@
+<div class="main-content" >
+  <div class="container-fluid"  >
+    <div class="row" >
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Maintenance Mesin</h4>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Mesin</label>
+                <l-select2 [data]="dataSelectMesin" formControlName="mesin_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.mesin_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.mesin_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Jenis Maintenance</label>
+                <l-select2 [data]="dataSelectJenis" formControlName="jenis_mesin_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.jenis_mesin_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jenis_mesin_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Start HM / KM</mat-label>
+                  <input matInput formControlName="hm_km" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.hm_km.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.hm_km.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>HM/KM Periode</mat-label>
+                  <input matInput formControlName="hm_km_maintenance" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.hm_km_maintenance.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.hm_km_maintenance.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Keterangan</mat-label>
+                  <input matInput formControlName="ket" required type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.ket.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.ket.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

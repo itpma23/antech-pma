@@ -1,0 +1,177 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Traksi</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-warning nav-stacked" role="tablist">
+
+
+
+                  <li class="active">
+                    <a href="#laporan_rincian_kegiatan" role="tab" data-toggle="tab">
+                      <i class="material-icons">list</i> Log Kendaraan/Alat Beraat/Mesin
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#laporan_rincian_frestasi" role="tab" data-toggle="tab">
+                      <i class="material-icons">list</i> Tenaga Kerja
+                    </a>
+                  </li>
+
+
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="tab-content">
+
+
+
+
+                  <div class="tab-pane active" id="laporan_rincian_kegiatan">
+                    <!-- <form [formGroup]="penerimaanTbsRincianExtForm" (ngSubmit)="reportPenerimaanTbsRincianExt()"> -->
+                    <form [formGroup]="laporanRincianKegiatan">
+
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Rincian Kegiatan</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectOrganisasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'60%'}">
+                            </l-select2>
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Traksi</label>
+                            <l-select2 [data]="dataSelectTraksi" formControlName="traksi_id" [options]="{ placeholder: 'Pilih',
+                          allowClear:false,width:'60%'}" >
+                            </l-select2>
+                            <!-- <div *ngIf="isFormSubmitted && userControl.traksi_id.errors" class="invalid-feedback">
+                              <small [hidden]="!userControl.traksi_id.errors.required " class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div> -->
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Kendaraan/Alat Berat/Mesin</label>
+                            <l-select2 [data]="dataSelectKendaraan" formControlName="kendaraan_id" [options]="{ placeholder: 'Semua',
+                          allowClear:true,width:'60%'}">
+                            </l-select2>
+                            <!-- <div *ngIf="isFormSubmitted && userControl.kendaraan_id.errors" class="invalid-feedback">
+                              <small [hidden]="!userControl.kendaraan_id.errors.required " class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div> -->
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+                          </div>
+                          <mat-radio-group formControlName="jenis" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="detail">Detail </mat-radio-button>
+                            <mat-radio-button value="by_tanggal">By Tanggal</mat-radio-button>
+
+                          </mat-radio-group>
+
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                          <div class="form-group">
+                            <button class="btn btn-primary btn-sm btn-rose"
+                              (click)="reportKegiatanRincian('')">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+
+
+
+
+                  <div class="tab-pane" id="laporan_rincian_frestasi">
+                    <!-- <form [formGroup]="penerimaanTbsRincianExtForm" (ngSubmit)="reportPenerimaanTbsRincianExt()"> -->
+                    <form [formGroup]="laporanRincianFrestasi">
+
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Rincian Tenaga Kerja</h4>
+                        </div>
+                        <div class="card-content">
+                         <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectOrganisasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+                          </div>
+
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                          <div class="form-group">
+                            <button class="btn btn-primary btn-sm btn-rose"
+                              (click)="reportFrestasiRincian('')">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+mat-form-field {
+  width: 90%;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+.example-radio-button {
+  margin: 5px;
+}
+
+.shift_content {
+  border: 1px solid #5bc0de;
+  margin-bottom: 15px;
+}
+.shift_content>legend {
+  text-align: right;
+  color: #5bc0de;
+  display: inline;
+  width: auto;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  z-index: 1051; /* biar di atas modal content */
+}
+
+.close-btn:hover {
+  color: #000;
+}
+.card {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important; /* opsional kalau mau benar2 polos */
+}
+.modal-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e91e63; /* rose */
+  color: #fff;
+  font-weight: normal;       /* <-- bukan bold lagi */
+  font-size: 14px;
+  padding: 12px 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 0;                 /* hilangkan margin bawaan */
+  width: 100%;               /* pastikan full lebar */
+}
+
+
+.close-btn-header {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.close-btn-header:hover {
+  opacity: 1;
+}
+
+
+/* default (desktop) tetap gaya original Bootstrap */
+.nav-center ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* bisa wrap di layar lebar */
+}
+
+/* kalau layar <= 768px, ubah jadi scroll horizontal */
+@media (max-width: 768px) {
+  .nav-center {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-center ul {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-center li {
+    flex: 0 0 auto;
+  }
+}

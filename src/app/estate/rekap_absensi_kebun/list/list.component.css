@@ -1,0 +1,31 @@
+.myClass {
+  width: 50%;
+}
+.isiContent{
+  overflow: auto;
+}
+.isiContentTable td {
+  padding: 5px;
+}
+
+/* Untuk header tetap di atas saat scroll */
+#content_data table thead th {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 2;
+}
+
+
+/* Opsional: rapikan tampilan */
+#content_data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#content_data table th,
+#content_data table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+

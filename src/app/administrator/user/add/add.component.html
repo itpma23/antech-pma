@@ -1,0 +1,107 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">User</h4>
+              <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput formControlName="user_name" required>
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.user_name.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.user_name.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+                <small [hidden]="!userControl.user_name.errors.minlength" class="text-danger">
+                  Minimal karakter 3 digit!
+                </small>
+              </div>
+
+              <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="user_password" required type="password">
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.user_password.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.user_password.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+                <small [hidden]="!userControl.user_password.errors.mustMatch" class="text-danger">
+                  Password dan ulang password tidak sama!
+                </small>
+                <small [hidden]="!userControl.user_password.errors.minlength" class="text-danger">
+                  Minimal karakter 3 digit!
+                </small>
+              </div>
+
+
+              <mat-form-field>
+                <mat-label>Ulang Password</mat-label>
+                <input matInput formControlName="re_password" required type="password">
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.re_password.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.re_password.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+                <small [hidden]="!userControl.re_password.errors.mustMatch" class="text-danger">
+                  Password dan ulang password tidak sama!
+                </small>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Full Name</mat-label>
+                  <input matInput formControlName="user_full_name" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.user_full_name.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.user_full_name.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Email</mat-label>
+                  <input matInput formControlName="user_email">
+                </mat-form-field>
+                <!-- <div *ngIf="isFormSubmitted && userControl.email.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.email.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+              </div>
+
+              <label id="example-radio-group-label">Status</label>
+              <mat-radio-group formControlName="status" aria-labelledby="example-radio-group-label"
+                class="example-radio-group">
+                <mat-radio-button value="1">Aktif </mat-radio-button>
+                <mat-radio-button value="0">Non Aktif</mat-radio-button>
+
+              </mat-radio-group>
+              <div class="form-group label-floating">
+                <label class="control-label">Karyawan</label>
+
+                <l-select2 [data]="dataSelectKaryawan" formControlName="employee_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.employee_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.employee_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

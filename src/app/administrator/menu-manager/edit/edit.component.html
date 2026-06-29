@@ -1,0 +1,100 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">list</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Menu</h4>
+            <div class="form-group label-floating" *ngIf="menu.parent_id != null">
+              <label class="control-label">Parent</label>
+
+              <l-select2 [data]="dataSelectMenu" [options]="{ placeholder: 'None',
+              allowClear: true,width:'90%'}" formControlName="parent_id">
+              </l-select2>
+              <!-- <div *ngIf="isFormSubmitted && userControl.parent_id.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.parent_id.errors.required && userControl.parent_id.value.text!='Pilih'"
+                  class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div> -->
+            </div>
+            <label id="example-radio-group-label">Tipe</label>
+            <mat-radio-group formControlName="is_child" aria-labelledby="example-radio-group-label"
+              class="example-radio-group">
+              <mat-radio-button value="0">parent </mat-radio-button>
+              <mat-radio-button value="1">Child</mat-radio-button>
+
+            </mat-radio-group>
+            <div class="example-full-width ">
+              <mat-form-field>
+                <mat-label>Nama</mat-label>
+                <input matInput formControlName="name" required>
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.name.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.name.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div>
+            </div>
+            <div class="example-full-width ">
+              <mat-form-field>
+                <mat-label>Text</mat-label>
+                <input matInput formControlName="text" required>
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.text.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.text.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div>
+            </div>
+            <div class="example-full-width ">
+              <mat-form-field>
+                <mat-label>Url</mat-label>
+                <input matInput formControlName="url" >
+              </mat-form-field>
+              <!-- <div *ngIf="isFormSubmitted && userControl.url.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.url.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div> -->
+            </div>
+
+            <div class="example-full-width ">
+              <mat-form-field>
+                <mat-label>Icon</mat-label>
+                <input matInput formControlName="icon" >
+              </mat-form-field>
+              <!-- <div *ngIf="isFormSubmitted && userControl.icon.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.icon.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div> -->
+            </div>
+            <div class="example-full-width ">
+              <mat-form-field>
+                <mat-label>Sort Order</mat-label>
+                <input matInput formControlName="sort_order" type="number" required>
+              </mat-form-field>
+              <div *ngIf="isFormSubmitted && userControl.sort_order.errors" class="invalid-feedback">
+                <small [hidden]="!userControl.sort_order.errors.required" class="text-danger">
+                  Tidak boleh kosong!
+                </small>
+              </div>
+            </div>
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+            <!-- </form> -->
+          </div>
+        </div>
+      </div>
+
+    </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Permintaan Barang</h4>
+
+            <div class="toolbar">
+
+
+              <div class="btn-group  " *ngIf="accessButton?.print_==true">
+                <button type="button" (click)="exportFiles('csv')"
+                  class="btn btn-round btn-info btn-sm btn-rose">csv</button>
+                <button type="button" (click)="exportFiles('xlsx')"
+                  class="btn btn-round btn-info btn-sm btn-rose">excel</button>
+                <!-- <button type="button" class="btn btn-round btn-info">3</button>  -->
+                <button type="button" (click)="exportFiles('pdf')"
+                  class="btn btn-round btn-info btn-sm btn-rose">pdf</button>
+              </div>
+              <button *ngIf="accessButton?.new_==true" type="button" (click)="add()"
+                class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">Tambah Permintaan</button>
+              <!-- <buton  type="button"(click)="add()" class="btn btn-primary btn-sm btn-pull-right">Tambah Pengajar</button> -->
+
+            </div>
+            <div class="">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+                <!-- <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="tables table-striped table-no-bordered table-hover" cellspacing="0"
+              width="90%" style="width:90%"> -->
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Lokasi</th>
+                    <th>Afd/Stasiun/Traksi</th>
+                    <th>Gudang</th>
+                    <th>NoTransaksi</th>
+                    <th>Tanggal</th>
+                    <th>Tipe</th>
+                    <th>Status</th>
+
+                    <th></th>
+                </thead>
+                <tbody *ngIf="invPermintaanBarang?.length != 0">
+                  <tr *ngFor="let p of invPermintaanBarang; index as i">
+
+                    <td>{{p.lokasi}}</td>
+                    <td *ngIf="p.tipe=='UNIT'">{{p.lokasi_afd}}</td>
+                    <td *ngIf="p.tipe!='UNIT'">{{p.lokasi_traksi}}</td>
+                    <td>{{p.gudang}}</td>
+                    <td>{{p.no_transaksi}}</td>
+                    <td>{{p.tanggal}}</td>
+                    <td>{{p.tipe}}</td>
+                    <td><span *ngIf="p.is_posting==1" class="label label-success">Sudah Posting</span>
+                      <span *ngIf="p.is_posting!=1" class="label label-danger">Belum Posting</span></td>
+
+
+                    <td style="width:10%" class="text-right">
+                      <a   href="#" onclick="event.preventDefault()" (click)="posting(p.id)"
+                      class="btn btn-simple btn-warning btn-icon" rel="tooltip" data-placement="bottom"
+                      title="Posting" *ngIf="p.is_posting!=1"><i class="material-icons">person</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon "><i class="material-icons">picture_as_pdf</i></a>
+
+                      <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                        *ngIf="accessButton?.edit_==true &&  p.is_posting!=1" class="btn btn-simple btn-warning btn-icon edit"><i
+                          class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                        *ngIf="accessButton?.delete_==true &&  p.is_posting!=1" class="btn btn-simple btn-danger btn-icon remove"><i
+                          class="material-icons">close</i></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="invPermintaanBarang?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

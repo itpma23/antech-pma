@@ -1,0 +1,280 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Blok</h4>
+              <div class="form-group label-floating">
+                <label class="control-label">organisasi</label>
+
+                <l-select2 [data]="dataSelectOrganisasi" disabled="disabled" formControlName="organisasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.organisasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.organisasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Tipe Blok</label>
+                <l-select2 [data]="dataSelectTipe" formControlName="tipe" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.tipe.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tipe.errors.required && userControl.tipe.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Klasifikasi Tanah</label>
+                <l-select2 [data]="dataSelectKlasifikasi" formControlName="klasifikasi" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.klasifikasi.errors" class="invalid-feedback">
+                  <small
+                    [hidden]="!userControl.klasifikasi.errors.required && userControl.klasifikasi.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Topografi</label>
+                <l-select2 [data]="dataSelectTopografi" formControlName="topografi" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.topografi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.topografi.errors.required && userControl.topografi.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Jumlah Pokok</mat-label>
+                  <input matInput formControlName="jumlahpokok" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.jumlahpokok.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jumlahpokok.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tahun Tanam</mat-label>
+                  <input matInput formControlName="tahuntanam" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tahuntanam.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tahuntanam.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Area Produktif</mat-label>
+                  <input matInput formControlName="areaproduktif" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.areaproduktif.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.areaproduktif.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Area Non Produktif</mat-label>
+                  <input matInput formControlName="areanonproduktif" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.areanonproduktif.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.areanonproduktif.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <!-- 🚨 WAJIB -->
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Kelas Pohon</mat-label>
+                  <input matInput formControlName="kelaspohon" required type="text">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.kelaspohon?.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.kelaspohon?.errors?.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Tahun Mulai Panen</mat-label>
+                  <input matInput formControlName="tahunmulaipanen" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Bulan Mulai Panen</mat-label>
+                  <input matInput formControlName="bulanmulaipanen" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Kode Tanah</mat-label>
+                  <input matInput formControlName="kodetanah" type="text">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Tanggal Transaksi</mat-label>
+                  <input matInput formControlName="tanggaltransaksi" type="date">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Tanggal Pengakuan</mat-label>
+                  <input matInput formControlName="tanggalpengakuan" type="date">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Basis Kg</mat-label>
+                  <input matInput formControlName="basiskg" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Periode TM</mat-label>
+                  <input matInput formControlName="periodetm" type="text" maxlength="7" placeholder="YYYY-MM">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Cadangan</mat-label>
+                  <input matInput formControlName="cadangan" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Okupasi</mat-label>
+                  <input matInput formControlName="okupasi" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Rendahan</mat-label>
+                  <input matInput formControlName="rendahan" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Sungai</mat-label>
+                  <input matInput formControlName="sungai" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Rumah</mat-label>
+                  <input matInput formControlName="rumah" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Kantor</mat-label>
+                  <input matInput formControlName="kantor" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Pabrik</mat-label>
+                  <input matInput formControlName="pabrik" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Jalan</mat-label>
+                  <input matInput formControlName="jalan" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Kolam</mat-label>
+                  <input matInput formControlName="kolam" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>Umum</mat-label>
+                  <input matInput formControlName="umum" type="number">
+                </mat-form-field>
+              </div>
+
+              <div class="example-full-width">
+                <mat-form-field>
+                  <mat-label>LC</mat-label>
+                  <input matInput formControlName="lc" type="number">
+                </mat-form-field>
+              </div>
+
+
+
+              <!-- <label id="example-radio-group-label">Inti/Plasma</label> -->
+              <mat-radio-group formControlName="intiplasma" aria-labelledby="example-radio-group-label"
+                class="example-radio-group">
+                <mat-radio-button value="I">Inti </mat-radio-button>
+                <mat-radio-button value="P">Plasma</mat-radio-button>
+
+              </mat-radio-group>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Bibit</label>
+                <l-select2 [data]="dataSelectBibit" formControlName="bibit" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.bibit.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.bibit.errors.required && userControl.bibit.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

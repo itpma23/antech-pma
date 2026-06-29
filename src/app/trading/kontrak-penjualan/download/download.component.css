@@ -1,0 +1,160 @@
+.max-width-container {
+  max-width: 850px;
+}
+
+/* Header UI (Warna pink/magenta mengikuti gambar) */
+.icon-box-primary {
+  background-color: #e91e63;
+  color: white;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.upload-header .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.upload-header .subtitle {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+/* Pembungkus Konten Flat */
+.form-container-box {
+  background: #fdfdfd;
+  border: 1px solid #f1f2f6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.form-label-custom {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  margin-bottom: 0;
+}
+
+.form-desc-custom {
+  font-size: 0.88rem;
+  color: #95a5a6;
+}
+
+/* Tombol Download Outline Modern */
+.btn-outline-primary-custom {
+  color: #0d6efd;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary-custom:hover {
+  background-color: #f8f9fa;
+  border-color: #0d6efd;
+  color: #0b5ed7;
+}
+
+/* Status Badge di Pojok Kanan Atas (Sesuai Gambar 3) */
+.status-badge-custom {
+  background-color: #fce4e4;
+  color: #e74c3c;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-badge-custom i {
+  font-size: 14px !important;
+}
+
+/* Area Input File Custom Bergaris Putus-Putus (Dashed) */
+.file-drop-zone {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.file-hidden-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-zone-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 8px;
+  z-index: 1;
+}
+
+.btn-choose-file {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #333;
+  padding: 3px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-right: 12px;
+}
+
+.file-name-placeholder {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Tombol Footer Utama */
+.btn-danger-custom {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 28px;
+}
+
+.btn-danger-custom:hover {
+  background-color: #7f8c8d;
+}
+
+.btn-primary-custom {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  font-size: 0.88rem;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 10px 28px;
+}
+
+.btn-primary-custom:hover {
+  background-color: #c2185b;
+}

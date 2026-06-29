@@ -1,0 +1,156 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+
+          <div class="toolbar">
+            <button type="button" (click)="kembali();" class="btn btn-primary btn-info btn-sm ">
+              Kembali</button>
+          </div>
+
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">SPK</h4>
+              <dl class="dl-horizontal">
+                <dt>Lokasi</dt>
+                <dd>{{ EstSpk?.lokasi }}</dd>
+                <dt>Supplier</dt>
+                <dd>{{ EstSpk?.supplier }}</dd>
+                <dt>No Spk</dt>
+                <dd>{{ EstSpk?.no_spk }}</dd>
+                <dt>Tanggal</dt>
+                <dd>{{ EstSpk?.tanggal }}</dd>
+                <dt>Estimasi</dt>
+                <dd>{{ EstSpk?.estimasi }}</dd>
+                <dt>Tanggal Mulai</dt>
+                <dd>{{ EstSpk?.tgl_mulai }}</dd>
+                <dt>Tanggal Akhir</dt>
+                <dd>{{ EstSpk?.tgl_akhir }}</dd>
+              </dl>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+
+
+        <h4>Daftar Rincian SPK</h4>
+        <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>Blok</th>
+              <th>Kegiatan</th>
+              <th>Satuan</th>
+              <th>Hari Kerja</th>
+              <th>Volume</th>
+              <th>Harga</th>
+              <th>Total</th>
+
+            </tr>
+          </thead>
+          <tbody *ngFor="let x of EstSpk?.detail; let i=index; let odd=odd;">
+            <!-- <tbody [formGroupName]="i" *ngFor="let x of details.controls; let i=index; let odd=odd;"> -->
+            <tr>
+              <!-- <td><input type="text" formControlName="blok" class="form-control" readonly></td>
+            <td><textarea type="text" formControlName="kegiatan" class="form-control" readonly></textarea></td>
+            <td><input type="text" formControlName="satuan" class="form-control" readonly></td>
+            <td><input type="number" formControlName="hk" class="form-control" readonly></td>
+            <td><input type="number" formControlName="volume" class="form-control" readonly></td>
+            <td><input type="number" formControlName="total" class="form-control" readonly></td>
+            <td><input type="number" formControlName="harga" class="form-control" readonly></td> -->
+              <td>{{ x.blok }}</td>
+              <td>{{ x.kegiatan }}</td>
+              <td>{{ x.satuan }}</td>
+              <td>{{ x.hk }}</td>
+              <td>{{ x.volume | number:'1.2-2' : 'en_US' }}</td>
+              <td>{{ x.harga | number:'1.2-2' : 'en_US'}}</td>
+              <td>{{ x.total | number:'1.2-2' : 'en_US'}}</td>
+
+
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="6">
+                <div class="panel panel-default" style="width: 95%;">
+                  <div class="panel-heading " role="tab" id={{awalanHeading}}{{i}} style="width: 500px;">
+                    <a role="button" data-toggle="collapse" href="#{{awalanCollapse}}{{i}}" aria-expanded="false"
+                      aria-controls="collapseExample" class="collapsed">
+                      <h4 class="panel-title ">
+                        Realisasi
+                        <i class="material-icons">keyboard_arrow_down</i>
+                      </h4>
+                    </a>
+                  </div>
+
+
+                  <div id={{awalanCollapse}}{{i}} class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+
+                      <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                        width="100%">
+                        <thead>
+                          <tr>
+                            <th>Keterangan</th>
+                            <th>Tanggal</th>
+                            <!-- <th>Satuan</th> -->
+                            <th>Hari Kerja</th>
+                            <th>Volume</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                            <th></th>
+
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let bapp of x?.bapp; let ii=index; let odd=odd;">
+                          <tr>
+                            <td>{{ bapp.keterangan }}</td>
+                            <td>{{ bapp.tanggal }}</td>
+                            <!-- <td>{{ bapp.satuan }}</td> -->
+                            <td>{{ bapp.real_hk | number:'1.2-2' : 'en_US'}}</td>
+                            <td>{{ bapp.real_volume | number:'1.2-2' : 'en_US'}}</td>
+                            <td>{{ bapp.real_harga | number:'1.2-2' : 'en_US'}}</td>
+                            <td>{{ bapp.real_harga * bapp.real_volume | number:'1.2-2' : 'en_US' }}</td>
+                            <td>
+                              <a href="#" onclick="event.preventDefault()" (click)="posting(bapp.id)"
+                              class="btn btn-simple btn-warning btn-icon" rel="tooltip" data-placement="bottom"
+                              title="Posting" *ngIf="bapp.is_posting!=1"><i class="material-icons">person</i></a>
+                              <a href="#" onclick="event.preventDefault()"  *ngIf="bapp.is_posting!=1" (click)="edit(bapp.id,x)"
+                                class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                              <a href="#" onclick="event.preventDefault()"  *ngIf="bapp.is_posting!=1" (click)="delete(bapp.id)"
+                                 class="btn btn-simple btn-danger btn-icon remove"><i
+                                  class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                      <div class="col-md-12">
+                        <button type="button" (click)="addBapp(x)" class="btn btn-info btn-round btn-fab btn-fab-mini"
+                          rel="tooltip" data-placement="bottom" title="Tambah Realiasi">
+                          <i class="material-icons">add</i>
+                        </button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+      </form>
+    </div>
+  </div>
+</div>

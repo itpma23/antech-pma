@@ -1,0 +1,78 @@
+<div class="main-content upload-wrapper py-2">
+  <div class="container-fluid">
+    <div class="card upload-card shadow-sm mx-auto max-width-container">
+
+      <div class="upload-header d-flex align-items-center justify-content-between p-4 border-bottom">
+        <div class="d-flex align-items-center">
+          <div class="icon-box-primary me-3">
+            <i class="material-icons">gavel</i>
+          </div>
+          <div>
+            <h4 class="title mb-1">Penerbitan Dokumen Kontrak Trading</h4>
+            <p class="subtitle mb-0">Silakan unduh dokumen hasil inputan atau unggah kembali berkas jika ada revisi
+              klausa.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4">
+
+        <div class="form-container-box mb-4">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <label class="form-label-custom">Unduh Hasil Penerbitan Kontrak </label>
+          </div>
+          <p class="form-desc-custom mb-3">Download dokumen kontrak yang digenerate otomatis berdasarkan hasil input
+            data transaksi (.docx).</p>
+          <div>
+            <button type="button"
+              class="btn btn-outline-primary-custom px-4 py-2 fw-semibold d-inline-flex align-items-center"
+              (click)="downloadKontrakWord()">
+              <i class="material-icons me-2">description</i> UNDUH HASIL INPUTAN KONTRAK (.DOCX)
+            </button>
+          </div>
+        </div>
+
+        <div class="form-container-box mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <label class="form-label-custom">Unggah Penambahan Klausul Kontrak (Poin J)</label>
+            <span class="status-badge-custom" [ngClass]="{
+    'status-success': isUploaded,
+    'status-danger': !isUploaded
+  }">
+
+              <i class="material-icons">
+                {{ isUploaded ? 'check_circle' : 'cancel' }}
+              </i>
+
+              {{ isUploaded ? 'Sudah Upload' : 'Belum Upload' }}
+
+            </span>
+          </div>
+          <p class="form-desc-custom mb-3">Jika ada perubahan atau penyesuaian klausa secara manual, silakan unggah
+            kembali berkas terbaru Anda.</p>
+
+          <div class="file-drop-zone">
+            <input type="file" class="file-hidden-input" id="uploadWordContract" accept=".docx"
+              (change)="onWordFileSelected($event)">
+            <label for="uploadWordContract" class="file-zone-label">
+              <span class="btn-choose-file">Choose File</span>
+<span class="file-name-placeholder">
+  {{ selectedWordFile ? selectedWordFile.name : 'No file chosen' }}
+</span>            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="upload-footer p-3 bg-light border-top d-flex align-items-center justify-content-between">
+        <span class="text-muted small">Aksi simpan akan memperbarui status file master kontrak di dalam sistem.</span>
+        <div class="action-buttons d-flex gap-2">
+          <button type="button" class="btn btn-danger-custom px-4 py-2" (click)="onClose()">BATAL</button>
+          <button type="button" class="btn btn-primary-custom px-4 py-2" (click)="saveAllChanges()">SIMPAN DOKUMEN
+            KONTRAK</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+<div class="main-content" >
+  <div class="container-fluid"  >
+    <div class="row" >
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div> 
+            <div class="card-content">
+              <h4 class="card-title">Basis Lembur</h4>
+             
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Tipe Lembur</label>
+                <l-select2 [data]="dataSelectTipe" formControlName="tipe_lembur"
+                  [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.tipe_lembur.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tipe_lembur.errors.required && userControl.tipe_lembur.value.text!='Pilih'"
+                    class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Basis Jam Lembur</mat-label>
+                  <input matInput formControlName="basis_jam_lembur" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.basis_jam_lembur.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.basis_jam_lembur.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Jumlah Jam Lembur</mat-label>
+                  <input matInput formControlName="jumlah_jam_lembur" required type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.jumlah_jam_lembur.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.jumlah_jam_lembur.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+                        
+            </div>
+          </div>
+        </div>
+        
+        
+     
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<!-- <div #container class="editable-container editable-inline">
+	<div class="editable-label" [hidden]="isEditView">
+		<div [innerHTML]="fieldValue"></div>&nbsp;
+		<span (click)="showEditable()"><i *ngxPermissionsOnly="permission" class="fa fa-pencil" aria-hidden="true"></i></span>
+	</div>
+	<form #form="ngForm" *ngIf="isEditView" (ngSubmit)="save()" class="form-inline editableForm" novalidate="">
+		<label for="txtField" class="sr-only">{{name}}</label>
+		<div class="input-group">
+			<app-ngx-editor [name]="name" #txtField="ngModel" height="100px" id="txtField" minHeight="50px" [placeholder]="'shared.inline_edit.placeholders.placeholder1' | translate:{'elementFor':elementFor}" [spellcheck]="true" [(ngModel)]="value" [required]="isRequired" [ngClass]="{ 'is-invalid': txtField.hasError('required')}"></app-ngx-editor>
+			<button type="submit" class="btn btn-inline-submit" [disabled]="!form.valid"><i class="fa fa-check" aria-hidden="true"></i></button>
+			<button type="button" class="btn btn-inline-cancel" (click)="showDetail()"><i class="fa fa-times" aria-hidden="true"></i></button>
+		</div>
+		<div class="invalid-feedback">
+			<span *ngIf="txtField.hasError('required')">{{'shared.inline_edit.error_messages.message1' | translate:{'elementFor':elementFor | ucfirst} }}</span>
+		</div>
+	</form>
+</div> -->

@@ -1,0 +1,69 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">list</i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Upload Bukti Tramsaksi Realisasi/Bon</h4>
+
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="">
+
+            <div class="card-content">
+              <!-- <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nomor Quotation</mat-label>
+                  <input matInput formControlName="no_quotation" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_quotation.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_quotation.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+              <!-- <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nomor Referensi</mat-label>
+                  <input matInput formControlName="no_referensi" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_referensi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_referensi.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+              <!-- <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Catatan</mat-label>
+                  <input matInput formControlName="catatan" >
+                </mat-form-field>
+              </div> -->
+
+
+              <br>
+
+              <div class="control-group" >
+                <label class="control-label">File <span class="text-error">*</span></label>
+                <div class="controls">
+                    <input type="file" name="userfile" (change)="upload($event)">
+                    <div class="well well-small">Ekstensi yang diijinkan: <br>.doc, .zip, .rar, .txt, .docx, .xls, .xlsx, .pdf, .tar, .gz, .jpg, .jpeg, .JPG, .JPEG, .png, .ppt, .pptx</div>
+                    <!-- {{ (error_upload is not empty) ? error_upload|raw }} -->
+                </div>
+            </div>
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+              <!-- </form> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1179 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <button type="button" class="close-btn" data-dismiss="modal" (click)="onClose()">
+      <i class="material-icons">close</i>
+    </button>
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="card">
+          <div class="card-content">
+            <div class="nav-center">
+              <ul class="nav nav-pills nav-pills-warning nav-pills-icons" role="tablist">
+                <li class="active">
+                  <a href="#profile" role="tab" data-toggle="tab">
+                    <i class="material-icons">portrait</i> Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#keluarga" role="tab" data-toggle="tab">
+                    <i class="material-icons">people </i> Keluarga
+                  </a>
+
+                </li>
+                <li>
+
+                  <a href="#pendidikan" role="tab" data-toggle="tab">
+                    <i class="material-icons">school </i> Pendidikan
+                  </a>
+
+                </li>
+                <li>
+
+                  <a href="#keahlian" role="tab" data-toggle="tab">
+                    <i class="material-icons">description </i> Keahlian
+                  </a>
+
+                </li>
+                <li>
+
+                  <a href="#pengalaman" role="tab" data-toggle="tab">
+                    <i class="material-icons">work </i> Pengalaman
+                  </a>
+
+                </li>
+                <li>
+
+                  <a href="#pelatihan" role="tab" data-toggle="tab">
+                    <i class="material-icons">accessibility </i> Pelatihan
+                  </a>
+
+                </li>
+                <li>
+                  <a href="#bahasa" role="tab" data-toggle="tab">
+                    <i class="material-icons">language</i> Bahasa
+                  </a>
+                </li>
+                <li>
+                  <a href="#pangkat" role="tab" data-toggle="tab">
+                    <i class="material-icons">class</i> Kepangkatan
+                  </a>
+                </li>
+                <li>
+                  <a href="#jabatan" role="tab" data-toggle="tab">
+                    <i class="material-icons">collections</i> Jabatan
+                  </a>
+                </li>
+                <li>
+                  <a href="#penghargaan" role="tab" data-toggle="tab">
+                    <i class="material-icons">dashboard</i> Penghargaan
+                  </a>
+                </li>
+                <li>
+                  <a href="#hukuman" role="tab" data-toggle="tab">
+                    <i class="material-icons">filter</i> Hukuman
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content">
+
+          <div class="tab-pane active " id="profile">
+            <div class="card">
+              <div class="card-header " data-background-color="rose">
+                Profile
+              </div>
+              <div class="card-content">
+                <div class="col-md-6">
+                  <div class="card">
+
+                    <div class="card-content">
+                      <div class="form-group label-floating">
+                        <label class="control-label">Lokasi Tugas</label>
+                        <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_tugas_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: false}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.lokasi_tugas_id.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.lokasi_tugas_id.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Sub Bagian</label>
+                        <l-select2 [data]="dataSelectSubBagian" formControlName="sub_bagian_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: false}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.sub_bagian_id.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.sub_bagian_id.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Nip</mat-label>
+                          <input matInput formControlName="nip" required>
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.nip.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.nip.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Nama</mat-label>
+                          <input matInput formControlName="nama" required>
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.nama.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.nama.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+
+                      <label id="example-radio-group-label">Jenis Kelamin:</label>
+                      <mat-radio-group formControlName="jenis_kelamin" aria-labelledby="example-radio-group-label"
+                        class="example-radio-group">
+                        <mat-radio-button value="Laki-laki">Laki - laki</mat-radio-button>
+                        <mat-radio-button value="Perempuan">Perempuan</mat-radio-button>
+                      </mat-radio-group>
+                      <label id="example-radio-group-label">Status Pernikahan:</label>
+                      <mat-radio-group formControlName="status_pernikahan" aria-labelledby="example-radio-group-label"
+                        class="example-radio-group">
+                        <mat-radio-button value="Menikah">Menikah</mat-radio-button>
+                        <mat-radio-button value="Single">Tidak Menikah</mat-radio-button>
+                        <mat-radio-button value="Cerai">Cerai</mat-radio-button>
+
+                      </mat-radio-group>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Agama</label>
+                        <l-select2 [data]="dataSelectAgama" formControlName="agama" (valueChange)="valueChange($event)"
+                          [options]="{ placeholder: 'Pilih',
+                             allowClear: false,width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.agama.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.agama.errors.required && userControl.agama.value.text!='Pilih'"
+                            class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <mat-form-field>
+                        <mat-label>Golongan Darah</mat-label>
+                        <select style="width: '20%';" matNativeControl formControlName="golongan_darah">
+                          <!-- <option  disabled>Pilih</option> -->
+                          <option value="O" selected>O</option>
+                          <option value="A">A</option>
+                          <option value="B">B</option>
+                          <option value="AB">AB</option>
+                        </select>
+                      </mat-form-field>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Tempat Lahir</mat-label>
+                          <input matInput formControlName="tempat_lahir">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.tempat_lahir.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.tempat_lahir.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Tanggal Lahir</mat-label>
+                          <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                            class="form-control" formControlName="tgl_lahir" required>
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.tgl_lahir.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.tgl_lahir.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Alamat</mat-label>
+                          <input matInput formControlName="alamat">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.alamat.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.alamat.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Telp</mat-label>
+                          <input matInput formControlName="telp">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Email</mat-label>
+                          <input matInput formControlName="email">
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.email.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.email.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+
+
+
+                      <div class="form-group label-floating">
+                        <label class="control-label">Tipe/Status Karyawan</label>
+
+                        <l-select2 [data]="dataSelectTipe" formControlName="id_tipe_karyawan" [options]="{ placeholder: 'Pilih',
+                  allowClear: false,width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.id_tipe_karyawan.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.id_tipe_karyawan.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Jabatan</label>
+
+                        <l-select2 [data]="dataSelectJabatan" formControlName="id_jabatan" [options]="{ placeholder: 'Pilih',
+                  allowClear: false,width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.id_jabatan.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.id_jabatan.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Departemen</label>
+
+                        <l-select2 [data]="dataSelectDepartemen" formControlName="id_departemen" [options]="{ placeholder: 'Pilih',
+                  allowClear: false,width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.id_departemen.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.id_departemen.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Golongan</label>
+
+                        <l-select2 [data]="dataSelectGolongan" formControlName="id_golongan" [options]="{ placeholder: 'Pilih',
+                  allowClear: false,width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.id_golongan.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.id_golongan.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Pangkat</label>
+
+                        <l-select2 [data]="dataSelectPangkat" formControlName="id_pangkat" [options]="{ placeholder: 'Pilih',
+                  allowClear: false,width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.id_pangkat.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.id_pangkat.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+
+                      <div class="form-group label-floating" hidden>
+                        <label class="control-label">Role</label>
+
+                        <l-select2 [data]="dataSelectRole" formControlName="role_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,multiple:'true',width:'90%'}">
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && userControl.role_id.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.role_id.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+
+                      <div hidden>
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes" formControlName="is_admin"> Jadikan sebagai
+                          Admin
+                        </label>
+                      </div>
+                      <!-- </form> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 ">
+                  <br><br>
+                  <div class="card">
+                    <!-- <div class="card-header card-header-icon" data-background-color="rose">
+                <i class="material-icons">person</i>
+              </div> -->
+                    <div class="card-content">
+                      <!-- <h4 class="card-title"></h4> -->
+                      <!-- <mat-form-field>
+                  <mat-label>User Name</mat-label>
+                  <input matInput formControlName="username" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.username.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.username.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                  <small [hidden]="!userControl.username.errors.minlength" class="text-danger">
+                    Minimal karakter 3 digit!
+                  </small>
+                </div>
+
+
+
+                <mat-form-field>
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.password.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.password.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                  <small [hidden]="!userControl.password.errors.mustMatch" class="text-danger">
+                    Password dan ulang password tidak cocok!
+                  </small>
+                  <small [hidden]="!userControl.password.errors.minlength" class="text-danger">
+                    Minimal karakter 3 digit!
+                  </small>
+                </div>
+
+
+                <mat-form-field>
+                  <mat-label>Ulang Password</mat-label>
+                  <input matInput formControlName="re_password" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.re_password.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.re_password.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                  <small [hidden]="!userControl.re_password.errors.mustMatch" class="text-danger">
+                    Password dan ulang password tidak cocok!
+                  </small>
+                </div> -->
+
+
+                      <!-- <legend>Regular Image</legend> -->
+                      <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                        <div class="fileinput-new thumbnail">
+                          <img src="../../assets/img/image_placeholder.jpg" alt="...">
+                        </div>
+                        <div class="fileinput-preview fileinput-exists thumbnail"></div>
+                        <div>
+                          <span class="btn btn-rose btn-round btn-file">
+                            <span class="fileinput-new">Pilih photo</span>
+                            <span class="fileinput-exists">ubah</span>
+                            <input type="file" (change)="upload($event)" name="..." />
+                          </span>
+                          <a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"><i
+                              class="fa fa-times"></i> Hapus</a>
+                        </div>
+                      </div>
+                      <br>
+                      <label id="example-radio-group-label">Status Karyawan :</label>
+                      <mat-radio-group formControlName="status_id" aria-labelledby="example-radio-group-label"
+                        class="example-radio-group" (change)="statusChange($event)">
+                        <mat-radio-button value="1">Aktif </mat-radio-button>
+                        <mat-radio-button value="0">Keluar</mat-radio-button>
+                        <mat-radio-button value="2">Pensiun</mat-radio-button>
+                        <!-- <mat-radio-button value="3">Pensiun</mat-radio-button> -->
+                      </mat-radio-group>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Tanggal Masuk</mat-label>
+                          <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                            class="form-control" formControlName="tgl_masuk" required>
+                        </mat-form-field>
+                        <div *ngIf="isFormSubmitted && userControl.tgl_masuk.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.tgl_masuk.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Tanggal Habis Kontrak</mat-label>
+                          <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                            class="form-control" formControlName="tgl_hbs_kontrak">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.tgl_keluar.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.tgl_keluar.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div> -->
+                      </div>
+                      <div class="example-full-width " *ngIf="aktifKaryawanChanged =='0'">
+                        <mat-form-field>
+                          <mat-label>Tanggal Keluar</mat-label>
+                          <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                            class="form-control" formControlName="tgl_keluar">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.tgl_keluar.errors" class="invalid-feedback">
+                          <small [hidden]="!userControl.tgl_keluar.errors.required" class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div> -->
+                      </div>
+                      <br>
+                      <mat-form-field>
+                        <mat-label>Status Pajak</mat-label>
+                        <select style="width: '20%';" matNativeControl required formControlName="status_pajak">
+                          <!-- <option  disabled>Pilih</option> -->
+                          <option value="TK/0" selected>TK/0</option>
+                          <option value="TK/1">TK/1</option>
+                          <option value="TK/2">TK/2</option>
+                          <option value="TK/3">TK/3</option>
+                          <option value="K/0">K/0</option>
+                          <option value="K/1">K/1</option>
+                          <option value="K/2">K/2</option>
+                          <option value="K/3">K/3</option>
+                        </select>
+                      </mat-form-field>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No HP</mat-label>
+                          <input matInput formControlName="no_hp">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.no_hp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.no_hp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No KTP</mat-label>
+                          <input matInput formControlName="no_ktp">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No NPWP</mat-label>
+                          <input matInput formControlName="no_npwp">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No BPJS Tenaga Kerja</mat-label>
+                          <input matInput formControlName="no_bpjs">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No BPJS Kesehatan</mat-label>
+                          <input matInput formControlName="no_bpjs_ks">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No KK</mat-label>
+                          <input matInput formControlName="no_kk">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>Nama Bank</mat-label>
+                          <input matInput formControlName="nama_bank">
+                        </mat-form-field>
+                        <!-- <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                      </div>
+                      <div class="example-full-width ">
+                        <mat-form-field>
+                          <mat-label>No Rekening Bank</mat-label>
+                          <input matInput formControlName="no_rek_bank">
+                        </mat-form-field>
+                      </div>
+                      <div class="example-full-width">
+                        <input type="checkbox" formControlName="is_jht" id="is_jht">&nbsp;
+                        <label for="is_jht">Hitung JHT</label>
+                      </div>
+                      <div class="example-full-width">
+                        <input type="checkbox" formControlName="is_jp" id="is_jp">&nbsp;
+                        <label for="is_jp">Hitung JP</label>
+                      </div>
+                      <div class="example-full-width">
+                        <input type="checkbox" formControlName="is_jks" id="is_jks">&nbsp;
+                        <label for="is_jks">Hitung JKS</label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane " id="keluarga">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Keluarga
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="keluargaItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 30%;">Nama</th>
+                          <th>Tempat Lahir</th>
+                          <th>Tgl Lahir</th>
+                          <th>Status</th>
+
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i" *ngFor="let item of keluargaItems.controls; let i=index; let odd=odd;">
+
+                          <td> <input type="text" class="form-control" formControlName="nama_keluarga"
+                              style="text-align: left;"></td>
+
+                          <td> <input type="text" class="form-control" formControlName="tempat_lahir_keluarga"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="tanggal_lahir_keluarga"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+                          <td>
+                            <mat-form-field>
+
+                              <select matNativeControl formControlName="status_keluarga">
+                                <option value="Anak" selected>Anak</option>
+                                <option value="Istri">Istri</option>
+                                <option value="Suami">Suami</option>
+                                <option value="Ayah">Ayah</option>
+                                <option value="Ibu">Ibu</option>
+                              </select>
+                            </mat-form-field>
+                          </td>
+                          <td><button onclick="event.preventDefault()" (click)="removeItemKeluarga(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemKeluarga()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="pendidikan">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Pendidikan
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="pendidikanItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 40%;">Sekolah</th>
+                          <th>Lokasi</th>
+                          <th>Jurusan</th>
+                          <th>No Ijazah</th>
+                          <th>Tgl Ijazah</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i"
+                          *ngFor="let item of pendidikanItems.controls; let i=index; let odd=odd;">
+
+                          <td> <input type="text" class="form-control" formControlName="nama_sekolah"
+                              style="text-align: left;"></td>
+
+                          <td> <input type="text" class="form-control" formControlName="lokasi_sekolah"
+                              style="text-align: left;">
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="jurusan"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="no_ijazah"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="tgl_ijazah"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+
+                          <td><button onclick="event.preventDefault()" (click)="removeItemPendidikan(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemPendidikan()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="pelatihan">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Pelatihan
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="pelatihanItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 50%;">Nama Pelatihan</th>
+                          <th>Ket</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i" *ngFor="let item of pelatihanItems.controls; let i=index; let odd=odd;">
+
+                          <td> <input type="text" class="form-control" formControlName="nama_pelatihan"
+                              style="text-align: left;"></td>
+
+                          <td> <input type="text" class="form-control" formControlName="status"
+                              style="text-align: left;">
+                          </td>
+
+                          <td><button (click)="removeItemPelatihan(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemPelatihan()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="keahlian">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Keahlian
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="keahlianItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 50%;">Keahlian</th>
+                          <th>Ket</th>
+
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i" *ngFor="let item of keahlianItems.controls; let i=index; let odd=odd;">
+
+                          <td> <input type="text" class="form-control" formControlName="nama_keahlian"
+                              style="text-align: left;"></td>
+
+                          <td> <input type="text" class="form-control" formControlName="status"
+                              style="text-align: left;">
+                          </td>
+
+                          <td><button onclick="event.preventDefault()" (click)="removeItemKeahlian(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemKeahlian()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="pengalaman">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Pengalaman
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="pengalamanItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 40%;">Perusahaan</th>
+                          <th>Mulai</th>
+                          <th>S/d</th>
+                          <th>Ket</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i"
+                          *ngFor="let item of pengalamanItems.controls; let i=index; let odd=odd;">
+
+                          <td> <input type="text" class="form-control" formControlName="perusahaan"
+                              style="text-align: left;"></td>
+
+                          <td> <input type="text" class="form-control" formControlName="mulai"
+                              style="text-align: left;">
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="akhir"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="status"
+                              style="text-align: left;"></td>
+
+                          <td><button (click)="removeItemPengalaman(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemPengalaman()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="bahasa">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Bahasa
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="bahasaItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 40%;">Bahasa</th>
+                          <th>Kemampuan Bicara</th>
+
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i" *ngFor="let item of bahasaItems.controls; let i=index; let odd=odd;">
+
+                          <td> <input type="text" class="form-control" formControlName="bahasa"
+                              style="text-align: left;">
+                          </td>
+
+                          <td>
+                            <mat-form-field>
+
+                              <select matNativeControl formControlName="kemampuan_bicara">
+                                <!-- <option  disabled>Pilih</option> -->
+                                <option value="AKTIF" selected>AKTIF</option>
+                                <option value="PASIF">PASIF</option>
+
+                              </select>
+                            </mat-form-field>
+                          </td>
+
+                          <td><button (click)="removeItemBahasa(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemBahasa()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="jabatan">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Riwayat Jabatan
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+
+                  <div class="tab-pane active" id="pillShift">
+                    <div formArrayName="jabatanItems">
+                      <fieldset class="container-fluid shift_content" [formGroupName]="i"
+                        *ngFor="let item of jabatanItems.controls; let i=index; let odd=odd;">
+                        <legend>
+                          <button type="button" (keydown.enter)="$event.preventDefault()"
+                            (click)="removeItemJabatan(item)" class="btn btn-info btn-round btn-fab btn-fab-mini">
+                            <i class="material-icons">close</i>
+                          </button>
+                        </legend>
+                        <div class="col-md-4">
+                          <label class="control-label">Lokasi Tugas</label>
+                          <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_tugas_id" [options]="{ placeholder: 'Pilih',
+                            allowClear: true}" (ngModelChange)="jabatanGetSublokasi(item)"></l-select2>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label">Sub Bagian</label>
+                          <l-select2 [data]="dataSelectJabatanSubBagian" formControlName="sub_bagian_id" [options]="{ placeholder: 'Pilih',
+                            allowClear: true}"></l-select2>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label">Tipe/Status karyawan</label>
+                          <l-select2 [data]="dataSelectTipe" formControlName="id_tipe_karyawan" [options]="{ placeholder: 'Pilih',
+                            allowClear: true}"></l-select2>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label">Jabatan</label>
+                          <l-select2 [data]="dataSelectJabatan" formControlName="riwayat_jabatan" [options]="{ placeholder: 'Pilih',
+                            allowClear: true}"></l-select2>
+                        </div>
+                        <div class="col-md-2">
+                          <label class="control-label">Mulai Tugas</label>
+                          <input type="text" class="form-control" formControlName="tmt_jabatan"
+                            style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                        </div>
+                        <div class="col-md-2">
+                          <label class="control-label">Selesai Tugas</label>
+                          <input type="text" class="form-control" formControlName="selesai_tugas_jabatan"
+                            style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                        </div>
+                        <div class="col-md-4">
+                          <label class="control-label">Status</label>
+                          <input type="text" class="form-control" formControlName="status_jabatan"
+                            style="text-align: left;">
+                        </div>
+                      </fieldset>
+                      <button type="button" (click)="addItemJabatan()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- <div formArrayName="jabatanItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 30%;">Lokasi Kerja</th>
+                          <th style="width: 30%;">Sub Bagian</th>
+                          <th style="width: 30%;">Tipe/Status</th>
+                          <th style="width: 40%;">Jabatan</th>
+                          <th>TMT</th>
+                          <th>Selesai Tugas</th>
+                          <th>Status</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr [formGroupName]="i" *ngFor="let item of jabatanItems.controls; let i=index; let odd=odd;">
+                          <td>
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_tugas_id" [options]="{ placeholder: 'Pilih',
+                            allowClear: true}" (ngModelChange)="jabatanGetSublokasi(item)"></l-select2>
+                          </td>
+                          <td>
+                            <l-select2 [data]="dataSelectJabatanSubBagian" formControlName="sub_bagian_id" [options]="{ placeholder: 'Pilih',
+                            allowClear: true}"></l-select2>
+                          </td>
+                          <td>
+                            <l-select2 [data]="dataSelectTipe" formControlName="id_tipe_karyawan" [options]="{ placeholder: 'Pilih',
+                          allowClear: true}"></l-select2>
+                          </td>  
+                          <td>
+                            <l-select2 [data]="dataSelectJabatan" formControlName="riwayat_jabatan" [options]="{ placeholder: 'Pilih',
+                          allowClear: true}"></l-select2>
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="tmt_jabatan"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="selesai_tugas_jabatan"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="status_jabatan"
+                              style="text-align: left;">
+                          </td>
+                          <td><button (click)="removeItemJabatan(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <button onclick="event.preventDefault()" (click)="addItemJabatan()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div> -->
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="pangkat">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Riwayat Kepangkatan
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="pangkatItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 30%;">Pangkat</th>
+                          <th style="width: 30%;">Golongan</th>
+                          <th>TMT</th>
+                          <th>Status</th>
+
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i" *ngFor="let item of pangkatItems.controls; let i=index; let odd=odd;">
+                          <td>
+                            <l-select2 [data]="dataSelectPangkat" formControlName="riwayat_pangkat" [options]="{ placeholder: 'Pilih',
+                          allowClear: true}">
+                            </l-select2>
+                          </td>
+                          <td>
+                            <l-select2 [data]="dataSelectGolongan" formControlName="riwayat_golongan" [options]="{ placeholder: 'Pilih',
+                          allowClear: true}">
+                            </l-select2>
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="tmt_pangkat"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="status_pangkat"
+                              style="text-align: left;">
+                          </td>
+                          <td><button (click)="removeItemPangkat(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemPangkat()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="penghargaan">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Riwayat Penghargaan
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="penghargaanItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 30%;">Nama Penghargaan</th>
+                          <th>Tahun</th>
+                          <th>Instansi</th>
+
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i"
+                          *ngFor="let item of penghargaanItems.controls; let i=index; let odd=odd;">
+                          <td> <input type="text" class="form-control" formControlName="nama_penghargaan"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="tahun_penghargaan"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="instansi_penghargaan"
+                              style="text-align: left;"></td>
+                          <td><button (click)="removeItemPenghargaan(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+                        </tr>
+                      </tbody>
+                      <button onclick="event.preventDefault()" (click)="addItemPenghargaan()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane " id="hukuman">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header " data-background-color="rose">
+                  <!-- <i class="material-icons">person</i> -->
+                  Riwayat Hukuman
+                </div>
+                <div class="card-content">
+                  <!-- <h4 class="card-title">Profile</h4> -->
+                  <div formArrayName="hukumanItems">
+                    <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0"
+                      width="100%" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th style="width: 30%;">Jenis Hukuman</th>
+                          <th>No Sk</th>
+                          <th>Tgl Sk</th>
+                          <th>No Pemulihan</th>
+                          <th>Tgl Pemulihan</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        <tr [formGroupName]="i" *ngFor="let item of hukumanItems.controls; let i=index; let odd=odd;">
+                          <td> <input type="text" class="form-control" formControlName="jenis_hukuman"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="nosk_hukuman"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="tglsk_hukuman"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+                          <td> <input type="text" class="form-control" formControlName="nosk_pemulihan"
+                              style="text-align: left;"></td>
+                          <td> <input type="text" class="form-control" formControlName="tglsk_pemulihan"
+                              style="text-align: left;" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker>
+                          </td>
+                          <td><button (click)="removeItemHukuman(item)"
+                              class="btn btn-rose btn-round btn-fab btn-fab-mini">
+                              <i class="material-icons">close</i></button></td>
+
+                        </tr>
+
+                      </tbody>
+
+                      <button onclick="event.preventDefault()" (click)="addItemHukuman()"
+                        class="btn btn-info btn-round btn-fab btn-fab-mini">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-danger ml-4" data-dismiss="modal" (click)="onClose()" style="margin-left: 10px;">
+          Batal
+        </button>
+
+        <button type="submit" class="btn btn-fill btn-rose"style="margin-left: 10px;">
+          Simpan
+        </button>
+
+      </form>
+    </div>
+  </div>
+</div>

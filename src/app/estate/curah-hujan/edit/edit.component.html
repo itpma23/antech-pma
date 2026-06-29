@@ -1,0 +1,96 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Curah Hujan</h4>
+
+              <div class="row">
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Lokasi</label>
+                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'100%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Afdeling</label>
+                  <l-select2 [data]="dataSelectAfdeling " formControlName="afdeling_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'100%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.afdeling_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.afdeling_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-12">
+                  <mat-form-field>
+                    <mat-label>Tanggal</mat-label>
+                    <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                      class="form-control" formControlName="tanggal" required>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Pagi</mat-label>
+                    <input matInput formControlName="pagi" type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.pagi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.pagi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Sore</mat-label>
+                    <input matInput formControlName="sore" type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.sore.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.sore.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-12">
+                  <mat-form-field>
+                    <mat-label>Malam</mat-label>
+                    <input matInput formControlName="malam" type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.malam.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.malam.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-12">
+                  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+                  <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,153 @@
+<div class="main-content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="col-md-4 col-sm-3">
+                    <select data-style="btn btn-info btn-round" data-size="7" (change)="onChangeBulan('bulan')"
+                        [(ngModel)]="selectedBulan">
+                        <!-- <option value="" disabled selected="selected">By User</option> -->
+                        <option *ngFor="let bulan of pilihanBulan" [ngValue]="bulan">{{bulan.nama}}</option>
+                    </select>
+                    <select data-style="btn btn-info btn-round" data-size="7" (change)="onChangeBulan('tahun')"
+                        [(ngModel)]="selectedTahun">
+                        <!-- <option value="" disabled selected="selected">By User</option> -->
+                        <option *ngFor="let tahun of pilihanTahun" [ngValue]="tahun">{{tahun.nama}}</option>
+                    </select>
+                    <select data-style="btn btn-info btn-round" data-size="7" (change)="onChangeBulan('lokasi.id')"
+                        [(ngModel)]="selectedLokasiId">
+                        <option value="" disabled selected>Pilih Lokasi</option>
+                        <option *ngFor="let lokasi of dataSelectLokasi" [value]="lokasi.id">{{lokasi.text}}</option>
+                    </select>
+
+                </div>
+
+                <div class="col-md-4 col-sm-3"></div>
+            </div>
+
+            <!-- Kartu Stats -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">store</i>
+                        </div>
+                        <p class="card-category">Jumlah Gudang Sentral & Virtual</p>
+                        <h3 class="card-title">
+                            {{ jumlahGudang }}<small style="margin-left: 6px;">Gudang</small>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">widgets</i>
+                        </div>
+                        <p class="card-category">Penerimaan Tanpa PO</p>
+                        <h3 class="card-title">{{jumlahPenerimaanTanpaPO}}</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-info card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">receipt</i>
+                        </div>
+                        <p class="card-category">Penerimaan PO</p>
+                        <h3 class="card-title">{{jumlahPenerimaanPO}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">assignment_returned</i>
+                        </div>
+                        <p class="card-category">Pemakaian</p>
+                        <h3 class="card-title">{{jumlahPemakaian}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">compare_arrows</i>
+                        </div>
+                        <p class="card-category">Pindah Gudang</p>
+                        <h3 class="card-title">{{jumlahPindahGudang}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-primary card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">move_to_inbox</i>
+                        </div>
+                        <p class="card-category">Penerimaan Pindah Gudang</p>
+                        <h3 class="card-title">{{jumlahPenerimaanPindahGudang}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-secondary card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">input</i>
+                        </div>
+                        <p class="card-category">Pemakaian BKM</p>
+                        <h3 class="card-title">{{jumlahPemakaianBKM}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-dark card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">tune</i>
+                        </div>
+                        <p class="card-category">Adjustment</p>
+                        <h3 class="card-title">{{jumlahAdjustment}}</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card baru untuk tabel transaksi pemakaian -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-icon" data-background-color="red">
+                            <i class="material-icons">list</i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Transaksi Pemakaian Barang</h4>
+
+                            <div>
+                                <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger"
+                                    class="table table-hover table-bordered nowrap" width="100%">
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

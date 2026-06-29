@@ -1,0 +1,185 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Pembelian TBS</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-success nav-stacked" role="tablist">
+                  <!--
+                  color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+                    -->
+                  <!-- <li class="active"> -->
+
+                  <li class="active">
+                    <a href="#invoice_pembelian_tbs" role="tab" data-toggle="tab">
+                      <i class="material-icons" style="padding-left: 35px;">payments</i>Invoice Pembelian TBS
+                    </a>
+                  </li>
+
+                  <li class="">
+                    <a href="#kwitansi_tbs" role="tab" data-toggle="tab">
+                      <i class="material-icons" style="padding-left: 48px;">receipt_long</i>Kwitansi Pembelian TBS
+                    </a>
+                  </li>
+                  <!-- <li class="">
+                    <a href="#buku_besar" role="tab" data-toggle="tab">
+                      <i class="material-icons">business</i>Rincian Uang Muka Realisasi
+                    </a>
+                  </li> -->
+
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <div class="tab-content">
+
+
+
+                  <div class="tab-pane active" id="invoice_pembelian_tbs">
+                    <form [formGroup]="invoicePembelianTbsRekap" (ngSubmit)="reportRekapInvoicePembelianTbs()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Rekap Invocie Pembelian TBS</h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+                              allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && invoicePembelianTbsRekap.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!invoicePembelianTbsRekap.controls['lokasi'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+                                                      <div class="form-group label-floating">
+                            <label class="control-label">Supplier</label>
+                            <l-select2 [data]="dataSelectSupplier" formControlName="supplier" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                          </div>
+                            <br>
+                            <br>
+                            <label id="example-radio-group-label">Format Laporan</label>
+                            <mat-radio-group formControlName="format_laporan"
+                              aria-labelledby="example-radio-group-label" class="example-radio-group">
+                              <mat-radio-button value="view">View </mat-radio-button>
+                              <mat-radio-button value="xls">XLS</mat-radio-button>
+                              <mat-radio-button value="pdf">PDF</mat-radio-button>
+                            </mat-radio-group>
+
+                          </div>
+
+                        </div>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm"
+                            style="margin-left: 10px;">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="kwitansi_tbs">
+                    <form [formGroup]="KwitansiPembelianTbsRekap" (ngSubmit)="reportRekapKwitansiPembelianTbs()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Rekap Kwitansi Pembelian TBS</h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi" [options]="{ placeholder: 'Pilih',
+                              allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted2 && KwitansiPembelianTbsRekap.controls['lokasi'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!KwitansiPembelianTbsRekap.controls['lokasi'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+                                                      <div class="form-group label-floating">
+                            <label class="control-label">Supplier</label>
+                            <l-select2 [data]="dataSelectSupplier" formControlName="supplier" [options]="{ placeholder: 'Semua',
+                        allowClear: true,width:'50%'}">
+                            </l-select2>
+                          </div>
+                            <br>
+                            <br>
+                            <label id="example-radio-group-label">Format Laporan</label>
+                            <mat-radio-group formControlName="format_laporan"
+                              aria-labelledby="example-radio-group-label" class="example-radio-group">
+                              <mat-radio-button value="view">View </mat-radio-button>
+                              <mat-radio-button value="xls">XLS</mat-radio-button>
+                              <mat-radio-button value="pdf">PDF</mat-radio-button>
+                            </mat-radio-group>
+
+                          </div>
+
+                        </div>
+
+                        <div class="form-group ">
+
+                          <button type="submit" class="btn btn-primary btn-sm"
+                            style="margin-left: 10px;">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

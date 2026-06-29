@@ -1,0 +1,190 @@
+<div class="logo">
+  <div class="logo-normal">
+    <a href="http://www.antech-indonesia.com" class="simple-text">
+     ANTECH
+    </a>
+  </div>
+
+  <div class="logo-img">
+    <img src="/assets/img/antech_logo.png" />
+    <!-- <img src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{logoCompany}}" /> -->
+  </div>
+</div>
+
+<!-- <div class="logo">
+  <div class="logo-normal">
+    <a href="#" class="myText">
+     {{namaSekolah}}
+    </a>
+  </div>
+
+  <div class="logo-img">
+    <img src="/assets/img/angular2-logo-white.png" />
+    <img  src="{{PATH_URL}}/{{pathName}}/userfiles/images/logo-sekolah.jpg" />
+  </div>
+</div> -->
+<div class="sidebar-wrapper">
+
+  <div class="user">
+    <div class="photo">
+      <img style="object-fit: cover;" src="{{PATH_URL}}/{{pathName}}/userfiles/images/{{data.karyawan?.foto}}"
+        *ngIf="data.karyawan?.foto!=null" />
+
+      <img *ngIf="data.karyawan?.foto == null" src='../assets/img/faces/avatar.png' />
+    </div>
+
+    <div class="info">
+      <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+        <span>
+          {{data.user_name}}
+          <b class="caret"></b>
+        </span>
+      </a>
+      <div class="collapse" id="collapseExample">
+        <ul class="nav">
+          <!-- <li>
+            <a [routerLink]="['/profile']">
+              <span class="sidebar-mini">MP</span>
+              <span class="sidebar-normal">Profile Saya</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="#" onclick="event.preventDefault()" (click)="logout()"> <span class="sidebar-mini">L</span>
+              <span class="sidebar-normal">Logout</span></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isNotMobileMenu()">
+    <!-- <form class="navbar-form navbar-right" role="search">
+      <div class="form-group form-search is-empty">
+        <input class="form-control" placeholder="Search" type="text">
+        <span class="material-input"></span>
+        <span class="material-input"></span>
+      </div>
+      <button class="btn btn-white btn-round btn-just-icon" type="submit">
+        <i class="material-icons">search</i>
+        <div class="ripple-container"></div>
+      </button>
+    </form> -->
+    <ul class="nav nav-mobile-menu">
+
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" rel="tooltip" title="Notifications">
+          <i class="material-icons">notifications</i>
+          <span class="notification" *ngIf="totalNotif>0">{{totalNotif}}</span>
+          <p class="hidden-lg hidden-md">
+            Notifications
+            <b class="caret"></b>
+          </p>
+        </a>
+        <ul class="dropdown-menu">
+          <li *ngIf="jumApprovalPP>0">
+            <span class="notification">{{jumApprovalPP}}</span>
+            <a [routerLink]="'/prc/pp-approval'">
+              Approval PP</a>
+          </li>
+          <li *ngIf="jumApprovalPO>0">
+            <span class="notification">{{jumApprovalPO}}</span>
+            <a [routerLink]="'/prc/po-approval'">
+              Approval PO</a>
+          </li>
+          <li *ngIf="jumApprovalPB>0">
+                <span class="notification">{{jumApprovalPB}}</span>
+                <a [routerLink]="'/inventory/approval-pb'">
+                  Approval BPB</a>
+          </li>
+          <li *ngIf="jumApprovalPPReady>0">
+            <span class="notification">{{jumApprovalPPReady}}</span>
+            <a [routerLink]="'/prc/po'">
+              PP Create PO</a>
+          </li>
+          <li *ngIf="jumApprovalCuti>0">
+            <span class="notification">{{jumApprovalCuti}}</span>
+            <a [routerLink]="'/hrms/pengajuan-cuti-approval'">
+              Cuti/Izin</a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <li class="separator hidden-lg hidden-md"></li>
+    </ul>
+  </div>
+  <div class="nav-container">
+    <ul class="nav">
+      <li routerLinkActive="active">
+        <a [routerLink]="'/dashboard'">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li routerLinkActive="active" *ngFor="let menu of menuData">
+
+        <a data-toggle="collapse" href="#{{awalan}}{{menu.id}}">
+          <i class="material-icons">{{ menu.icon==''?'radio_button_checked': menu.icon }}</i>
+          <p>{{menu.text}}
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse" id="{{awalan}}{{menu.id}}">
+
+          <ul class="nav">
+            <li routerLinkActive="active" *ngFor="let submenu of menu.children">
+              <a [routerLink]="getRouterLink(submenu.url)"
+                *ngIf="(!submenu.hasOwnProperty('children') || submenu.children.length <= 0)">
+                <span class="sidebar-mini">&nbsp;</span>
+                <span class="sidebar-normal">{{submenu.text}}</span>
+              </a>
+              <a data-toggle="collapse" href="#{{awalan}}{{submenu.id}}"
+                *ngIf="(submenu.hasOwnProperty('children') && submenu.children.length > 0)">
+                <i class="material-icons">{{ submenu.icon==''?'radio_button_checked': submenu.icon }}</i>
+                <p>{{submenu.text}}
+                  <b class="caret"></b>
+                </p>
+              </a>
+              <div class="collapse" id={{awalan}}{{submenu.id}}
+                *ngIf="(submenu.hasOwnProperty('children') && submenu.children.length > 0)">
+                <ul class="nav">
+                  <li routerLinkActive="active" *ngFor="let submenu2 of submenu.children">
+                    <a [routerLink]="getRouterLink(submenu2.url)"
+                      *ngIf="(!submenu2.hasOwnProperty('children') || submenu2.children.length <= 0)">
+                      <span class="sidebar-mini">&nbsp;</span>
+                      <span class="sidebar-normal">{{submenu2.text}}</span>
+                    </a>
+                    <a data-toggle="collapse" href="#{{awalan}}{{submenu2.id}}"
+                      *ngIf="(submenu2.hasOwnProperty('children') && submenu2.children.length > 0)">
+
+                      <p>{{submenu2.text}}
+                        <b class="caret"></b>
+                      </p>
+                    </a>
+                    <div class="collapse" id={{awalan}}{{submenu2.id}}
+                      *ngIf="(submenu2.hasOwnProperty('children') && submenu2.children.length > 0)">
+                      <ul class="nav">
+                        <li routerLinkActive="active" *ngFor="let submenu3 of submenu2.children">
+                          <a [routerLink]="getRouterLink(submenu3.url)"
+                            *ngIf="(!submenu2.hasOwnProperty('children') || submenu3.children.length <= 0)">
+                            <span class="sidebar-mini">&nbsp;</span>
+                            <span class="sidebar-normal">{{submenu3.text}}</span>
+                          </a>
+
+                        </li>
+                      </ul>
+
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

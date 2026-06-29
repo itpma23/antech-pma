@@ -1,0 +1,87 @@
+/* ROW GRID */
+.doc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.doc-row .left {
+  flex: 1;
+}
+
+.doc-row .right {
+  width: 140px;
+  text-align: right;
+}
+
+/* ALIGN LABEL */
+.doc-row label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* STATUS FIX */
+.status-badge {
+  min-width: 90px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* FOOTER FIX */
+.upload-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ACTION BUTTON FIX */
+.action-right {
+  display: flex;
+  gap: 12px;
+}
+
+/* BUTTON IMPROVEMENT */
+.btn-download {
+  background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+
+}
+
+.btn-download:hover {
+  background: #2f3f9f;
+}
+
+.btn-close {
+  min-width: 90px;
+  height: 38px;
+}
+
+/* SECTION CARD FEEL */
+.upload-section {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* ROW IMPROVEMENT */
+.doc-row:hover {
+  background: #f5f7fb;
+}
+
+.doc-row.active {
+  background: #eef2ff;
+  border-left: 4px solid #3f51b5;
+}
+
+/* INFO BOX */
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+}

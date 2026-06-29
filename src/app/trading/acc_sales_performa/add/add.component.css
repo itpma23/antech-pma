@@ -1,0 +1,20 @@
+mat-form-field {
+  width: 100%;
+}
+.full-width-field {
+  width: 100%;
+}
+.table-scroll-xy {
+  width: 100%;
+  max-height: 300px;        /* tinggi maksimal tabel */
+  overflow-x: auto;         /* scroll kanan–kiri */
+  overflow-y: auto;         /* scroll atas–bawah */
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.table-scroll-xy table {
+  min-width: 700px;         /* supaya tabel tidak sempit */
+}
+

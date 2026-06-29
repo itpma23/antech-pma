@@ -1,0 +1,3976 @@
+{
+	"Activate Account": "Kích hoạt tài khoản",
+	"Administration": "Hành chính",
+	"Announcement": "sự thông báo",
+	"Announcements": "Thông báo",
+	"Appointments": "Các cuộc hẹn",
+	"Articles": "Bài viết",
+	"Assigned Project": "Dự án được giao",
+	"Backup Database": "Cơ sở dữ liệu sao lưu",
+	"Calendar": "Lịch",
+	"Change Email": "Thay đổi e-mail",
+	"Clients": "Khách hàng",
+	"Company Detail": "Chi tiết công ty",
+	"Complete Projects": "Hoàn thành dự án",
+	"Cronjob": "Công việc lương thấp",
+	"Custom Fields": "Trường tùy chỉnh",
+	"Dashboard": "bảng điều khiển",
+	"Dashboard Settings": "Cài đặt trang tổng quan",
+	"Defect Assigned": "Chỉ định khiếm khuyết",
+	"Defect Attachment": "Tệp đính kèm khiếm khuyết",
+	"Defect Comments": "Nhận xét khiếm khuyết",
+	"Defect Updated": "Đã cập nhật khiếm khuyết",
+	"Defects": "Khiếm khuyết",
+	"Departments": "Các phòng ban",
+	"Email Notifications": "thông báo thư",
+	"Email Settings": "Cài đặt email",
+	"Email Templates": "mẫu thư điện tử",
+	"Estimates": "ước tính",
+	"File Manager": "Quản lý tập tin",
+	"Forgot Password": "Quên mật khẩu",
+	"HRM": "Nguồn nhân lực",
+	"Holidays": "Ngày lễ",
+	"Incident Assigned": "Sự cố được chỉ định",
+	"Incident Attachment": "Tệp đính kèm sự cố",
+	"Incident Comments": "Nhận xét sự cố",
+	"Incident Updated": "Đã cập nhật sự cố",
+	"Incidents": "Sự cố",
+	"Invoices": "Hóa đơn",
+	"Items": "Mặt hàng",
+	"Knowledge Base": "Kiến thức cơ bản",
+	"Leaves": "Là",
+	"Mailbox": "Hộp thư",
+	"Meeting": "Gặp gỡ",
+	"Meetings": "Cuộc họp",
+	"Menu Allocation": "Phân bổ thực đơn",
+	"Notification Client": "Khách hàng thông báo",
+	"PM": "PM",
+	"Payments": "Thanh toán",
+	"Project Attachment": "Tệp đính kèm dự án",
+	"Project Comments": "Nhận xét dự án",
+	"Project Management": "Quản lý dự án",
+	"Project Planner": "Người lập kế hoạch dự án",
+	"Projects": "Dự án",
+	"Register Email": "Đăng ký Email",
+	"Reports": "Báo cáo",
+	"Reset Password": "Đặt lại mật khẩu",
+	"Roles": "vai trò",
+	"Sales": "Bán hàng",
+	"Settings": "Cài đặt",
+	"System Settings": "Cài đặt hệ thống",
+	"System Update": "Cập nhật hệ thống",
+	"Task Assigned": "Nhiệm vụ được giao",
+	"Task Board": "Ban công tác",
+	"Task Comments": "Nhận xét nhiệm vụ",
+	"Task Updated": "Đã cập nhật công việc",
+	"Tasks": "Nhiệm vụ",
+	"Tasks Attachment": "Tasks Đính kèm",
+	"Taxes": "Thuế",
+	"Team Boards": "Ban tổ chức",
+	"Teams": "Đổi",
+	"Theme Settings": "Cài đặt chủ đề",
+	"Timesheet": "Thời gian biểu",
+	"Todos": "Làm",
+	"Users": "người dùng",
+	"Welcome Email": "Email chào mừng",
+	"activities": {
+		"columns": {
+			"activity": "Hoạt động",
+			"date": "Ngày",
+			"description": "Sự miêu tả",
+			"module": "Mô-đun",
+			"photo": "hình chụp",
+			"username": "Tên đăng nhập"
+		},
+		"title": "Hoạt động"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "Hành động",
+			"creator": "Người sáng tạo",
+			"end_date": "Ngày cuối",
+			"start_date": "Ngày bắt đầu",
+			"status": "Trạng thái",
+			"title": "Chức vụ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tiêu đề thông báo hợp lệ.",
+				"message2": "Tiêu đề thông báo có thể dài tối đa 100 ký tự.",
+				"message3": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+				"message4": "Vui lòng chọn một ngày kết thúc hợp lệ."
+			},
+			"fields": {
+				"all_clients": "Tất cả khách hàng",
+				"description": "Sự miêu tả",
+				"end_date": "Ngày cuối",
+				"publish": "Công bố",
+				"start_date": "Ngày bắt đầu",
+				"status": "Trạng thái",
+				"title": "Chức vụ",
+				"unpublish": "Chưa công bố"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tiêu đề thông báo",
+				"placeholder2": "Chọn ngày bắt đầu",
+				"placeholder3": "Chọn ngày kết thúc"
+			},
+			"title1": "Tạo thông báo",
+			"title2": "Cập nhật thông báo"
+		},
+		"messages": {
+			"create": "Đã tạo thông báo thành công.",
+			"delete": "Đã xóa thông báo thành công.",
+			"update": "Đã cập nhật thông báo thành công."
+		},
+		"title": "Thông báo"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "Các khe đã đặt"
+		},
+		"columns": {
+			"actions": "Hành động",
+			"end_time": "Thời gian kết thúc",
+			"id": "ID",
+			"location": "Vị trí",
+			"provider": "Các nhà cung cấp",
+			"requester": "Người yêu cầu",
+			"start_time": "Thời gian bắt đầu",
+			"status": "Trạng thái",
+			"title": "Chức vụ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng chọn một nhà cung cấp hợp lệ.",
+				"message2": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+				"message3": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+				"message4": "Vui lòng nhập một chức danh cuộc hẹn hợp lệ.",
+				"message5": "Tiêu đề cuộc hẹn có thể dài tối đa 255 ký tự.",
+				"message6": "Vui lòng chọn một khách hàng hợp lệ.",
+				"message7": "Vui lòng nhập một người tham dự hợp lệ.",
+				"message8": "Vui lòng chọn một trạng thái hợp lệ.",
+				"message9": "Vui lòng chọn một nhà cung cấp hợp lệ."
+			},
+			"fields": {
+				"attendees": "Người tham dự",
+				"client": "Khách hàng",
+				"end_date": "Ngày cuối",
+				"location": "Vị trí",
+				"notes": "Ghi chú",
+				"provider": "Các nhà cung cấp",
+				"start_date": "Ngày bắt đầu",
+				"status": "Trạng thái",
+				"title": "Chức vụ"
+			},
+			"placeholders": {
+				"placeholder1": "Chọn ngày bắt đầu",
+				"placeholder2": "Chọn ngày kết thúc",
+				"placeholder3": "Nhập tiêu đề cuộc hẹn",
+				"placeholder4": "- Chọn Khách hàng -",
+				"placeholder5": "Vị trí",
+				"placeholder6": "Người tham dự",
+				"placeholder7": "- Chọn Trạng thái -",
+				"placeholder8": "Tìm kiếm trong tháng"
+			}
+		},
+		"messages": {
+			"create": "Cuộc hẹn đã được tạo thành công.",
+			"delete": "Đã xóa cuộc hẹn thành công.",
+			"edit": "Đã chỉnh sửa cuộc hẹn thành công.",
+			"status": "Trạng thái đã thay đổi thành công."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Kín đáo"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Xác nhận"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "Đã kết thúc"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "Đã hủy"
+			}
+		],
+		"title": "Các cuộc hẹn"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "Hành động",
+			"attachment": "Tập tin đính kèm",
+			"file_title": "Tựa đề"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tiêu đề tệp hợp lệ và duy nhất.",
+				"message2": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+				"message3": "Vui lòng chọn một tệp hợp lệ.",
+				"message4": "Vui lòng nhập một bình luận hợp lệ.",
+				"message5": "Tiêu đề tệp có thể dài tối đa 255 ký tự."
+			},
+			"fields": {
+				"attachment": "Tập tin đính kèm",
+				"description": "Sự miêu tả",
+				"file_title": "Tựa đề"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tiêu đề tệp"
+			}
+		},
+		"messages": {
+			"create": "Đã tạo thành công tệp đính kèm.",
+			"delete": "Đã xóa thành công tệp đính kèm."
+		},
+		"title": "Tài liệu đính kèm"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "Thông báo",
+			"title": "Thông báo"
+		},
+		"appointments": {
+			"text": "Các cuộc hẹn",
+			"title": "Các cuộc hẹn"
+		},
+		"article": {
+			"text": "Bài báo",
+			"title": "Bài báo"
+		},
+		"calendar": {
+			"text": "Lịch",
+			"title": "Lịch"
+		},
+		"category": {
+			"text": "Thể loại",
+			"title": "Thể loại"
+		},
+		"clients": {
+			"text": "Khách hàng",
+			"title": "Khách hàng"
+		},
+		"dashboard": {
+			"title": "bảng điều khiển"
+		},
+		"defects": {
+			"text": "Khiếm khuyết",
+			"title": "Khiếm khuyết"
+		},
+		"departments": {
+			"text": "Các phòng ban",
+			"title": "Các phòng ban"
+		},
+		"email_templates": {
+			"text": "mẫu thư điện tử",
+			"title": "mẫu thư điện tử"
+		},
+		"estimates": {
+			"text": "ước tính",
+			"title": "ước tính"
+		},
+		"file_browser": {
+			"text": "Quản lý tập tin",
+			"title": "Quản lý tập tin"
+		},
+		"holidays": {
+			"text": "Ngày lễ",
+			"title": "Ngày lễ"
+		},
+		"incidents": {
+			"text": "Sự cố",
+			"title": "Sự cố"
+		},
+		"invoices": {
+			"text": "Hóa đơn",
+			"title": "Hóa đơn"
+		},
+		"items": {
+			"text": "Mặt hàng",
+			"title": "Mặt hàng"
+		},
+		"knowledgebase": {
+			"text": "Kiến thức cơ bản",
+			"title": "Kiến thức cơ bản"
+		},
+		"leave_types": {
+			"text": "Để lại các loại",
+			"title": "Để lại các loại"
+		},
+		"leaves": {
+			"text": "Là",
+			"title": "Là"
+		},
+		"mailbox": {
+			"text": "Hộp thư",
+			"title": "Hộp thư"
+		},
+		"meetings": {
+			"text": "Cuộc họp",
+			"title": "Cuộc họp"
+		},
+		"payments": {
+			"text": "Thanh toán",
+			"title": "Thanh toán"
+		},
+		"projects": {
+			"text": "Dự án",
+			"title": "Dự án"
+		},
+		"projects_planner": {
+			"text": "Người lập kế hoạch dự án",
+			"title": "Người lập kế hoạch dự án"
+		},
+		"providers": {
+			"text": "Nhà cung cấp",
+			"title": "Nhà cung cấp"
+		},
+		"reports": {
+			"text": "Báo cáo",
+			"title": "Báo cáo"
+		},
+		"roles": {
+			"text": "vai trò",
+			"title": "vai trò"
+		},
+		"settings": {
+			"text": "Cài đặt",
+			"title": "Cài đặt"
+		},
+		"taskboard": {
+			"text": "Ban công tác",
+			"title": "Ban công tác"
+		},
+		"tasks": {
+			"text": "Nhiệm vụ",
+			"title": "Nhiệm vụ"
+		},
+		"taxes": {
+			"text": "Thuế",
+			"title": "Thuế"
+		},
+		"teamboard": {
+			"text": "Ban tổ chức",
+			"title": "Ban tổ chức"
+		},
+		"teams": {
+			"text": "Đổi",
+			"title": "Đổi"
+		},
+		"timesheet": {
+			"text": "Thời gian biểu",
+			"title": "Thời gian biểu"
+		},
+		"todos": {
+			"text": "Todos",
+			"title": "Todos"
+		},
+		"users": {
+			"text": "người dùng",
+			"title": "người dùng"
+		}
+	},
+	"calendar": {
+		"day": "Ngày",
+		"month": "tháng",
+		"title": "Lịch",
+		"today": "Hôm nay",
+		"week": "Tuần"
+	},
+	"clients": {
+		"columns": {
+			"actions": "Hành động",
+			"company_email": "Email công ty",
+			"company_name": "Tên công ty",
+			"departments_roles": "Phòng ban / Vai trò",
+			"first_name": "Tên đầu tiên",
+			"last_name": "họ",
+			"photo": "hình chụp",
+			"status": "Trạng thái",
+			"username": "Tên đăng nhập"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên hợp lệ.",
+				"message10": "Mật khẩu và mật khẩu xác nhận không khớp.",
+				"message12": "Số điện thoại phải là một số hợp lệ.",
+				"message14": "Số điện thoại di động phải là một số hợp lệ.",
+				"message15": "Vui lòng nhập một trang web công ty hợp lệ.",
+				"message17": "Vui lòng nhập ID do khách hàng tạo hợp lệ.",
+				"message18": "Vui lòng nhập ID công việc hợp lệ.",
+				"message19": "Vui lòng nhập tên người dùng hợp lệ.",
+				"message2": "Tên đầu tiên có thể dài tối đa 20 ký tự.",
+				"message20": "Tên người dùng có thể dài tối thiểu 3 đến tối đa 30 ký tự không có khoảng trắng.",
+				"message21": "Vui lòng nhập một số điện thoại di động hợp lệ.",
+				"message22": "Xin vui lòng nhập một số điện thoại hợp lệ.",
+				"message23": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+				"message24": "Vui lòng chọn một phòng ban hợp lệ với các vai trò.",
+				"message3": "Vui lòng điền tên đệm của bạn.",
+				"message4": "Họ có thể dài tối đa 20 ký tự.",
+				"message5": "Vui lòng nhập email hợp lệ.",
+				"message6": "Email có thể là một địa chỉ email hợp lệ.",
+				"message7": "Vui lòng nhập mật khẩu hợp lệ.",
+				"message8": "Mật khẩu có thể dài tối thiểu 3 đến tối đa 30 ký tự.",
+				"message9": "Vui lòng nhập mật khẩu xác nhận hợp lệ."
+			},
+			"fields": {
+				"address": "Địa chỉ nhà",
+				"client_ID": "Id khách hàng",
+				"company_address": "Địa chỉ công ty",
+				"company_city": "Thành phố công ty",
+				"company_country": "Quốc gia công ty",
+				"company_email": "Email công ty",
+				"company_fax": "Fax công ty",
+				"company_mobile": "Công ty Di động",
+				"company_name": "Tên công ty",
+				"company_phone": "Điện thoại công ty",
+				"company_website": "trang web của công ty",
+				"confirm_password": "Xác nhận mật khẩu",
+				"country": "Quốc gia",
+				"departments_roles": "Phòng ban / Vai trò",
+				"email": "E-mail",
+				"facebook_URL": "URL Facebook",
+				"first_name": "Tên đầu tiên",
+				"hosting_company": "Công ty lưu trữ",
+				"language": "ngôn ngữ",
+				"last_name": "họ",
+				"linkedIn_URL": "URL LinkedIn",
+				"mobile": "Di động",
+				"password": "mật khẩu",
+				"phone": "Điện thoại",
+				"port": "Hải cảng",
+				"profile_photo": "Ảnh đại diện",
+				"skype": "Ứng dụng trò chuyện",
+				"twitter_URL": "URL Twitter",
+				"username": "Tên đăng nhập",
+				"zip_code": "Mã Zip của Công ty"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên đầu tiên",
+				"placeholder10": "Nhập mã Zipcode của công ty",
+				"placeholder11": "Nhập Fax công ty",
+				"placeholder12": "Nhập trang web của công ty",
+				"placeholder13": "Vào công ty Skype",
+				"placeholder14": "Nhập địa chỉ công ty",
+				"placeholder15": "Nhập công ty lưu trữ",
+				"placeholder16": "Nhập tên người dùng lưu trữ",
+				"placeholder17": "Nhập mật khẩu lưu trữ",
+				"placeholder18": "Vào cổng lưu trữ",
+				"placeholder19": "Điền tên đăng nhập",
+				"placeholder2": "Nhập họ",
+				"placeholder20": "Vào Skype",
+				"placeholder21": "-- Chọn quốc gia --",
+				"placeholder22": "-- Chọn ngôn ngữ --",
+				"placeholder23": "- Chọn Phòng ban / Vai trò -",
+				"placeholder24": "Nhập URL Facebook",
+				"placeholder25": "Nhập URL Twitter",
+				"placeholder26": "Nhập URL LinkedIn",
+				"placeholder27": "Nhập địa chỉ",
+				"placeholder3": "Nhập email",
+				"placeholder4": "Nhập mật khẩu",
+				"placeholder5": "Nhập xác nhận mật khẩu",
+				"placeholder6": "Nhập tên công ty",
+				"placeholder7": "Nhập Email Công ty",
+				"placeholder8": "- Chọn Quốc gia Công ty -",
+				"placeholder9": "Nhập thành phố công ty"
+			}
+		},
+		"headings": {
+			"head1": "Thông tin cá nhân",
+			"head2": "Thông tin công ty",
+			"head3": "Thông tin lưu trữ",
+			"head4": "Về khách hàng",
+			"head5": "Thông tin liên hệ & tiểu sử",
+			"head6": "Yêu cầu",
+			"head7": "Thông tin xã hội"
+		},
+		"inline_edit": {
+			"first_name": "Tên đầu tiên",
+			"last_name": "họ"
+		},
+		"messages": {
+			"create": "Đã tạo ứng dụng khách thành công.",
+			"delete": "Đã xóa ứng dụng khách thành công.",
+			"invite": "Gửi lời mời thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật ứng dụng khách thành công."
+		},
+		"title": "Khách hàng",
+		"title1": "Tạo khách hàng",
+		"title2": "Cập nhật khách hàng"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "Thêm bình luận",
+			"button2": "Đáp lại"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một bình luận hợp lệ.",
+				"message2": "Thả tệp vào đây hoặc nhấp vào để tải lên."
+			},
+			"placeholders": {
+				"placeholder1": "Nhập bình luận",
+				"placeholder2": "Trả lời bình luận"
+			}
+		},
+		"messages": {
+			"create": "Đã tạo bình luận thành công.",
+			"delete": "Đã xóa bình luận thành công.",
+			"update": "Đã cập nhật bình luận thành công."
+		},
+		"title": "Bình luận"
+	},
+	"common": {
+		"12_hours": "12 giờ",
+		"24_hours": "24 giờ",
+		"action": "Hoạt động",
+		"actions": "Hành động",
+		"add": "Thêm vào",
+		"add_to_timesheet": "Thêm vào Bảng chấm công",
+		"apply": "Ứng dụng",
+		"assign": "Chỉ định",
+		"back": "Trở lại",
+		"calendar": "Lịch",
+		"calendar_view": "Xem lịch",
+		"cancel": "Hủy bỏ",
+		"change": "Thay đổi",
+		"close": "Gần",
+		"comment": "Bình luận",
+		"copy": "Sao chép",
+		"create": "Tạo nên",
+		"create_comment": "Tạo bình luận",
+		"created": "tạo",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": ": kích hoạt để sắp xếp cột tăng dần",
+				"sSortDescending": ": kích hoạt để sắp xếp cột giảm dần"
+			},
+			"oPaginate": {
+				"sFirst": "Đầu tiên",
+				"sLast": "Cuối cùng",
+				"sNext": "Kế tiếp",
+				"sPrevious": "Trước"
+			},
+			"sEmptyTable": "không có dữ liệu trong bảng",
+			"sInfo": "Hiển thị _START_ đến _END_ / _TOTAL_ mục nhập",
+			"sInfoEmpty": "Hiển thị 0 đến 0 trong số 0 mục nhập",
+			"sInfoFiltered": "(được lọc từ tổng số _MAX_ mục nhập)",
+			"sInfoPostFix": "",
+			"sInfoThousands": ",",
+			"sLengthMenu": "Hiển thị _MENU_",
+			"sLoadingRecords": "Tải...",
+			"sProcessing": "Chế biến...",
+			"sSearchPlaceholder": "Tìm kiếm ...",
+			"sZeroRecords": "không tìm thấy kết quả"
+		},
+		"days": "Ngày",
+		"delete": "xóa bỏ",
+		"detail": "Chi tiết",
+		"details": "Chi tiết",
+		"download": "Tải về",
+		"drag_file": "Kéo tệp hoặc Duyệt qua",
+		"edit": "chỉnh sửa",
+		"empty_message": {
+			"activities": "Không có bất kỳ hoạt động nào",
+			"announcements": "Không có bất kỳ thông báo nào.",
+			"articles": "Không có bất kỳ bài báo nào.",
+			"attachments": "Không có bất kỳ tệp đính kèm nào.",
+			"categories": "Không có bất kỳ danh mục nào.",
+			"clients": "Không có bất kỳ khách hàng nào.",
+			"custom_fields": "Không có bất kỳ trường tùy chỉnh nào.",
+			"database_backups": "Không có bất kỳ bản sao lưu cơ sở dữ liệu nào.",
+			"defects": "Không có bất kỳ khiếm khuyết nào.",
+			"departments": "Không có bất kỳ phòng ban nào.",
+			"estimates": "Không có bất kỳ ước tính nào.",
+			"file_browser": "Không có bất kỳ thư mục / tệp nào.",
+			"histories": "Không có bất kỳ lịch sử nào.",
+			"holidays": "Không có bất kỳ ngày lễ nào.",
+			"incidents": "Không có bất kỳ sự cố nào.",
+			"invoices": "Không có bất kỳ hóa đơn.",
+			"leaves": "Không có bất kỳ lá nào.",
+			"mails": "Không có bất kỳ thư nào.",
+			"meetings": "Không có bất kỳ cuộc họp nào.",
+			"notifications": "Không có bất kỳ thông báo nào.",
+			"projects": "Không có bất kỳ dự án nào.",
+			"providers": "Không có bất kỳ nhà cung cấp nào.",
+			"roles": "Không có bất kỳ vai trò nào.",
+			"sprints": "Không có bất kỳ nước rút nào.",
+			"tasks": "Không có bất kỳ nhiệm vụ nào.",
+			"teams": "Không có bất kỳ đội nào.",
+			"timesheet": "Không có bất kỳ bảng chấm công nào.",
+			"todos": "Không có bất kỳ việc cần làm nào.",
+			"translations": "Không có bất kỳ bản dịch nào.",
+			"users": "Không có bất kỳ người dùng nào."
+		},
+		"error_messages": {
+			"message1": "Bạn có thể không có quyền thích hợp để truy cập tệp hoặc tài nguyên.",
+			"message2": "Người dùng trái phép - Trong trường hợp Mã thông báo xác thực hết hạn.",
+			"message3": "Trong trường hợp Mã thông báo xác thực đã hết hạn.",
+			"message4": "Xin lỗi, nhưng không thể tìm thấy trang bạn đang tìm.",
+			"message5": "Đã xảy ra lỗi!",
+			"message6": "Bạn đã đăng xuất thành công."
+		},
+		"errors_keys": {
+			"key1": "Truy cập bị từ chối",
+			"key2": "Yêu cầu không hợp lệ",
+			"key3": "Không được phép",
+			"key4": "Truy cập bị từ chối",
+			"key5": "không tìm thấy",
+			"key6": "Thực thể không thể xử lý"
+		},
+		"false": "Sai",
+		"fullscreen": "Toàn màn hình",
+		"hours": "Giờ",
+		"import": "Nhập khẩu",
+		"invite": "Mời gọi",
+		"issues": "Vấn đề",
+		"kanban": "Kanban",
+		"last_updated": "Cập nhật mới nhất",
+		"list": "Danh sách",
+		"lists": "Xem danh sách",
+		"methods": "phương pháp",
+		"move": "Di chuyển",
+		"new": "Mới",
+		"not_allowed": "Không được phép trong bản demo.",
+		"offline": "Ngoại tuyến",
+		"online": "Trực tuyến",
+		"options": "Tùy chọn",
+		"overdue": "Quá hạn",
+		"pending": "Đang chờ xử lý",
+		"placeholders": {
+			"placeholder1": "- Chọn Dự án -"
+		},
+		"priorities": {
+			"high": "Cao",
+			"low": "Thấp",
+			"medium": "Trung bình",
+			"urgent": "Khẩn cấp",
+			"very_high": "Rất cao"
+		},
+		"profile": "Hồ sơ",
+		"remove": "Tẩy",
+		"remove_file": "Xóa tệp",
+		"report": "Bài báo cáo",
+		"request": "Yêu cầu",
+		"reset": "Cài lại",
+		"restore": "Khôi phục",
+		"save": "Tiết kiệm",
+		"search": "Tìm kiếm ...",
+		"show": "Chi",
+		"status": {
+			"In Progress": "Trong tiến trình",
+			"Not Started": "Chưa bắt đầu",
+			"On Hold": "Đang chờ",
+			"accepted": "Đã được chấp nhận",
+			"active": "Hoạt động",
+			"all": "Tất cả các",
+			"approved": "Tán thành",
+			"assigned": "Giao",
+			"cancel": "Hủy bỏ",
+			"canceled": "Đã hủy",
+			"closed": "Đã đóng",
+			"completed": "Đã hoàn thành",
+			"confirmed": "Xác nhận",
+			"deactive": "Vô hiệu hóa",
+			"declined": "Suy giảm",
+			"deferred": "Hoãn lại",
+			"draft": "Bản nháp",
+			"error": "lời",
+			"expired": "Đã hết hạn",
+			"finished": "Đã kết thúc",
+			"in_progress": "Trong tiến trình",
+			"inactive": "Không hoạt động",
+			"my": "Của tôi",
+			"on_hold": "Đang chờ",
+			"open": "Mở",
+			"overdue": "Quá hạn",
+			"paid": "Đã thanh toán",
+			"partially_paid": "Thanh toán một phần",
+			"pending": "Đang chờ xử lý",
+			"published": "Được phát hành",
+			"rejected": "Từ chối",
+			"released": "Phát hành",
+			"reopen": "Mở lại",
+			"reserved": "Kín đáo",
+			"sent": "gởi",
+			"solved": "Đã giải quyết",
+			"success": "Sự thành công",
+			"taken": "Lấy",
+			"total": "toàn bộ",
+			"unpaid": "Chưa thanh toán",
+			"unpublished": "Chưa được công bố",
+			"waiting": "Đang chờ đợi"
+		},
+		"submit": "Gửi đi",
+		"swal": {
+			"cancelButtonText": "Không, giữ nó!",
+			"confirmButtonText": "Có, xóa nó!",
+			"text": "Bạn sẽ không thể khôi phục điều này",
+			"text1": "Bạn sẽ không thể khôi phục bộ phận này !. Trước khi xóa, hãy đảm bảo rằng bạn đã xóa tất cả người dùng liên quan đến bộ phận này.",
+			"text2": "Bạn sẽ không thể khôi phục người dùng này !. Trước khi xóa, hãy đảm bảo rằng bạn đã xóa người dùng khỏi nhóm, dự án, nhiệm vụ, lỗi và sự cố, v.v.",
+			"text3": "Bạn sẽ không thể khôi phục ứng dụng khách này !. Trước khi xóa, hãy đảm bảo rằng bạn đã xóa khách hàng khỏi nhóm, dự án, nhiệm vụ, lỗi và sự cố, v.v.",
+			"text4": "Bạn sẽ không thể khôi phục dự án này !. Trước khi xóa, hãy đảm bảo rằng bạn đã xóa tất cả các nhiệm vụ, lỗi và sự cố liên quan đến dự án này.",
+			"title": "Bạn có chắc không?"
+		},
+		"switch_to_calendar": "Chuyển sang Lịch",
+		"switch_to_kanban": "Chuyển sang Kanban",
+		"switch_to_list": "Chuyển sang Danh sách",
+		"test": "Kiểm tra",
+		"toggle_dropdown": "Chuyển đổi menu thả xuống",
+		"tooltip": {
+			"project_csv_sample": "Dự án mẫu CSV",
+			"task_csv_sample": "CSV nhiệm vụ mẫu",
+			"team_csv_sample": "CSV nhóm mẫu",
+			"user_csv_sample": "CSV người dùng mẫu"
+		},
+		"total": "toàn bộ",
+		"true": "Thật",
+		"unassign": "Bỏ qua",
+		"unassigned": "Chưa được chỉ định",
+		"update": "Cập nhật",
+		"updated": "Đã cập nhật",
+		"upload": "Cập nhật dử liệu",
+		"view": "Lượt xem",
+		"view_comments": "Xem nhận xét",
+		"view_more": "Xem thêm"
+	},
+	"customFieldsType": [
+		{
+			"label": "Bản văn",
+			"value": "text"
+		},
+		{
+			"label": "Vùng văn bản",
+			"value": "textarea"
+		},
+		{
+			"label": "Thả xuống",
+			"value": "dropdown"
+		},
+		{
+			"label": "Ngày",
+			"value": "date"
+		},
+		{
+			"label": "Hộp kiểm",
+			"value": "checkbox"
+		},
+		{
+			"label": "Sở",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "Trạng thái nhiệm vụ",
+		"chart2": "Tình trạng của dự án",
+		"chart3": "Báo cáo hàng tháng",
+		"estimate": "ước tính",
+		"invoices": "Hóa đơn đến hạn",
+		"widgets": {
+			"approved_request": "Tán thành",
+			"due_payment": "Do",
+			"received_request": "Nhận",
+			"recieved_payment": "Được nhận"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "Hành động",
+			"actual_hours": "Giờ",
+			"assigned": "Giao",
+			"assigned_group": "Nhóm được chỉ định",
+			"creator": "Người sáng tạo",
+			"defect_name": "Tên khiếm khuyết",
+			"end_date": "Ngày cuối",
+			"id": "ID",
+			"project": "Dự án",
+			"project_version": "Phiên bản dự án",
+			"severity": "Mức độ nghiêm trọng",
+			"start_date": "Ngày bắt đầu",
+			"status": "Trạng thái",
+			"type": "Kiểu"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên lỗi hợp lệ và duy nhất.",
+				"message10": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+				"message11": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+				"message12": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+				"message13": "Số giờ ước tính chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào.",
+				"message2": "Tên lỗi có thể dài tối đa 255 ký tự.",
+				"message3": "Vui lòng nhập một ID được tạo sai sót duy nhất và hợp lệ.",
+				"message4": "Vui lòng chọn loại lỗi hợp lệ.",
+				"message5": "Vui lòng chọn trạng thái lỗi hợp lệ.",
+				"message6": "Vui lòng chọn mức độ nghiêm trọng của lỗi hợp lệ.",
+				"message8": "Vui lòng chọn một dự án hợp lệ."
+			},
+			"fields": {
+				"actual_hours": "Giờ thực tế",
+				"assigned_To": "Phân công",
+				"assigned_group": "Nhóm được chỉ định",
+				"choose_file": "Chọn tập tin",
+				"completed": "Đã hoàn thành",
+				"created_by": "Được tạo bởi",
+				"defect_ID": "ID khiếm khuyết",
+				"defect_name": "Tên khiếm khuyết",
+				"defect_type": "Loại khuyết tật",
+				"description": "Sự miêu tả",
+				"end_date": "Ngày cuối",
+				"estimate_hours": "Ước tính giờ",
+				"project_name": "Tên dự án",
+				"project_version": "Phiên bản dự án",
+				"severity": "Mức độ nghiêm trọng",
+				"start_date": "Ngày bắt đầu",
+				"status": "Trạng thái"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên khiếm khuyết",
+				"placeholder2": "- Chọn loại khiếm khuyết -",
+				"placeholder3": "- Chọn Trạng thái Lỗi -",
+				"placeholder4": "- Chọn mức độ nghiêm trọng của khiếm khuyết -",
+				"placeholder5": "- Chọn Nhóm được Chỉ định -",
+				"placeholder6": "- Chọn Dự án -",
+				"placeholder7": "- Chọn phiên bản dự án -",
+				"placeholder8": "Chọn ngày bắt đầu",
+				"placeholder9": "Chọn ngày kết thúc"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "Khiếm khuyết",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Tăng cường",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "Trường tùy chỉnh",
+			"title2": "Sự miêu tả"
+		},
+		"headings": {
+			"head1": "Thông tin khiếm khuyết",
+			"head2": "Thông tin dự án",
+			"head3": "Tải lên tệp",
+			"head4": "Trường tùy chỉnh",
+			"head5": "Sự miêu tả"
+		},
+		"inline_edit": {
+			"defect_name": "Tên khiếm khuyết",
+			"defect_type": "Loại khuyết tật",
+			"description": "Sự miêu tả",
+			"estimate_hours": "Ước tính giờ",
+			"notes": "Ghi chú"
+		},
+		"messages": {
+			"create": "Đã tạo thành công khiếm khuyết.",
+			"delete": "Đã xóa thành công khiếm khuyết.",
+			"severity": "Đã cập nhật thành công mức độ nghiêm trọng.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật lỗi thành công."
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Thấp"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Trung bình"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Cao"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Rất cao"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Khẩn cấp"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "Giao"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "Đã đóng"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "Mở"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "Đã giải quyết"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Mở lại"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "Hoãn lại"
+			}
+		],
+		"title": "Khiếm khuyết",
+		"title1": "Tạo khiếm khuyết",
+		"title2": "Cập nhật lỗi",
+		"tooltips": {
+			"attachment": "Tập tin đính kèm"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "Hành động",
+			"designation": "Chỉ định"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên bộ phận hợp lệ.",
+				"message2": "Tên bộ phận có thể dài tối đa 20 ký tự.",
+				"message3": "Vui lòng chọn một bộ phận hợp lệ vai trò."
+			},
+			"fields": {
+				"department": "Sở",
+				"department_name": "Tên bộ phận",
+				"department_roles": "Vai trò bộ phận",
+				"designation": "Chỉ định",
+				"permission": "Giấy phép"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên bộ phận"
+			}
+		},
+		"messages": {
+			"create": "Sở đã tạo thành công.",
+			"delete": "Đã xóa bộ phận thành công.",
+			"update": "Bộ phận được cập nhật thành công."
+		},
+		"title": "Các phòng ban",
+		"title1": "Phòng chi tiết",
+		"title2": "Vai trò bộ phận",
+		"tooltip": {
+			"tooltip1": "Chọn tất cả quyền",
+			"tooltip10": "Chọn tất cả",
+			"tooltip11": "Giấy phép",
+			"tooltip2": "Nếu bạn chọn tạo / chỉnh sửa / xóa không cần chọn chế độ xem",
+			"tooltip3": "Chọn Tất cả Tạo",
+			"tooltip4": "Chọn Tất cả Chỉnh sửa",
+			"tooltip5": "Chọn Tất cả Xóa",
+			"tooltip6": "Lựa chọn",
+			"tooltip7": "Có thể tạo",
+			"tooltip8": "có thể chỉnh sửa",
+			"tooltip9": "Có thể xóa"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "Khách hàng",
+			"estimate_date": "Ngày",
+			"estimate_number": "ước tính",
+			"status": "Trạng thái",
+			"total_amount": "Số tiền",
+			"valid_till": "Đến khi hợp lệ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng chọn một khách hàng hợp lệ.",
+				"message2": "Vui lòng chọn một ngày ước tính hợp lệ.",
+				"message3": "Vui lòng chọn ngày hết hạn hợp lệ.",
+				"message4": "Vui lòng chọn một trạng thái hợp lệ.",
+				"message5": "Vui lòng thêm ít nhất một mục.",
+				"message6": "Nhập mặt hàng, số lượng và đơn giá.",
+				"message7": "Vui lòng chọn loại chiết khấu hợp lệ."
+			},
+			"fields": {
+				"adjustment": "Điều chỉnh",
+				"customer": "Khách hàng",
+				"discount": "Giảm giá",
+				"discount_type": "Loại giảm giá",
+				"estimate_date": "Ngày ước tính",
+				"estimate_number": "Số ước tính",
+				"item_description": "Sự miêu tả",
+				"item_name": "Mục",
+				"item_tax": "Thuế",
+				"quantity": "SỐ LƯỢNG",
+				"reference": "Tài liệu tham khảo",
+				"status": "Trạng thái",
+				"sub_total": "Tổng số phụ",
+				"total_amount": "toàn bộ",
+				"total_item_amount": "Số tiền",
+				"unit": "đơn vị",
+				"unit_price": "Đơn giá",
+				"valid_till": "Ngày hết hạn"
+			},
+			"placeholders": {
+				"placeholder1": "- Chọn Khách hàng -",
+				"placeholder10": "SỐ LƯỢNG",
+				"placeholder11": "Đơn giá",
+				"placeholder12": "- Chọn Thuế -",
+				"placeholder2": "Chọn ngày ước tính",
+				"placeholder3": "Chọn ngày hết hạn",
+				"placeholder4": "Nhập tài liệu tham khảo",
+				"placeholder5": "- Chọn Loại Giảm giá -",
+				"placeholder6": "- Chọn Trạng thái -",
+				"placeholder7": "- Chọn mục -",
+				"placeholder8": "Mục",
+				"placeholder9": "Sự miêu tả"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Phần trăm"
+			},
+			{
+				"id": "fixed",
+				"label": "Đã sửa"
+			}
+		],
+		"headings": {
+			"head1": "THÔNG TIN KHÁCH HÀNG",
+			"head2": "Ngày",
+			"head3": "Thông tin khác",
+			"head4": "Thông tin mặt hàng"
+		},
+		"inline_edit": {
+			"item_description": "Sự miêu tả",
+			"item_name": "Mục",
+			"item_tax": "Thuế",
+			"quantity": "SỐ LƯỢNG",
+			"unit_price": "Đơn giá"
+		},
+		"messages": {
+			"create": "Đã tạo ước tính thành công.",
+			"delete": "Đã xóa ước tính thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật ước tính thành công."
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "Bản nháp"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "gởi"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "Đã hết hạn"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "Suy giảm"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "Đã được chấp nhận"
+			}
+		],
+		"title": "ước tính",
+		"title1": "Ước tính !",
+		"title2": "Tạo ước tính",
+		"title3": "Cập nhật ước tính",
+		"title4": "ước tính",
+		"view": {
+			"accept": "Chấp nhận",
+			"accepted": "Đã được chấp nhận",
+			"balance_due": "Số dư Đến hạn",
+			"bill_to": "Hoa đơn để",
+			"decline": "Từ chối",
+			"declined": "Suy giảm",
+			"download": "Tải về",
+			"draft": "Bản nháp",
+			"due_date": "NGÀY ĐÁO HẠN",
+			"due_on_receipt": "Đến hạn trên biên nhận",
+			"estimate_date": "Ngày ước tính",
+			"expired": "Đã hết hạn",
+			"sent": "gởi",
+			"terms": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN",
+			"total_due": "Tổng số tiền đến hạn"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "Hành động",
+			"name": "tên",
+			"progress": "phát triển",
+			"size": "Kích thước",
+			"status": "Trạng thái"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên thư mục hợp lệ.",
+				"message2": "Kéo vào đây để tải lên ...",
+				"message3": "Vui lòng nhập tên tệp hợp lệ."
+			},
+			"fields": {
+				"description": "Sự miêu tả",
+				"file_name": "Tên tệp",
+				"folder_name": "Tên thư mục"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên thư mục",
+				"placeholder2": "Nhập mô tả",
+				"placeholder3": "Nhập tên tệp"
+			}
+		},
+		"messages": {
+			"create_folder": "Đã tạo thư mục thành công.",
+			"delete_file": "Đã xóa tệp thành công.",
+			"delete_folder": "Đã xóa thư mục thành công.",
+			"update_file": "Đã cập nhật tệp thành công.",
+			"update_folder": "Đã cập nhật thư mục thành công.",
+			"upload_file": "Tải tài liệu thành công."
+		},
+		"title": "Quản lý tập tin",
+		"title1": "Tạo thư mục",
+		"title2": "Cập nhật thư mục",
+		"title3": "Tải lên tệp",
+		"title4": "Cập nhật tệp",
+		"title5": "Tập tin",
+		"title6": "thư mục",
+		"title7": "Thêm"
+	},
+	"footer": {
+		"copyright": "Bản quyền",
+		"text1": "Đã đăng ký Bản quyền"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập email hợp lệ.",
+				"message2": "Email phải là một địa chỉ email hợp lệ."
+			},
+			"placeholders": {
+				"placeholder1": "Nhập email"
+			}
+		},
+		"messages": {
+			"success": "Vui lòng kiểm tra email của bạn để biết hướng dẫn về cách đặt lại mật khẩu của bạn."
+		},
+		"title": "Quên mật khẩu",
+		"title1": "Vui lòng nhập địa chỉ email của bạn dưới đây và chúng tôi sẽ gửi cho bạn thông tin để thay đổi mật khẩu của bạn."
+	},
+	"header": {
+		"heading": {
+			"head1": "Bạn có",
+			"head2": "Thư mời",
+			"head3": "Xem tất cả các thư",
+			"head4": "Cập nhật có sẵn"
+		},
+		"inbox": "Hộp thư của tôi",
+		"languages": "ngôn ngữ",
+		"logout": "Đăng xuất",
+		"mails": "thứ tư",
+		"notifications": "Thông báo",
+		"profile": "Hồ sơ",
+		"search": {
+			"text": "Tìm kiếm ở đây ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "Hoạt động",
+			"closed_by": "Đóng bởi",
+			"commentor": "Bình luận viên",
+			"creator": "Người sáng tạo",
+			"date": "Ngày",
+			"solved_by": "Được giải quyết bởi",
+			"updated_by": "Cập nhật"
+		},
+		"title": "Lịch sử"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "Hành động",
+			"color": "Màu",
+			"date": "Ngày",
+			"event_name": "Tên sự kiện",
+			"location": "Vị trí"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên sự kiện hợp lệ.",
+				"message2": "Tên sự kiện có thể dài tối đa 50 ký tự.",
+				"message3": "Vui lòng chọn ngày hợp lệ."
+			},
+			"fields": {
+				"color": "Màu",
+				"date": "Ngày",
+				"description": "Sự miêu tả",
+				"event_name": "Tên sự kiện",
+				"location": "Vị trí"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên sự kiện",
+				"placeholder2": "Chọn ngày",
+				"placeholder3": "Nhập vị trí"
+			}
+		},
+		"inline_edit": {
+			"event_name": "Tên sự kiện",
+			"holiday_date": "Ngày lễ",
+			"location": "Vị trí"
+		},
+		"messages": {
+			"create": "Ngày lễ đã được tạo thành công.",
+			"delete": "Đã xóa ngày nghỉ thành công.",
+			"update": "Ngày lễ được cập nhật thành công."
+		},
+		"title": "Ngày lễ"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "Hành động",
+			"actual_hours": "Giờ",
+			"assigned": "Giao",
+			"assigned_group": "Nhóm được chỉ định",
+			"client": "Khách hàng",
+			"client_company": "Công ty khách hàng",
+			"creator": "Người sáng tạo",
+			"end_date": "Ngày cuối",
+			"id": "ID",
+			"incident_name": "Tên sự cố",
+			"priority": "Sự ưu tiên",
+			"project": "Dự án",
+			"project_version": "Phiên bản dự án",
+			"start_date": "Ngày bắt đầu",
+			"status": "Trạng thái",
+			"type": "Kiểu"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một tên sự cố hợp lệ và duy nhất.",
+				"message2": "Tên sự cố có thể dài tối đa 255 ký tự.",
+				"message3": "Vui lòng nhập ID sự cố hợp lệ và duy nhất được tạo.",
+				"message4": "Vui lòng chọn một trạng thái sự cố hợp lệ.",
+				"message5": "Vui lòng chọn ưu tiên sự cố hợp lệ.",
+				"message6": "Vui lòng chọn một loại sự cố hợp lệ.",
+				"message7": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+				"message8": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+				"message9": "Số giờ ước tính chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào."
+			},
+			"fields": {
+				"actual_hours": "Giờ thực tế",
+				"assigned_To": "Phân công",
+				"assigned_group": "Nhóm được chỉ định",
+				"created_by": "Được tạo bởi",
+				"description": "Sự miêu tả",
+				"end_date": "Ngày cuối",
+				"estimate_hours": "Ước tính giờ",
+				"incident_ID": "ID sự cố",
+				"incident_name": "Tên sự cố",
+				"incident_type": "Loại sự cố",
+				"priority": "Sự ưu tiên",
+				"project": "Dự án",
+				"project_name": "Tên dự án",
+				"project_version": "Phiên bản dự án",
+				"start_date": "Ngày bắt đầu",
+				"status": "Trạng thái"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên sự cố",
+				"placeholder2": "- Chọn Trạng thái Sự cố -",
+				"placeholder3": "- Chọn Mức độ ưu tiên Sự cố -",
+				"placeholder4": "- Chọn Loại Sự cố -",
+				"placeholder5": "- Chọn Nhóm được Chỉ định -",
+				"placeholder6": "- Chọn Dự án -",
+				"placeholder7": "- Chọn phiên bản dự án -",
+				"placeholder8": "Chọn ngày bắt đầu",
+				"placeholder9": "Chọn ngày kết thúc"
+			}
+		},
+		"details": {
+			"title1": "Trường tùy chỉnh",
+			"title2": "Sự miêu tả"
+		},
+		"headings": {
+			"head1": "Thông tin sự cố",
+			"head2": "Thông tin dự án",
+			"head3": "Trường tùy chỉnh",
+			"head4": "Sự miêu tả",
+			"head5": "Thông tin khác"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "Yêu cầu dịch vụ",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Yêu cầu thông tin",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "Sự miêu tả",
+			"estimate_hours": "Ước tính giờ",
+			"incident_name": "Tên sự cố",
+			"incident_type": "Loại sự cố",
+			"notes": "Ghi chú"
+		},
+		"messages": {
+			"create": "Sự cố đã được tạo thành công.",
+			"delete": "Sự cố đã được xóa thành công.",
+			"import": "Đã nhập thành công sự cố.",
+			"priority": "Đã thay đổi mức độ ưu tiên thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật sự cố thành công."
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Thấp"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Trung bình"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Cao"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Rất cao"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Khẩn cấp"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Giao"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "Đã giải quyết"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "Hoãn lại"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Mở lại"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "Đã đóng"
+			}
+		],
+		"title": "Sự cố",
+		"title1": "Tạo sự cố",
+		"title2": "Cập nhật sự cố"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "Khách hàng",
+			"due_date": "NGÀY ĐÁO HẠN",
+			"invoice_date": "Ngày",
+			"invoice_number": "Hóa đơn",
+			"status": "Trạng thái",
+			"total_amount": "Số tiền"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng chọn một khách hàng hợp lệ.",
+				"message2": "Vui lòng chọn ngày hóa đơn hợp lệ.",
+				"message3": "Vui lòng chọn một ngày đến hạn hợp lệ.",
+				"message4": "Vui lòng chọn một trạng thái hợp lệ.",
+				"message5": "Vui lòng thêm ít nhất một mục.",
+				"message6": "Nhập mặt hàng, số lượng và đơn giá.",
+				"message7": "Vui lòng chọn loại chiết khấu hợp lệ."
+			},
+			"fields": {
+				"adjustment": "Điều chỉnh",
+				"customer": "Khách hàng",
+				"discount": "Giảm giá",
+				"discount_type": "Loại giảm giá",
+				"due_date": "NGÀY ĐÁO HẠN",
+				"invoice_date": "Ngày hóa đơn",
+				"invoice_number": "Số hóa đơn",
+				"item_description": "Sự miêu tả",
+				"item_name": "Mục",
+				"item_tax": "Thuế",
+				"project": "Dự án",
+				"quantity": "SỐ LƯỢNG",
+				"reference": "Tài liệu tham khảo",
+				"status": "Trạng thái",
+				"sub_total": "Tổng số phụ",
+				"total_amount": "toàn bộ",
+				"total_amount_due": "Số tiền đến hạn",
+				"total_item_amount": "Số tiền",
+				"unit": "đơn vị",
+				"unit_price": "Đơn giá"
+			},
+			"placeholders": {
+				"placeholder1": "- Chọn Khách hàng -",
+				"placeholder10": "SỐ LƯỢNG",
+				"placeholder11": "Đơn giá",
+				"placeholder12": "- Chọn Thuế -",
+				"placeholder13": "- Chọn Dự án -",
+				"placeholder2": "Chọn ngày lập hóa đơn",
+				"placeholder3": "Chọn ngày đến hạn",
+				"placeholder4": "Nhập tài liệu tham khảo",
+				"placeholder5": "- Chọn Loại Giảm giá -",
+				"placeholder6": "- Chọn Trạng thái -",
+				"placeholder7": "- Chọn mục -",
+				"placeholder8": "Mục",
+				"placeholder9": "Sự miêu tả"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Phần trăm"
+			},
+			{
+				"id": "fixed",
+				"label": "Đã sửa"
+			}
+		],
+		"headings": {
+			"head1": "THÔNG TIN KHÁCH HÀNG",
+			"head2": "Ngày",
+			"head3": "Thông tin khác",
+			"head4": "Thông tin mặt hàng"
+		},
+		"inline_edit": {
+			"item_description": "Sự miêu tả",
+			"item_name": "Mục",
+			"item_tax": "Thuế",
+			"quantity": "SỐ LƯỢNG",
+			"unit_price": "Đơn giá"
+		},
+		"messages": {
+			"create": "Hóa đơn đã được tạo thành công.",
+			"delete": "Hóa đơn đã được xóa thành công.",
+			"payments": "Không tìm thấy khoản thanh toán nào cho hóa đơn này",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật hóa đơn thành công."
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "Đã thanh toán"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "Thanh toán một phần"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "Chưa thanh toán"
+			}
+		],
+		"title": "Hóa đơn",
+		"title1": "Hóa đơn !",
+		"title2": "Tạo hóa đơn",
+		"title3": "Cập nhật hóa đơn",
+		"title4": "Hóa đơn",
+		"view": {
+			"add_payment": "Thêm thanh toán",
+			"amount": "Số tiền",
+			"balance_due": "Số dư Đến hạn",
+			"bank": "NGÂN HÀNG",
+			"bill_to": "Hoa đơn để",
+			"date": "Ngày",
+			"download": "Tải về",
+			"due_amount": "Số tiền đến hạn",
+			"due_date": "NGÀY ĐÁO HẠN",
+			"due_on_receipt": "Đến hạn trên biên nhận",
+			"gst_number": "GST IN",
+			"invoice_date": "Ngày hóa đơn",
+			"offline_payment": "Thanh toán ngoại tuyến",
+			"online_payment": "Thanh toán trực tuyến",
+			"paid": "Đã thanh toán",
+			"partially_paid": "Thanh toán một phần",
+			"payment": "Thanh toán",
+			"payment_mode": "Phương thức thanh toán",
+			"paypal": "PAYPAL",
+			"status": "Trạng thái",
+			"stripe": "Vạch sọc",
+			"terms": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN",
+			"total_due": "Tổng số tiền đến hạn",
+			"transactions": "Giao dịch",
+			"unpaid": "Chưa thanh toán"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "Sự miêu tả",
+			"name": "Tên mục",
+			"price": "GIÁ BÁN",
+			"tax": "Thuế",
+			"unit": "đơn vị"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên mặt hàng hợp lệ và duy nhất.",
+				"message2": "Vui lòng nhập một giá hợp lệ.",
+				"message3": "Giá phải là một con số."
+			},
+			"fields": {
+				"description": "Sự miêu tả",
+				"name": "Tên mục",
+				"price": "GIÁ BÁN",
+				"tax": "Thuế",
+				"unit": "đơn vị"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên mặt hàng",
+				"placeholder2": "Nhập giá",
+				"placeholder3": "Nhập đơn vị",
+				"placeholder4": "- Chọn Thuế -",
+				"placeholder5": "Nhập mô tả"
+			}
+		},
+		"labels": {
+			"label1": "Việc thay đổi thông tin mặt hàng sẽ không ảnh hưởng đến các ước tính và hóa đơn đã tạo."
+		},
+		"messages": {
+			"create": "Mục được tạo thành công.",
+			"delete": "Đã xóa mục thành công.",
+			"update": "Đã cập nhật mục thành công."
+		},
+		"title": "Mặt hàng",
+		"title1": "Mục !",
+		"title2": "Tạo mặt hàng",
+		"title3": "Cập nhật mặt hàng"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "Kéo công việc giữa danh sách"
+		},
+		"title1": "Khiếm khuyết Kanban",
+		"title2": "Kanban Sự cố"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "Hành động",
+				"article_name": "Tiêu đề bài viết"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập tiêu đề bài viết hợp lệ.",
+					"message2": "Tiêu đề bài viết có thể dài tối đa 50 ký tự.",
+					"message3": "Vui lòng chọn một danh mục hợp lệ.",
+					"message4": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+					"message5": "Vui lòng nhập một mô tả hợp lệ."
+				},
+				"fields": {
+					"article_title": "Tiêu đề bài viết",
+					"category": "Thể loại",
+					"description": "Sự miêu tả",
+					"file": "Tập tin"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập tiêu đề bài viết",
+					"placeholder2": "- Chọn loại -",
+					"placeholder3": "Nhập mô tả"
+				}
+			},
+			"messages": {
+				"create": "Đã tạo bài viết thành công.",
+				"delete": "Đã xóa bài viết thành công.",
+				"update": "Đã cập nhật bài viết thành công."
+			},
+			"title": "Bài báo",
+			"title1": "Bài viết",
+			"title2": "Bài báo"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập tên danh mục hợp lệ.",
+					"message2": "Tên danh mục có thể dài tối đa 50 ký tự.",
+					"message3": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+					"message4": "Vui lòng chọn một tệp hợp lệ."
+				},
+				"fields": {
+					"category_logo": "Biểu trưng danh mục",
+					"category_name": "Tên danh mục"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập tên loại",
+					"placeholder2": "Tìm kiếm .."
+				}
+			},
+			"messages": {
+				"create": "Đã tạo danh mục thành công.",
+				"delete": "Đã xóa danh mục thành công.",
+				"update": "Đã cập nhật danh mục thành công."
+			},
+			"title": "Thể loại",
+			"title1": "Thể loại",
+			"title2": "Thể loại"
+		},
+		"title": "Kiến thức cơ bản"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "Nghỉ phép được chấp thuận",
+			"pending_leave": "Nghỉ phép đang chờ xử lý",
+			"user": "người dùng"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "Phạm vi ngày",
+				"employee_name": "Tên nhân viên"
+			},
+			"placeholders": {
+				"placeholder1": "Chọn phạm vi ngày",
+				"placeholder2": "Tất cả các"
+			}
+		},
+		"title": "Để lại báo cáo",
+		"title1": "Để lại chi tiết"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "Màu",
+			"leave_type": "Loại bỏ",
+			"no_of_leaves": "Tổng thời gian nghỉ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một loại nghỉ duy nhất và hợp lệ.",
+				"message2": "Loại rời có thể dài tối đa 20 ký tự.",
+				"message3": "Vui lòng nhập tổng số ngày nghỉ hợp lệ.",
+				"message4": "Tổng số nghỉ phải là một con số.",
+				"message5": "Vui lòng chọn một màu hợp lệ."
+			},
+			"fields": {
+				"color": "Màu",
+				"leave_type": "Loại bỏ",
+				"no_of_leaves": "Tổng thời gian nghỉ"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập Loại rời",
+				"placeholder2": "Nhập Tổng số ngày nghỉ"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "Loại bỏ",
+			"no_of_leaves": "Tổng thời gian nghỉ"
+		},
+		"messages": {
+			"create": "Loại bỏ được tạo thành công.",
+			"delete": "Đã xóa thành công loại rời khỏi.",
+			"update": "Đã cập nhật thành công loại rời khỏi."
+		},
+		"title": "Để lại các loại",
+		"title1": "Rời khỏi Loại!",
+		"title2": "Tạo loại rời",
+		"title3": "Thêm loại rời"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "Chấp nhận",
+			"reject": "Từ chối"
+		},
+		"columns": {
+			"duration": "Thời lượng",
+			"leave_date": "Ngày",
+			"leave_type": "Loại bỏ",
+			"reason": "Lý do",
+			"status": "Trạng thái",
+			"user": "người dùng"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng chọn một người dùng hợp lệ.",
+				"message2": "Vui lòng chọn loại nghỉ hợp lệ.",
+				"message3": "Vui lòng chọn ngày nghỉ hợp lệ.",
+				"message4": "Vui lòng chọn một trạng thái hợp lệ.",
+				"message5": "Vui lòng nhập một lý do hợp lệ.",
+				"message6": "Thả tệp vào đây hoặc nhấp vào để tải lên."
+			},
+			"fields": {
+				"attachments": "Tài liệu đính kèm",
+				"duration": "Thời lượng",
+				"duration_type": "Loại bỏ",
+				"leave_date": "Ngày",
+				"leave_type": "Rời khỏi",
+				"reason": "Lý do",
+				"reject_reason": "Lý do từ chối? (Không bắt buộc)",
+				"status": "Trạng thái",
+				"user": "người dùng"
+			},
+			"placeholders": {
+				"placeholder1": "- Chọn Người dùng -",
+				"placeholder2": "- Chọn Loại Rời khỏi -",
+				"placeholder3": "Chọn ngày",
+				"placeholder4": "- Chọn Trạng thái -",
+				"placeholder5": "Nhập lý do"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "nửa đầu"
+			},
+			{
+				"id": "second_half",
+				"label": "một nửa thứ hai"
+			}
+		],
+		"labels": {
+			"approved": "Tán thành",
+			"first_half_day": "Nửa ngày đầu tiên",
+			"full_day": "Cả ngày",
+			"half_day": "Nửa ngày",
+			"multiple": "Nhiều",
+			"remaining": "Còn lại",
+			"second_half_day": "Nửa ngày thứ hai",
+			"single": "Độc thân",
+			"taken": "Lấy",
+			"total_leaves": "Tổng số lá"
+		},
+		"messages": {
+			"approve": "Rời khỏi đã được phê duyệt thành công.",
+			"create": "Đã tạo thành công.",
+			"delete": "Thoát đã xóa thành công.",
+			"reject": "Rời khỏi bị từ chối thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Để cập nhật thành công."
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "Đang chờ xử lý"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "Tán thành"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "Từ chối"
+			}
+		],
+		"title": "Là",
+		"title1": "Rời khỏi !",
+		"title2": "Yêu cầu rời khỏi",
+		"title3": "Tất cả các lá",
+		"title4": "Yêu cầu rời khỏi",
+		"title5": "Lịch lá",
+		"title6": "Tạo lịch nghỉ",
+		"title7": "Cập nhật Nghỉ phép"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "Quản trị viên",
+			"client_login": "Khách hàng",
+			"forgot_password": "Quên mật khẩu?",
+			"hr_manager_login": "Giám đốc nhân sự",
+			"manager_login": "Giám đốc",
+			"project_manager_login": "Quản lý dự án",
+			"quick_login": "Đăng nhập Demo",
+			"register": {
+				"button": "Ghi danh",
+				"text": "Không có tài khoản?"
+			},
+			"sales_manager_login": "Quản lý kinh doanh",
+			"user_login": "người dùng"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "Vui lòng nhập tên người dùng hoặc địa chỉ email hợp lệ."
+				},
+				"placeholder": "Tên đăng nhập / Email"
+			},
+			"password": {
+				"errors": {
+					"email": "Mật khẩu có thể dài tối thiểu 3 đến tối đa 30 ký tự.",
+					"required": "Vui lòng nhập mật khẩu hợp lệ."
+				},
+				"placeholder": "mật khẩu"
+			}
+		},
+		"title": "Đăng nhập"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "Hành động",
+				"name": "tên",
+				"progress": "phát triển",
+				"size": "Kích thước",
+				"status": "Trạng thái"
+			},
+			"error_messages": {
+				"message1": "Vui lòng chọn một địa chỉ email hợp lệ.",
+				"message2": "Vui lòng nhập một chủ đề hợp lệ."
+			},
+			"fields": {
+				"from": "Từ",
+				"subject": "Môn học",
+				"to": "đến"
+			},
+			"placeholders": {
+				"placeholder1": "- Chọn Người dùng -",
+				"placeholder2": "Nhập chủ đề"
+			}
+		},
+		"messages": {
+			"message": "Tải tài liệu thành công.",
+			"message1": "Đã xóa tệp thành công.",
+			"message2": "Vui lòng chọn ít nhất một thư.",
+			"message3": "Gửi thư thành công.",
+			"message4": "Thư đã được chuyển vào Thùng rác.",
+			"message5": " thư được chuyển vào thùng rác.",
+			"message6": "Đã hủy thừa kế thư thành công.",
+			"message7": " thư được đánh dấu là yêu thích.",
+			"message8": "Thư được đánh dấu là đã đọc.",
+			"message9": "Thư được chuyển đến bản nháp."
+		},
+		"title": "Hộp thư",
+		"title1": "Tìm kiếm thư ...",
+		"title10": "Gửi",
+		"title11": "Tài liệu đính kèm",
+		"title12": "Làm tươi",
+		"title13": "Đánh dấu là đã đọc",
+		"title14": "Đánh dấu là Yêu thích",
+		"title15": "Di chuyển vào thùng rác",
+		"title16": "Chuyển sang Bản nháp",
+		"title17": "Hủy thư",
+		"title18": "Xem thư",
+		"title19": "thư mục",
+		"title2": "SOẠN, BIÊN SOẠN",
+		"title20": "Thu",
+		"title3": "Soạn mail",
+		"title4": "Hộp thư đến",
+		"title5": "gởi",
+		"title6": "Bản nháp",
+		"title7": "Yêu thích",
+		"title8": "Rác",
+		"title9": "Vứt bỏ"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "Hành động",
+			"end": "Kết thúc",
+			"hours": "Giờ",
+			"id": "ID",
+			"organizer": "Người tổ chức",
+			"peoples": "Mời mọi người",
+			"start": "Khởi đầu",
+			"status": "Trạng thái",
+			"title": "Chức vụ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tiêu đề cuộc họp hợp lệ.",
+				"message2": "Tiêu đề cuộc họp có thể dài tối đa 255 ký tự.",
+				"message3": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+				"message4": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+				"message5": "Vui lòng chọn một thành viên họp hợp lệ.",
+				"message6": "Vui lòng chọn ngày và giờ thích hợp cho cuộc họp.",
+				"message7": "Vui lòng chọn một trạng thái hợp lệ."
+			},
+			"fields": {
+				"client_name": "Tên khách hàng",
+				"description": "Sự miêu tả",
+				"end_date": "Ngày cuối",
+				"location": "Vị trí",
+				"peoples": "Mời mọi người",
+				"start_date": "Ngày bắt đầu",
+				"status": "Trạng thái",
+				"title": "Chức vụ"
+			},
+			"placeholders": {
+				"placeholder1": "Tiêu đề sự kiện",
+				"placeholder2": "Chọn ngày bắt đầu",
+				"placeholder3": "Chọn ngày kết thúc",
+				"placeholder4": "- Chọn thành viên -",
+				"placeholder5": "Vị trí",
+				"placeholder6": "- Chọn Khách hàng -",
+				"placeholder7": "- Chọn Trạng thái -"
+			}
+		},
+		"details": {
+			"title1": "Sự miêu tả"
+		},
+		"inline_edit": {
+			"title": "Chức vụ"
+		},
+		"messages": {
+			"create": "Cuộc họp đã được tạo thành công.",
+			"delete": "Cuộc họp đã được xóa thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật cuộc họp thành công."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "Hủy bỏ"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"title": "Cuộc họp"
+	},
+	"months": [
+		"tháng Giêng",
+		"Tháng hai",
+		"Tháng ba",
+		"Tháng Tư",
+		"có thể",
+		"Tháng sáu",
+		"Tháng 7",
+		"tháng Tám",
+		"Tháng Chín",
+		"Tháng 10",
+		"Tháng 11",
+		"Tháng 12"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "Ghi chú"
+			}
+		},
+		"messages": {
+			"update": "Đã cập nhật ghi chú thành công."
+		},
+		"title": "Ghi chú"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "Sự miêu tả",
+			"method_name": "Tên phương pháp",
+			"status": "Trạng thái"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một tên phương thức hợp lệ và duy nhất."
+			},
+			"fields": {
+				"description": "Sự miêu tả",
+				"method_name": "Tên phương pháp",
+				"show_on_pdf": "Hiển thị mô tả trên PDF hóa đơn"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên phương pháp",
+				"placeholder2": "Nhập mô tả"
+			}
+		},
+		"messages": {
+			"create": "Đã tạo thành công phương thức thanh toán.",
+			"delete": "Đã xóa thành công phương thức thanh toán.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật thành công phương thức thanh toán."
+		},
+		"title": "Phương thức thanh toán",
+		"title1": "Phương thức thanh toán!",
+		"title2": "Tạo phương thức thanh toán",
+		"title3": "Cập nhật phương thức thanh toán"
+	},
+	"payments": {
+		"columns": {
+			"amount": "Số tiền",
+			"client": "Khách hàng",
+			"date": "Ngày",
+			"invoice": "Hóa đơn",
+			"method_name": "Thanh toán",
+			"payment_mode": "Phương thức thanh toán",
+			"status": "Trạng thái"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một số tiền hợp lệ.",
+				"message2": "Vui lòng chọn ngày thanh toán hợp lệ.",
+				"message3": "Vui lòng chọn phương thức thanh toán hợp lệ."
+			},
+			"fields": {
+				"amount": "Số tiền nhận được",
+				"date": "Ngày thanh toán",
+				"notes": "Để lại lời nhắn",
+				"payment_mode": "Phương thức thanh toán",
+				"transaction_id": "ID giao dịch"
+			},
+			"placeholders": {
+				"placeholder1": "Chọn ngày",
+				"placeholder2": "- Chọn Phương thức Thanh toán -",
+				"placeholder3": "Lưu ý của quản trị viên",
+				"placeholder4": "Nhập Id giao dịch"
+			}
+		},
+		"info": "Lưu ý: Các phương thức thanh toán được liệt kê bên dưới là các phương thức ngoại tuyến. Các cổng thanh toán có thể được định cấu hình trong Cài đặt-> Paypal / Stripe.",
+		"info1": "Paypal, Stripe, Chuyển khoản Ngân hàng, Tiền mặt hoặc những thứ khác.",
+		"messages": {
+			"create": "Thanh toán đã được tạo thành công.",
+			"delete": "Đã xóa thanh toán thành công.",
+			"failed": "Thanh toán không thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật thanh toán thành công."
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "thành công"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "Thất bại"
+			}
+		],
+		"title": "Thanh toán",
+		"title1": "Thanh toán!",
+		"title2": "Tạo thanh toán",
+		"title3": "Cập nhật thanh toán",
+		"view": {
+			"failed": "Thất bại",
+			"in_progress": "Trong tiến trình",
+			"invoice_amount": "Số lượng hóa đơn",
+			"invoice_date": "Ngày hóa đơn",
+			"invoice_number": "Số hóa đơn",
+			"payment_amount": "Số tiền thanh toán",
+			"payment_for": "Thanh toán cho",
+			"payment_receipt": "Thanh toán cho hóa đơn",
+			"successful": "thành công"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "Hành động",
+			"creator": "Người sáng tạo",
+			"end_date": "Ngày cuối",
+			"hours": "Giờ",
+			"name": "tên",
+			"progress": "phát triển",
+			"responsible": "Chịu trách nhiệm",
+			"sprint": "tăng tốc",
+			"start_date": "Ngày bắt đầu",
+			"status": "Trạng thái",
+			"type": "Kiểu"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng chọn một dự án hợp lệ.",
+					"message2": "Vui lòng chọn một dự án chạy nước rút hợp lệ."
+				},
+				"fields": {
+					"project": "Dự án",
+					"sprint": "tăng tốc"
+				},
+				"placeholders": {
+					"placeholder1": "- Chọn Dự án -",
+					"placeholder2": "- Chọn Project Sprint -"
+				}
+			},
+			"messages": {
+				"move": " Đã chuyển công việc thành công."
+			},
+			"title": "Di chuyển công việc"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập một tên nước rút hợp lệ và duy nhất.",
+					"message2": "Tên nước rút có thể dài tối đa 255 ký tự.",
+					"message4": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+					"message5": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+					"message6": "Vui lòng chọn một trạng thái hợp lệ.",
+					"message7": "Số giờ ước tính chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào.",
+					"message8": "Số giờ ước tính phải ít hơn"
+				},
+				"fields": {
+					"description": "Sự miêu tả",
+					"end_date": "Ngày cuối",
+					"estimate_hours": "Ước tính giờ",
+					"responsible": "Chịu trách nhiệm",
+					"sprint_name": "Tên Sprint của Dự án",
+					"start_date": "Ngày bắt đầu",
+					"status": "Trạng thái"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập Tên Sprint của Dự án",
+					"placeholder2": "- Chọn Người dùng -",
+					"placeholder3": "Chọn ngày bắt đầu",
+					"placeholder4": "Chọn ngày kết thúc",
+					"placeholder5": "- Chọn Trạng thái -",
+					"placeholder6": "Nhập mô tả"
+				}
+			},
+			"messages": {
+				"create": "Sprint đã được tạo thành công.",
+				"delete": "Đã xóa Sprint thành công.",
+				"update": "Đã cập nhật Sprint thành công."
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Mở"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Trong tiến trình"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Đã đóng"
+				}
+			],
+			"title": "tăng tốc",
+			"title1": "Tạo Sprint",
+			"title2": "Cập nhật Sprint"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập một duy nhất và hợp lệ",
+					"message2": " tên có thể dài tối đa 255 ký tự.",
+					"message3": "Vui lòng chọn một người dùng hợp lệ.",
+					"message4": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+					"message5": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+					"message6": "Vui lòng chọn một trạng thái hợp lệ.",
+					"message7": "Số giờ ước tính chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào.",
+					"message8": "Số giờ ước tính phải ít hơn"
+				},
+				"fields": {
+					"description": "Sự miêu tả",
+					"end_date": "Ngày cuối",
+					"estimate_hours": "Ước tính giờ",
+					"name": "tên",
+					"responsible": "Chịu trách nhiệm",
+					"start_date": "Ngày bắt đầu",
+					"status": "Trạng thái"
+				},
+				"placeholders": {
+					"placeholder1": "Vào Project Sprint",
+					"placeholder2": "- Chọn Người dùng -",
+					"placeholder3": "Chọn ngày bắt đầu",
+					"placeholder4": "Chọn ngày kết thúc",
+					"placeholder5": "- Chọn Trạng thái -",
+					"placeholder6": "Nhập mô tả",
+					"placeholder7": "Nhập dự án"
+				}
+			},
+			"messages": {
+				"create": " đã tạo thành công.",
+				"released": "Đã phát hành tác vụ thành công.",
+				"story_delete": "Câu chuyện Sprint đã được xóa thành công.",
+				"task_delete": "Đã xóa thành công tác vụ Sprint.",
+				"update": " cập nhật thành công."
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Mở"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Trong tiến trình"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Đã đóng"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Mở"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "Đang chờ"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Đã đóng"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "Phát hành"
+				}
+			],
+			"title": "Nhiệm vụ Sprint",
+			"title1": "Tạo Sprint",
+			"title2": "Cập nhật Sprint",
+			"title3": "tên",
+			"title4": "Bài tập",
+			"title5": "câu chuyện"
+		},
+		"title": "Người lập kế hoạch dự án",
+		"title1": "Tạo công việc",
+		"title2": "Tạo câu chuyện",
+		"title3": "Tạo Sprint",
+		"title4": "Dự án",
+		"title5": "tăng tốc"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "Tỷ lệ cố định",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Tỷ lệ hàng giờ",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "Hoàn thành với",
+			"csv_file": "Trước khi bắt đầu nhập dự án, hãy đảm bảo rằng bạn đã nhập người dùng và nhóm của họ.",
+			"current_version": "Phiên bản hiện tại",
+			"version": "Phiên bản"
+		},
+		"columns": {
+			"actions": "Hành động",
+			"assigned_To": "Phân công",
+			"billing": "Thanh toán",
+			"budget": "Ngân sách",
+			"client": "Khách hàng",
+			"completion": "Hoàn thành",
+			"creator": "Người sáng tạo",
+			"duration": "Thời lượng",
+			"end": "Kết thúc",
+			"hours": "Giờ",
+			"id": "ID",
+			"logo": "LOGO",
+			"progress": "phát triển",
+			"project_name": "Tên dự án",
+			"start": "Khởi đầu",
+			"status": "Trạng thái",
+			"version": "Phiên bản"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên dự án hợp lệ và duy nhất.",
+				"message10": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+				"message11": "Số giờ ước tính chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào.",
+				"message12": "Giá cố định phải bằng 0.",
+				"message13": "Giá cố định chỉ cho phép các chữ số.",
+				"message14": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+				"message15": "Tệp này không phải là tệp csv. Vui lòng chỉ chọn tệp csv.",
+				"message16": "Vui lòng Chọn tệp CSV để nhập.",
+				"message2": "Tên dự án có thể dài tối đa 255 ký tự.",
+				"message3": "Vui lòng nhập một phiên bản dự án hợp lệ và duy nhất.",
+				"message4": "Phiên bản dự án có thể giống như 1.0.",
+				"message6": "Vui lòng chọn một trạng thái hợp lệ.",
+				"message8": "Vui lòng nhập một url demo hợp lệ.",
+				"message9": "Vui lòng chọn một ngày bắt đầu hợp lệ."
+			},
+			"fields": {
+				"actual_hours": "Giờ thực tế",
+				"assigned_To": "Phân công",
+				"assigned_group": "Nhóm được chỉ định",
+				"billing_type": "Loại thanh toán",
+				"budget": "Ngân sách",
+				"client_name": "Tên khách hàng",
+				"completed": "Đã hoàn thành",
+				"created_by": "Được tạo bởi",
+				"csv_file": "Chọn tệp CSV của dự án",
+				"demo_URL": "URL demo",
+				"description": "Sự miêu tả",
+				"end_date": "Ngày cuối",
+				"estimate_hours": "Ước tính giờ",
+				"fixed_price": "Giá cố định ($)",
+				"hourly_rate": "Tỷ lệ hàng giờ ($)",
+				"progress": "phát triển",
+				"project_hours": "Tiến trình tự động",
+				"project_id": "ID dự án",
+				"project_logo": "Biểu trưng dự án",
+				"project_name": "Tên dự án",
+				"start_date": "Ngày bắt đầu",
+				"status": "Trạng thái",
+				"version": "Phiên bản"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên dự án",
+				"placeholder10": "Nhập giá",
+				"placeholder11": "Nhập mô tả",
+				"placeholder2": "Nhập phiên bản",
+				"placeholder3": "- Chọn Khách hàng -",
+				"placeholder4": "- Chọn Trạng thái -",
+				"placeholder5": "- Chọn Nhóm được Chỉ định -",
+				"placeholder6": "Chưa được chỉ định",
+				"placeholder7": "Chọn ngày bắt đầu",
+				"placeholder8": "Chọn ngày kết thúc",
+				"placeholder9": "- Chọn Loại Thanh toán -"
+			}
+		},
+		"details": {
+			"title1": "Trường tùy chỉnh",
+			"title2": "Sự miêu tả"
+		},
+		"headings": {
+			"head1": "Thông tin dự án",
+			"head2": "Ngày dự án",
+			"head3": "Thông tin khác",
+			"head4": "Trường tùy chỉnh",
+			"head5": "Sự miêu tả"
+		},
+		"inline_edit": {
+			"billing_type": "Loại thanh toán",
+			"budget": "Ngân sách",
+			"client": "Khách hàng",
+			"demo_url": "URL demo",
+			"description": "Sự miêu tả",
+			"end_date": "Ngày cuối",
+			"estimate_hours": "Ước tính giờ",
+			"notes": "Ghi chú",
+			"project_name": "Tên dự án",
+			"start_date": "Ngày bắt đầu"
+		},
+		"messages": {
+			"create": "Dự án đã được tạo thành công.",
+			"delete": "Đã xóa dự án thành công.",
+			"import": "Đã nhập thành công dự án.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật dự án thành công."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Đang chờ"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "Hủy bỏ"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"title": "Dự án",
+		"title1": "Tạo dự án",
+		"title2": "Cập nhật dự án",
+		"title3": "Nhập dự án"
+	},
+	"providers": {
+		"columns": {
+			"actions": "Hành động",
+			"color": "Màu",
+			"email": "E-mail",
+			"firstname": "Tên đầu tiên",
+			"lastname": "họ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên hợp lệ.",
+				"message2": "Tên đầu tiên có thể dài tối đa 50 ký tự.",
+				"message3": "Vui lòng điền tên đệm của bạn.",
+				"message4": "Họ có thể dài tối đa 50 ký tự.",
+				"message5": "Vui lòng nhập email hợp lệ.",
+				"message6": "Email phải là một email hợp lệ.",
+				"message7": "Vui lòng chọn một màu hợp lệ."
+			},
+			"fields": {
+				"color": "Màu",
+				"email": "E-mail",
+				"first_name": "Tên đầu tiên",
+				"last_name": "họ"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên đầu tiên",
+				"placeholder2": "Nhập họ",
+				"placeholder3": "Nhập email"
+			}
+		},
+		"messages": {
+			"create": "Đã tạo nhà cung cấp thành công.",
+			"delete": "Đã xóa nhà cung cấp thành công.",
+			"edit": "Đã chỉnh sửa thành công nhà cung cấp."
+		},
+		"title": "Nhà cung cấp"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên người dùng hợp lệ.",
+				"message10": "Mật khẩu và mật khẩu xác nhận không khớp.",
+				"message2": "Tên người dùng có thể dài tối thiểu 3 đến tối đa 30 ký tự không có khoảng trắng.",
+				"message3": "Vui lòng nhập tên hợp lệ.",
+				"message4": "Vui lòng điền tên đệm của bạn.",
+				"message5": "Vui lòng nhập email hợp lệ.",
+				"message6": "Email phải là một email hợp lệ.",
+				"message7": "Vui lòng nhập mật khẩu hợp lệ.",
+				"message8": "Mật khẩu có thể dài tối thiểu 3 đến tối đa 30 ký tự.",
+				"message9": "Vui lòng nhập mật khẩu xác nhận hợp lệ."
+			},
+			"placeholders": {
+				"placeholder1": "Điền tên đăng nhập",
+				"placeholder2": "Nhập tên đầu tiên",
+				"placeholder3": "Nhập họ",
+				"placeholder4": "Nhập email",
+				"placeholder5": "Nhập mật khẩu",
+				"placeholder6": "Nhập xác nhận mật khẩu"
+			}
+		},
+		"messages": {
+			"success": "Bạn đã đăng ký thành công."
+		},
+		"title": "Ghi danh",
+		"title1": "Bạn co săn san để tạo một tai khoản?"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "Khiếm khuyết",
+			"incident_report": "Biến cố",
+			"project_report": "Dự án",
+			"task_report": "Bài tập"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập mật khẩu hợp lệ.",
+				"message2": "Mật khẩu có thể dài tối thiểu 3 đến tối đa 30 ký tự.",
+				"message3": "Vui lòng nhập mật khẩu xác nhận hợp lệ.",
+				"message4": "Mật khẩu và mật khẩu xác nhận không khớp.",
+				"message5": "Vui lòng cung cấp một email hoặc mã thông báo hợp lệ."
+			},
+			"placeholders": {
+				"placeholder1": "Nhập mật khẩu",
+				"placeholder2": "Nhập xác nhận mật khẩu"
+			}
+		},
+		"messages": {
+			"success": "Đặt lại mật khẩu thành công."
+		},
+		"title": "Đặt lại mật khẩu"
+	},
+	"roles": {
+		"columns": {
+			"actions": "Hành động",
+			"description": "Sự miêu tả",
+			"role_name": "TÊN VAI TRÒ",
+			"role_slug": "Role Slug"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một tên vai trò hợp lệ.",
+				"message2": "Tên vai trò có thể dài tối đa 50 ký tự.",
+				"message3": "Sên vai trò có thể dài tối đa 50 ký tự.",
+				"message4": "Sên vai có thể chỉ là chữ cái, gạch dưới.",
+				"message5": "Vui lòng nhập một slug vai trò hợp lệ."
+			},
+			"fields": {
+				"description": "Sự miêu tả",
+				"role_name": "TÊN VAI TRÒ",
+				"role_slug": "Role Slug"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên vai trò",
+				"placeholder2": "Nhập vai trò Slug"
+			}
+		},
+		"inline_edit": {
+			"description": "Sự miêu tả",
+			"role_name": "TÊN VAI TRÒ"
+		},
+		"messages": {
+			"create": "Đã tạo vai trò thành công.",
+			"delete": "Đã xóa vai trò thành công.",
+			"update": "Đã cập nhật vai trò thành công."
+		},
+		"title": "vai trò"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập tên công ty hợp lệ.",
+					"message10": "Mã Zipcode có thể được phép tối đa 10 chữ số.",
+					"message11": "Vui lòng nhập một địa chỉ công ty hợp lệ.",
+					"message2": "Vui lòng nhập tên hợp pháp của công ty.",
+					"message3": "Vui lòng nhập tên viết tắt của công ty hợp lệ.",
+					"message4": "Tên viết tắt của công ty có thể dài tối đa 10 ký tự.",
+					"message5": "Vui lòng nhập một email công ty hợp lệ.",
+					"message6": "Email phải là một địa chỉ email hợp lệ.",
+					"message7": "Điện thoại công ty phải là định dạng số điện thoại hợp lệ.",
+					"message8": "Trang web của công ty phải là một URL hợp lệ.",
+					"message9": "Vui lòng nhập một mã zip hợp lệ."
+				},
+				"fields": {
+					"city": "thành phố",
+					"company_address": "Địa chỉ công ty",
+					"company_country": "Quốc gia công ty",
+					"company_email": "Email công ty",
+					"company_name": "Tên công ty",
+					"company_phone": "Điện thoại công ty",
+					"company_website": "trang web của công ty",
+					"company_zipcode": "Mã bưu chính",
+					"contact_person": "Người liên hệ",
+					"legal_name": "Tên pháp lý",
+					"short_name": "Tên ngắn"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập tên công ty",
+					"placeholder10": "Nhập người liên hệ",
+					"placeholder11": "Nhập địa chỉ công ty",
+					"placeholder2": "Nhập tên pháp lý",
+					"placeholder3": "Nhập tên ngắn",
+					"placeholder4": "Nhập Email Công ty",
+					"placeholder5": "Nhập số điện thoại công ty",
+					"placeholder6": "Nhập trang web của công ty",
+					"placeholder7": "-- Chọn quốc gia --",
+					"placeholder8": "Nhập vào thành phố",
+					"placeholder9": "Nhập mã zip"
+				}
+			},
+			"title": "Chi tiết công ty"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "Cronjob hoạt động",
+					"automatic_backup": "Cơ sở dữ liệu sao lưu tự động",
+					"daily_report_emails": "Email Báo cáo Hàng ngày",
+					"last_cronjob_run": "Lần chạy Cronjob cuối cùng"
+				},
+				"messages": {
+					"message1": "Điều này sẽ kích hoạt tính năng cronjob, nếu nó được thiết lập chính xác.",
+					"message2": "Tạo bản sao lưu cơ sở dữ liệu 7 ngày một lần. Yêu cầu cronjob để được kích hoạt!"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập email"
+				}
+			},
+			"title": "Công việc lương thấp"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "Hành động",
+				"custom_field_for": "Trường tùy chỉnh cho",
+				"label": "Nhận",
+				"status": "Trạng thái",
+				"type": "Kiểu",
+				"value": "Giá trị"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng chọn một biểu mẫu trường tùy chỉnh hợp lệ.",
+					"message2": "Vui lòng nhập nhãn trường hợp lệ.",
+					"message3": "Vui lòng nhập một văn bản trợ giúp hợp lệ.",
+					"message4": "Vui lòng chọn một loại trường hợp lệ.",
+					"message5": "Vui lòng nhập một nhãn hợp lệ.",
+					"message6": "Vui lòng nhập một giá trị hợp lệ."
+				},
+				"fields": {
+					"custom_field_for": "Trường tùy chỉnh cho",
+					"field_label": "nhãn trường",
+					"field_type": "Loại lĩnh vực",
+					"help_text": "Văn bản trợ giúp",
+					"is_required_field": "Trường bắt buộc",
+					"show_on_detail": "Để hiển thị trên trang chi tiết"
+				},
+				"placeholders": {
+					"placeholder1": "- Chọn biểu mẫu trường tùy chỉnh -",
+					"placeholder2": "Nhập nhãn trường",
+					"placeholder3": "Nhập văn bản trợ giúp",
+					"placeholder4": "- Chọn loại trường -"
+				}
+			},
+			"headings": {
+				"head1": "Nhập lable và giá trị cho hộp thả xuống."
+			},
+			"messages": {
+				"create": "Trường tùy chỉnh đã được tạo thành công.",
+				"delete": "Đã xóa trường tùy chỉnh thành công.",
+				"status": "Trạng thái đã thay đổi thành công.",
+				"update": "Đã cập nhật trường tùy chỉnh thành công."
+			},
+			"title": "Trường tùy chỉnh",
+			"title1": "lĩnh vực tùy chỉnh"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "Cài đặt"
+			},
+			"title": "bảng điều khiển",
+			"title1": "Thông báo",
+			"title10": "ước tính",
+			"title11": "Hóa đơn",
+			"title12": "Thanh toán",
+			"title13": "Là",
+			"title14": "Đổi",
+			"title15": "người dùng",
+			"title16": "Khách hàng",
+			"title17": "Bài viết",
+			"title18": "Tình trạng dự án",
+			"title19": "Trạng thái nhiệm vụ",
+			"title2": "Hoạt động gần đây",
+			"title20": "Báo cáo hàng tháng",
+			"title21": "Widgets",
+			"title22": "Biểu đồ",
+			"title23": "Danh sách",
+			"title3": "Todos",
+			"title4": "Cuộc họp",
+			"title5": "Dự án",
+			"title6": "Nhiệm vụ",
+			"title7": "Khiếm khuyết",
+			"title8": "Sự cố",
+			"title9": "Hóa đơn đến hạn"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "Hành động",
+				"date": "Ngày",
+				"file_name": "Tên tệp"
+			},
+			"messages": {
+				"create": "Đã tạo thành công sao lưu cơ sở dữ liệu.",
+				"delete": "Đã xóa thành công sao lưu cơ sở dữ liệu.",
+				"restore": "Đã khôi phục cơ sở dữ liệu thành công."
+			},
+			"title": "Sao lưu cơ sở dữ liệu",
+			"title1": "Sao lưu cơ sở dữ liệu",
+			"title2": "Sao lưu"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "Thông báo"
+			},
+			"title": "thông báo thư",
+			"title1": "Email thông báo"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập một email công ty hợp lệ.",
+					"message2": "Email phải là một địa chỉ email hợp lệ.",
+					"message3": "Vui lòng chọn một giao thức email hợp lệ.",
+					"message4": "Vui lòng nhập một máy chủ SMTP hợp lệ.",
+					"message5": "Vui lòng nhập người dùng SMTP hợp lệ.",
+					"message6": "Người dùng SMTP phải là một địa chỉ email hợp lệ.",
+					"message7": "Vui lòng nhập mật khẩu SMTP hợp lệ.",
+					"message8": "Vui lòng nhập một cổng SMTP hợp lệ."
+				},
+				"fields": {
+					"company_email": "Email công ty",
+					"email_encryption": "Mã hóa Email",
+					"email_protocol": "Giao thức Email",
+					"mailgun_domain": "Tên miền Mailgun",
+					"mailgun_secret": "Bí mật Mailgun",
+					"mandrill_secret": "Bí mật Mandrill",
+					"smtp_host": "Máy chủ SMTP",
+					"smtp_password": "Mật khẩu SMTP",
+					"smtp_port": "Cổng SMTP",
+					"smtp_user": "Người dùng SMTP",
+					"sparkpost_secret": "Bí mật Sparkpost"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập Email Công ty",
+					"placeholder2": "- Chọn Giao thức Email -",
+					"placeholder3": "Nhập mật khẩu",
+					"placeholder4": "- Chọn Mã hóa Email -",
+					"placeholder5": "Nhập bí mật Sparkpost",
+					"placeholder6": "Nhập tên miền Mailgun",
+					"placeholder7": "Nhập bí mật Mailgun",
+					"placeholder8": "Nhập bí mật Mandrill"
+				}
+			},
+			"title": "E-mail",
+			"title1": "Email được gửi lúc"
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "Thân hình",
+					"subject": "Môn học"
+				},
+				"placeholders": {
+					"placeholder1": "- Chọn nhóm Email -",
+					"placeholder2": "Nhập chủ đề"
+				}
+			},
+			"messages": {
+				"update": "Đã cập nhật thành công mẫu email."
+			},
+			"title": "mẫu thư điện tử"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập tiền tố ước tính hợp lệ.",
+					"message2": "Tiền tố ước tính có thể dài tối đa 10 ký tự.",
+					"message3": "Vui lòng nhập một hạn hợp lệ sau.",
+					"message4": "Thả tệp vào đây hoặc nhấp vào để tải lên."
+				},
+				"fields": {
+					"auto_remind": "Tự động gửi lời nhắc?",
+					"auto_remind_before": "Gửi lời nhắc trước (ngày)",
+					"client_note": "Lưu ý khách hàng",
+					"due_after": "Đến hạn sau (Ngày)",
+					"estimate_logo": "Ước tính Logo",
+					"estimate_prefix": "Tiền tố ước tính",
+					"terms_conditions": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập tiền tố ước tính",
+					"placeholder2": "Nhập thời hạn sau",
+					"placeholder3": "Nhập ghi chú của khách hàng",
+					"placeholder4": "Nhập Điều khoản & Điều kiện",
+					"placeholder5": "Nhập lời nhắc trước ngày"
+				}
+			},
+			"title": "ước tính"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập tiền tố hóa đơn hợp lệ.",
+					"message2": "Tiền tố hóa đơn có thể dài tối đa 10 ký tự.",
+					"message3": "Vui lòng nhập một hạn hợp lệ sau.",
+					"message4": "Thả tệp vào đây hoặc nhấp vào để tải lên."
+				},
+				"fields": {
+					"auto_remind": "Tự động gửi lời nhắc?",
+					"auto_remind_after": "Gửi lời nhắc sau (ngày) Ví dụ: 1,3",
+					"client_note": "Lưu ý khách hàng",
+					"due_after": "Đến hạn sau (Ngày)",
+					"gst_number": "Số GST",
+					"invoice_logo": "Biểu trưng hóa đơn",
+					"invoice_prefix": "Tiền tố hóa đơn",
+					"show_gst_number": "Hiển thị Số GST trên Hóa đơn?",
+					"terms_conditions": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập tiền tố hóa đơn",
+					"placeholder2": "Nhập thời hạn sau",
+					"placeholder3": "Nhập ghi chú của khách hàng",
+					"placeholder4": "Nhập Điều khoản & Điều kiện",
+					"placeholder5": "Nhập lời nhắc sau ngày",
+					"placeholder6": "Nhập số GST"
+				}
+			},
+			"title": "Hóa đơn"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "Đã cập nhật menu thành công."
+			},
+			"title": "Phân bổ thực đơn",
+			"title1": "Mở rộng tất cả",
+			"title2": "Thu gọn tất cả"
+		},
+		"messages": {
+			"update": "Đã cập nhật cài đặt thành công."
+		},
+		"payment_gateway_settings": {
+			"title": "Cổng thanh toán"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập ID khách hàng paypal hợp lệ."
+				},
+				"fields": {
+					"paypal_checkout_client_id": "Id khách hàng Paypal",
+					"paypal_checkout_label": "Nhãn Paypal",
+					"paypal_checkout_status": "Trạng thái"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập nhãn Paypal",
+					"placeholder2": "Nhập Id khách hàng Paypal"
+				}
+			},
+			"title": "PAYPAL"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập một ID khách hàng không hợp lệ.",
+					"message2": "Vui lòng nhập một bí mật khách hàng slack hợp lệ.",
+					"message3": "Vui lòng nhập một URL chuyển hướng chùng hợp lệ."
+				},
+				"fields": {
+					"slack_client_id": "Id khách hàng Slack",
+					"slack_client_secret": "Bí mật của khách hàng Slack",
+					"slack_redirect_url": "URL chuyển hướng Slack",
+					"slack_status": "Trạng thái trượt"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập Id ứng dụng Slack",
+					"placeholder2": "Nhập bí mật của ứng dụng khách Slack",
+					"placeholder3": "Nhập URL chuyển hướng Slack"
+				}
+			},
+			"title": "Slack"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập một khóa api sọc hợp lệ.",
+					"message2": "Vui lòng nhập một bí mật api sọc hợp lệ."
+				},
+				"fields": {
+					"stripe_api_key": "Khóa API sọc",
+					"stripe_label": "Nhãn sọc",
+					"stripe_secret_key": "Khóa bí mật sọc",
+					"stripe_status": "Trạng thái"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập nhãn sọc",
+					"placeholder2": "Nhập khóa API sọc",
+					"placeholder3": "Nhập khóa bí mật sọc"
+				}
+			},
+			"title": "Vạch sọc",
+			"title1": "trả"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng nhập giới hạn phân trang bảng hợp lệ.",
+					"message2": "Vui lòng chọn một định dạng ngày hợp lệ.",
+					"message3": "Vui lòng chọn một định dạng thời gian hợp lệ.",
+					"message4": "Vui lòng chọn đơn vị tiền tệ mặc định hợp lệ.",
+					"message5": "Vui lòng chọn một ngôn ngữ mặc định hợp lệ."
+				},
+				"fields": {
+					"allowed_for_registration": "Được phép đăng ký?",
+					"date_format": "Định dạng ngày tháng",
+					"default_currency": "mặc định ngoại tệ",
+					"default_language": "Ngôn ngữ mặc định",
+					"default_locale": "Ngôn ngữ mặc định",
+					"tables_pagination_limit": "Bảng Giới hạn phân trang",
+					"time_format": "Định dạng thời gian",
+					"timezone": "Múi giờ"
+				},
+				"placeholders": {
+					"placeholder1": "- Chọn Ngôn ngữ Mặc định -",
+					"placeholder2": "- Chọn ngôn ngữ -",
+					"placeholder3": "- Chọn Múi giờ -",
+					"placeholder4": "Nhập giới hạn phân trang bảng",
+					"placeholder5": "- Chọn Định dạng Ngày -",
+					"placeholder6": "- Chọn Định dạng Thời gian -",
+					"placeholder7": "- Chọn đơn vị tiền tệ mặc định -"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Nhập tiền tố đoán hợp lệ.",
+						"message2": "Tiền tố ước tính có thể chứa tối đa 10 ký tự.",
+						"message3": "Vui lòng nhập ngày đến hạn hợp lệ sau.",
+						"message4": "Kéo tệp vào đây hoặc nhấp để tải lên."
+					},
+					"fields": {
+						"auto_remind": "Gửi lời nhắc tự động?",
+						"auto_remind_before": "Gửi lời nhắc (ngày trước)",
+						"client_note": "Lưu ý khách hàng",
+						"due_after": "Ngày đến hạn (ngày)",
+						"estimate_logo": "Đánh giá cao logo",
+						"estimate_prefix": "Đánh giá cao tiền tố",
+						"terms_conditions": "Điều khoản dịch vụ"
+					},
+					"placeholders": {
+						"placeholder1": "Nhập tiền tố ước tính",
+						"placeholder2": "Sau đó nhập ngày",
+						"placeholder3": "Nhập ghi chú của khách hàng",
+						"placeholder4": "Nhập các điều kiện",
+						"placeholder5": "Nhập Nhắc nhở ngày trước"
+					}
+				},
+				"title": "ước tính"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Vui lòng nhập tiền tố hóa đơn hợp lệ.",
+						"message2": "Tiền tố hóa đơn có thể dài tối đa 10 ký tự.",
+						"message3": "Vui lòng nhập ngày đến hạn hợp lệ sau.",
+						"message4": "Kéo tệp vào đây hoặc nhấp để tải lên."
+					},
+					"fields": {
+						"auto_remind": "Gửi lời nhắc tự động?",
+						"auto_remind_after": "Gửi lời nhắc sau (ngày) Ví dụ 1.3",
+						"client_note": "Lưu ý khách hàng",
+						"due_after": "Ngày đến hạn (ngày)",
+						"gst_number": "Số GST",
+						"invoice_logo": "Biểu trưng hóa đơn",
+						"invoice_prefix": "Tiền tố hóa đơn",
+						"show_gst_number": "Hiển thị Số GST trên Hóa đơn?",
+						"terms_conditions": "Điều khoản dịch vụ"
+					},
+					"placeholders": {
+						"placeholder1": "Nhập tiền tố hóa đơn",
+						"placeholder2": "Sau đó nhập ngày",
+						"placeholder3": "Nhập ghi chú của khách hàng",
+						"placeholder4": "Nhập các điều kiện",
+						"placeholder5": "Nhập lời nhắc theo ngày",
+						"placeholder6": "Nhập số GST"
+					}
+				},
+				"title": "Hóa đơn"
+			},
+			"payment_gateway_settings": {
+				"title": "Cổng thanh toán"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Vui lòng nhập ID khách hàng paypal hợp lệ."
+					},
+					"fields": {
+						"paypal_checkout_client_id": "Id khách hàng Paypal",
+						"paypal_checkout_label": "Nhãn Paypal",
+						"paypal_checkout_status": "Chức vụ"
+					},
+					"placeholders": {
+						"placeholder1": "Nhập nhãn Paypal",
+						"placeholder2": "Nhập ID khách hàng PayPal của bạn"
+					}
+				},
+				"title": "PAYPAL"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Nhập ID khách hàng không hợp lệ.",
+						"message2": "Nhập mật khẩu bí mật của ứng dụng khách hợp lệ.",
+						"message3": "Vui lòng nhập một url chuyển hướng miễn phí hợp lệ."
+					},
+					"fields": {
+						"slack_client_id": "Id khách hàng Slack",
+						"slack_client_secret": "Bí mật của khách hàng được công khai",
+						"slack_redirect_url": "URL chuyển hướng Slack",
+						"slack_status": "Tình trạng chính"
+					},
+					"placeholders": {
+						"placeholder1": "Nhập Id ứng dụng Slack",
+						"placeholder2": "Nhập mật khẩu bí mật của khách hàng",
+						"placeholder3": "Nhập URL chuyển hướng Slack"
+					}
+				},
+				"title": "Slack"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Vui lòng nhập khóa API thanh hợp lệ."
+					},
+					"fields": {
+						"stripe_api_key": "Khóa API sọc",
+						"stripe_label": "Nhãn sọc",
+						"stripe_status": "Chức vụ"
+					},
+					"placeholders": {
+						"placeholder1": "Nhập nhãn biểu ngữ",
+						"placeholder2": "Nhập khóa API Stripe"
+					}
+				},
+				"title": "Sọc"
+			},
+			"title": "Hệ thống"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "Người mua",
+					"purchase_key": "Khóa mua hàng",
+					"url": "URL"
+				},
+				"placeholders": {
+					"placeholder1": "Nhập khóa mua sản phẩm",
+					"placeholder2": "Nhập mã người mua sản phẩm"
+				}
+			},
+			"title": "Cập nhật hệ thống"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Thả tệp vào đây hoặc nhấp vào để tải lên."
+				},
+				"fields": {
+					"compnay_logo": "Logo công ty",
+					"compnay_sidebar_logo": "Biểu trưng thanh bên của công ty",
+					"login_background": "Nền đăng nhập",
+					"sidebar_background_images": "Hình ảnh nền của thanh bên"
+				}
+			},
+			"title": "Chủ đề"
+		},
+		"title": "Cài đặt",
+		"translations": {
+			"columns": {
+				"actions": "Hành động",
+				"icon": "Biểu tượng",
+				"language": "ngôn ngữ",
+				"status": "Trạng thái"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Vui lòng chọn một ngôn ngữ hợp lệ.",
+					"message2": "Vui lòng chọn một biểu tượng hợp lệ.",
+					"message3": "Thả tệp vào đây hoặc nhấp vào để tải lên."
+				},
+				"fields": {
+					"icon": "Biểu tượng",
+					"language": "ngôn ngữ"
+				},
+				"placeholders": {
+					"placeholder1": "-- Chọn ngôn ngữ --"
+				}
+			},
+			"messages": {
+				"create": "Đã tạo bản dịch thành công.",
+				"delete": "Đã xóa bản dịch thành công.",
+				"status": "Trạng thái đã thay đổi thành công.",
+				"update": "Đã cập nhật bản dịch thành công."
+			},
+			"title": "Bản dịch",
+			"title1": "Dịch"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} là bắt buộc.",
+				"message2": "{{elementFor}} chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào.",
+				"message3": "Vui lòng nhập một {{elementFor}}hợp lệ.",
+				"message4": "{{elementFor}} có thể dài tối thiểu {{minLength}} ký tự."
+			},
+			"placeholders": {
+				"placeholder1": "Nhập {{elementFor}}",
+				"placeholder2": "- Chọn {{elementFor}} -",
+				"placeholder3": "Chọn {{elementFor}}"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một {{custom_field}}hợp lệ.",
+				"message2": "Vui lòng chọn một {{custom_field}}hợp lệ."
+			},
+			"placeholders": {
+				"placeholder1": "Nhập {{custom_field}}",
+				"placeholder2": "- Chọn {{custom_field}} -"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "Việc cần làm",
+			"head2": "Trong tiến trình",
+			"head3": "Đã hoàn thành"
+		},
+		"title": "Nhiệm vụ Kanban"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "Hoàn thành với",
+			"csv_file": "Trước khi bắt đầu nhập nhiệm vụ, hãy đảm bảo rằng bạn đã nhập các dự án, người dùng và nhóm của họ."
+		},
+		"columns": {
+			"actions": "Hành động",
+			"actual_end": "Kết thúc thực tế",
+			"actual_start": "Bắt đầu thực tế",
+			"assigned": "Giao",
+			"creator": "Người sáng tạo",
+			"end": "Kết thúc",
+			"end_date": "Ngày cuối",
+			"hours": "Giờ",
+			"id": "Danh tính",
+			"planned_end": "Kế hoạch kết thúc",
+			"planned_start": "Bắt đầu có kế hoạch",
+			"priority": "Sự ưu tiên",
+			"progress": "phát triển",
+			"project": "Dự án",
+			"project_version": "Phiên bản dự án",
+			"start": "Khởi đầu",
+			"start_date": "Ngày bắt đầu",
+			"status": "Trạng thái",
+			"task_ID": "ID công việc",
+			"task_name": "Tên nhiệm vụ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một tên nhiệm vụ hợp lệ và duy nhất.",
+				"message11": "Vui lòng chọn trạng thái nhiệm vụ hợp lệ.",
+				"message12": "Vui lòng chọn ưu tiên nhiệm vụ hợp lệ.",
+				"message13": "Số giờ ước tính chỉ cho phép các chữ số, 2 chữ số sau dấu hai chấm (nhỏ hơn 60) mà không có bất kỳ ký tự đặc biệt nào.",
+				"message14": "Số giờ ước tính phải ít hơn",
+				"message15": "Vui lòng Chọn tệp CSV để nhập.",
+				"message2": "Tên tác vụ có thể dài tối đa 255 ký tự.",
+				"message3": "Vui lòng nhập một ID tác vụ hợp lệ và duy nhất được tạo.",
+				"message4": "Vui lòng chọn ngày bắt đầu dự kiến hợp lệ.",
+				"message5": "Vui lòng chọn một ngày kết thúc hợp lệ theo kế hoạch.",
+				"message6": "Vui lòng chọn một ngày bắt đầu hợp lệ.",
+				"message7": "Vui lòng chọn một ngày kết thúc hợp lệ.",
+				"message8": "Vui lòng chọn một tên dự án hợp lệ."
+			},
+			"fields": {
+				"actual_enddate": "Ngày cuối",
+				"actual_hours": "Giờ thực tế",
+				"actual_startdate": "Ngày bắt đầu",
+				"assigned_To": "Phân công",
+				"completed": "Đã hoàn thành",
+				"created_by": "Được tạo bởi",
+				"csv_file": "Chọn tệp CSV Nhiệm vụ",
+				"description": "Sự miêu tả",
+				"estimate_hours": "Ước tính giờ",
+				"parent_taskID": "ID công việc dành cho cha mẹ",
+				"plan_enddate": "Ngày kết thúc kế hoạch",
+				"plan_startdate": "Ngày bắt đầu kế hoạch",
+				"priority": "Sự ưu tiên",
+				"progress": "phát triển",
+				"project_name": "Tên dự án",
+				"project_version": "Phiên bản dự án",
+				"status": "Trạng thái",
+				"subtask_Id": "Id nhiệm vụ phụ",
+				"task_ID": "ID công việc",
+				"task_name": "Tên nhiệm vụ"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên công việc",
+				"placeholder10": "- Chọn mức độ ưu tiên -",
+				"placeholder2": "Chọn ngày bắt đầu theo kế hoạch",
+				"placeholder3": "Chọn ngày kết thúc theo kế hoạch",
+				"placeholder4": "Chọn ngày bắt đầu",
+				"placeholder5": "Chọn ngày kết thúc",
+				"placeholder6": "- Chọn Tên dự án -",
+				"placeholder7": "- Chọn phiên bản dự án -",
+				"placeholder8": "- Chọn Gán cho -",
+				"placeholder9": "- Chọn Trạng thái -"
+			}
+		},
+		"details": {
+			"title1": "Trường tùy chỉnh",
+			"title2": "Sự miêu tả",
+			"title3": "Nhiệm vụ phụ"
+		},
+		"headings": {
+			"head1": "Thông tin công việc",
+			"head2": "Ngày công việc",
+			"head3": "phát triển",
+			"head4": "Thông tin dự án",
+			"head5": "Yêu cầu",
+			"head6": "Trường tùy chỉnh",
+			"head7": "Sự miêu tả"
+		},
+		"inline_edit": {
+			"description": "Sự miêu tả",
+			"estimate_hours": "Ước tính giờ",
+			"notes": "Ghi chú",
+			"task_name": "Tên nhiệm vụ"
+		},
+		"messages": {
+			"copy": "Đã sao chép công việc thành công.",
+			"create": "Đã tạo thành công tác vụ.",
+			"delete": "Đã xóa công việc thành công.",
+			"import": "Đã nhập tác vụ thành công.",
+			"priority": "Đã thay đổi mức độ ưu tiên thành công.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật tác vụ thành công."
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "Mở"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"id": 3,
+				"label": "Đang chờ"
+			},
+			{
+				"id": 4,
+				"label": "Đang chờ đợi"
+			},
+			{
+				"id": 5,
+				"label": "Hủy bỏ"
+			},
+			{
+				"id": 6,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"id": 3,
+				"label": "Đang chờ"
+			},
+			{
+				"id": 5,
+				"label": "Hủy bỏ"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"id": 4,
+				"label": "Đang chờ đợi"
+			},
+			{
+				"id": 5,
+				"label": "Hủy bỏ"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "Hủy bỏ"
+			},
+			{
+				"id": 2,
+				"label": "Trong tiến trình"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"id": 4,
+				"label": "Hủy bỏ"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "Khẩn cấp"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "Rất cao"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Cao"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "Trung bình"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "Thấp"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Đang chờ"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Đang chờ đợi"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Đang chờ"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Đang chờ đợi"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Đang chờ"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Đang chờ đợi"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Trong tiến trình"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "Hủy bỏ"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"title": "Nhiệm vụ",
+		"title1": "Tạo công việc",
+		"title2": "Tạo nhiệm vụ phụ",
+		"title3": "Nhập công việc",
+		"title4": "Cập nhật công việc",
+		"title5": "Cập nhật nhiệm vụ phụ",
+		"title6": "Sao chép công việc",
+		"tooltips": {
+			"sub_task": "Tạo nhiệm vụ phụ"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "Tên thuế",
+			"tax_rate": "Thuế suất"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên thuế hợp lệ và duy nhất.",
+				"message2": "Vui lòng nhập một mức thuế hợp lệ.",
+				"message3": "Thuế suất phải là một số."
+			},
+			"fields": {
+				"tax_name": "Tên thuế",
+				"tax_rate": "Thuế suất"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên thuế",
+				"placeholder2": "Nhập thuế suất"
+			}
+		},
+		"messages": {
+			"create": "Đã tạo thuế thành công.",
+			"delete": "Đã xóa thuế thành công.",
+			"update": "Đã cập nhật thuế thành công."
+		},
+		"title": "Thuế",
+		"title1": "Thuế suất",
+		"title2": "Thuế !",
+		"title3": "Tạo thuế",
+		"title4": "Cập nhật thuế"
+	},
+	"teams": {
+		"columns": {
+			"actions": "Hành động",
+			"leader": "Thủ lĩnh",
+			"members": "Các thành viên",
+			"team_name": "Tên nhóm"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên nhóm hợp lệ.",
+				"message2": "Tên nhóm có thể dài tối đa 30 ký tự.",
+				"message3": "Vui lòng chọn một thành viên hợp lệ trong nhóm.",
+				"message4": "Vui lòng chọn một trưởng nhóm hợp lệ.",
+				"message5": "Vui lòng Chọn tệp CSV để nhập.",
+				"message6": "Tệp này không phải là tệp csv. Vui lòng chỉ chọn tệp csv."
+			},
+			"fields": {
+				"actions": "Hành động",
+				"csv_file": "Chọn tệp CSV của nhóm",
+				"description": "Sự miêu tả",
+				"leader": "Thủ lĩnh",
+				"members": "Các thành viên",
+				"team_name": "Tên nhóm"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên nhóm",
+				"placeholder2": "- Chọn các thành viên trong nhóm -",
+				"placeholder3": "- Chọn Trưởng nhóm -"
+			}
+		},
+		"inline_edit": {
+			"team_name": "Tên nhóm"
+		},
+		"labels": {
+			"label1": "Trước khi bắt đầu nhập nhóm, hãy đảm bảo rằng bạn đã nhập người dùng."
+		},
+		"messages": {
+			"create": "Đã tạo nhóm thành công.",
+			"delete": "Đã xóa nhóm thành công.",
+			"import": "Đã nhập thành công nhóm.",
+			"update": "Đã cập nhật thành công nhóm."
+		},
+		"title": "Đổi",
+		"title1": "Nhập nhóm",
+		"title2": "Trưởng nhóm",
+		"title3": "Ban tổ chức"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "Tùy chọn màu thanh bên",
+			"head10": "Màu phông chữ của thanh bên",
+			"head11": "Tùy chọn bố cục thanh bên",
+			"head12": "Cấu hình",
+			"head13": "Menu đã thu gọn",
+			"head14": "Chiều rộng thanh bên",
+			"head15": "Thanh bên Gradient",
+			"head2": "Bảng màu",
+			"head3": "Tuỳ chọn Giao diện",
+			"head4": "Thanh bên trong suốt",
+			"head5": "Hình ảnh nền của thanh bên",
+			"head6": "Hình nền",
+			"head7": "Màu nền",
+			"head8": "Hình nền",
+			"head9": "Thanh bên trong suốt"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "Xây dựng trước"
+			},
+			{
+				"key": "dark",
+				"value": "Bố cục tối"
+			},
+			{
+				"key": "custom-colors",
+				"value": "màu sắc tùy chỉnh"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "- Chọn Bố cục -",
+			"placeholder2": "- Chọn chiều rộng thanh bên -"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "Nhỏ"
+			},
+			{
+				"key": "medium",
+				"value": "Trung bình"
+			},
+			{
+				"key": "large",
+				"value": "Lớn"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "Hành động",
+			"end_time": "Thời gian kết thúc",
+			"entry": "Nhập cảnh",
+			"note": "CHÚ THÍCH",
+			"photo": "hình chụp",
+			"project_name": "Dự án",
+			"start_time": "Thời gian bắt đầu",
+			"time_h": "Giờ",
+			"user": "người dùng"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng chọn thời gian bắt đầu hợp lệ.",
+				"message2": "Vui lòng chọn thời gian kết thúc hợp lệ.",
+				"message3": "Vui lòng chọn ngày và giờ thích hợp cho bảng chấm công.",
+				"message4": "Vui lòng nhập một ghi chú hợp lệ."
+			},
+			"fields": {
+				"end_time": "Thời gian kết thúc",
+				"note": "CHÚ THÍCH",
+				"start_time": "Thời gian bắt đầu"
+			},
+			"placeholders": {
+				"placeholder1": "Chọn thời gian bắt đầu",
+				"placeholder2": "Chọn thời gian kết thúc",
+				"placeholder3": "Nhập ghi chú"
+			},
+			"title1": "Tạo Bảng chấm công",
+			"title2": "Cập nhật Bảng chấm công"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "Vui lòng chọn một phạm vi hợp lệ.",
+				"message2": "Vui lòng chọn khoảng thời gian hợp lệ từ.",
+				"message3": "Vui lòng chọn một khoảng thời gian hợp lệ để."
+			},
+			"placeholders": {
+				"placeholder1": "- Chọn Dự án -",
+				"placeholder2": "- Chọn Khách hàng -",
+				"placeholder3": "Chọn khoảng thời gian từ",
+				"placeholder4": "Chọn khoảng thời gian để",
+				"placeholder5": "- Chọn Người dùng -"
+			}
+		},
+		"inline_edit": {
+			"note": "CHÚ THÍCH"
+		},
+		"messages": {
+			"create": "Đã tạo thành công bảng chấm công.",
+			"delete": "Đã xóa thành công bảng chấm công.",
+			"update": "Đã cập nhật thành công bảng chấm công."
+		},
+		"range": {
+			"last_month": "Tháng trước",
+			"last_week": "Tuần trước",
+			"period": "Giai đoạn",
+			"this_month": "Tháng này",
+			"this_week": "Tuần này",
+			"today": "Hôm nay"
+		},
+		"title": "Thời gian biểu",
+		"title1": "Bảng chấm công của tôi",
+		"title2": "Tất cả các bảng chấm công"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập một mô tả hợp lệ.",
+				"message2": "Mô tả có thể dài tối đa 5 ký tự.",
+				"message3": "Mô tả có thể dài tối đa 255 ký tự.",
+				"message4": "Vui lòng chọn trạng thái việc làm hợp lệ.",
+				"message5": "Vui lòng chọn một ngày đến hạn hợp lệ."
+			},
+			"fields": {
+				"description": "Sự miêu tả",
+				"due_date": "NGÀY ĐÁO HẠN",
+				"status": "Trạng thái"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập mô tả",
+				"placeholder2": "- Chọn Trạng thái -",
+				"placeholder3": "Chọn ngày đến hạn"
+			}
+		},
+		"inline_edit": {
+			"description": "Sự miêu tả",
+			"due_date": "NGÀY ĐÁO HẠN"
+		},
+		"messages": {
+			"create": "Todo đã được tạo thành công.",
+			"delete": "Đã xóa Todo thành công.",
+			"status": "Đã cập nhật trạng thái thành công.",
+			"update": "Todo đã cập nhật thành công."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Mở"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "Đã hoàn thành"
+			}
+		],
+		"title": "Làm"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "Chỉ định phương thức cấp phép"
+		},
+		"columns": {
+			"actions": "Hành động",
+			"departments_roles": "Phòng ban / Vai trò",
+			"first_name": "Tên đầu tiên",
+			"last_name": "họ",
+			"photo": "hình chụp",
+			"status": "Trạng thái",
+			"username": "Tên đăng nhập"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vui lòng nhập tên hợp lệ.",
+				"message10": "Mật khẩu và mật khẩu xác nhận không khớp.",
+				"message11": "Thả tệp vào đây hoặc nhấp vào để tải lên.",
+				"message12": "Vui lòng chọn một phòng ban hợp lệ với các vai trò.",
+				"message13": "Vui lòng chọn một quyền người dùng hợp lệ.",
+				"message14": "Vui lòng nhập ID do người dùng tạo hợp lệ.",
+				"message15": "Vui lòng nhập ID việc làm hợp lệ.",
+				"message16": "Vui lòng nhập tên người dùng hợp lệ.",
+				"message17": "Tên người dùng có thể dài tối thiểu 3 đến tối đa 30 ký tự không có khoảng trắng.",
+				"message18": "Vui lòng nhập một số điện thoại di động hợp lệ.",
+				"message19": "Xin vui lòng nhập một số điện thoại hợp lệ.",
+				"message2": "Tên đầu tiên có thể dài tối đa 20 ký tự.",
+				"message20": "Vui lòng chọn một quyền người dùng hợp lệ.",
+				"message21": "Vui lòng Chọn tệp CSV để nhập.",
+				"message22": "Tệp này không phải là tệp csv. Vui lòng chỉ chọn tệp csv.",
+				"message3": "Vui lòng điền tên đệm của bạn.",
+				"message4": "Họ có thể dài tối đa 20 ký tự.",
+				"message5": "Vui lòng nhập email hợp lệ.",
+				"message6": "Email có thể là một địa chỉ email hợp lệ.",
+				"message7": "Vui lòng nhập mật khẩu hợp lệ.",
+				"message8": "Mật khẩu có thể dài tối thiểu 3 đến tối đa 30 ký tự.",
+				"message9": "Vui lòng nhập mật khẩu xác nhận hợp lệ."
+			},
+			"fields": {
+				"address": "Địa chỉ nhà",
+				"assigned_to": "Phân công",
+				"confirm_password": "Xác nhận mật khẩu",
+				"country": "Quốc gia",
+				"csv_file": "Chọn tệp CSV của người dùng",
+				"customize_permission": "Tùy chỉnh quyền",
+				"departments_roles": "Phòng ban / Vai trò",
+				"dob": "Ngày sinh",
+				"email": "E-mail",
+				"employment_ID": "ID việc làm",
+				"everyone": "Tất cả mọi người",
+				"father_name": "Tên của cha",
+				"first_name": "Tên đầu tiên",
+				"gender": "Giới tính",
+				"is_departmenthead": "Anh ấy / cô ấy có phải là trưởng phòng không?",
+				"joining_date": "Ngày tham gia",
+				"language": "ngôn ngữ",
+				"last_name": "họ",
+				"marital_status": "Tình trạng hôn nhân",
+				"mobile": "Di động",
+				"mother_name": "Tên của mẹ",
+				"new_password": "mật khẩu mới",
+				"old_password": "Mật khẩu cũ",
+				"password": "mật khẩu",
+				"phone": "Điện thoại",
+				"primary_manager": "Người quản lý chính",
+				"profile_photo": "Ảnh đại diện",
+				"secondary_manager": "Quản lý phụ",
+				"select_users": "Chọn người dùng",
+				"skype": "Ứng dụng trò chuyện",
+				"userid": "TÊN NGƯỜI DÙNG",
+				"username": "Tên đăng nhập"
+			},
+			"placeholders": {
+				"placeholder1": "Nhập tên đầu tiên",
+				"placeholder10": "-- Chọn ngôn ngữ --",
+				"placeholder11": "Nhập mật khẩu cũ",
+				"placeholder12": "- Chọn Người quản lý chính -",
+				"placeholder13": "- Chọn Người quản lý phụ -",
+				"placeholder14": "Nhập địa chỉ",
+				"placeholder2": "Nhập họ",
+				"placeholder3": "Nhập email",
+				"placeholder4": "Nhập mật khẩu",
+				"placeholder5": "Nhập xác nhận mật khẩu",
+				"placeholder6": "- Chọn Phòng ban / Vai trò -",
+				"placeholder7": "Điền tên đăng nhập",
+				"placeholder8": "Vào Skype",
+				"placeholder9": "-- Chọn quốc gia --"
+			}
+		},
+		"gender_options": [
+			{
+				"label": "Nam giới",
+				"value": "male"
+			},
+			{
+				"label": "Giống cái",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "Thông tin cá nhân",
+			"head2": "Yêu cầu",
+			"head3": "Về người dùng",
+			"head4": "Thông tin liên lạc"
+		},
+		"inline_edit": {
+			"address": "Địa chỉ nhà",
+			"country": "Quốc gia",
+			"dob": "Ngày sinh",
+			"father_name": "Tên cha",
+			"first_name": "Tên đầu tiên",
+			"gender": "Giới tính",
+			"joining_date": "Ngày tham gia",
+			"language": "ngôn ngữ",
+			"last_name": "họ",
+			"maritial_status": "Tình trạng hôn nhân",
+			"mobile": "Di động",
+			"mother_name": "Tên mẹ",
+			"phone": "Điện thoại",
+			"primary_manager": "Người quản lý chính",
+			"secondary_manager": "Quản lý phụ",
+			"skype": "Ứng dụng trò chuyện",
+			"username": "Tên đăng nhập",
+			"state": "Tiểu bang",
+			"city": "Tp.",
+			"postal_code": "Mã bưu điện"
+		},
+		"marital_status": [
+			{
+				"label": "Cưới nhau",
+				"value": "married"
+			},
+			{
+				"label": "Chưa lập gia đình",
+				"value": "unmarried"
+			},
+			{
+				"label": "Góa vợ",
+				"value": "widowed"
+			},
+			{
+				"label": "Đã ly hôn",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "Hình đại diện đã thay đổi thành công.",
+			"create": "Người dùng tạo thành công.",
+			"delete": "Người dùng đã xóa thành công.",
+			"email_change": "Gửi yêu cầu thay đổi email thành công. Vui lòng kiểm tra hộp thư đến của bạn và thay đổi email của bạn.",
+			"import": "Đã nhập người dùng thành công.",
+			"invite": "Gửi lời mời thành công.",
+			"password_change": "Gửi yêu cầu thay đổi mật khẩu thành công. Vui lòng kiểm tra hộp thư đến của bạn và thay đổi email của bạn.",
+			"status": "Trạng thái đã thay đổi thành công.",
+			"update": "Đã cập nhật người dùng thành công."
+		},
+		"profile": {
+			"activities": "Hoạt động",
+			"articles": "Bài viết",
+			"comments": "Bình luận",
+			"defect_hours": "Giờ khiếm khuyết",
+			"defects": "Khiếm khuyết",
+			"incident_hours": "Giờ sự cố",
+			"incidents": "Sự cố",
+			"leave_hours": "Rời khỏi giờ",
+			"leave_other_hours": "Nghỉ / Giờ khác",
+			"meeting_hours": "Giờ họp",
+			"other_hours": "Giờ khác",
+			"projects": "Dự án",
+			"task_hours": "Giờ làm việc",
+			"tasks": "Nhiệm vụ",
+			"total_hours": "Tổng số giờ",
+			"total_messages": "Tổng số tin nhắn"
+		},
+		"title": "người dùng",
+		"title1": "Tạo người dùng",
+		"title2": "Cập nhật người dùng",
+		"title3": "Quyền Người dùng",
+		"title4": "Thay đổi e-mail",
+		"title5": "Đổi mật khẩu",
+		"title6": "Nhập người dùng",
+		"title7": "Thay đổi hình đại diện"
+	},
+	"timer_logs": {
+		"title": "Bắt đầu hẹn giờ",
+		"title1": "Hẹn giờ dừng",
+		"error_messages": {
+			"message1": "Không thể bắt đầu hẹn giờ vì nó đã chạy.",
+			"message2": "Thời gian phải lớn hơn 1 phút.",
+			"message3": "Thời gian phải dưới 12 giờ."
+		}
+	}
+}

@@ -1,0 +1,78 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">assignment</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Surat Jalan Pengiriman Produk</h4>
+
+            <div class="toolbar">
+
+
+              <div class="btn-group  " *ngIf="accessButton?.print_==true">
+                <button type="button" (click)="exportFiles('csv')" class="btn btn-round btn-info btn-sm btn-rose">csv</button>
+                <button type="button" (click)="exportFiles('xlsx')" class="btn btn-round btn-info btn-sm btn-rose">excel</button>
+                <!-- <button type="button" class="btn btn-round btn-info">3</button>  -->
+                <button type="button" (click)="exportFiles('pdf')" class="btn btn-round btn-info btn-sm btn-rose">pdf</button>
+              </div>
+              <button type="button" (click)="add()" *ngIf="accessButton?.new_==true" class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">Tambah Surat Jalan</button>
+              <!-- <buton  type="button"(click)="add()" class="btn btn-primary btn-sm btn-pull-right">Tambah Pengajar</button> -->
+
+            </div>
+            <div class="">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+                <!-- <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="tables table-striped table-no-bordered table-hover" cellspacing="0"
+              width="90%" style="width:90%"> -->
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Mill</th>
+                    <th>No SJ</th>
+                    <th>Tanggal</th>
+                    <th>No Tiket</th>
+                    <th>Customer</th>
+                    <th>Produk</th>
+
+                    <th width="15%"></th>
+                </thead>
+                <tbody *ngIf="PksSjpp?.length != 0">
+                  <tr *ngFor="let p of PksSjpp; index as i">
+                    <td>{{p.nama_mill}}</td>
+                    <td>{{p.no_surat_jalan}}</td>
+                    <td>{{p.tanggal_surat_jalan}}</td>
+                    <td>{{p.no_tiket}}</td>
+                    <td>{{p.nama_customer}}</td>
+                    <td>{{p.nama_produk}}</td>
+
+                    <td class="text-right">
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon "><i class="material-icons">picture_as_pdf</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                      *ngIf="accessButton?.edit_==true" class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                      *ngIf="accessButton?.delete_==true" class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="PksSjpp?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

@@ -1,0 +1,3976 @@
+{
+	"Activate Account": "Aktif hesap",
+	"Administration": "Yönetim",
+	"Announcement": "duyuru",
+	"Announcements": "Duyurular",
+	"Appointments": "Randevular",
+	"Articles": "Nesne",
+	"Assigned Project": "Atanan Proje",
+	"Backup Database": "Yedek veritabanı",
+	"Calendar": "Takvim",
+	"Change Email": "Değişim e-posta",
+	"Clients": "Müşteriler",
+	"Company Detail": "Şirket Detayı",
+	"Complete Projects": "Tamamlanan Projeler",
+	"Cronjob": "cronjob",
+	"Custom Fields": "Özel alanlar",
+	"Dashboard": "Gösterge Paneli",
+	"Dashboard Settings": "Gösterge Tablosu Ayarları",
+	"Defect Assigned": "Atanmış Hata",
+	"Defect Attachment": "Kusur Eki",
+	"Defect Comments": "Kusurlu Yorumlar",
+	"Defect Updated": "Hata Güncellendi",
+	"Defects": "Kusur",
+	"Departments": "Bölümler",
+	"Email Notifications": "Email bildirimleri",
+	"Email Settings": "E mail ayarları",
+	"Email Templates": "E-posta Şablonları",
+	"Estimates": "Tahminler",
+	"File Manager": "Dosya yöneticisi",
+	"Forgot Password": "Parolanızı mı unuttunuz",
+	"HRM": "İnsan kaynakları",
+	"Holidays": "Bayram",
+	"Incident Assigned": "Atanan Olay",
+	"Incident Attachment": "Olay Eki",
+	"Incident Comments": "Olay Yorumları",
+	"Incident Updated": "Olay Güncellendi",
+	"Incidents": "Olayları",
+	"Invoices": "Faturalar",
+	"Items": "Öğeler",
+	"Knowledge Base": "Bilgi tabanı",
+	"Leaves": "Yapraklar",
+	"Mailbox": "Posta kutusu",
+	"Meeting": "toplantı",
+	"Meetings": "Toplantılar",
+	"Menu Allocation": "Menü Tahsisi",
+	"Notification Client": "Bildirim İstemcisi",
+	"PM": "PM",
+	"Payments": "Ödemeler",
+	"Project Attachment": "Proje Eki",
+	"Project Comments": "Proje Yorumları",
+	"Project Management": "Proje Yönetimi",
+	"Project Planner": "Proje Planlayıcısı",
+	"Projects": "Projeler",
+	"Register Email": "Kayıt E-postası",
+	"Reports": "Raporlar",
+	"Reset Password": "Şifreyi yenile",
+	"Roles": "Roller",
+	"Sales": "Satış",
+	"Settings": "Ayarlar",
+	"System Settings": "Sistem ayarları",
+	"System Update": "Sistem güncellemesi",
+	"Task Assigned": "Görev Atandı",
+	"Task Board": "Görev Kurulu",
+	"Task Comments": "Görev Yorumları",
+	"Task Updated": "Görev Güncellendi",
+	"Tasks": "Görevler",
+	"Tasks Attachment": "Görev Eki",
+	"Taxes": "Vergiler",
+	"Team Boards": "Takım Kurulları",
+	"Teams": "Takımlar",
+	"Theme Settings": "Tema Ayarları",
+	"Timesheet": "Zaman planı",
+	"Todos": "Yapmak",
+	"Users": "Kullanıcılar",
+	"Welcome Email": "Hoşgeldiniz E-postası",
+	"activities": {
+		"columns": {
+			"activity": "Aktivite",
+			"date": "tarih",
+			"description": "Açıklama",
+			"module": "modül",
+			"photo": "fotoğraf",
+			"username": "Kullanıcı adı"
+		},
+		"title": "faaliyetler"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "Eylemler",
+			"creator": "yaratıcı",
+			"end_date": "Bitiş tarihi",
+			"start_date": "Başlangıç tarihi",
+			"status": "durum",
+			"title": "Başlık"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir duyuru başlığı girin.",
+				"message2": "Duyuru başlığı en fazla 100 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir başlangıç tarihi seçin.",
+				"message4": "Lütfen geçerli bir bitiş tarihi seçin."
+			},
+			"fields": {
+				"all_clients": "Tüm Müşteriler",
+				"description": "Açıklama",
+				"end_date": "Bitiş tarihi",
+				"publish": "Yayınla",
+				"start_date": "Başlangıç tarihi",
+				"status": "durum",
+				"title": "Başlık",
+				"unpublish": "Yayından Kaldır"
+			},
+			"placeholders": {
+				"placeholder1": "Duyuru Başlığını Girin",
+				"placeholder2": "Başlangıç Tarihini Seçin",
+				"placeholder3": "Bitiş Tarihi Seçin"
+			},
+			"title1": "Duyuru Oluştur",
+			"title2": "Duyuruyu Düzenle"
+		},
+		"messages": {
+			"create": "Duyuru başarıyla oluşturuldu.",
+			"delete": "Duyuru başarıyla silindi.",
+			"update": "Duyuru başarıyla güncellendi."
+		},
+		"title": "Duyurular"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "Ayrılmış Yuvalar"
+		},
+		"columns": {
+			"actions": "Eylemler",
+			"end_time": "Bitiş zamanı",
+			"id": "ID",
+			"location": "yer",
+			"provider": "sağlayan",
+			"requester": "Talep Eden",
+			"start_time": "Başlama zamanı",
+			"status": "durum",
+			"title": "Başlık"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir sağlayıcı seçin.",
+				"message2": "Lütfen geçerli bir başlangıç tarihi seçin.",
+				"message3": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message4": "Lütfen geçerli bir randevu başlığı girin.",
+				"message5": "Randevu başlığı en fazla 255 karakter uzunluğunda olabilir.",
+				"message6": "Lütfen geçerli bir müşteri seçin.",
+				"message7": "Lütfen geçerli bir katılımcı girin.",
+				"message8": "Lütfen geçerli bir durum seçin.",
+				"message9": "Lütfen geçerli bir sağlayıcı seçin."
+			},
+			"fields": {
+				"attendees": "Katılımcılar",
+				"client": "Müşteri",
+				"end_date": "Bitiş tarihi",
+				"location": "yer",
+				"notes": "Notlar",
+				"provider": "sağlayan",
+				"start_date": "Başlangıç tarihi",
+				"status": "durum",
+				"title": "Başlık"
+			},
+			"placeholders": {
+				"placeholder1": "Başlangıç Tarihini Seçin",
+				"placeholder2": "Bitiş Tarihi Seçin",
+				"placeholder3": "Randevu Başlığını Girin",
+				"placeholder4": "- Müşteri Seç -",
+				"placeholder5": "yer",
+				"placeholder6": "Katılımcılar",
+				"placeholder7": "- Durum Seçin -",
+				"placeholder8": "Ay için Ara"
+			}
+		},
+		"messages": {
+			"create": "Randevu başarıyla oluşturuldu.",
+			"delete": "Randevu başarıyla silindi.",
+			"edit": "Randevu başarıyla düzenlendi.",
+			"status": "Durum başarıyla değiştirildi."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "ayrılmış"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Onaylanmış"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "Bitmiş"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "İptal Edildi"
+			}
+		],
+		"title": "Randevular"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "Eylemler",
+			"attachment": "Ek dosya",
+			"file_title": "Dosya Başlığı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir dosya başlığı girin.",
+				"message2": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+				"message3": "Lütfen geçerli bir dosya seçin.",
+				"message4": "Lütfen geçerli bir yorum girin.",
+				"message5": "Dosya başlığı en fazla 255 karakter uzunluğunda olabilir."
+			},
+			"fields": {
+				"attachment": "Ek dosya",
+				"description": "Açıklama",
+				"file_title": "Dosya Başlığı"
+			},
+			"placeholders": {
+				"placeholder1": "Dosya Başlığını Girin"
+			}
+		},
+		"messages": {
+			"create": "Ek başarıyla oluşturuldu.",
+			"delete": "Ek başarıyla silindi."
+		},
+		"title": "Ekler"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "Duyurular",
+			"title": "Duyurular"
+		},
+		"appointments": {
+			"text": "Randevular",
+			"title": "Randevular"
+		},
+		"article": {
+			"text": "makale",
+			"title": "makale"
+		},
+		"calendar": {
+			"text": "Takvim",
+			"title": "Takvim"
+		},
+		"category": {
+			"text": "Kategori",
+			"title": "Kategori"
+		},
+		"clients": {
+			"text": "Müşteriler",
+			"title": "Müşteriler"
+		},
+		"dashboard": {
+			"title": "gösterge paneli"
+		},
+		"defects": {
+			"text": "Kusur",
+			"title": "Kusur"
+		},
+		"departments": {
+			"text": "Bölümler",
+			"title": "Bölümler"
+		},
+		"email_templates": {
+			"text": "E-posta Şablonları",
+			"title": "E-posta Şablonları"
+		},
+		"estimates": {
+			"text": "Tahminler",
+			"title": "Tahminler"
+		},
+		"file_browser": {
+			"text": "Dosya yöneticisi",
+			"title": "Dosya yöneticisi"
+		},
+		"holidays": {
+			"text": "Bayram",
+			"title": "Bayram"
+		},
+		"incidents": {
+			"text": "Olayları",
+			"title": "Olayları"
+		},
+		"invoices": {
+			"text": "Faturalar",
+			"title": "Faturalar"
+		},
+		"items": {
+			"text": "Öğeler",
+			"title": "Öğeler"
+		},
+		"knowledgebase": {
+			"text": "Bilgi tabanı",
+			"title": "Bilgi tabanı"
+		},
+		"leave_types": {
+			"text": "Bırak Türleri",
+			"title": "Bırak Türleri"
+		},
+		"leaves": {
+			"text": "Yapraklar",
+			"title": "Yapraklar"
+		},
+		"mailbox": {
+			"text": "Posta kutusu",
+			"title": "Posta kutusu"
+		},
+		"meetings": {
+			"text": "Toplantılar",
+			"title": "Toplantılar"
+		},
+		"payments": {
+			"text": "Ödemeler",
+			"title": "Ödemeler"
+		},
+		"projects": {
+			"text": "Projeler",
+			"title": "Projeler"
+		},
+		"projects_planner": {
+			"text": "Proje Planlayıcısı",
+			"title": "Proje Planlayıcısı"
+		},
+		"providers": {
+			"text": "sağlayıcılar",
+			"title": "sağlayıcılar"
+		},
+		"reports": {
+			"text": "Raporlar",
+			"title": "Raporlar"
+		},
+		"roles": {
+			"text": "Roller",
+			"title": "Roller"
+		},
+		"settings": {
+			"text": "ayarlar",
+			"title": "ayarlar"
+		},
+		"taskboard": {
+			"text": "Görev Kurulu",
+			"title": "Görev Kurulu"
+		},
+		"tasks": {
+			"text": "Görevler",
+			"title": "Görevler"
+		},
+		"taxes": {
+			"text": "Vergiler",
+			"title": "Vergiler"
+		},
+		"teamboard": {
+			"text": "Takım Kurulu",
+			"title": "Takım Kurulu"
+		},
+		"teams": {
+			"text": "Takımlar",
+			"title": "Takımlar"
+		},
+		"timesheet": {
+			"text": "Zaman planı",
+			"title": "Zaman planı"
+		},
+		"todos": {
+			"text": "Todos",
+			"title": "Todos"
+		},
+		"users": {
+			"text": "Kullanıcılar",
+			"title": "Kullanıcılar"
+		}
+	},
+	"calendar": {
+		"day": "Gün",
+		"month": "Ay",
+		"title": "Takvim",
+		"today": "Bugün",
+		"week": "Hafta"
+	},
+	"clients": {
+		"columns": {
+			"actions": "Eylemler",
+			"company_email": "Şirket E-postası",
+			"company_name": "Şirket Adı",
+			"departments_roles": "Bölümler / Rolleri",
+			"first_name": "isim",
+			"last_name": "Soyadı",
+			"photo": "fotoğraf",
+			"status": "durum",
+			"username": "Kullanıcı adı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir isim giriniz.",
+				"message10": "Parola ve parolayı onaylama eşleşmiyor.",
+				"message12": "Telefon numarası geçerli bir numara olmalıdır.",
+				"message14": "Cep telefonu numarası geçerli bir numara olmalıdır.",
+				"message15": "Lütfen geçerli bir şirket web sitesi girin.",
+				"message17": "Lütfen geçerli bir müşteri tarafından oluşturulan kimlik girin.",
+				"message18": "Lütfen geçerli bir iş kimliği girin.",
+				"message19": "Lütfen geçerli bir kullanıcı adı girin.",
+				"message2": "İlk ad en fazla 20 karakter uzunluğunda olabilir.",
+				"message20": "Kullanıcı adı beyaz boşluk olmadan en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message21": "Lütfen geçerli bir telefon numarası giriniz.",
+				"message22": "Geçerli bir telefon numarası giriniz.",
+				"message23": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+				"message24": "Lütfen rolleri olan geçerli bir departman seçin.",
+				"message3": "Lütfen geçerli bir soyadı girin.",
+				"message4": "Soyadı en fazla 20 karakter uzunluğunda olabilir.",
+				"message5": "Lütfen geçerli eposta adresini giriniz.",
+				"message6": "E-posta geçerli bir e-posta adresi olabilir.",
+				"message7": "Lütfen geçerli bir şifre giriniz.",
+				"message8": "Şifre en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message9": "Lütfen geçerli bir onay şifresi girin."
+			},
+			"fields": {
+				"address": "adres",
+				"client_ID": "Müşteri Kimliği",
+				"company_address": "şirket adresi",
+				"company_city": "Şirket Şehri",
+				"company_country": "Şirket ülke",
+				"company_email": "Şirket E-postası",
+				"company_fax": "Şirket Faksı",
+				"company_mobile": "Şirket Mobil",
+				"company_name": "Şirket Adı",
+				"company_phone": "Şirket Telefonu",
+				"company_website": "Şirket Web Sitesi",
+				"confirm_password": "Şifreyi Onayla",
+				"country": "ülke",
+				"departments_roles": "Bölümler / Roller",
+				"email": "E-posta",
+				"facebook_URL": "Facebook URL",
+				"first_name": "isim",
+				"hosting_company": "Hosting Şirketi",
+				"language": "dil",
+				"last_name": "Soyadı",
+				"linkedIn_URL": "LinkedIn URL'si",
+				"mobile": "seyyar",
+				"password": "Parola",
+				"phone": "telefon",
+				"port": "Liman",
+				"profile_photo": "profil resmi",
+				"skype": "Skype",
+				"twitter_URL": "Twitter URL'si",
+				"username": "Kullanıcı adı",
+				"zip_code": "posta kodu"
+			},
+			"placeholders": {
+				"placeholder1": "İlk Adı Girin",
+				"placeholder10": "Şirket Posta Kodunu Girin",
+				"placeholder11": "Şirket Faksını Girin",
+				"placeholder12": "Şirket Web Sitesini Girin",
+				"placeholder13": "Şirket Skype'a Girin",
+				"placeholder14": "Şirket Adresini Girin",
+				"placeholder15": "Hosting Firmasına Girin",
+				"placeholder16": "Hosting Kullanıcı Adını Girin",
+				"placeholder17": "Hosting Şifresini Girin",
+				"placeholder18": "Hosting Portuna Girin",
+				"placeholder19": "Kullanıcı adı girin",
+				"placeholder2": "Soy adını gir",
+				"placeholder20": "Skype'a girin",
+				"placeholder21": "- Ülke Seçin -",
+				"placeholder22": "-- Dil Seçin --",
+				"placeholder23": "- Bölüm / Rol Seçin -",
+				"placeholder24": "Facebook URL'sini girin",
+				"placeholder25": "Twitter URL'sini girin",
+				"placeholder26": "LinkedIn URL'sini girin",
+				"placeholder27": "Adresi girin",
+				"placeholder3": "E-posta Gir",
+				"placeholder4": "Şifre girin",
+				"placeholder5": "Parolayı Onayla",
+				"placeholder6": "Şirket Adını Girin",
+				"placeholder7": "Şirket E-postasını Girin",
+				"placeholder8": "- Şirket Ülke Seçiniz -",
+				"placeholder9": "Şirket Şehri Girin"
+			}
+		},
+		"headings": {
+			"head1": "Kişisel bilgi",
+			"head2": "Şirket bilgileri",
+			"head3": "Hosting Bilgileri",
+			"head4": "Müşteri Hakkında",
+			"head5": "İletişim Bilgileri & Bio",
+			"head6": "Gereksinimler",
+			"head7": "Sosyal Bilgiler"
+		},
+		"inline_edit": {
+			"first_name": "isim",
+			"last_name": "Soyadı"
+		},
+		"messages": {
+			"create": "İstemci başarıyla oluşturuldu.",
+			"delete": "Müşteri başarıyla silindi.",
+			"invite": "Davetiye başarıyla gönderildi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "İstemci başarıyla güncellendi."
+		},
+		"title": "Müşteriler",
+		"title1": "Müşteri Oluştur",
+		"title2": "Müşteriyi Düzenle"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "Yorum ekle",
+			"button2": "cevap"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir yorum girin.",
+				"message2": "Dosyaları buraya bırakın veya yüklemek için tıklayın."
+			},
+			"placeholders": {
+				"placeholder1": "Yorum girin",
+				"placeholder2": "Yorumu Yanıtla"
+			}
+		},
+		"messages": {
+			"create": "Yorum başarıyla oluşturuldu.",
+			"delete": "Yorum başarıyla silindi.",
+			"update": "Yorum başarıyla güncellendi."
+		},
+		"title": "yorumlar"
+	},
+	"common": {
+		"12_hours": "12 saat",
+		"24_hours": "24 saat",
+		"action": "Aksiyon",
+		"actions": "Eylemler",
+		"add": "Eklemek",
+		"add_to_timesheet": "Zaman çizelgesine ekle",
+		"apply": "Uygulamak",
+		"assign": "ATAMAK",
+		"back": "Geri",
+		"calendar": "Takvim",
+		"calendar_view": "Takvim Görünümü",
+		"cancel": "İptal etmek",
+		"change": "Değişiklik",
+		"close": "Kapat",
+		"comment": "Yorum Yap",
+		"copy": "Kopyala",
+		"create": "yaratmak",
+		"create_comment": "Yorum Oluştur",
+		"created": "düzenlendi",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": ": artan sütun sıralamak için etkinleştir",
+				"sSortDescending": ": azalan sütun sıralamasını etkinleştir"
+			},
+			"oPaginate": {
+				"sFirst": "İlk",
+				"sLast": "Son",
+				"sNext": "Sonraki",
+				"sPrevious": "Önceki"
+			},
+			"sEmptyTable": "Tabloda veri yok",
+			"sInfo": "_TOTAL_ girişten _START_ - _END_ arasındakiler gösteriliyor",
+			"sInfoEmpty": "0 girdiden 0 ile 0 arası gösteriliyor",
+			"sInfoFiltered": "(toplam _MAX_ girişten filtrelendi)",
+			"sInfoPostFix": "",
+			"sInfoThousands": ",",
+			"sLengthMenu": "Menüyü _MENU_",
+			"sLoadingRecords": "Yükleniyor...",
+			"sProcessing": "İşleme...",
+			"sSearchPlaceholder": "Arama ...",
+			"sZeroRecords": "Hiçbir eşleşen kayıt bulunamadı"
+		},
+		"days": "Günler",
+		"delete": "silmek",
+		"detail": "Detay",
+		"details": "ayrıntılar",
+		"download": "İndir",
+		"drag_file": "Bir dosyayı sürükleyin veya Gözatın",
+		"edit": "Düzenle",
+		"empty_message": {
+			"activities": "Hiçbir etkinlik yok",
+			"announcements": "Hiçbir duyuru yok.",
+			"articles": "Hiç makale yok.",
+			"attachments": "Herhangi bir ek yok.",
+			"categories": "Hiçbir kategori yok.",
+			"clients": "Hiç müşteri yok.",
+			"custom_fields": "Herhangi bir özel alan yok.",
+			"database_backups": "Herhangi bir veritabanı yedeklemesi yok.",
+			"defects": "Herhangi bir kusur yok.",
+			"departments": "Hiçbir departman yok.",
+			"estimates": "Herhangi bir tahmin yok.",
+			"file_browser": "Herhangi bir klasör / dosya yok.",
+			"histories": "Hiç tarih yok.",
+			"holidays": "Hiç tatil yok.",
+			"incidents": "Hiçbir olay yok.",
+			"invoices": "Fatura yok.",
+			"leaves": "Yaprak yok.",
+			"mails": "Hiç posta yok.",
+			"meetings": "Hiçbir toplantı yok.",
+			"notifications": "Hiçbir bildirim yok.",
+			"projects": "Hiç proje yok.",
+			"providers": "Hiç sağlayıcı yok.",
+			"roles": "Hiç rol yok.",
+			"sprints": "Sprint yok.",
+			"tasks": "Herhangi bir görev yok.",
+			"teams": "Hiç takım yok.",
+			"timesheet": "Herhangi bir zaman çizelgesi yok.",
+			"todos": "Hiçbir todos yok.",
+			"translations": "Hiç çeviri yok.",
+			"users": "Hiç kullanıcı yok."
+		},
+		"error_messages": {
+			"message1": "Dosyaya veya kaynaklara erişmek için uygun izinleriniz olmayabilir.",
+			"message2": "Yetkisiz Kullanıcı - Yetkilendirme Jetonunun Süresi Dolduğunda.",
+			"message3": "Yetkilendirme Jetonunun Süresi Doldu.",
+			"message4": "Üzgünüz, aradığınız sayfa bulunamadı.",
+			"message5": "Bir şeyler ters gitti!",
+			"message6": "Başarıyla çıkış yaptınız."
+		},
+		"errors_keys": {
+			"key1": "Giriş reddedildi",
+			"key2": "Geçersiz istek",
+			"key3": "Yetkisiz",
+			"key4": "Giriş reddedildi",
+			"key5": "Bulunamadı",
+			"key6": "İşlenemez Varlık"
+		},
+		"false": "Yanlış",
+		"fullscreen": "Tam Ekran",
+		"hours": "Saatler",
+		"import": "ithalat",
+		"invite": "Davet et",
+		"issues": "Sorunlar",
+		"kanban": "Kanban",
+		"last_updated": "Son güncelleme",
+		"list": "Liste",
+		"lists": "Liste görünümü",
+		"methods": "Yöntemler",
+		"move": "Hareket",
+		"new": "Yeni",
+		"not_allowed": "Demoda izin verilmiyor.",
+		"offline": "Çevrimdışı",
+		"online": "İnternet üzerinden",
+		"options": "Seçenekler",
+		"overdue": "vadesi geçmiş",
+		"pending": "Kadar",
+		"placeholders": {
+			"placeholder1": "- Proje Seçin -"
+		},
+		"priorities": {
+			"high": "Yüksek",
+			"low": "Düşük",
+			"medium": "Orta",
+			"urgent": "Acil",
+			"very_high": "Çok Yüksek"
+		},
+		"profile": "Profil",
+		"remove": "Kaldır",
+		"remove_file": "Dosyayı Kaldır",
+		"report": "Bildiri",
+		"request": "İstek",
+		"reset": "Reset",
+		"restore": "Restore",
+		"save": "Kayıt etmek",
+		"search": "Arama ...",
+		"show": "Göstermek",
+		"status": {
+			"In Progress": "Devam etmekte",
+			"Not Started": "başlatılmadı",
+			"On Hold": "beklemede",
+			"accepted": "Kabul edilmiş",
+			"active": "Aktif",
+			"all": "Herşey",
+			"approved": "Onaylandı",
+			"assigned": "atanmış",
+			"cancel": "İptal etmek",
+			"canceled": "İptal Edildi",
+			"closed": "kapalı",
+			"completed": "Tamamlanan",
+			"confirmed": "Onaylanmış",
+			"deactive": "Deactive",
+			"declined": "Reddedildi",
+			"deferred": "Ertelenmiş",
+			"draft": "Taslak",
+			"error": "Hata",
+			"expired": "Süresi doldu",
+			"finished": "Bitmiş",
+			"in_progress": "Devam etmekte",
+			"inactive": "etkisiz",
+			"my": "benim",
+			"on_hold": "beklemede",
+			"open": "Açık",
+			"overdue": "vadesi geçmiş",
+			"paid": "Ücretli",
+			"partially_paid": "Kısmen ödenmiş",
+			"pending": "Kadar",
+			"published": "Yayınlanan",
+			"rejected": "Reddedildi",
+			"released": "Yayınlandı",
+			"reopen": "Yeniden aç",
+			"reserved": "ayrılmış",
+			"sent": "Gönderildi",
+			"solved": "çözülmüş",
+			"success": "başarı",
+			"taken": "Alınmış",
+			"total": "Genel Toplam",
+			"unpaid": "ödenmemiş",
+			"unpublished": "yayınlanmamış",
+			"waiting": "bekleme"
+		},
+		"submit": "Gönder",
+		"swal": {
+			"cancelButtonText": "Hayır, sakla !",
+			"confirmButtonText": "Evet, sil !",
+			"text": "Bunu kurtaramayacaksın",
+			"text1": "Bu departmanı kurtaramayacaksınız !. Silmeden önce, bu bölümle ilgili tüm kullanıcıları sildiğinizden emin olun.",
+			"text2": "Bu kullanıcıyı kurtaramayacaksınız !. Silmeden önce kullanıcıyı ekiplerden, projelerden, görevlerden, kusurlardan ve olaylardan vb. Kaldırdığınızdan emin olun.",
+			"text3": "Bu istemciyi kurtaramayacaksınız !. Silmeden önce müşteriyi ekiplerden, projelerden, görevlerden, kusurlardan ve olaylardan vb. Kaldırdığınızdan emin olun.",
+			"text4": "Bu projeyi kurtaramayacaksınız !. Silmeden önce, bu projeyle ilgili tüm görevleri, kusurları ve olayları sildiğinizden emin olun.",
+			"title": "Emin misiniz?"
+		},
+		"switch_to_calendar": "Takvime Geç",
+		"switch_to_kanban": "Kanban'a geç",
+		"switch_to_list": "Listeye Geç",
+		"test": "Ölçek",
+		"toggle_dropdown": "Açılır Menüyü Aç / Kapat",
+		"tooltip": {
+			"project_csv_sample": "Örnek Proje CSV'si",
+			"task_csv_sample": "Örnek Görev CSV'si",
+			"team_csv_sample": "Örnek Ekip CSV'si",
+			"user_csv_sample": "Örnek Kullanıcı CSV'si"
+		},
+		"total": "Genel Toplam",
+		"true": "Doğru",
+		"unassign": "Atamayı kaldırma",
+		"unassigned": "Atanmayanlar",
+		"update": "Güncelleştirme",
+		"updated": "Güncellenmiş",
+		"upload": "Dosya yükleme",
+		"view": "Görünüm",
+		"view_comments": "Yorumları Görüntüle",
+		"view_more": "Daha fazla göster"
+	},
+	"customFieldsType": [
+		{
+			"label": "Metin",
+			"value": "text"
+		},
+		{
+			"label": "Metin Alanı",
+			"value": "textarea"
+		},
+		{
+			"label": "Yıkılmak",
+			"value": "dropdown"
+		},
+		{
+			"label": "tarih",
+			"value": "date"
+		},
+		{
+			"label": "Onay Kutusu",
+			"value": "checkbox"
+		},
+		{
+			"label": "Sayısal",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "Görev Durumu",
+		"chart2": "Proje durumu",
+		"chart3": "Aylık rapor",
+		"estimate": "Tahminler",
+		"invoices": "Vadesi Dolmuş En Yüksek Faturalar",
+		"widgets": {
+			"approved_request": "onaylı",
+			"due_payment": "nedeniyle",
+			"received_request": "Alınan",
+			"recieved_payment": "Alındı"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "Eylemler",
+			"actual_hours": "Saatler",
+			"assigned": "atanmış",
+			"assigned_group": "Atanan Grup",
+			"creator": "yaratıcı",
+			"defect_name": "Hata Adı",
+			"end_date": "Bitiş tarihi",
+			"id": "ID",
+			"project": "proje",
+			"project_version": "Proje Sürümü",
+			"severity": "şiddet",
+			"start_date": "Başlangıç tarihi",
+			"status": "durum",
+			"type": "tip"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir hata adı girin.",
+				"message10": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+				"message11": "Lütfen geçerli bir başlangıç tarihi seçin.",
+				"message12": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message13": "Tahmini saatler, yalnızca herhangi bir özel karakter içermeyen, iki nokta üst üste işaretinden sonra (60'tan az) yalnızca rakamlara izin verir.",
+				"message2": "Hata adı en fazla 255 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen benzersiz ve geçerli bir hata oluşturulmuş kimlik girin.",
+				"message4": "Lütfen geçerli bir hata türü seçin.",
+				"message5": "Lütfen geçerli bir hata durumu seçin.",
+				"message6": "Lütfen geçerli bir hata şiddeti seçin.",
+				"message8": "Lütfen geçerli bir proje seçin."
+			},
+			"fields": {
+				"actual_hours": "Gerçek Saatler",
+				"assigned_To": "Atandı",
+				"assigned_group": "Atanan Grup",
+				"choose_file": "Dosya Seç",
+				"completed": "Tamamlanan",
+				"created_by": "Tarafından yaratıldı",
+				"defect_ID": "Hata Kimliği",
+				"defect_name": "Hata Adı",
+				"defect_type": "Kusur Türü",
+				"description": "Açıklama",
+				"end_date": "Bitiş tarihi",
+				"estimate_hours": "Tahmini Saat",
+				"project_name": "proje Adı",
+				"project_version": "Proje Sürümü",
+				"severity": "şiddet",
+				"start_date": "Başlangıç tarihi",
+				"status": "durum"
+			},
+			"placeholders": {
+				"placeholder1": "Hata Adını Girin",
+				"placeholder2": "- Hata Türünü Seç -",
+				"placeholder3": "- Hata Durumu'nu seçin -",
+				"placeholder4": "- Hata Önem Derecesini Seçin -",
+				"placeholder5": "- Atanan Grup Seçin -",
+				"placeholder6": "- Proje Seçin -",
+				"placeholder7": "- Proje Sürümü'nü seçin -",
+				"placeholder8": "Başlangıç Tarihini Seçin",
+				"placeholder9": "Bitiş Tarihi Seçin"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "Kusur",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Artırma",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "Özel alanlar",
+			"title2": "Açıklama"
+		},
+		"headings": {
+			"head1": "Hata Bilgisi",
+			"head2": "Proje Bilgisi",
+			"head3": "Dosyaları yükle",
+			"head4": "Özel alanlar",
+			"head5": "Açıklama"
+		},
+		"inline_edit": {
+			"defect_name": "Hata Adı",
+			"defect_type": "Kusur Türü",
+			"description": "Açıklama",
+			"estimate_hours": "Tahmini Saat",
+			"notes": "Notlar"
+		},
+		"messages": {
+			"create": "Kusur başarıyla oluşturuldu.",
+			"delete": "Hata başarıyla silindi.",
+			"severity": "Önem derecesi başarıyla güncellendi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Kusur başarıyla güncellendi."
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Düşük"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Orta"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Yüksek"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Çok Yüksek"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Acil"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "atanmış"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "kapalı"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "Açık"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "çözülmüş"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Yeniden aç"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "Ertelenmiş"
+			}
+		],
+		"title": "Kusur",
+		"title1": "Hata Yarat",
+		"title2": "Arızayı Düzenle",
+		"tooltips": {
+			"attachment": "Ek dosya"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "Eylemler",
+			"designation": "tayin"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir departman adı girin.",
+				"message2": "Departman adı en fazla 20 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir departman rolü seçin."
+			},
+			"fields": {
+				"department": "Bölüm",
+				"department_name": "Bölüm adı",
+				"department_roles": "Bölüm Rolleri",
+				"designation": "tayin",
+				"permission": "İzin"
+			},
+			"placeholders": {
+				"placeholder1": "Departman Adını Girin"
+			}
+		},
+		"messages": {
+			"create": "Departman başarıyla oluşturuldu.",
+			"delete": "Departman başarıyla silindi.",
+			"update": "Departman başarıyla güncellendi."
+		},
+		"title": "Bölümler",
+		"title1": "Detay Departmanı",
+		"title2": "Bölüm Rolü",
+		"tooltip": {
+			"tooltip1": "Tüm İzinleri Seç",
+			"tooltip10": "Hepsini seç",
+			"tooltip11": "İzin",
+			"tooltip2": "Oluştur / düzenle / sil seçeneğini belirlerseniz görünümü seçmenize gerek yoktur",
+			"tooltip3": "Tümünü Oluştur Oluştur",
+			"tooltip4": "Tümünü Düzenle",
+			"tooltip5": "Tümünü Sil Sil",
+			"tooltip6": "seçmek",
+			"tooltip7": "Yaratabilir",
+			"tooltip8": "Düzenleyebilir",
+			"tooltip9": "Silebilir"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "Müşteri",
+			"estimate_date": "tarih",
+			"estimate_number": "Tahmin",
+			"status": "durum",
+			"total_amount": "Miktar",
+			"valid_till": "Kadar geçerli"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir müşteri seçin.",
+				"message2": "Lütfen geçerli bir tahmini tarih seçin.",
+				"message3": "Lütfen geçerli bir son kullanma tarihi seçin.",
+				"message4": "Lütfen geçerli bir durum seçin.",
+				"message5": "Lütfen en az bir öğe ekleyin.",
+				"message6": "Ürün, miktar ve birim fiyatı girin.",
+				"message7": "Lütfen geçerli bir indirim türü seçin."
+			},
+			"fields": {
+				"adjustment": "ayarlama",
+				"customer": "Müşteri",
+				"discount": "İndirim",
+				"discount_type": "İndirim Türü",
+				"estimate_date": "Tahmin Tarihi",
+				"estimate_number": "Tahmini Numara",
+				"item_description": "Açıklama",
+				"item_name": "madde",
+				"item_tax": "Vergi",
+				"quantity": "Adet",
+				"reference": "Referans",
+				"status": "durum",
+				"sub_total": "Ara toplam",
+				"total_amount": "Genel Toplam",
+				"total_item_amount": "Miktar",
+				"unit": "birim",
+				"unit_price": "Birim fiyat",
+				"valid_till": "Son Kullanma Tarihi"
+			},
+			"placeholders": {
+				"placeholder1": "- Müşteri Seçin -",
+				"placeholder10": "Adet",
+				"placeholder11": "Birim fiyat",
+				"placeholder12": "- Vergi Seçin -",
+				"placeholder2": "Tahmin Tarihi Seçin",
+				"placeholder3": "Son Kullanma Tarihini Seçin",
+				"placeholder4": "Referans Girin",
+				"placeholder5": "- İndirim Tipi Seçiniz -",
+				"placeholder6": "- Durum Seçin -",
+				"placeholder7": "-- Öğeyi seçin --",
+				"placeholder8": "madde",
+				"placeholder9": "Açıklama"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Yüzde"
+			},
+			{
+				"id": "fixed",
+				"label": "Sabit"
+			}
+		],
+		"headings": {
+			"head1": "Müşteri Bilgisi",
+			"head2": "tarih",
+			"head3": "Diğer Bilgiler",
+			"head4": "Öğeler Bilgisi"
+		},
+		"inline_edit": {
+			"item_description": "Açıklama",
+			"item_name": "madde",
+			"item_tax": "Vergi",
+			"quantity": "Adet",
+			"unit_price": "Birim fiyat"
+		},
+		"messages": {
+			"create": "Tahmin başarıyla oluşturuldu.",
+			"delete": "Tahmin başarıyla silindi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Tahmin başarıyla güncellendi."
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "taslak"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "Gönderilen"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "Süresi doldu"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "Reddedildi"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "Kabul edilmiş"
+			}
+		],
+		"title": "Tahminler",
+		"title1": "Tahmin et!",
+		"title2": "Tahmin Oluştur",
+		"title3": "Tahmini Güncelle",
+		"title4": "Tahmin",
+		"view": {
+			"accept": "Kabul etmek",
+			"accepted": "Kabul edilmiş",
+			"balance_due": "Ödenmesi Gereken Bakiye",
+			"bill_to": "ya fatura edilecek",
+			"decline": "düşüş",
+			"declined": "Reddedildi",
+			"download": "İndir",
+			"draft": "taslak",
+			"due_date": "Bitiş tarihi",
+			"due_on_receipt": "Makbuzda Ödenmesi Gereken",
+			"estimate_date": "Tahmin Tarihi",
+			"expired": "Süresi doldu",
+			"sent": "Gönderilen",
+			"terms": "şartlar ve koşullar",
+			"total_due": "Toplam vadesi"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "Eylemler",
+			"name": "isim",
+			"progress": "İlerleme",
+			"size": "Boyut",
+			"status": "durum"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir klasör adı girin.",
+				"message2": "Yüklemek için buraya sürükleyin ...",
+				"message3": "Lütfen geçerli bir dosya adı girin."
+			},
+			"fields": {
+				"description": "Açıklama",
+				"file_name": "dosya adı",
+				"folder_name": "Klasör ismi"
+			},
+			"placeholders": {
+				"placeholder1": "Klasör Adını Girin",
+				"placeholder2": "Açıklama Girin",
+				"placeholder3": "Dosya Adını Girin"
+			}
+		},
+		"messages": {
+			"create_folder": "Klasör başarıyla oluşturuldu.",
+			"delete_file": "Dosya başarıyla silindi.",
+			"delete_folder": "Klasör başarıyla silindi.",
+			"update_file": "Dosya başarıyla güncellendi.",
+			"update_folder": "Klasör başarıyla güncellendi.",
+			"upload_file": "Dosya başarıyla yüklendi."
+		},
+		"title": "Dosya yöneticisi",
+		"title1": "Klasör oluşturun",
+		"title2": "Klasörü Düzenle",
+		"title3": "Dosyaları yükle",
+		"title4": "Dosyayı düzenle",
+		"title5": "Dosya",
+		"title6": "Klasör",
+		"title7": "Katma"
+	},
+	"footer": {
+		"copyright": "telif hakkı",
+		"text1": "Tüm hakları Saklıdır"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli eposta adresini giriniz.",
+				"message2": "E-posta geçerli bir e-posta adresi olmalıdır."
+			},
+			"placeholders": {
+				"placeholder1": "E-posta Gir"
+			}
+		},
+		"messages": {
+			"success": "Şifrenizi nasıl sıfırlayacağınıza ilişkin talimatlar için lütfen e-postanızı kontrol edin."
+		},
+		"title": "Parolanızı mı unuttunuz",
+		"title1": "Lütfen aşağıya e-posta adresinizi girin, şifrenizi değiştirmek için size bilgi gönderelim."
+	},
+	"header": {
+		"heading": {
+			"head1": "Var",
+			"head2": "yeni postalar",
+			"head3": "Tüm postaları gör",
+			"head4": "Güncelleme uygun"
+		},
+		"inbox": "Gelen kutum",
+		"languages": "diller",
+		"logout": "Çıkış Yap",
+		"mails": "postalar",
+		"notifications": "Bildirimler",
+		"profile": "Profil",
+		"search": {
+			"text": "Burada ara ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "Aktivite",
+			"closed_by": "Tarafından kapatıldı",
+			"commentor": "Commentor",
+			"creator": "yaratıcı",
+			"date": "tarih",
+			"solved_by": "Çözen",
+			"updated_by": "Tarafından güncellendi"
+		},
+		"title": "Geçmişini"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "Eylemler",
+			"color": "Renk",
+			"date": "tarih",
+			"event_name": "Etkinlik ismi",
+			"location": "yer"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir etkinlik adı girin.",
+				"message2": "Etkinlik adı en fazla 50 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir tarih seçin."
+			},
+			"fields": {
+				"color": "Renk",
+				"date": "tarih",
+				"description": "Açıklama",
+				"event_name": "Etkinlik ismi",
+				"location": "yer"
+			},
+			"placeholders": {
+				"placeholder1": "Etkinlik Adını Girin",
+				"placeholder2": "Tarih seç",
+				"placeholder3": "Konum girin"
+			}
+		},
+		"inline_edit": {
+			"event_name": "Etkinlik ismi",
+			"holiday_date": "Tatil Tarihi",
+			"location": "yer"
+		},
+		"messages": {
+			"create": "Tatil başarıyla oluşturuldu.",
+			"delete": "Tatil başarıyla silindi.",
+			"update": "Tatil başarıyla güncellendi."
+		},
+		"title": "Bayram"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "Eylemler",
+			"actual_hours": "Saatler",
+			"assigned": "atanmış",
+			"assigned_group": "Atanan Grup",
+			"client": "Müşteri",
+			"client_company": "Müşteri Şirketi",
+			"creator": "yaratıcı",
+			"end_date": "Bitiş tarihi",
+			"id": "ID",
+			"incident_name": "Olay Adı",
+			"priority": "öncelik",
+			"project": "proje",
+			"project_version": "Proje Sürümü",
+			"start_date": "Başlangıç tarihi",
+			"status": "durum",
+			"type": "tip"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir olay adı girin.",
+				"message2": "Olay adı en fazla 255 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen benzersiz ve geçerli bir olayla oluşturulan kimlik girin.",
+				"message4": "Lütfen geçerli bir olay durumu seçin.",
+				"message5": "Lütfen geçerli bir olay önceliği seçin.",
+				"message6": "Lütfen geçerli bir olay türü seçin.",
+				"message7": "Lütfen geçerli bir başlangıç tarihi seçin.",
+				"message8": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message9": "Tahmini saatler, yalnızca herhangi bir özel karakter içermeyen, iki nokta üst üste işaretinden sonra (60'tan az) yalnızca rakamlara izin verir."
+			},
+			"fields": {
+				"actual_hours": "Gerçek Saatler",
+				"assigned_To": "Atandı",
+				"assigned_group": "Atanan Grup",
+				"created_by": "Tarafından yaratıldı",
+				"description": "Açıklama",
+				"end_date": "Bitiş tarihi",
+				"estimate_hours": "Tahmini Saat",
+				"incident_ID": "Olay kimliği",
+				"incident_name": "Olay Adı",
+				"incident_type": "Olay türü",
+				"priority": "öncelik",
+				"project": "proje",
+				"project_name": "proje Adı",
+				"project_version": "Proje Sürümü",
+				"start_date": "Başlangıç tarihi",
+				"status": "durum"
+			},
+			"placeholders": {
+				"placeholder1": "Olay Adını Girin",
+				"placeholder2": "- Olay Durumunu Seçin -",
+				"placeholder3": "- Olay Önceliğini Seçin -",
+				"placeholder4": "- Olay Tipini Seç -",
+				"placeholder5": "- Atanan Grup Seçin -",
+				"placeholder6": "- Proje Seçin -",
+				"placeholder7": "- Proje Sürümü'nü seçin -",
+				"placeholder8": "Başlangıç Tarihini Seçin",
+				"placeholder9": "Bitiş Tarihi Seçin"
+			}
+		},
+		"details": {
+			"title1": "Özel alanlar",
+			"title2": "Açıklama"
+		},
+		"headings": {
+			"head1": "Olay Bilgisi",
+			"head2": "Proje Bilgisi",
+			"head3": "Özel alanlar",
+			"head4": "Açıklama",
+			"head5": "Diğer Bilgiler"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "Hizmet talebi",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Bilgi talebi",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "Açıklama",
+			"estimate_hours": "Tahmini Saat",
+			"incident_name": "Olay Adı",
+			"incident_type": "Olay türü",
+			"notes": "Notlar"
+		},
+		"messages": {
+			"create": "Olay başarıyla oluşturuldu.",
+			"delete": "Olay başarıyla silindi.",
+			"import": "Olay başarıyla içe aktarıldı.",
+			"priority": "Öncelik başarıyla değiştirildi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Olay başarıyla güncellendi."
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Düşük"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Orta"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Yüksek"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Çok Yüksek"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Acil"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "atanmış"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "çözülmüş"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "Ertelenmiş"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Yeniden aç"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "kapalı"
+			}
+		],
+		"title": "Olayları",
+		"title1": "Olay Oluştur",
+		"title2": "Olayı Düzenle"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "Müşteri",
+			"due_date": "Bitiş tarihi",
+			"invoice_date": "tarih",
+			"invoice_number": "fatura",
+			"status": "durum",
+			"total_amount": "Miktar"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir müşteri seçin.",
+				"message2": "Lütfen geçerli bir fatura tarihi seçin.",
+				"message3": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message4": "Lütfen geçerli bir durum seçin.",
+				"message5": "Lütfen en az bir öğe ekleyin.",
+				"message6": "Ürün, miktar ve birim fiyatı girin.",
+				"message7": "Lütfen geçerli bir indirim türü seçin."
+			},
+			"fields": {
+				"adjustment": "ayarlama",
+				"customer": "Müşteri",
+				"discount": "İndirim",
+				"discount_type": "İndirim Türü",
+				"due_date": "Bitiş tarihi",
+				"invoice_date": "Fatura Tarihi",
+				"invoice_number": "Fatura numarası",
+				"item_description": "Açıklama",
+				"item_name": "madde",
+				"item_tax": "Vergi",
+				"project": "proje",
+				"quantity": "Adet",
+				"reference": "Referans",
+				"status": "durum",
+				"sub_total": "Ara toplam",
+				"total_amount": "Genel Toplam",
+				"total_amount_due": "Alacak miktarı",
+				"total_item_amount": "Miktar",
+				"unit": "birim",
+				"unit_price": "Birim fiyat"
+			},
+			"placeholders": {
+				"placeholder1": "- Müşteri Seçin -",
+				"placeholder10": "Adet",
+				"placeholder11": "Birim fiyat",
+				"placeholder12": "- Vergi Seçin -",
+				"placeholder13": "- Proje Seçin -",
+				"placeholder2": "Fatura Tarihini Seçin",
+				"placeholder3": "Bitiş Tarihini Seçin",
+				"placeholder4": "Referans Girin",
+				"placeholder5": "- İndirim Tipi Seçiniz -",
+				"placeholder6": "- Durum Seçin -",
+				"placeholder7": "-- Öğeyi seçin --",
+				"placeholder8": "madde",
+				"placeholder9": "Açıklama"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Yüzde"
+			},
+			{
+				"id": "fixed",
+				"label": "Sabit"
+			}
+		],
+		"headings": {
+			"head1": "Müşteri Bilgisi",
+			"head2": "tarih",
+			"head3": "Diğer Bilgiler",
+			"head4": "Öğeler Bilgisi"
+		},
+		"inline_edit": {
+			"item_description": "Açıklama",
+			"item_name": "madde",
+			"item_tax": "Vergi",
+			"quantity": "Adet",
+			"unit_price": "Birim fiyat"
+		},
+		"messages": {
+			"create": "Fatura başarıyla oluşturuldu.",
+			"delete": "Fatura başarıyla silindi.",
+			"payments": "Bu fatura için ödeme bulunamadı",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Fatura başarıyla güncellendi."
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "Ücretli"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "Kısmen ödenmiş"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "ödenmemiş"
+			}
+		],
+		"title": "Faturalar",
+		"title1": "Fatura!",
+		"title2": "Fatura oluşturmak",
+		"title3": "Faturayı Güncelle",
+		"title4": "fatura",
+		"view": {
+			"add_payment": "Ödeme Ekle",
+			"amount": "Miktar",
+			"balance_due": "Ödenmesi Gereken Bakiye",
+			"bank": "Banka",
+			"bill_to": "ya fatura edilecek",
+			"date": "tarih",
+			"download": "İndir",
+			"due_amount": "Ödenecek meblağ",
+			"due_date": "Bitiş tarihi",
+			"due_on_receipt": "Makbuzda Ödenmesi Gereken",
+			"gst_number": "GST IN",
+			"invoice_date": "Fatura Tarihi",
+			"offline_payment": "Çevrimdışı ödeme",
+			"online_payment": "Online ödeme",
+			"paid": "Ücretli",
+			"partially_paid": "Kısmen ödenmiş",
+			"payment": "Ödeme",
+			"payment_mode": "Ödeme Şekli",
+			"paypal": "Paypal",
+			"status": "durum",
+			"stripe": "Şerit",
+			"terms": "şartlar ve koşullar",
+			"total_due": "Toplam vadesi",
+			"transactions": "İşlemler",
+			"unpaid": "ödenmemiş"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "Açıklama",
+			"name": "Öğe adı",
+			"price": "Fiyat",
+			"tax": "Vergi",
+			"unit": "birim"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir öğe adı girin.",
+				"message2": "Lütfen geçerli bir fiyat girin.",
+				"message3": "Fiyat bir sayı olmalıdır."
+			},
+			"fields": {
+				"description": "Açıklama",
+				"name": "Öğe adı",
+				"price": "Fiyat",
+				"tax": "Vergi",
+				"unit": "birim"
+			},
+			"placeholders": {
+				"placeholder1": "Öğe Adını Girin",
+				"placeholder2": "Fiyat Girin",
+				"placeholder3": "Birim Girin",
+				"placeholder4": "- Vergi Seçin -",
+				"placeholder5": "Açıklama Girin"
+			}
+		},
+		"labels": {
+			"label1": "Öğe bilgilerinin değiştirilmesi, oluşturulan tahminleri ve faturaları etkilemez."
+		},
+		"messages": {
+			"create": "Öğe başarıyla oluşturuldu.",
+			"delete": "Öğe başarıyla silindi.",
+			"update": "Öğe başarıyla güncellendi."
+		},
+		"title": "Öğeler",
+		"title1": "Öğe!",
+		"title2": "Öğe Oluştur",
+		"title3": "Öğeyi Güncelle"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "Görevi liste arasında sürükleyin"
+		},
+		"title1": "Kusur Kanban",
+		"title2": "Olay Kanban"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "Eylemler",
+				"article_name": "Makale başlığı"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir makale başlığı girin.",
+					"message2": "Makale başlığı en fazla 50 karakter uzunluğunda olabilir.",
+					"message3": "Lütfen geçerli bir kategori seçin.",
+					"message4": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+					"message5": "Lütfen geçerli bir açıklama girin."
+				},
+				"fields": {
+					"article_title": "Makale başlığı",
+					"category": "Kategori",
+					"description": "Açıklama",
+					"file": "Dosya"
+				},
+				"placeholders": {
+					"placeholder1": "Makale Başlığını Girin",
+					"placeholder2": "-- Kategori seç --",
+					"placeholder3": "Açıklama Girin"
+				}
+			},
+			"messages": {
+				"create": "Makale başarıyla oluşturuldu.",
+				"delete": "Makale başarıyla silindi.",
+				"update": "Makale başarıyla güncellendi."
+			},
+			"title": "makale",
+			"title1": "Nesne",
+			"title2": "makale"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir kategori adı girin.",
+					"message2": "Kategori adı en fazla 50 karakter uzunluğunda olabilir.",
+					"message3": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+					"message4": "Lütfen geçerli bir dosya seçin."
+				},
+				"fields": {
+					"category_logo": "Kategori Logosu",
+					"category_name": "Kategori Adı"
+				},
+				"placeholders": {
+					"placeholder1": "Kategori Adını Girin",
+					"placeholder2": "Arama .."
+				}
+			},
+			"messages": {
+				"create": "Kategori başarıyla oluşturuldu.",
+				"delete": "Kategori başarıyla silindi.",
+				"update": "Kategori başarıyla güncellendi."
+			},
+			"title": "Kategori",
+			"title1": "Kategori",
+			"title2": "Kategoriler"
+		},
+		"title": "Bilgi tabanı"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "Onaylanmış İzin",
+			"pending_leave": "Bekleyen İzin",
+			"user": "kullanıcı"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "Tarih aralığı",
+				"employee_name": "İşçi adı"
+			},
+			"placeholders": {
+				"placeholder1": "Tarih Aralığı Seçin",
+				"placeholder2": "Herşey"
+			}
+		},
+		"title": "Rapordan Ayrıl",
+		"title1": "Detaydan Ayrıl"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "Renk",
+			"leave_type": "Bırak Tipi",
+			"no_of_leaves": "Toplam İzin"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir izin türü girin.",
+				"message2": "İzin türü en fazla 20 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir toplam izin girin.",
+				"message4": "Toplam izin bir sayı olmalıdır.",
+				"message5": "Lütfen geçerli bir renk seçin."
+			},
+			"fields": {
+				"color": "Renk",
+				"leave_type": "Bırak Tipi",
+				"no_of_leaves": "Toplam İzin"
+			},
+			"placeholders": {
+				"placeholder1": "İzin Türünü Girin",
+				"placeholder2": "Toplam İzin Girin"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "Bırak Tipi",
+			"no_of_leaves": "Toplam İzin"
+		},
+		"messages": {
+			"create": "Bırakma türü başarıyla oluşturuldu.",
+			"delete": "Bırakma türü başarıyla silindi.",
+			"update": "Türün başarıyla güncellendiğini bırakın."
+		},
+		"title": "Bırak Türleri",
+		"title1": "Bırak Tipi!",
+		"title2": "İzin Türü Oluştur",
+		"title3": "İzin Türü Ekle"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "Kabul etmek",
+			"reject": "reddetmek"
+		},
+		"columns": {
+			"duration": "süre",
+			"leave_date": "tarih",
+			"leave_type": "Bırak Tipi",
+			"reason": "neden",
+			"status": "durum",
+			"user": "kullanıcı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir kullanıcı seçin.",
+				"message2": "Lütfen geçerli bir izin türü seçin.",
+				"message3": "Lütfen geçerli bir ayrılma tarihi seçin.",
+				"message4": "Lütfen geçerli bir durum seçin.",
+				"message5": "Lütfen geçerli bir neden girin.",
+				"message6": "Dosyaları buraya bırakın veya yüklemek için tıklayın."
+			},
+			"fields": {
+				"attachments": "Ekler",
+				"duration": "süre",
+				"duration_type": "Bırak Tipi",
+				"leave_date": "tarih",
+				"leave_type": "ayrılmak",
+				"reason": "neden",
+				"reject_reason": "Nedeni Reddetmek mi? (İsteğe bağlı)",
+				"status": "durum",
+				"user": "kullanıcı"
+			},
+			"placeholders": {
+				"placeholder1": "-- Kullanıcı seç --",
+				"placeholder2": "- Ayrılma Türünü Seçin -",
+				"placeholder3": "Tarih seç",
+				"placeholder4": "- Durum Seçin -",
+				"placeholder5": "Nedeni Girin"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "İlk Yarı"
+			},
+			{
+				"id": "second_half",
+				"label": "İkinci Yarı"
+			}
+		],
+		"labels": {
+			"approved": "onaylı",
+			"first_half_day": "İlk Yarım Gün",
+			"full_day": "Tam gün",
+			"half_day": "Yarım gün",
+			"multiple": "çoklu",
+			"remaining": "Kalan",
+			"second_half_day": "İkinci Yarım Gün",
+			"single": "Tek",
+			"taken": "Alınmış",
+			"total_leaves": "Toplam Yaprak"
+		},
+		"messages": {
+			"approve": "Başarılı bir şekilde onaylanmış olarak bırakın.",
+			"create": "Başarıyla oluşturulmuş bırakın.",
+			"delete": "Başarıyla silinmiş olarak bırakın.",
+			"reject": "Başarıyla reddedilmiş olarak bırakın.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Başarıyla güncellenmiş olarak bırakın."
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "Kadar"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "onaylı"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "Reddedilen"
+			}
+		],
+		"title": "Yapraklar",
+		"title1": "Ayrılmak !",
+		"title2": "İsteği Bırak",
+		"title3": "Tüm Yapraklar",
+		"title4": "İsteği Bırak",
+		"title5": "Takvimden Ayrılır",
+		"title6": "İzin Oluştur",
+		"title7": "Ayrılmayı Güncelle"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "Yönetim",
+			"client_login": "Müşteri",
+			"forgot_password": "Parolanızı mı unuttunuz?",
+			"hr_manager_login": "İK Yöneticisi",
+			"manager_login": "Yönetici",
+			"project_manager_login": "Proje Müdürü",
+			"quick_login": "Hızlı Giriş",
+			"register": {
+				"button": "Kayıt olmak",
+				"text": "Bir hesabınız yok mu?"
+			},
+			"sales_manager_login": "Satış Müdürü",
+			"user_login": "kullanıcı"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "Lütfen geçerli bir kullanıcı adı veya e-posta adresi girin."
+				},
+				"placeholder": "Kullanıcı adı / E-posta"
+			},
+			"password": {
+				"errors": {
+					"email": "Şifre en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+					"required": "Lütfen geçerli bir şifre giriniz."
+				},
+				"placeholder": "Parola"
+			}
+		},
+		"title": "Oturum aç"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "Eylemler",
+				"name": "isim",
+				"progress": "İlerleme",
+				"size": "Boyut",
+				"status": "durum"
+			},
+			"error_messages": {
+				"message1": "Lütfen geçerli bir e-posta adresi seçin.",
+				"message2": "Lütfen geçerli bir konu girin."
+			},
+			"fields": {
+				"from": "itibaren",
+				"subject": "Konu",
+				"to": "için"
+			},
+			"placeholders": {
+				"placeholder1": "- Kullanıcıları Seçin -",
+				"placeholder2": "Konu Girin"
+			}
+		},
+		"messages": {
+			"message": "Dosya başarıyla yüklendi.",
+			"message1": "Dosya başarıyla silindi.",
+			"message2": "Lütfen en az bir posta seçin.",
+			"message3": "Posta başarıyla gönderildi.",
+			"message4": "Posta Çöp Kutusuna taşındı.",
+			"message5": " posta çöp kutusuna taşındı.",
+			"message6": "Posta başarıyla karşılandı.",
+			"message7": " favori olarak işaretlenmiş postalar.",
+			"message8": "Postalar okundu olarak işaretlendi.",
+			"message9": "Posta taslağa taşındı."
+		},
+		"title": "Posta kutusu",
+		"title1": "Posta ara ...",
+		"title10": "göndermek",
+		"title11": "Ekler",
+		"title12": "Yenile",
+		"title13": "Okundu olarak işaretle",
+		"title14": "Favori olarak işaretle",
+		"title15": "Çöp kutusuna taşıyın",
+		"title16": "Taslağa Taşı",
+		"title17": "Postayı Sil",
+		"title18": "Posta Görünümü",
+		"title19": "Klasörler",
+		"title2": "Oluştur",
+		"title20": "posta",
+		"title3": "E-posta Yaz",
+		"title4": "Gelen kutusu",
+		"title5": "Gönderilen",
+		"title6": "taslak",
+		"title7": "Favori",
+		"title8": "çöp",
+		"title9": "ıskarta"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "Eylemler",
+			"end": "Son",
+			"hours": "Saatler",
+			"id": "ID",
+			"organizer": "organizatör",
+			"peoples": "Halkları Davet Et",
+			"start": "başla",
+			"status": "durum",
+			"title": "Başlık"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir toplantı başlığı girin.",
+				"message2": "Toplantı başlığı maksimum 255 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir başlangıç tarihi seçin.",
+				"message4": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message5": "Lütfen geçerli bir toplantı üyesi seçin.",
+				"message6": "Lütfen toplantı için uygun tarih ve saati seçin.",
+				"message7": "Lütfen geçerli bir durum seçin."
+			},
+			"fields": {
+				"client_name": "Müşteri Adı",
+				"description": "Açıklama",
+				"end_date": "Bitiş tarihi",
+				"location": "yer",
+				"peoples": "Halkları Davet Et",
+				"start_date": "Başlangıç tarihi",
+				"status": "durum",
+				"title": "Başlık"
+			},
+			"placeholders": {
+				"placeholder1": "Olay başlığı",
+				"placeholder2": "Başlangıç Tarihini Seçin",
+				"placeholder3": "Bitiş Tarihi Seçin",
+				"placeholder4": "- Üye Seçin -",
+				"placeholder5": "yer",
+				"placeholder6": "- Müşteri Seç -",
+				"placeholder7": "- Durum Seçin -"
+			}
+		},
+		"details": {
+			"title1": "Açıklama"
+		},
+		"inline_edit": {
+			"title": "Başlık"
+		},
+		"messages": {
+			"create": "Toplantı başarıyla oluşturuldu.",
+			"delete": "Toplantı başarıyla silindi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Toplantı başarıyla güncellendi."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "İptal etmek"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "Tamamlanan"
+			}
+		],
+		"title": "Toplantılar"
+	},
+	"months": [
+		"Ocak",
+		"Şubat",
+		"Mar",
+		"Nisan",
+		"Mayıs ayı",
+		"Haziran",
+		"Temmuz",
+		"Ağustos",
+		"Eylül",
+		"Ekim",
+		"Kasım",
+		"Aralık"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "Notlar"
+			}
+		},
+		"messages": {
+			"update": "Notlar başarıyla güncellendi."
+		},
+		"title": "Notlar"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "Açıklama",
+			"method_name": "Yöntem Adı",
+			"status": "durum"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir yöntem adı girin."
+			},
+			"fields": {
+				"description": "Açıklama",
+				"method_name": "Yöntem Adı",
+				"show_on_pdf": "Fatura PDF'inde Açıklamayı Göster"
+			},
+			"placeholders": {
+				"placeholder1": "Yöntem Adını Girin",
+				"placeholder2": "Açıklama Girin"
+			}
+		},
+		"messages": {
+			"create": "Ödeme yöntemi başarıyla oluşturuldu.",
+			"delete": "Ödeme yöntemi başarıyla silindi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Ödeme yöntemi başarıyla güncellendi."
+		},
+		"title": "Ödeme metodları",
+		"title1": "Ödeme şekli !",
+		"title2": "Ödeme Yöntemi Oluşturun",
+		"title3": "Ödeme Yöntemini Güncelle"
+	},
+	"payments": {
+		"columns": {
+			"amount": "Miktar",
+			"client": "Müşteri",
+			"date": "tarih",
+			"invoice": "fatura",
+			"method_name": "Ödeme",
+			"payment_mode": "Ödeme Şekli",
+			"status": "durum"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir miktar girin.",
+				"message2": "Lütfen geçerli bir ödeme tarihi girin.",
+				"message3": "Lütfen geçerli bir ödeme modu seçin."
+			},
+			"fields": {
+				"amount": "Alınan Miktar",
+				"date": "Ödeme tarihi",
+				"notes": "Not bırak",
+				"payment_mode": "Ödeme Şekli",
+				"transaction_id": "İşlem Kimliği"
+			},
+			"placeholders": {
+				"placeholder1": "Tarih seç",
+				"placeholder2": "- Ödeme Modunu Seçin -",
+				"placeholder3": "Yönetici Notu",
+				"placeholder4": "İşlem Kimliğini Girin"
+			}
+		},
+		"info": "Not: Aşağıda listelenen ödeme modları çevrimdışı modlardır. Ödeme ağ geçitleri Ayarlar-> Paypal / Stripe'den yapılandırılabilir.",
+		"info1": "Paypal, Stripe, Banka Havalesi, Nakit veya diğerleri.",
+		"messages": {
+			"create": "Ödeme başarıyla oluşturuldu.",
+			"delete": "Ödeme başarıyla silindi.",
+			"failed": "Ödeme başarısız.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Ödeme başarıyla güncellendi."
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "Başarılı"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "başarısız oldu"
+			}
+		],
+		"title": "Ödemeler",
+		"title1": "Ödemeler!",
+		"title2": "Ödeme Oluştur",
+		"title3": "Ödemeyi Güncelle",
+		"view": {
+			"failed": "başarısız oldu",
+			"in_progress": "Devam etmekte",
+			"invoice_amount": "Fatura Tutarı",
+			"invoice_date": "Fatura Tarihi",
+			"invoice_number": "Fatura numarası",
+			"payment_amount": "Ödeme miktarı",
+			"payment_for": "İçin ödeme",
+			"payment_receipt": "Fatura Ödemesi",
+			"successful": "Başarılı"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "Eylemler",
+			"creator": "yaratıcı",
+			"end_date": "Bitiş tarihi",
+			"hours": "Saatler",
+			"name": "isim",
+			"progress": "İlerleme",
+			"responsible": "Sorumluluk sahibi",
+			"sprint": "sürat koşusu",
+			"start_date": "Başlangıç tarihi",
+			"status": "durum",
+			"type": "tip"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir proje seçin.",
+					"message2": "Lütfen geçerli bir proje koşusu seçin."
+				},
+				"fields": {
+					"project": "proje",
+					"sprint": "sürat koşusu"
+				},
+				"placeholders": {
+					"placeholder1": "- Proje Seçin -",
+					"placeholder2": "- Proje Sprint'i seçin -"
+				}
+			},
+			"messages": {
+				"move": " Görev başarıyla taşındı."
+			},
+			"title": "Görevi Taşı"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen benzersiz ve geçerli bir sprint adı girin.",
+					"message2": "Sprint adı en fazla 255 karakter uzunluğunda olabilir.",
+					"message4": "Lütfen geçerli bir başlangıç tarihi seçin.",
+					"message5": "Lütfen geçerli bir bitiş tarihi seçin.",
+					"message6": "Lütfen geçerli bir durum seçin.",
+					"message7": "Tahmini saatler, yalnızca herhangi bir özel karakter içermeyen, iki nokta üst üste işaretinden sonra (60'tan az) yalnızca rakamlara izin verir.",
+					"message8": "Tahmini saatler,"
+				},
+				"fields": {
+					"description": "Açıklama",
+					"end_date": "Bitiş tarihi",
+					"estimate_hours": "Tahmini Saat",
+					"responsible": "Sorumluluk sahibi",
+					"sprint_name": "Proje Sprint Adı",
+					"start_date": "Başlangıç tarihi",
+					"status": "durum"
+				},
+				"placeholders": {
+					"placeholder1": "Proje Sprint Adını Girin",
+					"placeholder2": "-- Kullanıcı seç --",
+					"placeholder3": "Başlangıç Tarihini Seçin",
+					"placeholder4": "Bitiş Tarihi Seçin",
+					"placeholder5": "- Durum Seçin -",
+					"placeholder6": "Açıklama Girin"
+				}
+			},
+			"messages": {
+				"create": "Sprint başarıyla oluşturuldu.",
+				"delete": "Sprint başarıyla silindi.",
+				"update": "Sprint başarıyla güncellendi."
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Açık"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Devam etmekte"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "kapalı"
+				}
+			],
+			"title": "sürat koşusu",
+			"title1": "Sprint Oluştur",
+			"title2": "Sprint'i Düzenle"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen benzersiz ve geçerli bir sayı girin",
+					"message2": " ad en fazla 255 karakter uzunluğunda olabilir.",
+					"message3": "Lütfen geçerli bir kullanıcı seçin.",
+					"message4": "Lütfen geçerli bir başlangıç tarihi seçin.",
+					"message5": "Lütfen geçerli bir bitiş tarihi seçin.",
+					"message6": "Lütfen geçerli bir durum seçin.",
+					"message7": "Tahmini saatler, yalnızca herhangi bir özel karakter içermeyen, iki nokta üst üste işaretinden sonra (60'tan az) yalnızca rakamlara izin verir.",
+					"message8": "Tahmini saatler,"
+				},
+				"fields": {
+					"description": "Açıklama",
+					"end_date": "Bitiş tarihi",
+					"estimate_hours": "Tahmini Saat",
+					"name": "isim",
+					"responsible": "Sorumluluk sahibi",
+					"start_date": "Başlangıç tarihi",
+					"status": "durum"
+				},
+				"placeholders": {
+					"placeholder1": "Proje Sprint'e Girin",
+					"placeholder2": "-- Kullanıcı seç --",
+					"placeholder3": "Başlangıç Tarihini Seçin",
+					"placeholder4": "Bitiş Tarihi Seçin",
+					"placeholder5": "- Durum Seçin -",
+					"placeholder6": "Açıklama Girin",
+					"placeholder7": "Projeye Gir"
+				}
+			},
+			"messages": {
+				"create": " başarıyla oluşturuldu.",
+				"released": "Görev başarıyla serbest bırakıldı.",
+				"story_delete": "Sprint hikayesi başarıyla silindi.",
+				"task_delete": "Sprint görevi başarıyla silindi.",
+				"update": " başarıyla güncellendi."
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Açık"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Devam etmekte"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "kapalı"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Açık"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "beklemede"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "kapalı"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "Yayınlandı"
+				}
+			],
+			"title": "Sprint Görevi",
+			"title1": "Sprint Oluştur",
+			"title2": "Sprint'i Düzenle",
+			"title3": "isim",
+			"title4": "görev",
+			"title5": "Hikaye"
+		},
+		"title": "Proje Planlayıcısı",
+		"title1": "Görev Oluştur",
+		"title2": "Hikaye Oluştur",
+		"title3": "Sprint Oluştur",
+		"title4": "proje",
+		"title5": "sürat koşusu"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "Sabit Ücret",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Saatlik ücret",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "İle tamamlanma",
+			"csv_file": "Projeleri içe aktarmaya başlamadan önce, kullanıcıları ve ekiplerini içe aktardığınızdan emin olun.",
+			"current_version": "Şimdiki versiyonu",
+			"version": "versiyon"
+		},
+		"columns": {
+			"actions": "Eylemler",
+			"assigned_To": "Atandı",
+			"billing": "fatura",
+			"budget": "Bütçe",
+			"client": "Müşteri",
+			"completion": "Tamamlama",
+			"creator": "yaratıcı",
+			"duration": "süre",
+			"end": "Son",
+			"hours": "Saatler",
+			"id": "ID",
+			"logo": "logo",
+			"progress": "İlerleme",
+			"project_name": "proje Adı",
+			"start": "başla",
+			"status": "durum",
+			"version": "versiyon"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir proje adı girin.",
+				"message10": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message11": "Tahmini saatler, yalnızca herhangi bir özel karakter içermeyen, iki nokta üst üste işaretinden sonra (60'tan az) yalnızca rakamlara izin verir.",
+				"message12": "Sabit fiyat 0'dan sonra rende olmalıdır.",
+				"message13": "Sabit fiyat sadece rakamlara izin verir.",
+				"message14": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+				"message15": "Bu dosya bir csv dosyası değil. Lütfen sadece csv dosyasını seçin.",
+				"message16": "Lütfen içe aktarılacak CSV dosyasını seçin.",
+				"message2": "Proje adı en fazla 255 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen benzersiz ve geçerli bir proje sürümü girin.",
+				"message4": "Proje sürümü 1.0 gibi olabilir.",
+				"message6": "Lütfen geçerli bir durum seçin.",
+				"message8": "Lütfen geçerli bir demo URL'si girin.",
+				"message9": "Lütfen geçerli bir başlangıç tarihi seçin."
+			},
+			"fields": {
+				"actual_hours": "Gerçek Saatler",
+				"assigned_To": "Atandı",
+				"assigned_group": "Atanan Grup",
+				"billing_type": "Faturalandırma Türü",
+				"budget": "Bütçe",
+				"client_name": "Müşteri Adı",
+				"completed": "Tamamlanan",
+				"created_by": "Tarafından yaratıldı",
+				"csv_file": "Proje CSV dosyasını seçin",
+				"demo_URL": "Demo URL'si",
+				"description": "Açıklama",
+				"end_date": "Bitiş tarihi",
+				"estimate_hours": "Tahmini Saat",
+				"fixed_price": "Sabit Fiyat ($)",
+				"hourly_rate": "Saatlik Ücret ($)",
+				"progress": "İlerleme",
+				"project_hours": "Otomatik İlerleme",
+				"project_id": "Proje Kimliği",
+				"project_logo": "Proje Logosu",
+				"project_name": "proje Adı",
+				"start_date": "Başlangıç tarihi",
+				"status": "durum",
+				"version": "versiyon"
+			},
+			"placeholders": {
+				"placeholder1": "Proje Adını Girin",
+				"placeholder10": "Fiyat Oranını Girin",
+				"placeholder11": "Açıklama Girin",
+				"placeholder2": "Sürümü Gir",
+				"placeholder3": "- Müşteri Seç -",
+				"placeholder4": "- Durum Seçin -",
+				"placeholder5": "- Atanan Grup Seçin -",
+				"placeholder6": "Atanmayanlar",
+				"placeholder7": "Başlangıç Tarihini Seçin",
+				"placeholder8": "Bitiş Tarihi Seçin",
+				"placeholder9": "- Faturalandırma Türünü Seçin -"
+			}
+		},
+		"details": {
+			"title1": "Özel alanlar",
+			"title2": "Açıklama"
+		},
+		"headings": {
+			"head1": "Proje Bilgisi",
+			"head2": "Proje Tarihleri",
+			"head3": "Diğer Bilgiler",
+			"head4": "Özel alanlar",
+			"head5": "Açıklama"
+		},
+		"inline_edit": {
+			"billing_type": "Faturalandırma Türü",
+			"budget": "Bütçe",
+			"client": "Müşteri",
+			"demo_url": "Demo URL'si",
+			"description": "Açıklama",
+			"end_date": "Bitiş tarihi",
+			"estimate_hours": "Tahmini Saat",
+			"notes": "Notlar",
+			"project_name": "proje Adı",
+			"start_date": "Başlangıç tarihi"
+		},
+		"messages": {
+			"create": "Proje başarıyla oluşturuldu.",
+			"delete": "Proje başarıyla silindi.",
+			"import": "Proje başarıyla içe aktarıldı.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Proje başarıyla güncellendi."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "beklemede"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "İptal etmek"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "Tamamlanan"
+			}
+		],
+		"title": "Projeler",
+		"title1": "Proje Yarat",
+		"title2": "Projeyi Düzenle",
+		"title3": "Projeyi İçe Aktar"
+	},
+	"providers": {
+		"columns": {
+			"actions": "Eylemler",
+			"color": "Renk",
+			"email": "E-posta",
+			"firstname": "isim",
+			"lastname": "Soyadı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir isim giriniz.",
+				"message2": "İlk ad en fazla 50 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir soyadı girin.",
+				"message4": "Soyadı en fazla 50 karakter uzunluğunda olabilir.",
+				"message5": "Lütfen geçerli eposta adresini giriniz.",
+				"message6": "E-posta geçerli bir e-posta olmalıdır.",
+				"message7": "Lütfen geçerli bir renk seçin."
+			},
+			"fields": {
+				"color": "Renk",
+				"email": "E-posta",
+				"first_name": "isim",
+				"last_name": "Soyadı"
+			},
+			"placeholders": {
+				"placeholder1": "Adı Girin",
+				"placeholder2": "Soy adını gir",
+				"placeholder3": "E-posta Gir"
+			}
+		},
+		"messages": {
+			"create": "Sağlayıcı başarıyla oluşturuldu.",
+			"delete": "Sağlayıcı başarıyla silindi.",
+			"edit": "Sağlayıcı başarıyla düzenlendi."
+		},
+		"title": "sağlayıcılar"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir kullanıcı adı girin.",
+				"message10": "Parola ve parolayı onaylama eşleşmiyor.",
+				"message2": "Kullanıcı adı beyaz boşluk olmadan en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir isim giriniz.",
+				"message4": "Lütfen geçerli bir soyadı girin.",
+				"message5": "Lütfen geçerli eposta adresini giriniz.",
+				"message6": "E-posta geçerli bir e-posta olmalıdır.",
+				"message7": "Lütfen geçerli bir şifre giriniz.",
+				"message8": "Şifre en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message9": "Lütfen geçerli bir onay şifresi girin."
+			},
+			"placeholders": {
+				"placeholder1": "Kullanıcı adı girin",
+				"placeholder2": "İlk Adı Girin",
+				"placeholder3": "Soy adını gir",
+				"placeholder4": "E-posta Gir",
+				"placeholder5": "Şifre girin",
+				"placeholder6": "Parolayı Onayla"
+			}
+		},
+		"messages": {
+			"success": "Başarıyla kaydoldunuz."
+		},
+		"title": "Kayıt olmak",
+		"title1": "Zaten hesabınız var mı?"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "Kusur",
+			"incident_report": "Olay",
+			"project_report": "proje",
+			"task_report": "görev"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir şifre giriniz.",
+				"message2": "Şifre en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir onay şifresi girin.",
+				"message4": "Parola ve parolayı onaylama eşleşmiyor.",
+				"message5": "Lütfen geçerli bir e-posta veya jeton girin."
+			},
+			"placeholders": {
+				"placeholder1": "Şifre girin",
+				"placeholder2": "Parolayı Onayla"
+			}
+		},
+		"messages": {
+			"success": "Şifre başarıyla sıfırlandı."
+		},
+		"title": "Şifreyi yenile"
+	},
+	"roles": {
+		"columns": {
+			"actions": "Eylemler",
+			"description": "Açıklama",
+			"role_name": "Rol ismi",
+			"role_slug": "Rol Slug"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir rol adı girin.",
+				"message2": "Rol adı en fazla 50 karakter uzunluğunda olabilir.",
+				"message3": "Rol bilgileri en fazla 50 karakter uzunluğunda olabilir.",
+				"message4": "Rol bilgi sadece harfler, alt çizgi olabilir.",
+				"message5": "Lütfen geçerli bir rol bilgi girin."
+			},
+			"fields": {
+				"description": "Açıklama",
+				"role_name": "Rol ismi",
+				"role_slug": "Rol Slug"
+			},
+			"placeholders": {
+				"placeholder1": "Rol Adını Girin",
+				"placeholder2": "Rol Bilgisine Gir"
+			}
+		},
+		"inline_edit": {
+			"description": "Açıklama",
+			"role_name": "Rol ismi"
+		},
+		"messages": {
+			"create": "Rol başarıyla oluşturuldu.",
+			"delete": "Rol başarıyla silindi.",
+			"update": "Rol başarıyla güncellendi."
+		},
+		"title": "Roller"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir şirket adı girin.",
+					"message10": "Posta koduna en fazla 10 basamak girilebilir.",
+					"message11": "Lütfen geçerli bir şirket adresi girin.",
+					"message2": "Lütfen geçerli bir şirket yasal adı girin.",
+					"message3": "Lütfen geçerli bir şirket kısa adı girin.",
+					"message4": "Şirket kısa adı en fazla 10 karakter uzunluğunda olabilir.",
+					"message5": "Lütfen geçerli bir şirket e-postası girin.",
+					"message6": "E-posta geçerli bir e-posta adresi olmalıdır.",
+					"message7": "Şirket telefonu geçerli bir telefon numarası biçimi olmalıdır.",
+					"message8": "Şirket web sitesi geçerli bir URL olmalıdır.",
+					"message9": "Lütfen geçerli bir posta kodu girin."
+				},
+				"fields": {
+					"city": "Kent",
+					"company_address": "şirket adresi",
+					"company_country": "Şirket ülke",
+					"company_email": "Şirket E-postası",
+					"company_name": "Şirket Adı",
+					"company_phone": "Şirket Telefonu",
+					"company_website": "Şirket Web Sitesi",
+					"company_zipcode": "posta kodu",
+					"contact_person": "İlgili kişi",
+					"legal_name": "Yasal isim",
+					"short_name": "Kısa adı"
+				},
+				"placeholders": {
+					"placeholder1": "Şirket Adını Girin",
+					"placeholder10": "İlgili Kişiyi Girin",
+					"placeholder11": "Şirket Adresini Girin",
+					"placeholder2": "Yasal Adı Girin",
+					"placeholder3": "Kısa Adı Girin",
+					"placeholder4": "Şirket E-postasını Girin",
+					"placeholder5": "Şirket Telefonunu Girin",
+					"placeholder6": "Şirket Web Sitesini Girin",
+					"placeholder7": "- Ülke Seçin -",
+					"placeholder8": "Şehri Girin",
+					"placeholder9": "Posta kodu girin"
+				}
+			},
+			"title": "Şirket Detayları"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "Aktif Cronjob",
+					"automatic_backup": "Otomatik Yedekleme Veritabanı",
+					"daily_report_emails": "Günlük Rapor E-postaları",
+					"last_cronjob_run": "Son cronjob çalıştırmak"
+				},
+				"messages": {
+					"message1": "Bu, doğru şekilde kurulursa cronjob özelliğini etkinleştirir.",
+					"message2": "Her 7 günde bir veritabanı yedeklemesi oluşturur. Cronjob'ın etkinleştirilmesini gerektirir!"
+				},
+				"placeholders": {
+					"placeholder1": "E-postaları Girin"
+				}
+			},
+			"title": "Cron işi"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "Eylemler",
+				"custom_field_for": "İçin Özel Alan",
+				"label": "Etiket",
+				"status": "durum",
+				"type": "tip",
+				"value": "değer"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir özel alan formu seçin.",
+					"message2": "Lütfen geçerli bir alan etiketi girin.",
+					"message3": "Lütfen geçerli bir yardım metni girin.",
+					"message4": "Lütfen geçerli bir alan türü seçin.",
+					"message5": "Lütfen geçerli bir etiket girin.",
+					"message6": "Lütfen geçerli bir değer girin."
+				},
+				"fields": {
+					"custom_field_for": "İçin Özel Alan",
+					"field_label": "Alan Etiketi",
+					"field_type": "Alan türü",
+					"help_text": "Yardım Metni",
+					"is_required_field": "Zorunlu alan",
+					"show_on_detail": "Detay Sayfasında Göstermek İçin"
+				},
+				"placeholders": {
+					"placeholder1": "- Özel Alan Formu Seçin -",
+					"placeholder2": "Alan Etiketini Girin",
+					"placeholder3": "Yardım Metnini Girin",
+					"placeholder4": "- Alan Türünü Seç -"
+				}
+			},
+			"headings": {
+				"head1": "Etiketi ve açılır kutu değerini girin."
+			},
+			"messages": {
+				"create": "Özel alan başarıyla oluşturuldu.",
+				"delete": "Özel alan başarıyla silindi.",
+				"status": "Durum başarıyla değiştirildi.",
+				"update": "Özel alan başarıyla güncellendi."
+			},
+			"title": "Özel alanlar",
+			"title1": "özel alan"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "Ayarlar"
+			},
+			"title": "Gösterge Paneli",
+			"title1": "Duyurular",
+			"title10": "Tahminler",
+			"title11": "Faturalar",
+			"title12": "Ödemeler",
+			"title13": "Yapraklar",
+			"title14": "Takımlar",
+			"title15": "Kullanıcılar",
+			"title16": "Müşteriler",
+			"title17": "Nesne",
+			"title18": "Proje durumu",
+			"title19": "Görev Durumu",
+			"title2": "Son Aktiviteler",
+			"title20": "Aylık rapor",
+			"title21": "widget'lar",
+			"title22": "Grafikler",
+			"title23": "Listeler",
+			"title3": "Yapılacaklar listesi",
+			"title4": "Toplantılar",
+			"title5": "Projeler",
+			"title6": "Görevler",
+			"title7": "Kusur",
+			"title8": "Olayları",
+			"title9": "Vadesi Dolmuş Faturalar"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "Eylemler",
+				"date": "tarih",
+				"file_name": "dosya adı"
+			},
+			"messages": {
+				"create": "Veritabanı yedeklemesi başarıyla oluşturuldu.",
+				"delete": "Veritabanı yedeklemesi başarıyla silindi.",
+				"restore": "Veritabanı başarıyla geri yüklendi."
+			},
+			"title": "Veritabanı Yedekleri",
+			"title1": "veritabanı yedekleme",
+			"title2": "yedek"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "BİLDİRİM"
+			},
+			"title": "Email bildirimleri",
+			"title1": "Duyuru E-postası"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir şirket e-postası girin.",
+					"message2": "E-posta geçerli bir e-posta adresi olmalıdır.",
+					"message3": "Lütfen geçerli bir e-posta protokolü seçin.",
+					"message4": "Lütfen geçerli bir SMTP ana bilgisayarı girin.",
+					"message5": "Lütfen geçerli bir SMTP kullanıcısı girin.",
+					"message6": "SMTP kullanıcısının geçerli bir e-posta adresi olması gerekir.",
+					"message7": "Lütfen geçerli bir SMTP şifresi girin.",
+					"message8": "Lütfen geçerli bir SMTP bağlantı noktası girin."
+				},
+				"fields": {
+					"company_email": "Şirket E-postası",
+					"email_encryption": "E-posta Şifrelemesi",
+					"email_protocol": "E-posta Protokolü",
+					"mailgun_domain": "Mailgun Domain",
+					"mailgun_secret": "Mailgun Sırrı",
+					"mandrill_secret": "Mandrill'in Sırrı",
+					"smtp_host": "SMTP Ana Bilgisayarı",
+					"smtp_password": "SMTP Parolası",
+					"smtp_port": "SMTP Bağlantı Noktası",
+					"smtp_user": "SMTP Kullanıcısı",
+					"sparkpost_secret": "Sparkpost Sırrı"
+				},
+				"placeholders": {
+					"placeholder1": "Şirket E-postasını Girin",
+					"placeholder2": "- E-posta Protokolü'nü seçin -",
+					"placeholder3": "Şifre girin",
+					"placeholder4": "- E-posta Şifrelemesi'ni seçin -",
+					"placeholder5": "Sparkpost Sırrı'na girin",
+					"placeholder6": "Mailgun Alan Adını Girin",
+					"placeholder7": "Mailgun Sırrı'na girin",
+					"placeholder8": "Mandrill Sırrı'na girin"
+				}
+			},
+			"title": "Eposta",
+			"title1": "Adresine e-posta gönderildi "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "Vücut",
+					"subject": "Konu"
+				},
+				"placeholders": {
+					"placeholder1": "- E-posta grubunu seçin -",
+					"placeholder2": "Konu Girin"
+				}
+			},
+			"messages": {
+				"update": "E-posta şablonu başarıyla güncellendi."
+			},
+			"title": "E-posta Şablonları"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir tahmin öneki girin.",
+					"message2": "Tahmin öneki en fazla 10 karakter uzunluğunda olabilir.",
+					"message3": "Lütfen sonra geçerli bir son ödeme tarihi girin.",
+					"message4": "Dosyaları buraya bırakın veya yüklemek için tıklayın."
+				},
+				"fields": {
+					"auto_remind": "Otomatik Hatırlatma Gönderilsin mi?",
+					"auto_remind_before": "Önceden Hatırlat (Günler) Gönder",
+					"client_note": "müşteri notu",
+					"due_after": "Son Tarih (Gün)",
+					"estimate_logo": "Estimate Logosu",
+					"estimate_prefix": "Öneki Tahmin Et",
+					"terms_conditions": "şartlar ve koşullar"
+				},
+				"placeholders": {
+					"placeholder1": "Tahmin Önekini Girin",
+					"placeholder2": "Son Tarihi Girin",
+					"placeholder3": "Müşteri Notunu Girin",
+					"placeholder4": "Hüküm ve Koşulları Girin",
+					"placeholder5": "Günlerden Önce Hatırlat girin"
+				}
+			},
+			"title": "Tahmin"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir fatura öneki girin.",
+					"message2": "Fatura ön eki maksimum 10 karakter uzunluğunda olabilir.",
+					"message3": "Lütfen sonra geçerli bir son ödeme tarihi girin.",
+					"message4": "Dosyaları buraya bırakın veya yüklemek için tıklayın."
+				},
+				"fields": {
+					"auto_remind": "Otomatik Hatırlatma Gönderilsin mi?",
+					"auto_remind_after": "(Gün) Sonra Hatırlat Örn. 1,3",
+					"client_note": "müşteri notu",
+					"due_after": "Son Tarih (Gün)",
+					"gst_number": "GST Numarası",
+					"invoice_logo": "Fatura Logosu",
+					"invoice_prefix": "Fatura Öneki",
+					"show_gst_number": "Faturada GST Numarası Gösterilsin mi?",
+					"terms_conditions": "şartlar ve koşullar"
+				},
+				"placeholders": {
+					"placeholder1": "Fatura Önekini Girin",
+					"placeholder2": "Son Tarihi Girin",
+					"placeholder3": "Müşteri Notunu Girin",
+					"placeholder4": "Hüküm ve Koşulları Girin",
+					"placeholder5": "Günden Sonra Hatırlat girin",
+					"placeholder6": "GST Numarasını Girin"
+				}
+			},
+			"title": "fatura"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "Menü başarıyla güncellendi."
+			},
+			"title": "Menü Tahsisi",
+			"title1": "Hepsini genişlet",
+			"title2": "Tüm daraltmak"
+		},
+		"messages": {
+			"update": "Ayar başarıyla güncellendi."
+		},
+		"payment_gateway_settings": {
+			"title": "Ödeme Sağlayıcı"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir paypal istemci kimliği girin."
+				},
+				"fields": {
+					"paypal_checkout_client_id": "Paypal Müşteri Kimliği",
+					"paypal_checkout_label": "Paypal Etiketi",
+					"paypal_checkout_status": "durum"
+				},
+				"placeholders": {
+					"placeholder1": "Paypal Etiketini Girin",
+					"placeholder2": "Paypal Müşteri Kimliğini Girin"
+				}
+			},
+			"title": "Paypal"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir gevşek müşteri kimliği girin.",
+					"message2": "Lütfen geçerli bir gevşek istemci sırrı girin.",
+					"message3": "Lütfen geçerli bir gevşek yönlendirme URL'si girin."
+				},
+				"fields": {
+					"slack_client_id": "Slack İstemci Kimliği",
+					"slack_client_secret": "Slack İstemci Sırrı",
+					"slack_redirect_url": "Slack Yönlendirme URL'si",
+					"slack_status": "Bolluk Durumu"
+				},
+				"placeholders": {
+					"placeholder1": "Slack İstemci Kimliğini Girin",
+					"placeholder2": "Slack İstemci Sırrını Girin",
+					"placeholder3": "Slack Yönlendirme URL'sini girin"
+				}
+			},
+			"title": "Gevşek"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir şerit API anahtarı girin.",
+					"message2": "Lütfen geçerli bir şerit API sırrı girin."
+				},
+				"fields": {
+					"stripe_api_key": "Stripe API Anahtarı",
+					"stripe_label": "Şerit Etiketi",
+					"stripe_secret_key": "Stripe Gizli Anahtarı",
+					"stripe_status": "durum"
+				},
+				"placeholders": {
+					"placeholder1": "Şerit Etiketi Girin",
+					"placeholder2": "Stripe API Anahtarını Girin",
+					"placeholder3": "Stripe Gizli Anahtarını Girin"
+				}
+			},
+			"title": "Şerit",
+			"title1": "Ödemek"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir tablo sayfalandırma sınırı girin.",
+					"message2": "Lütfen geçerli bir tarih biçimi seçin.",
+					"message3": "Lütfen geçerli bir saat biçimi seçin.",
+					"message4": "Lütfen geçerli bir para birimi seçin.",
+					"message5": "Lütfen geçerli bir varsayılan dil seçin."
+				},
+				"fields": {
+					"allowed_for_registration": "Kayıt için izin var mı?",
+					"date_format": "Tarih formatı",
+					"default_currency": "Varsayılan Para Birimi",
+					"default_language": "Varsayılan dil",
+					"default_locale": "Varsayılan Yerel Ayar",
+					"tables_pagination_limit": "Tablolar Sayfalandırma Sınırı",
+					"time_format": "Zaman formatı",
+					"timezone": "Saat dilimi"
+				},
+				"placeholders": {
+					"placeholder1": "-- Dil Seçin --",
+					"placeholder2": "- Yerel Ayar Seçin -",
+					"placeholder3": "- Saat Dilimi Seçin -",
+					"placeholder4": "Tablolar Sayfalandırma Sınırını Girin",
+					"placeholder5": "- Tarih Formatını Seç -",
+					"placeholder6": "- Saat Biçimini Seç -",
+					"placeholder7": "- Varsayılan Para Birimi Seçin -"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Geçerli bir tahmin öneki girin.",
+						"message2": "Tahmin öneki maksimum 10 karakter içerebilir.",
+						"message3": "Lütfen sonrasına geçerli bir son tarih girin.",
+						"message4": "Dosyaları buraya sürükleyin veya yüklemek için tıklayın."
+					},
+					"fields": {
+						"auto_remind": "Hatırlatıcılar otomatik olarak gönderilsin mi?",
+						"auto_remind_before": "Hatırlatma gönder (günler önce)",
+						"client_note": "müşteri notu",
+						"due_after": "Son Tarih (Gün)",
+						"estimate_logo": "Logoyu takdir et",
+						"estimate_prefix": "Öneki takdir edin",
+						"terms_conditions": "Kullanım Şartları"
+					},
+					"placeholders": {
+						"placeholder1": "Önek Tahminini girin",
+						"placeholder2": "Ardından tarihi girin",
+						"placeholder3": "Bir müşteri notu girin",
+						"placeholder4": "Koşulları girin",
+						"placeholder5": "Günler önce hatırlat girin"
+					}
+				},
+				"title": "Tahmin"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Lütfen geçerli bir fatura öneki girin.",
+						"message2": "Fatura ön eki maksimum 10 karakter uzunluğunda olabilir.",
+						"message3": "Lütfen sonrasına geçerli bir son tarih girin.",
+						"message4": "Dosyaları buraya sürükleyin veya yüklemek için tıklayın."
+					},
+					"fields": {
+						"auto_remind": "Hatırlatıcılar otomatik olarak gönderilsin mi?",
+						"auto_remind_after": "(Gün) sonra hatırlatıcı gönder Örnek 1.3",
+						"client_note": "müşteri notu",
+						"due_after": "Son Tarih (Gün)",
+						"gst_number": "GST Numarası",
+						"invoice_logo": "Fatura Logosu",
+						"invoice_prefix": "Fatura Öneki",
+						"show_gst_number": "Faturada GST Numarası Gösterilsin mi?",
+						"terms_conditions": "Kullanım Şartları"
+					},
+					"placeholders": {
+						"placeholder1": "Fatura Önekini Girin",
+						"placeholder2": "Ardından tarihi girin",
+						"placeholder3": "Bir müşteri notu girin",
+						"placeholder4": "Koşulları girin",
+						"placeholder5": "Günlere göre hatırlat girin",
+						"placeholder6": "GST Numarasını Girin"
+					}
+				},
+				"title": "fatura"
+			},
+			"payment_gateway_settings": {
+				"title": "Ödeme ağ geçitleri"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Lütfen geçerli bir PayPal müşteri kimliği girin."
+					},
+					"fields": {
+						"paypal_checkout_client_id": "Paypal Müşteri Kimliği",
+						"paypal_checkout_label": "Paypal Etiketi",
+						"paypal_checkout_status": "durum"
+					},
+					"placeholders": {
+						"placeholder1": "Paypal Etiketini Girin",
+						"placeholder2": "PayPal müşteri kimliğinizi girin"
+					}
+				},
+				"title": "Paypal"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Geçerli bir gevşek istemci kimliği girin.",
+						"message2": "Geçerli bir istemci gizli parolası girin.",
+						"message3": "Lütfen geçerli bir ücretsiz yönlendirme url'si girin."
+					},
+					"fields": {
+						"slack_client_id": "Slack İstemci Kimliği",
+						"slack_client_secret": "Müşterinin sırrı halka açıklanır",
+						"slack_redirect_url": "Slack Yönlendirme URL'si",
+						"slack_status": "Onay durumu"
+					},
+					"placeholders": {
+						"placeholder1": "Slack İstemci Kimliğini Girin",
+						"placeholder2": "Müşterinin gizli şifresini girin",
+						"placeholder3": "Slack Yönlendirme URL'sini girin"
+					}
+				},
+				"title": "Gevşek"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Lütfen geçerli bir bar API anahtarı girin."
+					},
+					"fields": {
+						"stripe_api_key": "Stripe API Anahtarı",
+						"stripe_label": "Şerit Etiketi",
+						"stripe_status": "durum"
+					},
+					"placeholders": {
+						"placeholder1": "Bir başlık etiketi girin",
+						"placeholder2": "Stripe API Anahtarını Girin"
+					}
+				},
+				"title": "Çizgili"
+			},
+			"title": "Sistemi"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "alıcı",
+					"purchase_key": "Satın Alma Anahtarı",
+					"url": "Url"
+				},
+				"placeholders": {
+					"placeholder1": "Ürün Satın Alma Anahtarını Girin",
+					"placeholder2": "Ürün Alıcı Kodunu Girin"
+				}
+			},
+			"title": "Sistem güncellemesi"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Dosyaları buraya bırakın veya yüklemek için tıklayın."
+				},
+				"fields": {
+					"compnay_logo": "Şirket logosu",
+					"compnay_sidebar_logo": "Şirket Kenar Çubuğu Logosu",
+					"login_background": "Giriş Arka Planı",
+					"sidebar_background_images": "Kenar çubuğu arka plan resimleri"
+				}
+			},
+			"title": "Tema"
+		},
+		"title": "Ayarlar",
+		"translations": {
+			"columns": {
+				"actions": "Eylemler",
+				"icon": "ikon",
+				"language": "dil",
+				"status": "durum"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Lütfen geçerli bir dil seçin.",
+					"message2": "Lütfen geçerli bir simge seçin.",
+					"message3": "Dosyaları buraya bırakın veya yüklemek için tıklayın."
+				},
+				"fields": {
+					"icon": "ikon",
+					"language": "dil"
+				},
+				"placeholders": {
+					"placeholder1": "-- Dil Seçin --"
+				}
+			},
+			"messages": {
+				"create": "Çeviri başarıyla oluşturuldu.",
+				"delete": "Çeviri başarıyla silindi.",
+				"status": "Durum başarıyla değiştirildi.",
+				"update": "Çeviri başarıyla güncellendi."
+			},
+			"title": "Çeviriler",
+			"title1": "Tercüme"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} gerekli.",
+				"message2": "{{elementFor}} yalnızca herhangi bir özel karakter içermeyen iki basamaklı, iki nokta üst üste işaretinden sonra (60'tan az) rakamlara izin verir.",
+				"message3": "Lütfen geçerli bir {{elementFor}} girin.",
+				"message4": "{{elementFor}} en az {{minLength}} karakter uzunluğunda olabilir."
+			},
+			"placeholders": {
+				"placeholder1": " {{elementFor}} girin",
+				"placeholder2": "- {{elementFor}} seçin -",
+				"placeholder3": " {{elementFor}} seçin"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir {{custom_field}} girin.",
+				"message2": "Lütfen geçerli bir {{custom_field}} seçin."
+			},
+			"placeholders": {
+				"placeholder1": " {{custom_field}} girin",
+				"placeholder2": "- {{custom_field}} seçin -"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "Yapılacaklar",
+			"head2": "Devam etmekte",
+			"head3": "Tamamlanan"
+		},
+		"title": "Görev Kanban"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "İle tamamlanma",
+			"csv_file": "Projeleri içe aktarmaya başlamadan önce, kullanıcıları ve ekiplerini içe aktardığınızdan emin olun."
+		},
+		"columns": {
+			"actions": "Eylemler",
+			"actual_end": "Gerçek son",
+			"actual_start": "Gerçek başlangıç",
+			"assigned": "atanmış",
+			"creator": "yaratıcı",
+			"end": "Son",
+			"end_date": "Bitiş tarihi",
+			"hours": "Saatler",
+			"id": "kimlik",
+			"planned_end": "Planlanan Son",
+			"planned_start": "Planlanan Başlangıç",
+			"priority": "öncelik",
+			"progress": "İlerleme",
+			"project": "proje",
+			"project_version": "Proje Sürümü",
+			"start": "başla",
+			"start_date": "Başlangıç tarihi",
+			"status": "durum",
+			"task_ID": "Görev Kimliği",
+			"task_name": "Görev adı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir görev adı girin.",
+				"message11": "Lütfen geçerli bir görev durumu seçin.",
+				"message12": "Lütfen geçerli bir görev önceliği seçin.",
+				"message13": "Tahmini saatler, yalnızca herhangi bir özel karakter içermeyen, iki nokta üst üste işaretinden sonra (60'tan az) yalnızca rakamlara izin verir.",
+				"message14": "Tahmini saatler,",
+				"message15": "Lütfen içe aktarılacak CSV dosyasını seçin.",
+				"message2": "Görev adı en fazla 255 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen benzersiz ve geçerli bir görev oluşturulmuş kimlik girin.",
+				"message4": "Lütfen geçerli bir planlanmış başlangıç tarihi seçin.",
+				"message5": "Lütfen geçerli bir planlanan bitiş tarihi seçin.",
+				"message6": "Lütfen geçerli bir başlangıç tarihi seçin.",
+				"message7": "Lütfen geçerli bir bitiş tarihi seçin.",
+				"message8": "Lütfen geçerli bir proje adı seçin."
+			},
+			"fields": {
+				"actual_enddate": "Bitiş tarihi",
+				"actual_hours": "Gerçek Saatler",
+				"actual_startdate": "Başlangıç tarihi",
+				"assigned_To": "Atandı",
+				"completed": "Tamamlanan",
+				"created_by": "Tarafından yaratıldı",
+				"csv_file": "Görev CSV dosyasını seçin",
+				"description": "Açıklama",
+				"estimate_hours": "Tahmini Saat",
+				"parent_taskID": "Üst Görev Kimliği",
+				"plan_enddate": "Plan Bitiş Tarihi",
+				"plan_startdate": "Plan Başlangıç Tarihi",
+				"priority": "öncelik",
+				"progress": "İlerleme",
+				"project_name": "proje Adı",
+				"project_version": "Proje Sürümü",
+				"status": "durum",
+				"subtask_Id": "Alt Görev Kimliği",
+				"task_ID": "Görev Kimliği",
+				"task_name": "Görev adı"
+			},
+			"placeholders": {
+				"placeholder1": "Görev Adını Girin",
+				"placeholder10": "- Öncelik Seç -",
+				"placeholder2": "Planlanan Başlangıç Tarihini Seçin",
+				"placeholder3": "Planlanan Bitiş Tarihini Seçin",
+				"placeholder4": "Başlangıç Tarihini Seçin",
+				"placeholder5": "Bitiş Tarihi Seçin",
+				"placeholder6": "- Proje Adı Seçin -",
+				"placeholder7": "- Proje Sürümü'nü seçin -",
+				"placeholder8": "- Ata'yı seçin -",
+				"placeholder9": "- Durum Seçin -"
+			}
+		},
+		"details": {
+			"title1": "Özel alanlar",
+			"title2": "Açıklama",
+			"title3": "Alt Görev"
+		},
+		"headings": {
+			"head1": "Görev Bilgisi",
+			"head2": "Görev Tarihleri",
+			"head3": "İlerleme",
+			"head4": "Proje Bilgisi",
+			"head5": "Gereksinimler",
+			"head6": "Özel alanlar",
+			"head7": "Açıklama"
+		},
+		"inline_edit": {
+			"description": "Açıklama",
+			"estimate_hours": "Tahmini Saat",
+			"notes": "Notlar",
+			"task_name": "Görev adı"
+		},
+		"messages": {
+			"copy": "Görev başarıyla kopyalandı.",
+			"create": "Görev başarıyla oluşturuldu.",
+			"delete": "Görev başarıyla silindi.",
+			"import": "Görev başarıyla içe aktarıldı.",
+			"priority": "Öncelik başarıyla değiştirildi.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Görev başarıyla güncellendi."
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "Açık"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"id": 3,
+				"label": "beklemede"
+			},
+			{
+				"id": 4,
+				"label": "bekleme"
+			},
+			{
+				"id": 5,
+				"label": "İptal etmek"
+			},
+			{
+				"id": 6,
+				"label": "Tamamlanan"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"id": 3,
+				"label": "beklemede"
+			},
+			{
+				"id": 5,
+				"label": "İptal etmek"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"id": 4,
+				"label": "bekleme"
+			},
+			{
+				"id": 5,
+				"label": "İptal etmek"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "İptal etmek"
+			},
+			{
+				"id": 2,
+				"label": "Devam etmekte"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"id": 4,
+				"label": "İptal etmek"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "Acil"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "Çok Yüksek"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Yüksek"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "Orta"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "Düşük"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "beklemede"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "bekleme"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Tamamlanan"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "beklemede"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "bekleme"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Tamamlanan"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "beklemede"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "bekleme"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Devam etmekte"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "İptal etmek"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Tamamlanan"
+			}
+		],
+		"title": "Görevler",
+		"title1": "Görev Oluştur",
+		"title2": "Alt Görev Oluştur",
+		"title3": "Görevleri İçe Aktar",
+		"title4": "Görevi Düzenle",
+		"title5": "Alt Görevi Düzenle",
+		"title6": "Görevi Kopyala",
+		"tooltips": {
+			"sub_task": "Alt Görev Oluştur"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "Vergi Adı",
+			"tax_rate": "Vergi oranı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen benzersiz ve geçerli bir vergi adı girin.",
+				"message2": "Lütfen geçerli bir vergi oranı girin.",
+				"message3": "Vergi oranı bir sayı olmalıdır."
+			},
+			"fields": {
+				"tax_name": "Vergi Adı",
+				"tax_rate": "Vergi oranı"
+			},
+			"placeholders": {
+				"placeholder1": "Vergi Adını Girin",
+				"placeholder2": "Vergi Oranını Girin"
+			}
+		},
+		"messages": {
+			"create": "Vergi başarıyla oluşturuldu.",
+			"delete": "Vergi başarıyla silindi.",
+			"update": "Vergi başarıyla güncellendi."
+		},
+		"title": "Vergiler",
+		"title1": "Vergi oranları",
+		"title2": "Vergi !",
+		"title3": "Vergi Oluştur",
+		"title4": "Vergiyi Güncelle"
+	},
+	"teams": {
+		"columns": {
+			"actions": "Eylemler",
+			"leader": "Önder",
+			"members": "Üyeler",
+			"team_name": "Takım adı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir takım adı girin.",
+				"message2": "Takım adı en fazla 30 karakter uzunluğunda olabilir.",
+				"message3": "Lütfen geçerli bir ekip üyesi seçin.",
+				"message4": "Lütfen geçerli bir takım lideri seçin.",
+				"message5": "Lütfen içe aktarılacak CSV dosyasını seçin.",
+				"message6": "Bu dosya bir csv dosyası değil. Lütfen sadece csv dosyasını seçin."
+			},
+			"fields": {
+				"actions": "Eylemler",
+				"csv_file": "Takım CSV dosyasını seçin",
+				"description": "Açıklama",
+				"leader": "Önder",
+				"members": "Üyeler",
+				"team_name": "Takım adı"
+			},
+			"placeholders": {
+				"placeholder1": "Takım Adını Girin",
+				"placeholder2": "- Takım Üyelerini Seçin -",
+				"placeholder3": "- Takım Liderini Seçin -"
+			}
+		},
+		"inline_edit": {
+			"team_name": "Takım adı"
+		},
+		"labels": {
+			"label1": "Ekipleri içe aktarmaya başlamadan önce kullanıcıları içe aktardığınızdan emin olun."
+		},
+		"messages": {
+			"create": "Takım başarıyla oluşturuldu.",
+			"delete": "Takım başarıyla silindi.",
+			"import": "Takım başarıyla içe aktarıldı.",
+			"update": "Takım başarıyla güncellendi."
+		},
+		"title": "Takımlar",
+		"title1": "İthalat Takımları",
+		"title2": "Takım Lideri",
+		"title3": "Takım Kurulları"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "Kenar Çubuğu Renk Seçenekleri",
+			"head10": "Kenar Çubuğu Yazı Tipi Renkleri",
+			"head11": "Kenar Çubuğu Düzeni Seçenekleri",
+			"head12": "yapılandırmalar",
+			"head13": "Daraltılmış Menü",
+			"head14": "Kenar Çubuğu Genişliği",
+			"head15": "Gradyan Kenar Çubuğu",
+			"head2": "Renk Paletleri",
+			"head3": "Renk Seçenekleri",
+			"head4": "Kenar Çubuğu Arka Plan Renkleri",
+			"head5": "Kenar çubuğu arka plan resimleri",
+			"head6": "Arka plan görüntüsü",
+			"head7": "Arkaplan Renkleri",
+			"head8": "Arkaplan Resimleri",
+			"head9": "Kenar Çubuğu Arka Plan Renkleri"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "Önceden Oluşturulmuş Renkler"
+			},
+			{
+				"key": "dark",
+				"value": "Özel renkler"
+			},
+			{
+				"key": "custom-colors",
+				"value": "Özel renkler"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "- Düzen Seçin -",
+			"placeholder2": "- Kenar Çubuğu Genişliğini Seçin -"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "küçük"
+			},
+			{
+				"key": "medium",
+				"value": "Orta"
+			},
+			{
+				"key": "large",
+				"value": "Büyük"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "Eylemler",
+			"end_time": "Bitiş zamanı",
+			"entry": "giriş",
+			"note": "not",
+			"photo": "fotoğraf",
+			"project_name": "proje",
+			"start_time": "Başlama zamanı",
+			"time_h": "Saatler",
+			"user": "kullanıcı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir başlangıç zamanı seçin.",
+				"message2": "Lütfen geçerli bir bitiş zamanı seçin.",
+				"message3": "Lütfen zaman çizelgesi için uygun tarih ve saati seçin.",
+				"message4": "Lütfen geçerli bir not girin."
+			},
+			"fields": {
+				"end_time": "Bitiş zamanı",
+				"note": "not",
+				"start_time": "Başlama zamanı"
+			},
+			"placeholders": {
+				"placeholder1": "Başlangıç Zamanını Seçin",
+				"placeholder2": "Bitiş Zamanını Seçin",
+				"placeholder3": "Not Girin"
+			},
+			"title1": "Zaman Çizelgesi Oluştur",
+			"title2": "Zaman Çizelgesini Düzenle"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir aralık seçin.",
+				"message2": "Lütfen için geçerli bir dönem seçin.",
+				"message3": "Lütfen için geçerli bir dönem seçin."
+			},
+			"placeholders": {
+				"placeholder1": "- Proje Seçin -",
+				"placeholder2": "- Müşteri Seç -",
+				"placeholder3": "Şuradan Dönem Seç",
+				"placeholder4": "Dönem Seçin",
+				"placeholder5": "-- Kullanıcı seç --"
+			}
+		},
+		"inline_edit": {
+			"note": "not"
+		},
+		"messages": {
+			"create": "Zaman çizelgesi başarıyla oluşturuldu.",
+			"delete": "Zaman çizelgesi başarıyla silindi.",
+			"update": "Zaman çizelgesi başarıyla güncellendi."
+		},
+		"range": {
+			"last_month": "Geçen ay",
+			"last_week": "Geçen hafta",
+			"period": "dönem",
+			"this_month": "Bu ay",
+			"this_week": "Bu hafta",
+			"today": "Bugün"
+		},
+		"title": "Zaman planı",
+		"title1": "Zaman Çizelgem",
+		"title2": "Tüm Zaman Çizelgesi"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir açıklama girin.",
+				"message2": "Açıklama en fazla 5 karakter uzunluğunda olabilir.",
+				"message3": "Açıklama en fazla 255 karakter uzunluğunda olabilir.",
+				"message4": "Lütfen geçerli bir yapılacaklar durumu seçin.",
+				"message5": "Lütfen geçerli bir bitiş tarihi seçin."
+			},
+			"fields": {
+				"description": "Açıklama",
+				"due_date": "Bitiş tarihi",
+				"status": "durum"
+			},
+			"placeholders": {
+				"placeholder1": "Açıklama Girin",
+				"placeholder2": "- Durum Seçin -",
+				"placeholder3": "Bitiş Tarihini Seçin"
+			}
+		},
+		"inline_edit": {
+			"description": "Açıklama",
+			"due_date": "Bitiş tarihi"
+		},
+		"messages": {
+			"create": "Todo başarıyla oluşturuldu.",
+			"delete": "Yapılacaklar başarıyla silindi.",
+			"status": "Durum başarıyla güncellendi.",
+			"update": "Yapılacaklar başarıyla güncellendi."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Açık"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "Tamamlanan"
+			}
+		],
+		"title": "Yapmak"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "İzin Modunu Ata"
+		},
+		"columns": {
+			"actions": "Eylemler",
+			"departments_roles": "Bölümler / Rolleri",
+			"first_name": "isim",
+			"last_name": "Soyadı",
+			"photo": "fotoğraf",
+			"status": "durum",
+			"username": "Kullanıcı adı"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Lütfen geçerli bir isim giriniz.",
+				"message10": "Parola ve parolayı onaylama eşleşmiyor.",
+				"message11": "Dosyaları buraya bırakın veya yüklemek için tıklayın.",
+				"message12": "Lütfen rolleri olan geçerli bir departman seçin.",
+				"message13": "Lütfen geçerli bir kullanıcı izinleri seçin.",
+				"message14": "Lütfen geçerli bir kullanıcı tarafından oluşturulan kimlik girin.",
+				"message15": "Lütfen geçerli bir iş kimliği girin.",
+				"message16": "Lütfen geçerli bir kullanıcı adı girin.",
+				"message17": "Kullanıcı adı beyaz boşluk olmadan en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message18": "Lütfen geçerli bir telefon numarası giriniz.",
+				"message19": "Geçerli bir telefon numarası giriniz.",
+				"message2": "İlk ad en fazla 20 karakter uzunluğunda olabilir.",
+				"message20": "Lütfen geçerli bir kullanıcı izinleri seçin.",
+				"message21": "Lütfen içe aktarılacak CSV dosyasını seçin.",
+				"message22": "Bu dosya bir csv dosyası değil. Lütfen sadece csv dosyasını seçin.",
+				"message3": "Lütfen geçerli bir soyadı girin.",
+				"message4": "Soyadı en fazla 20 karakter uzunluğunda olabilir.",
+				"message5": "Lütfen geçerli eposta adresini giriniz.",
+				"message6": "E-posta geçerli bir e-posta adresi olabilir.",
+				"message7": "Lütfen geçerli bir şifre giriniz.",
+				"message8": "Şifre en az 3 ila en fazla 30 karakter uzunluğunda olabilir.",
+				"message9": "Lütfen geçerli bir onay şifresi girin."
+			},
+			"fields": {
+				"address": "adres",
+				"assigned_to": "Atandı",
+				"confirm_password": "Şifreyi Onayla",
+				"country": "ülke",
+				"csv_file": "Kullanıcı CSV dosyasını seçin",
+				"customize_permission": "İzni Özelleştir",
+				"departments_roles": "Bölümler / Roller",
+				"dob": "Doğum tarihi",
+				"email": "E-posta",
+				"employment_ID": "İstihdam Kimliği",
+				"everyone": "Herkes",
+				"father_name": "Baba adı",
+				"first_name": "isim",
+				"gender": "Cinsiyet",
+				"is_departmenthead": "Bölüm başkanı mı?",
+				"joining_date": "Giriş Tarihi",
+				"language": "dil",
+				"last_name": "Soyadı",
+				"marital_status": "Medeni hal",
+				"mobile": "seyyar",
+				"mother_name": "Annenizin Adı",
+				"new_password": "Yeni Şifre",
+				"old_password": "Eski şifre",
+				"password": "Parola",
+				"phone": "telefon",
+				"primary_manager": "Birincil Yönetici",
+				"profile_photo": "profil resmi",
+				"secondary_manager": "İkincil Yönetici",
+				"select_users": "Kullanıcıları Seçin",
+				"skype": "Skype",
+				"userid": "Kullanıcı kimliği",
+				"username": "Kullanıcı adı"
+			},
+			"placeholders": {
+				"placeholder1": "İlk Adı Girin",
+				"placeholder10": "-- Dil Seçin --",
+				"placeholder11": "Eski Şifreyi Girin",
+				"placeholder12": "-- Birincil Yönetici Seçin --",
+				"placeholder13": "-- İkincil Yönetici Seçin --",
+				"placeholder14": "Adresi girin",
+				"placeholder2": "Soy adını gir",
+				"placeholder3": "E-posta Gir",
+				"placeholder4": "Şifre girin",
+				"placeholder5": "Parolayı Onayla",
+				"placeholder6": "- Bölüm / Rol Seçin -",
+				"placeholder7": "Kullanıcı adı girin",
+				"placeholder8": "Skype'a girin",
+				"placeholder9": "- Ülke Seçin -"
+			}
+		},
+		"gender_options": [
+			{
+				"label": "Erkek",
+				"value": "male"
+			},
+			{
+				"label": "Kadın",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "Kişisel bilgi",
+			"head2": "Gereksinimler",
+			"head3": "Kullanıcı Hakkında",
+			"head4": "İletişim bilgileri"
+		},
+		"inline_edit": {
+			"address": "adres",
+			"country": "ülke",
+			"dob": "Doğum günü",
+			"father_name": "Baba adı",
+			"first_name": "isim",
+			"gender": "Cinsiyet",
+			"joining_date": "Giriş Tarihi",
+			"language": "dil",
+			"last_name": "Soyadı",
+			"maritial_status": "Başlangıç Durumu",
+			"mobile": "seyyar",
+			"mother_name": "Anne adı",
+			"phone": "telefon",
+			"primary_manager": "Birincil Yönetici",
+			"secondary_manager": "İkincil Yönetici",
+			"skype": "Skype",
+			"username": "Kullanıcı adı",
+			"state": "Durum",
+			"city": "Kent",
+			"postal_code": "posta kodu"
+		},
+		"marital_status": [
+			{
+				"label": "Evli",
+				"value": "married"
+			},
+			{
+				"label": "Evlenmemiş",
+				"value": "unmarried"
+			},
+			{
+				"label": "Dul",
+				"value": "widowed"
+			},
+			{
+				"label": "Boşanmış",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "Avatar başarıyla değiştirildi.",
+			"create": "Kullanıcı başarıyla oluşturuldu.",
+			"delete": "Kullanıcı başarıyla silindi.",
+			"email_change": "E-posta değiştirme isteği başarıyla gönderildi. Lütfen gelen kutunuzu kontrol edin ve e-postanızı değiştirin.",
+			"import": "Kullanıcı başarıyla içe aktarıldı.",
+			"invite": "Davetiye başarıyla gönderildi.",
+			"password_change": "Parola değiştirme isteği başarıyla gönderildi. Lütfen gelen kutunuzu kontrol edin ve e-postanızı değiştirin.",
+			"status": "Durum başarıyla değiştirildi.",
+			"update": "Kullanıcı başarıyla güncellendi."
+		},
+		"profile": {
+			"activities": "faaliyetler",
+			"articles": "Nesne",
+			"comments": "yorumlar",
+			"defect_hours": "Kusur Saatleri",
+			"defects": "Kusur",
+			"incident_hours": "Olay Saatleri",
+			"incidents": "Olayları",
+			"leave_hours": "Ayrılma Saatleri",
+			"leave_other_hours": "İzin / Diğer Saatler",
+			"meeting_hours": "Toplantı Saatleri",
+			"other_hours": "Diğer Saatler",
+			"projects": "Projeler",
+			"task_hours": "Görev Saatleri",
+			"tasks": "Görevler",
+			"total_hours": "Toplam Saat",
+			"total_messages": "Toplam Mesajlar"
+		},
+		"title": "Kullanıcılar",
+		"title1": "Kullanıcı oluştur",
+		"title2": "kullanıcıyı düzenle",
+		"title3": "Kullanıcı İzinleri",
+		"title4": "Değişim e-posta",
+		"title5": "Şifre değiştir",
+		"title6": "Kullanıcıyı İçe Aktar",
+		"title7": "Avatarı değiştir"
+	},
+	"timer_logs": {
+		"title": "Zamanlayıcıyı Başlat",
+		"title1": "Zamanlayıcıyı Durdur",
+		"error_messages": {
+			"message1": "Zaten çalıştığı için zamanlayıcı başlatılamıyor.",
+			"message2": "Süre 1 dakikadan fazla olmalıdır.",
+			"message3": "Süre 12 saatten az olmalıdır."
+		}
+	}
+}

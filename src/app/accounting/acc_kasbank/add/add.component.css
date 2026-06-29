@@ -1,0 +1,140 @@
+mat-form-field {
+  width: 100%;
+}
+.shift_content {
+  border: 1px solid #5bc0de;
+  margin-bottom: 10px;
+}
+.shift_content > legend {
+  text-align: right;
+  color: #5bc0de;
+  display: inline;
+  width: auto;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+/* :host ::ng-deep .p-multiselect {
+    width: 100% !important;
+} */
+
+:host ::ng-deep .p-multiselect {
+    width: 100% !important;
+    display: block;
+}
+
+:host ::ng-deep .p-multiselect-label-container {
+    width: 100% !important;
+}
+
+:host ::ng-deep .p-multiselect .p-multiselect-label {
+    width: 100% !important;
+}
+:host ::ng-deep .p-multiselect {
+    width: 100% !important;
+    display: block !important;
+}
+
+:host ::ng-deep .p-multiselect-label-container {
+    width: 100% !important;
+}
+
+.ng-select {
+  width: 100%;
+}
+
+.ng-select .ng-select-container {
+  min-height: 38px;
+}
+
+.ng-select .ng-value {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ng-select .ng-value-label {
+  white-space: nowrap;
+}
+
+.ng-dropdown-panel {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+/* container */
+.lookup-container {
+  position: relative;
+  width: 100%;
+}
+
+/* textarea */
+.lookup-textarea {
+
+  width: 100%;
+  padding: 10px 45px 10px 12px;
+
+  border: 1px solid #dadada;
+  border-radius: 6px;
+
+  background: #ffffff;
+  resize: none;
+
+  cursor: pointer;
+
+  line-height: 1.5;
+  font-size: 13px;
+
+}
+
+/* hover effect */
+.lookup-textarea:hover {
+  background: #f1f1f1;
+}
+
+/* icon search */
+.lookup-icon {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 100%;
+  width: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #17a2b8;
+  color: white;
+
+  border-radius: 0 6px 6px 0;
+
+  cursor: pointer;
+}
+
+/* hover icon */
+.lookup-icon:hover {
+  background: #138496;
+}
+
+.selected-permohonan {
+  margin-top: 10px;
+}
+
+.permohonan-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.remove-icon {
+  font-size: 14px;
+  margin-left: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,64 @@
+<!-- <div class="row" [formGroup]="formName">
+	<ng-container formArrayName="custom_field">
+		<ng-container *ngFor="let customF of customFields; let j=index">
+			<ng-container [formGroupName]="j">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="form-group" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted">
+						<label for="customFields[j].field_column">{{customFields[j].field_label}}</label>
+						<span class="text-danger" *ngIf="customFields[j].is_required == true || customFields[j].is_required == 1 ">&nbsp;*</span>
+						&nbsp; <span *ngIf="customFields[j].help_text!=null || customFields[j].help_text !=''"><i class="fa fa-lightbulb-o fa-1" placement="top" tooltip="{{customFields[j].help_text}}"></i></span>&nbsp;&nbsp;&nbsp;
+
+
+						<ng-container *ngIf="customFields[j].field_type == 'text'">
+							<input type="text" class="form-control text-capitalize" [formControlName]="customFields[j].field_column" id="customFields[j].field_column" placeholder="{{'shared.show_custom_field.placeholders.placeholder1' | translate:{'custom_field':customFields[j].field_label} }}" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted" />
+							<div *ngIf="isFormSubmitted && !controls.controls[j].valid" class="invalid-feedback">
+								<div>{{'shared.show_custom_field.error_messages.message1' | translate:{'custom_field':customFields[j].field_label | lowercase} }}</div>
+							</div>
+						</ng-container>
+
+						<ng-container *ngIf="customFields[j].field_type == 'dropdown'">
+							<ng-select [searchable]="true" [items]="customFields[j].default_value | objToAr" [selectOnTab]="true" bindLabel="label" bindValue="value" labelForId="customFields[j].default_value | objToAr" placeholder="{{'shared.show_custom_field.placeholders.placeholder2' | translate:{'custom_field':customFields[j].field_label} }}" [formControlName]="customFields[j].field_column" class="text-capitalize" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted"> </ng-select>
+							<div *ngIf="isFormSubmitted && !controls.controls[j].valid" class="invalid-feedback">
+								<div>{{'shared.show_custom_field.error_messages.message2' | translate:{'custom_field':customFields[j].field_label | lowercase} }}</div>
+							</div>
+						</ng-container>
+
+						<ng-container *ngIf="customFields[j].field_type == 'textarea'">
+							<textarea rows="4" cols="50" class="form-control text-capitalize" [formControlName]="customFields[j].field_column" id="customFields[j].field_column" placeholder="{{'shared.show_custom_field.placeholders.placeholder1' | translate:{'custom_field':customFields[j].field_label} }}" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted"></textarea>
+							<div *ngIf="isFormSubmitted && !controls.controls[j].valid" class="invalid-feedback">
+								<div>{{'shared.show_custom_field.error_messages.message1' | translate:{'custom_field':customFields[j].field_label | lowercase} }}</div>
+							</div>
+						</ng-container>
+
+						<ng-container *ngIf="customFields[j].field_type == 'numeric'">
+							<input type="number" class="form-control text-capitalize" [formControlName]="customFields[j].field_column" id="customFields[j].field_column" placeholder="{{'shared.show_custom_field.placeholders.placeholder1' | translate:{'custom_field':customFields[j].field_label} }}" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted" />
+							<div *ngIf="!controls.controls[j].valid && isFormSubmitted" class="invalid-feedback">
+								<div>{{'shared.show_custom_field.error_messages.message1' | translate:{'custom_field':customFields[j].field_label | lowercase} }}</div>
+							</div>
+						</ng-container>
+
+						<ng-container *ngIf="customFields[j].field_type == 'date'">
+							<div class="position-relative has-icon-left">
+								<input type="text" class="form-control text-capitalize" #dp1="bsDatepicker" bsDatepicker [bsConfig]="datepickerConfig" [formControlName]="customFields[j].field_column" id="customFields[j].field_column" placeholder="{{'shared.show_custom_field.placeholders.placeholder2' | translate:{'custom_field':customFields[j].field_label} }}" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted" />
+								<div class="form-control-position"><i class="ft-calendar"></i></div>
+								<div *ngIf="!controls.controls[j].valid && isFormSubmitted" class="invalid-feedback">
+									<div>{{'shared.show_custom_field.error_messages.message2' | translate:{'custom_field':customFields[j].field_label | lowercase} }}</div>
+								</div>
+							</div>
+						</ng-container>
+
+						<ng-container *ngIf="customFields[j].field_type == 'checkbox'">
+							<label class="checkbox-container col-form-label">
+								<input type="checkbox" class="form-control text-capitalize" [formControlName]="customFields[j].field_column" id="customFields[j].field_column" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted" />
+								<span class="checkbox-checkmark" [class.is-invalid]="!controls.controls[j].valid && isFormSubmitted"></span>
+							</label>
+							<div *ngIf="!controls.controls[j].valid && isFormSubmitted" class="invalid-feedback">
+								<div>{{'shared.show_custom_field.error_messages.message2' | translate:{'custom_field':customFields[j].field_label | lowercase} }}</div>
+							</div>
+						</ng-container>
+					</div>
+				</div>
+			</ng-container>
+		</ng-container>
+	</ng-container>
+</div> -->

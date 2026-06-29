@@ -1,0 +1,104 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Approval Pengajuan Cuti</h4>
+
+            <div class="toolbar">
+
+
+              <div class="btn-group  ">
+                <button type="button" (click)="exportFiles('csv')"
+                  class="btn btn-round btn-info btn-sm btn-rose">csv</button>
+                <button type="button" (click)="exportFiles('xlsx')"
+                  class="btn btn-round btn-info btn-sm btn-rose">excel</button>
+                <!-- <button type="button" class="btn btn-round btn-info">3</button>  -->
+                <button type="button" (click)="exportFiles('pdf')"
+                  class="btn btn-round btn-info btn-sm btn-rose">pdf</button>
+              </div>
+              <!-- <button type="button" (click)="add()" class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">Tambah Permintaan Pembelian</button> -->
+
+
+            </div>
+            <div class="">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+                <!-- <table id="mytable" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="tables table-striped table-no-bordered table-hover" cellspacing="0"
+              width="90%" style="width:90%"> -->
+                <thead>
+                  <tr>
+                    <th>ID</th>
+
+                    <th>Tanggal</th>
+                    <th>Dari Tanggal</th>
+                    <th>Sampai Tanggal</th>
+                    <th>Karyawan</th>
+                    <th>Cuti</th>
+                    <th>Status</th>
+                    <th>Jenis Absensi</th>
+
+                    <th width="10%"></th>
+                </thead>
+                <tbody *ngIf="HrmsPengajuanCuti?.length != 0">
+                  <tr *ngFor="let p of HrmsPengajuanCuti; index as i">
+
+                    <td>{{p.tanggal}}</td>
+                    <td>{{p.dari_tanggal}}</td>
+                    <td>{{p.sampai_tanggal}}</td>
+                    <td>{{p.karyawan}}</td>
+                    <td>{{p.cuti}}</td>
+                    <td>{{getStatusPo(p)}}</td>
+                    <td>{{p.jenis_absensi}}</td>
+                    <!-- <td><p  *ngIf="p.quotation_id !=null && p.quotation_id>0 "><small >No Quotation:&nbsp;{{p.no_quotation}}</small></p><small class="text-info"  *ngIf="p.quotation_id !=null && p.quotation_id>0 ">No referensi: &nbsp;{{p.no_referensi}}</small></td> -->
+                    <!-- <td *ngIf="p.last_approve_position =='' &&  p.status ==''"> Belum diajukan Approval </td>
+                    <td *ngIf="p.status !='READY_PO' && p.status !='REJECTED' && p.status !='CLOSED' && p.status !=''"> Menunggu &nbsp;{{  p.last_approve_position }}</td>
+                    <td *ngIf="!(p.status !='READY_PO' && p.status !='REJECTED' && p.status !='CLOSED' && p.status !='')"> {{  p.status }}</td> -->
+
+                    <td class="text-right">
+                      <!-- <a href="#" onclick="event.preventDefault()" (click)="statusApproval(p.id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="Status"><i class="material-icons">list</i></a> -->
+                      <a href="#" *ngIf="p.upload_file" onclick="event.preventDefault()" (click)="download(p.id)"
+                        class="btn btn-simple btn-warning btn-icon edit" rel="tooltip" data-placement="bottom"
+                        title="Download"><i class="material-icons">file_download</i></a>
+
+                      <a href="#" onclick="event.preventDefault()" (click)="showQuotation(p.quotation_id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="Quotation" *ngIf="p.quotation_id !=null && p.quotation_id>0 "><i
+                          class="material-icons">list</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="View Slip PO"><i class="material-icons">picture_as_pdf</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="approval(p.id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="Approval"><i class="material-icons">person</i></a>
+                      <!-- <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                        class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                        class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+                    </td> -->
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="HrmsPengajuanCuti?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- end content-->
+        </div>
+        <!--  end card  -->
+      </div>
+      <!-- end col-md-12 -->
+    </div>
+    <!-- end row -->
+  </div>
+</div>

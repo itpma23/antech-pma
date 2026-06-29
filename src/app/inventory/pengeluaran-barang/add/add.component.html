@@ -1,0 +1,299 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmitAlert()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">widgets</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Pengeluaran Barang</h4>
+              <div class="row">
+
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Lokasi</label>
+                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Tipe</label>
+                  <l-select2 [data]="dataSelectTipe" formControlName="tipe" [options]="{ placeholder: 'Pilih',
+                     allowClear: false,width:'100%'}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.tipe.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tipe.errors.required && userControl.tipe.value.text!='Pilih'"
+                      class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">No Permintaan</label>
+                  <l-select2 [data]="dataSelectPermintaan" formControlName="inv_permintaan_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.inv_permintaan_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.inv_permintaan_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Afdeling/Stasiun</label>
+                  <l-select2 [data]="dataSelectLokasiAfd" formControlName="lokasi_afd_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_afd_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_afd_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Gudang</label>
+                  <l-select2 [data]="dataSelectGudang" formControlName="gudang_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.gudang_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.gudang_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Traksi</label>
+                  <l-select2 [data]="dataSelectLokasiTraksi" formControlName="lokasi_traksi_id" [options]="{ placeholder: 'Pilih',
+              allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_traksi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_traksi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>No Transaksi</mat-label>
+                    <input matInput formControlName="no_transaksi" type="text" readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.no_transaksi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Karyawan</label>
+                  <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Catatan</mat-label>
+                    <input matInput formControlName="catatan" type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.catatan.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.catatan.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Tanggal </mat-label>
+                    <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                      class="form-control" formControlName="tanggal" required>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-12">
+              <div class="card-content">
+                <button type="button" class="btn btn-primary btn-raised btn-sm btn-round" (click)="tampilItemPermintaan()">
+                 Tampilkan Item Permintaan
+                </button>
+              </div>
+            </div> -->
+              <div class="card">
+                <div class="card-header card-header-tabs" data-background-color="rose">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <!-- <span class="nav-tabs-title">Tasks:</span> -->
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="active">
+                          <a href="#" data-toggle="tab">
+                            <i class="material-icons">list</i> Detail
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div formArrayName="details">
+                  <fieldset class="container-fluid shift_content" [formGroupName]="i"
+                    *ngFor="let blok of details.controls; let i=index; let odd=odd;">
+
+                    <legend>
+                      <span class="label label-info">{{i+1}}</span>
+                    </legend>
+
+                    <div class="form-group ">
+                      <div class="xform-group col-md-6">
+                        <label class="control-label">Item</label>
+                        <l-select2 [disabled]="true" [data]="dataSelectItem" formControlName="item_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: true}">
+                        </l-select2>
+                      </div>
+                      <div class="xform-group col-md-6">
+                        <label class="control-label">Kendaraan/AB/Mesin</label>
+                        <l-select2 [disabled]="true" [data]="dataSelectTraksi" formControlName="traksi_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: true}">
+                        </l-select2>
+                      </div>
+
+
+                      <div class="xform-group col-md-6">
+                        <label class="control-label">Blok/Mesin</label>
+                        <l-select2 [disabled]="true" [data]="dataSelectBlok" formControlName="blok_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: true}">
+                        </l-select2>
+                      </div>
+                      <div class="xform-group col-md-6">
+                        <label class="control-label">Kegiatan/Alokasi</label>
+                        <l-select2 [disabled]="true" [data]="dataSelectKegiatan" formControlName="kegiatan_id"
+                          [options]="{ placeholder: 'Pilih',
+                  allowClear: false}" required>
+                        </l-select2>
+                        <div *ngIf="isFormSubmitted && blok.get('kegiatan_id').errors" class="invalid-feedback">
+                          <small [hidden]="!blok.get('kegiatan_id').errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <mat-form-field>
+                          <mat-label>Qty</mat-label>
+                          <input matInput formControlName="qty" type="number">
+                        </mat-form-field>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <mat-form-field>
+                          <mat-label>Keterangan</mat-label>
+                          <input matInput formControlName="ket" type="text">
+                        </mat-form-field>
+                      </div>
+                    </div>
+
+                  </fieldset>
+                  <br>
+
+                </div>
+
+              </div>
+              <table width="100%" style="width:100%" hidden>
+                <tr>
+                  <td style="width: 30%;">&nbsp;</td>
+                  <td style="width: 40%;">Jumlah</td>
+                  <td></td>
+                </tr>
+              </table>
+
+
+              <!-- Pilihan internal / eksternal (bukan formControl) -->
+              <div class="form-group">
+                <label for="pic_type">Person in Charge</label>
+                <select id="pic_type" class="form-control" (change)="onPICChange($event)">
+                  <option value="">-- Pilih --</option>
+                  <option value="internal">Internal</option>
+                  <option value="eksternal">Eksternal</option>
+                </select>
+              </div>
+
+              <div *ngIf="isInternalPIC" class="form-group d-flex align-items-center" style="gap: 10px;">
+                <label class="control-label" style="white-space: nowrap; margin-bottom: 0;">
+                  Karyawan
+                </label>
+
+                <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id"
+                  [options]="{ placeholder: 'Pilih', allowClear: true }" style="flex-grow: 1; min-width: 0;">
+                </l-select2>
+
+                <img *ngIf="selectedFoto" class="img-circle karyawan-img"
+                  src="{{ PATH_URL }}/{{ pathName }}/userfiles/images/{{ selectedFoto }}" alt="Foto Karyawan"
+                  style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 1px solid #ccc;">
+              </div>
+
+
+
+
+              <!-- Upload Bukti hanya tampil jika eksternal -->
+              <form *ngIf="isEksternalPIC" [formGroup]="formUploadFile" class="mt-3">
+                <div style="margin-bottom: 8px;">
+                  <b>Upload Bukti Pengeluaran Barang</b>
+                </div>
+
+                <div *ngIf="selectedFileName" class="mt-2">
+                  <strong>File dipilih:</strong> {{ selectedFileName }}
+                </div>
+
+                <div
+                  style="border: 2px dashed #ccc; border-radius: 6px; padding: 20px; text-align: center; cursor: pointer; background-color: #fafafa; position: relative;"
+                  (dragover)="onDragOver($event)" (drop)="onDrop($event)" (click)="fileInput.click()">
+
+                  <ng-container *ngIf="!imagePreview; else previewBlock">
+                    <p style="margin: 0;">Drag & drop file di sini, atau klik untuk pilih</p>
+                    <small>(Hanya .jpg, .jpeg, .png | Maks: 5MB)</small>
+                  </ng-container>
+
+                  <ng-template #previewBlock>
+                    <img [src]="imagePreview" alt="Preview Gambar"
+                      style="max-width: 500px; max-height: 500px; border: 1px solid #ccc; padding: 5px; border-radius: 4px;" />
+                    <br />
+                    <button type="button" (click)="clearImage($event)"
+                      style="margin-top: 10px; background: #f44336; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                      Hapus Gambar
+                    </button>
+                  </ng-template>
+
+                  <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)"
+                    accept=".jpg,.jpeg,.png" />
+                </div>
+
+                <div *ngIf="fileError" class="text-danger mt-1">
+                  <small>{{ fileError }}</small>
+                </div>
+              </form>
+
+
+
+
+
+              <br><br><br><br>
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-success">Proses</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

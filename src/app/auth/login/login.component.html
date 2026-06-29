@@ -1,0 +1,127 @@
+<div class="login-page">
+
+  <div class="overlay"></div>
+
+  <!-- LEFT SIDE -->
+  <div class="left-section">
+
+    <div class="hero-content">
+
+      <div class="erp-label">
+        PALM MAS ASRI GROUP
+      </div>
+
+      <h1>
+        Plantation ERP
+      </h1>
+
+      <p>
+        Integrated Plantation Management System
+      </p>
+
+    </div>
+
+    <div class="company-info">
+
+      <img src="/assets/img/antech_logo.png" alt="Antech ERP">
+
+      <div>
+
+        <strong>ANTECH ERP</strong>
+
+        <br>
+
+        Modified by ICT PMA Group 2026
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-section">
+
+    <div class="login-card">
+
+      <div class="logo-wrapper">
+
+        <img src="/assets/img/logo_pma_new.png" alt="logo">
+
+      </div>
+
+      <h6 style="text-align: center; margin: 0; font-size: 24px; font-weight: 600;">
+        Selamat Datang
+      </h6>
+
+      <p class="login-subtitle">
+        Sign in to continue
+      </p>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="outline" class="full-width">
+
+          <mat-label>User Name</mat-label>
+
+          <input matInput formControlName="email">
+
+        </mat-form-field>
+
+        <div *ngIf="isFormSubmitted && userControl.email.errors">
+
+          <small class="error-text">
+            User Name wajib diisi
+          </small>
+
+        </div>
+
+        <mat-form-field appearance="outline" class="full-width">
+
+          <mat-label>Password</mat-label>
+
+          <input matInput [type]="showPassword ? 'text' : 'password'" formControlName="password">
+
+          <mat-icon matSuffix class="password-toggle" (click)="showPassword = !showPassword">
+
+    {{ showPassword ? 'visibility' : 'visibility_off' }}
+
+          </mat-icon>
+
+        </mat-form-field>
+
+        <div *ngIf="isFormSubmitted && userControl.password.errors">
+
+          <small class="error-text">
+            Password wajib diisi
+          </small>
+
+        </div>
+
+        <button type="submit" class="login-btn">
+
+          LOGIN
+
+        </button>
+
+      </form>
+
+      <div class="version">
+        Version 2.0
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="copyright-footer">
+
+    © 2026 Palm Mas Asri Group
+
+    <span>|</span>
+
+    Plantation ERP
+
+  </div>
+
+</div>

@@ -1,0 +1,3982 @@
+{
+  "pengajar":"Pengajar",
+  "pengguna":"Pengguna",
+  "siswa":"Siswa",
+  "pengumuman":"Pengumuman",
+  "materi_dan_tugas":"Materi dan Tugas",
+  "data_master":"Master Data",
+  "Activate Account": "Aktivovat účet",
+	"Administration": "Správa",
+	"Announcement": "Pengumuman",
+	"Announcements": "Oznámení",
+	"Appointments": "Schůzky",
+	"Articles": "Články",
+	"Assigned Project": "Přiřazený projekt",
+	"Backup Database": "Záložní databáze",
+	"Calendar": "Kalendář",
+	"Change Email": "Změnit e-mail",
+	"Clients": "Klienti",
+	"Company Detail": "Detail společnosti",
+	"Complete Projects": "Kompletní projekty",
+	"Cronjob": "Cronjob",
+	"Custom Fields": "Vlastní pole",
+	"Dashboard": "Přístrojová Deska",
+	"Dashboard Settings": "Nastavení řídicího panelu",
+	"Defect Assigned": "Vada byla přiřazena",
+	"Defect Attachment": "Vadná příloha",
+	"Defect Comments": "Vadné komentáře",
+	"Defect Updated": "Vada byla aktualizována",
+	"Defects": "Vady",
+	"Departments": "Oddělení",
+	"Email Notifications": "E-mailová oznámení",
+	"Email Settings": "Nastavení e-mailu",
+	"Email Templates": "E-mailové šablony",
+	"Estimates": "Odhady",
+	"File Manager": "Správce Souborů",
+	"Forgot Password": "Zapomenuté heslo",
+	"HRM": "Lidské zdroje",
+	"Holidays": "Prázdniny",
+	"Incident Assigned": "Incident Assigned",
+	"Incident Attachment": "Příloha k incidentu",
+	"Incident Comments": "Komentáře k incidentům",
+	"Incident Updated": "Incident byl aktualizován",
+	"Incidents": "Incidenty",
+	"Invoices": "Faktury",
+	"Items": "Položky",
+	"Knowledge Base": "Znalostní Báze",
+	"Leaves": "Listy",
+	"Mailbox": "Poštovní schránka",
+	"Meeting": "Setkání",
+	"Meetings": "Setkání",
+	"Menu Allocation": "Přidělení menu",
+	"Notification Client": "Klient oznámení",
+	"PM": "ODPOLEDNE",
+	"Payments": "Platby",
+	"Project Attachment": "Příloha projektu",
+	"Project Comments": "Komentáře k projektu",
+	"Project Management": "Projektový management",
+	"Project Planner": "Plánovač Projektu",
+	"Projects": "Projekty",
+	"Register Email": "zaregistrovat Email",
+	"Reports": "Zpráva",
+	"Reset Password": "Obnovit heslo",
+	"Roles": "Role",
+	"Sales": "Odbyt",
+	"Settings": "Nastavení",
+	"System Settings": "Nastavení systému",
+	"System Update": "Aktualizace systému",
+	"Task Assigned": "Úkol byl přiřazen",
+	"Task Board": "Pracovní deska",
+	"Task Comments": "Poznámky k úkolu",
+	"Task Updated": "Úloha byla aktualizována",
+	"Tasks": "Úkoly",
+	"Tasks Attachment": "Úkoly Příloha",
+	"Taxes": "Daně",
+	"Team Boards": "Týmové Rady",
+	"Teams": "Týmy",
+	"Theme Settings": "Nastavení motivu",
+	"Timesheet": "Rozvrh Hodin",
+	"Todos": "Todos",
+	"Users": "Uživatele",
+	"Welcome Email": "Vítejte e-mail",
+	"activities": {
+		"columns": {
+			"activity": "Aktivita",
+			"date": "datum",
+			"description": "Popis",
+			"module": "Modul",
+			"photo": "Fotografie",
+			"username": "Uživatelské jméno"
+		},
+		"title": "Činnosti"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "Akce",
+			"creator": "Tvůrce",
+			"end_date": "Datum ukončení",
+			"start_date": "Počáteční datum",
+			"status": "Postavení",
+			"title": "Titul"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný název oznámení.",
+				"message2": "Název oznámení může být dlouhý maximálně 100 znaků.",
+				"message3": "Vyberte platné datum zahájení.",
+				"message4": "Vyberte platné datum ukončení."
+			},
+			"fields": {
+				"all_clients": "Všichni klienti",
+				"description": "Popis",
+				"end_date": "Datum ukončení",
+				"publish": "Publikovat",
+				"start_date": "Počáteční datum",
+				"status": "Postavení",
+				"title": "Titul",
+				"unpublish": "Zveřejnit"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název oznámení",
+				"placeholder2": "Vyberte počáteční datum",
+				"placeholder3": "Vyberte datum ukončení"
+			},
+			"title1": "Vytvořit oznámení",
+			"title2": "Upravit oznámení"
+		},
+		"messages": {
+			"create": "Oznámení bylo úspěšně vytvořeno.",
+			"delete": "Oznámení bylo úspěšně smazáno.",
+			"update": "Oznámení bylo úspěšně aktualizováno."
+		},
+		"title": "Oznámení"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "Rezervované automaty"
+		},
+		"columns": {
+			"actions": "Akce",
+			"end_time": "Čas ukončení",
+			"id": "ID",
+			"location": "Umístění",
+			"provider": "Poskytovatel",
+			"requester": "Žadatel",
+			"start_time": "Doba spuštění",
+			"status": "Postavení",
+			"title": "Titul"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vyberte platného poskytovatele.",
+				"message2": "Vyberte platné datum zahájení.",
+				"message3": "Vyberte platné datum ukončení.",
+				"message4": "Zadejte platný název schůzky.",
+				"message5": "Název události může mít délku maximálně 255 znaků.",
+				"message6": "Vyberte platného klienta.",
+				"message7": "Zadejte prosím platné účastníky.",
+				"message8": "Vyberte prosím platný stav.",
+				"message9": "Vyberte platného poskytovatele."
+			},
+			"fields": {
+				"attendees": "Účastníci",
+				"client": "Klient",
+				"end_date": "Datum ukončení",
+				"location": "Umístění",
+				"notes": "Poznámky",
+				"provider": "Poskytovatel",
+				"start_date": "Počáteční datum",
+				"status": "Postavení",
+				"title": "Titul"
+			},
+			"placeholders": {
+				"placeholder1": "Vyberte počáteční datum",
+				"placeholder2": "Vyberte datum ukončení",
+				"placeholder3": "Zadejte název události",
+				"placeholder4": "- Vyberte klienta -",
+				"placeholder5": "Umístění",
+				"placeholder6": "Účastníci",
+				"placeholder7": "- Vyberte stav -",
+				"placeholder8": "Hledejte měsíc"
+			}
+		},
+		"messages": {
+			"create": "Schůzka byla úspěšně vytvořena.",
+			"delete": "Schůzka byla úspěšně odstraněna.",
+			"edit": "Schůzka byla úspěšně upravena.",
+			"status": "Stav se úspěšně změnil."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Rezervováno"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Potvrzeno"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "Dokončeno"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "Zrušeno"
+			}
+		],
+		"title": "Schůzky"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "Akce",
+			"attachment": "Příloha",
+			"file_title": "Název souboru"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný název souboru.",
+				"message2": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+				"message3": "Vyberte platný soubor.",
+				"message4": "Zadejte platný komentář.",
+				"message5": "Název souboru může mít maximálně 255 znaků."
+			},
+			"fields": {
+				"attachment": "Příloha",
+				"description": "Popis",
+				"file_title": "Název souboru"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název souboru"
+			}
+		},
+		"messages": {
+			"create": "Příloha byla úspěšně vytvořena.",
+			"delete": "Příloha byla úspěšně smazána."
+		},
+		"title": "Přílohy"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "Oznámení",
+			"title": "Oznámení"
+		},
+		"appointments": {
+			"text": "Schůzky",
+			"title": "Schůzky"
+		},
+		"article": {
+			"text": "Článek",
+			"title": "Článek"
+		},
+		"calendar": {
+			"text": "Kalendář",
+			"title": "Kalendář"
+		},
+		"category": {
+			"text": "Kategorie",
+			"title": "Kategorie"
+		},
+		"clients": {
+			"text": "Klienti",
+			"title": "Klienti"
+		},
+		"dashboard": {
+			"title": "Přístrojová deska"
+		},
+		"defects": {
+			"text": "Vady",
+			"title": "Vady"
+		},
+		"departments": {
+			"text": "oddělení",
+			"title": "oddělení"
+		},
+		"email_templates": {
+			"text": "E-mailové šablony",
+			"title": "E-mailové šablony"
+		},
+		"estimates": {
+			"text": "Odhady",
+			"title": "Odhady"
+		},
+		"file_browser": {
+			"text": "Správce souborů",
+			"title": "Správce souborů"
+		},
+		"holidays": {
+			"text": "Prázdniny",
+			"title": "Prázdniny"
+		},
+		"incidents": {
+			"text": "Incidenty",
+			"title": "Incidenty"
+		},
+		"invoices": {
+			"text": "Faktury",
+			"title": "Faktury"
+		},
+		"items": {
+			"text": "Položky",
+			"title": "Položky"
+		},
+		"knowledgebase": {
+			"text": "Znalostní základna",
+			"title": "Znalostní základna"
+		},
+		"leave_types": {
+			"text": "Opustit typy",
+			"title": "Opustit typy"
+		},
+		"leaves": {
+			"text": "Listy",
+			"title": "Listy"
+		},
+		"mailbox": {
+			"text": "Poštovní schránka",
+			"title": "Poštovní schránka"
+		},
+		"meetings": {
+			"text": "Setkání",
+			"title": "Setkání"
+		},
+		"payments": {
+			"text": "Platby",
+			"title": "Platby"
+		},
+		"projects": {
+			"text": "Projekty",
+			"title": "Projekty"
+		},
+		"projects_planner": {
+			"text": "Plánovač projektu",
+			"title": "Plánovač projektu"
+		},
+		"providers": {
+			"text": "Poskytovatelé",
+			"title": "Poskytovatelé"
+		},
+		"reports": {
+			"text": "ZPRÁVY",
+			"title": "ZPRÁVY"
+		},
+		"roles": {
+			"text": "Role",
+			"title": "Role"
+		},
+		"settings": {
+			"text": "NASTAVENÍ",
+			"title": "NASTAVENÍ"
+		},
+		"taskboard": {
+			"text": "Pracovní deska",
+			"title": "Pracovní deska"
+		},
+		"tasks": {
+			"text": "Úkoly",
+			"title": "Úkoly"
+		},
+		"taxes": {
+			"text": "Daně",
+			"title": "Daně"
+		},
+		"teamboard": {
+			"text": "Týmová rada",
+			"title": "Týmová rada"
+		},
+		"teams": {
+			"text": "Týmy",
+			"title": "Týmy"
+		},
+		"timesheet": {
+			"text": "Rozvrh hodin",
+			"title": "Rozvrh hodin"
+		},
+		"todos": {
+			"text": "Todos",
+			"title": "Todos"
+		},
+		"users": {
+			"text": "Uživatele",
+			"title": "Uživatele"
+		}
+	},
+	"calendar": {
+		"day": "den",
+		"month": "Měsíc",
+		"title": "Kalendář",
+		"today": "Dnes",
+		"week": "Týden"
+	},
+	"clients": {
+		"columns": {
+			"actions": "Akce",
+			"company_email": "Firemní e-mail",
+			"company_name": "Jméno společnosti",
+			"departments_roles": "Oddělení / role",
+			"first_name": "Jméno",
+			"last_name": "Příjmení",
+			"photo": "Fotografie",
+			"status": "Postavení",
+			"username": "Uživatelské jméno"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platné křestní jméno.",
+				"message10": "Heslo a potvrzovací heslo se neshodují.",
+				"message12": "Telefonní číslo musí být platné číslo.",
+				"message14": "Mobilní číslo musí být platné číslo.",
+				"message15": "Zadejte platný web společnosti.",
+				"message17": "Zadejte platné ID vygenerované klientem.",
+				"message18": "Zadejte platné ID zaměstnání.",
+				"message19": "Prosím zadejte platné uživatelské jméno.",
+				"message2": "Jméno může mít maximálně 20 znaků.",
+				"message20": "Uživatelské jméno může být dlouhé nejméně 3 až 30 znaků bez mezer.",
+				"message21": "Zadejte platné mobilní číslo.",
+				"message22": "Vložte prosím platné telefonní číslo.",
+				"message23": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+				"message24": "Vyberte platné oddělení s rolemi.",
+				"message3": "Zadejte platné příjmení.",
+				"message4": "Příjmení může mít maximálně 20 znaků.",
+				"message5": "Prosím zadejte platný email.",
+				"message6": "E-mail může být platná e-mailová adresa.",
+				"message7": "Prosím vložte platné heslo.",
+				"message8": "Heslo může být dlouhé od 3 do 30 znaků.",
+				"message9": "Zadejte platné potvrzovací heslo."
+			},
+			"fields": {
+				"address": "adresa",
+				"client_ID": "ID klienta",
+				"company_address": "adresa společnosti",
+				"company_city": "Společnost City",
+				"company_country": "Země společnosti",
+				"company_email": "Firemní e-mail",
+				"company_fax": "Firemní fax",
+				"company_mobile": "Společnost Mobile",
+				"company_name": "Jméno společnosti",
+				"company_phone": "Firemní telefon",
+				"company_website": "firemní web",
+				"confirm_password": "Potvrďte heslo",
+				"country": "Země",
+				"departments_roles": "Oddělení / Role",
+				"email": "E-mailem",
+				"facebook_URL": "Facebook URL",
+				"first_name": "Jméno",
+				"hosting_company": "Hostingová společnost",
+				"language": "jazyk",
+				"last_name": "Příjmení",
+				"linkedIn_URL": "Adresa URL LinkedIn",
+				"mobile": "mobilní, pohybliví",
+				"password": "Heslo",
+				"phone": "Telefon",
+				"port": "Přístav",
+				"profile_photo": "Profilová fotka",
+				"skype": "Skype",
+				"twitter_URL": "Twitter URL",
+				"username": "Uživatelské jméno",
+				"zip_code": "PSČ"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte křestní jméno",
+				"placeholder10": "Zadejte firemní PSČ",
+				"placeholder11": "Zadejte firemní fax",
+				"placeholder12": "Vstupte na web společnosti",
+				"placeholder13": "Zadejte společnost Skype",
+				"placeholder14": "Zadejte adresu společnosti",
+				"placeholder15": "Vstupte do hostingové společnosti",
+				"placeholder16": "Zadejte uživatelské jméno hostitele",
+				"placeholder17": "Zadejte heslo hostitele",
+				"placeholder18": "Zadejte hostitelský port",
+				"placeholder19": "Zadejte uživatelské jméno",
+				"placeholder2": "Zadejte příjmení",
+				"placeholder20": "Zadejte Skype",
+				"placeholder21": "-- Vyberte zemi --",
+				"placeholder22": "-- Zvolte jazyk --",
+				"placeholder23": "- Vyberte oddělení / role -",
+				"placeholder24": "Zadejte URL na Facebooku",
+				"placeholder25": "Zadejte adresu URL Twitteru",
+				"placeholder26": "Zadejte adresu URL LinkedIn",
+				"placeholder27": "Zadejte adresu",
+				"placeholder3": "Zadejte email",
+				"placeholder4": "Zadejte heslo",
+				"placeholder5": "Zadejte Potvrdit heslo",
+				"placeholder6": "Zadejte název společnosti",
+				"placeholder7": "Zadejte firemní e-mail",
+				"placeholder8": "- Vyberte zemi společnosti -",
+				"placeholder9": "Zadejte společnost"
+			}
+		},
+		"headings": {
+			"head1": "Osobní informace",
+			"head2": "firemní informace",
+			"head3": "Informace o hostování",
+			"head4": "O klientovi",
+			"head5": "Kontaktní informace & Bio",
+			"head6": "požadavky",
+			"head7": "Sociální informace"
+		},
+		"inline_edit": {
+			"first_name": "Jméno",
+			"last_name": "Příjmení"
+		},
+		"messages": {
+			"create": "Klient byl úspěšně vytvořen.",
+			"delete": "Klient byl úspěšně smazán.",
+			"invite": "Pozvánka byla úspěšně odeslána.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Klient byl úspěšně aktualizován."
+		},
+		"title": "Klienti",
+		"title1": "Vytvořit klienta",
+		"title2": "Upravit klienta"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "Přidat komentář",
+			"button2": "odpověď"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný komentář.",
+				"message2": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte komentář",
+				"placeholder2": "Odpovědět Komentář"
+			}
+		},
+		"messages": {
+			"create": "Komentář byl úspěšně vytvořen.",
+			"delete": "Komentář byl úspěšně smazán.",
+			"update": "Komentář byl úspěšně aktualizován."
+		},
+		"title": "Poznámky"
+	},
+	"common": {
+		"12_hours": "12 hodin",
+		"24_hours": "24 hodin",
+		"action": "Akce",
+		"actions": "Akce",
+		"add": "Přidat",
+		"add_to_timesheet": "Přidat do časového rozvrhu",
+		"apply": "Aplikovat",
+		"assign": "Přiřadit",
+		"back": "Zadní",
+		"calendar": "Kalendář",
+		"calendar_view": "Zobrazení kalendáře",
+		"cancel": "zrušení",
+		"change": "Změna",
+		"close": "Zavřít",
+		"comment": "Komentář",
+		"copy": "kopírovat",
+		"create": "Vytvořit",
+		"create_comment": "Vytvořit komentář",
+		"created": "Vytvořeno",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": ": aktivujte pro seřazení sloupce vzestupně",
+				"sSortDescending": ": aktivovat pro seřazení sestupného sloupce"
+			},
+			"oPaginate": {
+				"sFirst": "za prvé",
+				"sLast": "Poslední",
+				"sNext": "další",
+				"sPrevious": "Předchozí"
+			},
+			"sEmptyTable": "V tabulce nejsou k dispozici žádná data",
+			"sInfo": "Zobrazují se _START_ až _END_ z _TOTAL_ záznamů",
+			"sInfoEmpty": "Zobrazeno 0 až 0 z 0 záznamů",
+			"sInfoFiltered": "(filtrováno z celkem _MAX_ záznamů)",
+			"sInfoPostFix": "",
+			"sInfoThousands": ",",
+			"sLengthMenu": "Zobrazit _MENU_",
+			"sLoadingRecords": "Načítání...",
+			"sProcessing": "Zpracovává se...",
+			"sSearchPlaceholder": "Vyhledávání ...",
+			"sZeroRecords": "Nebyly nalezeny žádné odpovídající záznamy"
+		},
+		"days": "Dny",
+		"delete": "Odstranit",
+		"detail": "Detail",
+		"details": "Podrobnosti",
+		"download": "Stažení",
+		"drag_file": "Přetáhněte soubor nebo Procházet",
+		"edit": "Upravit",
+		"empty_message": {
+			"activities": "Nejsou žádné aktivity",
+			"announcements": "Neexistují žádná oznámení.",
+			"articles": "Nejsou žádné články.",
+			"attachments": "Nejsou žádné přílohy.",
+			"categories": "Nejsou žádné kategorie.",
+			"clients": "Nejsou žádní klienti.",
+			"custom_fields": "Nejsou žádná vlastní pole.",
+			"database_backups": "Neexistují žádné zálohy databáze.",
+			"defects": "Nejsou žádné vady.",
+			"departments": "Nejsou žádná oddělení.",
+			"estimates": "Neexistují žádné odhady.",
+			"file_browser": "Nejsou žádné složky / soubory.",
+			"histories": "Nejsou žádné historie.",
+			"holidays": "Nejsou žádné svátky.",
+			"incidents": "Nejsou žádné incidenty.",
+			"invoices": "Neexistují žádné faktury.",
+			"leaves": "Nejsou žádné listy.",
+			"mails": "Nejsou žádné e-maily.",
+			"meetings": "Nejsou žádné schůzky.",
+			"notifications": "Nejsou žádná oznámení.",
+			"projects": "Nejsou žádné projekty.",
+			"providers": "Nejsou žádní poskytovatelé.",
+			"roles": "Nejsou žádné role.",
+			"sprints": "Neexistují žádné sprinty.",
+			"tasks": "Nejsou žádné úkoly.",
+			"teams": "Nejsou žádné týmy.",
+			"timesheet": "Nejsou žádné časové rozvrhy.",
+			"todos": "Nejsou žádná todos.",
+			"translations": "Nejsou žádné překlady.",
+			"users": "Nejsou žádní uživatelé."
+		},
+		"error_messages": {
+			"message1": "Pravděpodobně nemáte příslušná oprávnění pro přístup k souboru nebo prostředkům.",
+			"message2": "Neautorizovaný uživatel - v případě vypršení platnosti autentizačního tokenu.",
+			"message3": "V případě vypršení platnosti Auth Token.",
+			"message4": "Litujeme, ale hledaná stránka nebyla nalezena.",
+			"message5": "Něco se pokazilo!",
+			"message6": "Úspěšně jste se odhlásili."
+		},
+		"errors_keys": {
+			"key1": "Přístup odepřen",
+			"key2": "Špatný požadavek",
+			"key3": "Neoprávněný",
+			"key4": "Přístup odepřen",
+			"key5": "Nenalezeno",
+			"key6": "Unprocessable Entity"
+		},
+		"false": "Nepravdivé",
+		"fullscreen": "Celá obrazovka",
+		"hours": "Hodiny",
+		"import": "Import",
+		"invite": "Pozvat",
+		"issues": "Problémy",
+		"kanban": "Kanban",
+		"last_updated": "Naposledy aktualizováno",
+		"list": "Seznam",
+		"lists": "Zobrazení seznamu",
+		"methods": "Metody",
+		"move": "Přestěhovat se",
+		"new": "Nový",
+		"not_allowed": "Demo není povoleno.",
+		"offline": "Offline",
+		"online": "Online",
+		"options": "Možnosti",
+		"overdue": "Zpožděný",
+		"pending": "čekající",
+		"placeholders": {
+			"placeholder1": "- Vyberte projekt -"
+		},
+		"priorities": {
+			"high": "Vysoký",
+			"low": "Nízký",
+			"medium": "Střední",
+			"urgent": "Naléhavé",
+			"very_high": "Velmi vysoko"
+		},
+		"profile": "Profil",
+		"remove": "Odstranit",
+		"remove_file": "Odebrat soubor",
+		"report": "Zpráva",
+		"request": "žádost",
+		"reset": "Reset",
+		"restore": "Obnovit",
+		"save": "Uložit",
+		"search": "Vyhledávání ...",
+		"show": "Show",
+		"status": {
+			"In Progress": "Probíhá",
+			"Not Started": "Nezačal",
+			"On Hold": "Pozastaveno",
+			"accepted": "Přijato",
+			"active": "Aktivní",
+			"all": "Všechno",
+			"approved": "Schválený",
+			"assigned": "Přiřazeno",
+			"cancel": "zrušení",
+			"canceled": "Zrušeno",
+			"closed": "Zavřeno",
+			"completed": "Dokončeno",
+			"confirmed": "Potvrzeno",
+			"deactive": "Deaktivní",
+			"declined": "Odmítnuto",
+			"deferred": "Odložený",
+			"draft": "Návrh",
+			"error": "Chyba",
+			"expired": "Vypršela platnost",
+			"finished": "Dokončeno",
+			"in_progress": "Probíhá",
+			"inactive": "Neaktivní",
+			"my": "Můj",
+			"on_hold": "Pozastaveno",
+			"open": "otevřeno",
+			"overdue": "Zpožděný",
+			"paid": "Placené",
+			"partially_paid": "Částečně zaplaceno",
+			"pending": "čekající",
+			"published": "Publikováno",
+			"rejected": "Odmítnuto",
+			"released": "Vydáno",
+			"reopen": "Znovu otevřít",
+			"reserved": "Rezervováno",
+			"sent": "Odesláno",
+			"solved": "Vyřešeno",
+			"success": "Úspěch",
+			"taken": "Přijato",
+			"total": "Celkový",
+			"unpaid": "Neplaceno",
+			"unpublished": "Nepublikovaný",
+			"waiting": "Čekání"
+		},
+		"submit": "Předložit",
+		"swal": {
+			"cancelButtonText": "Ne, nech to !",
+			"confirmButtonText": "Ano, smažte ji !",
+			"text": "Nebudete schopni to obnovit",
+			"text1": "Nebudete moci obnovit toto oddělení !. Před odstraněním se ujistěte, že jste smazali všechny uživatele související s tímto oddělením.",
+			"text2": "Nebudete moci obnovit tohoto uživatele !. Před smazáním se ujistěte, že jste odebrali uživatele z týmů, projektů, úkolů, závad a incidentů atd.",
+			"text3": "Nebudete moci obnovit tohoto klienta !. Před smazáním se ujistěte, že jste odstranili klienta z týmů, projektů, úkolů, závad a incidentů atd.",
+			"text4": "Tento projekt nebudete moci obnovit !. Před odstraněním se ujistěte, že jste odstranili všechny úkoly, závady a incidenty související s tímto projektem.",
+			"title": "Jsi si jistá?"
+		},
+		"switch_to_calendar": "Přepněte do kalendáře",
+		"switch_to_kanban": "Přepněte na Kanban",
+		"switch_to_list": "Přepněte do seznamu",
+		"test": "Test",
+		"toggle_dropdown": "Přepnout rozevírací seznam",
+		"tooltip": {
+			"project_csv_sample": "Ukázkový projekt CSV",
+			"task_csv_sample": "Ukázka úlohy CSV",
+			"team_csv_sample": "Ukázkový tým CSV",
+			"user_csv_sample": "Ukázkový uživatel CSV"
+		},
+		"total": "Celkový",
+		"true": "Skutečný",
+		"unassign": "Nepřiřadit",
+		"unassigned": "Nepřiřazeno",
+		"update": "Aktualizace",
+		"updated": "Aktualizováno",
+		"upload": "Nahrát soubor",
+		"view": "Pohled",
+		"view_comments": "Zobrazit komentáře",
+		"view_more": "Zobrazit více"
+	},
+	"customFieldsType": [
+		{
+			"label": "Text",
+			"value": "text"
+		},
+		{
+			"label": "Oblast textu",
+			"value": "textarea"
+		},
+		{
+			"label": "Rozevírací seznam",
+			"value": "dropdown"
+		},
+		{
+			"label": "datum",
+			"value": "date"
+		},
+		{
+			"label": "Zaškrtávací políčko",
+			"value": "checkbox"
+		},
+		{
+			"label": "Numerické",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "Stav úkolů",
+		"chart2": "Stav projektu",
+		"chart3": "Měsíční zpráva",
+		"estimate": "Odhady",
+		"invoices": "Nejaktuálnější faktury",
+		"widgets": {
+			"approved_request": "Schválený",
+			"due_payment": "Z důvodu",
+			"received_request": "přijata",
+			"recieved_payment": "Obdržel"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "Akce",
+			"actual_hours": "Hodiny",
+			"assigned": "Přiřazeno",
+			"assigned_group": "Přiřazená skupina",
+			"creator": "Tvůrce",
+			"defect_name": "Název vady",
+			"end_date": "Datum ukončení",
+			"id": "ID",
+			"project": "Projekt",
+			"project_version": "Verze projektu",
+			"severity": "Vážnost",
+			"start_date": "Datum začátku",
+			"status": "Postavení",
+			"type": "Typ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečné a platné jméno vady.",
+				"message10": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+				"message11": "Vyberte platné datum zahájení.",
+				"message12": "Vyberte platné datum ukončení.",
+				"message13": "Odhadované hodiny umožňují pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků.",
+				"message2": "Název vady může být dlouhý maximálně 255 znaků.",
+				"message3": "Zadejte jedinečné a platné ID generované vadou.",
+				"message4": "Vyberte platný typ vady.",
+				"message5": "Vyberte platný stav vady.",
+				"message6": "Vyberte platnou závažnost závady.",
+				"message8": "Vyberte platný projekt."
+			},
+			"fields": {
+				"actual_hours": "Skutečné hodiny",
+				"assigned_To": "Přiřazen",
+				"assigned_group": "Přiřazená skupina",
+				"choose_file": "Zvolte soubor",
+				"completed": "Dokončeno",
+				"created_by": "Vytvořil",
+				"defect_ID": "ID vady",
+				"defect_name": "Název vady",
+				"defect_type": "Typ vady",
+				"description": "Popis",
+				"end_date": "Datum ukončení",
+				"estimate_hours": "Odhad hodin",
+				"project_name": "název projektu",
+				"project_version": "Verze projektu",
+				"severity": "Vážnost",
+				"start_date": "Počáteční datum",
+				"status": "Postavení"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název vady",
+				"placeholder2": "- Vyberte typ vady -",
+				"placeholder3": "- Vyberte stav vady -",
+				"placeholder4": "- Vyberte závažnost vad -",
+				"placeholder5": "- Vyberte přiřazenou skupinu -",
+				"placeholder6": "- Vyberte projekt -",
+				"placeholder7": "- Vyberte verzi projektu -",
+				"placeholder8": "Vyberte počáteční datum",
+				"placeholder9": "Vyberte datum ukončení"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "Vady",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Zvýšení",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "Vlastní pole",
+			"title2": "Popis"
+		},
+		"headings": {
+			"head1": "Informace o vadě",
+			"head2": "Informace o projektu",
+			"head3": "Nahrát soubory",
+			"head4": "Vlastní pole",
+			"head5": "Popis"
+		},
+		"inline_edit": {
+			"defect_name": "Název vady",
+			"defect_type": "Typ vady",
+			"description": "Popis",
+			"estimate_hours": "Odhad hodin",
+			"notes": "Poznámky"
+		},
+		"messages": {
+			"create": "Vada byla úspěšně vytvořena.",
+			"delete": "Vada byla úspěšně odstraněna.",
+			"severity": "Závažnost byla úspěšně aktualizována.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Vada byla úspěšně aktualizována."
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Nízký"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Střední"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Vysoký"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Velmi vysoko"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Naléhavé"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "Přiřazeno"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "Zavřeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Probíhá"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "otevřeno"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "Vyřešeno"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Znovu otevřít"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "Odložený"
+			}
+		],
+		"title": "Vady",
+		"title1": "Vytvořit vadu",
+		"title2": "Upravit vadu",
+		"tooltips": {
+			"attachment": "Příloha"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "Akce",
+			"designation": "Označení"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný název oddělení.",
+				"message2": "Název oddělení může mít maximálně 20 znaků.",
+				"message3": "Vyberte platné role oddělení."
+			},
+			"fields": {
+				"department": "Oddělení",
+				"department_name": "Název oddělení",
+				"department_roles": "Role oddělení",
+				"designation": "Označení",
+				"permission": "Povolení"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název oddělení"
+			}
+		},
+		"messages": {
+			"create": "Oddělení bylo úspěšně vytvořeno.",
+			"delete": "Oddělení bylo úspěšně smazáno.",
+			"update": "Oddělení bylo úspěšně aktualizováno."
+		},
+		"title": "Oddělení",
+		"title1": "Detail oddělení",
+		"title2": "Role oddělení",
+		"tooltip": {
+			"tooltip1": "Vyberte všechna oprávnění",
+			"tooltip10": "Vybrat vše",
+			"tooltip11": "Povolení",
+			"tooltip2": "Pokud vyberete vytvořit / upravit / smazat, není nutné pohled vybírat",
+			"tooltip3": "Vyberte Vše Vytvořit",
+			"tooltip4": "Vyberte Všechny úpravy",
+			"tooltip5": "Vyberte Vše odstranit",
+			"tooltip6": "vybrat",
+			"tooltip7": "Může vytvořit",
+			"tooltip8": "Může upravit",
+			"tooltip9": "Může odstranit"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "Zákazník",
+			"estimate_date": "datum",
+			"estimate_number": "Odhad",
+			"status": "Postavení",
+			"total_amount": "Množství",
+			"valid_till": "Platný do"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vyberte platného zákazníka.",
+				"message2": "Vyberte prosím platné datum odhadu.",
+				"message3": "Vyberte prosím platné datum vypršení platnosti.",
+				"message4": "Vyberte platný stav.",
+				"message5": "Přidejte alespoň jednu položku.",
+				"message6": "Zadejte položku, množství a jednotkovou cenu.",
+				"message7": "Vyberte prosím platný typ slevy."
+			},
+			"fields": {
+				"adjustment": "NASTAVENÍ",
+				"customer": "Zákazník",
+				"discount": "Sleva",
+				"discount_type": "Typ slevy",
+				"estimate_date": "Odhadované datum",
+				"estimate_number": "Odhadované číslo",
+				"item_description": "Popis",
+				"item_name": "Položka",
+				"item_tax": "Daň",
+				"quantity": "Množství",
+				"reference": "Odkaz",
+				"status": "Postavení",
+				"sub_total": "Dílčí součet",
+				"total_amount": "Celkový",
+				"total_item_amount": "Množství",
+				"unit": "Jednotka",
+				"unit_price": "Jednotková cena",
+				"valid_till": "Datum ukončení platnosti"
+			},
+			"placeholders": {
+				"placeholder1": "- Vyberte zákazníka -",
+				"placeholder10": "Množství",
+				"placeholder11": "Jednotková cena",
+				"placeholder12": "- Vyberte daň -",
+				"placeholder2": "Vyberte datum odhadu",
+				"placeholder3": "Vyberte Datum vypršení platnosti",
+				"placeholder4": "Zadejte odkaz",
+				"placeholder5": "- Vyberte typ slevy -",
+				"placeholder6": "- Vyberte stav -",
+				"placeholder7": "-- Vybrat předmět --",
+				"placeholder8": "Položka",
+				"placeholder9": "Popis"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Procent"
+			},
+			{
+				"id": "fixed",
+				"label": "Pevný"
+			}
+		],
+		"headings": {
+			"head1": "Informace o zákazníkovi",
+			"head2": "terminy",
+			"head3": "Další informace",
+			"head4": "Informace o položkách"
+		},
+		"inline_edit": {
+			"item_description": "Popis",
+			"item_name": "Položka",
+			"item_tax": "Daň",
+			"quantity": "Množství",
+			"unit_price": "Jednotková cena"
+		},
+		"messages": {
+			"create": "Odhad byl úspěšně vytvořen.",
+			"delete": "Odhad byl úspěšně smazán.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Odhad byl úspěšně aktualizován."
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "Návrh"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "odesláno"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "Platnost vypršela"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "Odmítnuto"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "přijato"
+			}
+		],
+		"title": "Odhady",
+		"title1": "Odhad!",
+		"title2": "Vytvořit odhad",
+		"title3": "Aktualizovat odhad",
+		"title4": "Odhad",
+		"view": {
+			"accept": "Akceptovat",
+			"accepted": "přijato",
+			"balance_due": "Nedoplatek",
+			"bill_to": "Bill To",
+			"decline": "pokles",
+			"declined": "Odmítnuto",
+			"download": "Stažení",
+			"draft": "Návrh",
+			"due_date": "Datum splatnosti",
+			"due_on_receipt": "Splatná po obdržení",
+			"estimate_date": "Odhadované datum",
+			"expired": "Platnost vypršela",
+			"sent": "odesláno",
+			"terms": "Podmínky a podmínky",
+			"total_due": "Konečná cena"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "Akce",
+			"name": "název",
+			"progress": "Pokrok",
+			"size": "Velikost",
+			"status": "Postavení"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný název složky.",
+				"message2": "Přetažením sem nahrajte ...",
+				"message3": "Zadejte platný název souboru."
+			},
+			"fields": {
+				"description": "Popis",
+				"file_name": "Název souboru",
+				"folder_name": "Název složky"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název složky",
+				"placeholder2": "Zadejte popis",
+				"placeholder3": "Zadejte název souboru"
+			}
+		},
+		"messages": {
+			"create_folder": "Složka byla úspěšně vytvořena.",
+			"delete_file": "Soubor byl úspěšně smazán.",
+			"delete_folder": "Složka byla úspěšně odstraněna.",
+			"update_file": "Soubor byl úspěšně aktualizován.",
+			"update_folder": "Složka byla úspěšně aktualizována.",
+			"upload_file": "Soubor byl úspěšně nahrán."
+		},
+		"title": "Správce Souborů",
+		"title1": "Vytvořit složku",
+		"title2": "Upravit složku",
+		"title3": "Nahrát soubory",
+		"title4": "Upravit soubor",
+		"title5": "Soubor",
+		"title6": "Složka",
+		"title7": "Přidáno"
+	},
+	"footer": {
+		"copyright": "autorská práva",
+		"text1": "Všechna práva vyhrazena"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Prosím zadejte platný email.",
+				"message2": "E-mail musí být platnou e-mailovou adresou."
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte email"
+			}
+		},
+		"messages": {
+			"success": "Přečtěte si prosím v e-mailu pokyny, jak obnovit heslo."
+		},
+		"title": "Zapomenuté heslo",
+		"title1": "Zadejte prosím svou e-mailovou adresu a my vám zašleme informace o změně hesla."
+	},
+	"header": {
+		"heading": {
+			"head1": "Ty máš",
+			"head2": "nové maily",
+			"head3": "Zobrazit všechny e-maily",
+			"head4": "AKTUALIZACE AKTUALIZACE"
+		},
+		"inbox": "Moje doručená pošta",
+		"languages": "Jazyky",
+		"logout": "Odhlásit se",
+		"mails": "maily",
+		"notifications": "Oznámení",
+		"profile": "Profil",
+		"search": {
+			"text": "Hledej tady ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "Aktivita",
+			"closed_by": "Uzavřeno uživatelem",
+			"commentor": "Komentátor",
+			"creator": "Tvůrce",
+			"date": "datum",
+			"solved_by": "Řešeno",
+			"updated_by": "Aktualizoval"
+		},
+		"title": "Historie"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "Akce",
+			"color": "Barva",
+			"date": "datum",
+			"event_name": "Název události",
+			"location": "Umístění"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný název události.",
+				"message2": "Název události může mít délku maximálně 50 znaků.",
+				"message3": "Vyberte platné datum."
+			},
+			"fields": {
+				"color": "Barva",
+				"date": "datum",
+				"description": "Popis",
+				"event_name": "Název události",
+				"location": "Umístění"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název události",
+				"placeholder2": "Vyberte datum",
+				"placeholder3": "Zadejte umístění"
+			}
+		},
+		"inline_edit": {
+			"event_name": "Název události",
+			"holiday_date": "Datum svátku",
+			"location": "Umístění"
+		},
+		"messages": {
+			"create": "Svátek byl úspěšně vytvořen.",
+			"delete": "Dovolená byla úspěšně smazána.",
+			"update": "Dovolená byla úspěšně aktualizována."
+		},
+		"title": "Prázdniny"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "Akce",
+			"actual_hours": "Hodiny",
+			"assigned": "Přiřazeno",
+			"assigned_group": "Přiřazená skupina",
+			"client": "Klient",
+			"client_company": "Klientská společnost",
+			"creator": "Tvůrce",
+			"end_date": "Datum ukončení",
+			"id": "ID",
+			"incident_name": "Jméno incidentu",
+			"priority": "Přednost",
+			"project": "Projekt",
+			"project_version": "Verze projektu",
+			"start_date": "Datum začátku",
+			"status": "Postavení",
+			"type": "Typ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečné a platné jméno incidentu.",
+				"message2": "Název události může mít maximálně 255 znaků.",
+				"message3": "Zadejte jedinečné a platné ID generované incidentem.",
+				"message4": "Vyberte prosím platný stav incidentu.",
+				"message5": "Vyberte platnou prioritu incidentu.",
+				"message6": "Vyberte platný typ události.",
+				"message7": "Vyberte platné datum zahájení.",
+				"message8": "Vyberte platné datum ukončení.",
+				"message9": "Odhadované hodiny umožňují pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků."
+			},
+			"fields": {
+				"actual_hours": "Skutečné hodiny",
+				"assigned_To": "Přiřazen",
+				"assigned_group": "Přiřazená skupina",
+				"created_by": "Vytvořil",
+				"description": "Popis",
+				"end_date": "Datum ukončení",
+				"estimate_hours": "Odhad hodin",
+				"incident_ID": "ID incidentu",
+				"incident_name": "Jméno incidentu",
+				"incident_type": "Typ události",
+				"priority": "Přednost",
+				"project": "Projekt",
+				"project_name": "název projektu",
+				"project_version": "Verze projektu",
+				"start_date": "Počáteční datum",
+				"status": "Postavení"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název incidentu",
+				"placeholder2": "- Vyberte stav incidentu -",
+				"placeholder3": "- Vyberte prioritu incidentu -",
+				"placeholder4": "- Vyberte typ události -",
+				"placeholder5": "- Vyberte přiřazenou skupinu -",
+				"placeholder6": "- Vyberte projekt -",
+				"placeholder7": "- Vyberte verzi projektu -",
+				"placeholder8": "Vyberte počáteční datum",
+				"placeholder9": "Vyberte datum ukončení"
+			}
+		},
+		"details": {
+			"title1": "Vlastní pole",
+			"title2": "Popis"
+		},
+		"headings": {
+			"head1": "Informace o incidentu",
+			"head2": "Informace o projektu",
+			"head3": "Vlastní pole",
+			"head4": "Popis",
+			"head5": "Další informace"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "Požadavek služby",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Žádost o informace",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "Popis",
+			"estimate_hours": "Odhad hodin",
+			"incident_name": "Jméno incidentu",
+			"incident_type": "Typ události",
+			"notes": "Poznámky"
+		},
+		"messages": {
+			"create": "Incident byl úspěšně vytvořen.",
+			"delete": "Incident byl úspěšně smazán.",
+			"import": "Incident byl úspěšně importován.",
+			"priority": "Priorita se úspěšně změnila.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Incident byl úspěšně aktualizován."
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Nízký"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Střední"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Vysoký"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Velmi vysoko"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Naléhavé"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Přiřazeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "Probíhá"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "Vyřešeno"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "Odložený"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "Znovu otevřít"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "Zavřeno"
+			}
+		],
+		"title": "Incidenty",
+		"title1": "Vytvořit incident",
+		"title2": "Upravit incident"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "Zákazník",
+			"due_date": "Datum splatnosti",
+			"invoice_date": "datum",
+			"invoice_number": "Faktura",
+			"status": "Postavení",
+			"total_amount": "Množství"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vyberte platného zákazníka.",
+				"message2": "Vyberte prosím platné datum faktury.",
+				"message3": "Vyberte platné datum splatnosti.",
+				"message4": "Vyberte platný stav.",
+				"message5": "Přidejte alespoň jednu položku.",
+				"message6": "Zadejte položku, množství a jednotkovou cenu.",
+				"message7": "Vyberte prosím platný typ slevy."
+			},
+			"fields": {
+				"adjustment": "NASTAVENÍ",
+				"customer": "Zákazník",
+				"discount": "Sleva",
+				"discount_type": "Typ slevy",
+				"due_date": "Datum splatnosti",
+				"invoice_date": "Datum fakturace",
+				"invoice_number": "Číslo faktury",
+				"item_description": "Popis",
+				"item_name": "Položka",
+				"item_tax": "Daň",
+				"project": "Projekt",
+				"quantity": "Množství",
+				"reference": "Odkaz",
+				"status": "Postavení",
+				"sub_total": "Dílčí součet",
+				"total_amount": "Celkový",
+				"total_amount_due": "Splatná částka",
+				"total_item_amount": "Množství",
+				"unit": "Jednotka",
+				"unit_price": "Jednotková cena"
+			},
+			"placeholders": {
+				"placeholder1": "- Vyberte zákazníka -",
+				"placeholder10": "Množství",
+				"placeholder11": "Jednotková cena",
+				"placeholder12": "- Vyberte daň -",
+				"placeholder13": "- Vyberte projekt -",
+				"placeholder2": "Vyberte Datum faktury",
+				"placeholder3": "Vyberte datum splatnosti",
+				"placeholder4": "Zadejte odkaz",
+				"placeholder5": "- Vyberte typ slevy -",
+				"placeholder6": "- Vyberte stav -",
+				"placeholder7": "-- Vybrat předmět --",
+				"placeholder8": "Položka",
+				"placeholder9": "Popis"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Procent"
+			},
+			{
+				"id": "fixed",
+				"label": "Pevný"
+			}
+		],
+		"headings": {
+			"head1": "Informace o zákazníkovi",
+			"head2": "terminy",
+			"head3": "Další informace",
+			"head4": "Informace o položkách"
+		},
+		"inline_edit": {
+			"item_description": "Popis",
+			"item_name": "Položka",
+			"item_tax": "Daň",
+			"quantity": "Množství",
+			"unit_price": "Jednotková cena"
+		},
+		"messages": {
+			"create": "Faktura byla úspěšně vytvořena.",
+			"delete": "Faktura byla úspěšně smazána.",
+			"payments": "U této faktury nebyly nalezeny žádné platby",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Faktura byla úspěšně aktualizována."
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "Placené"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "Částečně zaplaceno"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "Neplaceno"
+			}
+		],
+		"title": "Faktury",
+		"title1": "Faktura!",
+		"title2": "Vytvořit fakturu",
+		"title3": "Aktualizujte fakturu",
+		"title4": "Faktura",
+		"view": {
+			"add_payment": "Přidat platbu",
+			"amount": "Množství",
+			"balance_due": "Nedoplatek",
+			"bank": "banka",
+			"bill_to": "Bill To",
+			"date": "datum",
+			"download": "Stažení",
+			"due_amount": "Dlužná částka",
+			"due_date": "Datum splatnosti",
+			"due_on_receipt": "Splatná po obdržení",
+			"gst_number": "GST IN",
+			"invoice_date": "Datum fakturace",
+			"offline_payment": "Offline platby",
+			"online_payment": "Platba přes internet",
+			"paid": "Placené",
+			"partially_paid": "Částečně zaplaceno",
+			"payment": "Platba",
+			"payment_mode": "Platební režim",
+			"paypal": "Paypal",
+			"status": "Postavení",
+			"stripe": "proužek",
+			"terms": "Podmínky a podmínky",
+			"total_due": "Konečná cena",
+			"transactions": "Transakce",
+			"unpaid": "Neplaceno"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "Popis",
+			"name": "Název položky",
+			"price": "Cena",
+			"tax": "Daň",
+			"unit": "Jednotka"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný název položky.",
+				"message2": "Zadejte platnou cenu.",
+				"message3": "Cena musí být číslo."
+			},
+			"fields": {
+				"description": "Popis",
+				"name": "Název položky",
+				"price": "Cena",
+				"tax": "Daň",
+				"unit": "Jednotka"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název položky",
+				"placeholder2": "Zadejte cenu",
+				"placeholder3": "Zadejte jednotku",
+				"placeholder4": "- Vyberte daň -",
+				"placeholder5": "Zadejte popis"
+			}
+		},
+		"labels": {
+			"label1": "Změna informací o položce nebude mít vliv na vytvořené odhady a faktury."
+		},
+		"messages": {
+			"create": "Položka byla úspěšně vytvořena.",
+			"delete": "Položka byla úspěšně smazána.",
+			"update": "Položka byla úspěšně aktualizována."
+		},
+		"title": "Položky",
+		"title1": "Předmět!",
+		"title2": "Vytvořit položku",
+		"title3": "Aktualizovat položku"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "Přetáhněte úkol mezi seznamy"
+		},
+		"title1": "Vada Kanban",
+		"title2": "Incident Kanban"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "Akce",
+				"article_name": "Název článku"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platný název článku.",
+					"message2": "Název článku může být dlouhý maximálně 50 znaků.",
+					"message3": "Vyberte platnou kategorii.",
+					"message4": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+					"message5": "Zadejte platný popis."
+				},
+				"fields": {
+					"article_title": "Název článku",
+					"category": "Kategorie",
+					"description": "Popis",
+					"file": "Soubor"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte název článku",
+					"placeholder2": "-- Vybrat kategorii --",
+					"placeholder3": "Zadejte popis"
+				}
+			},
+			"messages": {
+				"create": "Článek byl úspěšně vytvořen.",
+				"delete": "Článek byl úspěšně smazán.",
+				"update": "Článek byl úspěšně aktualizován."
+			},
+			"title": "Článek",
+			"title1": "Články",
+			"title2": "Článek"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platný název kategorie.",
+					"message2": "Název kategorie může mít délku maximálně 50 znaků.",
+					"message3": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+					"message4": "Vyberte platný soubor."
+				},
+				"fields": {
+					"category_logo": "Logo kategorie",
+					"category_name": "Název Kategorie"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte název kategorie",
+					"placeholder2": "Vyhledávání .."
+				}
+			},
+			"messages": {
+				"create": "Kategorie byla úspěšně vytvořena.",
+				"delete": "Kategorie byla úspěšně smazána.",
+				"update": "Kategorie byla úspěšně aktualizována."
+			},
+			"title": "Kategorie",
+			"title1": "Kategorie",
+			"title2": "Kategorie"
+		},
+		"title": "Znalostní Báze"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "Schválené volno",
+			"pending_leave": "Čeká na odchod",
+			"user": "Uživatel"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "Časové období",
+				"employee_name": "jméno zaměstnance"
+			},
+			"placeholders": {
+				"placeholder1": "Vyberte časové období",
+				"placeholder2": "Všechno"
+			}
+		},
+		"title": "Zanechat hlášení",
+		"title1": "Opustit detail"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "Barva",
+			"leave_type": "Opustit typ",
+			"no_of_leaves": "Celková dovolená"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný typ dovolené.",
+				"message2": "Typ dovolené může mít maximálně 20 znaků.",
+				"message3": "Zadejte prosím platnou celkovou dovolenou.",
+				"message4": "Celková dovolená musí být číslo.",
+				"message5": "Vyberte prosím platnou barvu."
+			},
+			"fields": {
+				"color": "Barva",
+				"leave_type": "Opustit typ",
+				"no_of_leaves": "Celková dovolená"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte typ dovolené",
+				"placeholder2": "Zadejte celkovou dovolenou"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "Opustit typ",
+			"no_of_leaves": "Celková dovolená"
+		},
+		"messages": {
+			"create": "Nechte typ úspěšně vytvořen.",
+			"delete": "Typ nechat úspěšně smazán.",
+			"update": "Typ nechat úspěšně aktualizován."
+		},
+		"title": "Opustit typy",
+		"title1": "Opustit typ!",
+		"title2": "Vytvořte typ dovolené",
+		"title3": "Přidat typ dovolené"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "Akceptovat",
+			"reject": "Odmítnout"
+		},
+		"columns": {
+			"duration": "Doba trvání",
+			"leave_date": "datum",
+			"leave_type": "Opustit typ",
+			"reason": "Důvod",
+			"status": "Postavení",
+			"user": "Uživatel"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vyberte platného uživatele.",
+				"message2": "Vyberte prosím platný typ dovolené.",
+				"message3": "Vyberte prosím platné datum dovolené.",
+				"message4": "Vyberte platný stav.",
+				"message5": "Zadejte platný důvod.",
+				"message6": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+			},
+			"fields": {
+				"attachments": "Přílohy",
+				"duration": "Doba trvání",
+				"duration_type": "Opustit typ",
+				"leave_date": "datum",
+				"leave_type": "Zanechat, opustit",
+				"reason": "Důvod",
+				"reject_reason": "Odmítnout důvod? (Volitelný)",
+				"status": "Postavení",
+				"user": "Uživatel"
+			},
+			"placeholders": {
+				"placeholder1": "- Vyberte Uživatel -",
+				"placeholder2": "- Vyberte typ dovolené -",
+				"placeholder3": "Vyberte datum",
+				"placeholder4": "- Vyberte stav -",
+				"placeholder5": "Zadejte důvod"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "první polovina"
+			},
+			{
+				"id": "second_half",
+				"label": "druhá polovina"
+			}
+		],
+		"labels": {
+			"approved": "Schválený",
+			"first_half_day": "První půlden",
+			"full_day": "Celý den",
+			"half_day": "Půldenní",
+			"multiple": "Násobek",
+			"remaining": "zbývající",
+			"second_half_day": "Druhá půlden",
+			"single": "Singl",
+			"taken": "přijato",
+			"total_leaves": "Celkem listů"
+		},
+		"messages": {
+			"approve": "Opustit schválení úspěšně.",
+			"create": "Opustit vytvoření úspěšně.",
+			"delete": "Ponechat úspěšně smazáno.",
+			"reject": "Opustit odmítnutí úspěšně.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Ponechat úspěšně aktualizováno."
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "čekající"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "Schválený"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "Odmítnuto"
+			}
+		],
+		"title": "Listy",
+		"title1": "Odejít !",
+		"title2": "Zanech žádost",
+		"title3": "Všechny listy",
+		"title4": "Zanech žádost",
+		"title5": "Opouští kalendář",
+		"title6": "Vytvořit dovolenou",
+		"title7": "Aktualizovat dovolenou"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "Správce",
+			"client_login": "Klient",
+			"forgot_password": "Zapomenuté heslo?",
+			"hr_manager_login": "Manažer lidských zdrojů",
+			"manager_login": "Manažer",
+			"project_manager_login": "Projektový manažer",
+			"quick_login": "Rychlé přihlášení",
+			"register": {
+				"button": "Registrovat",
+				"text": "Nemáte účet?"
+			},
+			"sales_manager_login": "Manažer prodeje",
+			"user_login": "Uživatel"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "Zadejte platné uživatelské jméno nebo e-mailovou adresu."
+				},
+				"placeholder": "Uživatelské jméno / e-mail"
+			},
+			"password": {
+				"errors": {
+					"email": "Heslo může být dlouhé od 3 do 30 znaků.",
+					"required": "Prosím vložte platné heslo."
+				},
+				"placeholder": "Heslo"
+			}
+		},
+		"title": "Přihlásit se"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "Akce",
+				"name": "název",
+				"progress": "Pokrok",
+				"size": "Velikost",
+				"status": "Postavení"
+			},
+			"error_messages": {
+				"message1": "Vyberte platnou e-mailovou adresu.",
+				"message2": "Zadejte prosím platný předmět."
+			},
+			"fields": {
+				"from": "z",
+				"subject": "Předmět",
+				"to": "na"
+			},
+			"placeholders": {
+				"placeholder1": "- Vyberte uživatele -",
+				"placeholder2": "Zadejte předmět"
+			}
+		},
+		"messages": {
+			"message": "Soubor byl úspěšně nahrán.",
+			"message1": "Soubor byl úspěšně smazán.",
+			"message2": "Vyberte alespoň jeden e-mail.",
+			"message3": "Pošta byla úspěšně odeslána.",
+			"message4": "Pošta se přesunula do koše.",
+			"message5": " pošta se přesunula do koše.",
+			"message6": "Pošta úspěšně nepřijala.",
+			"message7": " e-maily označené jako oblíbené.",
+			"message8": "E-maily označené jako přečtené.",
+			"message9": "Pošta se přesunula do pracovní verze."
+		},
+		"title": "Poštovní schránka",
+		"title1": "Prohledat poštu ...",
+		"title10": "Poslat",
+		"title11": "Přílohy",
+		"title12": "Obnovit",
+		"title13": "Označit jako přečtené",
+		"title14": "Označit jako oblíbené",
+		"title15": "Přesunout do koše",
+		"title16": "Přejděte na Koncept",
+		"title17": "Zahodit poštu",
+		"title18": "Zobrazení pošty",
+		"title19": "Složky",
+		"title2": "Komponovat",
+		"title20": "Pošta",
+		"title3": "Napište zprávu",
+		"title4": "Doručená pošta",
+		"title5": "odesláno",
+		"title6": "Návrh",
+		"title7": "Oblíbený",
+		"title8": "Odpadky",
+		"title9": "Zahodit"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "Akce",
+			"end": "Konec",
+			"hours": "Hodiny",
+			"id": "ID",
+			"organizer": "Organizátor",
+			"peoples": "Pozvěte národy",
+			"start": "START",
+			"status": "Postavení",
+			"title": "Titul"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný název schůzky.",
+				"message2": "Název schůzky může mít maximálně 255 znaků.",
+				"message3": "Vyberte platné datum zahájení.",
+				"message4": "Vyberte platné datum ukončení.",
+				"message5": "Vyberte prosím platné členy schůzky.",
+				"message6": "Vyberte prosím správné datum a čas schůzky.",
+				"message7": "Vyberte platný stav."
+			},
+			"fields": {
+				"client_name": "jméno klienta",
+				"description": "Popis",
+				"end_date": "Datum ukončení",
+				"location": "Umístění",
+				"peoples": "Pozvěte národy",
+				"start_date": "Počáteční datum",
+				"status": "Postavení",
+				"title": "Titul"
+			},
+			"placeholders": {
+				"placeholder1": "Název události",
+				"placeholder2": "Vyberte počáteční datum",
+				"placeholder3": "Vyberte datum ukončení",
+				"placeholder4": "- Vyberte členy -",
+				"placeholder5": "Umístění",
+				"placeholder6": "- Vyberte klienta -",
+				"placeholder7": "- Vyberte stav -"
+			}
+		},
+		"details": {
+			"title1": "Popis"
+		},
+		"inline_edit": {
+			"title": "Titul"
+		},
+		"messages": {
+			"create": "Schůzka byla úspěšně vytvořena.",
+			"delete": "Schůzka byla úspěšně smazána.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Schůzka byla úspěšně aktualizována."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "zrušení"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "Dokončeno"
+			}
+		],
+		"title": "Setkání"
+	},
+	"months": [
+		"Jan",
+		"Únor",
+		"Mar",
+		"duben",
+		"Smět",
+		"červen",
+		"Jul",
+		"Aug",
+		"září",
+		"říjen",
+		"listopad",
+		"prosinec"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "Poznámky"
+			}
+		},
+		"messages": {
+			"update": "Poznámky byly úspěšně aktualizovány."
+		},
+		"title": "Poznámky"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "Popis",
+			"method_name": "Název metody",
+			"status": "Postavení"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný název metody."
+			},
+			"fields": {
+				"description": "Popis",
+				"method_name": "Název metody",
+				"show_on_pdf": "Zobrazit popis na PDF faktury"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název metody",
+				"placeholder2": "Zadejte popis"
+			}
+		},
+		"messages": {
+			"create": "Platební metoda byla úspěšně vytvořena.",
+			"delete": "Platební metoda byla úspěšně smazána.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Platební metoda byla úspěšně aktualizována."
+		},
+		"title": "Platební metody",
+		"title1": "Způsob platby !",
+		"title2": "Vytvořit způsob platby",
+		"title3": "Aktualizujte způsob platby"
+	},
+	"payments": {
+		"columns": {
+			"amount": "Množství",
+			"client": "Klient",
+			"date": "datum",
+			"invoice": "Faktura",
+			"method_name": "Platba",
+			"payment_mode": "Platební režim",
+			"status": "Postavení"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platnou částku.",
+				"message2": "Zadejte prosím platné datum platby.",
+				"message3": "Vyberte platný režim platby."
+			},
+			"fields": {
+				"amount": "Přijatá částka",
+				"date": "Datum splatnosti",
+				"notes": "Zanechat poznámku",
+				"payment_mode": "Platební režim",
+				"transaction_id": "ID transakce"
+			},
+			"placeholders": {
+				"placeholder1": "Vyberte datum",
+				"placeholder2": "- Vyberte režim platby -",
+				"placeholder3": "Poznámka správce",
+				"placeholder4": "Zadejte ID transakce"
+			}
+		},
+		"info": "Poznámka: Níže uvedené režimy plateb jsou offline režimy. Platební brány lze konfigurovat v Nastavení-> Paypal / Stripe.",
+		"info1": "Paypal, Stripe, bankovní převod, hotovost nebo jiné.",
+		"messages": {
+			"create": "Platba byla úspěšně vytvořena.",
+			"delete": "Platba byla úspěšně smazána.",
+			"failed": "Platba selhala.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Platba byla úspěšně aktualizována."
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "Probíhá"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "Úspěšný"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "Selhalo"
+			}
+		],
+		"title": "Platby",
+		"title1": "Platby !",
+		"title2": "Vytvořit platbu",
+		"title3": "Aktualizovat platbu",
+		"view": {
+			"failed": "Selhalo",
+			"in_progress": "Probíhá",
+			"invoice_amount": "Částka faktury",
+			"invoice_date": "Datum fakturace",
+			"invoice_number": "Číslo faktury",
+			"payment_amount": "Částka k úhradě",
+			"payment_for": "Platba za",
+			"payment_receipt": "Platba za fakturu",
+			"successful": "Úspěšný"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "Akce",
+			"creator": "Tvůrce",
+			"end_date": "Datum ukončení",
+			"hours": "Hodiny",
+			"name": "název",
+			"progress": "Pokrok",
+			"responsible": "odpovědný",
+			"sprint": "Sprint",
+			"start_date": "Počáteční datum",
+			"status": "Postavení",
+			"type": "Typ"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Vyberte platný projekt.",
+					"message2": "Vyberte prosím platný sprint projektu."
+				},
+				"fields": {
+					"project": "Projekt",
+					"sprint": "Sprint"
+				},
+				"placeholders": {
+					"placeholder1": "- Vyberte projekt -",
+					"placeholder2": "- Vyberte Sprint projektu -"
+				}
+			},
+			"messages": {
+				"move": " Úloha byla úspěšně přesunuta."
+			},
+			"title": "Přesunout úkol"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte jedinečný a platný název sprintu.",
+					"message2": "Název sprintu může mít maximálně 255 znaků.",
+					"message4": "Vyberte platné datum zahájení.",
+					"message5": "Vyberte platné datum ukončení.",
+					"message6": "Vyberte platný stav.",
+					"message7": "Odhadované hodiny umožňují pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků.",
+					"message8": "Odhadované hodiny musí být kratší než"
+				},
+				"fields": {
+					"description": "Popis",
+					"end_date": "Datum ukončení",
+					"estimate_hours": "Odhad hodin",
+					"responsible": "odpovědný",
+					"sprint_name": "Název Sprint Project",
+					"start_date": "Počáteční datum",
+					"status": "Postavení"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte název Sprint Project",
+					"placeholder2": "- Vyberte Uživatel -",
+					"placeholder3": "Vyberte počáteční datum",
+					"placeholder4": "Vyberte datum ukončení",
+					"placeholder5": "- Vyberte stav -",
+					"placeholder6": "Zadejte popis"
+				}
+			},
+			"messages": {
+				"create": "Sprint byl úspěšně vytvořen.",
+				"delete": "Sprint byl úspěšně smazán.",
+				"update": "Sprint byl úspěšně aktualizován."
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "otevřeno"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Probíhá"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Zavřeno"
+				}
+			],
+			"title": "Sprint",
+			"title1": "Vytvořit Sprint",
+			"title2": "Upravit Sprint"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte jedinečný a platný",
+					"message2": " název může mít maximálně 255 znaků.",
+					"message3": "Vyberte prosím platné uživatele.",
+					"message4": "Vyberte platné datum zahájení.",
+					"message5": "Vyberte platné datum ukončení.",
+					"message6": "Vyberte platný stav.",
+					"message7": "Odhadované hodiny umožňují pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků.",
+					"message8": "Odhadované hodiny musí být kratší než"
+				},
+				"fields": {
+					"description": "Popis",
+					"end_date": "Datum ukončení",
+					"estimate_hours": "Odhad hodin",
+					"name": "název",
+					"responsible": "odpovědný",
+					"start_date": "Počáteční datum",
+					"status": "Postavení"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte Project Sprint ",
+					"placeholder2": "- Vyberte Uživatel -",
+					"placeholder3": "Vyberte počáteční datum",
+					"placeholder4": "Vyberte datum ukončení",
+					"placeholder5": "- Vyberte stav -",
+					"placeholder6": "Zadejte popis",
+					"placeholder7": "Vstupte do projektu "
+				}
+			},
+			"messages": {
+				"create": " vytvořeno úspěšně.",
+				"released": "Úloha byla úspěšně vydána.",
+				"story_delete": "Sprint příběh byl úspěšně smazán.",
+				"task_delete": "Úloha Sprint byla úspěšně odstraněna.",
+				"update": " úspěšně aktualizováno."
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "otevřeno"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "Probíhá"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Zavřeno"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "otevřeno"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "Pozastaveno"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Zavřeno"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "Vydáno"
+				}
+			],
+			"title": "Sprint Úkol",
+			"title1": "Vytvořit Sprint",
+			"title2": "Upravit Sprint",
+			"title3": "název",
+			"title4": "Úkol",
+			"title5": "Příběh"
+		},
+		"title": "Plánovač Projektu",
+		"title1": "Vytvořte úlohu",
+		"title2": "Vytvořit příběh",
+		"title3": "Vytvořit Sprint",
+		"title4": "Projekt",
+		"title5": "Sprint"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "Pevná sazba",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Hodinová sazba",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "Dokončení s",
+			"csv_file": "Před zahájením importu projektů se ujistěte, že jste importovali uživatele a jejich týmy.",
+			"current_version": "Současná verze",
+			"version": "Verze"
+		},
+		"columns": {
+			"actions": "Akce",
+			"assigned_To": "Přiřazen",
+			"billing": "Fakturace",
+			"budget": "Rozpočet",
+			"client": "Klient",
+			"completion": "Dokončení",
+			"creator": "Tvůrce",
+			"duration": "Doba trvání",
+			"end": "Konec",
+			"hours": "Hodiny",
+			"id": "ID",
+			"logo": "Logo",
+			"progress": "Pokrok",
+			"project_name": "název projektu",
+			"start": "START",
+			"status": "Postavení",
+			"version": "Verze"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný název projektu.",
+				"message10": "Vyberte platné datum ukončení.",
+				"message11": "Odhadované hodiny umožňují pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků.",
+				"message12": "Pevná cena musí být strouhaná než 0.",
+				"message13": "Pevná cena umožňuje pouze číslice.",
+				"message14": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+				"message15": "Tento soubor není souborem csv. Vyberte pouze soubor CSV.",
+				"message16": "Vyberte soubor CSV, který chcete importovat.",
+				"message2": "Název projektu může mít maximálně 255 znaků.",
+				"message3": "Zadejte jedinečnou a platnou verzi projektu.",
+				"message4": "Verze projektu může být jako 1.0.",
+				"message6": "Vyberte platný stav.",
+				"message8": "Zadejte platnou ukázkovou adresu URL.",
+				"message9": "Vyberte platné datum zahájení."
+			},
+			"fields": {
+				"actual_hours": "Skutečné hodiny",
+				"assigned_To": "Přiřazen",
+				"assigned_group": "Přiřazená skupina",
+				"billing_type": "Typ fakturace",
+				"budget": "Rozpočet",
+				"client_name": "Jméno klienta",
+				"completed": "Dokončeno",
+				"created_by": "Vytvořil",
+				"csv_file": "Vyberte soubor CSV projektu",
+				"demo_URL": "Ukázková adresa URL",
+				"description": "Popis",
+				"end_date": "Datum ukončení",
+				"estimate_hours": "Odhad hodin",
+				"fixed_price": "Pevná cena ($)",
+				"hourly_rate": "Hodinová sazba ($)",
+				"progress": "Pokrok",
+				"project_hours": "Auto Progress",
+				"project_id": "ID projektu",
+				"project_logo": "Logo projektu",
+				"project_name": "název projektu",
+				"start_date": "Počáteční datum",
+				"status": "Postavení",
+				"version": "Verze"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název projektu",
+				"placeholder10": "Zadejte cenu",
+				"placeholder11": "Zadejte popis",
+				"placeholder2": "Zadejte verzi",
+				"placeholder3": "- Vyberte klienta -",
+				"placeholder4": "- Vyberte stav -",
+				"placeholder5": "- Vyberte přiřazenou skupinu -",
+				"placeholder6": "Nepřiřazeno",
+				"placeholder7": "Vyberte počáteční datum",
+				"placeholder8": "Vyberte datum ukončení",
+				"placeholder9": "- Vyberte typ fakturace -"
+			}
+		},
+		"details": {
+			"title1": "Vlastní pole",
+			"title2": "Popis"
+		},
+		"headings": {
+			"head1": "Informace o projektu",
+			"head2": "Data projektu",
+			"head3": "Další informace",
+			"head4": "Vlastní pole",
+			"head5": "Popis"
+		},
+		"inline_edit": {
+			"billing_type": "Typ fakturace",
+			"budget": "Rozpočet",
+			"client": "Klient",
+			"demo_url": "Ukázková adresa URL",
+			"description": "Popis",
+			"end_date": "Datum ukončení",
+			"estimate_hours": "Odhad hodin",
+			"notes": "Poznámky",
+			"project_name": "název projektu",
+			"start_date": "Počáteční datum"
+		},
+		"messages": {
+			"create": "Projekt byl úspěšně vytvořen.",
+			"delete": "Projekt byl úspěšně smazán.",
+			"import": "Projekt byl úspěšně importován.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Projekt byl úspěšně aktualizován."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Pozastaveno"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "zrušení"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "Dokončeno"
+			}
+		],
+		"title": "Projekty",
+		"title1": "Vytvořit projekt",
+		"title2": "Upravit projekt",
+		"title3": "Importovat projekt"
+	},
+	"providers": {
+		"columns": {
+			"actions": "Akce",
+			"color": "Barva",
+			"email": "E-mailem",
+			"firstname": "Jméno",
+			"lastname": "Příjmení"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platné křestní jméno.",
+				"message2": "Jméno může mít maximálně 50 znaků.",
+				"message3": "Zadejte platné příjmení.",
+				"message4": "Příjmení může mít maximálně 50 znaků.",
+				"message5": "Prosím zadejte platný email.",
+				"message6": "E-mail může být platná e-mailová adresa.",
+				"message7": "Vyberte prosím platnou barvu."
+			},
+			"fields": {
+				"color": "Barva",
+				"email": "E-mailem",
+				"first_name": "Jméno",
+				"last_name": "Příjmení"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte křestní jméno",
+				"placeholder2": "Zadejte příjmení",
+				"placeholder3": "Zadejte email"
+			}
+		},
+		"messages": {
+			"create": "Poskytovatel byl úspěšně vytvořen.",
+			"delete": "Poskytovatel byl úspěšně smazán.",
+			"edit": "Poskytovatel byl úspěšně upraven."
+		},
+		"title": "Poskytovatelé"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "Prosím zadejte platné uživatelské jméno.",
+				"message10": "Heslo a potvrzovací heslo se neshodují.",
+				"message2": "Uživatelské jméno může být dlouhé nejméně 3 až 30 znaků bez mezer.",
+				"message3": "Zadejte platné křestní jméno.",
+				"message4": "Zadejte platné příjmení.",
+				"message5": "Prosím zadejte platný email.",
+				"message6": "E-mail musí být platný e-mail.",
+				"message7": "Prosím vložte platné heslo.",
+				"message8": "Heslo může mít délku minimálně 6 až maximálně 12 znaků, včetně alespoň jednoho velkého, druhého, jednoho malého, jednoho číslice a jednoho zvláštního znaku.",
+				"message9": "Zadejte platné potvrzovací heslo."
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte uživatelské jméno",
+				"placeholder2": "Zadejte křestní jméno",
+				"placeholder3": "Zadejte příjmení",
+				"placeholder4": "Zadejte email",
+				"placeholder5": "Zadejte heslo",
+				"placeholder6": "Zadejte Potvrdit heslo"
+			}
+		},
+		"messages": {
+			"success": "Úspěšně jste se zaregistrovali."
+		},
+		"title": "Registrovat",
+		"title1": "Máte již účet?"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "Přeběhnout",
+			"incident_report": "Incident",
+			"project_report": "Projekt",
+			"task_report": "Úkol"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Prosím vložte platné heslo.",
+				"message2": "Heslo může být dlouhé od 3 do 30 znaků.",
+				"message3": "Zadejte platné potvrzovací heslo.",
+				"message4": "Heslo a potvrzovací heslo se neshodují.",
+				"message5": "Zadejte platný e-mail nebo token."
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte heslo",
+				"placeholder2": "Zadejte Potvrdit heslo"
+			}
+		},
+		"messages": {
+			"success": "Heslo bylo úspěšně resetováno."
+		},
+		"title": "Obnovit heslo"
+	},
+	"roles": {
+		"columns": {
+			"actions": "Akce",
+			"description": "Popis",
+			"role_name": "Název role",
+			"role_slug": "Role Slug"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platné jméno role.",
+				"message2": "Název role může mít maximálně 50 znaků.",
+				"message3": "Role slim může mít maximálně 50 znaků.",
+				"message4": "Role slim může být pouze písmena, podtržítko.",
+				"message5": "Zadejte platný slim."
+			},
+			"fields": {
+				"description": "Popis",
+				"role_name": "Název role",
+				"role_slug": "Role Slug"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název role",
+				"placeholder2": "Zadejte Role Slug"
+			}
+		},
+		"inline_edit": {
+			"description": "Popis",
+			"role_name": "Název role"
+		},
+		"messages": {
+			"create": "Role byla úspěšně vytvořena.",
+			"delete": "Role byla úspěšně smazána.",
+			"update": "Role byla úspěšně aktualizována."
+		},
+		"title": "Role"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platný název společnosti.",
+					"message10": "Kód PSČ může mít maximálně 10 číslic.",
+					"message11": "Zadejte prosím platnou adresu společnosti.",
+					"message2": "Zadejte platné obchodní jméno společnosti.",
+					"message3": "Zadejte platné zkrácené jméno společnosti.",
+					"message4": "Krátký název společnosti může mít maximálně 10 znaků.",
+					"message5": "Zadejte platný e-mail společnosti.",
+					"message6": "E-mail musí být platnou e-mailovou adresou.",
+					"message7": "Firemní telefon musí mít platný formát telefonního čísla.",
+					"message8": "Web společnosti musí být platná adresa URL.",
+					"message9": "Zadejte platný PSČ."
+				},
+				"fields": {
+					"city": "Město",
+					"company_address": "adresa společnosti",
+					"company_country": "Země společnosti",
+					"company_email": "Firemní e-mail",
+					"company_name": "Jméno společnosti",
+					"company_phone": "Firemní telefon",
+					"company_website": "firemní web",
+					"company_zipcode": "PSČ",
+					"contact_person": "Kontaktní osoba",
+					"legal_name": "Legální jméno",
+					"short_name": "Krátké jméno"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte název společnosti",
+					"placeholder10": "Zadejte kontaktní osobu",
+					"placeholder11": "Zadejte adresu společnosti",
+					"placeholder2": "Zadejte právní název",
+					"placeholder3": "Zadejte krátký název",
+					"placeholder4": "Zadejte firemní e-mail",
+					"placeholder5": "Zadejte firemní telefon",
+					"placeholder6": "Vstupte na web společnosti",
+					"placeholder7": "-- Vyberte zemi --",
+					"placeholder8": "Zadejte město",
+					"placeholder9": "Zadej PSČ"
+				}
+			},
+			"title": "Detaily společnosti"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "Aktivní Cronjob",
+					"automatic_backup": "Automatická zálohovací databáze",
+					"daily_report_emails": "E-maily s denním přehledem",
+					"last_cronjob_run": "Poslední Cronjob Run"
+				},
+				"messages": {
+					"message1": "To umožňuje funkci cronjob, pokud je správně nastavena.",
+					"message2": "Vytvoří zálohu databáze každých 7 dní. Vyžaduje aktivaci cronjob!"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte e-maily"
+				}
+			},
+			"title": "Cronjob"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "Akce",
+				"custom_field_for": "Vlastní pole pro",
+				"label": "Označení",
+				"status": "Postavení",
+				"type": "Typ",
+				"value": "Hodnota"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Vyberte platný formulář vlastního pole.",
+					"message2": "Zadejte platný štítek pole.",
+					"message3": "Zadejte platný text nápovědy.",
+					"message4": "Vyberte platný typ pole.",
+					"message5": "Zadejte platný štítek.",
+					"message6": "Zadejte platnou hodnotu."
+				},
+				"fields": {
+					"custom_field_for": "Vlastní pole pro",
+					"field_label": "Popisek pole",
+					"field_type": "Typ pole",
+					"help_text": "Pomocný text",
+					"is_required_field": "Je povinné pole",
+					"show_on_detail": "Zobrazit na stránce s podrobnostmi"
+				},
+				"placeholders": {
+					"placeholder1": "- Vyberte formulář vlastního pole -",
+					"placeholder2": "Zadejte označení pole",
+					"placeholder3": "Zadejte text nápovědy",
+					"placeholder4": "- Vyberte typ pole -"
+				}
+			},
+			"headings": {
+				"head1": "Do rozevíracího seznamu zadejte lable a value."
+			},
+			"messages": {
+				"create": "Vlastní pole bylo úspěšně vytvořeno.",
+				"delete": "Vlastní pole bylo úspěšně odstraněno.",
+				"status": "Stav se úspěšně změnil.",
+				"update": "Vlastní pole bylo úspěšně aktualizováno."
+			},
+			"title": "Vlastní pole",
+			"title1": "Vlastní pole"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "Nastavení"
+			},
+			"title": "Přístrojová deska",
+			"title1": "Oznámení",
+			"title10": "Odhady",
+			"title11": "Faktury",
+			"title12": "Platby",
+			"title13": "Listy",
+			"title14": "Týmy",
+			"title15": "Uživatele",
+			"title16": "Klienti",
+			"title17": "Články",
+			"title18": "Stav projektu",
+			"title19": "Stav úkolů",
+			"title2": "Nedávné aktivity",
+			"title20": "Měsíční zpráva",
+			"title21": "Widgety",
+			"title22": "Grafy",
+			"title23": "Seznamy",
+			"title3": "Seznam ToDos",
+			"title4": "Setkání",
+			"title5": "Projekty",
+			"title6": "Úkoly",
+			"title7": "Vady",
+			"title8": "Incidenty",
+			"title9": "Nejaktuálnější faktury"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "Akce",
+				"date": "datum",
+				"file_name": "Název souboru"
+			},
+			"messages": {
+				"create": "Zálohování databáze bylo úspěšně vytvořeno.",
+				"delete": "Zálohování databáze bylo úspěšně odstraněno.",
+				"restore": "Databáze byla úspěšně obnovena."
+			},
+			"title": "Zálohy databáze",
+			"title1": "zálohování databáze",
+			"title2": "Zálohování"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "Oznámení"
+			},
+			"title": "E-mailová oznámení",
+			"title1": "Oznámení E-mail"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platný e-mail společnosti.",
+					"message2": "E-mail musí být platnou e-mailovou adresou.",
+					"message3": "Vyberte platný e-mailový protokol.",
+					"message4": "Zadejte platného hostitele SMTP.",
+					"message5": "Zadejte platného uživatele SMTP.",
+					"message6": "Uživatel SMTP musí být platná e-mailová adresa.",
+					"message7": "Zadejte platné heslo SMTP.",
+					"message8": "Zadejte platný port SMTP."
+				},
+				"fields": {
+					"company_email": "Firemní e-mail",
+					"email_encryption": "Šifrování e-mailů",
+					"email_protocol": "E-mailový protokol",
+					"mailgun_domain": "Mailgun Domain",
+					"mailgun_secret": "Mailgun Secret",
+					"mandrill_secret": "Mandrill Secret",
+					"smtp_host": "Hostitel SMTP",
+					"smtp_password": "Heslo SMTP",
+					"smtp_port": "Port SMTP",
+					"smtp_user": "Uživatel SMTP",
+					"sparkpost_secret": "Sparkpost Secret"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte firemní e-mail",
+					"placeholder2": "- Vyberte e-mailový protokol -",
+					"placeholder3": "Zadejte heslo",
+					"placeholder4": "- Vyberte šifrování e-mailů -",
+					"placeholder5": "Zadejte Sparkpost Secret",
+					"placeholder6": "Zadejte doménu Mailgun",
+					"placeholder7": "Zadejte Mailgun Secret",
+					"placeholder8": "Zadejte Mandrill Secret"
+				}
+			},
+			"title": "E-mailem",
+			"title1": "E-mail odeslán na "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "Tělo",
+					"subject": "Předmět"
+				},
+				"placeholders": {
+					"placeholder1": "- Vyberte e-mailovou skupinu -",
+					"placeholder2": "Zadejte předmět"
+				}
+			},
+			"messages": {
+				"update": "Šablona e-mailu byla úspěšně aktualizována."
+			},
+			"title": "E-mailové šablony"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platnou předponu odhadu.",
+					"message2": "Předpona odhadu může mít maximálně 10 znaků.",
+					"message3": "Zadejte platnou splatnost po.",
+					"message4": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+				},
+				"fields": {
+					"auto_remind": "Automatické odeslání připomenutí?",
+					"auto_remind_before": "Odeslat připomenutí před (dny)",
+					"client_note": "Poznámka klienta",
+					"due_after": "Termín splatnosti (dny)",
+					"estimate_logo": "Logo odhadu",
+					"estimate_prefix": "Odhadnout předponu",
+					"terms_conditions": "Všeobecné obchodní podmínky"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte předponu Odhad",
+					"placeholder2": "Zadejte termín po",
+					"placeholder3": "Zadejte poznámku klienta",
+					"placeholder4": "Zadejte podmínky",
+					"placeholder5": "Zadejte Připomenout před dny"
+				}
+			},
+			"title": "Odhad"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platnou předponu faktury.",
+					"message2": "Předpona faktury může mít maximálně 10 znaků.",
+					"message3": "Zadejte platnou splatnost po.",
+					"message4": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+				},
+				"fields": {
+					"auto_remind": "Automatické odeslání připomenutí?",
+					"auto_remind_after": "Odeslat připomenutí po (dnech) Př. 1,3",
+					"client_note": "Poznámka klienta",
+					"due_after": "Termín splatnosti (dny)",
+					"gst_number": "Číslo GST",
+					"invoice_logo": "Logo faktury",
+					"invoice_prefix": "Předpona faktury",
+					"show_gst_number": "Zobrazit číslo GST na faktuře?",
+					"terms_conditions": "Všeobecné obchodní podmínky"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte předponu faktury",
+					"placeholder2": "Zadejte termín po",
+					"placeholder3": "Zadejte poznámku klienta",
+					"placeholder4": "Zadejte podmínky",
+					"placeholder5": "Zadejte Připomenout po dnech",
+					"placeholder6": "Zadejte číslo GST"
+				}
+			},
+			"title": "Faktura"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "Nabídka byla úspěšně aktualizována."
+			},
+			"title": "Přidělení menu",
+			"title1": "Rozšířit vše",
+			"title2": "Sbalit vše"
+		},
+		"messages": {
+			"update": "Nastavení bylo úspěšně aktualizováno."
+		},
+		"payment_gateway_settings": {
+			"title": "Platební brána"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte prosím platné paypal clientID."
+				},
+				"fields": {
+					"paypal_checkout_client_id": "ID klienta Paypal",
+					"paypal_checkout_label": "Paypal štítek",
+					"paypal_checkout_status": "Postavení"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte štítek Paypal",
+					"placeholder2": "Zadejte ID klienta Paypal"
+				}
+			},
+			"title": "Paypal"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platné ID klienta slack.",
+					"message2": "Zadejte platné tajné heslo klienta.",
+					"message3": "Zadejte platnou volnou adresu URL přesměrování."
+				},
+				"fields": {
+					"slack_client_id": "Slack Client Id",
+					"slack_client_secret": "Uvolněné tajemství klienta",
+					"slack_redirect_url": "Slack Redirect URL",
+					"slack_status": "Stav uvolnění"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte ID klienta Slack",
+					"placeholder2": "Zadejte tajné heslo klienta",
+					"placeholder3": "Zadejte Slack Redirect URL"
+				}
+			},
+			"title": "Slack"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platný klíč API pruhu.",
+					"message2": "Zadejte platné tajemství API pruhu."
+				},
+				"fields": {
+					"stripe_api_key": "Klíč Stripe API",
+					"stripe_label": "Pruhový štítek",
+					"stripe_secret_key": "Stripe Secret Key",
+					"stripe_status": "Postavení"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte proužkový štítek",
+					"placeholder2": "Zadejte klíč Stripe API",
+					"placeholder3": "Zadejte Stripe Secret Key"
+				}
+			},
+			"title": "proužek",
+			"title1": "Platit"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Zadejte platný limit stránkování tabulky.",
+					"message2": "Vyberte platný formát data.",
+					"message3": "Vyberte platný formát času.",
+					"message4": "Vyberte platnou měnu.",
+					"message5": "Vyberte prosím platný výchozí jazyk."
+				},
+				"fields": {
+					"allowed_for_registration": "Povoleno k registraci?",
+					"date_format": "Datový formát",
+					"default_currency": "Výchozí měna",
+					"default_language": "Základní jazyk",
+					"default_locale": "Výchozí národní prostředí",
+					"tables_pagination_limit": "Limit stránkování tabulek",
+					"time_format": "Časový formát",
+					"timezone": "Časové pásmo"
+				},
+				"placeholders": {
+					"placeholder1": "-- Zvolte jazyk --",
+					"placeholder2": "- Vyberte národní prostředí -",
+					"placeholder3": "- Vyberte časové pásmo -",
+					"placeholder4": "Zadejte limit stránkování tabulky",
+					"placeholder5": "- Vyberte formát data -",
+					"placeholder6": "- Vyberte formát času -",
+					"placeholder7": "- Vyberte výchozí měnu -"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Zadejte platnou předponu odhadu.",
+						"message2": "Předpona odhadu může mít maximálně 10 znaků.",
+						"message3": "Zadejte platnou splatnost po.",
+						"message4": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+					},
+					"fields": {
+						"auto_remind": "Automatické odeslání připomenutí?",
+						"auto_remind_before": "Odeslat připomenutí před (dny)",
+						"client_note": "Poznámka klienta",
+						"due_after": "Termín splatnosti (dny)",
+						"estimate_logo": "Logo odhadu",
+						"estimate_prefix": "Odhadnout předponu",
+						"terms_conditions": "Všeobecné obchodní podmínky"
+					},
+					"placeholders": {
+						"placeholder1": "Zadejte předponu Odhad",
+						"placeholder2": "Zadejte termín po",
+						"placeholder3": "Zadejte poznámku klienta",
+						"placeholder4": "Zadejte podmínky",
+						"placeholder5": "Zadejte Připomenout před dny"
+					}
+				},
+				"title": "Odhad"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Zadejte platnou předponu faktury.",
+						"message2": "Předpona faktury může mít maximálně 10 znaků.",
+						"message3": "Zadejte platnou splatnost po.",
+						"message4": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+					},
+					"fields": {
+						"auto_remind": "Automatické odeslání připomenutí?",
+						"auto_remind_after": "Odeslat připomenutí po (dnech) Př. 1,3",
+						"client_note": "Poznámka klienta",
+						"due_after": "Termín splatnosti (dny)",
+						"gst_number": "Číslo GST",
+						"invoice_logo": "Logo faktury",
+						"invoice_prefix": "Předpona faktury",
+						"show_gst_number": "Zobrazit číslo GST na faktuře?",
+						"terms_conditions": "Všeobecné obchodní podmínky"
+					},
+					"placeholders": {
+						"placeholder1": "Zadejte předponu faktury",
+						"placeholder2": "Zadejte termín po",
+						"placeholder3": "Zadejte poznámku klienta",
+						"placeholder4": "Zadejte podmínky",
+						"placeholder5": "Zadejte Připomenout po dnech",
+						"placeholder6": "Zadejte číslo GST"
+					}
+				},
+				"title": "Faktura"
+			},
+			"payment_gateway_settings": {
+				"title": "Platební brána"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Zadejte prosím platné paypal clientID."
+					},
+					"fields": {
+						"paypal_checkout_client_id": "ID klienta Paypal",
+						"paypal_checkout_label": "Paypal štítek",
+						"paypal_checkout_status": "Postavení"
+					},
+					"placeholders": {
+						"placeholder1": "Zadejte štítek Paypal",
+						"placeholder2": "Zadejte ID klienta Paypal"
+					}
+				},
+				"title": "Paypal"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Zadejte platné ID klienta slack.",
+						"message2": "Zadejte platné tajné heslo klienta.",
+						"message3": "Zadejte platnou volnou adresu URL přesměrování."
+					},
+					"fields": {
+						"slack_client_id": "Slack Client Id",
+						"slack_client_secret": "Uvolněné tajemství klienta",
+						"slack_redirect_url": "Slack Redirect URL",
+						"slack_status": "Stav uvolnění"
+					},
+					"placeholders": {
+						"placeholder1": "Zadejte ID klienta Slack",
+						"placeholder2": "Zadejte tajné heslo klienta",
+						"placeholder3": "Zadejte Slack Redirect URL"
+					}
+				},
+				"title": "Slack"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Zadejte platný klíč API pruhu."
+					},
+					"fields": {
+						"stripe_api_key": "Klíč Stripe API",
+						"stripe_label": "Pruhový štítek",
+						"stripe_status": "Postavení"
+					},
+					"placeholders": {
+						"placeholder1": "Zadejte proužkový štítek",
+						"placeholder2": "Zadejte klíč Stripe API"
+					}
+				},
+				"title": "Stripes"
+			},
+			"title": "Systém"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "Kupující",
+					"purchase_key": "Klíč nákupu",
+					"url": "Url"
+				},
+				"placeholders": {
+					"placeholder1": "Zadejte klíč nákupu produktu",
+					"placeholder2": "Zadejte kód kupujícího produktu"
+				}
+			},
+			"title": "Aktualizace systému"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+				},
+				"fields": {
+					"compnay_logo": "Logo společnosti",
+					"compnay_sidebar_logo": "Logo postranního panelu společnosti",
+					"login_background": "Přihlašovací pozadí",
+					"sidebar_background_images": "Obrázky na postranním panelu"
+				}
+			},
+			"title": "Téma"
+		},
+		"title": "Nastavení",
+		"translations": {
+			"columns": {
+				"actions": "Akce",
+				"icon": "Ikona",
+				"language": "jazyk",
+				"status": "Postavení"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Vyberte platný jazyk.",
+					"message2": "Vyberte platnou ikonu.",
+					"message3": "Přetáhněte soubory sem nebo kliknutím nahrajte."
+				},
+				"fields": {
+					"icon": "Ikona",
+					"language": "jazyk"
+				},
+				"placeholders": {
+					"placeholder1": "-- Zvolte jazyk --"
+				}
+			},
+			"messages": {
+				"create": "Překlad byl úspěšně vytvořen.",
+				"delete": "Překlad byl úspěšně smazán.",
+				"status": "Stav se úspěšně změnil.",
+				"update": "Překlad byl úspěšně aktualizován."
+			},
+			"title": "Překlady",
+			"title1": "Překlad"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} je povinné.",
+				"message2": "{{elementFor}} povoluje pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků.",
+				"message3": "Zadejte platné {{elementFor}}.",
+				"message4": "{{elementFor}} název může být dlouhý {{minLength}} znaků."
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte {{elementFor}}",
+				"placeholder2": "- Vyberte {{elementFor}} -",
+				"placeholder3": "Vyberte {{elementFor}}"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "Zadejte platné {{custom_field}}.",
+				"message2": "Vyberte platný {{custom_field}}."
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte {{custom_field}}",
+				"placeholder2": "- Vyberte {{custom_field}} -"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "Do Dos",
+			"head2": "Probíhá",
+			"head3": "Dokončeno"
+		},
+		"title": "Úkol Kanban"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "Dokončení s",
+			"csv_file": "Před zahájením importu projektů se ujistěte, že jste importovali uživatele a jejich týmy."
+		},
+		"columns": {
+			"actions": "Akce",
+			"actual_end": "Skutečný konec",
+			"actual_start": "Skutečný začátek",
+			"assigned": "Přiřazeno",
+			"creator": "Tvůrce",
+			"end": "Konec",
+			"end_date": "Datum ukončení",
+			"hours": "Hodiny",
+			"id": "ID",
+			"planned_end": "Plánované ukončení",
+			"planned_start": "Plánovaný start",
+			"priority": "Přednost",
+			"progress": "Pokrok",
+			"project": "Projekt",
+			"project_version": "Verze projektu",
+			"start": "START",
+			"start_date": "Počáteční datum",
+			"status": "Postavení",
+			"task_ID": "ID úlohy",
+			"task_name": "Název úlohy"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný název úlohy.",
+				"message11": "Vyberte platný stav úlohy.",
+				"message12": "Vyberte platnou prioritu úlohy.",
+				"message13": "Odhadované hodiny umožňují pouze číslice, 2 číslice za dvojtečkou (méně než 60) bez zvláštních znaků.",
+				"message14": "Odhadované hodiny musí být kratší než",
+				"message15": "Vyberte soubor CSV, který chcete importovat.",
+				"message2": "Název úlohy může mít maximálně 255 znaků.",
+				"message3": "Zadejte jedinečné a platné ID vygenerované úlohy.",
+				"message4": "Vyberte platné plánované datum zahájení.",
+				"message5": "Vyberte platné plánované datum ukončení.",
+				"message6": "Vyberte platné datum zahájení.",
+				"message7": "Vyberte platné datum ukončení.",
+				"message8": "Vyberte platný název projektu."
+			},
+			"fields": {
+				"actual_enddate": "Datum ukončení",
+				"actual_hours": "Skutečné hodiny",
+				"actual_startdate": "Datum začátku",
+				"assigned_To": "Přiřazen",
+				"completed": "Dokončeno",
+				"created_by": "Vytvořil",
+				"csv_file": "Vyberte soubor CSV úlohy",
+				"description": "Popis",
+				"estimate_hours": "Odhad hodin",
+				"parent_taskID": "ID nadřazené úlohy",
+				"plan_enddate": "Datum ukončení plánu",
+				"plan_startdate": "Datum zahájení plánu",
+				"priority": "Přednost",
+				"progress": "Pokrok",
+				"project_name": "název projektu",
+				"project_version": "Verze projektu",
+				"status": "Postavení",
+				"subtask_Id": "Id dílčího úkolu",
+				"task_ID": "ID úlohy",
+				"task_name": "Název úlohy"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název úlohy",
+				"placeholder10": "- Vyberte prioritu -",
+				"placeholder2": "Vyberte Plánované datum zahájení",
+				"placeholder3": "Vyberte Plánované datum ukončení",
+				"placeholder4": "Vyberte počáteční datum",
+				"placeholder5": "Vyberte Datum ukončení",
+				"placeholder6": "- Vyberte název projektu -",
+				"placeholder7": "- Vyberte verzi projektu -",
+				"placeholder8": "- Vyberte Přiřadit k -",
+				"placeholder9": "- Vyberte stav -"
+			}
+		},
+		"details": {
+			"title1": "Vlastní pole",
+			"title2": "Popis",
+			"title3": "Dílčí úkol"
+		},
+		"headings": {
+			"head1": "Informace o úkolu",
+			"head2": "Data úkolů",
+			"head3": "Pokrok",
+			"head4": "Informace o projektu",
+			"head5": "požadavky",
+			"head6": "Vlastní pole",
+			"head7": "Popis"
+		},
+		"inline_edit": {
+			"description": "Popis",
+			"estimate_hours": "Odhad hodin",
+			"notes": "Poznámky",
+			"task_name": "Název úlohy"
+		},
+		"messages": {
+			"copy": "Úkol byl úspěšně zkopírován.",
+			"create": "Úloha byla úspěšně vytvořena.",
+			"delete": "Úloha byla úspěšně odstraněna.",
+			"import": "Úloha byla úspěšně importována.",
+			"priority": "Priorita se úspěšně změnila.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Úloha byla úspěšně aktualizována."
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "otevřeno"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"id": 3,
+				"label": "Pozastaveno"
+			},
+			{
+				"id": 4,
+				"label": "Čekání"
+			},
+			{
+				"id": 5,
+				"label": "zrušení"
+			},
+			{
+				"id": 6,
+				"label": "Dokončeno"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"id": 3,
+				"label": "Pozastaveno"
+			},
+			{
+				"id": 5,
+				"label": "zrušení"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"id": 4,
+				"label": "Čekání"
+			},
+			{
+				"id": 5,
+				"label": "zrušení"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "zrušení"
+			},
+			{
+				"id": 2,
+				"label": "Probíhá"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"id": 4,
+				"label": "zrušení"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "Naléhavé"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "Velmi vysoko"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Vysoký"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "Střední"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "Nízký"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Pozastaveno"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Čekání"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Dokončeno"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Pozastaveno"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Čekání"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Dokončeno"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "Pozastaveno"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Čekání"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "Probíhá"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "zrušení"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Dokončeno"
+			}
+		],
+		"title": "Úkoly",
+		"title1": "Vytvořte úlohu",
+		"title2": "Vytvořit dílčí úlohu",
+		"title3": "Importovat úkoly",
+		"title4": "Upravit úlohu",
+		"title5": "Upravit dílčí úlohu",
+		"title6": "Kopírovat úkol",
+		"tooltips": {
+			"sub_task": "Vytvořit dílčí úlohu"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "Daňové jméno",
+			"tax_rate": "Sazba daně"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte jedinečný a platný název daně.",
+				"message2": "Zadejte platnou sazbu daně.",
+				"message3": "Sazba daně musí být číslo."
+			},
+			"fields": {
+				"tax_name": "Daňové jméno",
+				"tax_rate": "Sazba daně"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte daňové jméno",
+				"placeholder2": "Zadejte sazbu daně"
+			}
+		},
+		"messages": {
+			"create": "Daň byla úspěšně vytvořena.",
+			"delete": "Daň byla úspěšně smazána.",
+			"update": "Daň byla úspěšně aktualizována."
+		},
+		"title": "Daně",
+		"title1": "Daňová sazba",
+		"title2": "Daň!",
+		"title3": "Vytvořit daň",
+		"title4": "Aktualizovat daň"
+	},
+	"teams": {
+		"columns": {
+			"actions": "Akce",
+			"leader": "Vůdce",
+			"members": "Členové",
+			"team_name": "Jméno týmu"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platné jméno týmu.",
+				"message2": "Název týmu může mít maximálně 30 znaků.",
+				"message3": "Vyberte prosím platné členy týmu.",
+				"message4": "Vyberte prosím platného vedoucího týmu.",
+				"message5": "Vyberte soubor CSV, který chcete importovat.",
+				"message6": "Tento soubor není souborem csv. Vyberte pouze soubor CSV."
+			},
+			"fields": {
+				"actions": "Akce",
+				"csv_file": "Vyberte soubor CSV týmu",
+				"description": "Popis",
+				"leader": "Vůdce",
+				"members": "Členové",
+				"team_name": "Jméno týmu"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte název týmu",
+				"placeholder2": "- Vyberte členy týmu -",
+				"placeholder3": "- Vyberte vedoucí týmu -"
+			}
+		},
+		"inline_edit": {
+			"team_name": "Jméno týmu"
+		},
+		"labels": {
+			"label1": "Před zahájením importu týmů se ujistěte, že jste importovali uživatele."
+		},
+		"messages": {
+			"create": "Tým byl úspěšně vytvořen.",
+			"delete": "Tým byl úspěšně smazán.",
+			"import": "Tým byl úspěšně importován.",
+			"update": "Tým byl úspěšně aktualizován."
+		},
+		"title": "Týmy",
+		"title1": "Import týmů",
+		"title2": "Vedoucí týmu",
+		"title3": "Týmové rady"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "Možnosti barev postranního panelu",
+			"head10": "Barvy písma na postranním panelu",
+			"head11": "Možnosti rozvržení postranního panelu",
+			"head12": "Konfigurace",
+			"head13": "Sbalené menu",
+			"head14": "Šířka postranního panelu",
+			"head15": "Přechodový postranní panel",
+			"head2": "Barevné palety",
+			"head3": "Možnosti barev",
+			"head4": "Barvy pozadí postranního panelu",
+			"head5": "Obrázky na postranním panelu",
+			"head6": "Obrázek na pozadí",
+			"head7": "Barvy pozadí",
+			"head8": "Obrázky na pozadí",
+			"head9": "Barvy pozadí postranního panelu"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "Předem vytvořené barvy"
+			},
+			{
+				"key": "custom-colors",
+				"value": "vlastní barvy"
+			},
+			{
+				"key": "vlastní barvy",
+				"value": "vlastní barvy"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "- Vyberte rozložení -",
+			"placeholder2": "- Vyberte šířku postranního panelu -"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "malý"
+			},
+			{
+				"key": "medium",
+				"value": "Střední"
+			},
+			{
+				"key": "large",
+				"value": "velký"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "Akce",
+			"end_time": "Čas ukončení",
+			"entry": "Vstup",
+			"note": "Poznámka",
+			"photo": "Fotografie",
+			"project_name": "Projekt",
+			"start_time": "Doba spuštění",
+			"time_h": "Hodiny",
+			"user": "Uživatel"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Vyberte platný čas zahájení.",
+				"message2": "Vyberte platný čas ukončení.",
+				"message3": "Vyberte správné datum a čas pro časový rozvrh.",
+				"message4": "Zadejte platnou poznámku."
+			},
+			"fields": {
+				"end_time": "Čas ukončení",
+				"note": "Poznámka",
+				"start_time": "Doba spuštění"
+			},
+			"placeholders": {
+				"placeholder1": "Vyberte počáteční čas",
+				"placeholder2": "Vyberte Čas ukončení",
+				"placeholder3": "Zadejte poznámku"
+			},
+			"title1": "Vytvoření časového rozvrhu",
+			"title2": "Upravit časový rozvrh"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "Vyberte platný rozsah.",
+				"message2": "Vyberte platné období od.",
+				"message3": "Vyberte platné období do."
+			},
+			"placeholders": {
+				"placeholder1": "- Vyberte projekt -",
+				"placeholder2": "- Vyberte klienta -",
+				"placeholder3": "Vyberte období od",
+				"placeholder4": "Vyberte období do",
+				"placeholder5": "- Vyberte Uživatel -"
+			}
+		},
+		"inline_edit": {
+			"note": "Poznámka"
+		},
+		"messages": {
+			"create": "Časový přehled byl úspěšně vytvořen.",
+			"delete": "Časový přehled byl úspěšně smazán.",
+			"update": "Časový přehled byl úspěšně aktualizován."
+		},
+		"range": {
+			"last_month": "Minulý měsíc",
+			"last_week": "Minulý týden",
+			"period": "Doba",
+			"this_month": "Tento měsíc",
+			"this_week": "Tento týden",
+			"today": "Dnes"
+		},
+		"title": "Rozvrh Hodin",
+		"title1": "Můj časový rozvrh",
+		"title2": "Celý časový rozvrh"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platný popis.",
+				"message2": "Popis může mít maximálně 5 znaků.",
+				"message3": "Popis může mít maximálně 255 znaků.",
+				"message4": "Vyberte platný stav úkolu.",
+				"message5": "Vyberte platné datum splatnosti."
+			},
+			"fields": {
+				"description": "Popis",
+				"due_date": "Datum splatnosti",
+				"status": "Postavení"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte popis",
+				"placeholder2": "- Vyberte stav -",
+				"placeholder3": "Vyberte datum splatnosti"
+			}
+		},
+		"inline_edit": {
+			"description": "Popis",
+			"due_date": "Datum splatnosti"
+		},
+		"messages": {
+			"create": "Todo byl úspěšně vytvořen.",
+			"delete": "Todo byl úspěšně smazán.",
+			"status": "Stav byl úspěšně aktualizován.",
+			"update": "Todo byl úspěšně aktualizován."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "otevřeno"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "Dokončeno"
+			}
+		],
+		"title": "Todos"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "Přiřadit modální povolení"
+		},
+		"columns": {
+			"actions": "Akce",
+			"departments_roles": "Oddělení / Role",
+			"first_name": "Jméno",
+			"last_name": "Příjmení",
+			"photo": "Fotografie",
+			"status": "Postavení",
+			"username": "Uživatelské jméno"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Zadejte platné křestní jméno.",
+				"message10": "Heslo a potvrzovací heslo se neshodují.",
+				"message11": "Přetáhněte soubory sem nebo kliknutím nahrajte.",
+				"message12": "Vyberte platné oddělení s rolemi.",
+				"message13": "Vyberte platná uživatelská oprávnění.",
+				"message14": "Zadejte platné ID generované uživatelem.",
+				"message15": "Zadejte platné ID zaměstnání.",
+				"message16": "Prosím zadejte platné uživatelské jméno.",
+				"message17": "Uživatelské jméno může být dlouhé nejméně 3 až 30 znaků bez mezer.",
+				"message18": "Zadejte platné mobilní číslo.",
+				"message19": "Vložte prosím platné telefonní číslo.",
+				"message2": "Jméno může mít maximálně 20 znaků.",
+				"message20": "Vyberte platná uživatelská oprávnění.",
+				"message21": "Vyberte soubor CSV, který chcete importovat.",
+				"message22": "Tento soubor není souborem csv. Vyberte pouze soubor CSV.",
+				"message3": "Zadejte platné příjmení.",
+				"message4": "Příjmení může mít maximálně 20 znaků.",
+				"message5": "Prosím zadejte platný email.",
+				"message6": "E-mail může být platná e-mailová adresa.",
+				"message7": "Prosím vložte platné heslo.",
+				"message8": "Heslo může být dlouhé od 3 do 30 znaků.",
+				"message9": "Zadejte platné potvrzovací heslo."
+			},
+			"fields": {
+				"address": "adresa",
+				"assigned_to": "Přiřazen",
+				"confirm_password": "Potvrďte heslo",
+				"country": "Země",
+				"csv_file": "Vyberte uživatelský soubor CSV",
+				"customize_permission": "Přizpůsobte oprávnění",
+				"departments_roles": "Oddělení / Role",
+				"dob": "Datum narození",
+				"email": "E-mailem",
+				"employment_ID": "ID zaměstnání",
+				"everyone": "Každý",
+				"father_name": "Otcovo jméno",
+				"first_name": "Jméno",
+				"gender": "Rod",
+				"is_departmenthead": "Je vedoucí oddělení?",
+				"joining_date": "Datum připojení",
+				"language": "jazyk",
+				"last_name": "Příjmení",
+				"marital_status": "Stav",
+				"mobile": "mobilní, pohybliví",
+				"mother_name": "Matčino jméno",
+				"new_password": "Nové heslo",
+				"old_password": "Staré heslo",
+				"password": "Heslo",
+				"phone": "Telefon",
+				"primary_manager": "Primární manažer",
+				"profile_photo": "Profilová fotka",
+				"secondary_manager": "Sekundární manažer",
+				"select_users": "Vyberte uživatele",
+				"skype": "Skype",
+				"userid": "Uživatelské ID",
+				"username": "Uživatelské jméno"
+			},
+			"placeholders": {
+				"placeholder1": "Zadejte křestní jméno",
+				"placeholder10": "-- Zvolte jazyk --",
+				"placeholder11": "Zadejte staré heslo",
+				"placeholder12": "-- Vyberte primární správce --",
+				"placeholder13": "-- Vyberte Sekundární manažer --",
+				"placeholder14": "Zadejte adresu",
+				"placeholder2": "Zadejte příjmení",
+				"placeholder3": "Zadejte email",
+				"placeholder4": "Zadejte heslo",
+				"placeholder5": "Zadejte Potvrdit heslo",
+				"placeholder6": "- Vyberte oddělení / role -",
+				"placeholder7": "Zadejte uživatelské jméno",
+				"placeholder8": "Zadejte Skype",
+				"placeholder9": "-- Vyberte zemi --"
+			}
+		},
+		"gender_options": [
+			{
+				"label": "mužský",
+				"value": "male"
+			},
+			{
+				"label": "ženský",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "Osobní informace",
+			"head2": "požadavky",
+			"head3": "O uživateli",
+			"head4": "Kontaktní informace"
+		},
+		"inline_edit": {
+			"address": "adresa",
+			"country": "Země",
+			"dob": "DOB",
+			"father_name": "Jméno otce",
+			"first_name": "Jméno",
+			"gender": "Rod",
+			"joining_date": "Datum připojení",
+			"language": "jazyk",
+			"last_name": "Příjmení",
+			"maritial_status": "Rodinný stav",
+			"mobile": "mobilní, pohybliví",
+			"mother_name": "Jméno matky",
+			"phone": "Telefon",
+			"primary_manager": "Primární manažer",
+			"secondary_manager": "Sekundární manažer",
+			"skype": "Skype",
+			"username": "Uživatelské jméno",
+			"state": "Stát",
+			"city": "Město",
+			"postal_code": "poštovní směrovací číslo"
+		},
+		"marital_status": [
+			{
+				"label": "Ženatý",
+				"value": "married"
+			},
+			{
+				"label": "Svobodný",
+				"value": "unmarried"
+			},
+			{
+				"label": "Ovdovělý",
+				"value": "widowed"
+			},
+			{
+				"label": "Rozvedený",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "Avatar se úspěšně změnil.",
+			"create": "Uživatel byl úspěšně vytvořen.",
+			"delete": "Uživatel byl úspěšně smazán.",
+			"email_change": "Žádost o změnu e-mailu byla úspěšně odeslána. Zkontrolujte prosím doručenou poštu a změňte svůj e-mail.",
+			"import": "Uživatel byl úspěšně importován.",
+			"invite": "Pozvánka byla úspěšně odeslána.",
+			"password_change": "Žádost o změnu hesla byla úspěšně odeslána. Zkontrolujte prosím doručenou poštu a změňte svůj e-mail.",
+			"status": "Stav se úspěšně změnil.",
+			"update": "Uživatel byl úspěšně aktualizován."
+		},
+		"profile": {
+			"activities": "Činnosti",
+			"articles": "Články",
+			"comments": "Poznámky",
+			"defect_hours": "Vadné hodiny",
+			"defects": "Vady",
+			"incident_hours": "Hodiny incidentů",
+			"incidents": "Incidenty",
+			"leave_hours": "Nechte hodiny",
+			"leave_other_hours": "Odejít / jiné hodiny",
+			"meeting_hours": "Hodiny schůzky",
+			"other_hours": "Jiné hodiny",
+			"projects": "Projekty",
+			"task_hours": "Úkoly hodin",
+			"tasks": "Úkoly",
+			"total_hours": "Celkem hodin",
+			"total_messages": "Celkem zpráv"
+		},
+		"title": "Uživatele",
+		"title1": "Vytvořit uživatele",
+		"title2": "Upravit uživatele",
+		"title3": "Uživatelská oprávnění",
+		"title4": "Změnit e-mail",
+		"title5": "Změnit heslo",
+		"title6": "Importovat uživatele",
+		"title7": "Změnit Avatar"
+	},
+	"timer_logs": {
+		"title": "Spusťte časovač",
+		"title1": "Zastavit časovač",
+		"error_messages": {
+			"message1": "Nelze spustit časovač, protože již běží.",
+			"message2": "Čas musí být větší než 1 minuta.",
+			"message3": "Čas musí být kratší než 12 hodin."
+		}
+	}
+}

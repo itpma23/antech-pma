@@ -1,0 +1,3976 @@
+{
+	"Activate Account": "Activer le compte",
+	"Administration": "Administration",
+	"Announcement": "annonce",
+	"Announcements": "Annonces",
+	"Appointments": "Rendez-vous",
+	"Articles": "Des articles",
+	"Assigned Project": "Projet attribué",
+	"Backup Database": "Base de données de sauvegarde",
+	"Calendar": "Calendrier",
+	"Change Email": "Changer l'e-mail",
+	"Clients": "Les Clients",
+	"Company Detail": "Détail de l'entreprise",
+	"Complete Projects": "Projets complets",
+	"Cronjob": "Tâche planifiée",
+	"Custom Fields": "Les champs personnalisés",
+	"Dashboard": "Tableau de Bord",
+	"Dashboard Settings": "Paramètres du tableau de bord",
+	"Defect Assigned": "Défaut attribué",
+	"Defect Attachment": "Fixation des défauts",
+	"Defect Comments": "Commentaires sur les défauts",
+	"Defect Updated": "Défaut mis à jour",
+	"Defects": "Défauts",
+	"Departments": "Départements",
+	"Email Notifications": "Notifications par email",
+	"Email Settings": "Paramètres de messagerie",
+	"Email Templates": "Modèles de courrier électronique",
+	"Estimates": "Estimations",
+	"File Manager": "Gestionnaire de Fichiers",
+	"Forgot Password": "Mot de passe oublié",
+	"HRM": "Ressource humaine",
+	"Holidays": "Vacances",
+	"Incident Assigned": "Incident attribué",
+	"Incident Attachment": "Pièce jointe à l'incident",
+	"Incident Comments": "Commentaires sur l'incident",
+	"Incident Updated": "Incident mis à jour",
+	"Incidents": "Incidents",
+	"Invoices": "Factures",
+	"Items": "Articles",
+	"Knowledge Base": "Base de Connaissances",
+	"Leaves": "Feuilles",
+	"Mailbox": "Boites aux lettres",
+	"Meeting": "réunion",
+	"Meetings": "Des Réunions",
+	"Menu Allocation": "Affectation des menus",
+	"Notification Client": "Client de notification",
+	"PM": "PM",
+	"Payments": "Paiements",
+	"Project Attachment": "Attachement de projet",
+	"Project Comments": "Commentaires sur le projet",
+	"Project Management": "gestion de projet",
+	"Project Planner": "Planificateur de Projet",
+	"Projects": "Projets",
+	"Register Email": "S'inscrire par e-mail",
+	"Reports": "Rapports",
+	"Reset Password": "Réinitialiser le mot de passe",
+	"Roles": "Rôles",
+	"Sales": "Ventes",
+	"Settings": "Réglages",
+	"System Settings": "Les paramètres du système",
+	"System Update": "Mise à jour du système",
+	"Task Assigned": "Tâche assignée",
+	"Task Board": "Tableau des tâches",
+	"Task Comments": "Commentaires sur la tâche",
+	"Task Updated": "Tâche mise à jour",
+	"Tasks": "Les Tâches",
+	"Tasks Attachment": "Attachement des tâches",
+	"Taxes": "Les taxes",
+	"Team Boards": "Conseils d'équipe",
+	"Teams": "Les Équipes",
+	"Theme Settings": "Réglage des thèmes",
+	"Timesheet": "Emploi du Temps",
+	"Todos": "Todos",
+	"Users": "Utilisateurs",
+	"Welcome Email": "Courriel de bienvenue",
+	"activities": {
+		"columns": {
+			"activity": "activité",
+			"date": "Rendez-vous amoureux",
+			"description": "La description",
+			"module": "module",
+			"photo": "Photo",
+			"username": "Nom d'utilisateur"
+		},
+		"title": "Activités"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "actes",
+			"creator": "Créateur",
+			"end_date": "Date de fin",
+			"start_date": "Date de début",
+			"status": "Statut",
+			"title": "Titre"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un titre d'annonce valide.",
+				"message2": "Le titre de l'annonce peut contenir 100 caractères maximum.",
+				"message3": "Veuillez sélectionner une date de début valide.",
+				"message4": "Veuillez sélectionner une date de fin valide."
+			},
+			"fields": {
+				"all_clients": "Tous les clients",
+				"description": "La description",
+				"end_date": "Date de fin",
+				"publish": "Publier",
+				"start_date": "Date de début",
+				"status": "Statut",
+				"title": "Titre",
+				"unpublish": "Annuler la publication"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le titre de l'annonce",
+				"placeholder2": "Sélectionnez la date de début",
+				"placeholder3": "Sélectionnez la date de fin"
+			},
+			"title1": "Créer une annonce",
+			"title2": "Modifier l'annonce"
+		},
+		"messages": {
+			"create": "Annonce créée avec succès.",
+			"delete": "L'annonce a bien été supprimée.",
+			"update": "Annonce mise à jour avec succès."
+		},
+		"title": "Annonces"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "Machines à sous réservées"
+		},
+		"columns": {
+			"actions": "actes",
+			"end_time": "Heure de fin",
+			"id": "ID",
+			"location": "Emplacement",
+			"provider": "Fournisseur",
+			"requester": "Demandeur",
+			"start_time": "Heure de début",
+			"status": "Statut",
+			"title": "Titre"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez sélectionner un fournisseur valide.",
+				"message2": "Veuillez sélectionner une date de début valide.",
+				"message3": "Veuillez sélectionner une date de fin valide.",
+				"message4": "Veuillez saisir un titre de rendez-vous valide.",
+				"message5": "Le titre du rendez-vous peut contenir 255 caractères au maximum.",
+				"message6": "Veuillez sélectionner un client valide.",
+				"message7": "Veuillez entrer un participant valide.",
+				"message8": "Veuillez sélectionner un statut valide.",
+				"message9": "Veuillez sélectionner un fournisseur valide."
+			},
+			"fields": {
+				"attendees": "Participants",
+				"client": "Client",
+				"end_date": "Date de fin",
+				"location": "Emplacement",
+				"notes": "Remarques",
+				"provider": "Fournisseur",
+				"start_date": "Date de début",
+				"status": "Statut",
+				"title": "Titre"
+			},
+			"placeholders": {
+				"placeholder1": "Sélectionnez la date de début",
+				"placeholder2": "Sélectionnez la date de fin",
+				"placeholder3": "Entrez le titre du rendez-vous",
+				"placeholder4": "- Sélectionnez un client -",
+				"placeholder5": "Emplacement",
+				"placeholder6": "Participants",
+				"placeholder7": "- Sélectionnez le statut -",
+				"placeholder8": "Recherche par mois"
+			}
+		},
+		"messages": {
+			"create": "Rendez-vous créé avec succès.",
+			"delete": "Rendez-vous supprimé avec succès.",
+			"edit": "Rendez-vous modifié avec succès.",
+			"status": "Le statut a changé avec succès."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "réserve"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "confirmé"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "fini"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "Annulé"
+			}
+		],
+		"title": "Rendez-vous"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "actes",
+			"attachment": "Attachement",
+			"file_title": "Titre du fichier"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un titre de fichier unique et valide.",
+				"message2": "Déposez des fichiers ici ou cliquez pour télécharger.",
+				"message3": "Veuillez sélectionner un fichier valide.",
+				"message4": "Veuillez saisir un commentaire valide.",
+				"message5": "Le titre du fichier peut contenir 255 caractères au maximum."
+			},
+			"fields": {
+				"attachment": "Attachement",
+				"description": "La description",
+				"file_title": "Titre du fichier"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le titre du fichier"
+			}
+		},
+		"messages": {
+			"create": "La pièce jointe a bien été créée.",
+			"delete": "La pièce jointe a bien été supprimée."
+		},
+		"title": "Les pièces jointes"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "Annonces",
+			"title": "Annonces"
+		},
+		"appointments": {
+			"text": "Rendez-vous",
+			"title": "Rendez-vous"
+		},
+		"article": {
+			"text": "article",
+			"title": "article"
+		},
+		"calendar": {
+			"text": "Calendrier",
+			"title": "Calendrier"
+		},
+		"category": {
+			"text": "CATÉGORIE",
+			"title": "CATÉGORIE"
+		},
+		"clients": {
+			"text": "Les clients",
+			"title": "Les clients"
+		},
+		"dashboard": {
+			"title": "Tableau de bord"
+		},
+		"defects": {
+			"text": "Défauts",
+			"title": "Défauts"
+		},
+		"departments": {
+			"text": "Départements",
+			"title": "Départements"
+		},
+		"email_templates": {
+			"text": "Modèles de courrier électronique",
+			"title": "Modèles de courrier électronique"
+		},
+		"estimates": {
+			"text": "Estimations",
+			"title": "Estimations"
+		},
+		"file_browser": {
+			"text": "Gestionnaire de fichiers",
+			"title": "Gestionnaire de fichiers"
+		},
+		"holidays": {
+			"text": "Vacances",
+			"title": "Vacances"
+		},
+		"incidents": {
+			"text": "Incidents",
+			"title": "Incidents"
+		},
+		"invoices": {
+			"text": "Factures",
+			"title": "Factures"
+		},
+		"items": {
+			"text": "Articles",
+			"title": "Articles"
+		},
+		"knowledgebase": {
+			"text": "Base de connaissances",
+			"title": "Base de connaissances"
+		},
+		"leave_types": {
+			"text": "Types de congé",
+			"title": "Types de congé"
+		},
+		"leaves": {
+			"text": "Feuilles",
+			"title": "Feuilles"
+		},
+		"mailbox": {
+			"text": "Boites aux lettres",
+			"title": "Boites aux lettres"
+		},
+		"meetings": {
+			"text": "Des réunions",
+			"title": "Des réunions"
+		},
+		"payments": {
+			"text": "Paiements",
+			"title": "Paiements"
+		},
+		"projects": {
+			"text": "Projets",
+			"title": "Projets"
+		},
+		"projects_planner": {
+			"text": "Planificateur de projet",
+			"title": "Planificateur de projet"
+		},
+		"providers": {
+			"text": "Fournisseurs",
+			"title": "Fournisseurs"
+		},
+		"reports": {
+			"text": "rapports",
+			"title": "rapports"
+		},
+		"roles": {
+			"text": "Rôles",
+			"title": "Rôles"
+		},
+		"settings": {
+			"text": "Réglages",
+			"title": "Réglages"
+		},
+		"taskboard": {
+			"text": "Tableau des tâches",
+			"title": "Tableau des tâches"
+		},
+		"tasks": {
+			"text": "les tâches",
+			"title": "les tâches"
+		},
+		"taxes": {
+			"text": "Les taxes",
+			"title": "Les taxes"
+		},
+		"teamboard": {
+			"text": "Conseil de l'équipe",
+			"title": "Conseil de l'équipe"
+		},
+		"teams": {
+			"text": "les équipes",
+			"title": "les équipes"
+		},
+		"timesheet": {
+			"text": "Emploi du temps",
+			"title": "Emploi du temps"
+		},
+		"todos": {
+			"text": "Todos",
+			"title": "Todos"
+		},
+		"users": {
+			"text": "utilisateurs",
+			"title": "utilisateurs"
+		}
+	},
+	"calendar": {
+		"day": "journée",
+		"month": "mois",
+		"title": "Calendrier",
+		"today": "Aujourd'hui",
+		"week": "La semaine"
+	},
+	"clients": {
+		"columns": {
+			"actions": "actes",
+			"company_email": "Email de l'entreprise",
+			"company_name": "Nom de la compagnie",
+			"departments_roles": "Départements / Rôles",
+			"first_name": "Prénom",
+			"last_name": "Nom de famille",
+			"photo": "Photo",
+			"status": "Statut",
+			"username": "Nom d'utilisateur"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez entrer un prénom valide.",
+				"message10": "Le mot de passe et la confirmation du mot de passe ne correspondent pas.",
+				"message12": "Le numéro de téléphone doit être un numéro valide.",
+				"message14": "Le numéro de mobile doit être un numéro valide.",
+				"message15": "Veuillez entrer un site Web d'entreprise valide.",
+				"message17": "Veuillez saisir un ID généré par le client valide.",
+				"message18": "Veuillez saisir un identifiant d'emploi valide.",
+				"message19": "Merci d'entrer un nom d'utilisateur valide.",
+				"message2": "Le prénom peut contenir 20 caractères maximum.",
+				"message20": "Le nom d'utilisateur peut contenir de 3 à 30 caractères maximum sans espaces blancs.",
+				"message21": "Veuillez saisir un numéro de téléphone portable valide.",
+				"message22": "S'il vous plaît entrer un numéro de téléphone valide.",
+				"message23": "Déposez des fichiers ici ou cliquez pour télécharger.",
+				"message24": "Veuillez sélectionner un service valide avec des rôles.",
+				"message3": "Veuillez saisir un nom de famille valide.",
+				"message4": "Le nom de famille peut contenir 20 caractères maximum.",
+				"message5": "S'il vous plaît entrer un email valide.",
+				"message6": "L'e-mail peut être une adresse e-mail valide.",
+				"message7": "Entrer un mot de passe valide s'il vous plait.",
+				"message8": "Le mot de passe peut contenir de 3 à 30 caractères au maximum.",
+				"message9": "Veuillez saisir un mot de passe de confirmation valide."
+			},
+			"fields": {
+				"address": "adresse",
+				"client_ID": "identité du client",
+				"company_address": "Adresse de la société",
+				"company_city": "Ville de l'entreprise",
+				"company_country": "Pays de l'entreprise",
+				"company_email": "Email de l'entreprise",
+				"company_fax": "Fax de l'entreprise",
+				"company_mobile": "Mobile d'entreprise",
+				"company_name": "Nom de la compagnie",
+				"company_phone": "téléphone de l'entreprise",
+				"company_website": "site Web d'entreprise",
+				"confirm_password": "Confirmez le mot de passe",
+				"country": "Pays",
+				"departments_roles": "Départements / Rôles",
+				"email": "Email",
+				"facebook_URL": "L'adresse URL de Facebook",
+				"first_name": "Prénom",
+				"hosting_company": "Société d'hébergement",
+				"language": "La langue",
+				"last_name": "Nom de famille",
+				"linkedIn_URL": "URL LinkedIn",
+				"mobile": "Mobile",
+				"password": "Mot de passe",
+				"phone": "Téléphone",
+				"port": "Port",
+				"profile_photo": "Photo de profil",
+				"skype": "Skype",
+				"twitter_URL": "URL Twitter",
+				"username": "Nom d'utilisateur",
+				"zip_code": "Code postal"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez votre prénom",
+				"placeholder10": "Entrez le code postal de l'entreprise",
+				"placeholder11": "Entrez le fax de l'entreprise",
+				"placeholder12": "Entrez le site Web de l'entreprise",
+				"placeholder13": "Entrez Skype entreprise",
+				"placeholder14": "Entrez l'adresse de l'entreprise",
+				"placeholder15": "Entrer dans la société d'hébergement",
+				"placeholder16": "Entrez le nom d'utilisateur d'hébergement",
+				"placeholder17": "Entrez le mot de passe d'hébergement",
+				"placeholder18": "Entrez le port d'hébergement",
+				"placeholder19": "Saisissez votre nom d'utilisateur",
+				"placeholder2": "Entrer le nom de famille",
+				"placeholder20": "Entrez Skype",
+				"placeholder21": "-- Choisissez le pays --",
+				"placeholder22": "-- Choisir la langue --",
+				"placeholder23": "- Sélectionnez les départements / rôles -",
+				"placeholder24": "Entrez l'URL de Facebook",
+				"placeholder25": "Entrez l'URL Twitter",
+				"placeholder26": "Entrez l'URL LinkedIn",
+				"placeholder27": "Entrer l'adresse",
+				"placeholder3": "Entrer email",
+				"placeholder4": "Entrer le mot de passe",
+				"placeholder5": "Entrez le mot de passe de confirmation",
+				"placeholder6": "Entrez le nom de l'entreprise",
+				"placeholder7": "Entrez le courriel de l'entreprise",
+				"placeholder8": "- Sélectionnez le pays de l'entreprise -",
+				"placeholder9": "Entrez la ville de l'entreprise"
+			}
+		},
+		"headings": {
+			"head1": "Informations personnelles",
+			"head2": "Information d'entreprise",
+			"head3": "Informations d'hébergement",
+			"head4": "À propos du client",
+			"head5": "Coordonnées et bio",
+			"head6": "Exigences",
+			"head7": "Infos sociales"
+		},
+		"inline_edit": {
+			"first_name": "Prénom",
+			"last_name": "Nom de famille"
+		},
+		"messages": {
+			"create": "Le client a été créé avec succès.",
+			"delete": "Le client a bien été supprimé.",
+			"invite": "Invitation envoyée avec succès.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Le client a été mis à jour avec succès."
+		},
+		"title": "Les Clients",
+		"title1": "Créer un client",
+		"title2": "Modifier le client"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "Ajouter un commentaire",
+			"button2": "Répondre"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un commentaire valide.",
+				"message2": "Déposez des fichiers ici ou cliquez pour télécharger."
+			},
+			"placeholders": {
+				"placeholder1": "Entrez un commentaire",
+				"placeholder2": "Répondre Commentaire"
+			}
+		},
+		"messages": {
+			"create": "Commentaire créé avec succès.",
+			"delete": "Le commentaire a bien été supprimé.",
+			"update": "Commentaire mis à jour avec succès."
+		},
+		"title": "commentaires"
+	},
+	"common": {
+		"12_hours": "12 heures",
+		"24_hours": "24 heures",
+		"action": "action",
+		"actions": "actes",
+		"add": "Ajouter",
+		"add_to_timesheet": "Ajouter à la feuille de temps",
+		"apply": "appliquer",
+		"assign": "Attribuer",
+		"back": "Retour",
+		"calendar": "Calendrier",
+		"calendar_view": "Vue du calendrier",
+		"cancel": "annuler",
+		"change": "Changement",
+		"close": "Fermer",
+		"comment": "Commentaire",
+		"copy": "Copie",
+		"create": "Créer",
+		"create_comment": "Créer un commentaire",
+		"created": "Créé",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": ": activer pour trier la colonne en ordre croissant",
+				"sSortDescending": ": activer pour trier la colonne en ordre décroissant"
+			},
+			"oPaginate": {
+				"sFirst": "Premier",
+				"sLast": "Dernier",
+				"sNext": "Suivant",
+				"sPrevious": "précédent"
+			},
+			"sEmptyTable": "Aucune donnée disponible",
+			"sInfo": "Affichage de _START_ à _END_ sur _TOTAL_ entrées",
+			"sInfoEmpty": "Affiche 0 à 0 de 0 entrées",
+			"sInfoFiltered": "(filtré du nombre d'entrées _MAX_)",
+			"sInfoPostFix": "",
+			"sInfoThousands": ",",
+			"sLengthMenu": "Afficher le _MENU_",
+			"sLoadingRecords": "Chargement...",
+			"sProcessing": "En traitement...",
+			"sSearchPlaceholder": "Chercher ...",
+			"sZeroRecords": "Aucun enregistrements correspondants trouvés"
+		},
+		"days": "Journées",
+		"delete": "Effacer",
+		"detail": "Détail",
+		"details": "Détails",
+		"download": "Télécharger",
+		"drag_file": "Faites glisser un fichier ou parcourez",
+		"edit": "modifier",
+		"empty_message": {
+			"activities": "Il n'y a aucune activité",
+			"announcements": "Il n'y a aucune annonce.",
+			"articles": "Il n'y a aucun article.",
+			"attachments": "Il n'y a aucune pièce jointe.",
+			"categories": "Il n'y a aucune catégorie.",
+			"clients": "Il n'y a aucun client.",
+			"custom_fields": "Il n'y a aucun champ personnalisé.",
+			"database_backups": "Il n'y a aucune sauvegarde de base de données.",
+			"defects": "Il n'y a aucun défaut.",
+			"departments": "Il n'y a aucun département.",
+			"estimates": "Il n'y a aucune estimation.",
+			"file_browser": "Il n'y a aucun dossier / fichier.",
+			"histories": "Il n'y a aucune histoire.",
+			"holidays": "Il n'y a pas de vacances.",
+			"incidents": "Il n'y a aucun incident.",
+			"invoices": "Il n'y a aucune facture.",
+			"leaves": "Il n'y a pas de feuilles.",
+			"mails": "Il n'y a aucun courrier.",
+			"meetings": "Il n'y a aucune réunion.",
+			"notifications": "Il n'y a aucune notification.",
+			"projects": "Il n'y a aucun projet.",
+			"providers": "Il n'y a aucun fournisseur.",
+			"roles": "Il n'y a aucun rôle.",
+			"sprints": "Il n'y a pas de sprint.",
+			"tasks": "Il n'y a aucune tâche.",
+			"teams": "Il n'y a pas d'équipes.",
+			"timesheet": "Il n'y a pas de feuille de temps.",
+			"todos": "Il n'y a aucun todos.",
+			"translations": "Il n'y a aucune traduction.",
+			"users": "Il n'y a aucun utilisateur."
+		},
+		"error_messages": {
+			"message1": "Vous ne disposez peut-être pas des autorisations appropriées pour accéder au fichier ou aux ressources.",
+			"message2": "Utilisateur non autorisé - En cas d'expiration du jeton d'authentification.",
+			"message3": "En cas de jeton d'authentification expiré.",
+			"message4": "Désolé, mais la page que vous cherchiez est introuvable.",
+			"message5": "Quelque chose s'est mal passé!",
+			"message6": "Vous vous êtes déconnecté avec succès."
+		},
+		"errors_keys": {
+			"key1": "L'accès est refusé",
+			"key2": "Mauvaise Demande",
+			"key3": "Non autorisé",
+			"key4": "L'accès est refusé",
+			"key5": "Pas trouvé",
+			"key6": "Entité non traitable"
+		},
+		"false": "Faux",
+		"fullscreen": "Plein écran",
+		"hours": "heures",
+		"import": "Importation",
+		"invite": "Inviter",
+		"issues": "Problèmes",
+		"kanban": "Kanban",
+		"last_updated": "Dernière mise à jour",
+		"list": "liste",
+		"lists": "Vue liste",
+		"methods": "Les méthodes",
+		"move": "Bouge toi",
+		"new": "Nouveau",
+		"not_allowed": "Non consentito nella demo.",
+		"offline": "Hors ligne",
+		"online": "En ligne",
+		"options": "Options",
+		"overdue": "en retard",
+		"pending": "en attendant",
+		"placeholders": {
+			"placeholder1": "- Sélectionnez un projet -"
+		},
+		"priorities": {
+			"high": "Haute",
+			"low": "Faible",
+			"medium": "Moyen",
+			"urgent": "Urgent",
+			"very_high": "Très haut"
+		},
+		"profile": "Profil",
+		"remove": "Retirer",
+		"remove_file": "Effacer le fichier",
+		"report": "rapport",
+		"request": "Demande",
+		"reset": "Réinitialiser",
+		"restore": "Restaurer",
+		"save": "sauvegarder",
+		"search": "Chercher ...",
+		"show": "Spectacle",
+		"status": {
+			"In Progress": "En cours",
+			"Not Started": "Pas commencé",
+			"On Hold": "EN ATTENTE",
+			"accepted": "Accepté",
+			"active": "actif",
+			"all": "Tout",
+			"approved": "Approuvé",
+			"assigned": "Attribué",
+			"cancel": "annuler",
+			"canceled": "Annulé",
+			"closed": "Fermé",
+			"completed": "Terminé",
+			"confirmed": "confirmé",
+			"deactive": "Désactivé",
+			"declined": "Diminué",
+			"deferred": "Différé",
+			"draft": "Brouillon",
+			"error": "erreur",
+			"expired": "Expiré",
+			"finished": "fini",
+			"in_progress": "En cours",
+			"inactive": "Inactif",
+			"my": "Ma",
+			"on_hold": "EN ATTENTE",
+			"open": "Ouvrir",
+			"overdue": "en retard",
+			"paid": "Payé",
+			"partially_paid": "Partiellement payé",
+			"pending": "en attendant",
+			"published": "Publié",
+			"rejected": "Rejetée",
+			"released": "Libéré",
+			"reopen": "ROUVRIR",
+			"reserved": "réserve",
+			"sent": "Envoyée",
+			"solved": "Résolu",
+			"success": "Succès",
+			"taken": "Prise",
+			"total": "Total",
+			"unpaid": "Non payé",
+			"unpublished": "Non publié",
+			"waiting": "Attendre"
+		},
+		"submit": "Soumettre",
+		"swal": {
+			"cancelButtonText": "Non, garde le !",
+			"confirmButtonText": "Oui, supprimez-le !",
+			"text": "Vous ne pourrez pas récupérer ce",
+			"text1": "Vous ne pourrez pas récupérer ce département !. Avant de supprimer, assurez-vous d'avoir supprimé tous les utilisateurs liés à ce service.",
+			"text2": "Vous ne pourrez pas récupérer cet utilisateur !. Avant de supprimer, assurez-vous d'avoir supprimé l'utilisateur des équipes, projets, tâches, défauts et incidents, etc.",
+			"text3": "Vous ne pourrez pas récupérer ce client !. Avant de supprimer, assurez-vous d'avoir supprimé le client des équipes, projets, tâches, défauts et incidents, etc.",
+			"text4": "Vous ne pourrez pas récupérer ce projet !. Avant la suppression, assurez-vous d'avoir supprimé toutes les tâches, défauts et incidents liés à ce projet.",
+			"title": "Êtes-vous sûr?"
+		},
+		"switch_to_calendar": "Passer au calendrier",
+		"switch_to_kanban": "Passer à Kanban",
+		"switch_to_list": "Passer à la liste",
+		"test": "Tester",
+		"toggle_dropdown": "Toggle Dropdown",
+		"tooltip": {
+			"project_csv_sample": "Exemple de projet CSV",
+			"task_csv_sample": "Exemple de tâche CSV",
+			"team_csv_sample": "Exemple d'équipe CSV",
+			"user_csv_sample": "Exemple de CSV utilisateur"
+		},
+		"total": "Total",
+		"true": "Vrai",
+		"unassign": "Annuler l'attribution",
+		"unassigned": "Non attribué",
+		"update": "Mettre à jour",
+		"updated": "mis à jour",
+		"upload": "Téléverser un fichier",
+		"view": "Vue",
+		"view_comments": "Voir les commentaires",
+		"view_more": "Voir plus"
+	},
+	"customFieldsType": [
+		{
+			"label": "Texte",
+			"value": "text"
+		},
+		{
+			"label": "Zone de texte",
+			"value": "textarea"
+		},
+		{
+			"label": "Menu déroulant",
+			"value": "dropdown"
+		},
+		{
+			"label": "Date",
+			"value": "date"
+		},
+		{
+			"label": "Case à cocher",
+			"value": "checkbox"
+		},
+		{
+			"label": "Numérique",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "ÉTAT DES TÂCHES",
+		"chart2": "L'état du projet",
+		"chart3": "Rapport mensuel",
+		"estimate": "Estimations",
+		"invoices": "Principales factures dues",
+		"widgets": {
+			"approved_request": "Approuvé",
+			"due_payment": "Du",
+			"received_request": "reçu",
+			"recieved_payment": "reçu"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "actes",
+			"actual_hours": "Heures",
+			"assigned": "Attribué",
+			"assigned_group": "Groupe affecté",
+			"creator": "Créateur",
+			"defect_name": "Nom du défaut",
+			"end_date": "Date de fin",
+			"id": "Id",
+			"project": "Projet",
+			"project_version": "Version du projet",
+			"severity": "Gravité",
+			"start_date": "Date de début",
+			"status": "Statut",
+			"type": "Type"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de défaut unique et valide.",
+				"message10": "Déposez des fichiers ici ou cliquez pour télécharger.",
+				"message11": "Veuillez sélectionner une date de début valide.",
+				"message12": "Veuillez sélectionner une date de fin valide.",
+				"message13": "Les heures estimées ne permettent que des chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial.",
+				"message2": "Le nom du défaut peut contenir 255 caractères au maximum.",
+				"message3": "Veuillez saisir un ID généré par défaut unique et valide.",
+				"message4": "Veuillez sélectionner un type de défaut valide.",
+				"message5": "Veuillez sélectionner un état de défaut valide.",
+				"message6": "Veuillez sélectionner une gravité de défaut valide.",
+				"message8": "Veuillez sélectionner un projet valide."
+			},
+			"fields": {
+				"actual_hours": "Heures réelles",
+				"assigned_To": "Assigné à",
+				"assigned_group": "Groupe affecté",
+				"choose_file": "Choisir le dossier",
+				"completed": "Terminé",
+				"created_by": "Créé par",
+				"defect_ID": "ID de défaut",
+				"defect_name": "Nom du défaut",
+				"defect_type": "Type de défaut",
+				"description": "La description",
+				"end_date": "Date de fin",
+				"estimate_hours": "Heures estimées",
+				"project_name": "Nom du projet",
+				"project_version": "Version du projet",
+				"severity": "Gravité",
+				"start_date": "Date de début",
+				"status": "Statut"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom du défaut",
+				"placeholder2": "- Sélectionnez le type de défaut -",
+				"placeholder3": "- Sélectionnez le statut du défaut -",
+				"placeholder4": "- Sélectionnez la gravité du défaut -",
+				"placeholder5": "- Sélectionnez le groupe affecté -",
+				"placeholder6": "- Sélectionnez un projet -",
+				"placeholder7": "- Sélectionnez la version du projet -",
+				"placeholder8": "Sélectionnez la date de début",
+				"placeholder9": "Sélectionnez la date de fin"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "Défauts",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Renforcement",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "Les champs personnalisés",
+			"title2": "La description"
+		},
+		"headings": {
+			"head1": "Informations sur les défauts",
+			"head2": "Informations sur le projet",
+			"head3": "Télécharger des fichiers",
+			"head4": "Les champs personnalisés",
+			"head5": "La description"
+		},
+		"inline_edit": {
+			"defect_name": "Nom du défaut",
+			"defect_type": "Type de défaut",
+			"description": "La description",
+			"estimate_hours": "Heures estimées",
+			"notes": "Remarques"
+		},
+		"messages": {
+			"create": "Défaut créé avec succès.",
+			"delete": "Le défaut a bien été supprimé.",
+			"severity": "Gravité mise à jour avec succès.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Le défaut a été mis à jour avec succès."
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Faible"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Moyen"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Haute"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Très haut"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Urgent"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "Attribué"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "Fermé"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "En cours"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "Résolu"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "ROUVRIR"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "Différé"
+			}
+		],
+		"title": "Défauts",
+		"title1": "Créer un défaut",
+		"title2": "Modifier le défaut",
+		"tooltips": {
+			"attachment": "Attachement"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "actes",
+			"designation": "La désignation"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de service valide.",
+				"message2": "Le nom du département peut contenir 20 caractères maximum.",
+				"message3": "Veuillez sélectionner un rôle de département valide."
+			},
+			"fields": {
+				"department": "département",
+				"department_name": "Nom du département",
+				"department_roles": "Rôles des départements",
+				"designation": "La désignation",
+				"permission": "Autorisation"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom du département"
+			}
+		},
+		"messages": {
+			"create": "Département créé avec succès.",
+			"delete": "Département supprimé avec succès.",
+			"update": "Service mis à jour avec succès."
+		},
+		"title": "Départements",
+		"title1": "Département de détail",
+		"title2": "Rôle du département",
+		"tooltip": {
+			"tooltip1": "Sélectionner toutes les autorisations",
+			"tooltip10": "Tout sélectionner",
+			"tooltip11": "Autorisation",
+			"tooltip2": "Si vous sélectionnez créer / modifier / supprimer, pas besoin de sélectionner la vue",
+			"tooltip3": "Sélectionner tout Créer",
+			"tooltip4": "Sélectionner tout Modifier",
+			"tooltip5": "Sélectionner tout Supprimer",
+			"tooltip6": "sélectionner",
+			"tooltip7": "Peut créer",
+			"tooltip8": "Peut éditer",
+			"tooltip9": "Peut supprimer"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "Client",
+			"estimate_date": "Rendez-vous amoureux",
+			"estimate_number": "Estimation",
+			"status": "Statut",
+			"total_amount": "Montant",
+			"valid_till": "Valable jusqu'au"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez sélectionner un client valide.",
+				"message2": "Veuillez sélectionner une date d'estimation valide.",
+				"message3": "Veuillez sélectionner une date d'expiration valide.",
+				"message4": "Veuillez sélectionner un statut valide.",
+				"message5": "Veuillez ajouter au moins un élément.",
+				"message6": "Entrez l'article, la quantité et le prix unitaire.",
+				"message7": "Veuillez sélectionner un type de réduction valide."
+			},
+			"fields": {
+				"adjustment": "Ajustement",
+				"customer": "Client",
+				"discount": "Remise",
+				"discount_type": "Type de remise",
+				"estimate_date": "Date estimée",
+				"estimate_number": "Numéro d'estimation",
+				"item_description": "La description",
+				"item_name": "article",
+				"item_tax": "Impôt",
+				"quantity": "qté",
+				"reference": "Référence",
+				"status": "Statut",
+				"sub_total": "Total partiel",
+				"total_amount": "Total",
+				"total_item_amount": "Montant",
+				"unit": "Unité",
+				"unit_price": "Prix unitaire",
+				"valid_till": "Date d'expiration"
+			},
+			"placeholders": {
+				"placeholder1": "- Sélectionner un client -",
+				"placeholder10": "qté",
+				"placeholder11": "Prix unitaire",
+				"placeholder12": "- Sélectionnez Taxe -",
+				"placeholder2": "Sélectionnez la date estimée",
+				"placeholder3": "Sélectionnez la date d'expiration",
+				"placeholder4": "Entrez la référence",
+				"placeholder5": "- Sélectionnez le type de remise -",
+				"placeholder6": "- Sélectionnez le statut -",
+				"placeholder7": "-- Sélectionnez l'élément --",
+				"placeholder8": "article",
+				"placeholder9": "La description"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Pour cent"
+			},
+			{
+				"id": "fixed",
+				"label": "Fixé"
+			}
+		],
+		"headings": {
+			"head1": "Informations concernant le client",
+			"head2": "Rendez-vous",
+			"head3": "Autre info",
+			"head4": "Informations sur les articles"
+		},
+		"inline_edit": {
+			"item_description": "La description",
+			"item_name": "article",
+			"item_tax": "Impôt",
+			"quantity": "qté",
+			"unit_price": "Prix unitaire"
+		},
+		"messages": {
+			"create": "Estimation créée avec succès.",
+			"delete": "Estimation supprimée avec succès.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Estimation mise à jour avec succès."
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "Brouillon"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "Envoyé"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "EXPIRÉ"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "Diminué"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "Accepté"
+			}
+		],
+		"title": "Estimations",
+		"title1": "Estimation !",
+		"title2": "Créer une estimation",
+		"title3": "Mettre à jour l'estimation",
+		"title4": "Estimation",
+		"view": {
+			"accept": "Acceptez",
+			"accepted": "Accepté",
+			"balance_due": "Solde dû",
+			"bill_to": "Facturer",
+			"decline": "Déclin",
+			"declined": "Diminué",
+			"download": "Télécharger",
+			"draft": "Brouillon",
+			"due_date": "Date d'échéance",
+			"due_on_receipt": "En raison de la réception",
+			"estimate_date": "Date estimée",
+			"expired": "EXPIRÉ",
+			"sent": "Envoyé",
+			"terms": "termes et conditions",
+			"total_due": "Total dû"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "actes",
+			"name": "Prénom",
+			"progress": "le progrès",
+			"size": "Taille",
+			"status": "Statut"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de dossier valide.",
+				"message2": "Faites glisser ici pour télécharger ...",
+				"message3": "Veuillez saisir un nom de fichier valide."
+			},
+			"fields": {
+				"description": "La description",
+				"file_name": "Nom de fichier",
+				"folder_name": "Nom de dossier"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom du dossier",
+				"placeholder2": "Entrez la description",
+				"placeholder3": "Entrez le nom du fichier"
+			}
+		},
+		"messages": {
+			"create_folder": "Dossier créé avec succès.",
+			"delete_file": "Le fichier a bien été supprimé.",
+			"delete_folder": "Le dossier a bien été supprimé.",
+			"update_file": "Fichier mis à jour avec succès.",
+			"update_folder": "Dossier mis à jour avec succès.",
+			"upload_file": "Fichier téléchargé avec succès."
+		},
+		"title": "Gestionnaire de Fichiers",
+		"title1": "Créer le dossier",
+		"title2": "Modifier le dossier",
+		"title3": "Télécharger des fichiers",
+		"title4": "Editer le fichier",
+		"title5": "Fichier",
+		"title6": "Dossier",
+		"title7": "Ajoutée"
+	},
+	"footer": {
+		"copyright": "droits d'auteur",
+		"text1": "Tous les droits sont réservés"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "S'il vous plaît entrer un email valide.",
+				"message2": "L'e-mail doit être une adresse e-mail valide."
+			},
+			"placeholders": {
+				"placeholder1": "Entrer email"
+			}
+		},
+		"messages": {
+			"success": "Veuillez consulter votre courrier électronique pour savoir comment réinitialiser votre mot de passe."
+		},
+		"title": "Mot de passe oublié",
+		"title1": "Veuillez saisir votre adresse e-mail ci-dessous et nous vous enverrons des informations pour changer votre mot de passe."
+	},
+	"header": {
+		"heading": {
+			"head1": "tu as",
+			"head2": "nouveaux mails",
+			"head3": "Voir tous les mails",
+			"head4": "MISE À JOUR DISPONIBLE"
+		},
+		"inbox": "Ma boîte de réception",
+		"languages": "Les langues",
+		"logout": "Connectez - Out",
+		"mails": "Mails",
+		"notifications": "Les notifications",
+		"profile": "Profil",
+		"search": {
+			"text": "Cherche ici ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "activité",
+			"closed_by": "Fermé par",
+			"commentor": "Commenteur",
+			"creator": "Créateur",
+			"date": "Rendez-vous amoureux",
+			"solved_by": "Résolu par",
+			"updated_by": "Mis à jour par"
+		},
+		"title": "Histoires"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "actes",
+			"color": "Couleur",
+			"date": "Rendez-vous amoureux",
+			"event_name": "Nom de l'événement",
+			"location": "Emplacement"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom d'événement valide.",
+				"message2": "Le nom de l'événement peut contenir 50 caractères maximum.",
+				"message3": "S'il vous plaît sélectionnez une date valide."
+			},
+			"fields": {
+				"color": "Couleur",
+				"date": "Rendez-vous amoureux",
+				"description": "La description",
+				"event_name": "Nom de l'événement",
+				"location": "Emplacement"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de l'événement",
+				"placeholder2": "Sélectionner une date",
+				"placeholder3": "Entrez l'emplacement"
+			}
+		},
+		"inline_edit": {
+			"event_name": "Nom de l'événement",
+			"holiday_date": "Date de vacances",
+			"location": "Emplacement"
+		},
+		"messages": {
+			"create": "Vacances créées avec succès.",
+			"delete": "Vacances supprimées avec succès.",
+			"update": "Vacances mises à jour avec succès."
+		},
+		"title": "Vacances"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "actes",
+			"actual_hours": "Heures",
+			"assigned": "Attribué",
+			"assigned_group": "Groupe affecté",
+			"client": "Client",
+			"client_company": "Société cliente",
+			"creator": "Créateur",
+			"end_date": "Date de fin",
+			"id": "Id",
+			"incident_name": "Nom de l'incident",
+			"priority": "Priorité",
+			"project": "Projet",
+			"project_version": "Version du projet",
+			"start_date": "Date de début",
+			"status": "Statut",
+			"type": "Type"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom d'incident unique et valide.",
+				"message2": "Le nom de l'incident peut contenir 255 caractères au maximum.",
+				"message3": "Veuillez saisir un ID généré par l'incident unique et valide.",
+				"message4": "Veuillez sélectionner un statut d'incident valide.",
+				"message5": "Veuillez sélectionner une priorité d'incident valide.",
+				"message6": "Veuillez sélectionner un type d'incident valide.",
+				"message7": "Veuillez sélectionner une date de début valide.",
+				"message8": "Veuillez sélectionner une date de fin valide.",
+				"message9": "Les heures estimées ne permettent que des chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial."
+			},
+			"fields": {
+				"actual_hours": "Heures réelles",
+				"assigned_To": "Assigné à",
+				"assigned_group": "Groupe affecté",
+				"created_by": "Créé par",
+				"description": "La description",
+				"end_date": "Date de fin",
+				"estimate_hours": "Heures estimées",
+				"incident_ID": "ID d'incident",
+				"incident_name": "Nom de l'incident",
+				"incident_type": "Type d'incident",
+				"priority": "Priorité",
+				"project": "Projet",
+				"project_name": "Nom du projet",
+				"project_version": "Version du projet",
+				"start_date": "Date de début",
+				"status": "Statut"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de l'incident",
+				"placeholder2": "- Sélectionnez le statut de l'incident -",
+				"placeholder3": "- Sélectionnez la priorité de l'incident -",
+				"placeholder4": "- Sélectionnez le type d'incident -",
+				"placeholder5": "- Sélectionnez le groupe affecté -",
+				"placeholder6": "- Sélectionnez un projet -",
+				"placeholder7": "- Sélectionnez la version du projet -",
+				"placeholder8": "Sélectionnez la date de début",
+				"placeholder9": "Sélectionnez la date de fin"
+			}
+		},
+		"details": {
+			"title1": "Les champs personnalisés",
+			"title2": "La description"
+		},
+		"headings": {
+			"head1": "Informations sur l'incident",
+			"head2": "Informations sur le projet",
+			"head3": "Les champs personnalisés",
+			"head4": "La description",
+			"head5": "Autre info"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "Demande de service",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Demande d'information",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "La description",
+			"estimate_hours": "Heures estimées",
+			"incident_name": "Nom de l'incident",
+			"incident_type": "Type d'incident",
+			"notes": "Remarques"
+		},
+		"messages": {
+			"create": "Incident créé avec succès.",
+			"delete": "L'incident a bien été supprimé.",
+			"import": "Incident importé avec succès.",
+			"priority": "La priorité a bien changé.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Incident mis à jour avec succès."
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "Faible"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "Moyen"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Haute"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "Très haut"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "Urgent"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "Attribué"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "En cours"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "Résolu"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "Différé"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "ROUVRIR"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "Fermé"
+			}
+		],
+		"title": "Incidents",
+		"title1": "Créer un incident",
+		"title2": "Modifier l'incident"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "Client",
+			"due_date": "Date d'échéance",
+			"invoice_date": "Rendez-vous amoureux",
+			"invoice_number": "Facture d'achat",
+			"status": "Statut",
+			"total_amount": "Montant"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez sélectionner un client valide.",
+				"message2": "Veuillez sélectionner une date de facturation valide.",
+				"message3": "Veuillez sélectionner une date d'échéance valide.",
+				"message4": "Veuillez sélectionner un statut valide.",
+				"message5": "Veuillez ajouter au moins un élément.",
+				"message6": "Entrez l'article, la quantité et le prix unitaire.",
+				"message7": "Veuillez sélectionner un type de réduction valide."
+			},
+			"fields": {
+				"adjustment": "Ajustement",
+				"customer": "Client",
+				"discount": "Remise",
+				"discount_type": "Type de remise",
+				"due_date": "Date d'échéance",
+				"invoice_date": "Date de facturation",
+				"invoice_number": "Numéro de facture",
+				"item_description": "La description",
+				"item_name": "article",
+				"item_tax": "Impôt",
+				"project": "Projet",
+				"quantity": "qté",
+				"reference": "Référence",
+				"status": "Statut",
+				"sub_total": "Total partiel",
+				"total_amount": "Total",
+				"total_amount_due": "Montant dû",
+				"total_item_amount": "Montant",
+				"unit": "Unité",
+				"unit_price": "Prix unitaire"
+			},
+			"placeholders": {
+				"placeholder1": "- Sélectionner un client -",
+				"placeholder10": "qté",
+				"placeholder11": "Prix unitaire",
+				"placeholder12": "- Sélectionnez Taxe -",
+				"placeholder13": "- Sélectionnez un projet -",
+				"placeholder2": "Sélectionnez la date de la facture",
+				"placeholder3": "Sélectionnez la date d'échéance",
+				"placeholder4": "Entrez la référence",
+				"placeholder5": "- Sélectionnez le type de remise -",
+				"placeholder6": "- Sélectionnez le statut -",
+				"placeholder7": "-- Sélectionnez l'élément --",
+				"placeholder8": "article",
+				"placeholder9": "La description"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "Pour cent"
+			},
+			{
+				"id": "fixed",
+				"label": "Fixé"
+			}
+		],
+		"headings": {
+			"head1": "Informations concernant le client",
+			"head2": "Rendez-vous",
+			"head3": "Autre info",
+			"head4": "Informations sur les articles"
+		},
+		"inline_edit": {
+			"item_description": "La description",
+			"item_name": "article",
+			"item_tax": "Impôt",
+			"quantity": "qté",
+			"unit_price": "Prix unitaire"
+		},
+		"messages": {
+			"create": "La facture a bien été créée.",
+			"delete": "La facture a bien été supprimée.",
+			"payments": "Aucun paiement trouvé pour cette facture",
+			"status": "Le statut a changé avec succès.",
+			"update": "La facture a bien été mise à jour."
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "Payé"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "Partiellement payé"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "Non payé"
+			}
+		],
+		"title": "Factures",
+		"title1": "Facture d'achat !",
+		"title2": "Créer une facture",
+		"title3": "Mettre à jour la facture",
+		"title4": "Facture d'achat",
+		"view": {
+			"add_payment": "Ajouter un paiement",
+			"amount": "Montant",
+			"balance_due": "Solde dû",
+			"bank": "Banque",
+			"bill_to": "Facturer",
+			"date": "Rendez-vous amoureux",
+			"download": "Télécharger",
+			"due_amount": "Montant dû",
+			"due_date": "Date d'échéance",
+			"due_on_receipt": "En raison de la réception",
+			"gst_number": "TPS EN",
+			"invoice_date": "Date de facturation",
+			"offline_payment": "Paiement hors ligne",
+			"online_payment": "Paiement en ligne",
+			"paid": "Payé",
+			"partially_paid": "Partiellement payé",
+			"payment": "Paiement",
+			"payment_mode": "Mode de paiement",
+			"paypal": "Pay Pal",
+			"status": "Statut",
+			"stripe": "Bande",
+			"terms": "termes et conditions",
+			"total_due": "Total dû",
+			"transactions": "Transactions",
+			"unpaid": "Non payé"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "La description",
+			"name": "Nom de l'article",
+			"price": "Prix",
+			"tax": "Impôt",
+			"unit": "Unité"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom d'article unique et valide.",
+				"message2": "Veuillez saisir un prix valide.",
+				"message3": "Le prix doit être un nombre."
+			},
+			"fields": {
+				"description": "La description",
+				"name": "Nom de l'article",
+				"price": "Prix",
+				"tax": "Impôt",
+				"unit": "Unité"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de l'article",
+				"placeholder2": "Entrez le prix",
+				"placeholder3": "Entrer dans l'unité",
+				"placeholder4": "- Sélectionnez Taxe -",
+				"placeholder5": "Entrez la description"
+			}
+		},
+		"labels": {
+			"label1": "La modification des informations sur les articles n'affectera pas les estimations et les factures créées."
+		},
+		"messages": {
+			"create": "Élément créé avec succès.",
+			"delete": "L'élément a bien été supprimé.",
+			"update": "Élément mis à jour avec succès."
+		},
+		"title": "Articles",
+		"title1": "Article !",
+		"title2": "Créer un élément",
+		"title3": "Mettre à jour l'élément"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "Faites glisser la tâche entre la liste"
+		},
+		"title1": "Kanban de défaut",
+		"title2": "Incident Kanban"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "actes",
+				"article_name": "Le titre de l'article"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un titre d'article valide.",
+					"message2": "Le titre de l'article peut contenir 50 caractères maximum.",
+					"message3": "Veuillez sélectionner une catégorie valide.",
+					"message4": "Déposez des fichiers ici ou cliquez pour télécharger.",
+					"message5": "Veuillez saisir une description valide."
+				},
+				"fields": {
+					"article_title": "Le titre de l'article",
+					"category": "CATÉGORIE",
+					"description": "La description",
+					"file": "Fichier"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le titre de l'article",
+					"placeholder2": "-- Choisir une catégorie --",
+					"placeholder3": "Entrez la description"
+				}
+			},
+			"messages": {
+				"create": "Article créé avec succès.",
+				"delete": "L'article a bien été supprimé.",
+				"update": "Article mis à jour avec succès."
+			},
+			"title": "article",
+			"title1": "Des articles",
+			"title2": "article"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un nom de catégorie valide.",
+					"message2": "Le nom de la catégorie peut contenir 50 caractères maximum.",
+					"message3": "Déposez des fichiers ici ou cliquez pour télécharger.",
+					"message4": "Veuillez sélectionner un fichier valide."
+				},
+				"fields": {
+					"category_logo": "Logo de la catégorie",
+					"category_name": "Nom de catégorie"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le nom de la catégorie",
+					"placeholder2": "Chercher .."
+				}
+			},
+			"messages": {
+				"create": "Catégorie créée avec succès.",
+				"delete": "La catégorie a bien été supprimée.",
+				"update": "Catégorie mise à jour avec succès."
+			},
+			"title": "CATÉGORIE",
+			"title1": "CATÉGORIE",
+			"title2": "catégories"
+		},
+		"title": "Base de Connaissances"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "Congé approuvé",
+			"pending_leave": "Congé en attente",
+			"user": "Utilisateur"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "Plage de dates",
+				"employee_name": "Nom de l'employé"
+			},
+			"placeholders": {
+				"placeholder1": "Sélectionnez une période",
+				"placeholder2": "Tout"
+			}
+		},
+		"title": "Quitter le rapport",
+		"title1": "Laisser le détail"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "Couleur",
+			"leave_type": "Type de congé",
+			"no_of_leaves": "Congé total"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un type de congé unique et valide.",
+				"message2": "Le type de congé peut comporter au maximum 20 caractères.",
+				"message3": "Veuillez saisir un congé total valide.",
+				"message4": "Le congé total doit être un nombre.",
+				"message5": "Veuillez sélectionner une couleur valide."
+			},
+			"fields": {
+				"color": "Couleur",
+				"leave_type": "Type de congé",
+				"no_of_leaves": "Congé total"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le type de congé",
+				"placeholder2": "Entrez le congé total"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "Type de congé",
+			"no_of_leaves": "Congé total"
+		},
+		"messages": {
+			"create": "Laissez le type créé avec succès.",
+			"delete": "Laissez le type supprimé avec succès.",
+			"update": "Laissez le type mis à jour avec succès."
+		},
+		"title": "Types de congé",
+		"title1": "Quittez Type!",
+		"title2": "Créer un type de congé",
+		"title3": "Ajouter un type de congé"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "Acceptez",
+			"reject": "Rejeter"
+		},
+		"columns": {
+			"duration": "Durée",
+			"leave_date": "Rendez-vous amoureux",
+			"leave_type": "Type de congé",
+			"reason": "raison",
+			"status": "Statut",
+			"user": "Utilisateur"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez sélectionner un utilisateur valide.",
+				"message2": "Veuillez sélectionner un type de congé valide.",
+				"message3": "Veuillez sélectionner une date de congé valide.",
+				"message4": "Veuillez sélectionner un statut valide.",
+				"message5": "Veuillez saisir une raison valable.",
+				"message6": "Déposez des fichiers ici ou cliquez pour télécharger."
+			},
+			"fields": {
+				"attachments": "Les pièces jointes",
+				"duration": "Durée",
+				"duration_type": "Type de congé",
+				"leave_date": "Rendez-vous amoureux",
+				"leave_type": "laisser",
+				"reason": "raison",
+				"reject_reason": "Rejeter la raison? (Optionnel)",
+				"status": "Statut",
+				"user": "Utilisateur"
+			},
+			"placeholders": {
+				"placeholder1": "- Sélectionnez un utilisateur -",
+				"placeholder2": "- Sélectionnez le type de congé -",
+				"placeholder3": "Sélectionner une date",
+				"placeholder4": "- Sélectionnez le statut -",
+				"placeholder5": "Entrez la raison"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "première moitié"
+			},
+			{
+				"id": "second_half",
+				"label": "Deuxième partie"
+			}
+		],
+		"labels": {
+			"approved": "Approuvé",
+			"first_half_day": "Première demi-journée",
+			"full_day": "journée complète",
+			"half_day": "demi-journée",
+			"multiple": "plusieurs",
+			"remaining": "Restant",
+			"second_half_day": "Deuxième demi-journée",
+			"single": "Unique",
+			"taken": "Pris",
+			"total_leaves": "Total des feuilles"
+		},
+		"messages": {
+			"approve": "Laissez approuvé avec succès.",
+			"create": "Laissez créé avec succès.",
+			"delete": "Laissez supprimé avec succès.",
+			"reject": "Laissez rejeté avec succès.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Laissez mis à jour avec succès."
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "en attendant"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "Approuvé"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "Rejeté"
+			}
+		],
+		"title": "Feuilles",
+		"title1": "Laisser !",
+		"title2": "Demande de congé",
+		"title3": "Toutes les feuilles",
+		"title4": "Demande de congé",
+		"title5": "Calendrier des feuilles",
+		"title6": "Créer un congé",
+		"title7": "Mettre à jour le congé"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "Admin",
+			"client_login": "Client",
+			"forgot_password": "Mot de passe oublié?",
+			"hr_manager_login": "Responsable des ressources humaines",
+			"manager_login": "Directrice",
+			"project_manager_login": "Chef de projet",
+			"quick_login": "Connexion rapide",
+			"register": {
+				"button": "registre",
+				"text": "Vous n'avez pas de compte?"
+			},
+			"sales_manager_login": "Directeur commercial",
+			"user_login": "Utilisateur"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "Veuillez saisir un nom d'utilisateur ou une adresse e-mail valide."
+				},
+				"placeholder": "Nom d'utilisateur / Email"
+			},
+			"password": {
+				"errors": {
+					"email": "Le mot de passe peut contenir de 3 à 30 caractères au maximum.",
+					"required": "Entrer un mot de passe valide s'il vous plait."
+				},
+				"placeholder": "Mot de passe"
+			}
+		},
+		"title": "S'identifier"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "actes",
+				"name": "Prénom",
+				"progress": "le progrès",
+				"size": "Taille",
+				"status": "Statut"
+			},
+			"error_messages": {
+				"message1": "Veuillez sélectionner une adresse e-mail valide.",
+				"message2": "Veuillez saisir un sujet valide."
+			},
+			"fields": {
+				"from": "De",
+				"subject": "Assujettir",
+				"to": "à"
+			},
+			"placeholders": {
+				"placeholder1": "- Sélectionnez les utilisateurs -",
+				"placeholder2": "Entrez le sujet"
+			}
+		},
+		"messages": {
+			"message": "Fichier téléchargé avec succès.",
+			"message1": "Le fichier a bien été supprimé.",
+			"message2": "Veuillez sélectionner au moins un e-mail.",
+			"message3": "E-mail envoyé avec succès.",
+			"message4": "Le courrier a été placé dans la corbeille.",
+			"message5": " le courrier a été placé dans la corbeille.",
+			"message6": "Le courrier n'a pas été retenu avec succès.",
+			"message7": " les courriers marqués comme favoris.",
+			"message8": "Mails marqués comme lus.",
+			"message9": "Le courrier est passé au brouillon."
+		},
+		"title": "Boites aux lettres",
+		"title1": "Recherche courrier ...",
+		"title10": "Envoyer",
+		"title11": "Les pièces jointes",
+		"title12": "Rafraîchir",
+		"title13": "Marquer comme lu",
+		"title14": "Marquer comme favori",
+		"title15": "Mettre à la corbeille",
+		"title16": "Passer au brouillon",
+		"title17": "Supprimer le courrier",
+		"title18": "Affichage du courrier",
+		"title19": "Dossiers",
+		"title2": "Composer",
+		"title20": "Courrier",
+		"title3": "Écrire un email",
+		"title4": "boîte de réception",
+		"title5": "Envoyé",
+		"title6": "Brouillon",
+		"title7": "Préféré",
+		"title8": "Poubelle",
+		"title9": "jeter"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "actes",
+			"end": "Fin",
+			"hours": "heures",
+			"id": "ID",
+			"organizer": "organisateur",
+			"peoples": "Inviter des peuples",
+			"start": "Début",
+			"status": "Statut",
+			"title": "Titre"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un titre de réunion valide.",
+				"message2": "Le titre de la réunion peut contenir 255 caractères maximum.",
+				"message3": "Veuillez sélectionner une date de début valide.",
+				"message4": "Veuillez sélectionner une date de fin valide.",
+				"message5": "Veuillez sélectionner un membre valide de la réunion.",
+				"message6": "Veuillez sélectionner la date et l'heure appropriées pour la réunion.",
+				"message7": "Veuillez sélectionner un statut valide."
+			},
+			"fields": {
+				"client_name": "Nom du client",
+				"description": "La description",
+				"end_date": "Date de fin",
+				"location": "Emplacement",
+				"peoples": "Inviter des peuples",
+				"start_date": "Date de début",
+				"status": "Statut",
+				"title": "Titre"
+			},
+			"placeholders": {
+				"placeholder1": "Titre de l'événement",
+				"placeholder2": "Sélectionnez la date de début",
+				"placeholder3": "Sélectionnez la date de fin",
+				"placeholder4": "- Sélectionner des membres -",
+				"placeholder5": "Emplacement",
+				"placeholder6": "- Sélectionnez un client -",
+				"placeholder7": "- Sélectionnez le statut -"
+			}
+		},
+		"details": {
+			"title1": "La description"
+		},
+		"inline_edit": {
+			"title": "Titre"
+		},
+		"messages": {
+			"create": "La réunion a bien été créée.",
+			"delete": "La réunion a bien été supprimée.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Réunion mise à jour avec succès."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "annuler"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "Terminé"
+			}
+		],
+		"title": "Des Réunions"
+	},
+	"months": [
+		"Jan",
+		"Fév",
+		"MAR",
+		"AVR",
+		"Peut",
+		"juin",
+		"Juil",
+		"août",
+		"Sep",
+		"Oct",
+		"Nov",
+		"Dec"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "Remarques"
+			}
+		},
+		"messages": {
+			"update": "Notes mises à jour avec succès."
+		},
+		"title": "Remarques"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "La description",
+			"method_name": "Nom de la méthode",
+			"status": "Statut"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de méthode unique et valide."
+			},
+			"fields": {
+				"description": "La description",
+				"method_name": "Nom de la méthode",
+				"show_on_pdf": "Afficher la description sur la facture PDF"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de la méthode",
+				"placeholder2": "Entrez la description"
+			}
+		},
+		"messages": {
+			"create": "Mode de paiement créé avec succès.",
+			"delete": "Le mode de paiement a bien été supprimé.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Mode de paiement mis à jour avec succès."
+		},
+		"title": "Méthodes de payement",
+		"title1": "Mode de paiement !",
+		"title2": "Créer une méthode de paiement",
+		"title3": "Mettre à jour le mode de paiement"
+	},
+	"payments": {
+		"columns": {
+			"amount": "Montant",
+			"client": "Client",
+			"date": "Rendez-vous amoureux",
+			"invoice": "Facture d'achat",
+			"method_name": "Paiement",
+			"payment_mode": "Mode de paiement",
+			"status": "Statut"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un montant valide.",
+				"message2": "Veuillez saisir une date de paiement valide.",
+				"message3": "Veuillez sélectionner un mode de paiement valide."
+			},
+			"fields": {
+				"amount": "Montant reçu",
+				"date": "Date de paiement",
+				"notes": "Laisser un mot",
+				"payment_mode": "Mode de paiement",
+				"transaction_id": "identifiant de transaction"
+			},
+			"placeholders": {
+				"placeholder1": "Sélectionner une date",
+				"placeholder2": "- Sélectionnez le mode de paiement -",
+				"placeholder3": "Note d'administration",
+				"placeholder4": "Entrez l'ID de transaction"
+			}
+		},
+		"info": "Remarque: les modes de paiement répertoriés ci-dessous sont des modes hors ligne. Les passerelles de paiement peuvent être configurées dans Paramètres-> Paypal / Stripe.",
+		"info1": "Paypal, Stripe, virement bancaire, espèces ou autres.",
+		"messages": {
+			"create": "Paiement créé avec succès.",
+			"delete": "Paiement supprimé avec succès.",
+			"failed": "Paiement échoué.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Paiement mis à jour avec succès."
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "En cours"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "Réussi"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "Échoué"
+			}
+		],
+		"title": "Paiements",
+		"title1": "Paiements !",
+		"title2": "Créer un paiement",
+		"title3": "Mettre à jour le paiement",
+		"view": {
+			"failed": "Échoué",
+			"in_progress": "En cours",
+			"invoice_amount": "Montant de la facture",
+			"invoice_date": "Date de facturation",
+			"invoice_number": "Numéro de facture",
+			"payment_amount": "Montant du paiement",
+			"payment_for": "Paiement pour",
+			"payment_receipt": "Paiement de la facture",
+			"successful": "Réussi"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "actes",
+			"creator": "Créateur",
+			"end_date": "Date de fin",
+			"hours": "heures",
+			"name": "Prénom",
+			"progress": "le progrès",
+			"responsible": "Responsable",
+			"sprint": "Sprint",
+			"start_date": "Date de début",
+			"status": "Statut",
+			"type": "Type"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez sélectionner un projet valide.",
+					"message2": "Veuillez sélectionner un sprint de projet valide."
+				},
+				"fields": {
+					"project": "Projet",
+					"sprint": "Sprint"
+				},
+				"placeholders": {
+					"placeholder1": "- Sélectionnez un projet -",
+					"placeholder2": "- Sélectionnez Project Sprint -"
+				}
+			},
+			"messages": {
+				"move": " La tâche a été déplacée avec succès."
+			},
+			"title": "Déplacer la tâche"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un nom de sprint unique et valide.",
+					"message2": "Le nom du sprint peut contenir 255 caractères maximum.",
+					"message4": "Veuillez sélectionner une date de début valide.",
+					"message5": "Veuillez sélectionner une date de fin valide.",
+					"message6": "Veuillez sélectionner un statut valide.",
+					"message7": "Les heures estimées ne permettent que des chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial.",
+					"message8": "Les heures estimées doivent être inférieures à"
+				},
+				"fields": {
+					"description": "La description",
+					"end_date": "Date de fin",
+					"estimate_hours": "Heures estimées",
+					"responsible": "Responsable",
+					"sprint_name": "Nom du sprint du projet",
+					"start_date": "Date de début",
+					"status": "Statut"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le nom du sprint du projet",
+					"placeholder2": "- Sélectionnez un utilisateur -",
+					"placeholder3": "Sélectionnez la date de début",
+					"placeholder4": "Sélectionnez la date de fin",
+					"placeholder5": "- Sélectionnez le statut -",
+					"placeholder6": "Entrez la description"
+				}
+			},
+			"messages": {
+				"create": "Sprint créé avec succès.",
+				"delete": "Sprint supprimé avec succès.",
+				"update": "Sprint mis à jour avec succès."
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Ouvrir"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "En cours"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Fermé"
+				}
+			],
+			"title": "Sprint",
+			"title1": "Créer un sprint",
+			"title2": "Modifier le sprint"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un code unique et valide",
+					"message2": " le nom peut contenir 255 caractères au maximum.",
+					"message3": "Veuillez sélectionner un utilisateur valide.",
+					"message4": "Veuillez sélectionner une date de début valide.",
+					"message5": "Veuillez sélectionner une date de fin valide.",
+					"message6": "Veuillez sélectionner un statut valide.",
+					"message7": "Les heures estimées ne permettent que des chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial.",
+					"message8": "Les heures estimées doivent être inférieures à"
+				},
+				"fields": {
+					"description": "La description",
+					"end_date": "Date de fin",
+					"estimate_hours": "Heures estimées",
+					"name": "Prénom",
+					"responsible": "Responsable",
+					"start_date": "Date de début",
+					"status": "Statut"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez Project Sprint",
+					"placeholder2": "- Sélectionnez un utilisateur -",
+					"placeholder3": "Sélectionnez la date de début",
+					"placeholder4": "Sélectionnez la date de fin",
+					"placeholder5": "- Sélectionnez le statut -",
+					"placeholder6": "Entrez la description",
+					"placeholder7": "Entrer dans le projet "
+				}
+			},
+			"messages": {
+				"create": " créé avec succès.",
+				"released": "Tarea lanzada con éxito.",
+				"story_delete": "L'histoire de sprint a bien été supprimée.",
+				"task_delete": "La tâche de sprint a bien été supprimée.",
+				"update": " Mis à jour avec succés."
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Ouvrir"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "En cours"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Fermé"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "Ouvrir"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "EN ATTENTE"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "Fermé"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "Libéré"
+				}
+			],
+			"title": "Tâche de sprint",
+			"title1": "Créer un sprint",
+			"title2": "Modifier le sprint",
+			"title3": "Prénom",
+			"title4": "Tâche",
+			"title5": "Récit"
+		},
+		"title": "Planificateur de Projet",
+		"title1": "Créer une tâche",
+		"title2": "Créer une histoire",
+		"title3": "Créer un sprint",
+		"title4": "Projet",
+		"title5": "Sprint"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "Taux fixe",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "Taux horaire",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "Achèvement avec",
+			"csv_file": "Avant de commencer à importer des projets, assurez-vous que vous avez importé des utilisateurs et leurs équipes.",
+			"current_version": "Version actuelle",
+			"version": "Version"
+		},
+		"columns": {
+			"actions": "actes",
+			"assigned_To": "Assigné à",
+			"billing": "Facturation",
+			"budget": "Budget",
+			"client": "Client",
+			"completion": "achèvement",
+			"creator": "Créateur",
+			"duration": "Durée",
+			"end": "Fin",
+			"hours": "heures",
+			"id": "Id",
+			"logo": "Logo",
+			"progress": "le progrès",
+			"project_name": "Nom du projet",
+			"start": "Début",
+			"status": "Statut",
+			"version": "Version"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de projet unique et valide.",
+				"message10": "Veuillez sélectionner une date de fin valide.",
+				"message11": "Les heures estimées ne permettent que des chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial.",
+				"message12": "Le prix fixe doit être râpe puis 0.",
+				"message13": "Le prix fixe ne permet que des chiffres.",
+				"message14": "Déposez des fichiers ici ou cliquez pour télécharger.",
+				"message15": "Ce fichier n'est pas un fichier csv. Veuillez sélectionner uniquement le fichier csv.",
+				"message16": "Veuillez sélectionner le fichier CSV à importer.",
+				"message2": "Le nom du projet peut contenir 255 caractères au maximum.",
+				"message3": "Veuillez saisir une version de projet unique et valide.",
+				"message4": "La version du projet peut être comme 1.0.",
+				"message6": "Veuillez sélectionner un statut valide.",
+				"message8": "Veuillez saisir une URL de démonstration valide.",
+				"message9": "Veuillez sélectionner une date de début valide."
+			},
+			"fields": {
+				"actual_hours": "Heures réelles",
+				"assigned_To": "Assigné à",
+				"assigned_group": "Groupe affecté",
+				"billing_type": "Type de facturation",
+				"budget": "Budget",
+				"client_name": "Nom du client",
+				"completed": "Terminé",
+				"created_by": "Créé par",
+				"csv_file": "Sélectionnez le fichier CSV du projet",
+				"demo_URL": "URL de démonstration",
+				"description": "La description",
+				"end_date": "Date de fin",
+				"estimate_hours": "Heures estimées",
+				"fixed_price": "Prix fixe ($)",
+				"hourly_rate": "Taux horaire ($)",
+				"progress": "le progrès",
+				"project_hours": "Progression automatique",
+				"project_id": "identifiant du projet",
+				"project_logo": "Logo du projet",
+				"project_name": "Nom du projet",
+				"start_date": "Date de début",
+				"status": "Statut",
+				"version": "Version"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom du projet",
+				"placeholder10": "Entrez le tarif",
+				"placeholder11": "Entrez la description",
+				"placeholder2": "Entrez la version",
+				"placeholder3": "- Sélectionnez un client -",
+				"placeholder4": "- Sélectionnez le statut -",
+				"placeholder5": "- Sélectionnez le groupe affecté -",
+				"placeholder6": "Non attribué",
+				"placeholder7": "Sélectionnez la date de début",
+				"placeholder8": "Sélectionnez la date de fin",
+				"placeholder9": "- Sélectionnez le type de facturation -"
+			}
+		},
+		"details": {
+			"title1": "Les champs personnalisés",
+			"title2": "La description"
+		},
+		"headings": {
+			"head1": "Informations sur le projet",
+			"head2": "Dates du projet",
+			"head3": "Autre info",
+			"head4": "Les champs personnalisés",
+			"head5": "La description"
+		},
+		"inline_edit": {
+			"billing_type": "Type de facturation",
+			"budget": "Budget",
+			"client": "Client",
+			"demo_url": "URL de démonstration",
+			"description": "La description",
+			"end_date": "Date de fin",
+			"estimate_hours": "Heures estimées",
+			"notes": "Remarques",
+			"project_name": "Nom du projet",
+			"start_date": "Date de début"
+		},
+		"messages": {
+			"create": "Projet créé avec succès.",
+			"delete": "Le projet a bien été supprimé.",
+			"import": "Projet importé avec succès.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Projet mis à jour avec succès."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "EN ATTENTE"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "annuler"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "Terminé"
+			}
+		],
+		"title": "Projets",
+		"title1": "Créer un projet",
+		"title2": "Editer le projet",
+		"title3": "Projet d'importation"
+	},
+	"providers": {
+		"columns": {
+			"actions": "actes",
+			"color": "Couleur",
+			"email": "Email",
+			"firstname": "Prénom",
+			"lastname": "Nom de famille"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez entrer un prénom valide.",
+				"message2": "Le prénom peut contenir 50 caractères maximum.",
+				"message3": "Veuillez saisir un nom de famille valide.",
+				"message4": "Le nom de famille peut contenir 50 caractères au maximum.",
+				"message5": "Veuillez saisir un e-mail valide.",
+				"message6": "L'e-mail doit être un e-mail valide.",
+				"message7": "Veuillez sélectionner une couleur valide."
+			},
+			"fields": {
+				"color": "Couleur",
+				"email": "Email",
+				"first_name": "Prénom",
+				"last_name": "Nom de famille"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez votre prénom",
+				"placeholder2": "Entrer le nom de famille",
+				"placeholder3": "Entrez votre e-mail"
+			}
+		},
+		"messages": {
+			"create": "Le fournisseur a été créé avec succès.",
+			"delete": "Le fournisseur a bien été supprimé.",
+			"edit": "Le fournisseur a réussi la modification."
+		},
+		"title": "Fournisseurs"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "Merci d'entrer un nom d'utilisateur valide.",
+				"message10": "Le mot de passe et la confirmation du mot de passe ne correspondent pas.",
+				"message2": "Le nom d'utilisateur peut contenir de 3 à 30 caractères maximum sans espaces blancs.",
+				"message3": "Veuillez entrer un prénom valide.",
+				"message4": "Veuillez saisir un nom de famille valide.",
+				"message5": "S'il vous plaît entrer un email valide.",
+				"message6": "L'e-mail doit être un e-mail valide.",
+				"message7": "Entrer un mot de passe valide s'il vous plait.",
+				"message8": "Le mot de passe peut contenir de 3 à 30 caractères au maximum.",
+				"message9": "Veuillez saisir un mot de passe de confirmation valide."
+			},
+			"placeholders": {
+				"placeholder1": "Saisissez votre nom d'utilisateur",
+				"placeholder2": "Entrez votre prénom",
+				"placeholder3": "Entrer le nom de famille",
+				"placeholder4": "Entrer email",
+				"placeholder5": "Entrer le mot de passe",
+				"placeholder6": "Entrez le mot de passe de confirmation"
+			}
+		},
+		"messages": {
+			"success": "Vous vous êtes inscrit avec succès."
+		},
+		"title": "registre",
+		"title1": "Vous avez déjà un compte?"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "Défaut",
+			"incident_report": "incident",
+			"project_report": "Projet",
+			"task_report": "Tâche"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "Entrer un mot de passe valide s'il vous plait.",
+				"message2": "Le mot de passe peut contenir de 3 à 30 caractères au maximum.",
+				"message3": "Veuillez saisir un mot de passe de confirmation valide.",
+				"message4": "Le mot de passe et la confirmation du mot de passe ne correspondent pas.",
+				"message5": "Veuillez fournir un e-mail ou un jeton valide."
+			},
+			"placeholders": {
+				"placeholder1": "Entrer le mot de passe",
+				"placeholder2": "Entrez le mot de passe de confirmation"
+			}
+		},
+		"messages": {
+			"success": "Mot de passe réinitialisé avec succès."
+		},
+		"title": "Réinitialiser le mot de passe"
+	},
+	"roles": {
+		"columns": {
+			"actions": "actes",
+			"description": "La description",
+			"role_name": "Nom de rôle",
+			"role_slug": "Limace"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de rôle valide.",
+				"message2": "Le nom du rôle peut contenir 50 caractères maximum.",
+				"message3": "Le slug de rôle peut contenir 50 caractères maximum.",
+				"message4": "Le slug de rôle ne peut être que des lettres, souligné.",
+				"message5": "Veuillez entrer un slug de rôle valide."
+			},
+			"fields": {
+				"description": "La description",
+				"role_name": "Nom de rôle",
+				"role_slug": "Limace"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom du rôle",
+				"placeholder2": "Entrez le rôle Slug"
+			}
+		},
+		"inline_edit": {
+			"description": "La description",
+			"role_name": "Nom de rôle"
+		},
+		"messages": {
+			"create": "Rôle créé avec succès.",
+			"delete": "Le rôle a bien été supprimé.",
+			"update": "Le rôle a été mis à jour avec succès."
+		},
+		"title": "Rôles"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un nom d'entreprise valide.",
+					"message10": "Le code postal peut être autorisé à 10 chiffres maximum.",
+					"message11": "Veuillez saisir une adresse d'entreprise valide.",
+					"message2": "Veuillez saisir un nom légal de société valide.",
+					"message3": "Veuillez saisir un nom abrégé d'entreprise valide.",
+					"message4": "Le nom abrégé de la société peut contenir 10 caractères maximum.",
+					"message5": "Veuillez saisir un e-mail d'entreprise valide.",
+					"message6": "L'e-mail doit être une adresse e-mail valide.",
+					"message7": "Le téléphone de l'entreprise doit être un format de numéro de téléphone valide.",
+					"message8": "Le site Web de l'entreprise doit être une URL valide.",
+					"message9": "Veuillez entrer un code postal valide."
+				},
+				"fields": {
+					"city": "Ville",
+					"company_address": "Adresse de la société",
+					"company_country": "Pays de l'entreprise",
+					"company_email": "Email de l'entreprise",
+					"company_name": "Nom de la compagnie",
+					"company_phone": "téléphone de l'entreprise",
+					"company_website": "site Web d'entreprise",
+					"company_zipcode": "Code postal",
+					"contact_person": "Contact",
+					"legal_name": "Nom légal",
+					"short_name": "Nom court"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le nom de l'entreprise",
+					"placeholder10": "Entrez la personne de contact",
+					"placeholder11": "Entrez l'adresse de l'entreprise",
+					"placeholder2": "Entrez le nom légal",
+					"placeholder3": "Entrez un nom court",
+					"placeholder4": "Entrez le courriel de l'entreprise",
+					"placeholder5": "Entrez le numéro de téléphone de l'entreprise",
+					"placeholder6": "Entrez le site Web de l'entreprise",
+					"placeholder7": "-- Choisissez le pays --",
+					"placeholder8": "Entrez la ville",
+					"placeholder9": "Entrer le code postal"
+				}
+			},
+			"title": "Détails de l'entreprise"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "Cronjob actif",
+					"automatic_backup": "Base de données de sauvegarde automatique",
+					"daily_report_emails": "Emails de rapports quotidiens",
+					"last_cronjob_run": "Dernière course Cronjob"
+				},
+				"messages": {
+					"message1": "Cela active la fonction cronjob, si elle est configurée correctement.",
+					"message2": "Crée une sauvegarde de base de données tous les 7 jours. Nécessite cronjob pour être activé!"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez des e-mails"
+				}
+			},
+			"title": "Tâche planifiée"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "actes",
+				"custom_field_for": "Champ personnalisé pour",
+				"label": "Étiquette",
+				"status": "Statut",
+				"type": "Type",
+				"value": "Valeur"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez sélectionner un formulaire de champ personnalisé valide.",
+					"message2": "Veuillez saisir une étiquette de champ valide.",
+					"message3": "Veuillez saisir un texte d'aide valide.",
+					"message4": "Veuillez sélectionner un type de champ valide.",
+					"message5": "Veuillez saisir une étiquette valide.",
+					"message6": "Veuillez entrer une valeur valide."
+				},
+				"fields": {
+					"custom_field_for": "Champ personnalisé pour",
+					"field_label": "Étiquette de champ",
+					"field_type": "Type de champ",
+					"help_text": "Texte d'aide",
+					"is_required_field": "Champ obligatoire",
+					"show_on_detail": "Pour afficher sur la page de détail"
+				},
+				"placeholders": {
+					"placeholder1": "- Sélectionnez le formulaire de champ personnalisé -",
+					"placeholder2": "Entrez une étiquette de champ",
+					"placeholder3": "Entrez le texte d'aide",
+					"placeholder4": "- Sélectionnez le type de champ -"
+				}
+			},
+			"headings": {
+				"head1": "Entrez l'étiquette et la valeur de la liste déroulante."
+			},
+			"messages": {
+				"create": "Champ personnalisé créé avec succès.",
+				"delete": "Le champ personnalisé a bien été supprimé.",
+				"status": "Le statut a changé avec succès.",
+				"update": "Le champ personnalisé a été mis à jour avec succès."
+			},
+			"title": "Les champs personnalisés",
+			"title1": "Champ personnalisé"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "Réglages"
+			},
+			"title": "Tableau de bord",
+			"title1": "Annonces",
+			"title10": "Estimations",
+			"title11": "Factures",
+			"title12": "Paiements",
+			"title13": "Feuilles",
+			"title14": "les équipes",
+			"title15": "utilisateurs",
+			"title16": "Les clients",
+			"title17": "Des articles",
+			"title18": "Statut des projets",
+			"title19": "ÉTAT DES TÂCHES",
+			"title2": "activités recentes",
+			"title20": "Rapport mensuel",
+			"title21": "Widgets",
+			"title22": "Graphiques",
+			"title23": "Des listes",
+			"title3": "Liste de ToDos",
+			"title4": "Des Réunions",
+			"title5": "Projets",
+			"title6": "Les Tâches",
+			"title7": "Défauts",
+			"title8": "Incidents",
+			"title9": "Principales factures dues"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "actes",
+				"date": "Rendez-vous amoureux",
+				"file_name": "Nom de fichier"
+			},
+			"messages": {
+				"create": "La sauvegarde de la base de données a été créée avec succès.",
+				"delete": "La sauvegarde de la base de données a bien été supprimée.",
+				"restore": "La base de données a été restaurée avec succès."
+			},
+			"title": "Sauvegardes de bases de données",
+			"title1": "sauvegarde de la base de données",
+			"title2": "Sauvegarde"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "Notification"
+			},
+			"title": "Notifications par email",
+			"title1": "Courriel d'annonce"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un e-mail d'entreprise valide.",
+					"message2": "L'e-mail doit être une adresse e-mail valide.",
+					"message3": "Veuillez sélectionner un protocole de messagerie valide.",
+					"message4": "Veuillez entrer un hôte SMTP valide.",
+					"message5": "Veuillez entrer un utilisateur SMTP valide.",
+					"message6": "L'utilisateur SMTP doit être une adresse e-mail valide.",
+					"message7": "Veuillez saisir un mot de passe SMTP valide.",
+					"message8": "Veuillez entrer un port SMTP valide."
+				},
+				"fields": {
+					"company_email": "Email de l'entreprise",
+					"email_encryption": "Cryptage des e-mails",
+					"email_protocol": "Protocole de messagerie",
+					"mailgun_domain": "Domaine de pistolet",
+					"mailgun_secret": "Mailgun Secret",
+					"mandrill_secret": "Mandrill Secret",
+					"smtp_host": "Hôte SMTP",
+					"smtp_password": "Mot de passe SMTP",
+					"smtp_port": "Port SMTP",
+					"smtp_user": "Utilisateur SMTP",
+					"sparkpost_secret": "Sparkpost Secret"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le courriel de l'entreprise",
+					"placeholder2": "- Sélectionnez le protocole de messagerie -",
+					"placeholder3": "Entrer le mot de passe",
+					"placeholder4": "- Sélectionnez le cryptage des e-mails -",
+					"placeholder5": "Entrez Sparkpost Secret",
+					"placeholder6": "Entrer dans le domaine de Mailgun",
+					"placeholder7": "Entrez Mailgun Secret",
+					"placeholder8": "Entrez Mandrill Secret"
+				}
+			},
+			"title": "Email",
+			"title1": "Courriel envoyé à "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "Corps",
+					"subject": "Assujettir"
+				},
+				"placeholders": {
+					"placeholder1": "- Sélectionnez le groupe de messagerie -",
+					"placeholder2": "Entrez le sujet"
+				}
+			},
+			"messages": {
+				"update": "Le modèle d'e-mail a été mis à jour avec succès."
+			},
+			"title": "Modèles de courrier électronique"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un préfixe d'estimation valide.",
+					"message2": "Le préfixe d'estimation peut comporter au maximum 10 caractères.",
+					"message3": "Veuillez saisir une échéance valide après.",
+					"message4": "Déposez des fichiers ici ou cliquez pour télécharger."
+				},
+				"fields": {
+					"auto_remind": "Rappel d'envoi automatique?",
+					"auto_remind_before": "Envoyer un rappel avant (jours)",
+					"client_note": "Note du client",
+					"due_after": "Dû après (jours)",
+					"estimate_logo": "Estimer le logo",
+					"estimate_prefix": "Estimer le préfixe",
+					"terms_conditions": "termes et conditions"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le préfixe d'estimation",
+					"placeholder2": "Entrer à échéance après",
+					"placeholder3": "Entrez la note du client",
+					"placeholder4": "Entrez les conditions générales",
+					"placeholder5": "Entrer le rappel avant les jours"
+				}
+			},
+			"title": "Estimation"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un préfixe de facture valide.",
+					"message2": "Le préfixe de la facture peut comporter au maximum 10 caractères.",
+					"message3": "Veuillez saisir une échéance valide après.",
+					"message4": "Déposez des fichiers ici ou cliquez pour télécharger."
+				},
+				"fields": {
+					"auto_remind": "Rappel d'envoi automatique?",
+					"auto_remind_after": "Envoyer un rappel après (jours) Ex. 1,3",
+					"client_note": "Note du client",
+					"due_after": "Dû après (jours)",
+					"gst_number": "Numéro de TPS",
+					"invoice_logo": "Logo de facture",
+					"invoice_prefix": "Préfixe de facture",
+					"show_gst_number": "Afficher le numéro de TPS sur la facture?",
+					"terms_conditions": "termes et conditions"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez le préfixe de la facture",
+					"placeholder2": "Entrer à échéance après",
+					"placeholder3": "Entrez la note du client",
+					"placeholder4": "Entrez les conditions générales",
+					"placeholder5": "Entrer le rappel après des jours",
+					"placeholder6": "Entrez le numéro de TPS"
+				}
+			},
+			"title": "Facture d'achat"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "Le menu a été mis à jour avec succès."
+			},
+			"title": "Affectation des menus",
+			"title1": "Développer tout",
+			"title2": "Réduire tout"
+		},
+		"messages": {
+			"update": "Paramètre mis à jour avec succès."
+		},
+		"payment_gateway_settings": {
+			"title": "Passerelle de paiement"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un ID client paypal valide."
+				},
+				"fields": {
+					"paypal_checkout_client_id": "Identifiant client Paypal",
+					"paypal_checkout_label": "Étiquette Paypal",
+					"paypal_checkout_status": "Statut"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez l'étiquette Paypal",
+					"placeholder2": "Entrez l'identifiant du client Paypal"
+				}
+			},
+			"title": "Pay Pal"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir un ID client Slack valide.",
+					"message2": "Veuillez saisir un secret client Slack valide.",
+					"message3": "Veuillez saisir une URL de redirection Slack valide."
+				},
+				"fields": {
+					"slack_client_id": "Slack Client ID",
+					"slack_client_secret": "Slack Client Secret",
+					"slack_redirect_url": "URL de redirection Slack",
+					"slack_status": "Statut Slack"
+				},
+				"placeholders": {
+					"placeholder1": "Saisissez l'identifiant du client Slack",
+					"placeholder2": "Entrez le secret du client Slack",
+					"placeholder3": "Saisissez l'URL de redirection Slack"
+				}
+			},
+			"title": "mou"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez entrer une clé API de bande valide.",
+					"message2": "Veuillez saisir un code secret d'API Stripe valide."
+				},
+				"fields": {
+					"stripe_api_key": "Clé API Stripe",
+					"stripe_label": "Étiquette à rayures",
+					"stripe_secret_key": "Stripe Secret Key",
+					"stripe_status": "Statut"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez l'étiquette rayée",
+					"placeholder2": "Entrez la clé API Stripe",
+					"placeholder3": "Entrez la clé secrète de Stripe"
+				}
+			},
+			"title": "Bande",
+			"title1": "Payer"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez saisir une limite de pagination de table valide.",
+					"message2": "Veuillez sélectionner un format de date valide.",
+					"message3": "Veuillez sélectionner un format d'heure valide.",
+					"message4": "Veuillez sélectionner une devise valide.",
+					"message5": "Veuillez sélectionner une langue par défaut valide."
+				},
+				"fields": {
+					"allowed_for_registration": "Autorisé à l'enregistrement?",
+					"date_format": "Format de date",
+					"default_currency": "devise par défaut",
+					"default_language": "Langage par défaut",
+					"default_locale": "Locale par défaut",
+					"tables_pagination_limit": "Limite de pagination des tableaux",
+					"time_format": "Format de l'heure",
+					"timezone": "Fuseau horaire"
+				},
+				"placeholders": {
+					"placeholder1": "-- Choisir la langue --",
+					"placeholder2": "- Sélectionnez les paramètres régionaux -",
+					"placeholder3": "- Sélectionnez le fuseau horaire -",
+					"placeholder4": "Entrer la limite de pagination des tables",
+					"placeholder5": "- Sélectionnez le format de date -",
+					"placeholder6": "- Sélectionnez le format d'heure -",
+					"placeholder7": "- Sélectionnez la devise par défaut -"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Entrez un préfixe d'estimation valide.",
+						"message2": "Le préfixe d'estimation peut avoir un maximum de 10 caractères.",
+						"message3": "Entrez une date d'échéance valide après.",
+						"message4": "Faites glisser les fichiers ici ou cliquez pour télécharger."
+					},
+					"fields": {
+						"auto_remind": "Envoyer des rappels automatiquement?",
+						"auto_remind_before": "Envoyer un rappel avant (jours)",
+						"client_note": "Note du client",
+						"due_after": "Date d'échéance (jours)",
+						"estimate_logo": "Estimer le logo",
+						"estimate_prefix": "Estimer le préfixe",
+						"terms_conditions": "Conditions générales"
+					},
+					"placeholders": {
+						"placeholder1": "Entrez le préfixe Estimation",
+						"placeholder2": "Entrez la date après",
+						"placeholder3": "Entrez une note client",
+						"placeholder4": "Entrez les conditions",
+						"placeholder5": "Entrez Rappeler il y a jours"
+					}
+				},
+				"title": "Estimation"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Veuillez saisir un préfixe de facture valide.",
+						"message2": "Le préfixe de la facture peut comporter au maximum 10 caractères.",
+						"message3": "Entrez une date d'échéance valide après.",
+						"message4": "Faites glisser les fichiers ici ou cliquez pour télécharger."
+					},
+					"fields": {
+						"auto_remind": "Envoyer des rappels automatiquement?",
+						"auto_remind_after": "Envoyer un rappel après (jours) Ex. 1,3",
+						"client_note": "Note du client",
+						"due_after": "Date d'échéance (jours)",
+						"gst_number": "Numéro de TPS",
+						"invoice_logo": "Logo de la facture",
+						"invoice_prefix": "Préfixe de facture",
+						"show_gst_number": "Afficher le numéro de TPS sur la facture?",
+						"terms_conditions": "Conditions générales"
+					},
+					"placeholders": {
+						"placeholder1": "Entrez le préfixe de la facture",
+						"placeholder2": "Entrez la date après",
+						"placeholder3": "Entrez une note client",
+						"placeholder4": "Entrez les conditions",
+						"placeholder5": "Entrez Rappeler après jours",
+						"placeholder6": "Entrez le numéro de TPS"
+					}
+				},
+				"title": "Facture d'achat"
+			},
+			"payment_gateway_settings": {
+				"title": "Passerelle de paiement"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Veuillez saisir un ID client paypal valide."
+					},
+					"fields": {
+						"paypal_checkout_client_id": "ID client PayPal",
+						"paypal_checkout_label": "Étiquette Paypal",
+						"paypal_checkout_status": "Position"
+					},
+					"placeholders": {
+						"placeholder1": "Entrez le label Paypal",
+						"placeholder2": "Entrez votre identifiant client Paypal"
+					}
+				},
+				"title": "Pay Pal"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Saisissez un ID client Slack valide.",
+						"message2": "Entrez un mot de passe client secret valide.",
+						"message3": "Veuillez saisir une URL de redirection gratuite valide."
+					},
+					"fields": {
+						"slack_client_id": "Identifiant du client Slack",
+						"slack_client_secret": "Secret du client divulgué",
+						"slack_redirect_url": "URL de redirection Slack",
+						"slack_status": "État de la version"
+					},
+					"placeholders": {
+						"placeholder1": "Saisissez l'ID client Slack",
+						"placeholder2": "Entrez le mot de passe secret du client",
+						"placeholder3": "Saisissez l'URL de redirection Slack"
+					}
+				},
+				"title": "Slack"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "Veuillez saisir une clé API de barre valide."
+					},
+					"fields": {
+						"stripe_api_key": "Clé API Stripe",
+						"stripe_label": "Étiquette de bande",
+						"stripe_status": "Position"
+					},
+					"placeholders": {
+						"placeholder1": "Entrez une étiquette de bannière",
+						"placeholder2": "Entrez la clé API Stripe"
+					}
+				},
+				"title": "Stripes"
+			},
+			"title": "Système"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "Acheteur",
+					"purchase_key": "Clé d'achat",
+					"url": "URL"
+				},
+				"placeholders": {
+					"placeholder1": "Entrez la clé d'achat du produit",
+					"placeholder2": "Entrez le code acheteur du produit"
+				}
+			},
+			"title": "Mise à jour du système"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "Déposez des fichiers ici ou cliquez pour télécharger."
+				},
+				"fields": {
+					"compnay_logo": "Logo d'entreprise",
+					"compnay_sidebar_logo": "Logo de la barre latérale de l'entreprise",
+					"login_background": "Fond de connexion",
+					"sidebar_background_images": "Images d'arrière-plan de la barre latérale"
+				}
+			},
+			"title": "Thème"
+		},
+		"title": "Réglages",
+		"translations": {
+			"columns": {
+				"actions": "actes",
+				"icon": "Icône",
+				"language": "La langue",
+				"status": "Statut"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "Veuillez sélectionner une langue valide.",
+					"message2": "Veuillez sélectionner une icône valide.",
+					"message3": "Déposez des fichiers ici ou cliquez pour télécharger."
+				},
+				"fields": {
+					"icon": "Icône",
+					"language": "La langue"
+				},
+				"placeholders": {
+					"placeholder1": "-- Choisir la langue --"
+				}
+			},
+			"messages": {
+				"create": "Traduction créée avec succès.",
+				"delete": "La traduction a bien été supprimée.",
+				"status": "Le statut a changé avec succès.",
+				"update": "Traduction mise à jour avec succès."
+			},
+			"title": "Traductions",
+			"title1": "Traduction"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} est requis.",
+				"message2": "{{elementFor}} n'autorise que les chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial.",
+				"message3": "Veuillez saisir un {{elementFor}}valide.",
+				"message4": "{{elementFor}} peut comporter au moins {{minLength}} caractères."
+			},
+			"placeholders": {
+				"placeholder1": "Entrez {{elementFor}}",
+				"placeholder2": "- Sélectionnez {{elementFor}} -",
+				"placeholder3": "Sélectionnez {{elementFor}}"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "Veuillez saisir un {{custom_field}}valide.",
+				"message2": "Veuillez sélectionner un {{custom_field}}valide."
+			},
+			"placeholders": {
+				"placeholder1": "Entrez {{custom_field}}",
+				"placeholder2": "- Sélectionnez {{custom_field}} -"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "À faire",
+			"head2": "En cours",
+			"head3": "Terminé"
+		},
+		"title": "Tâche Kanban"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "Achèvement avec",
+			"csv_file": "Avant de commencer à importer des projets, assurez-vous que vous avez importé des utilisateurs et leurs équipes."
+		},
+		"columns": {
+			"actions": "actes",
+			"actual_end": "Date de fin",
+			"actual_start": "Date de début",
+			"assigned": "Attribué",
+			"creator": "Créateur",
+			"end": "Fin",
+			"end_date": "Date de fin",
+			"hours": "heures",
+			"id": "Id",
+			"planned_end": "Fin prévue",
+			"planned_start": "Début planifié",
+			"priority": "Priorité",
+			"progress": "le progrès",
+			"project": "Projet",
+			"project_version": "Version du projet",
+			"start": "Début",
+			"start_date": "Date de début",
+			"status": "Statut",
+			"task_ID": "identifiant de tâche",
+			"task_name": "Nom de la tâche"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de tâche unique et valide.",
+				"message11": "Veuillez sélectionner un statut de tâche valide.",
+				"message12": "Veuillez sélectionner une priorité de tâche valide.",
+				"message13": "Les heures estimées ne permettent que des chiffres, 2 chiffres après deux points (moins de 60) sans aucun caractère spécial.",
+				"message14": "Les heures estimées doivent être inférieures à",
+				"message15": "Veuillez sélectionner le fichier CSV à importer.",
+				"message2": "Le nom de la tâche peut contenir 255 caractères maximum.",
+				"message3": "Veuillez saisir un ID généré par la tâche unique et valide.",
+				"message4": "Veuillez sélectionner une date de début planifiée valide.",
+				"message5": "Veuillez sélectionner une date de fin planifiée valide.",
+				"message6": "Veuillez sélectionner une date de début valide.",
+				"message7": "Veuillez sélectionner une date de fin valide.",
+				"message8": "Veuillez sélectionner un nom de projet valide."
+			},
+			"fields": {
+				"actual_enddate": "Date de fin réelle",
+				"actual_hours": "Heures réelles",
+				"actual_startdate": "Date de début réelle",
+				"assigned_To": "Assigné à",
+				"completed": "Terminé",
+				"created_by": "Créé par",
+				"csv_file": "Sélectionnez le fichier CSV de la tâche",
+				"description": "La description",
+				"estimate_hours": "Heures estimées",
+				"parent_taskID": "ID de tâche parent",
+				"plan_enddate": "Date de fin du plan",
+				"plan_startdate": "Date de début du plan",
+				"priority": "Priorité",
+				"progress": "le progrès",
+				"project_name": "Nom du projet",
+				"project_version": "Version du projet",
+				"status": "Statut",
+				"subtask_Id": "ID de sous-tâche",
+				"task_ID": "identifiant de tâche",
+				"task_name": "Nom de la tâche"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de la tâche",
+				"placeholder10": "- Sélectionnez la priorité -",
+				"placeholder2": "Sélectionnez la date de début prévue",
+				"placeholder3": "Sélectionnez la date de fin prévue",
+				"placeholder4": "Sélectionnez la date de début",
+				"placeholder5": "Sélectionnez la date de fin",
+				"placeholder6": "- Sélectionnez le nom du projet -",
+				"placeholder7": "- Sélectionnez la version du projet -",
+				"placeholder8": "- Sélectionnez Attribuer à -",
+				"placeholder9": "- Sélectionnez le statut -"
+			}
+		},
+		"details": {
+			"title1": "Les champs personnalisés",
+			"title2": "La description",
+			"title3": "Sous-tâche"
+		},
+		"headings": {
+			"head1": "Informations sur la tâche",
+			"head2": "Dates des tâches",
+			"head3": "le progrès",
+			"head4": "Informations sur le projet",
+			"head5": "Exigences",
+			"head6": "Les champs personnalisés",
+			"head7": "La description"
+		},
+		"inline_edit": {
+			"description": "La description",
+			"estimate_hours": "Heures estimées",
+			"notes": "Remarques",
+			"task_name": "Nom de la tâche"
+		},
+		"messages": {
+			"copy": "Tâche copiée avec succès.",
+			"create": "Tâche créée avec succès.",
+			"delete": "La tâche a bien été supprimée.",
+			"import": "Tâche importée avec succès.",
+			"priority": "La priorité a bien changé.",
+			"status": "Le statut a changé avec succès.",
+			"update": "Tâche mise à jour avec succès."
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "Ouvrir"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"id": 3,
+				"label": "EN ATTENTE"
+			},
+			{
+				"id": 4,
+				"label": "Attendre"
+			},
+			{
+				"id": 5,
+				"label": "annuler"
+			},
+			{
+				"id": 6,
+				"label": "Terminé"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"id": 3,
+				"label": "EN ATTENTE"
+			},
+			{
+				"id": 5,
+				"label": "annuler"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"id": 4,
+				"label": "Attendre"
+			},
+			{
+				"id": 5,
+				"label": "annuler"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "annuler"
+			},
+			{
+				"id": 2,
+				"label": "En cours"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"id": 4,
+				"label": "annuler"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "Urgent"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "Très haut"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "Haute"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "Moyen"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "Faible"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "EN ATTENTE"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Attendre"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Terminé"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "EN ATTENTE"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Attendre"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Terminé"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "EN ATTENTE"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "Attendre"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "En cours"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "annuler"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "Terminé"
+			}
+		],
+		"title": "Les Tâches",
+		"title1": "Créer une tâche",
+		"title2": "Créer une sous-tâche",
+		"title3": "Tâches d'importation",
+		"title4": "Tâche d'édition",
+		"title5": "Modifier la sous-tâche",
+		"title6": "Copier la tâche",
+		"tooltips": {
+			"sub_task": "Créer une sous-tâche"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "Nom de la taxe",
+			"tax_rate": "Taux d'imposition"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom de taxe unique et valide.",
+				"message2": "Veuillez saisir un taux de taxe valide.",
+				"message3": "Le taux de taxe doit être un nombre."
+			},
+			"fields": {
+				"tax_name": "Nom de la taxe",
+				"tax_rate": "Taux d'imposition"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de la taxe",
+				"placeholder2": "Entrez le taux de taxe"
+			}
+		},
+		"messages": {
+			"create": "Taxe créée avec succès.",
+			"delete": "Taxe supprimée avec succès.",
+			"update": "Taxe mise à jour avec succès."
+		},
+		"title": "Les taxes",
+		"title1": "Les taux d'imposition",
+		"title2": "Impôt !",
+		"title3": "Créer une taxe",
+		"title4": "Mettre à jour la taxe"
+	},
+	"teams": {
+		"columns": {
+			"actions": "actes",
+			"leader": "chef",
+			"members": "Membres",
+			"team_name": "Nom de l'équipe"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir un nom d'équipe valide.",
+				"message2": "Le nom de l'équipe peut contenir 30 caractères maximum.",
+				"message3": "Veuillez sélectionner un membre d'équipe valide.",
+				"message4": "Veuillez sélectionner un chef d'équipe valide.",
+				"message5": "Veuillez sélectionner le fichier CSV à importer.",
+				"message6": "Ce fichier n'est pas un fichier csv. Veuillez sélectionner uniquement le fichier csv."
+			},
+			"fields": {
+				"actions": "actes",
+				"csv_file": "Sélectionner le fichier CSV de l'équipe",
+				"description": "La description",
+				"leader": "chef",
+				"members": "Membres",
+				"team_name": "Nom de l'équipe"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez le nom de l'équipe",
+				"placeholder2": "- Sélectionner les membres de l'équipe -",
+				"placeholder3": "- Sélectionnez le chef d'équipe -"
+			}
+		},
+		"inline_edit": {
+			"team_name": "Nom de l'équipe"
+		},
+		"labels": {
+			"label1": "Avant de commencer à importer des équipes, assurez-vous que vous avez importé des utilisateurs."
+		},
+		"messages": {
+			"create": "L'équipe a été créée avec succès.",
+			"delete": "l'équipe a bien été supprimée.",
+			"import": "Équipe importée avec succès.",
+			"update": "L'équipe a été mise à jour avec succès."
+		},
+		"title": "Les Équipes",
+		"title1": "Importer des équipes",
+		"title2": "Chef d'équipe",
+		"title3": "Conseils d'équipe"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "OPTIONS DE COULEUR DE LA BARRE LATÉRALE",
+			"head10": "Couleurs de police de la barre latérale",
+			"head11": "Options de disposition de la barre latérale",
+			"head12": "Les configurations",
+			"head13": "Menu réduit",
+			"head14": "Largeur de la barre latérale",
+			"head15": "Barre latérale dégradée",
+			"head2": "Palettes de couleurs",
+			"head3": "Options de couleurs",
+			"head4": "Couleurs d'arrière-plan de la barre latérale",
+			"head5": "Images d'arrière-plan de la barre latérale",
+			"head6": "Image de fond",
+			"head7": "Couleurs de fond",
+			"head8": "Images de fond",
+			"head9": "Couleurs d'arrière-plan de la barre latérale"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "Couleurs prédéfinies"
+			},
+			{
+				"key": "custom-colors",
+				"value": "Couleurs Personnalisées"
+			},
+			{
+				"key": "Couleurs Personnalisées",
+				"value": "Couleurs Personnalisées"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "- Sélectionnez la mise en page -",
+			"placeholder2": "- Sélectionnez la largeur de la barre latérale -"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "Petit"
+			},
+			{
+				"key": "medium",
+				"value": "Moyen"
+			},
+			{
+				"key": "large",
+				"value": "Grand"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "actes",
+			"end_time": "Heure de fin",
+			"entry": "Entrée",
+			"note": "Remarque",
+			"photo": "Photo",
+			"project_name": "Projet",
+			"start_time": "Heure de début",
+			"time_h": "heures",
+			"user": "Utilisateur"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez sélectionner une heure de début valide.",
+				"message2": "Veuillez sélectionner une heure de fin valide.",
+				"message3": "Veuillez sélectionner la date et l'heure appropriées pour la feuille de temps.",
+				"message4": "Veuillez saisir une note valide."
+			},
+			"fields": {
+				"end_time": "Heure de fin",
+				"note": "Remarque",
+				"start_time": "Heure de début"
+			},
+			"placeholders": {
+				"placeholder1": "Sélectionnez l'heure de début",
+				"placeholder2": "Sélectionnez l'heure de fin",
+				"placeholder3": "Entrez une note"
+			},
+			"title1": "Créer une feuille de temps",
+			"title2": "Modifier la feuille de temps"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "Veuillez sélectionner une plage valide.",
+				"message2": "Veuillez sélectionner une période valide à partir de.",
+				"message3": "Veuillez sélectionner une période valide pour."
+			},
+			"placeholders": {
+				"placeholder1": "- Sélectionnez un projet -",
+				"placeholder2": "- Sélectionnez un client -",
+				"placeholder3": "Sélectionnez la période de",
+				"placeholder4": "Sélectionnez la période jusqu'à",
+				"placeholder5": "- Sélectionnez un utilisateur -"
+			}
+		},
+		"inline_edit": {
+			"note": "Remarque"
+		},
+		"messages": {
+			"create": "Feuille de temps créée avec succès.",
+			"delete": "La feuille de temps a bien été supprimée.",
+			"update": "La feuille de temps a été mise à jour avec succès."
+		},
+		"range": {
+			"last_month": "Le mois dernier",
+			"last_week": "La semaine dernière",
+			"period": "Période",
+			"this_month": "Ce mois-ci",
+			"this_week": "Cette semaine",
+			"today": "Aujourd'hui"
+		},
+		"title": "Emploi du Temps",
+		"title1": "Ma feuille de temps",
+		"title2": "Toutes les feuilles de temps"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez saisir une description valide.",
+				"message2": "La description peut contenir au maximum 5 caractères.",
+				"message3": "La description peut contenir 255 caractères au maximum.",
+				"message4": "Veuillez sélectionner un statut de tâche valide.",
+				"message5": "Veuillez sélectionner une date d'échéance valide."
+			},
+			"fields": {
+				"description": "La description",
+				"due_date": "Date d'échéance",
+				"status": "Statut"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez la description",
+				"placeholder2": "- Sélectionnez le statut -",
+				"placeholder3": "Sélectionnez la date d'échéance"
+			}
+		},
+		"inline_edit": {
+			"description": "La description",
+			"due_date": "Date d'échéance"
+		},
+		"messages": {
+			"create": "Todo a bien été créé.",
+			"delete": "Todo a bien été supprimé.",
+			"status": "Statut mis à jour avec succès.",
+			"update": "Todo a été mis à jour avec succès."
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "Ouvrir"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "Terminé"
+			}
+		],
+		"title": "Todos"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "Attribuer une autorisation modale"
+		},
+		"columns": {
+			"actions": "actes",
+			"departments_roles": "Départements / Rôles",
+			"first_name": "Prénom",
+			"last_name": "Nom de famille",
+			"photo": "Photo",
+			"status": "Statut",
+			"username": "Nom d'utilisateur"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "Veuillez entrer un prénom valide.",
+				"message10": "Le mot de passe et la confirmation du mot de passe ne correspondent pas.",
+				"message11": "Déposez des fichiers ici ou cliquez pour télécharger.",
+				"message12": "Veuillez sélectionner un service valide avec des rôles.",
+				"message13": "Veuillez sélectionner des autorisations utilisateur valides.",
+				"message14": "Veuillez saisir un ID généré par l'utilisateur valide.",
+				"message15": "Veuillez saisir un identifiant d'emploi valide.",
+				"message16": "Merci d'entrer un nom d'utilisateur valide.",
+				"message17": "Le nom d'utilisateur peut contenir de 3 à 30 caractères maximum sans espaces blancs.",
+				"message18": "Veuillez saisir un numéro de téléphone portable valide.",
+				"message19": "S'il vous plaît entrer un numéro de téléphone valide.",
+				"message2": "Le prénom peut contenir 20 caractères maximum.",
+				"message20": "Veuillez sélectionner des autorisations utilisateur valides.",
+				"message21": "Veuillez sélectionner le fichier CSV à importer.",
+				"message22": "Ce fichier n'est pas un fichier csv. Veuillez sélectionner uniquement le fichier csv.",
+				"message3": "Veuillez saisir un nom de famille valide.",
+				"message4": "Le nom de famille peut contenir 20 caractères maximum.",
+				"message5": "S'il vous plaît entrer un email valide.",
+				"message6": "L'e-mail peut être une adresse e-mail valide.",
+				"message7": "Entrer un mot de passe valide s'il vous plait.",
+				"message8": "Le mot de passe peut contenir de 3 à 30 caractères au maximum.",
+				"message9": "Veuillez saisir un mot de passe de confirmation valide."
+			},
+			"fields": {
+				"address": "adresse",
+				"assigned_to": "Assigné à",
+				"confirm_password": "Confirmez le mot de passe",
+				"country": "Pays",
+				"csv_file": "Sélectionnez le fichier CSV utilisateur",
+				"customize_permission": "Personnaliser l'autorisation",
+				"departments_roles": "Départements / Rôles",
+				"dob": "Date de naissance",
+				"email": "Email",
+				"employment_ID": "ID d'emploi",
+				"everyone": "toutes les personnes",
+				"father_name": "Le nom du père",
+				"first_name": "Prénom",
+				"gender": "Le sexe",
+				"is_departmenthead": "Est-il chef de département?",
+				"joining_date": "Date d'inscription",
+				"language": "La langue",
+				"last_name": "Nom de famille",
+				"marital_status": "État civil",
+				"mobile": "Mobile",
+				"mother_name": "Le nom de la mère",
+				"new_password": "Nouveau mot de passe",
+				"old_password": "Ancien mot de passe",
+				"password": "Mot de passe",
+				"phone": "Téléphone",
+				"primary_manager": "Gestionnaire principal",
+				"profile_photo": "Photo de profil",
+				"secondary_manager": "Gestionnaire secondaire",
+				"select_users": "Sélectionner des utilisateurs",
+				"skype": "Skype",
+				"userid": "Identifiant d'utilisateur",
+				"username": "Nom d'utilisateur"
+			},
+			"placeholders": {
+				"placeholder1": "Entrez votre prénom",
+				"placeholder10": "-- Choisir la langue --",
+				"placeholder11": "Entrez l'ancien mot de passe",
+				"placeholder12": "-- Sélectionnez le gestionnaire principal --",
+				"placeholder13": "-- Sélectionnez le gestionnaire secondaire --",
+				"placeholder14": "Entrer l'adresse",
+				"placeholder2": "Entrer le nom de famille",
+				"placeholder3": "Entrer email",
+				"placeholder4": "Entrer le mot de passe",
+				"placeholder5": "Entrez le mot de passe de confirmation",
+				"placeholder6": "- Sélectionnez les départements / rôles -",
+				"placeholder7": "Saisissez votre nom d'utilisateur",
+				"placeholder8": "Entrez Skype",
+				"placeholder9": "-- Choisissez le pays --"
+			}
+		},
+		"gender_options": [
+			{
+				"label": "Mâle",
+				"value": "male"
+			},
+			{
+				"label": "Femme",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "Informations personnelles",
+			"head2": "Exigences",
+			"head3": "À propos de l'utilisateur",
+			"head4": "Informations de contact"
+		},
+		"inline_edit": {
+			"address": "adresse",
+			"country": "Pays",
+			"dob": "DOB",
+			"father_name": "Nom du père",
+			"first_name": "Prénom",
+			"gender": "Le sexe",
+			"joining_date": "Date d'inscription",
+			"language": "La langue",
+			"last_name": "Nom de famille",
+			"maritial_status": "État initial",
+			"mobile": "Mobile",
+			"mother_name": "Nom de la mère",
+			"phone": "Téléphone",
+			"primary_manager": "Gestionnaire principal",
+			"secondary_manager": "Gestionnaire secondaire",
+			"skype": "Skype",
+			"username": "Nom d'utilisateur",
+			"state": "Etat",
+			"city": "Ville",
+			"postal_code": "code postal"
+		},
+		"marital_status": [
+			{
+				"label": "Mariée",
+				"value": "married"
+			},
+			{
+				"label": "Célibataire",
+				"value": "unmarried"
+			},
+			{
+				"label": "Veuve",
+				"value": "widowed"
+			},
+			{
+				"label": "Divorcée",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "L'avatar a changé avec succès.",
+			"create": "L'utilisateur a été créé avec succès.",
+			"delete": "L'utilisateur a bien été supprimé.",
+			"email_change": "La demande de modification par e-mail a bien été envoyée. Veuillez vérifier votre boîte de réception et modifier votre e-mail.",
+			"import": "L'utilisateur a importé avec succès.",
+			"invite": "Invitation envoyée avec succès.",
+			"password_change": "La demande de changement de mot de passe a bien été envoyée. Veuillez vérifier votre boîte de réception et modifier votre e-mail.",
+			"status": "Le statut a changé avec succès.",
+			"update": "L'utilisateur a été mis à jour avec succès."
+		},
+		"profile": {
+			"activities": "Activités",
+			"articles": "Des articles",
+			"comments": "commentaires",
+			"defect_hours": "Heures de défaut",
+			"defects": "Défauts",
+			"incident_hours": "Heures d'incident",
+			"incidents": "Incidents",
+			"leave_hours": "Laisser les heures",
+			"leave_other_hours": "Congés / autres heures",
+			"meeting_hours": "Heures de réunion",
+			"other_hours": "Autres heures",
+			"projects": "Projets",
+			"task_hours": "Heures de tâche",
+			"tasks": "Les Tâches",
+			"total_hours": "Heures totales",
+			"total_messages": "Total des messages"
+		},
+		"title": "Utilisateurs",
+		"title1": "Créer un utilisateur",
+		"title2": "Modifier l'utilisateur",
+		"title3": "Autorisations utilisateur",
+		"title4": "Changer l'e-mail",
+		"title5": "Changer le mot de passe",
+		"title6": "Importer un utilisateur",
+		"title7": "Changer d'avatar"
+	},
+	"timer_logs": {
+		"title": "Démarrer la minuterie",
+		"title1": "Arrêter la minuterie",
+		"error_messages": {
+			"message1": "Impossible de démarrer le minuteur car il est déjà en cours d'exécution.",
+			"message2": "La durée doit être supérieure à 1 minute.",
+			"message3": "La durée doit être inférieure à 12 heures."
+		}
+	}
+}

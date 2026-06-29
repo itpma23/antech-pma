@@ -1,0 +1,22 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="import()">
+        <p><b>Upload file excell : </b></p>
+        <div class="well well-sm">
+
+          <input type="file" name="userfile" (change)="upload($event)" >
+          <hr>
+          <div class="row-fluid">
+            <div class="span3">
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-primary">Import</button>
+            </div>
+
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

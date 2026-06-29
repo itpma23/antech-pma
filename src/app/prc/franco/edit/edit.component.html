@@ -1,0 +1,105 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">PRC Franco</h4>
+
+              
+              <!-- <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Kode</label>
+                <l-select2 [data]="dataSelectKode" formControlName="kode_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.kode_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.kode_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Karyawan</label>
+                <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nama</mat-label>
+                  <input matInput formControlName="nama" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nama.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nama.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Alamat</mat-label>
+                  <input matInput formControlName="alamat" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.alamat.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.alamat.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Contact</mat-label>
+                  <input matInput formControlName="contact" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.contact.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.contact.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Telp.</mat-label>
+                  <input matInput formControlName="telp" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.telp.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.telp.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              
+              
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+          </div>
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
+</div>

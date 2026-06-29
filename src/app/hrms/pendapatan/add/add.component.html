@@ -1,0 +1,99 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">event</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Pendapatan Karyawan</h4>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Lokasi</label>
+
+                <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+              <div class="form-group label-floating">
+                <label class="control-label">Karyawan</label>
+
+                <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" (valueChange)="valueChange($event)"
+                  [options]="{ placeholder: 'Pilih',
+                allowClear: false}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="form-group label-floating">
+                <label class="control-label">Tipe Pendapatan</label>
+                <l-select2 [data]="dataSelectTipePendapatan" formControlName="tipe_gaji" [options]="{ placeholder: 'Pilih',
+                allowClear: false}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.tipe_gaji.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tipe_gaji.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tanggal</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Keterangan</mat-label>
+                  <input matInput required formControlName="keterangan">
+                </mat-form-field>
+                <!-- <div *ngIf="isFormSubmitted && userControl.istirahat.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.istirahat.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Nilai Pendapatan</mat-label>
+                  <input matInput required formControlName="nilai_pendapatan" type="number">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.nilai_pendapatan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.nilai_pendapatan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+
+
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+              <!-- </form> -->
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

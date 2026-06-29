@@ -1,0 +1,58 @@
+<div class="main-content" style="background-color: rgb(86, 86, 163);">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <!-- <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">person</i>
+          </div> -->
+
+          <div class="card-content">
+            <h4 class="card-title">Check Closing Periode</h4>
+            <h5 class="card-title">{{nama_lokasi}} - {{nama_periode}}</h5>
+            <div>
+              <button type="button" data-dismiss="modal" (click)="onClose()" class="btn btn-primary btn-danger btn-sm ">
+                Tutup</button>
+              <!-- <button type="button" data-dismiss="modal" (click)="addPP()" class="btn btn-primary btn-info btn-sm ">
+                  Tambahkan PP Terpilih</button> -->
+
+            </div>
+
+            <div class="content table-responsive">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>value</th>
+                    <th>Status</th>
+                    <!-- <th></th> -->
+                  </tr>
+                </thead>
+                <tbody *ngIf="periodeAkunting?.length != 0">
+                  <tr *ngFor="let p of periodeAkunting; index as i">
+                    <td>{{p.item}}</td>
+                    <td>{{p.nilai | number:'1.2-2'}}</td>
+                    <td>
+                      <span class="label label-danger" *ngIf="p.is_valid!=true">Belum Selesai</span>
+                      <span class="label label-success" *ngIf="p.is_valid==true">Selesai</span>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="periodeAkunting?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+            </div>
+            <!-- end content-->
+          </div>
+          <!--  end card  -->
+        </div>
+        <!-- end col-md-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+  </div>

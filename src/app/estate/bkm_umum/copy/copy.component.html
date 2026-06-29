@@ -1,0 +1,416 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">BKM UMUM(COPY)</h4>
+
+              <div class="col-md-6">
+                <div class="form-group label-floating">
+                  <label class="control-label">Lokasi</label>
+                  <l-select2 [data]="dataSelectEstate" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                allowClear:false}" disabled="disabled">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width">
+                  <mat-form-field>
+                    <mat-label>No Transaksi</mat-label>
+                    <input matInput formControlName="no_transaksi" required type="text" readonly>
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.no_transaksi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating">
+                  <label class="control-label">tanggal</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="tanggal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+
+                <div class="form-group label-floating">
+                  <label class="control-label">Afdeling</label>
+                  <l-select2 [data]="dataSelectAfdeling" formControlName="rayon_afdeling_id" [options]="{ placeholder: 'Pilih',
+                allowClear:false}" disabled="disabled">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.rayon_afdeling_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.rayon_afdeling_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width">
+                  <mat-form-field>
+                    <mat-label>No Ref</mat-label>
+                    <input matInput formControlName="no_ref" type="text">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.no_ref.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.no_ref.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width">
+                  <mat-form-field>
+                    <mat-label>Keterangan</mat-label>
+                    <input matInput formControlName="keterangan" type="text">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.no_ref.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.no_ref.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div> -->
+                </div>
+                <!-- <div class="form-group label-floating">
+                  <label class="control-label">Mandor</label>
+                  <l-select2 [data]="dataSelectMandor" formControlName="mandor_id" [options]="{ placeholder: 'Pilih',
+                allowClear:false}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.mandor_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.mandor_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="example-full-width col-sm-6">
+                      <mat-form-field>
+                        <mat-label>Jumlah HK</mat-label>
+                        <input matInput formControlName="mandor_jumlah_hk" required type="text"
+                          (change)="hitungHkMandor()">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.mandor_jumlah_hk.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.mandor_jumlah_hk.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-6">
+                      <mat-form-field>
+                        <mat-label>Rupiah HK</mat-label>
+                        <input matInput formControlName="mandor_rupiah_hk" required type="text" readonly>
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.mandor_rupiah_hk.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.mandor_rupiah_hk.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-6">
+                      <mat-form-field>
+                        <mat-label>Premi</mat-label>
+                        <input matInput formControlName="mandor_premi" required type="text">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.mandor_premi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.mandor_premi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="form-group label-floating">
+                  <label class="control-label">Kerani</label>
+                  <l-select2 [data]="dataSelectKerani" formControlName="kerani_id" [options]="{ placeholder: 'Pilih',
+                allowClear:false}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.kerani_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kerani_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="example-full-width col-sm-6">
+                      <mat-form-field>
+                        <mat-label>Jumlah HK</mat-label>
+                        <input matInput formControlName="kerani_jumlah_hk" required type="text"
+                          (change)="hitungHkKerani()">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.kerani_jumlah_hk.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.kerani_jumlah_hk.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-6">
+                      <mat-form-field>
+                        <mat-label>Rupiah HK</mat-label>
+                        <input matInput formControlName="kerani_rupiah_hk" required type="text" readonly>
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.kerani_rupiah_hk.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.kerani_rupiah_hk.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                    <div class="example-full-width col-sm-6">
+                      <mat-form-field>
+                        <mat-label>Premi</mat-label>
+                        <input matInput formControlName="kerani_premi" required type="text">
+                      </mat-form-field>
+                      <div *ngIf="isFormSubmitted && userControl.kerani_premi.errors" class="invalid-feedback">
+                        <small [hidden]="!userControl.kerani_premi.errors.required" class="text-danger">
+                          Tidak boleh kosong!
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+
+
+              <div class="card">
+                <div class="card-header card-header-tabs" data-background-color="rose">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <!-- <span class="nav-tabs-title">Tasks:</span> -->
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="active">
+                          <a href="#pillPrestasi" data-toggle="tab">
+                            <i class="material-icons">list</i> Prestasi
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                        <li class="">
+                          <a href="#pillRekapitulasi" data-toggle="tab" (click)="hitungRekapitulasi()">
+                            <i class="material-icons">list</i> Rekapitulasi
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li>
+                        <!-- <li class="">
+                          <a href="#pillBahan" data-toggle="tab">
+                            <i class="material-icons">code</i> Material
+                            <div class="ripple-container"></div>
+                          </a>
+                        </li> -->
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content">
+
+                  <div class="tab-pane active" id="pillPrestasi">
+                    <div formArrayName="details">
+                      <fieldset class="container-fluid shift_content" [formGroupName]="i"
+                        *ngFor="let blok of details.controls; let i=index; let odd=odd;">
+                        <legend>
+                          <span class="label label-info">{{i+1}}</span>
+                          <button type="button" (keydown.enter)="$event.preventDefault()" (click)="removeDetail(blok)"
+                            class="btn btn-danger btn-round btn-fab btn-fab-mini" rel="tooltip" data-placement="bottom"
+                            title="Hapus Detail">
+                            <i class="material-icons">close</i>
+                          </button>
+                        </legend>
+                        <div class="form-group col-md-12">
+
+                          <div class="xform-group col-md-4">
+                            <label class="control-label">Karyawan</label>
+                            <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: false}" (valueChange)="valueChange($event,blok)">
+                            </l-select2>
+                          </div>
+                          <div class="xform-group col-md-4">
+                            <label class="control-label">Kegiatan</label>
+                            <l-select2 [data]="dataSelectKegiatan" formControlName="kegiatan_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: true}">
+                            </l-select2>
+                          </div>
+                          <div class="xform-group col-md-4">
+                            <label class="control-label">Blok</label>
+                            <l-select2 [data]="dataSelectBlok" formControlName="blok_id" [options]="{ placeholder: 'Pilih',
+                          allowClear: true}">
+                            </l-select2>
+                            <!-- <div *ngIf="isFormSubmitted && userControl.mandor_id.errors" class="invalid-feedback">
+                            <small [hidden]="!userControl.mandor_id.errors.required " class="text-danger">
+                              Tidak boleh kosong!
+                            </small>
+                          </div> -->
+                          </div>
+                          <div class="xform-group col-md-4">
+                            <label class="control-label">Kendaraan</label>
+                            <l-select2 [data]="dataSelectKendaraan" formControlName="kendaraan_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: true}">
+                            </l-select2>
+                          </div>
+                          <div class="xform-group col-md-4">
+                            <label class="control-label">Jenis Absensi</label>
+                            <l-select2 [data]="dataSelectJenisAbsensi" formControlName="jenis_absensi_id" [options]="{ placeholder: 'Pilih',
+                            allowClear: false}" (ngModelChange)="gethk( blok )">
+                            </l-select2>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <mat-form-field>
+                              <mat-label>Jumlah HK</mat-label>
+                              <input matInput formControlName="jumlah_hk" required type="number"
+                                style="text-align: right;" (change)="hitungHkKaryawan(blok)">
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <mat-form-field>
+                              <mat-label>Rupiah Hk</mat-label>
+                              <input matInput formControlName="rupiah_hk" required type="number"
+                                style="text-align: right;" readonly>
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <mat-form-field>
+                              <mat-label>Premi</mat-label>
+                              <input matInput formControlName="premi" required type="number" style="text-align: right;">
+                            </mat-form-field>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <mat-form-field>
+                              <mat-label>Keterangan</mat-label>
+                              <input matInput formControlName="ket" type="text" style="text-align: left;">
+                            </mat-form-field>
+                          </div>
+                          <!-- <div class="xform-group col-md-6">
+                            <label class="control-label">Blok</label>
+                            <l-select2 [data]="dataSelectBlok" formControlName="blok_id" [options]="{ placeholder: 'Pilih',
+                        allowClear: false}" (valueChange)="valueChange($event,blok)">
+                            </l-select2>
+                          </div> -->
+                        </div>
+                        <div class="form-group col-md-12">
+
+                        </div>
+                        <div class="form-group col-md-12">
+
+                        </div>
+
+
+                        <div class="panel panel-default">
+                          <!-- <div class="panel-heading " role="tab" id={{awalanHeading}}{{i}}>
+                            <a role="button" data-toggle="collapse" href="#{{awalanCollapse}}{{i}}"
+                              aria-expanded="false" aria-controls="collapseExample" class="collapsed">
+                              <h4 class="panel-title ">
+                                DENDA PANEN
+                                <i class="material-icons">keyboard_arrow_down</i>
+                              </h4>
+                            </a>
+                          </div> -->
+
+                          <div id={{awalanCollapse}}{{i}} class="panel-collapse collapse" role="tabpanel">
+                            <div class="panel-body">
+
+
+                            </div>
+                          </div>
+
+                        </div>
+                      </fieldset>
+
+
+                    </div>
+                    <div class="col-md-12">
+                      <button type="button" (click)="addDetail()" class="btn btn-info btn-round btn-fab btn-fab-mini"
+                        rel="tooltip" data-placement="bottom" title="Tambah Detail">
+                        <i class="material-icons">add</i>
+                      </button>
+                    </div>
+                  </div> <!-- <div class="tab-pane active" id="pillPrestasi"> -->
+                  <div class="tab-pane" id="pillRekapitulasi">
+
+                    <div class="col-md-12">
+
+                      <div class="card">
+                        <div class="card-header card-header-icon" data-background-color="rose">
+                          <i class="material-icons">assignment</i>
+                        </div>
+                        <div class="card-content">
+                          <h4 class="card-title">Rekapitulasi</h4>
+                          <button type="button" class="btn-sm btn-fill btn-info" (click)="hitungRekapitulasi()">Refresh
+                          </button>
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Kegiatan</th>
+                                  <th>Absensi</th>
+                                  <th class="text-right">Hk</th>
+                                  <th class="text-right">Rupiah Hk</th>
+                                  <!-- <th class="text-right">Prestasi</th> -->
+                                  <th class="text-right">Premi</th>
+
+                                </tr>
+                              </thead>
+                              <tbody *ngIf="estRekapitulasi?.length != 0">
+                                <tr *ngFor="let p of estRekapitulasi">
+                                  <td>{{p.kegiatan}}</td>
+                                  <td>{{p.blok}}</td>
+                                  <td class="text-right">{{p.hk | number:'1.2-2' : 'en_US'}}</td>
+                                  <td class="text-right">{{p.rp_hk | number:'1.2-2' : 'en_US'}}</td>
+                                  <!-- <td class="text-right">{{p.hasil_kerja | number:'1.2-2' : 'en_US'}}</td> -->
+                                  <td class="text-right">{{p.premi | number:'1.2-2' : 'en_US'}}</td>
+
+
+                                </tr>
+                              </tbody>
+                              <tfoot *ngIf="estRekapitulasi?.length != 0">
+                                <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td class="text-right"><b>{{ (estRekapitulasi['total_hk']) | number:'1.2-2' : 'en_US'
+                                      }}</b>
+                                  </td>
+                                  <td class="text-right"><b>{{(estRekapitulasi['total_rp_hk']) | number:'1.2-2' :
+                                      'en_US'}}</b></td>
+                                  <!-- <td class="text-right"><b>{{(estRekapitulasi['total_hasil_kerja']) | number:'1.2-2' :
+                                          'en_US'}}</b></td> -->
+                                  <td class="text-right"><b>{{(estRekapitulasi['total_premi']) | number:'1.2-2' :
+                                      'en_US'}}</b></td>
+
+                                </tr>
+                              </tfoot>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!--<div class="tab-content"> -->
+
+                <br><br>
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+                  <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+                </div>
+
+              </div> <!--  <div class="card"> -->
+            </div>
+            <!--<div class="card-content"></div> -->
+          </div> <!-- <div class="card"> -->
+
+        </div>
+        <!--<div class="col-md-12"> -->
+      </form>
+    </div>
+  </div>
+</div>

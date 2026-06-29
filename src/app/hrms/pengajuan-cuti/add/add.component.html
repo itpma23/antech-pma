@@ -1,0 +1,139 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content container-fluid">
+              <h4 class="card-title">Pengajuan Cuti</h4>
+
+              <div class="row">
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Karyawan</label>
+                  <l-select2 [data]="dataSelectKaryawan" formControlName="karyawan_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: false}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.karyawan_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.karyawan_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+
+                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Dari Tanggal</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="dari_tanggal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.dari_tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.dari_tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+              
+
+                               
+
+                 <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Lokasi Administratif</label>
+                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: false}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                                <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Sampai Tanggal</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="sampai_tanggal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.sampai_tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.sampai_tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+
+
+                  <div class="form-group label-floating col-md-6">
+                  <label class="control-label col-md-6">Jenis Cuti</label>
+                  <l-select2 [data]="dataSelectJenisAbsensi" formControlName="jenis_absensi_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: false}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.jenis_absensi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.jenis_absensi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                <div class="form-group label-floating col-md-6" hidden>
+                  <label class="control-label col-md-6">Lokasi Pengajuan Cuti</label>
+                  <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id" [options]="{ placeholder: 'Pilih',
+                  allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.lokasi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="form-group label-floating col-md-6" hidden>
+                  <label class="control-label col-md-6">Tanggal Pengajuan</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="tanggal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Keterangan Cuti</mat-label>
+                    <input matInput formControlName="cuti">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.cuti.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.cuti.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <br>
+
+
+
+              </div>
+              <div class="control-group">
+                <label class="control-label">File <span class="text-error">*</span></label>
+                <div class="controls">
+                  <input type="file" name="userfile" (change)="upload($event)">
+                  <div class="well well-small">Ekstensi yang diijinkan: <br>.doc, .zip, .rar, .txt, .docx, .xls, .xlsx,
+                    .pdf, .tar, .gz, .jpg, .jpeg, .JPG, .JPEG, .png, .ppt, .pptx</div>
+                  <!-- {{ (error_upload is not empty) ? error_upload|raw }} -->
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-default" data-dismiss="modal"
+                (click)="onClose()">Batal/Tutup</button>
+              <!-- <button type="button" class="btn btn-fill btn-rose" (click)="onSubmitClear()">Simpan Dan Lanjutkan Input</button> -->
+              <button type="submit" class="btn btn-fill btn-rose">Simpan dan Tutup</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

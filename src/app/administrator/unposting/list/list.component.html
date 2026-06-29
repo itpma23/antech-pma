@@ -1,0 +1,168 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+          <h3 class="title text-center">Unposting</h3>
+
+          <div class="card-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <!-- Tabs Navigation -->
+                <ul class="nav nav-pills nav-pills-icons nav-pills-success nav-stacked" role="tablist">
+                  <li class="active">
+                    <a href="#tab_no" role="tab" data-toggle="tab">
+                      <i class="material-icons">receipt</i> By No Transaksi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab_tanggal" role="tab" data-toggle="tab">
+                      <i class="material-icons">date_range</i> By Tanggal
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-10">
+                <!-- Tabs Content -->
+                <div class="tab-content">
+
+                  <!-- ==================== TAB 1: BY NO TRANSAKSI ==================== -->
+                  <div class="tab-pane active" id="tab_no">
+                    <form [formGroup]="entryForm" (ngSubmit)="onSubmitByNo()">
+                      <div class="card">
+                        <div class="card-content">
+
+                          <!-- Lokasi -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id"
+                              [options]="{ placeholder: 'Pilih', allowClear:false, width:'80%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && userControl.lokasi_id.errors" class="invalid-feedback">
+                              <small [hidden]="!userControl.lokasi_id.errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+                          </div>
+
+                          <!-- Modul -->
+                          <div class="form-group">
+                            <label>Modul</label>
+                            <select class="form-control" formControlName="modul" required>
+                              <option value="">Pilih Modul</option>
+                              <option *ngFor="let m of dataSelectModul" [value]="m.id">
+                                {{ m.nama }}
+                              </option>
+                            </select>
+                            <div *ngIf="isFormSubmitted && userControl.modul.errors" class="invalid-feedback">
+                              <small class="text-danger">Tidak boleh kosong!</small>
+                            </div>
+                          </div>
+
+                          <!-- No Transaksi -->
+                          <div class="form-group">
+                            <label>No Transaksi</label>
+                            <input type="text" class="form-control" formControlName="no_transaksi" required>
+                            <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
+                              <small class="text-danger">Tidak boleh kosong!</small>
+                            </div>
+                          </div>
+
+                          <button type="submit" class="btn btn-fill btn-rose">Proses</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <!-- ==================== TAB 2: BY TANGGAL ==================== -->
+                  <div class="tab-pane" id="tab_tanggal">
+                    <form [formGroup]="entryFormTanggal" (ngSubmit)="onSubmitByTanggal()">
+                      <div class="card">
+                        <div class="card-content">
+
+                          <!-- Lokasi -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Lokasi</label>
+                            <l-select2 [data]="dataSelectLokasi" formControlName="lokasi_id"
+                              [options]="{ placeholder: 'Pilih', allowClear:false, width:'80%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmittedTanggal && userControlTanggal.lokasi_id.errors"
+                              class="invalid-feedback">
+                              <small class="text-danger">Tidak boleh kosong!</small>
+                            </div>
+                          </div>
+
+                          <!-- Modul -->
+                          <div class="form-group">
+                            <label>Modul</label>
+                            <select class="form-control" formControlName="modul" required>
+                              <option value="">Pilih Modul</option>
+                              <option *ngFor="let m of dataSelectModul" [value]="m.id">
+                                {{ m.nama }}
+                              </option>
+                            </select>
+
+                            <div *ngIf="isFormSubmittedTanggal && userControlTanggal.modul.errors"
+                              class="invalid-feedback">
+                              <small class="text-danger">Tidak boleh kosong!</small>
+                            </div>
+                          </div>
+
+                          <!-- ==================== TANGGAL AWAL & AKHIR SEJAJAR ==================== -->
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Tanggal Awal</label>
+
+                                <div class="input-group align-items-center">
+                                  <input type="text" class="form-control" bsDatepicker [bsConfig]="datepickerConfigAtas"
+                                    formControlName="tanggal_awal" required placeholder="Pilih tanggal awal" />
+                                </div>
+                                <div *ngIf="isFormSubmittedTanggal && userControlTanggal.tanggal_awal.errors"
+                                  class="invalid-feedback">
+                                  <small class="text-danger">Tidak boleh kosong!</small>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Tanggal Akhir</label>
+                                <div class="input-group align-items-center">
+                                  <input type="text" class="form-control" bsDatepicker [bsConfig]="datepickerConfigAtas"
+                                    formControlName="tanggal_akhir" required placeholder="Pilih tanggal akhir" />
+                                </div>
+                                <div *ngIf="isFormSubmittedTanggal && userControlTanggal.tanggal_akhir.errors"
+                                  class="invalid-feedback">
+                                  <small class="text-danger">Tidak boleh kosong!</small>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <!-- ===================================================== -->
+
+                          <button type="submit" class="btn btn-fill btn-rose">Proses</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+                </div>
+              </div>
+            </div> <!-- end row -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

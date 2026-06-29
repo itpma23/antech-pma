@@ -1,0 +1,3976 @@
+{
+	"Activate Account": "アカウントを有効にする",
+	"Administration": "管理",
+	"Announcement": "発表",
+	"Announcements": "お知らせ",
+	"Appointments": "予定",
+	"Articles": "記事",
+	"Assigned Project": "割り当てられたプロジェクト",
+	"Backup Database": "バックアップデータベース",
+	"Calendar": "カレンダー",
+	"Change Email": "メールアドレスを変更",
+	"Clients": "クライアント",
+	"Company Detail": "会社の詳細",
+	"Complete Projects": "完全なプロジェクト",
+	"Cronjob": "クロンジョブ",
+	"Custom Fields": "カスタムフィールド",
+	"Dashboard": "ダッシュボード",
+	"Dashboard Settings": "ダッシュボードの設定",
+	"Defect Assigned": "割り当てられた欠陥",
+	"Defect Attachment": "欠陥アタッチメント",
+	"Defect Comments": "欠陥コメント",
+	"Defect Updated": "欠陥が更新されました",
+	"Defects": "欠陥",
+	"Departments": "部署",
+	"Email Notifications": "電子メール通知",
+	"Email Settings": "メール設定",
+	"Email Templates": "メールテンプレート",
+	"Estimates": "見積り",
+	"File Manager": "ファイルマネージャー",
+	"Forgot Password": "パスワードをお忘れですか",
+	"HRM": "人的資源",
+	"Holidays": "祝日",
+	"Incident Assigned": "割り当てられたインシデント",
+	"Incident Attachment": "インシデントアタッチメント",
+	"Incident Comments": "インシデントコメント",
+	"Incident Updated": "インシデントが更新されました",
+	"Incidents": "インシデント",
+	"Invoices": "請求書",
+	"Items": "アイテム",
+	"Knowledge Base": "知識ベース",
+	"Leaves": "葉",
+	"Mailbox": "メールボックス",
+	"Meeting": "会議",
+	"Meetings": "ミーティング",
+	"Menu Allocation": "メニューの割り当て",
+	"Notification Client": "通知クライアント",
+	"PM": "午後",
+	"Payments": "支払い",
+	"Project Attachment": "プロジェクトアタッチメント",
+	"Project Comments": "プロジェクトのコメント",
+	"Project Management": "プロジェクト管理",
+	"Project Planner": "プロジェクトプランナー",
+	"Projects": "プロジェクト",
+	"Register Email": "メールを登録",
+	"Reports": "レポート",
+	"Reset Password": "パスワードを再設定する",
+	"Roles": "役割",
+	"Sales": "売上高",
+	"Settings": "設定",
+	"System Settings": "システム設定",
+	"System Update": "システムアップデート",
+	"Task Assigned": "割り当てられたタスク",
+	"Task Board": "タスクボード",
+	"Task Comments": "タスクのコメント",
+	"Task Updated": "タスクが更新されました",
+	"Tasks": "タスク",
+	"Tasks Attachment": "タスクの添付",
+	"Taxes": "税金",
+	"Team Boards": "チームボード",
+	"Teams": "チーム",
+	"Theme Settings": "テーマ設定",
+	"Timesheet": "タイムシート",
+	"Todos": "トドス",
+	"Users": "ユーザー",
+	"Welcome Email": "ようこそメール",
+	"activities": {
+		"columns": {
+			"activity": "アクティビティ",
+			"date": "日付",
+			"description": "説明",
+			"module": "モジュール",
+			"photo": "写真",
+			"username": "ユーザー名"
+		},
+		"title": "アクティビティ"
+	},
+	"announcements": {
+		"columns": {
+			"actions": "行動",
+			"creator": "クリエイター",
+			"end_date": "終了日",
+			"start_date": "開始日",
+			"status": "状態",
+			"title": "タイトル"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なお知らせのタイトルを入力してください。",
+				"message2": "お知らせのタイトルは最大100文字です。",
+				"message3": "有効な開始日を選択してください。",
+				"message4": "有効な終了日を選択してください。"
+			},
+			"fields": {
+				"all_clients": "すべてのクライアント",
+				"description": "説明",
+				"end_date": "終了日",
+				"publish": "公開する",
+				"start_date": "開始日",
+				"status": "状態",
+				"title": "タイトル",
+				"unpublish": "未公開"
+			},
+			"placeholders": {
+				"placeholder1": "お知らせのタイトルを入力してください",
+				"placeholder2": "開始日を選択",
+				"placeholder3": "終了日を選択"
+			},
+			"title1": "お知らせを作成",
+			"title2": "お知らせを編集"
+		},
+		"messages": {
+			"create": "お知らせを作成しました。",
+			"delete": "お知らせを削除しました。",
+			"update": "お知らせを更新しました。"
+		},
+		"title": "お知らせ"
+	},
+	"appointments": {
+		"budges": {
+			"title1": "予約済みスロット"
+		},
+		"columns": {
+			"actions": "行動",
+			"end_time": "終了時間",
+			"id": "イド",
+			"location": "ロケーション",
+			"provider": "プロバイダー",
+			"requester": "依頼者",
+			"start_time": "始まる時間",
+			"status": "状態",
+			"title": "タイトル"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なプロバイダーを選択してください。",
+				"message2": "有効な開始日を選択してください。",
+				"message3": "有効な終了日を選択してください。",
+				"message4": "有効な予定のタイトルを入力してください。",
+				"message5": "予定のタイトルは最大255文字です。",
+				"message6": "有効なクライアントを選択してください。",
+				"message7": "有効な参加者を入力してください。",
+				"message8": "有効なステータスを選択してください。",
+				"message9": "有効なプロバイダーを選択してください。"
+			},
+			"fields": {
+				"attendees": "出席者",
+				"client": "クライアント",
+				"end_date": "終了日",
+				"location": "ロケーション",
+				"notes": "ノート",
+				"provider": "プロバイダー",
+				"start_date": "開始日",
+				"status": "状態",
+				"title": "タイトル"
+			},
+			"placeholders": {
+				"placeholder1": "開始日を選択",
+				"placeholder2": "終了日を選択",
+				"placeholder3": "予定のタイトルを入力してください",
+				"placeholder4": "-クライアントを選択-",
+				"placeholder5": "ロケーション",
+				"placeholder6": "出席者",
+				"placeholder7": "-ステータスを選択-",
+				"placeholder8": "月を検索"
+			}
+		},
+		"messages": {
+			"create": "予定が正常に作成されました。",
+			"delete": "予定が正常に削除されました。",
+			"edit": "予定が正常に編集されました。",
+			"status": "ステータスが正常に変更されました。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "予約済み"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "確認済み"
+			},
+			{
+				"class": "completed",
+				"id": 3,
+				"label": "終了しました"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "キャンセル"
+			}
+		],
+		"title": "予定"
+	},
+	"attachments": {
+		"columns": {
+			"actions": "行動",
+			"attachment": "別添",
+			"file_title": "ファイルのタイトル"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効なファイルタイトルを入力してください。",
+				"message2": "ここにファイルをドロップするか、クリックしてアップロードします。",
+				"message3": "有効なファイルを選択してください。",
+				"message4": "有効なコメントを入力してください。",
+				"message5": "ファイルのタイトルは最大255文字です。"
+			},
+			"fields": {
+				"attachment": "別添",
+				"description": "説明",
+				"file_title": "ファイルのタイトル"
+			},
+			"placeholders": {
+				"placeholder1": "ファイルのタイトルを入力してください"
+			}
+		},
+		"messages": {
+			"create": "添付ファイルを作成しました。",
+			"delete": "添付ファイルを削除しました。"
+		},
+		"title": "添付ファイル"
+	},
+	"breadcrumbs": {
+		"announcements": {
+			"text": "お知らせ",
+			"title": "お知らせ"
+		},
+		"appointments": {
+			"text": "予定",
+			"title": "予定"
+		},
+		"article": {
+			"text": "論文",
+			"title": "論文"
+		},
+		"calendar": {
+			"text": "カレンダー",
+			"title": "カレンダー"
+		},
+		"category": {
+			"text": "カテゴリー",
+			"title": "カテゴリー"
+		},
+		"clients": {
+			"text": "クライアント",
+			"title": "クライアント"
+		},
+		"dashboard": {
+			"title": "ダッシュボード"
+		},
+		"defects": {
+			"text": "欠陥",
+			"title": "欠陥"
+		},
+		"departments": {
+			"text": "部署",
+			"title": "部署"
+		},
+		"email_templates": {
+			"text": "メールテンプレート",
+			"title": "メールテンプレート"
+		},
+		"estimates": {
+			"text": "見積り",
+			"title": "見積り"
+		},
+		"file_browser": {
+			"text": "ファイルマネージャー",
+			"title": "ファイルマネージャー"
+		},
+		"holidays": {
+			"text": "祝日",
+			"title": "祝日"
+		},
+		"incidents": {
+			"text": "インシデント",
+			"title": "インシデント"
+		},
+		"invoices": {
+			"text": "請求書",
+			"title": "請求書"
+		},
+		"items": {
+			"text": "アイテム",
+			"title": "アイテム"
+		},
+		"knowledgebase": {
+			"text": "知識ベース",
+			"title": "知識ベース"
+		},
+		"leave_types": {
+			"text": "タイプを残す",
+			"title": "タイプを残す"
+		},
+		"leaves": {
+			"text": "葉",
+			"title": "葉"
+		},
+		"mailbox": {
+			"text": "メールボックス",
+			"title": "メールボックス"
+		},
+		"meetings": {
+			"text": "ミーティング",
+			"title": "ミーティング"
+		},
+		"payments": {
+			"text": "支払い",
+			"title": "支払い"
+		},
+		"projects": {
+			"text": "プロジェクト",
+			"title": "プロジェクト"
+		},
+		"projects_planner": {
+			"text": "プロジェクトプランナー",
+			"title": "プロジェクトプランナー"
+		},
+		"providers": {
+			"text": "プロバイダー",
+			"title": "プロバイダー"
+		},
+		"reports": {
+			"text": "レポート",
+			"title": "レポート"
+		},
+		"roles": {
+			"text": "役割",
+			"title": "役割"
+		},
+		"settings": {
+			"text": "設定",
+			"title": "設定"
+		},
+		"taskboard": {
+			"text": "タスクボード",
+			"title": "タスクボード"
+		},
+		"tasks": {
+			"text": "タスク",
+			"title": "タスク"
+		},
+		"taxes": {
+			"text": "税金",
+			"title": "税金"
+		},
+		"teamboard": {
+			"text": "チームボード",
+			"title": "チームボード"
+		},
+		"teams": {
+			"text": "チーム",
+			"title": "チーム"
+		},
+		"timesheet": {
+			"text": "タイムシート",
+			"title": "タイムシート"
+		},
+		"todos": {
+			"text": "トドス",
+			"title": "藤堂"
+		},
+		"users": {
+			"text": "ユーザー",
+			"title": "ユーザー"
+		}
+	},
+	"calendar": {
+		"day": "日",
+		"month": "月",
+		"title": "カレンダー",
+		"today": "今日",
+		"week": "週間"
+	},
+	"clients": {
+		"columns": {
+			"actions": "行動",
+			"company_email": "会社のEメール",
+			"company_name": "会社名",
+			"departments_roles": "部門/役割",
+			"first_name": "ファーストネーム",
+			"last_name": "苗字",
+			"photo": "写真",
+			"status": "状態",
+			"username": "ユーザー名"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な名を入力してください。",
+				"message10": "パスワードと確認パスワードが一致しません。",
+				"message12": "電話番号は有効な番号である必要があります。",
+				"message14": "携帯電話番号は有効な番号である必要があります。",
+				"message15": "有効な会社のウェブサイトを入力してください。",
+				"message17": "有効なクライアント生成IDを入力してください。",
+				"message18": "有効な雇用IDを入力してください。",
+				"message19": "有効なユーザー名を入力してください。",
+				"message2": "名は最大20文字です。",
+				"message20": "ユーザー名は、空白なしで3〜30文字の長さにできます。",
+				"message21": "有効な携帯電話番号を入力してください。",
+				"message22": "有効な電話番号を入力して下さい。",
+				"message23": "ここにファイルをドロップするか、クリックしてアップロードします。",
+				"message24": "役割を持つ有効な部門を選択してください。",
+				"message3": "有効な姓を入力してください。",
+				"message4": "姓は最大20文字です。",
+				"message5": "正しいメールアドレスを入力してください。",
+				"message6": "メールは有効なメールアドレスにすることができます。",
+				"message7": "有効なパスワードを入力して下さい。",
+				"message8": "パスワードは3〜30文字の長さにできます。",
+				"message9": "有効な確認パスワードを入力してください。"
+			},
+			"fields": {
+				"address": "住所",
+				"client_ID": "クライアントID",
+				"company_address": "会社の住所",
+				"company_city": "会社の市",
+				"company_country": "会社の国",
+				"company_email": "会社のEメール",
+				"company_fax": "会社ファックス",
+				"company_mobile": "会社のモバイル",
+				"company_name": "会社名",
+				"company_phone": "会社の電話",
+				"company_website": "会社のウェブサイト",
+				"confirm_password": "パスワードを認証する",
+				"country": "国",
+				"departments_roles": "部門/役割",
+				"email": "Eメール",
+				"facebook_URL": "FacebookのURL",
+				"first_name": "ファーストネーム",
+				"hosting_company": "ホスティング会社",
+				"language": "言語",
+				"last_name": "苗字",
+				"linkedIn_URL": "LinkedInのURL",
+				"mobile": "モバイル",
+				"password": "パスワード",
+				"phone": "電話",
+				"port": "港",
+				"profile_photo": "プロフィール写真",
+				"skype": "スカイプ",
+				"twitter_URL": "Twitter URL",
+				"username": "ユーザー名",
+				"zip_code": "郵便番号"
+			},
+			"placeholders": {
+				"placeholder1": "名を入力してください",
+				"placeholder10": "会社の郵便番号を入力してください",
+				"placeholder11": "会社のFAXを入力してください",
+				"placeholder12": "会社のウェブサイトを入力してください",
+				"placeholder13": "会社のSkypeを入力してください",
+				"placeholder14": "会社の住所を入力してください",
+				"placeholder15": "ホスティング会社に入る",
+				"placeholder16": "ホスティングユーザー名を入力してください",
+				"placeholder17": "ホスティングパスワードを入力してください",
+				"placeholder18": "ホスティングポートを入力してください",
+				"placeholder19": "ユーザーネームを入力してください",
+				"placeholder2": "姓を入力",
+				"placeholder20": "Skypeに入る",
+				"placeholder21": " -  国を選択  - ",
+				"placeholder22": " -  言語を選択する  - ",
+				"placeholder23": "-部門/役割を選択-",
+				"placeholder24": "FacebookのURLを入力",
+				"placeholder25": "TwitterのURLを入力してください",
+				"placeholder26": "LinkedInのURLを入力",
+				"placeholder27": "住所を入力してください",
+				"placeholder3": "メールアドレスを入力して",
+				"placeholder4": "パスワードを入力する",
+				"placeholder5": "確認パスワードを入力",
+				"placeholder6": "会社名を入力してください",
+				"placeholder7": "会社のメールアドレスを入力してください",
+				"placeholder8": "-会社の国を選択-",
+				"placeholder9": "Company Cityを入力してください"
+			}
+		},
+		"headings": {
+			"head1": "個人情報",
+			"head2": "会社情報",
+			"head3": "ホスティング情報",
+			"head4": "クライアントについて",
+			"head5": "連絡先と略歴",
+			"head6": "必要条件",
+			"head7": "ソーシャル情報"
+		},
+		"inline_edit": {
+			"first_name": "ファーストネーム",
+			"last_name": "苗字"
+		},
+		"messages": {
+			"create": "クライアントが正常に作成されました。",
+			"delete": "クライアントが正常に削除されました。",
+			"invite": "招待状を送信しました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "クライアントが正常に更新されました。"
+		},
+		"title": "クライアント",
+		"title1": "クライアントを作成",
+		"title2": "クライアントを編集"
+	},
+	"comments": {
+		"buttons": {
+			"button1": "コメントを追加する",
+			"button2": "応答"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なコメントを入力してください。",
+				"message2": "ここにファイルをドロップするか、クリックしてアップロードします。"
+			},
+			"placeholders": {
+				"placeholder1": "コメントを入力してください",
+				"placeholder2": "コメントの返信"
+			}
+		},
+		"messages": {
+			"create": "コメントを作成しました。",
+			"delete": "コメントを削除しました。",
+			"update": "コメントが更新されました。"
+		},
+		"title": "コメント"
+	},
+	"common": {
+		"12_hours": "12時間",
+		"24_hours": "24時間",
+		"action": "アクション",
+		"actions": "行動",
+		"add": "追加",
+		"add_to_timesheet": "タイムシートに追加",
+		"apply": "適用する",
+		"assign": "割り当てます",
+		"back": "バック",
+		"calendar": "カレンダー",
+		"calendar_view": "カレンダービュー",
+		"cancel": "キャンセル",
+		"change": "変化する",
+		"close": "閉じる",
+		"comment": "コメント",
+		"copy": "コピー",
+		"create": "作成する",
+		"create_comment": "コメントを作成",
+		"created": "作成した",
+		"datatable": {
+			"oAria": {
+				"sSortAscending": "：有効にすると、列が昇順にソートされます",
+				"sSortDescending": "：列を降順でソートするためにアクティブ化"
+			},
+			"oPaginate": {
+				"sFirst": "最初",
+				"sLast": "最終",
+				"sNext": "次",
+				"sPrevious": "前"
+			},
+			"sEmptyTable": "テーブル内のデータなし",
+			"sInfo": "_START_ 〜 _END_ / _TOTAL_ エントリを表示しています",
+			"sInfoEmpty": "0エントリの0から0を表示",
+			"sInfoFiltered": "（ _MAX_ 合計エントリからフィルタ）",
+			"sInfoPostFix": "",
+			"sInfoThousands": "、",
+			"sLengthMenu": "表示 _MENU_",
+			"sLoadingRecords": "読み込み中...",
+			"sProcessing": "処理...",
+			"sSearchPlaceholder": "探す ...",
+			"sZeroRecords": "該当する記録が見つかりません"
+		},
+		"days": "日々",
+		"delete": "削除",
+		"detail": "詳細",
+		"details": "詳細",
+		"download": "ダウンロード",
+		"drag_file": "ファイルをドラッグするか参照",
+		"edit": "編集",
+		"empty_message": {
+			"activities": "活動はありません",
+			"announcements": "アナウンスはありません。",
+			"articles": "記事はありません。",
+			"attachments": "添付ファイルはありません。",
+			"categories": "カテゴリはありません。",
+			"clients": "クライアントはありません。",
+			"custom_fields": "カスタムフィールドはありません。",
+			"database_backups": "データベースのバックアップはありません。",
+			"defects": "不具合はございません。",
+			"departments": "部門はありません。",
+			"estimates": "見積もりはありません。",
+			"file_browser": "フォルダー/ファイルはありません。",
+			"histories": "履歴はありません。",
+			"holidays": "休日はありません。",
+			"incidents": "インシデントはありません。",
+			"invoices": "請求書はありません。",
+			"leaves": "葉はありません。",
+			"mails": "メールはありません。",
+			"meetings": "会議はありません。",
+			"notifications": "通知はありません。",
+			"projects": "プロジェクトはありません。",
+			"providers": "プロバイダーはありません。",
+			"roles": "役割はありません。",
+			"sprints": "スプリントはありません。",
+			"tasks": "タスクはありません。",
+			"teams": "チームはありません。",
+			"timesheet": "タイムシートはありません。",
+			"todos": "タスクはありません。",
+			"translations": "翻訳はありません。",
+			"users": "ユーザーはいません。"
+		},
+		"error_messages": {
+			"message1": "ファイルまたはリソースにアクセスするための適切な権限がない可能性があります。",
+			"message2": "不正ユーザー-認証トークンが期限切れの場合。",
+			"message3": "認証トークンが期限切れの場合。",
+			"message4": "申し訳ありませんが、お探しのページは見つかりませんでした。",
+			"message5": "問題が発生しました！",
+			"message6": "正常にログアウトしました。"
+		},
+		"errors_keys": {
+			"key1": "アクセスが拒否されました",
+			"key2": "要求の形式が正しくありません",
+			"key3": "未承認",
+			"key4": "アクセスが拒否されました",
+			"key5": "見つかりません",
+			"key6": "処理できないエンティティ"
+		},
+		"false": "偽",
+		"fullscreen": "全画面表示",
+		"hours": "時間",
+		"import": "インポート",
+		"invite": "招待する",
+		"issues": "課題",
+		"kanban": "かんばん",
+		"last_updated": "最終更新",
+		"list": "リスト",
+		"lists": "リストビュー",
+		"methods": "メソッド",
+		"move": "移動する",
+		"new": "新しい",
+		"not_allowed": "デモでは許可されていません。",
+		"offline": "オフライン",
+		"online": "オンライン",
+		"options": "オプション",
+		"overdue": "期限切れ",
+		"pending": "保留中",
+		"placeholders": {
+			"placeholder1": "-プロジェクトを選択-"
+		},
+		"priorities": {
+			"high": "高い",
+			"low": "低い",
+			"medium": "中",
+			"urgent": "緊急",
+			"very_high": "すごく高い"
+		},
+		"profile": "プロフィール",
+		"remove": "削除する",
+		"remove_file": "ファイルを削除",
+		"report": "報告書",
+		"request": "要求",
+		"reset": "リセット",
+		"restore": "リストア",
+		"save": "保存する",
+		"search": "探す ...",
+		"show": "見せる",
+		"status": {
+			"In Progress": "進行中",
+			"Not Started": "始まっていない",
+			"On Hold": "保留",
+			"accepted": "承認済み",
+			"active": "アクティブ",
+			"all": "すべて",
+			"approved": "承認済み",
+			"assigned": "割り当て済み",
+			"cancel": "キャンセル",
+			"canceled": "キャンセル",
+			"closed": "閉まっている",
+			"completed": "完了しました",
+			"confirmed": "確認済み",
+			"deactive": "非アクティブ",
+			"declined": "辞退",
+			"deferred": "据え置き",
+			"draft": "ドラフト",
+			"error": "エラー",
+			"expired": "期限切れ",
+			"finished": "終了しました",
+			"in_progress": "進行中",
+			"inactive": "休止中",
+			"my": "俺の",
+			"on_hold": "保留",
+			"open": "開いた",
+			"overdue": "期限切れ",
+			"paid": "有料",
+			"partially_paid": "部分的に支払われた",
+			"pending": "保留中",
+			"published": "公開済み",
+			"rejected": "拒否されました",
+			"released": "リリース済み",
+			"reopen": "再開",
+			"reserved": "予約済み",
+			"sent": "送信済み",
+			"solved": "解決した",
+			"success": "成功",
+			"taken": "撮影",
+			"total": "合計",
+			"unpaid": "未払い",
+			"unpublished": "未公開",
+			"waiting": "待っている"
+		},
+		"submit": "提出する",
+		"swal": {
+			"cancelButtonText": "いいえ、保持します !",
+			"confirmButtonText": "はい、削除してください ！",
+			"text": "これを回復することはできません",
+			"text1": "この部門を回復することはできません！。削除する前に、この部門に関連するすべてのユーザーが削除されていることを確認してください。",
+			"text2": "このユーザーを回復することはできません！。削除する前に、チーム、プロジェクト、タスク、障害、インシデントなどからユーザーを削除していることを確認してください。",
+			"text3": "このクライアントを回復することはできません！。削除する前に、チーム、プロジェクト、タスク、不具合、インシデントなどからクライアントを削除していることを確認してください。",
+			"text4": "このプロジェクトを復元することはできません！。削除する前に、このプロジェクトに関連するすべてのタスク、障害、およびインシデントが削除されていることを確認してください。",
+			"title": "本気ですか？"
+		},
+		"switch_to_calendar": "カレンダーに切り替え",
+		"switch_to_kanban": "かんばんに切り替え",
+		"switch_to_list": "リストに切り替え",
+		"test": "テスト",
+		"toggle_dropdown": "ドロップダウンを切り替え",
+		"tooltip": {
+			"project_csv_sample": "サンプルプロジェクトCSV",
+			"task_csv_sample": "サンプルタスクCSV",
+			"team_csv_sample": "チームCSVのサンプル",
+			"user_csv_sample": "ユーザーCSVのサンプル"
+		},
+		"total": "合計",
+		"true": "本当",
+		"unassign": "割り当て解除",
+		"unassigned": "未割り当て",
+		"update": "更新",
+		"updated": "更新しました",
+		"upload": "ファイルをアップロードする",
+		"view": "見る",
+		"view_comments": "コメントを表示",
+		"view_more": "もっと見る"
+	},
+	"customFieldsType": [
+		{
+			"label": "テキスト",
+			"value": "text"
+		},
+		{
+			"label": "テキストエリア",
+			"value": "textarea"
+		},
+		{
+			"label": "落ちる",
+			"value": "dropdown"
+		},
+		{
+			"label": "日付",
+			"value": "date"
+		},
+		{
+			"label": "チェックボックス",
+			"value": "checkbox"
+		},
+		{
+			"label": "数値",
+			"value": "numeric"
+		}
+	],
+	"dashboard": {
+		"chart1": "タスクのステータス",
+		"chart2": "プロジェクトの状況",
+		"chart3": "月例報告",
+		"estimate": "見積り",
+		"invoices": "上位の請求書",
+		"widgets": {
+			"approved_request": "承認済み",
+			"due_payment": "期限",
+			"received_request": "受け取った",
+			"recieved_payment": "受け取りました"
+		}
+	},
+	"defects": {
+		"columns": {
+			"actions": "行動",
+			"actual_hours": "時間",
+			"assigned": "割り当て済み",
+			"assigned_group": "割り当てられたグループ",
+			"creator": "クリエイター",
+			"defect_name": "欠陥名",
+			"end_date": "終了日",
+			"id": "イド",
+			"project": "プロジェクト",
+			"project_version": "プロジェクトのバージョン",
+			"severity": "重大度",
+			"start_date": "開始日",
+			"status": "状態",
+			"type": "タイプ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効な欠陥名を入力してください。",
+				"message10": "ここにファイルをドロップするか、クリックしてアップロードします。",
+				"message11": "有効な開始日を選択してください。",
+				"message12": "有効な終了日を選択してください。",
+				"message13": "見積もり時間は、数字のみ、コロンの後に2桁（60未満）を、特殊文字なしで使用できます。",
+				"message2": "欠陥名は最大255文字です。",
+				"message3": "一意で有効な欠陥生成IDを入力してください。",
+				"message4": "有効な欠陥タイプを選択してください。",
+				"message5": "有効な欠陥ステータスを選択してください。",
+				"message6": "有効な欠陥の重大度を選択してください。",
+				"message8": "有効なプロジェクトを選択してください。"
+			},
+			"fields": {
+				"actual_hours": "実時間",
+				"assigned_To": "に割り当てられた",
+				"assigned_group": "割り当てられたグループ",
+				"choose_file": "ファイルを選ぶ",
+				"completed": "完了しました",
+				"created_by": "によって作成された",
+				"defect_ID": "欠陥ID",
+				"defect_name": "欠陥名",
+				"defect_type": "欠陥タイプ",
+				"description": "説明",
+				"end_date": "終了日",
+				"estimate_hours": "見積もり時間",
+				"project_name": "プロジェクト名",
+				"project_version": "プロジェクトのバージョン",
+				"severity": "重大度",
+				"start_date": "開始日",
+				"status": "状態"
+			},
+			"placeholders": {
+				"placeholder1": "欠陥名を入力してください",
+				"placeholder2": "-欠陥タイプを選択-",
+				"placeholder3": "-欠陥ステータスを選択-",
+				"placeholder4": "-欠陥の重大度を選択-",
+				"placeholder5": "-割り当てられたグループを選択-",
+				"placeholder6": "-プロジェクトを選択-",
+				"placeholder7": "-プロジェクトバージョンを選択-",
+				"placeholder8": "開始日を選択",
+				"placeholder9": "終了日を選択"
+			}
+		},
+		"defect_types": [
+			{
+				"id": 1,
+				"label": "欠陥",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "強化",
+				"value": "2"
+			}
+		],
+		"details": {
+			"title1": "カスタムフィールド",
+			"title2": "説明"
+		},
+		"headings": {
+			"head1": "欠陥情報",
+			"head2": "プロジェクト情報",
+			"head3": "ファイルをアップロード",
+			"head4": "カスタムフィールド",
+			"head5": "説明"
+		},
+		"inline_edit": {
+			"defect_name": "欠陥名",
+			"defect_type": "欠陥タイプ",
+			"description": "説明",
+			"estimate_hours": "推定時間",
+			"notes": "ノート"
+		},
+		"messages": {
+			"create": "障害が正常に作成されました。",
+			"delete": "欠陥は正常に削除されました。",
+			"severity": "重大度は正常に更新されました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "欠陥は正常に更新されました。"
+		},
+		"severities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "低い"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "中"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "高い"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "すごく高い"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "緊急"
+			}
+		],
+		"status": [
+			{
+				"class": "assigned",
+				"id": 1,
+				"label": "割り当て済み"
+			},
+			{
+				"class": "closed",
+				"id": 2,
+				"label": "閉まっている"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "進行中"
+			},
+			{
+				"class": "open",
+				"id": 4,
+				"label": "開いた"
+			},
+			{
+				"class": "solved",
+				"id": 5,
+				"label": "解決した"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "再開"
+			},
+			{
+				"class": "deferred",
+				"id": 7,
+				"label": "据え置き"
+			}
+		],
+		"title": "欠陥",
+		"title1": "欠陥を作成する",
+		"title2": "欠陥を編集",
+		"tooltips": {
+			"attachment": "別添"
+		}
+	},
+	"departments": {
+		"columns": {
+			"actions": "行動",
+			"designation": "指定"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な部門名を入力してください。",
+				"message2": "部門名は最大20文字です。",
+				"message3": "有効な部門の役割を選択してください。"
+			},
+			"fields": {
+				"department": "部門",
+				"department_name": "部署名",
+				"department_roles": "部門の役割",
+				"designation": "指定",
+				"permission": "許可"
+			},
+			"placeholders": {
+				"placeholder1": "部署名を入力してください"
+			}
+		},
+		"messages": {
+			"create": "部門が正常に作成されました。",
+			"delete": "部門が正常に削除されました。",
+			"update": "部門が正常に更新されました。"
+		},
+		"title": "部署",
+		"title1": "詳細部門",
+		"title2": "部門の役割",
+		"tooltip": {
+			"tooltip1": "すべての権限を選択",
+			"tooltip10": "すべて選択",
+			"tooltip11": "許可",
+			"tooltip2": "作成/編集/削除を選択した場合、ビューを選択する必要はありません",
+			"tooltip3": "すべて作成を選択",
+			"tooltip4": "すべて編集を選択",
+			"tooltip5": "すべて削除を選択",
+			"tooltip6": "選択",
+			"tooltip7": "作成できます",
+			"tooltip8": "編集することができます",
+			"tooltip9": "削除できます"
+		}
+	},
+	"estimates": {
+		"columns": {
+			"customer": "顧客",
+			"estimate_date": "日付",
+			"estimate_number": "見積もり",
+			"status": "状態",
+			"total_amount": "量",
+			"valid_till": "まで有効"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な顧客を選択してください。",
+				"message2": "有効な見積もり日を選択してください。",
+				"message3": "有効な有効期限を選択してください。",
+				"message4": "有効なステータスを選択してください。",
+				"message5": "少なくとも1つのアイテムを追加してください。",
+				"message6": "アイテム、数量、単価を入力します。",
+				"message7": "有効な割引タイプを選択してください。"
+			},
+			"fields": {
+				"adjustment": "調整",
+				"customer": "顧客",
+				"discount": "ディスカウント",
+				"discount_type": "割引タイプ",
+				"estimate_date": "見積もり日",
+				"estimate_number": "見積もり番号",
+				"item_description": "説明",
+				"item_name": "項目",
+				"item_tax": "税金",
+				"quantity": "数量",
+				"reference": "参照",
+				"status": "状態",
+				"sub_total": "小計",
+				"total_amount": "合計",
+				"total_item_amount": "量",
+				"unit": "単位",
+				"unit_price": "単価",
+				"valid_till": "有効期限"
+			},
+			"placeholders": {
+				"placeholder1": "-顧客を選択します-",
+				"placeholder10": "数量",
+				"placeholder11": "単価",
+				"placeholder12": "-税金を選択します-",
+				"placeholder2": "見積もり日を選択",
+				"placeholder3": "有効期限を選択します",
+				"placeholder4": "参照を入力",
+				"placeholder5": "-割引タイプを選択します-",
+				"placeholder6": "-ステータスを選択-",
+				"placeholder7": " -  アイテムを選択  - ",
+				"placeholder8": "項目",
+				"placeholder9": "説明"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "パーセント"
+			},
+			{
+				"id": "fixed",
+				"label": "一定"
+			}
+		],
+		"headings": {
+			"head1": "お客様情報",
+			"head2": "日付",
+			"head3": "他の情報",
+			"head4": "アイテム情報"
+		},
+		"inline_edit": {
+			"item_description": "説明",
+			"item_name": "項目",
+			"item_tax": "税金",
+			"quantity": "数量",
+			"unit_price": "単価"
+		},
+		"messages": {
+			"create": "見積もりは正常に作成されました。",
+			"delete": "見積もりは正常に削除されました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "見積もりが正常に更新されました。"
+		},
+		"status": [
+			{
+				"class": "draft",
+				"id": "draft",
+				"label": "ドラフト"
+			},
+			{
+				"class": "sent",
+				"id": "sent",
+				"label": "送られた"
+			},
+			{
+				"class": "expired",
+				"id": "expired",
+				"label": "期限切れ"
+			},
+			{
+				"class": "declined",
+				"id": "declined",
+				"label": "辞退"
+			},
+			{
+				"class": "accepted",
+				"id": "accepted",
+				"label": "受け入れ済み"
+			}
+		],
+		"title": "見積り",
+		"title1": "見積もり！",
+		"title2": "見積もりを作成する",
+		"title3": "見積もりを更新",
+		"title4": "見積もり",
+		"view": {
+			"accept": "同意する",
+			"accepted": "受け入れ済み",
+			"balance_due": "支払期日",
+			"bill_to": "請求書送付先",
+			"decline": "低下",
+			"declined": "辞退",
+			"download": "ダウンロード",
+			"draft": "ドラフト",
+			"due_date": "期日",
+			"due_on_receipt": "領収書の期限",
+			"estimate_date": "見積もり日",
+			"expired": "期限切れ",
+			"sent": "送られた",
+			"terms": "利用規約",
+			"total_due": "合計額"
+		}
+	},
+	"file_browser": {
+		"columns": {
+			"actions": "行動",
+			"name": "名",
+			"progress": "進捗",
+			"size": "サイズ",
+			"status": "状態"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なフォルダ名を入力してください。",
+				"message2": "ここにドラッグしてアップロード...",
+				"message3": "有効なファイル名を入力してください。"
+			},
+			"fields": {
+				"description": "説明",
+				"file_name": "ファイル名",
+				"folder_name": "フォルダ名"
+			},
+			"placeholders": {
+				"placeholder1": "フォルダ名を入力してください",
+				"placeholder2": "説明を入力してください",
+				"placeholder3": "ファイル名を入力してください"
+			}
+		},
+		"messages": {
+			"create_folder": "フォルダが正常に作成されました。",
+			"delete_file": "ファイルは正常に削除されました。",
+			"delete_folder": "フォルダを削除しました。",
+			"update_file": "ファイルは正常に更新されました。",
+			"update_folder": "フォルダは正常に更新されました。",
+			"upload_file": "ファイルが正常にアップロードされました。"
+		},
+		"title": "ファイルマネージャー",
+		"title1": "フォルダーを作る",
+		"title2": "フォルダを編集",
+		"title3": "ファイルをアップロード",
+		"title4": "ファイルを編集",
+		"title5": "ファイル",
+		"title6": "フォルダ",
+		"title7": "追加された"
+	},
+	"footer": {
+		"copyright": "著作権",
+		"text1": "全著作権所有"
+	},
+	"forgot_password": {
+		"create": {
+			"error_messages": {
+				"message1": "正しいメールアドレスを入力してください。",
+				"message2": "メールアドレスは有効なメールアドレスである必要があります。"
+			},
+			"placeholders": {
+				"placeholder1": "メールアドレスを入力して"
+			}
+		},
+		"messages": {
+			"success": "パスワードをリセットする方法については、メールを確認してください。"
+		},
+		"title": "パスワードをお忘れですか",
+		"title1": "以下にメールアドレスを入力してください。パスワードを変更するための情報をお送りします。"
+	},
+	"header": {
+		"heading": {
+			"head1": "あなたが持っている",
+			"head2": "新着メール",
+			"head3": "すべてのメールを見る",
+			"head4": "利用可能なアップデート"
+		},
+		"inbox": "私の受信箱",
+		"languages": "言語",
+		"logout": "ログアウト",
+		"mails": "メール",
+		"notifications": "通知",
+		"profile": "プロフィール",
+		"search": {
+			"text": "検索 ..."
+		}
+	},
+	"histories": {
+		"columns": {
+			"activity": "アクティビティ",
+			"closed_by": "閉鎖者",
+			"commentor": "コメンター",
+			"creator": "クリエイター",
+			"date": "日付",
+			"solved_by": "解決者",
+			"updated_by": "更新者"
+		},
+		"title": "歴史"
+	},
+	"holidays": {
+		"columns": {
+			"actions": "行動",
+			"color": "色",
+			"date": "日付",
+			"event_name": "イベント名",
+			"location": "ロケーション"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なイベント名を入力してください。",
+				"message2": "イベント名は最大50文字です。",
+				"message3": "有効な日付を選択してください。"
+			},
+			"fields": {
+				"color": "色",
+				"date": "日付",
+				"description": "説明",
+				"event_name": "イベント名",
+				"location": "ロケーション"
+			},
+			"placeholders": {
+				"placeholder1": "イベント名を入力してください",
+				"placeholder2": "日付を選択",
+				"placeholder3": "場所を入力してください"
+			}
+		},
+		"inline_edit": {
+			"event_name": "イベント名",
+			"holiday_date": "休日日",
+			"location": "ロケーション"
+		},
+		"messages": {
+			"create": "休日が作成されました。",
+			"delete": "休日を削除しました。",
+			"update": "休日が更新されました。"
+		},
+		"title": "祝日"
+	},
+	"incidents": {
+		"columns": {
+			"actions": "行動",
+			"actual_hours": "時間",
+			"assigned": "割り当て済み",
+			"assigned_group": "割り当てられたグループ",
+			"client": "クライアント",
+			"client_company": "クライアント会社",
+			"creator": "クリエイター",
+			"end_date": "終了日",
+			"id": "イド",
+			"incident_name": "インシデント名",
+			"priority": "優先度",
+			"project": "プロジェクト",
+			"project_version": "プロジェクトのバージョン",
+			"start_date": "開始日",
+			"status": "状態",
+			"type": "タイプ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効なインシデント名を入力してください。",
+				"message2": "インシデント名は最大255文字です。",
+				"message3": "インシデントによって生成された一意で有効なIDを入力してください。",
+				"message4": "有効なインシデントステータスを選択してください。",
+				"message5": "有効なインシデントの優先度を選択してください。",
+				"message6": "有効なインシデントタイプを選択してください。",
+				"message7": "有効な開始日を選択してください。",
+				"message8": "有効な終了日を選択してください。",
+				"message9": "見積もり時間は、数字のみ、コロンの後に2桁（60未満）を、特殊文字なしで使用できます。"
+			},
+			"fields": {
+				"actual_hours": "実時間",
+				"assigned_To": "に割り当てられた",
+				"assigned_group": "割り当てられたグループ",
+				"created_by": "によって作成された",
+				"description": "説明",
+				"end_date": "終了日",
+				"estimate_hours": "見積もり時間",
+				"incident_ID": "インシデントID",
+				"incident_name": "インシデント名",
+				"incident_type": "インシデントタイプ",
+				"priority": "優先度",
+				"project": "プロジェクト",
+				"project_name": "プロジェクト名",
+				"project_version": "プロジェクトのバージョン",
+				"start_date": "開始日",
+				"status": "状態"
+			},
+			"placeholders": {
+				"placeholder1": "インシデント名を入力してください",
+				"placeholder2": "-インシデントステータスを選択-",
+				"placeholder3": "-インシデントの優先度を選択-",
+				"placeholder4": "-インシデントタイプを選択-",
+				"placeholder5": "-割り当てられたグループを選択-",
+				"placeholder6": "-プロジェクトを選択-",
+				"placeholder7": "-プロジェクトバージョンを選択-",
+				"placeholder8": "開始日を選択",
+				"placeholder9": "終了日を選択"
+			}
+		},
+		"details": {
+			"title1": "カスタムフィールド",
+			"title2": "説明"
+		},
+		"headings": {
+			"head1": "インシデント情報",
+			"head2": "プロジェクト情報",
+			"head3": "カスタムフィールド",
+			"head4": "説明",
+			"head5": "他の情報"
+		},
+		"incident_types": [
+			{
+				"id": 1,
+				"label": "サービス要求",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "情報リクエスト",
+				"value": "2"
+			}
+		],
+		"inline_edit": {
+			"description": "説明",
+			"estimate_hours": "推定時間",
+			"incident_name": "インシデント名",
+			"incident_type": "インシデントタイプ",
+			"notes": "ノート"
+		},
+		"messages": {
+			"create": "インシデントが作成されました。",
+			"delete": "インシデントは正常に削除されました。",
+			"import": "インシデントが正常にインポートされました。",
+			"priority": "優先度が正常に変更されました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "インシデントは正常に更新されました。"
+		},
+		"priorities": [
+			{
+				"class": "low",
+				"id": 1,
+				"label": "低い"
+			},
+			{
+				"class": "medium",
+				"id": 2,
+				"label": "中"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "高い"
+			},
+			{
+				"class": "very_high",
+				"id": 4,
+				"label": "すごく高い"
+			},
+			{
+				"class": "urgent",
+				"id": 5,
+				"label": "緊急"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "assigned",
+				"id": 2,
+				"label": "割り当て済み"
+			},
+			{
+				"class": "in_progress",
+				"id": 3,
+				"label": "進行中"
+			},
+			{
+				"class": "solved",
+				"id": 4,
+				"label": "解決した"
+			},
+			{
+				"class": "deferred",
+				"id": 5,
+				"label": "据え置き"
+			},
+			{
+				"class": "reopen",
+				"id": 6,
+				"label": "再開"
+			},
+			{
+				"class": "closed",
+				"id": 7,
+				"label": "閉まっている"
+			}
+		],
+		"title": "インシデント",
+		"title1": "インシデントを作成",
+		"title2": "インシデントを編集"
+	},
+	"invoices": {
+		"columns": {
+			"customer": "顧客",
+			"due_date": "期日",
+			"invoice_date": "日付",
+			"invoice_number": "請求書",
+			"status": "状態",
+			"total_amount": "量"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な顧客を選択してください。",
+				"message2": "有効な請求日を選択してください。",
+				"message3": "有効な期日を選択してください。",
+				"message4": "有効なステータスを選択してください。",
+				"message5": "少なくとも1つのアイテムを追加してください。",
+				"message6": "アイテム、数量、単価を入力します。",
+				"message7": "有効な割引タイプを選択してください。"
+			},
+			"fields": {
+				"adjustment": "調整",
+				"customer": "顧客",
+				"discount": "ディスカウント",
+				"discount_type": "割引タイプ",
+				"due_date": "期日",
+				"invoice_date": "請求書の日付",
+				"invoice_number": "請求書番号",
+				"item_description": "説明",
+				"item_name": "項目",
+				"item_tax": "税金",
+				"project": "プロジェクト",
+				"quantity": "数量",
+				"reference": "参照",
+				"status": "状態",
+				"sub_total": "小計",
+				"total_amount": "合計",
+				"total_amount_due": "料金",
+				"total_item_amount": "量",
+				"unit": "単位",
+				"unit_price": "単価"
+			},
+			"placeholders": {
+				"placeholder1": "-顧客を選択します-",
+				"placeholder10": "数量",
+				"placeholder11": "単価",
+				"placeholder12": "-税金を選択します-",
+				"placeholder13": "-プロジェクトを選択-",
+				"placeholder2": "請求日を選択",
+				"placeholder3": "期日を選択",
+				"placeholder4": "参照を入力",
+				"placeholder5": "-割引タイプを選択します-",
+				"placeholder6": "-ステータスを選択-",
+				"placeholder7": " -  アイテムを選択  - ",
+				"placeholder8": "項目",
+				"placeholder9": "説明"
+			}
+		},
+		"discount_type": [
+			{
+				"id": "percent",
+				"label": "パーセント"
+			},
+			{
+				"id": "fixed",
+				"label": "一定"
+			}
+		],
+		"headings": {
+			"head1": "お客様情報",
+			"head2": "日付",
+			"head3": "他の情報",
+			"head4": "アイテム情報"
+		},
+		"inline_edit": {
+			"item_description": "説明",
+			"item_name": "項目",
+			"item_tax": "税金",
+			"quantity": "数量",
+			"unit_price": "単価"
+		},
+		"messages": {
+			"create": "請求書が正常に作成されました。",
+			"delete": "請求書が正常に削除されました。",
+			"payments": "この請求書の支払いは見つかりませんでした",
+			"status": "ステータスが正常に変更されました。",
+			"update": "請求書が正常に更新されました。"
+		},
+		"status": [
+			{
+				"class": "paid",
+				"id": "paid",
+				"label": "有料"
+			},
+			{
+				"class": "partially_paid",
+				"id": "partially_paid",
+				"label": "部分的に支払われた"
+			},
+			{
+				"class": "unpaid",
+				"id": "unpaid",
+				"label": "未払い"
+			}
+		],
+		"title": "請求書",
+		"title1": "請求書 ！",
+		"title2": "請求書を作成",
+		"title3": "請求書を更新する",
+		"title4": "請求書",
+		"view": {
+			"add_payment": "支払いを追加",
+			"amount": "量",
+			"balance_due": "支払期日",
+			"bank": "バンク",
+			"bill_to": "請求書送付先",
+			"date": "日付",
+			"download": "ダウンロード",
+			"due_amount": "支払期日",
+			"due_date": "期日",
+			"due_on_receipt": "領収書の期限",
+			"gst_number": "GST IN",
+			"invoice_date": "請求書の日付",
+			"offline_payment": "オフライン支払い",
+			"online_payment": "オンライン支払い",
+			"paid": "有料",
+			"partially_paid": "部分的に支払われた",
+			"payment": "支払い",
+			"payment_mode": "支払いモード",
+			"paypal": "ペイパル",
+			"status": "状態",
+			"stripe": "ストライプ",
+			"terms": "利用規約",
+			"total_due": "合計額",
+			"transactions": "取引",
+			"unpaid": "未払い"
+		}
+	},
+	"items": {
+		"columns": {
+			"description": "説明",
+			"name": "項目名",
+			"price": "価格",
+			"tax": "税金",
+			"unit": "単位"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効なアイテム名を入力してください。",
+				"message2": "有効な価格を入力してください。",
+				"message3": "価格は数字でなければなりません。"
+			},
+			"fields": {
+				"description": "説明",
+				"name": "項目名",
+				"price": "価格",
+				"tax": "税金",
+				"unit": "単位"
+			},
+			"placeholders": {
+				"placeholder1": "アイテム名を入力してください",
+				"placeholder2": "価格を入力",
+				"placeholder3": "単位を入力してください",
+				"placeholder4": "-税金を選択します-",
+				"placeholder5": "説明を入力してください"
+			}
+		},
+		"labels": {
+			"label1": "アイテム情報を変更しても、作成された見積もりや請求書には影響しません。"
+		},
+		"messages": {
+			"create": "アイテムが正常に作成されました。",
+			"delete": "アイテムが正常に削除されました。",
+			"update": "アイテムが正常に更新されました。"
+		},
+		"title": "アイテム",
+		"title1": "アイテム！",
+		"title2": "アイテムの作成",
+		"title3": "アイテムの更新"
+	},
+	"kanban_board": {
+		"budges": {
+			"budges1": "リスト間でタスクをドラッグ"
+		},
+		"title1": "欠陥かんばん",
+		"title2": "インシデントかんばん"
+	},
+	"knowledge_base": {
+		"article": {
+			"columns": {
+				"actions": "行動",
+				"article_name": "記事タイトル"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "有効な記事のタイトルを入力してください。",
+					"message2": "記事のタイトルは最大50文字です。",
+					"message3": "有効なカテゴリを選択してください。",
+					"message4": "ここにファイルをドロップするか、クリックしてアップロードします。",
+					"message5": "有効な説明を入力してください。"
+				},
+				"fields": {
+					"article_title": "記事タイトル",
+					"category": "カテゴリー",
+					"description": "説明",
+					"file": "ファイル"
+				},
+				"placeholders": {
+					"placeholder1": "記事のタイトルを入力してください",
+					"placeholder2": " -  カテゴリを選んでください  - ",
+					"placeholder3": "説明を入力してください"
+				}
+			},
+			"messages": {
+				"create": "記事を作成しました。",
+				"delete": "記事を削除しました。",
+				"update": "記事を更新しました。"
+			},
+			"title": "論文",
+			"title1": "記事",
+			"title2": "論文"
+		},
+		"category": {
+			"create": {
+				"error_messages": {
+					"message1": "有効なカテゴリ名を入力してください。",
+					"message2": "カテゴリ名は最大50文字です。",
+					"message3": "ここにファイルをドロップするか、クリックしてアップロードします。",
+					"message4": "有効なファイルを選択してください。"
+				},
+				"fields": {
+					"category_logo": "カテゴリーロゴ",
+					"category_name": "種別名"
+				},
+				"placeholders": {
+					"placeholder1": "カテゴリ名を入力してください",
+					"placeholder2": "探す .."
+				}
+			},
+			"messages": {
+				"create": "カテゴリが正常に作成されました。",
+				"delete": "カテゴリは正常に削除されました。",
+				"update": "カテゴリは正常に更新されました。"
+			},
+			"title": "カテゴリー",
+			"title1": "カテゴリー",
+			"title2": "カテゴリー"
+		},
+		"title": "知識ベース"
+	},
+	"leave_report": {
+		"columns": {
+			"approved_leave": "承認された休暇",
+			"pending_leave": "保留中の休暇",
+			"user": "ユーザー"
+		},
+		"filter": {
+			"fields": {
+				"date_range": "期間",
+				"employee_name": "従業員名"
+			},
+			"placeholders": {
+				"placeholder1": "期間を選択",
+				"placeholder2": "すべて"
+			}
+		},
+		"title": "レポートを残す",
+		"title1": "詳細を残す"
+	},
+	"leave_types": {
+		"columns": {
+			"color": "色",
+			"leave_type": "タイプを残す",
+			"no_of_leaves": "総休暇"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効な休暇タイプを入力してください。",
+				"message2": "休暇の種類は最大20文字です。",
+				"message3": "有効な合計休暇を入力してください。",
+				"message4": "休暇の合計は数字でなければなりません。",
+				"message5": "有効な色を選択してください。"
+			},
+			"fields": {
+				"color": "色",
+				"leave_type": "タイプを残す",
+				"no_of_leaves": "総休暇"
+			},
+			"placeholders": {
+				"placeholder1": "休暇タイプを入力してください",
+				"placeholder2": "総休暇を入力してください"
+			}
+		},
+		"inline_edit": {
+			"leave_type": "タイプを残す",
+			"no_of_leaves": "総休暇"
+		},
+		"messages": {
+			"create": "タイプを正常に作成したままにします。",
+			"delete": "タイプを正常に削除したままにします。",
+			"update": "タイプを正常に更新したままにします。"
+		},
+		"title": "タイプを残す",
+		"title1": "タイプを残してください！",
+		"title2": "休暇タイプの作成",
+		"title3": "休暇タイプを追加"
+	},
+	"leaves": {
+		"buttons": {
+			"accept": "同意する",
+			"reject": "拒否する"
+		},
+		"columns": {
+			"duration": "期間",
+			"leave_date": "日付",
+			"leave_type": "タイプを残す",
+			"reason": "理由",
+			"status": "状態",
+			"user": "ユーザー"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なユーザーを選択してください。",
+				"message2": "有効な休暇タイプを選択してください。",
+				"message3": "有効な休暇日を選択してください。",
+				"message4": "有効なステータスを選択してください。",
+				"message5": "正当な理由を入力してください。",
+				"message6": "ここにファイルをドロップするか、クリックしてアップロードします。"
+			},
+			"fields": {
+				"attachments": "添付ファイル",
+				"duration": "期間",
+				"duration_type": "タイプを残す",
+				"leave_date": "日付",
+				"leave_type": "去る",
+				"reason": "理由",
+				"reject_reason": "理由を拒否しますか？ （オプション）",
+				"status": "状態",
+				"user": "ユーザー"
+			},
+			"placeholders": {
+				"placeholder1": "-ユーザーを選択-",
+				"placeholder2": "-休暇タイプを選択します-",
+				"placeholder3": "日付を選択",
+				"placeholder4": "-ステータスを選択-",
+				"placeholder5": "理由を入力してください"
+			}
+		},
+		"half_leaves_status": [
+			{
+				"id": "first_half",
+				"label": "前半"
+			},
+			{
+				"id": "second_half",
+				"label": "後半"
+			}
+		],
+		"labels": {
+			"approved": "承認済み",
+			"first_half_day": "前半日",
+			"full_day": "丸1日",
+			"half_day": "半日",
+			"multiple": "複数",
+			"remaining": "残り",
+			"second_half_day": "後半日",
+			"single": "シングル",
+			"taken": "撮影",
+			"total_leaves": "総葉"
+		},
+		"messages": {
+			"approve": "承認されたままにします。",
+			"create": "正常に作成されたままにします。",
+			"delete": "正常に削除したままにします。",
+			"reject": "正常に拒否されたままにします。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "正常に更新されたままにします。"
+		},
+		"status": [
+			{
+				"class": "pending",
+				"id": 1,
+				"label": "保留中"
+			},
+			{
+				"class": "approved",
+				"id": 2,
+				"label": "承認済み"
+			},
+			{
+				"class": "rejected",
+				"id": 3,
+				"label": "拒否されました"
+			}
+		],
+		"title": "葉",
+		"title1": "離れて！",
+		"title2": "休暇願",
+		"title3": "すべての葉",
+		"title4": "休暇願",
+		"title5": "カレンダーを離れる",
+		"title6": "休暇を作成する",
+		"title7": "休暇を更新"
+	},
+	"login": {
+		"buttons": {
+			"admin_login": "管理者",
+			"client_login": "クライアント",
+			"forgot_password": "パスワードをお忘れですか？",
+			"hr_manager_login": "人事マネージャー",
+			"manager_login": "マネージャー",
+			"project_manager_login": "プロジェクトマネージャ",
+			"quick_login": "クイックログイン",
+			"register": {
+				"button": "登録",
+				"text": "口座がないのですか？"
+			},
+			"sales_manager_login": "営業部長",
+			"user_login": "ユーザー"
+		},
+		"fields": {
+			"email": {
+				"errors": {
+					"required": "有効なユーザー名またはメールアドレスを入力してください。"
+				},
+				"placeholder": "ユーザー名/メール"
+			},
+			"password": {
+				"errors": {
+					"email": "パスワードは3〜30文字の長さにできます。",
+					"required": "有効なパスワードを入力して下さい。"
+				},
+				"placeholder": "パスワード"
+			}
+		},
+		"title": "ログイン"
+	},
+	"mailbox": {
+		"compose": {
+			"columns": {
+				"actions": "行動",
+				"name": "名",
+				"progress": "進捗",
+				"size": "サイズ",
+				"status": "状態"
+			},
+			"error_messages": {
+				"message1": "有効なメールアドレスを選択してください。",
+				"message2": "有効な件名を入力してください。"
+			},
+			"fields": {
+				"from": "から",
+				"subject": "件名",
+				"to": "に"
+			},
+			"placeholders": {
+				"placeholder1": "-ユーザーを選択-",
+				"placeholder2": "件名を入力してください"
+			}
+		},
+		"messages": {
+			"message": "ファイルが正常にアップロードされました。",
+			"message1": "ファイルは正常に削除されました。",
+			"message2": "メールを少なくとも1つ選択してください。",
+			"message3": "メールを送信しました。",
+			"message4": "メールがゴミ箱に移動しました。",
+			"message5": " メールをゴミ箱に移動しました。",
+			"message6": "迷惑メールが正常に送信されました。",
+			"message7": " お気に入りとしてマークされたメール。",
+			"message8": "既読のメール。",
+			"message9": "メールは下書きに移動しました。"
+		},
+		"title": "メールボックス",
+		"title1": "メールを検索...",
+		"title10": "SEND",
+		"title11": "添付ファイル",
+		"title12": "リフレッシュ",
+		"title13": "既読にする",
+		"title14": "お気に入りとしてマーク",
+		"title15": "ゴミ箱へ移動",
+		"title16": "下書きに移動",
+		"title17": "メールを破棄",
+		"title18": "メールビュー",
+		"title19": "フォルダ",
+		"title2": "コンポジット",
+		"title20": "郵便物",
+		"title3": "メールを作成",
+		"title4": "受信トレイ",
+		"title5": "送られた",
+		"title6": "ドラフト",
+		"title7": "好きな",
+		"title8": "ゴミ",
+		"title9": "捨てる"
+	},
+	"meetings": {
+		"columns": {
+			"actions": "行動",
+			"end": "終わり",
+			"hours": "時間",
+			"id": "ID",
+			"organizer": "主催者",
+			"peoples": "人々を招待",
+			"start": "開始",
+			"status": "状態",
+			"title": "タイトル"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な会議のタイトルを入力してください。",
+				"message2": "会議のタイトルは最大255文字です。",
+				"message3": "有効な開始日を選択してください。",
+				"message4": "有効な終了日を選択してください。",
+				"message5": "有効な会議メンバーを選択してください。",
+				"message6": "会議の適切な日時を選択してください。",
+				"message7": "有効なステータスを選択してください。"
+			},
+			"fields": {
+				"client_name": "クライアント名",
+				"description": "説明",
+				"end_date": "終了日",
+				"location": "ロケーション",
+				"peoples": "人々を招待",
+				"start_date": "開始日",
+				"status": "状態",
+				"title": "タイトル"
+			},
+			"placeholders": {
+				"placeholder1": "イベントタイトル",
+				"placeholder2": "開始日を選択",
+				"placeholder3": "終了日を選択",
+				"placeholder4": "-メンバーを選択-",
+				"placeholder5": "ロケーション",
+				"placeholder6": "-クライアントを選択-",
+				"placeholder7": "-ステータスを選択-"
+			}
+		},
+		"details": {
+			"title1": "説明"
+		},
+		"inline_edit": {
+			"title": "タイトル"
+		},
+		"messages": {
+			"create": "会議が正常に作成されました。",
+			"delete": "会議が削除されました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "会議が更新されました。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "cancel",
+				"id": 3,
+				"label": "キャンセル"
+			},
+			{
+				"class": "completed",
+				"id": 4,
+				"label": "完了しました"
+			}
+		],
+		"title": "ミーティング"
+	},
+	"months": [
+		"ヤン",
+		"2月",
+		"3月",
+		"4月",
+		"5月",
+		"じゅん",
+		"7月",
+		"8月",
+		"9月",
+		"10月",
+		"11月",
+		"12月"
+	],
+	"notes": {
+		"create": {
+			"fields": {
+				"notes": "ノート"
+			}
+		},
+		"messages": {
+			"update": "メモを更新しました。"
+		},
+		"title": "ノート"
+	},
+	"payment_methods": {
+		"columns": {
+			"description": "説明",
+			"method_name": "メソッド名",
+			"status": "状態"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効なメソッド名を入力してください。"
+			},
+			"fields": {
+				"description": "説明",
+				"method_name": "メソッド名",
+				"show_on_pdf": "請求書PDFに説明を表示"
+			},
+			"placeholders": {
+				"placeholder1": "メソッド名を入力してください",
+				"placeholder2": "説明を入力してください"
+			}
+		},
+		"messages": {
+			"create": "お支払い方法が正常に作成されました。",
+			"delete": "お支払い方法が正常に削除されました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "お支払い方法が正常に更新されました。"
+		},
+		"title": "お支払い方法",
+		"title1": "支払方法 ！",
+		"title2": "お支払い方法を作成する",
+		"title3": "お支払い方法の更新"
+	},
+	"payments": {
+		"columns": {
+			"amount": "量",
+			"client": "クライアント",
+			"date": "日付",
+			"invoice": "請求書",
+			"method_name": "支払い",
+			"payment_mode": "支払いモード",
+			"status": "状態"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な金額を入力してください。",
+				"message2": "有効な支払い日を入力してください。",
+				"message3": "有効な支払いモードを選択してください。"
+			},
+			"fields": {
+				"amount": "もらった分量",
+				"date": "支払期日",
+				"notes": "メモを残す",
+				"payment_mode": "支払いモード",
+				"transaction_id": "トランザクションID"
+			},
+			"placeholders": {
+				"placeholder1": "日付を選択",
+				"placeholder2": "-支払いモードを選択します-",
+				"placeholder3": "管理者メモ",
+				"placeholder4": "トランザクションIDを入力してください"
+			}
+		},
+		"info": "注：以下にリストされている支払いモードはオフラインモードです。支払いゲートウェイは、[設定]-> [Paypal / Stripe]で構成できます。",
+		"info1": "Paypal、Stripe、銀行振込、現金など。",
+		"messages": {
+			"create": "支払いが正常に作成されました。",
+			"delete": "支払いが正常に削除されました。",
+			"failed": "支払いに失敗しました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "支払いが正常に更新されました。"
+		},
+		"status": [
+			{
+				"class": "in_progress",
+				"id": "in_progress",
+				"label": "進行中"
+			},
+			{
+				"class": "successful",
+				"id": "successful",
+				"label": "成功しました"
+			},
+			{
+				"class": "failed",
+				"id": "failed",
+				"label": "失敗"
+			}
+		],
+		"title": "支払い",
+		"title1": "支払い！",
+		"title2": "支払いを作成する",
+		"title3": "支払いの更新",
+		"view": {
+			"failed": "失敗",
+			"in_progress": "進行中",
+			"invoice_amount": "請求金額",
+			"invoice_date": "請求書の日付",
+			"invoice_number": "請求書番号",
+			"payment_amount": "支払金額",
+			"payment_for": "支払い",
+			"payment_receipt": "請求書の支払い",
+			"successful": "成功しました"
+		}
+	},
+	"project_planner": {
+		"columns": {
+			"actions": "行動",
+			"creator": "クリエイター",
+			"end_date": "終了日",
+			"hours": "時間",
+			"name": "名",
+			"progress": "進捗",
+			"responsible": "責任者",
+			"sprint": "スプリント",
+			"start_date": "開始日",
+			"status": "状態",
+			"type": "タイプ"
+		},
+		"move_sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "有効なプロジェクトを選択してください。",
+					"message2": "有効なプロジェクトスプリントを選択してください。"
+				},
+				"fields": {
+					"project": "プロジェクト",
+					"sprint": "スプリント"
+				},
+				"placeholders": {
+					"placeholder1": "-プロジェクトを選択-",
+					"placeholder2": "-プロジェクトスプリントを選択-"
+				}
+			},
+			"messages": {
+				"move": " タスクは正常に移動しました。"
+			},
+			"title": "タスクを移動"
+		},
+		"sprint": {
+			"create": {
+				"error_messages": {
+					"message1": "一意で有効なスプリント名を入力してください。",
+					"message2": "スプリント名は最大255文字です。",
+					"message4": "有効な開始日を選択してください。",
+					"message5": "有効な終了日を選択してください。",
+					"message6": "有効なステータスを選択してください。",
+					"message7": "見積もり時間は、数字のみ、コロンの後に2桁（60未満）を、特殊文字なしで使用できます。",
+					"message8": "見積もり時間は"
+				},
+				"fields": {
+					"description": "説明",
+					"end_date": "終了日",
+					"estimate_hours": "見積もり時間",
+					"responsible": "責任者",
+					"sprint_name": "プロジェクトスプリント名",
+					"start_date": "開始日",
+					"status": "状態"
+				},
+				"placeholders": {
+					"placeholder1": "プロジェクトスプリント名を入力してください",
+					"placeholder2": "-ユーザーを選択-",
+					"placeholder3": "開始日を選択",
+					"placeholder4": "終了日を選択",
+					"placeholder5": "-ステータスを選択-",
+					"placeholder6": "説明を入力してください"
+				}
+			},
+			"messages": {
+				"create": "スプリントが正常に作成されました。",
+				"delete": "スプリントは正常に削除されました。",
+				"update": "スプリントは正常に更新されました。"
+			},
+			"status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "開いた"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "進行中"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "閉まっている"
+				}
+			],
+			"title": "スプリント",
+			"title1": "スプリントを作成",
+			"title2": "スプリントを編集"
+		},
+		"sprint_task": {
+			"create": {
+				"error_messages": {
+					"message1": "一意で有効なものを入力してください",
+					"message2": " 名前は最大255文字です。",
+					"message3": "有効なユーザーを選択してください。",
+					"message4": "有効な開始日を選択してください。",
+					"message5": "有効な終了日を選択してください。",
+					"message6": "有効なステータスを選択してください。",
+					"message7": "見積もり時間は、数字のみ、コロンの後に2桁（60未満）を、特殊文字なしで使用できます。",
+					"message8": "見積もり時間は"
+				},
+				"fields": {
+					"description": "説明",
+					"end_date": "終了日",
+					"estimate_hours": "見積もり時間",
+					"name": "名",
+					"responsible": "責任者",
+					"start_date": "開始日",
+					"status": "状態"
+				},
+				"placeholders": {
+					"placeholder1": "プロジェクトスプリントに入る ",
+					"placeholder2": "-ユーザーを選択-",
+					"placeholder3": "開始日を選択",
+					"placeholder4": "終了日を選択",
+					"placeholder5": "-ステータスを選択-",
+					"placeholder6": "説明を入力してください",
+					"placeholder7": "プロジェクトに入る "
+				}
+			},
+			"messages": {
+				"create": " 正常に作成されました。",
+				"released": "タスクは正常に解放されました。",
+				"story_delete": "スプリントストーリーが正常に削除されました。",
+				"task_delete": "スプリントタスクが正常に削除されました。",
+				"update": " 更新成功。"
+			},
+			"story_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "開いた"
+				},
+				{
+					"class": "in_progress",
+					"id": 2,
+					"label": "進行中"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "閉まっている"
+				}
+			],
+			"task_status": [
+				{
+					"class": "open",
+					"id": 1,
+					"label": "開いた"
+				},
+				{
+					"class": "on_hold",
+					"id": 2,
+					"label": "保留"
+				},
+				{
+					"class": "closed",
+					"id": 3,
+					"label": "閉まっている"
+				},
+				{
+					"class": "completed",
+					"id": 4,
+					"label": "リリース済み"
+				}
+			],
+			"title": "スプリントタスク",
+			"title1": "スプリントを作成",
+			"title2": "スプリントを編集",
+			"title3": "名",
+			"title4": "仕事",
+			"title5": "物語"
+		},
+		"title": "プロジェクトプランナー",
+		"title1": "タスクを作成",
+		"title2": "ストーリーを作成",
+		"title3": "スプリントを作成",
+		"title4": "プロジェクト",
+		"title5": "スプリント"
+	},
+	"projects": {
+		"billing_types": [
+			{
+				"id": 1,
+				"label": "固定レート",
+				"value": "1"
+			},
+			{
+				"id": 2,
+				"label": "時給",
+				"value": "2"
+			}
+		],
+		"budges": {
+			"completion": "完了",
+			"csv_file": "プロジェクトのインポートを開始する前に、ユーザーとそのチームがインポートされていることを確認してください。",
+			"current_version": "現行版",
+			"version": "バージョン"
+		},
+		"columns": {
+			"actions": "行動",
+			"assigned_To": "に割り当てられた",
+			"billing": "請求",
+			"budget": "予算",
+			"client": "クライアント",
+			"completion": "完了",
+			"creator": "クリエイター",
+			"duration": "期間",
+			"end": "終わり",
+			"hours": "時間",
+			"id": "イド",
+			"logo": "ロゴ",
+			"progress": "進捗",
+			"project_name": "プロジェクト名",
+			"start": "開始",
+			"status": "状態",
+			"version": "バージョン"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効なプロジェクト名を入力してください。",
+				"message10": "有効な終了日を選択してください。",
+				"message11": "見積もり時間は、数字のみ、コロンの後に2桁（60未満）を、特殊文字なしで使用できます。",
+				"message12": "固定価格は0より大きくなければなりません。",
+				"message13": "固定価格は数字のみを許可します。",
+				"message14": "ここにファイルをドロップするか、クリックしてアップロードします。",
+				"message15": "このファイルはcsvファイルではありません。 csvファイルのみを選択してください。",
+				"message16": "インポートするCSVファイルを選択してください。",
+				"message2": "プロジェクト名は最大255文字です。",
+				"message3": "一意で有効なプロジェクトバージョンを入力してください。",
+				"message4": "プロジェクトのバージョンは1.0のようにすることができます。",
+				"message6": "有効なステータスを選択してください。",
+				"message8": "有効なデモURLを入力してください。",
+				"message9": "有効な開始日を選択してください。"
+			},
+			"fields": {
+				"actual_hours": "実時間",
+				"assigned_To": "に割り当てられた",
+				"assigned_group": "割り当てられたグループ",
+				"billing_type": "請求タイプ",
+				"budget": "予算",
+				"client_name": "クライアント名",
+				"completed": "完了しました",
+				"created_by": "によって作成された",
+				"csv_file": "プロジェクトCSVファイルを選択",
+				"demo_URL": "デモURL",
+				"description": "説明",
+				"end_date": "終了日",
+				"estimate_hours": "見積もり時間",
+				"fixed_price": "固定価格（$）",
+				"hourly_rate": "時給（$）",
+				"progress": "進捗",
+				"project_hours": "自動進行",
+				"project_id": "プロジェクトID",
+				"project_logo": "プロジェクトのロゴ",
+				"project_name": "プロジェクト名",
+				"start_date": "開始日",
+				"status": "状態",
+				"version": "バージョン"
+			},
+			"placeholders": {
+				"placeholder1": "プロジェクト名を入力してください",
+				"placeholder10": "価格を入力してください",
+				"placeholder11": "説明を入力してください",
+				"placeholder2": "バージョンを入力",
+				"placeholder3": "-クライアントを選択-",
+				"placeholder4": "-ステータスを選択-",
+				"placeholder5": "-割り当てられたグループを選択-",
+				"placeholder6": "未割り当て",
+				"placeholder7": "開始日を選択",
+				"placeholder8": "終了日を選択",
+				"placeholder9": "-請求タイプを選択-"
+			}
+		},
+		"details": {
+			"title1": "カスタムフィールド",
+			"title2": "説明"
+		},
+		"headings": {
+			"head1": "プロジェクト情報",
+			"head2": "プロジェクトの日付",
+			"head3": "他の情報",
+			"head4": "カスタムフィールド",
+			"head5": "説明"
+		},
+		"inline_edit": {
+			"billing_type": "請求タイプ",
+			"budget": "予算",
+			"client": "クライアント",
+			"demo_url": "デモURL",
+			"description": "説明",
+			"end_date": "終了日",
+			"estimate_hours": "見積もり時間",
+			"notes": "ノート",
+			"project_name": "プロジェクト名",
+			"start_date": "開始日"
+		},
+		"messages": {
+			"create": "プロジェクトが正常に作成されました。",
+			"delete": "プロジェクトは正常に削除されました。",
+			"import": "プロジェクトが正常にインポートされました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "プロジェクトは正常に更新されました。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "保留"
+			},
+			{
+				"class": "cancel",
+				"id": 4,
+				"label": "キャンセル"
+			},
+			{
+				"class": "completed",
+				"id": 5,
+				"label": "完了しました"
+			}
+		],
+		"title": "プロジェクト",
+		"title1": "プロジェクトを作成",
+		"title2": "プロジェクトを編集",
+		"title3": "プロジェクトをインポート"
+	},
+	"providers": {
+		"columns": {
+			"actions": "行動",
+			"color": "色",
+			"email": "Eメール",
+			"firstname": "ファーストネーム",
+			"lastname": "苗字"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な名を入力してください。",
+				"message2": "名は最大50文字です。",
+				"message3": "有効な姓を入力してください。",
+				"message4": "姓は最大50文字です。",
+				"message5": "正しいメールアドレスを入力してください。",
+				"message6": "メールは有効なメールである必要があります。",
+				"message7": "有効な色を選択してください。"
+			},
+			"fields": {
+				"color": "色",
+				"email": "Eメール",
+				"first_name": "ファーストネーム",
+				"last_name": "苗字"
+			},
+			"placeholders": {
+				"placeholder1": "名を入力してください",
+				"placeholder2": "姓を入力",
+				"placeholder3": "メールアドレスを入力して"
+			}
+		},
+		"messages": {
+			"create": "プロバイダーが正常に作成されました。",
+			"delete": "プロバイダーが正常に削除されました。",
+			"edit": "プロバイダーが編集されました。"
+		},
+		"title": "プロバイダー"
+	},
+	"register": {
+		"create": {
+			"error_messages": {
+				"message1": "有効なユーザー名を入力してください。",
+				"message10": "パスワードと確認パスワードが一致しません。",
+				"message2": "ユーザー名は、空白なしで3〜30文字の長さにできます。",
+				"message3": "有効な名を入力してください。",
+				"message4": "有効な姓を入力してください。",
+				"message5": "正しいメールアドレスを入力してください。",
+				"message6": "メールは有効なメールである必要があります。",
+				"message7": "有効なパスワードを入力して下さい。",
+				"message8": "パスワードは3〜30文字の長さにできます。",
+				"message9": "有効な確認パスワードを入力してください。"
+			},
+			"placeholders": {
+				"placeholder1": "ユーザーネームを入力してください",
+				"placeholder2": "名を入力してください",
+				"placeholder3": "姓を入力",
+				"placeholder4": "メールアドレスを入力して",
+				"placeholder5": "パスワードを入力する",
+				"placeholder6": "確認パスワードを入力"
+			}
+		},
+		"messages": {
+			"success": "登録に成功しました。"
+		},
+		"title": "登録",
+		"title1": "すでにアカウントをお持ちですか？"
+	},
+	"reports": {
+		"headings": {
+			"defect_report": "欠陥",
+			"incident_report": "インシデント",
+			"project_report": "プロジェクト",
+			"task_report": "仕事"
+		}
+	},
+	"reset_password": {
+		"create": {
+			"error_messages": {
+				"message1": "有効なパスワードを入力して下さい。",
+				"message2": "パスワードは3〜30文字の長さにできます。",
+				"message3": "有効な確認パスワードを入力してください。",
+				"message4": "パスワードと確認パスワードが一致しません。",
+				"message5": "有効なメールまたはトークンを入力してください。"
+			},
+			"placeholders": {
+				"placeholder1": "パスワードを入力する",
+				"placeholder2": "確認パスワードを入力"
+			}
+		},
+		"messages": {
+			"success": "パスワードが正常にリセットされました。"
+		},
+		"title": "パスワードを再設定する"
+	},
+	"roles": {
+		"columns": {
+			"actions": "行動",
+			"description": "説明",
+			"role_name": "ロール名",
+			"role_slug": "役割スラッグ"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な役割名を入力してください。",
+				"message2": "ロール名は最大50文字です。",
+				"message3": "ロールスラッグは最大50文字です。",
+				"message4": "ロールスラッグは、アンダースコアのみの文字にすることができます。",
+				"message5": "有効な役割スラッグを入力してください。"
+			},
+			"fields": {
+				"description": "説明",
+				"role_name": "ロール名",
+				"role_slug": "役割スラッグ"
+			},
+			"placeholders": {
+				"placeholder1": "ロール名を入力してください",
+				"placeholder2": "役割スラッグを入力してください"
+			}
+		},
+		"inline_edit": {
+			"description": "説明",
+			"role_name": "ロール名"
+		},
+		"messages": {
+			"create": "ロールが正常に作成されました。",
+			"delete": "役割が正常に削除されました。",
+			"update": "役割が正常に更新されました。"
+		},
+		"title": "役割"
+	},
+	"settings": {
+		"company_details": {
+			"create": {
+				"error_messages": {
+					"message1": "有効な会社名を入力してください。",
+					"message10": "郵便番号コードには最大10桁を使用できます。",
+					"message11": "有効な会社の住所を入力してください。",
+					"message2": "有効な会社の正式名称を入力してください。",
+					"message3": "有効な会社の略称を入力してください。",
+					"message4": "会社の短縮名は最大10文字です。",
+					"message5": "有効な会社のメールアドレスを入力してください。",
+					"message6": "メールアドレスは有効なメールアドレスである必要があります。",
+					"message7": "会社の電話番号は有効な電話番号形式である必要があります。",
+					"message8": "会社のウェブサイトは有効なURLである必要があります。",
+					"message9": "有効な郵便番号を入力してください。"
+				},
+				"fields": {
+					"city": "シティ",
+					"company_address": "会社の住所",
+					"company_country": "会社の国",
+					"company_email": "会社のEメール",
+					"company_name": "会社名",
+					"company_phone": "会社の電話",
+					"company_website": "会社のウェブサイト",
+					"company_zipcode": "郵便番号",
+					"contact_person": "連絡窓口",
+					"legal_name": "正式名称",
+					"short_name": "略称"
+				},
+				"placeholders": {
+					"placeholder1": "会社名を入力してください",
+					"placeholder10": "連絡先を入力してください",
+					"placeholder11": "会社の住所を入力してください",
+					"placeholder2": "正式名称を入力してください",
+					"placeholder3": "略称を入力してください",
+					"placeholder4": "会社のメールアドレスを入力してください",
+					"placeholder5": "会社の電話番号を入力してください",
+					"placeholder6": "会社のウェブサイトを入力してください",
+					"placeholder7": " -  国を選択  - ",
+					"placeholder8": "都市に入る",
+					"placeholder9": "郵便番号を入力"
+				}
+			},
+			"title": "会社の詳細"
+		},
+		"cronjob": {
+			"create": {
+				"fields": {
+					"active_cronjob": "アクティブCronjob",
+					"automatic_backup": "自動バックアップデータベース",
+					"daily_report_emails": "日報メール",
+					"last_cronjob_run": "最後のCronjob実行"
+				},
+				"messages": {
+					"message1": "正しく設定されていれば、cronjob機能が有効になります。",
+					"message2": "7日ごとにデータベースのバックアップを作成します。 cronjobをアクティブにする必要があります！"
+				},
+				"placeholders": {
+					"placeholder1": "メールアドレスを入力してください"
+				}
+			},
+			"title": "クロンジョブ"
+		},
+		"custom_fields": {
+			"columns": {
+				"actions": "行動",
+				"custom_field_for": "カスタムフィールド",
+				"label": "ラベル",
+				"status": "状態",
+				"type": "タイプ",
+				"value": "値"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "有効なカスタムフィールドフォームを選択してください。",
+					"message2": "有効なフィールドラベルを入力してください。",
+					"message3": "有効なヘルプテキストを入力してください。",
+					"message4": "有効なフィールドタイプを選択してください。",
+					"message5": "有効なラベルを入力してください。",
+					"message6": "有効な値を入れてください。"
+				},
+				"fields": {
+					"custom_field_for": "カスタムフィールド",
+					"field_label": "フィールドラベル",
+					"field_type": "フィールドタイプ",
+					"help_text": "ヘルプテキスト",
+					"is_required_field": "必須フィールドです",
+					"show_on_detail": "詳細ページに表示するには"
+				},
+				"placeholders": {
+					"placeholder1": "-カスタムフィールドフォームを選択-",
+					"placeholder2": "フィールドラベルを入力",
+					"placeholder3": "ヘルプテキストを入力",
+					"placeholder4": "-フィールドタイプを選択-"
+				}
+			},
+			"headings": {
+				"head1": "ドロップダウンボックスにラベルと値を入力します。"
+			},
+			"messages": {
+				"create": "カスタムフィールドが正常に作成されました。",
+				"delete": "カスタムフィールドが正常に削除されました。",
+				"status": "ステータスが正常に変更されました。",
+				"update": "カスタムフィールドが正常に更新されました。"
+			},
+			"title": "カスタムフィールド",
+			"title1": "カスタムフィールド"
+		},
+		"dashboard_settings": {
+			"columns": {
+				"settings": "設定"
+			},
+			"title": "ダッシュボード",
+			"title1": "お知らせ",
+			"title10": "見積り",
+			"title11": "請求書",
+			"title12": "支払い",
+			"title13": "葉",
+			"title14": "チーム",
+			"title15": "ユーザー",
+			"title16": "クライアント",
+			"title17": "記事",
+			"title18": "プロジェクトのステータス",
+			"title19": "タスクのステータス",
+			"title2": "最近の活動",
+			"title20": "月例報告",
+			"title21": "ウィジェット",
+			"title22": "チャート",
+			"title23": "リスト",
+			"title3": "ToDoリスト",
+			"title4": "ミーティング",
+			"title5": "プロジェクト",
+			"title6": "タスク",
+			"title7": "欠陥",
+			"title8": "インシデント",
+			"title9": "上位の請求書"
+		},
+		"database_backups": {
+			"columns": {
+				"actions": "行動",
+				"date": "日付",
+				"file_name": "ファイル名"
+			},
+			"messages": {
+				"create": "データベースのバックアップが正常に作成されました。",
+				"delete": "データベースのバックアップが正常に削除されました。",
+				"restore": "データベースが正常に復元されました。"
+			},
+			"title": "データベースのバックアップ",
+			"title1": "データベースのバックアップ",
+			"title2": "バックアップ"
+		},
+		"email_notification": {
+			"columns": {
+				"notification": "お知らせ"
+			},
+			"title": "電子メール通知",
+			"title1": "お知らせメール"
+		},
+		"email_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効な会社のメールアドレスを入力してください。",
+					"message2": "メールアドレスは有効なメールアドレスである必要があります。",
+					"message3": "有効なメールプロトコルを選択してください。",
+					"message4": "有効なSMTPホストを入力してください。",
+					"message5": "有効なSMTPユーザーを入力してください。",
+					"message6": "SMTPユーザーは有効なメールアドレスである必要があります。",
+					"message7": "有効なSMTPパスワードを入力してください。",
+					"message8": "有効なSMTPポートを入力してください。"
+				},
+				"fields": {
+					"company_email": "会社のEメール",
+					"email_encryption": "メールの暗号化",
+					"email_protocol": "メールプロトコル",
+					"mailgun_domain": "Mailgunドメイン",
+					"mailgun_secret": "メールガンシークレット",
+					"mandrill_secret": "マンドリルシークレット",
+					"smtp_host": "SMTPホスト",
+					"smtp_password": "SMTPパスワード",
+					"smtp_port": "SMTPポート",
+					"smtp_user": "SMTPユーザー",
+					"sparkpost_secret": "スパークポストの秘密"
+				},
+				"placeholders": {
+					"placeholder1": "会社のメールアドレスを入力してください",
+					"placeholder2": "-メールプロトコルを選択-",
+					"placeholder3": "パスワードを入力する",
+					"placeholder4": "-Email Encryptionを選択します-",
+					"placeholder5": "Sparkpostシークレットを入力してください",
+					"placeholder6": "Mailgunドメインを入力してください",
+					"placeholder7": "Mailgunシークレットを入力してください",
+					"placeholder8": "マンドリルの秘密を入力してください"
+				}
+			},
+			"title": "Eメール",
+			"title1": "にメールを送信しました "
+		},
+		"email_templates": {
+			"create": {
+				"fields": {
+					"body": "体",
+					"subject": "件名"
+				},
+				"placeholders": {
+					"placeholder1": "-メールグループを選択-",
+					"placeholder2": "件名を入力してください"
+				}
+			},
+			"messages": {
+				"update": "メールテンプレートが正常に更新されました。"
+			},
+			"title": "メールテンプレート"
+		},
+		"estimate_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効な見積もりプレフィックスを入力してください。",
+					"message2": "推定プレフィックスの長さは最大10文字です。",
+					"message3": "有効期限を入力してください。",
+					"message4": "ここにファイルをドロップするか、クリックしてアップロードします。"
+				},
+				"fields": {
+					"auto_remind": "自動送信リマインダー？",
+					"auto_remind_before": "前にリマインダーを送信（日）",
+					"client_note": "クライアントノート",
+					"due_after": "期限後（日）",
+					"estimate_logo": "ロゴを見積もる",
+					"estimate_prefix": "プレフィックスの見積もり",
+					"terms_conditions": "利用規約"
+				},
+				"placeholders": {
+					"placeholder1": "見積もりプレフィックスを入力",
+					"placeholder2": "期限後に入力",
+					"placeholder3": "クライアントノートを入力してください",
+					"placeholder4": "利用規約を入力してください",
+					"placeholder5": "リマインドビフォアデイズを入力してください"
+				}
+			},
+			"title": "見積もり"
+		},
+		"invoice_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効な請求書プレフィックスを入力してください。",
+					"message2": "請求書のプレフィックスは最大10文字です。",
+					"message3": "有効期限を入力してください。",
+					"message4": "ここにファイルをドロップするか、クリックしてアップロードします。"
+				},
+				"fields": {
+					"auto_remind": "自動送信リマインダー？",
+					"auto_remind_after": "（日）後にリマインダーを送信する例1,3",
+					"client_note": "クライアントノート",
+					"due_after": "期限後（日）",
+					"gst_number": "GST番号",
+					"invoice_logo": "請求書のロゴ",
+					"invoice_prefix": "請求書プレフィックス",
+					"show_gst_number": "請求書にGST番号を表示しますか？",
+					"terms_conditions": "利用規約"
+				},
+				"placeholders": {
+					"placeholder1": "請求書プレフィックスを入力してください",
+					"placeholder2": "期限後に入力",
+					"placeholder3": "クライアントノートを入力してください",
+					"placeholder4": "利用規約を入力してください",
+					"placeholder5": "数日後にリマインドを入力してください",
+					"placeholder6": "GST番号を入力してください"
+				}
+			},
+			"title": "請求書"
+		},
+		"menu_allocation": {
+			"messages": {
+				"update": "メニューを更新しました。"
+			},
+			"title": "メニューの割り当て",
+			"title1": "すべて展開",
+			"title2": "すべて折りたたむ"
+		},
+		"messages": {
+			"update": "設定を更新しました。"
+		},
+		"payment_gateway_settings": {
+			"title": "支払いゲートウェイ"
+		},
+		"paypal_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効なペイパルclientIDを入力してください。"
+				},
+				"fields": {
+					"paypal_checkout_client_id": "PaypalクライアントID",
+					"paypal_checkout_label": "ペイパルラベル",
+					"paypal_checkout_status": "状態"
+				},
+				"placeholders": {
+					"placeholder1": "Paypalラベルを入力してください",
+					"placeholder2": "PaypalクライアントIDを入力してください"
+				}
+			},
+			"title": "ペイパル"
+		},
+		"slack_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効なSlackクライアントIDを入力してください。",
+					"message2": "有効なSlackクライアントシークレットを入力してください。",
+					"message3": "有効なSlackリダイレクトURLを入力してください。"
+				},
+				"fields": {
+					"slack_client_id": "SlackクライアントID",
+					"slack_client_secret": "Slackクライアントシークレット",
+					"slack_redirect_url": "SlackリダイレクトURL",
+					"slack_status": "スラックステータス"
+				},
+				"placeholders": {
+					"placeholder1": "SlackクライアントIDを入力してください",
+					"placeholder2": "Slackクライアントシークレットを入力してください",
+					"placeholder3": "SlackリダイレクトURLを入力してください"
+				}
+			},
+			"title": "スラック"
+		},
+		"stripe_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効なストライプAPIキーを入力してください。",
+					"message2": "有効なストライプAPIシークレットを入力してください。"
+				},
+				"fields": {
+					"stripe_api_key": "ストライプAPIキー",
+					"stripe_label": "ストライプラベル",
+					"stripe_secret_key": "ストライプ秘密鍵",
+					"stripe_status": "状態"
+				},
+				"placeholders": {
+					"placeholder1": "ストライプラベルを入力",
+					"placeholder2": "StripeAPIキーを入力してください",
+					"placeholder3": "ストライプ秘密鍵を入力してください"
+				}
+			},
+			"title": "ストライプ",
+			"title1": "支払う"
+		},
+		"system_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "有効なテーブルの改ページ制限を入力してください。",
+					"message2": "有効な日付形式を選択してください。",
+					"message3": "有効な時間形式を選択してください。",
+					"message4": "有効な通貨を選択してください。",
+					"message5": "有効なデフォルト言語を選択してください。"
+				},
+				"fields": {
+					"allowed_for_registration": "登録は許可されていますか？",
+					"date_format": "日付フォーマット",
+					"default_currency": "デフォルト通貨",
+					"default_language": "既定の言語",
+					"default_locale": "デフォルトのロケール",
+					"tables_pagination_limit": "テーブルのページ区切りの制限",
+					"time_format": "時間フォーマット",
+					"timezone": "タイムゾーン"
+				},
+				"placeholders": {
+					"placeholder1": " -  言語を選択する  - ",
+					"placeholder2": "-ロケールを選択-",
+					"placeholder3": "-タイムゾーンを選択-",
+					"placeholder4": "テーブルのページ区切りの制限を入力してください",
+					"placeholder5": "-日付形式を選択-",
+					"placeholder6": "-時間形式を選択-",
+					"placeholder7": "-デフォルト通貨を選択します-"
+				}
+			},
+			"estimate_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "有効な推測プレフィックスを入力してください。",
+						"message2": "見積もりプレフィックスには、最大10文字を含めることができます。",
+						"message3": "有効期限を入力してください。",
+						"message4": "ここにファイルをドラッグするか、クリックしてアップロードします。"
+					},
+					"fields": {
+						"auto_remind": "リマインダーを自動的に送信しますか？",
+						"auto_remind_before": "リマインダーを送信する（数日前）",
+						"client_note": "カスタマーノート",
+						"due_after": "期日（日）",
+						"estimate_logo": "ロゴに感謝します",
+						"estimate_prefix": "接頭辞を高く評価する",
+						"terms_conditions": "利用規約"
+					},
+					"placeholders": {
+						"placeholder1": "接頭辞の見積もりを入力します",
+						"placeholder2": "次に、日付を入力します",
+						"placeholder3": "顧客メモを入力する",
+						"placeholder4": "条件を入力してください",
+						"placeholder5": "数日前にリマインドを入力してください"
+					}
+				},
+				"title": "見積もり"
+			},
+			"invoice_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "有効な請求書プレフィックスを入力してください。",
+						"message2": "請求書のプレフィックスは最大10文字です。",
+						"message3": "有効期限を入力してください。",
+						"message4": "ここにファイルをドラッグするか、クリックしてアップロードします。"
+					},
+					"fields": {
+						"auto_remind": "リマインダーを自動的に送信しますか？",
+						"auto_remind_after": "（日）後にリマインダーを送信する例1.3",
+						"client_note": "カスタマーノート",
+						"due_after": "期日（日）",
+						"gst_number": "GST番号",
+						"invoice_logo": "請求書のロゴ",
+						"invoice_prefix": "請求書プレフィックス",
+						"show_gst_number": "請求書にGST番号を表示しますか？",
+						"terms_conditions": "利用規約"
+					},
+					"placeholders": {
+						"placeholder1": "請求書のプレフィックスを入力します",
+						"placeholder2": "次に、日付を入力します",
+						"placeholder3": "顧客メモを入力する",
+						"placeholder4": "条件を入力してください",
+						"placeholder5": "日ごとにリマインダーを入力してください",
+						"placeholder6": "GST番号を入力してください"
+					}
+				},
+				"title": "請求書"
+			},
+			"payment_gateway_settings": {
+				"title": "支払いゲートウェイ"
+			},
+			"paypal_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "有効なPayPalクライアントIDを入力してください。"
+					},
+					"fields": {
+						"paypal_checkout_client_id": "PayPalの顧客ID",
+						"paypal_checkout_label": "ペイパルラベル",
+						"paypal_checkout_status": "ポジション"
+					},
+					"placeholders": {
+						"placeholder1": "Paypalラベルを入力してください",
+						"placeholder2": "PayPalの顧客IDを入力してください"
+					}
+				},
+				"title": "ペイパル"
+			},
+			"slack_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "有効なSlackクライアントIDを入力してください。",
+						"message2": "有効なクライアントシークレットパスワードを入力してください。",
+						"message3": "有効な無料のリダイレクトURLを入力してください。"
+					},
+					"fields": {
+						"slack_client_id": "SlackクライアントID",
+						"slack_client_secret": "クライアントの秘密が公開される",
+						"slack_redirect_url": "SlackリダイレクトURL",
+						"slack_status": "承認状況"
+					},
+					"placeholders": {
+						"placeholder1": "SlackクライアントIDを入力します",
+						"placeholder2": "顧客の秘密のパスワードを入力します",
+						"placeholder3": "SlackリダイレクトURLを入力してください"
+					}
+				},
+				"title": "スラック"
+			},
+			"stripe_settings": {
+				"create": {
+					"error_messages": {
+						"message1": "有効なバーAPIキーを入力してください。"
+					},
+					"fields": {
+						"stripe_api_key": "ストライプAPIキー",
+						"stripe_label": "ストリップラベル",
+						"stripe_status": "ポジション"
+					},
+					"placeholders": {
+						"placeholder1": "バナーラベルを入力してください",
+						"placeholder2": "StripeAPIキーを入力します"
+					}
+				},
+				"title": "ストライプ"
+			},
+			"title": "システム"
+		},
+		"system_update": {
+			"create": {
+				"fields": {
+					"buyer": "買い手",
+					"purchase_key": "購入キー",
+					"url": "URL"
+				},
+				"placeholders": {
+					"placeholder1": "製品購入キーを入力してください",
+					"placeholder2": "製品購入者コードを入力してください"
+				}
+			},
+			"title": "システムアップデート"
+		},
+		"theme_settings": {
+			"create": {
+				"error_messages": {
+					"message1": "ここにファイルをドロップするか、クリックしてアップロードします。"
+				},
+				"fields": {
+					"compnay_logo": "会社のロゴ",
+					"compnay_sidebar_logo": "会社サイドバーロゴ",
+					"login_background": "ログインの背景",
+					"sidebar_background_images": "サイドバーの背景画像"
+				}
+			},
+			"title": "テーマ"
+		},
+		"title": "設定",
+		"translations": {
+			"columns": {
+				"actions": "行動",
+				"icon": "アイコン",
+				"language": "言語",
+				"status": "状態"
+			},
+			"create": {
+				"error_messages": {
+					"message1": "有効な言語を選択してください。",
+					"message2": "有効なアイコンを選択してください。",
+					"message3": "ここにファイルをドロップするか、クリックしてアップロードします。"
+				},
+				"fields": {
+					"icon": "アイコン",
+					"language": "言語"
+				},
+				"placeholders": {
+					"placeholder1": " -  言語を選択する  - "
+				}
+			},
+			"messages": {
+				"create": "翻訳が正常に作成されました。",
+				"delete": "翻訳を削除しました。",
+				"status": "ステータスが正常に変更されました。",
+				"update": "翻訳が正常に更新されました。"
+			},
+			"title": "翻訳",
+			"title1": "翻訳"
+		}
+	},
+	"shared": {
+		"inline_edit": {
+			"error_messages": {
+				"message1": "{{elementFor}} が必要です。",
+				"message2": "{{elementFor}} は数字のみを許可し、コロンの後の2桁（60未満）は特殊文字なしで使用できます。",
+				"message3": "有効な {{elementFor}}を入力してください。",
+				"message4": "{{elementFor}} 名は {{minLength}} 文字以上にする必要があります。"
+			},
+			"placeholders": {
+				"placeholder1": " {{elementFor}}を入力してください",
+				"placeholder2": "- {{elementFor}} を選択-",
+				"placeholder3": " {{elementFor}}を選択"
+			}
+		},
+		"show_custom_field": {
+			"error_messages": {
+				"message1": "有効な {{custom_field}}を入力してください。",
+				"message2": "有効な {{custom_field}}を選択してください。"
+			},
+			"placeholders": {
+				"placeholder1": " {{custom_field}}を入力してください",
+				"placeholder2": "- {{custom_field}} を選択-"
+			}
+		}
+	},
+	"task_boards": {
+		"headings": {
+			"head1": "To Do",
+			"head2": "進行中",
+			"head3": "完了しました"
+		},
+		"title": "タスクかんばん"
+	},
+	"tasks": {
+		"budges": {
+			"completion": "完了",
+			"csv_file": "プロジェクトのインポートを開始する前に、ユーザーとそのチームがインポートされていることを確認してください。"
+		},
+		"columns": {
+			"actions": "行動",
+			"actual_end": "実際の終わり",
+			"actual_start": "実際の開始",
+			"assigned": "割り当て済み",
+			"creator": "クリエイター",
+			"end": "終わり",
+			"end_date": "終了日",
+			"hours": "時間",
+			"id": "イド",
+			"planned_end": "計画終了",
+			"planned_start": "開始予定",
+			"priority": "優先度",
+			"progress": "進捗",
+			"project": "プロジェクト",
+			"project_version": "プロジェクトのバージョン",
+			"start": "開始",
+			"start_date": "開始日",
+			"status": "状態",
+			"task_ID": "タスクID",
+			"task_name": "タスク名"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効なタスク名を入力してください。",
+				"message11": "有効なタスクステータスを選択してください。",
+				"message12": "有効なタスクの優先度を選択してください。",
+				"message13": "見積もり時間は、数字のみ、コロンの後に2桁（60未満）を、特殊文字なしで使用できます。",
+				"message14": "見積もり時間は",
+				"message15": "インポートするCSVファイルを選択してください。",
+				"message2": "タスク名は最大255文字です。",
+				"message3": "一意で有効なタスク生成IDを入力してください。",
+				"message4": "有効な計画開始日を選択してください。",
+				"message5": "有効な終了予定日を選択してください。",
+				"message6": "有効な開始日を選択してください。",
+				"message7": "有効な終了日を選択してください。",
+				"message8": "有効なプロジェクト名を選択してください。"
+			},
+			"fields": {
+				"actual_enddate": "終了日",
+				"actual_hours": "実時間",
+				"actual_startdate": "開始日",
+				"assigned_To": "に割り当てられた",
+				"completed": "完了しました",
+				"created_by": "によって作成された",
+				"csv_file": "タスクCSVファイルを選択",
+				"description": "説明",
+				"estimate_hours": "見積もり時間",
+				"parent_taskID": "親タスクID",
+				"plan_enddate": "計画終了日",
+				"plan_startdate": "計画開始日",
+				"priority": "優先度",
+				"progress": "進捗",
+				"project_name": "プロジェクト名",
+				"project_version": "プロジェクトのバージョン",
+				"status": "状態",
+				"subtask_Id": "サブタスクID",
+				"task_ID": "タスクID",
+				"task_name": "タスク名"
+			},
+			"placeholders": {
+				"placeholder1": "タスク名を入力してください",
+				"placeholder10": "-優先度を選択-",
+				"placeholder2": "計画開始日を選択",
+				"placeholder3": "計画終了日を選択",
+				"placeholder4": "開始日を選択",
+				"placeholder5": "終了日を選択",
+				"placeholder6": "-プロジェクト名を選択-",
+				"placeholder7": "-プロジェクトバージョンを選択-",
+				"placeholder8": "-割り当て先を選択-",
+				"placeholder9": "-ステータスを選択-"
+			}
+		},
+		"details": {
+			"title1": "カスタムフィールド",
+			"title2": "説明",
+			"title3": "サブタスク"
+		},
+		"headings": {
+			"head1": "仕事情報",
+			"head2": "タスクの日付",
+			"head3": "進捗",
+			"head4": "プロジェクト情報",
+			"head5": "必要条件",
+			"head6": "カスタムフィールド",
+			"head7": "説明"
+		},
+		"inline_edit": {
+			"description": "説明",
+			"estimate_hours": "見積もり時間",
+			"notes": "ノート",
+			"task_name": "タスク名"
+		},
+		"messages": {
+			"copy": "タスクが正常にコピーされました。",
+			"create": "タスクが正常に作成されました。",
+			"delete": "タスクは正常に削除されました。",
+			"import": "タスクが正常にインポートされました。",
+			"priority": "優先度が正常に変更されました。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "タスクが正常に更新されました。"
+		},
+		"parent_status1": [
+			{
+				"id": 1,
+				"label": "開いた"
+			}
+		],
+		"parent_status2": [
+			{
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"id": 3,
+				"label": "保留"
+			},
+			{
+				"id": 4,
+				"label": "待っている"
+			},
+			{
+				"id": 5,
+				"label": "キャンセル"
+			},
+			{
+				"id": 6,
+				"label": "完了しました"
+			}
+		],
+		"parent_status3": [
+			{
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"id": 3,
+				"label": "保留"
+			},
+			{
+				"id": 5,
+				"label": "キャンセル"
+			}
+		],
+		"parent_status4": [
+			{
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"id": 4,
+				"label": "待っている"
+			},
+			{
+				"id": 5,
+				"label": "キャンセル"
+			}
+		],
+		"parent_status5": [
+			{
+				"id": 5,
+				"label": "キャンセル"
+			},
+			{
+				"id": 2,
+				"label": "進行中"
+			}
+		],
+		"parent_status6": [
+			{
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"id": 4,
+				"label": "キャンセル"
+			}
+		],
+		"priorities": [
+			{
+				"class": "urgent",
+				"id": 1,
+				"label": "緊急"
+			},
+			{
+				"class": "very_high",
+				"id": 2,
+				"label": "すごく高い"
+			},
+			{
+				"class": "high",
+				"id": 3,
+				"label": "高い"
+			},
+			{
+				"class": "medium",
+				"id": 4,
+				"label": "中"
+			},
+			{
+				"class": "low",
+				"id": 5,
+				"label": "低い"
+			}
+		],
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "保留"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "待っている"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "完了しました"
+			}
+		],
+		"status1": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			}
+		],
+		"status2": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "保留"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "待っている"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "完了しました"
+			}
+		],
+		"status3": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "on_hold",
+				"id": 3,
+				"label": "保留"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			}
+		],
+		"status4": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "waiting",
+				"id": 4,
+				"label": "待っている"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			}
+		],
+		"status5": [
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			}
+		],
+		"status6": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "in_progress",
+				"id": 2,
+				"label": "進行中"
+			},
+			{
+				"class": "cancel",
+				"id": 5,
+				"label": "キャンセル"
+			},
+			{
+				"class": "completed",
+				"id": 6,
+				"label": "完了しました"
+			}
+		],
+		"title": "タスク",
+		"title1": "タスクを作成",
+		"title2": "サブタスクを作成",
+		"title3": "タスクのインポート",
+		"title4": "タスクを編集",
+		"title5": "サブタスクを編集",
+		"title6": "コピータスク",
+		"tooltips": {
+			"sub_task": "サブタスクを作成"
+		}
+	},
+	"taxes": {
+		"columns": {
+			"tax_name": "税名",
+			"tax_rate": "税率"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "一意で有効な税名を入力してください。",
+				"message2": "有効な税率を入力してください。",
+				"message3": "税率は数字でなければなりません。"
+			},
+			"fields": {
+				"tax_name": "税名",
+				"tax_rate": "税率"
+			},
+			"placeholders": {
+				"placeholder1": "税名を入力してください",
+				"placeholder2": "税率を入力してください"
+			}
+		},
+		"messages": {
+			"create": "税金が正常に作成されました。",
+			"delete": "税金が正常に削除されました。",
+			"update": "税金が正常に更新されました。"
+		},
+		"title": "税金",
+		"title1": "税率",
+		"title2": "税金！",
+		"title3": "税金を作成する",
+		"title4": "税金の更新"
+	},
+	"teams": {
+		"columns": {
+			"actions": "行動",
+			"leader": "盟主",
+			"members": "メンバー",
+			"team_name": "チームの名前"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効なチーム名を入力してください。",
+				"message2": "チーム名は最大30文字です。",
+				"message3": "有効なチームメンバーを選択してください。",
+				"message4": "有効なチームリーダーを選択してください。",
+				"message5": "インポートするCSVファイルを選択してください。",
+				"message6": "このファイルはcsvファイルではありません。 csvファイルのみを選択してください。"
+			},
+			"fields": {
+				"actions": "行動",
+				"csv_file": "チームCSVファイルを選択",
+				"description": "説明",
+				"leader": "盟主",
+				"members": "メンバー",
+				"team_name": "チームの名前"
+			},
+			"placeholders": {
+				"placeholder1": "チーム名を入力してください",
+				"placeholder2": "-チームメンバーを選択-",
+				"placeholder3": "-チームリーダーを選択-"
+			}
+		},
+		"inline_edit": {
+			"team_name": "チームの名前"
+		},
+		"labels": {
+			"label1": "チームのインポートを開始する前に、ユーザーがインポートされていることを確認してください。"
+		},
+		"messages": {
+			"create": "チームが作成されました。",
+			"delete": "チームが正常に削除されました。",
+			"import": "チームが正常にインポートされました。",
+			"update": "チームが正常に更新されました。"
+		},
+		"title": "チーム",
+		"title1": "チームをインポート",
+		"title2": "チームリーダー",
+		"title3": "チームボード"
+	},
+	"theme_setting": {
+		"header": {
+			"head1": "サイドバーの色オプション",
+			"head10": "サイドバーのフォントの色",
+			"head11": "サイドバーのレイアウトオプション",
+			"head12": "構成",
+			"head13": "折りたたまれたメニュー",
+			"head14": "サイドバーの幅",
+			"head15": "グラデーションサイドバー",
+			"head2": "カラーパレット",
+			"head3": "色のオプション",
+			"head4": "サイドバーの背景色",
+			"head5": "サイドバーの背景画像",
+			"head6": "背景画像",
+			"head7": "背景色",
+			"head8": "背景画像",
+			"head9": "サイドバーの背景色"
+		},
+		"layout_options": [
+			{
+				"key": "light",
+				"value": "既製の色"
+			},
+			{
+				"key": "custom-colors",
+				"value": "カスタムカラー"
+			},
+			{
+				"key": "カスタムカラー",
+				"value": "カスタムカラー"
+			}
+		],
+		"placeholders": {
+			"placeholder1": "-レイアウトを選択-",
+			"placeholder2": "-サイドバーの幅を選択-"
+		},
+		"width_options": [
+			{
+				"key": "small",
+				"value": "小さい"
+			},
+			{
+				"key": "medium",
+				"value": "中"
+			},
+			{
+				"key": "large",
+				"value": "大"
+			}
+		]
+	},
+	"timesheet": {
+		"columns": {
+			"actions": "行動",
+			"end_time": "終了時間",
+			"entry": "エントリ",
+			"note": "注意",
+			"photo": "写真",
+			"project_name": "プロジェクト",
+			"start_time": "始まる時間",
+			"time_h": "時間",
+			"user": "ユーザー"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な開始時間を選択してください。",
+				"message2": "有効な終了時間を選択してください。",
+				"message3": "タイムシートに適切な日付と時刻を選択してください。",
+				"message4": "有効なメモを入力してください。"
+			},
+			"fields": {
+				"end_time": "終了時間",
+				"note": "注意",
+				"start_time": "始まる時間"
+			},
+			"placeholders": {
+				"placeholder1": "開始時間を選択",
+				"placeholder2": "終了時間を選択",
+				"placeholder3": "メモを入力"
+			},
+			"title1": "タイムシートを作成",
+			"title2": "タイムシートを編集"
+		},
+		"filter": {
+			"error_messages": {
+				"message1": "有効な範囲を選択してください。",
+				"message2": "有効な期間を選択してください。",
+				"message3": "有効な期間を選択してください。"
+			},
+			"placeholders": {
+				"placeholder1": "-プロジェクトを選択-",
+				"placeholder2": "-クライアントを選択-",
+				"placeholder3": "期間を選択",
+				"placeholder4": "期間を選択",
+				"placeholder5": "-ユーザーを選択-"
+			}
+		},
+		"inline_edit": {
+			"note": "注意"
+		},
+		"messages": {
+			"create": "タイムシートが正常に作成されました。",
+			"delete": "タイムシートは正常に削除されました。",
+			"update": "タイムシートは正常に更新されました。"
+		},
+		"range": {
+			"last_month": "先月",
+			"last_week": "先週",
+			"period": "期間",
+			"this_month": "今月",
+			"this_week": "今週",
+			"today": "今日"
+		},
+		"title": "タイムシート",
+		"title1": "私のタイムシート",
+		"title2": "すべてのタイムシート"
+	},
+	"todos": {
+		"create": {
+			"error_messages": {
+				"message1": "有効な説明を入力してください。",
+				"message2": "説明は最大5文字です。",
+				"message3": "説明は最大255文字です。",
+				"message4": "有効なToDoステータスを選択してください。",
+				"message5": "有効な期日を選択してください。"
+			},
+			"fields": {
+				"description": "説明",
+				"due_date": "期日",
+				"status": "状態"
+			},
+			"placeholders": {
+				"placeholder1": "説明を入力してください",
+				"placeholder2": "-ステータスを選択-",
+				"placeholder3": "期日を選択"
+			}
+		},
+		"inline_edit": {
+			"description": "説明",
+			"due_date": "期日"
+		},
+		"messages": {
+			"create": "Todoが作成されました。",
+			"delete": "Todoを削除しました。",
+			"status": "ステータスが正常に更新されました。",
+			"update": "Todoが更新されました。"
+		},
+		"status": [
+			{
+				"class": "open",
+				"id": 1,
+				"label": "開いた"
+			},
+			{
+				"class": "completed",
+				"id": 2,
+				"label": "完了しました"
+			}
+		],
+		"title": "トドス"
+	},
+	"users": {
+		"buttons": {
+			"assign_permission": "権限モーダルを割り当て"
+		},
+		"columns": {
+			"actions": "行動",
+			"departments_roles": "部門/役割",
+			"first_name": "ファーストネーム",
+			"last_name": "苗字",
+			"photo": "写真",
+			"status": "状態",
+			"username": "ユーザー名"
+		},
+		"create": {
+			"error_messages": {
+				"message1": "有効な名を入力してください。",
+				"message10": "パスワードと確認パスワードが一致しません。",
+				"message11": "ここにファイルをドロップするか、クリックしてアップロードします。",
+				"message12": "役割を持つ有効な部門を選択してください。",
+				"message13": "有効なユーザー権限を選択してください。",
+				"message14": "有効なユーザー生成IDを入力してください。",
+				"message15": "有効な雇用IDを入力してください。",
+				"message16": "有効なユーザー名を入力してください。",
+				"message17": "ユーザー名は、空白なしで3〜30文字の長さにできます。",
+				"message18": "有効な携帯電話番号を入力してください。",
+				"message19": "有効な電話番号を入力して下さい。",
+				"message2": "名は最大20文字です。",
+				"message20": "有効なユーザー権限を選択してください。",
+				"message21": "インポートするCSVファイルを選択してください。",
+				"message22": "このファイルはcsvファイルではありません。 csvファイルのみを選択してください。",
+				"message3": "有効な姓を入力してください。",
+				"message4": "姓は最大20文字です。",
+				"message5": "正しいメールアドレスを入力してください。",
+				"message6": "メールは有効なメールアドレスにすることができます。",
+				"message7": "有効なパスワードを入力して下さい。",
+				"message8": "パスワードは3〜30文字の長さにできます。",
+				"message9": "有効な確認パスワードを入力してください。"
+			},
+			"fields": {
+				"address": "住所",
+				"assigned_to": "に割り当てられた",
+				"confirm_password": "パスワードを認証する",
+				"country": "国",
+				"csv_file": "ユーザーCSVファイルを選択",
+				"customize_permission": "権限をカスタマイズ",
+				"departments_roles": "部門/役割",
+				"dob": "生年月日",
+				"email": "Eメール",
+				"employment_ID": "雇用ID",
+				"everyone": "みんな",
+				"father_name": "父の名前",
+				"first_name": "ファーストネーム",
+				"gender": "性別",
+				"is_departmenthead": "彼/彼女は部長ですか？",
+				"joining_date": "入会日",
+				"language": "言語",
+				"last_name": "苗字",
+				"marital_status": "配偶者の有無",
+				"mobile": "モバイル",
+				"mother_name": "母親の名前",
+				"new_password": "新しいパスワード",
+				"old_password": "以前のパスワード",
+				"password": "パスワード",
+				"phone": "電話",
+				"primary_manager": "プライマリーマネージャー",
+				"profile_photo": "プロフィール写真",
+				"secondary_manager": "副マネージャー",
+				"select_users": "ユーザーを選択",
+				"skype": "スカイプ",
+				"userid": "ユーザーID",
+				"username": "ユーザー名"
+			},
+			"placeholders": {
+				"placeholder1": "名を入力してください",
+				"placeholder10": " -  言語を選択する  - ",
+				"placeholder11": "古いパスワードを入力してください",
+				"placeholder12": "-- プライマリマネージャを選択 --",
+				"placeholder13": "-- セカンダリマネージャを選択 --",
+				"placeholder14": "住所を入力してください",
+				"placeholder2": "姓を入力",
+				"placeholder3": "メールアドレスを入力して",
+				"placeholder4": "パスワードを入力する",
+				"placeholder5": "確認パスワードを入力",
+				"placeholder6": "-部門/役割を選択-",
+				"placeholder7": "ユーザーネームを入力してください",
+				"placeholder8": "Skypeに入る",
+				"placeholder9": " -  国を選択  - "
+			}
+		},
+		"gender_options": [
+			{
+				"label": "男性",
+				"value": "male"
+			},
+			{
+				"label": "女性",
+				"value": "female"
+			}
+		],
+		"headings": {
+			"head1": "個人情報",
+			"head2": "必要条件",
+			"head3": "ユーザーについて",
+			"head4": "連絡先情報"
+		},
+		"inline_edit": {
+			"address": "住所",
+			"country": "国",
+			"dob": "DOB",
+			"father_name": "父の名前",
+			"first_name": "ファーストネーム",
+			"gender": "性別",
+			"joining_date": "入会日",
+			"language": "言語",
+			"last_name": "苗字",
+			"maritial_status": "配偶者の有無",
+			"mobile": "モバイル",
+			"mother_name": "母の名前",
+			"phone": "電話",
+			"primary_manager": "プライマリーマネージャー",
+			"secondary_manager": "副マネージャー",
+			"skype": "スカイプ",
+			"username": "ユーザー名",
+			"state": "状態",
+			"city": "市",
+			"postal_code": "郵便番号"
+		},
+		"marital_status": [
+			{
+				"label": "既婚",
+				"value": "married"
+			},
+			{
+				"label": "未婚",
+				"value": "unmarried"
+			},
+			{
+				"label": "やもめ",
+				"value": "widowed"
+			},
+			{
+				"label": "離婚した",
+				"value": "divorced"
+			}
+		],
+		"messages": {
+			"avatar": "アバターが正常に変更されました。",
+			"create": "ユーザーが作成されました。",
+			"delete": "ユーザーは正常に削除されました。",
+			"email_change": "メール変更リクエストが正常に送信されました。受信トレイを確認して、メールアドレスを変更してください。",
+			"import": "ユーザーが正常にインポートされました。",
+			"invite": "招待状を送信しました。",
+			"password_change": "パスワード変更リクエストが正常に送信されました。受信トレイを確認して、メールアドレスを変更してください。",
+			"status": "ステータスが正常に変更されました。",
+			"update": "ユーザーが更新されました。"
+		},
+		"profile": {
+			"activities": "アクティビティ",
+			"articles": "記事",
+			"comments": "コメント",
+			"defect_hours": "欠陥時間",
+			"defects": "欠陥",
+			"incident_hours": "事故時間",
+			"incidents": "インシデント",
+			"leave_hours": "営業時間",
+			"leave_other_hours": "休暇/その他の時間",
+			"meeting_hours": "会議時間",
+			"other_hours": "その他の時間",
+			"projects": "プロジェクト",
+			"task_hours": "タスク時間",
+			"tasks": "タスク",
+			"total_hours": "合計時間",
+			"total_messages": "メッセージ総数"
+		},
+		"title": "ユーザー",
+		"title1": "ユーザーを作成",
+		"title2": "ユーザーを編集",
+		"title3": "ユーザー権限",
+		"title4": "メールアドレスを変更",
+		"title5": "パスワードを変更する",
+		"title6": "ユーザーをインポート",
+		"title7": "アバターを変更する"
+	},
+	"timer_logs": {
+		"title": "タイマーの開始",
+		"title1": "ストップタイマー",
+		"error_messages": {
+			"message1": "すでに実行されているため、タイマーを開始できません。",
+			"message2": "時間は1分より長くなければなりません。",
+			"message3": "時間は12時間未満でなければなりません。"
+		}
+	}
+}

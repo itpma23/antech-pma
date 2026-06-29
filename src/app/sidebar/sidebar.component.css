@@ -1,0 +1,45 @@
+.myText{
+  text-transform: uppercase;
+  /* padding: $padding-small-vertical $padding-zero; */
+  display: block;
+  font-size:8;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 8;
+  line-height: 30px;
+  overflow: hidden;
+  color: white;
+
+}
+.notif{
+  position: absolute;
+  top: 5px;
+  border: 1px solid #FFF;
+  right: 10px;
+  font-size: 9px;
+  background: #f44336;
+  color: #FFFFFF;
+  min-width: 20px;
+  padding: 0px 5px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 19px;
+  vertical-align: middle;
+  display: block;
+}
+.sidebar-normal {
+    white-space: normal !important;   /* supaya teks bisa turun ke bawah */
+    word-wrap: break-word;            /* kalau kata terlalu panjang, otomatis dipotong */
+    line-height: 1.3;                 /* biar rapih */
+}
+.sidebar-mini {
+    white-space: nowrap;
+}
+/* FIX AGAR MENU PANJANG BISA WRAP */
+/* .sidebar-wrapper .nav li a p,
+.sidebar-wrapper .nav li a .sidebar-normal {
+    white-space: normal !important;
+    word-break: break-word !important;
+    line-height: 1.2 !important;
+} */

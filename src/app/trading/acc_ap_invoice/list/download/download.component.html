@@ -1,0 +1,140 @@
+<div class="main-content upload-wrapper">
+  <div class="container-fluid">
+
+    <div class="card upload-card">
+
+      <!-- HEADER -->
+      <div class="upload-header">
+        <div class="icon-box">
+          <i class="material-icons">description</i>
+        </div>
+        <div>
+          <h4 class="title">Download Dokumen</h4>
+          <p class="subtitle">Gabungkan dokumen menjadi satu file PDF</p>
+        </div>
+      </div>
+
+      <!-- TABLE STYLE -->
+      <div class="upload-section">
+
+        <div class="doc-row" [class.active]="selected.po">
+          <div class="left">
+            <label>
+              <input type="checkbox" [(ngModel)]="selected.po">
+              <span class="checkmark"></span>
+              <div class="doc-info">
+                <div class="doc-title">Slip PO</div>
+                <div class="doc-desc">Purchase Order</div>
+              </div>
+            </label>
+          </div>
+          <div class="right"></div>
+        </div>
+
+        <div class="doc-row" [class.active]="selected.penerimaan">
+          <div class="left">
+            <label>
+              <input type="checkbox" [(ngModel)]="selected.penerimaan">
+              <span class="checkmark"></span>
+              <div class="doc-info">
+                <div class="doc-title">Penerimaan Barang</div>
+                <div class="doc-desc">Receiving PO</div>
+              </div>
+            </label>
+          </div>
+          <div class="right"></div>
+        </div>
+
+        <div class="doc-row"
+             [class.disabled]="!accApInvoice.upload_invoice"
+             [class.active]="selected.invoice">
+
+          <div class="left">
+            <label>
+              <input type="checkbox"
+                     [(ngModel)]="selected.invoice"
+                     [disabled]="!accApInvoice.upload_invoice">
+              <span class="checkmark"></span>
+
+              <div class="doc-info">
+                <div class="doc-title">Invoice Supplier</div>
+                <div class="doc-desc">Dokumen invoice vendor</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="right">
+            <span class="status-badge"
+                  [ngClass]="accApInvoice.upload_invoice ? 'success' : 'danger'">
+              {{ accApInvoice.upload_invoice ? 'Tersedia' : 'Tidak Ada' }}
+            </span>
+          </div>
+        </div>
+
+        <div class="doc-row"
+             [class.disabled]="!accApInvoice.upload_faktur"
+             [class.active]="selected.faktur">
+
+          <div class="left">
+            <label>
+              <input type="checkbox"
+                     [(ngModel)]="selected.faktur"
+                     [disabled]="!accApInvoice.upload_faktur">
+              <span class="checkmark"></span>
+
+              <div class="doc-info">
+                <div class="doc-title">Faktur Pajak</div>
+                <div class="doc-desc">Dokumen pajak</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="right">
+            <span class="status-badge"
+                  [ngClass]="accApInvoice.upload_faktur ? 'success' : 'danger'">
+              {{ accApInvoice.upload_faktur ? 'Tersedia' : 'Tidak Ada' }}
+            </span>
+          </div>
+        </div>
+
+        <div class="doc-row" [class.active]="selected.ap">
+          <div class="left">
+            <label>
+              <input type="checkbox" [(ngModel)]="selected.ap">
+              <span class="checkmark"></span>
+              <div class="doc-info">
+                <div class="doc-title">Slip AP Invoice</div>
+                <div class="doc-desc">Accounting voucher</div>
+              </div>
+            </label>
+          </div>
+          <div class="right"></div>
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="upload-footer">
+
+        <div class="info-box">
+          <i class="material-icons">info</i>
+          Dokumen akan digabung menjadi 1 file PDF. Dokumen yang di download ini bisa digunakan untuk keperluan dokumen tambahan bukti pembayaran di modul kasbank
+        </div>
+
+        <div class="action-right">
+          <button class="btn btn-download" (click)="downloadSelected()">
+            <i class="material-icons">file_download</i>
+            Download
+          </button>
+
+          <button class="btn btn-close" (click)="onClose()">
+            Tutup
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,193 @@
+/* ==============================
+   Chartist Base Styles
+   ============================== */
+
+/* Wrapper chart */
+.ct-chart-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: visible;
+  /* desktop: scroll bisa diatur per chart jika perlu */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Chart utama */
+.ct-chart {
+  width: 100%;
+  height: 350px;
+  /* default desktop */
+  position: relative;
+}
+
+/* Grid lines */
+.ct-chart .ct-grid.ct-horizontal,
+.ct-chart .ct-grid.ct-vertical {
+  shape-rendering: crispEdges;
+  stroke-width: 1px;
+  stroke-dasharray: 1px 4px;
+  stroke: rgba(0, 0, 0, 0.2);
+}
+
+/* Label */
+.ct-chart .ct-label.ct-horizontal,
+.ct-chart .ct-label.ct-vertical {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 10px;
+}
+
+/* Label horizontal di akhir */
+.ct-label.ct-horizontal.ct-end {
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: translateY(-10%);
+}
+
+/* Garis dan titik */
+.ct-chart .ct-line {
+  stroke-width: 3px;
+}
+
+.ct-chart .ct-point {
+  stroke-width: 20px;
+}
+
+.ct-chart .ct-series.ct-series-a .ct-point,
+.ct-chart .ct-series.ct-series-a .ct-line {
+  stroke: #3299BB;
+}
+
+.ct-chart .ct-series.ct-series-b .ct-point,
+.ct-chart .ct-series.ct-series-b .ct-line {
+  stroke: #FF9900;
+}
+
+.ct-chart.ct-blured .ct-point,
+.ct-chart.ct-blured .ct-line {
+  stroke-opacity: 0.2;
+}
+
+/* Custom point untuk tooltip / highlight */
+.my-cool-point {
+  fill-opacity: 1 !important;
+  stroke-width: 0px;
+  stroke: red;
+  transition: all 0.2s linear;
+}
+
+.my-cool-point:hover {
+  stroke-opacity: 0.2;
+  stroke-width: 20px;
+}
+
+/* ==============================
+   Tooltip
+   ============================== */
+.tooltipchart {
+  position: absolute;
+  z-index: 1;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  border-radius: 3px;
+  text-align: center;
+  pointer-events: none;
+  color: white;
+  transition: opacity .1s ease-out;
+}
+
+.tooltipchart.tooltipchart-hidden {
+  opacity: 0;
+}
+
+/* ==============================
+   Legend
+   ============================== */
+.advanced-pie-legend .legend-items-container .legend-items {
+  overflow: initial !important;
+  display: inherit !important;
+}
+
+.advanced-pie-legend-wrapper {
+  display: none !important;
+}
+
+/* ==============================
+   Bar Chart Styles
+   ============================== */
+.ct-chart-bar {
+  width: 100%;
+  height: 350px;
+}
+
+.ct-chart-bar .ct-series-a .ct-bar {
+  stroke: #3299BB;
+}
+
+.ct-chart-bar .ct-series-b .ct-bar {
+  stroke: #FF9900;
+}
+
+/* ==============================
+   Media Queries
+   ============================== */
+
+/* Tablet / Small Desktop */
+@media (max-width: 768px) {
+  .ct-chart {
+    min-width: auto;
+    /* hapus paksa melebar horizontal */
+    height: 400px !important;
+    /* tambah tinggi chart */
+  }
+
+  .ct-label.ct-horizontal.ct-end {
+    font-size: 9px !important;
+    writing-mode: horizontal-tb;
+    transform: translateY(0%);
+  }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+  .ct-chart {
+    min-width: auto;
+    height: 300px !important;
+    /* lebih tinggi agar data banyak muat */
+  }
+
+  .tooltipchart {
+    font-size: 10px !important;
+    padding: 3px;
+  }
+
+  .card .card-content h4 {
+    font-size: 16px !important;
+  }
+
+  .card .category {
+    font-size: 12px !important;
+  }
+
+  ::ng-deep .chart-legend {
+    width: 100% !important;
+    /* biar ngikut card */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* legend di tengah */
+    box-sizing: border-box;
+  }
+
+  ::ng-deep .chart-legend .legend-items {
+    width: 100%;
+    justify-content: space-around;
+    /* biar rapi antar item */
+  }
+
+  ::ng-deep .chart-legend .legend-item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+
+}

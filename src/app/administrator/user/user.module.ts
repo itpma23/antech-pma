@@ -1,0 +1,64 @@
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+  ModalModule,
+  TooltipModule,
+  DatepickerModule,
+  BsDatepickerModule,
+  TabsModule,
+  BsDropdownModule,
+
+} from 'ngx-bootstrap';
+import { DataTablesModule } from 'angular-datatables';
+import { ExportAsModule } from 'ngx-export-as';
+
+import { UserRoutes } from './user.routing';
+
+
+import { ListComponent } from './list/list.component';
+import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
+import { GantiPasswordComponent } from './ganti-password/ganti-password.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LSelect2Module } from 'ngx-select2';
+import { MatInputModule, MatRadioModule } from '@angular/material';
+import { ImportComponent } from './import/import.component';
+import { AccessComponent } from './access/acces.component';
+import { LocationComponent } from './location/location.component';
+import { PostingComponent } from './posting/posting.component';
+import { AfdelingComponent } from './afdeling/afdeling.component';
+import { KasbankComponent } from './kasbank/kasbank.component';
+
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    RouterModule.forChild(UserRoutes),
+    FormsModule, ReactiveFormsModule,
+    ModalModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    DatepickerModule,
+    ExportAsModule,
+    DataTablesModule,
+    LSelect2Module,
+    MatInputModule, MatRadioModule,
+
+  ],
+  declarations: [
+    ListComponent,
+    AddComponent,
+    EditComponent, GantiPasswordComponent, ImportComponent,
+    AccessComponent, LocationComponent, PostingComponent, AfdelingComponent, KasbankComponent
+
+  ], entryComponents: [
+    AddComponent,
+    EditComponent, GantiPasswordComponent, ImportComponent,
+    AccessComponent, LocationComponent, PostingComponent, AfdelingComponent, KasbankComponent]
+})
+
+export class UserModule { }

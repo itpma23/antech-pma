@@ -1,0 +1,17 @@
+<!-- <div #container class="editable-container editable-inline">
+	<div class="editable-label" [hidden]="isEditView">{{fieldValue}}&nbsp;&nbsp;&nbsp;
+		<span (click)="showEditable()"><i *ngxPermissionsOnly="permission" class="fa fa-pencil" aria-hidden="true"></i></span>
+	</div>
+	<form #form="ngForm" *ngIf="isEditView" (ngSubmit)="save()" class="form-inline editableForm" novalidate="">
+		<label for="txtField" class="sr-only">{{elementFor}}</label>
+		<div class="input-group">
+			<input type="text" [name]="name" [placeholder]="'00:00'" #txtField="ngModel" class="form-control input-sm" id="txtField" [required]="isRequired" [(ngModel)]="value" [pattern]="'^[0-9]+\:[0-5][0-9]$'" [ngClass]="{ 'is-invalid': txtField.hasError('required') || txtField.hasError('pattern')}" />
+			<button type="submit" class="btn btn-inline-submit" [disabled]="!form.valid"><i class="fa fa-check" aria-hidden="true"></i></button>
+			<button type="button" class="btn btn-inline-cancel" (click)="showDetail()"><i class="fa fa-times" aria-hidden="true"></i></button>
+		</div>
+		<div class="invalid-feedback">
+			<span *ngIf="txtField.hasError('required')">{{'shared.inline_edit.error_messages.message1' | translate:{'elementFor':elementFor | ucfirst} }}</span>
+			<span *ngIf="txtField.hasError('pattern')">{{'shared.inline_edit.error_messages.message2' | translate:{'elementFor':elementFor | ucfirst} }}</span>
+		</div>
+	</form>
+</div> -->

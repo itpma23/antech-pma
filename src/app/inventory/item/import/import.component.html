@@ -1,0 +1,109 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm">
+
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="rose">
+            <i class="material-icons">upload_file</i>
+          </div>
+
+          <div class="card-content">
+            <h4 class="card-title">Import Item (Preview)</h4>
+
+            <!-- Upload Section -->
+            <div class="row">
+              <div class="col-md-12">
+
+                <input type="file"
+                       class="form-control"
+                       accept=".xls,.xlsx"
+                       (change)="onFileChange($event)">
+
+                <br>
+
+                <button type="button"
+                        class="btn btn-primary btn-sm"
+                        (click)="previewImport()"
+                        [disabled]="!selectedFile">
+                  Preview
+                </button>
+
+                <button type="button"
+                        class="btn btn-default btn-sm"
+                        (click)="onClose()">
+                  Tutup
+                </button>
+
+              </div>
+            </div>
+
+            <hr *ngIf="isPreview">
+
+            <!-- Preview Table -->
+            <div *ngIf="isPreview">
+
+              <table class="table table-striped table-bordered table-sm">
+                <thead>
+                  <tr>
+                    <th>Kode</th>
+                    <th>Nama</th>
+                    <th>UOM</th>
+                    <th>Kategori</th>
+                    <th>Jenis</th>
+                    <th>Min Stok</th>
+                    <th>Aktif</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let d of pagedData">
+                    <td>{{d.kode}}</td>
+                    <td>{{d.nama}}</td>
+                    <td>{{d.uom}}</td>
+                    <td>{{d.kategori}}</td>
+                    <td>{{d.jenis_item}}</td>
+                    <td>{{d.min_stok}}</td>
+                    <td>{{d.aktif}}</td>
+                    <td>
+                      <span [ngClass]="{
+                        'text-success': d.status === 'OK',
+                        'text-danger': d.status === 'DUPLICATE'
+                      }">
+                        {{d.status}}
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!-- Paging -->
+              <div class="text-center">
+                <button class="btn btn-sm btn-default"
+                        (click)="prevPage()"
+                        [disabled]="currentPage==1">Prev</button>
+
+                Page {{currentPage}} / {{totalPages}}
+
+                <button class="btn btn-sm btn-default"
+                        (click)="nextPage()"
+                        [disabled]="currentPage==totalPages">Next</button>
+              </div>
+
+              <br>
+
+              <button type="button"
+                      class="btn btn-success"
+                      (click)="saveImport()">
+                Save
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

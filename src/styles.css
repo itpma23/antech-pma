@@ -1,0 +1,269 @@
+/* You can add global styles to this file, and also import other style files */
+.dataTables_empty {
+  display: none;
+}
+.dataTables_filter input { width: 20px }
+.dataTables_filter input { margin-left : 10px }
+.dataTables_info { margin-top: 12px }
+
+.myCustomModalClass .modal-dialog {
+  max-width:1200px;
+  width: 1200px;
+}
+::ng-deep .modal-dialog{
+  max-width: 1200px !important;
+  width: 1200px;
+}
+quill-editor {
+  display: block;
+}
+
+.btn.btn-rose, .btn.btn-rose:hover, .btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose.active, .btn.btn-rose:active:focus, .btn.btn-rose:active:hover, .btn.btn-rose.active:focus, .btn.btn-rose.active:hover, .open > .btn.btn-rose.dropdown-toggle, .open > .btn.btn-rose.dropdown-toggle:focus, .open > .btn.btn-rose.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose.active, .navbar .navbar-nav > li > a.btn.btn-rose:active:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active:hover, .navbar .navbar-nav > li > a.btn.btn-rose.active:focus, .navbar .navbar-nav > li > a.btn.btn-rose.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-rose.dropdown-toggle:hover {
+  background-color: #0091ea !important;
+}
+.btn.btn-rose, .navbar .navbar-nav > li > a.btn.btn-rose {
+  box-shadow: 0 14px 26px -12px rgba(30, 159, 233, 0.42), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgba(30, 203, 233, 0.2) !important;
+}
+.btn.btn-rose:focus, .btn.btn-rose:active, .btn.btn-rose:hover, .navbar .navbar-nav > li > a.btn.btn-rose:focus, .navbar .navbar-nav > li > a.btn.btn-rose:active, .navbar .navbar-nav > li > a.btn.btn-rose:hover {
+  box-shadow: 0 14px 26px -12px rgba(30, 159, 233, 0.42), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgba(30, 203, 233, 0.2) !important;
+}
+
+/* .ql-editor quill-upload-image{
+  width: 10px;
+  height:150px;
+
+} */
+/* .ql-editor img , iframe{
+  width: 600px;
+  min-height:450px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+} */
+/* .editorStyle  {
+  height: '200px'
+}; */
+
+/* Custom tampilan swal */
+.swal-popup-dpa {
+  font-size: 1.1rem !important;
+  border-radius: 12px !important;
+  padding: 2em 2.2em !important;
+}
+
+.swal-title-dpa {
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+  margin-bottom: 0.6em !important;
+}
+
+.swal-confirm-dpa {
+  background-color: #007bff !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  padding: 10px 22px !important;
+}
+
+.swal-confirm-dpa:hover {
+  background-color: #0069d9 !important;
+}
+/* ===== SWEETALERT2 CUSTOM STYLE DPA ===== */
+.swal-popup-dpa {
+  font-size: 1.1rem !important;
+  border-radius: 12px !important;
+  padding: 2em 2.2em !important;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25) !important;
+}
+
+.swal-title-dpa {
+  font-size: 1.6rem !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+  margin-bottom: 0.6em !important;
+}
+
+.swal-confirm-dpa {
+  background-color: #007bff !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  padding: 10px 22px !important;
+}
+
+.swal-confirm-dpa:hover {
+  background-color: #0069d9 !important;
+}
+
+.swal-cancel-dpa {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+  font-size: 1rem !important;
+  padding: 10px 22px !important;
+}
+
+.swal-cancel-dpa:hover {
+  background-color: #c82333 !important;
+}
+
+/* 🔕 Matikan animasi success bawaan swal */
+.swal2-noanimation {
+  animation: none !important;
+  transition: none !important;
+}
+
+.swal2-icon.swal2-success {
+  animation: none !important;
+  border-color: #28a745 !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+  border: 3px solid #28a745 !important;
+  opacity: 1 !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-line-tip,
+.swal2-icon.swal2-success .swal2-success-line-long {
+  background-color: #28a745 !important;
+  animation: none !important;
+}
+
+/* Tinggi input multi */
+.select2-container--default .select2-selection--multiple {
+    min-height: 38px;
+    height: auto;
+    border: 1px solid #ccc !important;
+    border-radius: 6px !important;
+    padding: 2px !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Chip tampilan (mirip web asli) */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f1f1f1 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    padding: 2px 5px !important;
+    margin-top: 3px !important;
+    color: #333 !important;
+    font-size: 12px;
+}
+
+/* Icon close dalam chip */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #666 !important;
+    margin-right: 4px !important;
+}
+
+/* Agar container tidak jadi kotak tinggi */
+.select2-container .select2-selection--multiple {
+    overflow-y: auto;
+    max-height: 90px;
+}
+/* ===================================================
+INDIGO ENTERPRISE SIDEBAR THEME
+Class tetap: gold-sidebar
+=================================================== */
+
+/* Sidebar Background */
+.sidebar.gold-sidebar {
+background: #3949ab !important;
+border-right: 1px solid rgba(255,255,255,.08);
+}
+
+/* Overlay */
+.sidebar-background:after {
+background: #3949ab !important;
+opacity: 0.92 !important;
+}
+
+/* Semua teks putih */
+.sidebar.gold-sidebar,
+.sidebar.gold-sidebar * {
+color: #ffffff !important;
+}
+
+/* Icon */
+.sidebar.gold-sidebar .nav li a i {
+color: #ffffff !important;
+}
+
+/* Logo */
+.sidebar.gold-sidebar .logo .simple-text {
+color: #ffffff !important;
+font-weight: 600;
+}
+
+/* Hover */
+.sidebar.gold-sidebar .nav li:hover > a:not(.dropdown-toggle) {
+
+background:
+rgba(255,255,255,.12) !important;
+
+color: #ffffff !important;
+
+border-radius: 8px;
+
+transition: all .2s ease;
+}
+
+/* Active Menu */
+.sidebar.gold-sidebar .nav li.active > a,
+.sidebar.gold-sidebar .nav li.active > a i {
+
+background:
+rgba(0,0,0,.22) !important;
+
+color: #ffffff !important;
+
+border-radius: 8px !important;
+
+font-weight: 600;
+}
+
+/* Hover Active */
+.sidebar.gold-sidebar .nav li.active:hover > a {
+
+background:
+rgba(0,0,0,.30) !important;
+}
+
+/* User */
+.sidebar.gold-sidebar .user .info span {
+color: #ffffff !important;
+}
+
+/* Caret */
+.sidebar.gold-sidebar .caret {
+border-top-color: #ffffff !important;
+}
+
+/* Divider */
+.sidebar.gold-sidebar .nav hr {
+
+border-color:
+rgba(255,255,255,.10);
+}
+
+/* Scrollbar */
+.sidebar.gold-sidebar ::-webkit-scrollbar {
+width: 6px;
+}
+
+.sidebar.gold-sidebar ::-webkit-scrollbar-thumb {
+
+background:
+rgba(255,255,255,.25);
+
+border-radius: 10px;
+}
+
+
+
+
+
+

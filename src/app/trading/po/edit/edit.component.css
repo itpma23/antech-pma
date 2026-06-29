@@ -1,0 +1,52 @@
+mat-form-field {
+  width: 100%;
+}
+.shift_content {
+  border: 1px solid #5bc0de;
+  margin-bottom: 15px;
+}
+.shift_content>legend {
+  text-align: right;
+  color: #5bc0de;
+  display: inline;
+  width: auto;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.upload-container {
+  margin-top: 15px;
+}
+
+.dropzone {
+  border: 2px dashed #e91e63;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: #fafafa;
+  transition: all .3s ease;
+}
+
+.dropzone:hover {
+  background: #fff5f8;
+  border-color: #c2185b;
+}
+
+.upload-icon {
+  font-size: 64px;
+  color: #e53935;
+  margin-bottom: 10px;
+}
+
+.dropzone h5 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.dropzone p {
+  color: #777;
+  margin-bottom: 0;
+}

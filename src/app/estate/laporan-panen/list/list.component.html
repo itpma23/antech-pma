@@ -1,0 +1,521 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <h3 class="title text-center">Kelas Mapel</h3> -->
+      <!-- <br /> -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Laporan -
+              <small class="category">Panen</small>
+            </h4>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col-md-2">
+                <ul class="nav nav-pills nav-pills-icons nav-pills-success nav-stacked" role="tablist">
+                  <!--
+                  color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
+              -->
+                  <!-- <li class="active"> -->
+
+
+                  <li class="active">
+                    <a href="#detail_panen" role="tab" data-toggle="tab">
+                      <i class="material-icons">business</i>Rincian Panen
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#panen_perbulan" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Panen Perbulan
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#panen_perkaryawan" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance_wallet</i>Panen per Karyawan
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#panen_wb" role="tab" data-toggle="tab">
+                      <i class="material-icons">local_atm</i>Surat Pengantar Angkut TBS(SPAT/SPB)
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#panen_sensus" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Panen Vs Sensus
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#panen_taksasi" role="tab" data-toggle="tab">
+                      <i class="material-icons">account_balance</i>Taksasi Panen
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="tab-content">
+                  <div class="tab-pane  " id="panen_perkaryawan">
+                    <form [formGroup]="panenPerkaryawanForm" (ngSubmit)="reportPanenPerkaryawan()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Panen PerKaryawan </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Estate</label>
+
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && panenPerkaryawanForm.controls['estate'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenPerkaryawanForm.controls['estate'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+
+
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Afdeling</label>
+
+                            <l-select2 [data]="dataSelectAfdeling" formControlName="afdeling" [options]="{ placeholder: 'Pilih',
+                               allowClear: true,width:'50%'}">
+                            </l-select2>
+
+                          </div> -->
+
+                          <label id="example-radio-group-label">Tipe</label>
+                          <mat-radio-group formControlName="tipe_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="v1">Versi 1 </mat-radio-button>
+                            <mat-radio-button value="v2">Versi 2</mat-radio-button>
+                          </mat-radio-group>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane  " id="panen_wb">
+                    <form [formGroup]="panenWbForm" (ngSubmit)="reportPanenWB()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Surat Pengantar Angkut TBS(SPAT/SPB)</h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">Estate</label>
+
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && panenWbForm.controls['estate'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenWbForm.controls['estate'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                        <label id="example-radio-group-label">Format Laporan</label>
+                        <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                          class="example-radio-group">
+                          <mat-radio-button value="view">View </mat-radio-button>
+                          <mat-radio-button value="xls">XLS</mat-radio-button>
+                          <mat-radio-button value="pdf">PDF</mat-radio-button>
+                        </mat-radio-group>
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="tab-pane active" id="detail_panen">
+                    <form [formGroup]="detailPanenForm" (ngSubmit)="reportPanenDetail()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Detail Panen </h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>dari Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_mulai">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="example-full-width ">
+                            <mat-form-field>
+                              <mat-label>s/d Tanggal</mat-label>
+                              <input type="text" matInput [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                                class="form-control" formControlName="tanggal_akhir">
+                            </mat-form-field>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">estate</label>
+
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && detailPanenForm.controls['estate'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!detailPanenForm.controls['estate'].errors.required" class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">blok</label>
+
+                            <l-select2 [data]="dataSelectBlok" formControlName="blok" [options]="{ placeholder: 'Pilih',
+                              allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormSubmitted && detailPanenForm.controls['blok'].errors" class="invalid-feedback">
+                              <small [hidden]="!detailPanenForm.controls['blok'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div> -->
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                        </div>
+
+                        <div class="form-group ">
+                          <button type="submit" class="btn btn-primary btn-sm">Tampilkan</button>
+                        </div>
+                      </div>
+                    </form>
+
+
+                  </div>
+                  <div class="tab-pane  " id="panen_perbulan">
+                    <form [formGroup]="panenPerbulanForm" (ngSubmit)="reportPanenPerbulan()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Per Bulan</h4>
+                        </div>
+                        <div class="card-content">
+
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Estate</label>
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                          </div>
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Tipe</label>
+                          <l-select2 [data]="dataSelectTipe" formControlName="tipe" [options]="{placeholder: 'SEMUA',
+                          allowClear: true,width:'50%'}">
+                              </l-select2>
+                          </div> -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Bulan</label>
+
+                            <l-select2 [data]="dataSelectBulan" formControlName="bulan" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenPerbulanSubmitted && panenPerbulanForm.controls['bulan'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenPerbulanForm.controls['bulan'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Tahun</label>
+
+                            <l-select2 [data]="dataSelectTahun" formControlName="tahun" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenPerbulanSubmitted && panenPerbulanForm.controls['tahun'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenPerbulanForm.controls['tahun'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <label id="example-radio-group-label">Jenis</label>
+                          <mat-radio-group formControlName="jenis_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="panen">Panen </mat-radio-button>
+                            <mat-radio-button value="denda_panen">Denda</mat-radio-button>
+                          </mat-radio-group>
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-sm btn-rose">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane  " id="panen_sensus">
+                    <form [formGroup]="panenSensusForm" (ngSubmit)="reportPanenSensus()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Panen vs Sensus</h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Estate</label>
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                          </div>
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Tipe</label>
+                          <l-select2 [data]="dataSelectTipe" formControlName="tipe" [options]="{placeholder: 'SEMUA',
+                          allowClear: true,width:'50%'}">
+                              </l-select2>
+                          </div> -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Mulai Bulan</label>
+
+                            <l-select2 [data]="dataSelectBulan" formControlName="bulan_mulai" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenSensusSubmitted && panenSensusForm.controls['bulan_mulai'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenSensusForm.controls['bulan_mulai'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <div class="form-group label-floating">
+                            <label class="control-label">S/d Bulan</label>
+
+                            <l-select2 [data]="dataSelectBulan" formControlName="bulan_akhir" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenSensusSubmitted && panenSensusForm.controls['bulan_akhir'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenSensusForm.controls['bulan_akhir'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Tahun</label>
+
+                            <l-select2 [data]="dataSelectTahun" formControlName="tahun" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenSensusSubmitted && panenSensusForm.controls['tahun'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenSensusForm.controls['tahun'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <!-- <label id="example-radio-group-label">Jenis</label>
+                          <mat-radio-group formControlName="jenis_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="panen">Panen </mat-radio-button>
+                            <mat-radio-button value="denda_panen">Denda</mat-radio-button>
+                          </mat-radio-group> -->
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-sm btn-rose">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane  " id="panen_taksasi">
+                    <form [formGroup]="panenTaksasiForm" (ngSubmit)="reportPanenTaksasi()">
+                      <div class="card">
+                        <div class="card-header">
+                          <h4 class="card-title">Taksasi Panen</h4>
+                        </div>
+                        <div class="card-content">
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Estate</label>
+                            <l-select2 [data]="dataSelectEstate" formControlName="estate" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                          </div>
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">Tipe</label>
+                          <l-select2 [data]="dataSelectTipe" formControlName="tipe" [options]="{placeholder: 'SEMUA',
+                          allowClear: true,width:'50%'}">
+                              </l-select2>
+                          </div> -->
+                          <div class="form-group label-floating">
+                            <label class="control-label">Bulan</label>
+
+                            <l-select2 [data]="dataSelectBulan" formControlName="bulan" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenTaksasiSubmitted && panenTaksasiForm.controls['bulan'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenTaksasiForm.controls['bulan'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+                          <!-- <div class="form-group label-floating">
+                            <label class="control-label">S/d Bulan</label>
+
+                            <l-select2 [data]="dataSelectBulan" formControlName="bulan_akhir" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenTaksasiSubmitted && panenTaksasiForm.controls['bulan_akhir'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenTaksasiForm.controls['bulan_akhir'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div> -->
+
+                          <div class="form-group label-floating">
+                            <label class="control-label">Tahun</label>
+
+                            <l-select2 [data]="dataSelectTahun" formControlName="tahun" [options]="{ placeholder: 'Pilih',
+                        allowClear: false,width:'50%'}">
+                            </l-select2>
+                            <div *ngIf="isFormPanenTaksasiSubmitted && panenTaksasiForm.controls['tahun'].errors"
+                              class="invalid-feedback">
+                              <small [hidden]="!panenTaksasiForm.controls['tahun'].errors.required"
+                                class="text-danger">
+                                Tidak boleh kosong!
+                              </small>
+                            </div>
+
+                          </div>
+
+                          <!-- <label id="example-radio-group-label">Jenis</label>
+                          <mat-radio-group formControlName="jenis_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="panen">Panen </mat-radio-button>
+                            <mat-radio-button value="denda_panen">Denda</mat-radio-button>
+                          </mat-radio-group> -->
+                          <label id="example-radio-group-label">Format Laporan</label>
+                          <mat-radio-group formControlName="format_laporan" aria-labelledby="example-radio-group-label"
+                            class="example-radio-group">
+                            <mat-radio-button value="view">View </mat-radio-button>
+                            <mat-radio-button value="xls">XLS</mat-radio-button>
+                            <mat-radio-button value="pdf">PDF</mat-radio-button>
+                          </mat-radio-group>
+
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-sm btn-rose">Tampilkan</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div> <!--    md col 8 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

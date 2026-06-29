@@ -1,0 +1,144 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="card">
+
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+
+          <div class="card-content">
+
+            <h4 class="card-title">Account Type</h4>
+
+            <div class="toolbar">
+
+              <div class="btn-group" *ngIf="accessButton?.print_==true">
+                <button type="button"
+                        (click)="exportFiles('csv')"
+                        class="btn btn-round btn-info btn-sm btn-rose">
+                  csv
+                </button>
+
+                <button type="button"
+                        (click)="exportFiles('xlsx')"
+                        class="btn btn-round btn-info btn-sm btn-rose">
+                  excel
+                </button>
+
+                <button type="button"
+                        (click)="exportFiles('pdf')"
+                        class="btn btn-round btn-info btn-sm btn-rose">
+                  pdf
+                </button>
+              </div>
+
+              <button type="button"
+                      (click)="add()"
+                      *ngIf="accessButton?.new_==true"
+                      class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">
+                Tambah Tipe Akun
+              </button>
+
+              <button type="button"
+                      (click)="exportAll()"
+                      class="btn btn-info btn-sm pull-right">
+                Export
+              </button>
+
+            </div>
+
+            <div>
+
+              <table id="mytable"
+                     [dtOptions]="dtOptions"
+                     [dtTrigger]="dtTrigger"
+                     datatable
+                     class="table table-striped table-no-bordered table-hover"
+                     cellspacing="0"
+                     width="100%"
+                     style="width:100%">
+
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Tipe ID</th>
+                    <th>Nama Tipe</th>
+                    <th>Dibuat Oleh</th>
+                    <th>Tanggal Dibuat</th>
+                    <th>Diubah Oleh</th>
+                    <th>Tanggal Diubah</th>
+                    <th></th>
+                  </tr>
+                </thead>
+
+                <tbody *ngIf="akunTipe?.length != 0">
+
+                  <tr *ngFor="let p of akunTipe; index as i">
+
+                    <td>{{p.id}}</td>
+
+                    <td>
+                      <b>{{p.tipe_id}}</b>
+                    </td>
+
+                    <td>{{p.nama}}</td>
+
+                    <td>{{p.dibuat}}</td>
+
+                    <td>
+                      {{p.dibuat_tanggal | date:'dd/MM/yyyy HH:mm'}}
+                    </td>
+
+                    <td>{{p.diubah}}</td>
+
+                    <td>
+                      {{p.diubah_tanggal | date:'dd/MM/yyyy HH:mm'}}
+                    </td>
+
+                    <td class="text-right">
+
+                      <a href="#"
+                         onclick="event.preventDefault()"
+                         (click)="edit(p.id)"
+                         class="btn btn-simple btn-warning btn-icon edit">
+                        <i class="material-icons">edit</i>
+                      </a>
+
+                      <a href="#"
+                         onclick="event.preventDefault()"
+                         (click)="delete(p.id)"
+                         class="btn btn-simple btn-danger btn-icon remove">
+                        <i class="material-icons">close</i>
+                      </a>
+
+                    </td>
+
+                  </tr>
+
+                </tbody>
+
+                <tfoot *ngIf="akunTipe?.length == 0" class="tfoot_dt">
+                </tfoot>
+
+              </table>
+
+            </div>
+
+          </div>
+          <!-- end content -->
+
+        </div>
+        <!-- end card -->
+
+      </div>
+      <!-- end col-md-12 -->
+
+    </div>
+    <!-- end row -->
+
+  </div>
+</div>

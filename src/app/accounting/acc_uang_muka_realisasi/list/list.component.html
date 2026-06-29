@@ -1,0 +1,126 @@
+<div class="main-content">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="card">
+          <div class="card-header card-header-icon" data-background-color="red">
+            <i class="material-icons">list</i>
+          </div>
+          <h3 class="title text-center">Realisasi Uang Muka / Permintaan Dana</h3>
+
+
+
+          <div class="card-content">
+            <!-- <h4 class="card-title">accUangMukaRealisasi</h4> -->
+
+            <div class="toolbar">
+
+
+              <div class="btn-group  " *ngIf="accessButton?.print_==true">
+                <button type="button" (click)="exportFiles('csv')"
+                  class="btn btn-round btn-info btn-sm btn-rose">csv</button>
+                <button type="button" (click)="exportFiles('xlsx')"
+                  class="btn btn-round btn-info btn-sm btn-rose">excel</button>
+                <!-- <button type="button" class="btn btn-round btn-info">3</button>  -->
+                <button type="button" (click)="exportFiles('pdf')"
+                  class="btn btn-round btn-info btn-sm btn-rose">pdf</button>
+              </div>
+              <button type="button" (click)="add()" *ngIf="accessButton?.new_==true"
+                class="btn btn-primary btn-info btn-sm btn pull-right btn-rose">Tambah Realisasi</button>
+              <!-- <button type="button" (click)="import()"
+                class="btn btn-primary btn-info btn-sm btn pull-right btn-info">Import Data accUangMukaRealisasi</button> -->
+
+
+            </div>
+            <div class="content table-responsive">
+              <table id="mytable" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" datatable
+                class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%"
+                style="width:100%">
+
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>No Transaksi</th>
+                    <th>Tanggal</th>
+                    <th>No Dana Diajukan</th>
+                    <th>Tanggal Diajukan</th>
+                    <th>Nilai Dana Diajukan</th>
+                    <th>Nilai Realisasi</th>
+                    <th>Ket</th>
+                    <th>Status</th>
+                    <th width="9%"></th>
+                </thead>
+                <tbody *ngIf="accUangMukaRealisasi?.length != 0">
+                  <tr *ngFor="let p of accUangMukaRealisasi; index as i">
+                    <td>{{p.no_transaksi}}</td>
+                    <td>{{p.tanggal}}</td>
+                    <td>{{p.no_uang_muka}}</td>
+                    <td>{{p.tanggal_uang_muka}}</td>
+                    <td>{{p.nilai_uang_muka}}</td>
+                    <td>{{p.nilai_realisasi}}</td>
+                    <td>{{p.keterangan}}</td>
+                    <td><span *ngIf="p.is_posting==1" class="label label-success">Sudah Posting</span>
+                      <span *ngIf="p.is_posting!=1" class="label label-danger">Belum Posting</span></td>
+
+                    <td class="text-right">
+                      <a href="#" onclick="event.preventDefault()" (click)="posting(p.id)"
+                        class="btn btn-simple btn-warning btn-icon" rel="tooltip" data-placement="bottom"
+                        title="Posting" *ngIf="accessButton?.posting_==true && p.is_posting!=1"><i
+                          class="material-icons">person</i></a>
+                      <a href="#" *ngIf="p.is_posting!=1" onclick="event.preventDefault()" (click)="upload(p.id)"
+                        class="btn btn-simple btn-warning btn-icon edit" rel="tooltip" data-placement="bottom"
+                        title="Upload Bukti"><i class="material-icons">file_upload</i></a>
+                      <a href="#" *ngIf="p.upload_file && p.is_posting!=1" onclick="event.preventDefault()"
+                        (click)="deleteUpload(p.id)" class="btn btn-simple btn-danger btn-icon edit" rel="tooltip"
+                        data-placement="bottom" title="Hapus Upload">
+                        <i class="material-icons">delete</i>
+                      </a>
+
+                      <a href="#" *ngIf="p.upload_file" onclick="event.preventDefault()" (click)="download(p.id)"
+                        class="btn btn-simple btn-warning btn-icon edit" rel="tooltip" data-placement="bottom"
+                        title="Download Bukti"><i class="material-icons">file_download</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
+                        class="btn btn-simple btn-warning btn-icon "><i class="material-icons">picture_as_pdf</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
+                        *ngIf="accessButton?.edit_==true &&  p.is_posting!=1"
+                        class="btn btn-simple btn-warning btn-icon edit"><i class="material-icons">edit</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="delete(p.id)"
+                        *ngIf="accessButton?.delete_==true &&  p.is_posting!=1"
+                        class="btn btn-simple btn-danger btn-icon remove"><i class="material-icons">close</i></a>
+
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot *ngIf="accUangMukaRealisasi?.length == 0" class="tfoot_dt">
+
+                </tfoot>
+              </table>
+              <br><br>
+              <!-- <div *ngIf="status=='0'">
+                <mat-form-field>
+                  <mat-label>Update Status Terpilih</mat-label>
+                  <select matNativeControl [(ngModel)]="status_update" (change)="onChangeStatus()">
+
+                    <option value="1" selected>Aktif</option>
+
+                  </select>
+
+
+                </mat-form-field>
+                <br>
+                <button type="button" (click)="updateStatus()"
+                  class="btn btn-primary btn-info btn-sm btn btn-rose">Update </button>
+              </div>
+            </div> -->
+            </div>
+            <!-- end content-->
+          </div>
+          <!--  end card  -->
+        </div>
+        <!-- end col-md-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+  </div>

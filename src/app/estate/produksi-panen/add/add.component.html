@@ -1,0 +1,196 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">list</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Produksi Panen</h4>
+              <!-- <mat-radio-group formControlName="tipe">
+                <mat-radio-button value="0">Masuk</mat-radio-button>
+                <mat-radio-button value="1">Keluar</mat-radio-button>
+              </mat-radio-group>
+              <br> -->
+              <!-- <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Spat</mat-label>
+                  <input matInput required formControlName="no_spat">
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_spat.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_spat.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+              <div class="col-md-6">
+                <div class="form-group label-floating">
+                  <label class="control-label">tanggal</label>
+                  <input type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker class="form-control"
+                    formControlName="tanggal">
+                  <div class="form-control-position"><i class="ft-calendar"></i></div>
+                  <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <!-- <div class="form-group label-floating">
+                <label class="control-label">Divisi</label>
+                <l-select2 [data]="dataSelectDivisi"  (valueChange)="valueChange($event)" formControlName="divisi_id" [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.divisi_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.divisi_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div> -->
+                <div class="form-group label-floating">
+                  <label class="control-label">Afdeling</label>
+                  <l-select2 [data]="dataSelectDivisi" (valueChange)="valueChange($event)" formControlName="divisi_id"
+                    [options]="{ placeholder: 'Pilih',
+                allowClear: true}">
+                  </l-select2>
+                  <div *ngIf="isFormSubmitted && userControl.divisi_id.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.divisi_id.errors.required " class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+
+                <div class="example-full-width ">
+                  <mat-form-field>
+                    <mat-label>keterangan</mat-label>
+                    <input matInput formControlName="keterangan">
+                  </mat-form-field>
+                  <!-- <div *ngIf="isFormSubmitted && userControl.keterangan.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.keterangan.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div> -->
+                </div>
+              </div>
+              <br>
+              <br>
+
+
+              <div formArrayName="details">
+                <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="7%"
+                  style="width:100%">
+                  <thead>
+                    <tr>
+                      <th style="width: 20%;font-size:11px;">Blok</th>
+                      <th style="width: 7%; font-size:11px;"> Ha</th>
+                      <th style="width: 7%; font-size:11px;"> Hk</th>
+                      <th style="width: 8%; font-size:11px;"> Jjg Pnn</th>
+                      <th style="width: 8%; font-size:11px;"> Kg Pnn</th>
+                      <th style="width: 8%; font-size:11px;"> Jjg Kirim</th>
+                      <th style="width: 8%; font-size:11px;"> Kg Pks</th>
+
+                      <th style="width: 8%; font-size:11px;"> Jjg afkir</th>
+                      <th style="width: 8%; font-size:11px;"> Kg afkir</th>
+                      <th style="width: 8%; font-size:11px;"> Jjg restan</th>
+                      <th style="width: 8%; font-size:11px;"> Kg restan</th>
+
+
+
+
+                      <th style="width: 4%; font-size:11px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr [formGroupName]="i" *ngFor="let blok of details.controls; let i=index; let odd=odd;">
+                      <td>
+                        <l-select2 [data]="dataSelectBlok" style="font-size:11px;" formControlName="blok" [options]="{ placeholder: 'Pilih',
+                        allowClear: true}" (valueChange)="blokChange($event,blok)">
+                        </l-select2>
+                        <!-- <div *ngIf="isFormSubmitted && Blok.akun.errors" class="invalid-feedback">
+                          <small [hidden]="!Blok.akun.errors.required " class="text-danger">
+                            Tidak boleh kosong!
+                          </small>
+                        </div> -->
+                      </td>
+
+
+
+                      <td> <input type="number" formControlName="jum_ha" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jum_hk" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jum_jjg" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jum_kg" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jum_jjg_kirim" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jum_kg_pks" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jjg_afkir" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="kg_afkir" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="jjg_restan" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+                      <td> <input type="number" formControlName="kg_restan" (change)="totalHarga(blok)" style="text-align: right; font-size:11px;"
+                          class="form-control"></td>
+
+
+
+                      <td><button (click)="removeBlok(blok)" class="btn btn-danger btn-round btn-fab btn-fab-mini" style="width:4px;height:35px;">
+                          <i class="material-icons">close</i></button></td>
+
+                    </tr>
+
+                  </tbody>
+
+                  <button (click)="addBlok()" class="btn btn-info btn-round btn-fab btn-fab-mini" >
+                    <i class="material-icons">add</i>
+                  </button>
+                </table>
+              </div>
+              <br>
+              <div>
+                <table id="mytable" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="7%"
+                style="width:100%">
+                  <tr>
+                  <td style="width: 20%;font-size:11px;">JUMLAH</td>&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_ha" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_hk" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_jjg" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_kg" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_kirim" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_kg_pks" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_jjg_afkir" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_kg_afkir" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_jjg_restan" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%;"> <input formControlName="total_kg_restan" style=" text-align: right; font-size:11px;"
+                      class="form-control" readonly></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td style="width: 7%; font-size:11px;"> .</td>
+                  </tr>
+                </table>
+              </div>
+
+              <br><br>
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

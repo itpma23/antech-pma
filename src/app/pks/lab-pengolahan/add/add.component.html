@@ -1,0 +1,304 @@
+<div class="main-content" >
+  <div class="container-fluid"  >
+    <div class="row" >
+      <form [formGroup]="entryForm" (ngSubmit)="onSubmit()">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-icon" data-background-color="rose">
+              <i class="material-icons">person</i>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">Lab Pengolahan</h4>
+              <div class="form-group label-floating">
+                <label class="control-label">MILL</label>
+                <l-select2 [data]="dataSelectMill" formControlName="mill_id" [options]="{ placeholder: 'Pilih',
+                allowClear: false,width:'90%'}">
+                </l-select2>
+                <div *ngIf="isFormSubmitted && userControl.mill_id.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.mill_id.errors.required " class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>Tanggal</mat-label>
+                  <input matInput type="text" [bsConfig]="datepickerConfig" #dp="bsDatepicker" bsDatepicker
+                    class="form-control" formControlName="tanggal" required>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.tanggal.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.tanggal.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+            
+              <div class="example-full-width ">
+                <mat-form-field>
+                  <mat-label>No Transaksi</mat-label>
+                  <input matInput formControlName="no_transaksi" required type="text" readonly>
+                </mat-form-field>
+                <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
+                  <small [hidden]="!userControl.no_transaksi.errors.required" class="text-danger">
+                    Tidak boleh kosong!
+                  </small>
+                </div>
+              </div>
+            
+                <br>
+                <p>CPO</p>
+                <div class="row">
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>CPO Moisture (%)</mat-label>
+                     <input matInput formControlName="cpo_moisture" required type="number" >
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_moisture.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_moisture.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>CPO Dobi (%)</mat-label>
+                     <input matInput formControlName="cpo_dobi" required type="number" >
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_dobi.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_dobi.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>CPO FFA (%)</mat-label>
+                     <input matInput formControlName="cpo_ffa" required type="number" >
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_ffa.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_ffa.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>CPO Dirt (%)</mat-label>
+                     <input matInput formControlName="cpo_dirt" required type="number" >
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_dirt.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_dirt.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                </div>
+                <br>
+                <p>CPO Loses</p>
+                <div class="row">
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>Fruit Loss</mat-label>
+                     <input matInput formControlName="cpo_los_fruit" required type="number" (ngModelChange)="valueChange($event)">
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_los_fruit.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_los_fruit.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>Press Loss</mat-label>
+                     <input matInput formControlName="cpo_los_press" required type="number" (ngModelChange)="valueChange($event)">
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_los_press.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_los_press.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>Nut Loss</mat-label>
+                     <input matInput formControlName="cpo_los_nut" required type="number" (ngModelChange)="valueChange($event)">
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_los_nut.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_los_nut.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>  
+                
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>E Bunch Loss</mat-label>
+                     <input matInput formControlName="cpo_los_e_bunch" required type="number" (ngModelChange)="valueChange($event)">
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_los_e_bunch.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_los_e_bunch.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                   <mat-form-field>
+                     <mat-label>Final Effluent</mat-label>
+                     <input matInput formControlName="cpo_los_effluent" required type="number" (ngModelChange)="valueChange($event)">
+                   </mat-form-field>
+                   <div *ngIf="isFormSubmitted && userControl.cpo_los_effluent.errors" class="invalid-feedback">
+                     <small [hidden]="!userControl.cpo_los_effluent.errors.required" class="text-danger">
+                       Tidak boleh kosong!
+                     </small>
+                   </div>
+                 </div>
+                 <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Total</mat-label>
+                    <input matInput formControlName="jml" type="number" readonly>
+                  </mat-form-field>
+                </div>
+
+                </div>
+            </div> 
+          </div>  
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-content">
+              <p>Kernel</p>
+              <div class="row">
+               
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Kernel Moisture (%)</mat-label>
+                    <input matInput formControlName="kernel_moisture" required type="number" >
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kernel_moisture.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_moisture.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Kernel Dobi (%)</mat-label>
+                    <input matInput formControlName="kernel_dobi" required type="number" >
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kernel_dobi.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_dobi.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Kernel FFA (%)</mat-label>
+                    <input matInput formControlName="kernel_ffa" required type="number" >
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kernel_ffa.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_ffa.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>Kernel Dirt (%)</mat-label>
+                    <input matInput formControlName="kernel_dirt" required type="number" >
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kernel_dirt.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_dirt.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+               </div>
+             <br>
+              <p>Kernel Loses</p>
+              <div class="row">
+                
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Fruit Loss</mat-label>
+                    <input matInput formControlName="kernel_los_fruit" required type="number" (ngModelChange)="valueChange($event)">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kernel_los_fruit.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_los_fruit.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Fiber Cyclone</mat-label>
+                    <input matInput formControlName="kernel_los_fiber_cyclone" required type="number" (ngModelChange)="valueChange($event)">
+                  </mat-form-field>
+                  <div *ngIf="isFormSubmitted && userControl.kernel_los_fiber_cyclone.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_los_fiber_cyclone.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                
+                
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>LTDS1</mat-label>
+                    <input matInput formControlName="kernel_los_ltds1" required type="number" (ngModelChange)="valueChange($event)">
+                    </mat-form-field>
+                    <div *ngIf="isFormSubmitted && userControl.kernel_los_ltds1.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_los_ltds1.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                
+                <div class="example-full-width col-md-6">
+                  <mat-form-field>
+                    <mat-label>LTDS2</mat-label>
+                    <input matInput formControlName="kernel_los_ltds2" required type="number" (ngModelChange)="valueChange($event)">
+                    </mat-form-field>
+                    <div *ngIf="isFormSubmitted && userControl.kernel_los_ltds2.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_los_ltds2.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Claybath</mat-label>
+                    <input matInput formControlName="kernel_los_claybath" required type="number" (ngModelChange)="valueChange($event)">
+                    </mat-form-field>
+                    <div *ngIf="isFormSubmitted && userControl.kernel_los_claybath.errors" class="invalid-feedback">
+                    <small [hidden]="!userControl.kernel_los_claybath.errors.required" class="text-danger">
+                      Tidak boleh kosong!
+                    </small>
+                  </div>
+                </div>
+                <div class="example-full-width col-md-6 ">
+                  <mat-form-field>
+                    <mat-label>Total</mat-label>
+                    <input matInput formControlName="jml1" type="number" readonly>
+                  </mat-form-field>
+                </div>
+                
+              </div>
+              
+              <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Batal</button>
+              <button type="submit" class="btn btn-fill btn-rose">Simpan</button>
+                        
+            
+          </div>
+        </div>
+        </div>
+        
+        
+     
+      </form>
+    </div>
+  </div>
+</div>

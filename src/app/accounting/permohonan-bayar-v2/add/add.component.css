@@ -1,0 +1,62 @@
+mat-form-field {
+  width: 100%;
+}
+.shift_content {
+  border: 1px solid #5bc0de;
+  margin-bottom: 10px;
+}
+.shift_content > legend {
+  text-align: right;
+  color: #5bc0de;
+  display: inline;
+  width: auto;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+}
+/* === RAPIKAN SEMUA FORM DALAM .row === */
+.row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Samakan tinggi antar form di kiri dan kanan */
+.example-full-width,
+.form-group.label-floating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 12px; /* spasi antar field */
+}
+
+/* Untuk mat-form-field biar sejajar */
+mat-form-field {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Samakan jarak antar label dan elemen radio/select */
+.control-label {
+  margin-bottom: 4px;
+}
+
+/* Biar radio button sejajar rata dan nggak terlalu tinggi */
+.form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.form-check-input {
+  margin-top: 0;
+  margin-right: 5px;
+}
+
+/* Tambahan untuk jaga jarak antar baris biar gak terlalu renggang */
+.row {
+  margin-bottom: 4px;
+}
