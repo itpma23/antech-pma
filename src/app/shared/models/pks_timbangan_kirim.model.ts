@@ -45,4 +45,6 @@ export class PksTimbanganKirim {
 
   keterangan?: string;
   uoid?: string;
+  segel_5: any;
+  segel_4: any;
 }

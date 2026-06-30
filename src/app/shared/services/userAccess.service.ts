@@ -91,4 +91,12 @@ export class UserAccessService {
 		return this.http.post(`${this.apiUrl}/UserAudit/delete_audit_all`,null);
 	}
 
+	deleteActivityUserAll(){
+		return this.http.delete(`${this.apiUrl}/UserAudit/delete_activity`);
+	}
+
+	deleteLoginUserAll(){
+		return this.http.delete(`${this.apiUrl}/UserAudit/delete_login_all`);
+	}
+
 }

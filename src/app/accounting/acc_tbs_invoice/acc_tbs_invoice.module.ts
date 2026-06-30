@@ -33,6 +33,7 @@ import { HttpClient } from '@angular/common/http';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { MatSelect, MatSelectModule } from '@angular/material';
 import { FloorPipe } from 'src/app/shared/pipes/floor.pipe';
+import { PipesModule } from 'src/app/shared/pipes/pipes.module';
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import { FloorPipe } from 'src/app/shared/pipes/floor.pipe';
     DatepickerModule,
     TimepickerModule.forRoot(),
     ExportAsModule,
+    PipesModule,
     DataTablesModule,
     LSelect2Module,
     QuillModule.forRoot(),
@@ -61,8 +63,6 @@ import { FloorPipe } from 'src/app/shared/pipes/floor.pipe';
       ListComponent,
       AddComponent,
       EditComponent,
-          FloorPipe,
-
 
   ],entryComponents:[
     AddComponent,

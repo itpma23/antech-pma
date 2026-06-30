@@ -119,7 +119,7 @@ export class AuthenticationService {
     localStorage.setItem('user_db', db);
     localStorage.setItem('user_path', path);
     // localStorage.setItem('user_company_name', name);
-    localStorage.setItem('user_company_name', 'PT DINAMIKAPRIMA ARTHA');
+    localStorage.setItem('user_company_name', 'PT PALM MAS ASRI');
 
 
 
@@ -154,7 +154,7 @@ export class AuthenticationService {
             // this.permissions.flushPermissions();
             // this.permissions.loadPermissions(roles);
             localStorage.setItem('user_path', (this.folderName));
-            // localStorage.setItem('user_company_name', 'PT DINAMIKAPRIMA ARTHA');
+            // localStorage.setItem('user_company_name', 'PT PALM MAS ASRI');
             localStorage.setItem('user_company_name', user['nama_company']);
             // localStorage.setItem('roles', JSON.stringify(roles));
             localStorage.setItem('logo_company', user['logo_company']);

@@ -22,8 +22,8 @@ export const SERVER_FOLDER_NAME = "plantation";
 // export const SERVER_PATH_URL = "http://182.23.27.20/";
 
 /* Server LIVE CKS */
-export const SERVER_API_URL = "/plantation-api/api";
-export const SERVER_PATH_URL = "";
+export const SERVER_API_URL = "https://erp.palmmasasri.com/plantation-api/api";
+export const SERVER_PATH_URL = "https://erp.palmmasasri.com/";
 // export const SERVER_API_URL = "http://182.23.27.18/plantation-api-trial/api";
 // export const SERVER_PATH_URL = "http://182.23.27.18/";
 

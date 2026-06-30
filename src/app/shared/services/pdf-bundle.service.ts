@@ -20,7 +20,7 @@ export class PdfBundleService {
     }
 
     // 🔥 WATERMARK OPTIONAL
-    await this.addWatermark(mergedPdf, 'PT. DINAMIKAPRIMA ARTHA');
+    await this.addWatermark(mergedPdf, 'PT PALM MAS ASRI');
 
     const result = await mergedPdf.save();
 

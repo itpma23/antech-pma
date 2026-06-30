@@ -59,7 +59,7 @@ export class EditComponent implements OnInit, AfterViewInit {
   bankMapping: any = {
     'BANK BNI': {
       no_rekening: '5577779898',
-      atas_nama: 'PT. DINAMIKAPRIMA ARTHA',
+      atas_nama: 'PT PALM MAS ASRI',
       cabang_bank: 'ROA MALAKA'
     }
   };
