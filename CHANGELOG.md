@@ -1,4 +1,13 @@
 
+## v2.0.2 - 2026-07-01
+
+### ✨ Features
+- feature(accApinvoice) modify no invoice make editable (Rimunanda Ma'arif Parinduri)
+- feature(accApInvoice) membuat inputan no ap invoice menjadi editable (Rimunanda Ma'arif Parinduri)
+
+### 🧰 Others
+- Merge branch 'main' of https://github.com/itpma23/antech-pma (Rimunanda Ma'arif Parinduri)
+
 ## v2.0.1 - 2026-06-30
 
 ## v2.4.5 - 2026-05-19
