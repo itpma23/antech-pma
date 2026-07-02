@@ -97,7 +97,7 @@
                 <div class="example-full-width col-md-6">
                   <mat-form-field>
                     <mat-label>No Transaksi</mat-label>
-                    <input matInput formControlName="no_transaksi" type="text" readonly>
+                    <input matInput formControlName="no_transaksi" type="text">
                   </mat-form-field>
                   <div *ngIf="isFormSubmitted && userControl.no_transaksi.errors" class="invalid-feedback">
                     <small [hidden]="!userControl.no_transaksi.errors.required" class="text-danger">

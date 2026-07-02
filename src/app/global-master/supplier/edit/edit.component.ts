@@ -99,6 +99,8 @@ export class EditComponent implements OnInit, AfterViewInit {
       { id: 'SP', text: 'SUPPLIER' },
       { id: 'KT', text: 'KONTRAKTOR' },
       { id: 'TR', text: 'TRANSPORTIR' },
+      { id: 'PJ', text: 'PENYEDIA JASA' },
+      { id: 'PJL', text: 'PENYEDIA JASA LOKAL' },
     ];
     let selectTipe;
     this.dataSelectTipe.forEach(a=>{

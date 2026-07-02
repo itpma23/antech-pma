@@ -51,10 +51,12 @@ export class EditComponent implements OnInit, AfterViewInit {
   dataSelectUangMuka: any[];
   dataSelectBiayaAngkut: any[];
   dataSelectPembelianTbs: any[];
-    dataSelectPermintaanDana: any[];
+  dataSelectPermintaanDana: any[];
   dataSelectHutang: any[];
   dataSelectKaryawan: any[];
   showSupplier: boolean = true;
+
+  public autoTax = false;
   showKaryawan: boolean = false;
 
   constructor(private builder: FormBuilder,
@@ -179,8 +181,11 @@ export class EditComponent implements OnInit, AfterViewInit {
       this.showKaryawan = false;
     }
 
-    this.totalGrand();
     this.totalSub();
+
+    if (this.autoTax) {
+      this.totalGrand();
+    }
   }
   public options: any;
 
@@ -272,7 +277,7 @@ export class EditComponent implements OnInit, AfterViewInit {
           this.dataSelectPermintaanDana = [];
           let i = x['data'];
           i.forEach(d => {
-            this.dataSelectPermintaanDana.push({"id": d.id, "text": d.no_transaksi + ' (' + d.tanggal + ')'});            
+            this.dataSelectPermintaanDana.push({ "id": d.id, "text": d.no_transaksi + ' (' + d.tanggal + ')' });
           });
 
           if (selectTipe.id == 'PERMINTAAN DANA') {
@@ -455,52 +460,11 @@ export class EditComponent implements OnInit, AfterViewInit {
       let data = { details: items.value };
       this.updateForm(data);
     }
+
+    this.totalHarga(item);
   }
 
-  // totalHarga(form) {
-  //   let qty = form.get('x_qty').value;
-  //   if (isString(qty)) {
-  //     qty = parseFloat(qty.replace(/[^\d\.\-]/g, ""));
-  //   }
-  //   form.get('x_qty').patchValue(formatNumber(qty, 'en_US', '1.2-2'));
-  //   form.get('qty').patchValue(qty);
 
-  //   let harga = form.get('x_harga').value;
-  //   if (isString(harga)) {
-  //     harga = parseFloat(harga.replace(/[^\d\.\-]/g, ""));
-  //   }
-  //   form.get('x_harga').patchValue(formatNumber(harga, 'en_US', '1.2-2'));
-  //   form.get('harga').patchValue(harga);
-
-  //   let diskon = form.get('x_diskon').value;
-  //   if (isString(diskon)) {
-  //     diskon = parseFloat(diskon.replace(/[^\d\.\-]/g, ""));
-  //   }
-  //   form.get('x_diskon').patchValue(formatNumber(diskon, 'en_US', '1.2-2'));
-  //   form.get('diskon').patchValue(diskon);
-
-  //   let total = (qty * harga) - diskon;
-
-  //   form.get('jumlah').patchValue(formatNumber(total, 'en_US', '1.2-2'));
-
-  //   this.totalSub();
-  //   this.totalGrand();
-  //   this.calc_pph();
-  // }
-
-  // totalSub() {
-  //   let subTotal = 0;
-  //   this.entryForm.get('details').value.forEach(x => {
-  //     // console.log(x);
-  //     if (isNumber(x.jumlah)) {
-  //       subTotal += x.jumlah;
-  //     } else {
-  //       subTotal += parseFloat(x.jumlah.replace(/[^\d\.\-]/g, ""));
-  //     }
-
-  //   });
-  //   this.entryForm.get('subtotal').patchValue(formatNumber(subTotal, 'en_US', '1.2-2'));
-  // }
 
   totalHarga(form) {
     var qty = form.get('x_qty').value;
@@ -643,59 +607,59 @@ export class EditComponent implements OnInit, AfterViewInit {
   //   this.entryForm.get('total').patchValue(formatNumber(grandTotal, 'en_US', '1.2-2'));
   // }
 
-  totalGrand() {
-    // Helper aman untuk parse angka
-    function parseNum(val) {
-      if (val === null || val === undefined || val === '') return 0;
-      if (typeof val === 'string') {
-        val = val.replace(/[^\d.-]/g, '');
-      }
-      var num = parseFloat(val);
-      return isNaN(num) || !isFinite(num) ? 0 : num;
-    }
+  // totalGrand() {
+  //   // Helper aman untuk parse angka
+  //   function parseNum(val) {
+  //     if (val === null || val === undefined || val === '') return 0;
+  //     if (typeof val === 'string') {
+  //       val = val.replace(/[^\d.-]/g, '');
+  //     }
+  //     var num = parseFloat(val);
+  //     return isNaN(num) || !isFinite(num) ? 0 : num;
+  //   }
 
-    // Ambil nilai dari form dengan aman
-    var subTotal = parseNum(this.entryForm.get('subtotal').value);
-    var diskon = parseNum(this.entryForm.get('diskon').value);
-    var biaya_lain = parseNum(this.entryForm.get('biaya_lain').value);
-    var dpp = subTotal - diskon;
+  //   // Ambil nilai dari form dengan aman
+  //   var subTotal = parseNum(this.entryForm.get('subtotal').value);
+  //   var diskon = parseNum(this.entryForm.get('diskon').value);
+  //   var biaya_lain = parseNum(this.entryForm.get('biaya_lain').value);
+  //   var dpp = subTotal - diskon;
 
-    // Pastikan DPP minimal 0
-    if (isNaN(dpp) || !isFinite(dpp) || dpp < 0) dpp = 0;
+  //   // Pastikan DPP minimal 0
+  //   if (isNaN(dpp) || !isFinite(dpp) || dpp < 0) dpp = 0;
 
-    // Pajak & potongan
-    var ppn = parseNum(this.entryForm.get('ppn').value);
-    var ppnbm = parseNum(this.entryForm.get('ppnbm').value);
-    var pph = parseNum(this.entryForm.get('pph').value);
+  //   // Pajak & potongan
+  //   var ppn = parseNum(this.entryForm.get('ppn').value);
+  //   var ppnbm = parseNum(this.entryForm.get('ppnbm').value);
+  //   var pph = parseNum(this.entryForm.get('pph').value);
 
-    var ppnTotal = (ppn / 100) * dpp;
-    var ppnbmTotal = (ppnbm / 100) * dpp;
-    var pphTotal = (pph / 100) * dpp;
+  //   var ppnTotal = (ppn / 100) * dpp;
+  //   var ppnbmTotal = (ppnbm / 100) * dpp;
+  //   var pphTotal = (pph / 100) * dpp;
 
-    // Amankan nilai pajak
-    if (!isFinite(ppnTotal)) ppnTotal = 0;
-    if (!isFinite(ppnbmTotal)) ppnbmTotal = 0;
-    if (!isFinite(pphTotal)) pphTotal = 0;
+  //   // Amankan nilai pajak
+  //   if (!isFinite(ppnTotal)) ppnTotal = 0;
+  //   if (!isFinite(ppnbmTotal)) ppnbmTotal = 0;
+  //   if (!isFinite(pphTotal)) pphTotal = 0;
 
-    // Hitung Grand Total
-    var grandTotal = (dpp + ppnTotal + ppnbmTotal + biaya_lain) - pphTotal;
-    if (isNaN(grandTotal) || !isFinite(grandTotal)) grandTotal = 0;
+  //   // Hitung Grand Total
+  //   var grandTotal = (dpp + ppnTotal + ppnbmTotal + biaya_lain) - pphTotal;
+  //   if (isNaN(grandTotal) || !isFinite(grandTotal)) grandTotal = 0;
 
-    // Format dan patch ulang ke form
-    this.entryForm.get('diskon').patchValue(formatNumber(diskon, 'en_US', '1.2-2'));
-    this.entryForm.get('biaya_lain').patchValue(formatNumber(biaya_lain, 'en_US', '1.2-2'));
-    this.entryForm.get('dpp').patchValue(formatNumber(dpp, 'en_US', '1.2-2'));
+  //   // Format dan patch ulang ke form
+  //   this.entryForm.get('diskon').patchValue(formatNumber(diskon, 'en_US', '1.2-2'));
+  //   this.entryForm.get('biaya_lain').patchValue(formatNumber(biaya_lain, 'en_US', '1.2-2'));
+  //   this.entryForm.get('dpp').patchValue(formatNumber(dpp, 'en_US', '1.2-2'));
 
-    this.entryForm.get('pph').patchValue(formatNumber(pph, 'en_US', '1.2-2'));
-    this.entryForm.get('ppn').patchValue(formatNumber(ppn, 'en_US', '1.2-2'));
-    this.entryForm.get('ppnbm').patchValue(formatNumber(ppnbm, 'en_US', '1.2-2'));
+  //   this.entryForm.get('pph').patchValue(formatNumber(pph, 'en_US', '1.2-2'));
+  //   this.entryForm.get('ppn').patchValue(formatNumber(ppn, 'en_US', '1.2-2'));
+  //   this.entryForm.get('ppnbm').patchValue(formatNumber(ppnbm, 'en_US', '1.2-2'));
 
-    this.entryForm.get('pph_nilai').patchValue(formatNumber(pphTotal, 'en_US', '1.2-2'));
-    this.entryForm.get('ppn_nilai').patchValue(formatNumber(ppnTotal, 'en_US', '1.2-2'));
-    this.entryForm.get('ppnbm_nilai').patchValue(formatNumber(ppnbmTotal, 'en_US', '1.2-2'));
+  //   this.entryForm.get('pph_nilai').patchValue(formatNumber(pphTotal, 'en_US', '1.2-2'));
+  //   this.entryForm.get('ppn_nilai').patchValue(formatNumber(ppnTotal, 'en_US', '1.2-2'));
+  //   this.entryForm.get('ppnbm_nilai').patchValue(formatNumber(ppnbmTotal, 'en_US', '1.2-2'));
 
-    this.entryForm.get('total').patchValue(formatNumber(grandTotal, 'en_US', '1.2-2'));
-  }
+  //   this.entryForm.get('total').patchValue(formatNumber(grandTotal, 'en_US', '1.2-2'));
+  // }
 
   totalGrandOld() {
     let subTotal = this.entryForm.get('subtotal').value;
@@ -997,7 +961,7 @@ export class EditComponent implements OnInit, AfterViewInit {
     }
   }
 
-    onPermintaanDanaChange(event: any) {
+  onPermintaanDanaChange(event: any) {
     this.details.clear();
 
     // cari Permintaan Dana yang dipilih
@@ -1029,5 +993,107 @@ export class EditComponent implements OnInit, AfterViewInit {
       this.totalGrand();
     });
   }
+
+  totalGrand() {
+
+  const parseNum = (val: any): number => {
+    if (val === null || val === undefined || val === '') {
+      return 0;
+    }
+
+    if (typeof val === 'string') {
+      val = val.replace(/[^\d.-]/g, '');
+    }
+
+    const num = parseFloat(val);
+    return isNaN(num) || !isFinite(num) ? 0 : num;
+  };
+
+  // ===========================
+  // Nilai dasar
+  // ===========================
+
+  let subTotal = parseNum(this.entryForm.get('subtotal').value);
+  let diskon = parseNum(this.entryForm.get('diskon').value);
+  let biayaLain = parseNum(this.entryForm.get('biaya_lain').value);
+
+  let dpp = subTotal - diskon;
+
+  if (dpp < 0) {
+    dpp = 0;
+  }
+
+  // ===========================
+  // Persentase pajak
+  // ===========================
+
+  let ppn = parseNum(this.entryForm.get('ppn').value);
+  let ppnbm = parseNum(this.entryForm.get('ppnbm').value);
+  let pph = parseNum(this.entryForm.get('pph').value);
+
+  let ppnTotal = 0;
+  let ppnbmTotal = 0;
+  let pphTotal = 0;
+
+  // ===========================
+  // AUTO / MANUAL
+  // ===========================
+
+  if (this.autoTax) {
+
+    ppnTotal = dpp * ppn / 100;
+    ppnbmTotal = dpp * ppnbm / 100;
+    pphTotal = dpp * pph / 100;
+
+    this.entryForm.patchValue({
+
+      ppn_nilai: formatNumber(ppnTotal, 'en_US', '1.2-2'),
+      ppnbm_nilai: formatNumber(ppnbmTotal, 'en_US', '1.2-2'),
+      pph_nilai: formatNumber(pphTotal, 'en_US', '1.2-2')
+
+    }, { emitEvent: false });
+
+  } else {
+
+    ppnTotal = parseNum(this.entryForm.get('ppn_nilai').value);
+    ppnbmTotal = parseNum(this.entryForm.get('ppnbm_nilai').value);
+    pphTotal = parseNum(this.entryForm.get('pph_nilai').value);
+
+  }
+
+  // ===========================
+  // Grand Total
+  // ===========================
+
+  let grandTotal =
+      dpp
+      + ppnTotal
+      + ppnbmTotal
+      + biayaLain
+      - pphTotal;
+
+  if (!isFinite(grandTotal)) {
+    grandTotal = 0;
+  }
+
+  // ===========================
+  // Format kembali
+  // ===========================
+
+  this.entryForm.patchValue({
+
+    diskon: formatNumber(diskon, 'en_US', '1.2-2'),
+    biaya_lain: formatNumber(biayaLain, 'en_US', '1.2-2'),
+    dpp: formatNumber(dpp, 'en_US', '1.2-2'),
+
+    ppn: formatNumber(ppn, 'en_US', '1.2-2'),
+    ppnbm: formatNumber(ppnbm, 'en_US', '1.2-2'),
+    pph: formatNumber(pph, 'en_US', '1.2-2'),
+
+    total: formatNumber(grandTotal, 'en_US', '1.2-2')
+
+  }, { emitEvent: false });
+
+}
 
 }

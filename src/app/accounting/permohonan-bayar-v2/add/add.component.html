@@ -78,7 +78,7 @@
                     </small>
                   </div>
                 </div>
-                                <!-- === Jika Supplier dipilih === -->
+                <!-- === Jika Supplier dipilih === -->
                 <div class="form-group label-floating col-md-6" *ngIf="showSupplier">
                   <label class="control-label col-md-4">Supplier</label>
                   <l-select2 [data]="dataSelectSupplier" formControlName="supplier_id"
@@ -123,8 +123,8 @@
                 <div class="form-group label-floating col-md-6"
                   *ngIf="entryForm.get('jenis_invoice').value?.id === 'PERMINTAAN DANA' || entryForm.get('jenis_invoice').value?.id === 'PERMINTAAN DANA' ">
                   <label class="control-label col-md-6">No Permintaan Dana</label>
-                  <l-select2 (valueChange)="onPermintaanDanaChange($event)" [data]="dataSelectPermintaanDana" formControlName="noTipe_id"
-                    [options]="{ placeholder: 'Pilih',
+                  <l-select2 (valueChange)="onPermintaanDanaChange($event)" [data]="dataSelectPermintaanDana"
+                    formControlName="noTipe_id" [options]="{ placeholder: 'Pilih',
                 allowClear: true}">
                   </l-select2>
                   <div *ngIf="isFormSubmitted && userControl.noTipe_id.errors" class="invalid-feedback">
@@ -400,10 +400,23 @@
 
 
 
-
+              <br>
 
 
               <div class="row">
+
+                <div class="col-md-12 mb-2">
+                  <label style="font-weight:600;">
+                    <input type="checkbox" [(ngModel)]="autoTax" [ngModelOptions]="{standalone:true}"
+                      (change)="totalGrand()">
+
+                    Hitung Pajak Otomatis
+                  </label>
+
+                  <small class="text-muted d-block">
+                    Jika dimatikan maka nilai PPN, PPNBM dan PPH dapat diinput manual.
+                  </small>
+                </div>
 
 
                 <div class="example-full-width col-md-12">
@@ -473,7 +486,7 @@
                 <div class="example-full-width col-md-6">
                   <mat-form-field>
                     <mat-label>PPN (Rp)</mat-label>
-                    <input matInput formControlName="ppn_nilai">
+                    <input matInput formControlName="ppn_nilai" [readonly]="autoTax" (change)="totalGrand()">
                   </mat-form-field>
                   <div *ngIf="isFormSubmitted && userControl.ppn_nilai.errors" class="invalid-feedback">
                     <small [hidden]="!userControl.ppn_nilai.errors.required" class="text-danger">
@@ -495,7 +508,7 @@
                 <div class="example-full-width col-md-6">
                   <mat-form-field>
                     <mat-label>PPNBM(Rp)</mat-label>
-                    <input matInput formControlName="ppnbm_nilai">
+                    <input matInput formControlName="ppnbm_nilai" [readonly]="autoTax" (change)="totalGrand()">
                   </mat-form-field>
                   <div *ngIf="isFormSubmitted && userControl.ppnbm_nilai.errors" class="invalid-feedback">
                     <small [hidden]="!userControl.ppnbm_nilai.errors.required" class="text-danger">
@@ -517,7 +530,7 @@
                 <div class="example-full-width col-md-6">
                   <mat-form-field>
                     <mat-label>PPH (Rp)</mat-label>
-                    <input matInput formControlName="pph_nilai" required>
+                    <input matInput formControlName="pph_nilai" [readonly]="autoTax" (change)="totalGrand()">
                   </mat-form-field>
                   <div *ngIf="isFormSubmitted && userControl.pph_nilai.errors" class="invalid-feedback">
                     <small [hidden]="!userControl.pph_nilai.errors.required" class="text-danger">

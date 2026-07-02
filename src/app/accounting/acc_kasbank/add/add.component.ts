@@ -112,7 +112,7 @@ export class AddComponent implements OnInit, AfterViewInit {
 
       tanggal: new FormControl(toDate, Validators.required),
       keterangan: new FormControl(''),
-      no_transaksi: new FormControl('<OTOMATIS>'),
+      no_transaksi: new FormControl(''),
       no_referensi: new FormControl(''),
       lokasi_id: new FormControl([], Validators.required),
       supplier_id: new FormControl([]),

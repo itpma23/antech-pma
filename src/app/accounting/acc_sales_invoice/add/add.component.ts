@@ -74,7 +74,7 @@ export class AddComponent implements OnInit, AfterViewInit {
       customer_id: new FormControl([], Validators.required),
       tanggal: new FormControl(toDate, Validators.required),
       tanggal_tempo: new FormControl(toDate, Validators.required),
-      no_invoice: new FormControl('AutoNumber'),
+      no_invoice: new FormControl(''),
       jenis_invoice: new FormControl([], Validators.required),
       acc_akun_id_debet: new FormControl([], Validators.required),
       acc_akun_id_kredit: new FormControl([], Validators.required),

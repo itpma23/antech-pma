@@ -86,7 +86,7 @@
               <div class="example-full-width ">
                 <mat-form-field>
                   <mat-label>No Invoice</mat-label>
-                  <input readonly matInput required formControlName="no_invoice">
+                  <input  matInput required formControlName="no_invoice">
                 </mat-form-field>
                 <div *ngIf="isFormSubmitted && userControl.no_invoice.errors" class="invalid-feedback">
                   <small [hidden]="!userControl.no_invoice.errors.required" class="text-danger">
