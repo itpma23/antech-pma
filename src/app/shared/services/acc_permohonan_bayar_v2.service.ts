@@ -82,6 +82,20 @@ export class AccPermohonanBayarV2Service {
     };
     return this.http.get<any>(`${this.apiUrl}/AccPermohonanBayarV2/print_slip/${id}`, httpOptions);
   }
+  getPdfSlipV2(id) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/pdf',
+        'Accept': 'application/pdf',
+      }),
+      responseType: 'blob' as 'json'
+    };
+
+    return this.http.get<any>(
+      `${this.apiUrl}/AccPermohonanBayarV2/print_slip_v2/${id}`,
+      httpOptions
+    );
+  }
   	  updateApprove(id: any, AccPermohonanBayar: any) {
     return this.http.put(`${this.apiUrl}/AccPermohonanBayarV2/updateApprove/${id}`, AccPermohonanBayar);
   }

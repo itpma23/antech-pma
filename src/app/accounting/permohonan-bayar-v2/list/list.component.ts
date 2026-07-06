@@ -220,6 +220,41 @@ export class ListComponent implements OnInit {
 
         return; // Stop di sini, tidak tampil modal
       }
+      
+      // Kalau belum ada approve name, tampilkan modal
+      this.approveForm.reset();
+      this.approveForm.patchValue({
+        approve_name_1: 'M. Feizal Deradjat',
+        approve_name_2: 'Mulyanto / Kurniawan'
+      });
+
+      ($('#approveModal') as any).modal('show');
+    });
+  }
+  
+  viewSlipV2(id: number) {
+    this.selectedSlipId = id;
+
+    // Cek dulu data dari backend apakah approve_name_1 dan 2 sudah terisi
+    this.accPermohonanBayarV2Service.getById(id).subscribe((resp) => {
+      const data = resp['data'];
+
+      // Jika dua field approve sudah ada → langsung buka PDF V2
+      if (
+        data &&
+        data['approve_name_1'] != null && data['approve_name_1'] != '' &&
+        data['approve_name_2'] != null && data['approve_name_2'] != ''
+      ) {
+        console.log('Langsung tampilkan PDF V2, sudah di-approve:', data);
+
+        this.accPermohonanBayarV2Service.getPdfSlipV2(id).subscribe((res) => {
+          swal.close();
+          const fileURL = URL.createObjectURL(res);
+          window.open(fileURL);
+        });
+
+        return;
+      }
 
       // Kalau belum ada approve name, tampilkan modal
       this.approveForm.reset();
@@ -231,7 +266,6 @@ export class ListComponent implements OnInit {
       ($('#approveModal') as any).modal('show');
     });
   }
-
 
   confirmViewSlip() {
     if (this.approveForm.invalid) {

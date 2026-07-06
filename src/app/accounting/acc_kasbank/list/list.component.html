@@ -112,11 +112,11 @@
                   <tr>
                     <th>ID</th>
                     <th>Lokasi</th>
-                    <th>No Transaksi</th>
+                    <th>Tanggal</th>
                     <th>Kasbank</th>
                     <th>No Referensi</th>
                     <th>Tipe</th>
-                    <th>Tanggal</th>
+                    <th>No Transaksi</th>
                     <th>Nilai</th>
                     <th>Keterangan</th>
                     <th>Status</th>
@@ -128,14 +128,14 @@
                   <tr *ngFor="let p of accKasbank; index as i">
 
                     <td>{{p.lokasi}}</td>
-                    <td>{{p.no_transaksi}}</td>
+                   <td>{{p.tanggal}}</td>
                     <td>{{p.nama_kasbank}}</td>
                     <td>{{p.no_referensi}}</td>
                     <!-- <td>{{p.tipe_jurnal}}</td> -->
                     <td><span *ngIf="p.tipe_jurnal=='in'" class="label label-success">Penerimaan</span>
                       <span *ngIf="p.tipe_jurnal!='in'" class="label label-warning">Pembayaran</span>
                     </td>
-                    <td>{{p.tanggal}}</td>
+                    <td>{{p.no_transaksi}}</td>
                     <td>{{p.nilai | number:'1.0-0'}}</td>
                     <td>{{p.keterangan}}</td>
                     <td><span *ngIf="p.is_posting==1" class="label label-success">Sudah Posting</span>

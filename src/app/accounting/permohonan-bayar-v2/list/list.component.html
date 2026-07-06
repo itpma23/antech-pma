@@ -145,6 +145,9 @@
                       <a href="#" onclick="event.preventDefault()" (click)="viewSlip(p.id)"
                         class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
                         title="Slip BAPP"><i class="material-icons">picture_as_pdf</i></a>
+                      <a href="#" onclick="event.preventDefault()" (click)="viewSlipV2(p.id)"
+                        class="btn btn-simple btn-warning btn-icon " rel="tooltip" data-placement="bottom"
+                        title="Slip BAPP V2"><i class="material-icons">picture_as_pdf</i></a>  
                       <a href="#" onclick="event.preventDefault()" (click)="edit(p.id)"
                         *ngIf="accessButton?.edit_==true" class="btn btn-simple btn-warning btn-icon edit"><i
                           class="material-icons">edit</i></a>
