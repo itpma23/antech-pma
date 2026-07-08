@@ -86,6 +86,7 @@ export class EditComponent implements OnInit, AfterViewInit {
       keterangan: new FormControl(''),
       no_transaksi: new FormControl(''),
       no_referensi: new FormControl(''),
+      penerima: new FormControl(''),
       ref_id: new FormControl(''),
 
       lokasi_id: new FormControl([], Validators.required),
@@ -137,6 +138,7 @@ export class EditComponent implements OnInit, AfterViewInit {
       keterangan: this.accKasbank.keterangan,
       no_transaksi: this.accKasbank.no_transaksi,
       no_referensi: this.accKasbank.no_referensi,
+      penerima: this.accKasbank.penerima,
       ref_id: this.accKasbank.ref_id,
       nilai: formatNumber(parseFloat(this.accKasbank.nilai), 'en_US', '1.2-2')
     });

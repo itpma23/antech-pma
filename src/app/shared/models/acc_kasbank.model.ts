@@ -13,6 +13,7 @@ export class AccKasbank {
   ref_id?:number;
   no_ref ?:string;
   no_referensi ?:string;
+  penerima ?:string;
   nilai?: any;
   modul ?:string;
   karyawan_id?: number;

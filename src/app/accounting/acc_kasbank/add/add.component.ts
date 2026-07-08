@@ -114,6 +114,7 @@ export class AddComponent implements OnInit, AfterViewInit {
       keterangan: new FormControl(''),
       no_transaksi: new FormControl(''),
       no_referensi: new FormControl(''),
+      penerima: new FormControl(''),
       lokasi_id: new FormControl([], Validators.required),
       supplier_id: new FormControl([]),
       ref_id: new FormControl(''),
