@@ -485,14 +485,13 @@ export class EditComponent implements OnInit, AfterViewInit {
     //let dpp = 0;
     let dpp = Number(this.entryForm.get('dpp').value) || 0;
 
-    if (dpp <= 0) {
     if (jenis === 'UANG MUKA' || jenis === 'PENGGANTIAN' || jenis === 'TERMIN') {
       // 🔥 uang muka TIDAK dipakai
       dpp = jumlah + premi - disc;
     } else {
       dpp = jumlah + premi - disc - uang_muka;
     }
-  }
+  
 
     let ppn = Number(this.entryForm.get('ppn').value) || 0;
     let nilai_ppn = (ppn / 100) * dpp;
