@@ -110,8 +110,23 @@ export class EditComponent implements OnInit, AfterViewInit {
       jenis_invoice: new FormControl([], Validators.required),
       noTipe_id: new FormControl([]),
 
-      details: this.builder.array([])
+      details: this.builder.array([]),
 
+      bongkar: this.builder.group({
+      tgl_bongkar: [''],
+      bill_of_landing: [0],
+      berat_terima: [0],
+      diff_terima: [0],
+      diff_percent_terima: [0],
+      toleransi_terima: [''],
+      sonding_muat: [0],
+      sonding_bongkar: [0],
+      diff_bongkar: [0],
+      diff_percent_bongkar: [0],
+      toleransi_bongkar: ['']
+    })
+
+      
 
     });
   }
@@ -142,6 +157,29 @@ export class EditComponent implements OnInit, AfterViewInit {
     this.entryForm.get('biaya_lain')!.patchValue(this.accPermohonanBayar.biaya_lain);
     this.entryForm.get('pph')!.patchValue(this.accPermohonanBayar.pph);
     this.entryForm.get('total')!.patchValue(this.accPermohonanBayar.total);
+
+    if (this.accPermohonanBayar.bongkar) {
+
+    this.entryForm.get('bongkar').patchValue({
+
+      tgl_bongkar: this.accPermohonanBayar.bongkar.tgl_bongkar
+        ? new Date(this.accPermohonanBayar.bongkar.tgl_bongkar)
+        : '',
+      bill_of_landing: this.accPermohonanBayar.bongkar.bill_of_landing,
+      berat_terima: this.accPermohonanBayar.bongkar.berat_terima,
+      diff_terima: this.accPermohonanBayar.bongkar.diff_terima,
+      diff_percent_terima: this.accPermohonanBayar.bongkar.diff_percent_terima,
+      toleransi_terima: this.accPermohonanBayar.bongkar.toleransi_terima,
+      sonding_muat: this.accPermohonanBayar.bongkar.sonding_muat,
+      sonding_bongkar: this.accPermohonanBayar.bongkar.sonding_bongkar,
+      diff_bongkar: this.accPermohonanBayar.bongkar.diff_bongkar,
+      diff_percent_bongkar: this.accPermohonanBayar.bongkar.diff_percent_bongkar,
+      toleransi_bongkar: this.accPermohonanBayar.bongkar.toleransi_bongkar
+    });
+  }
+   
+    
+    
 
     let supplier_id = this.accPermohonanBayar.supplier_id
     let karyawan_id = this.accPermohonanBayar.karyawan_id
@@ -370,6 +408,16 @@ export class EditComponent implements OnInit, AfterViewInit {
     frmData['pph'] = parseFloat(this.entryForm.get('pph').value.replace(/[^\d\.\-]/g, ""));
     frmData['total'] = parseFloat(this.entryForm.get('total').value.replace(/[^\d\.\-]/g, ""));
 
+    if (frmData['bongkar']) {
+    if (frmData['bongkar'].tgl_bongkar) {
+      frmData['bongkar'].tgl_bongkar =
+        formatDate(
+          frmData['bongkar'].tgl_bongkar,
+          'yyyy-MM-dd',
+          'en_US'
+        );
+    }
+  }
     this.entryForm.get('details').value.forEach(x => {
       if (!isNumber(x.jumlah)) {
         x.jumlah = parseFloat(x.jumlah.replace(/[^\d\.\-]/g, ""));

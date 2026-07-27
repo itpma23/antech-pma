@@ -29,15 +29,31 @@ export class AccPermohonanBayar {
   biaya_lain:number;
   total:number;
   
-
+  
   detail?:[];
+  bongkar?: AccPermohonanBayarBongkar;
 
   permohonan_bayar_id:number;
   keterangan:string;
   qty:number;
   harga:number;
   jumlah:number;
-  
-  
+
+}
+export class AccPermohonanBayarBongkar {
+
+    id:number;
+    permohonan_bayar_id:number;
+    tgl_bongkar:string;
+    bill_of_landing:number;
+    berat_terima:number;
+    diff_terima:number;
+    diff_percent_terima:number;
+    toleransi_terima:number;
+    sonding_muat:number;
+    sonding_bongkar:number;
+    diff_bongkar:number;
+    diff_percent_bongkar:number;
+    toleransi_bongkar:number;
 
 }

@@ -373,7 +373,112 @@
                   </button>
                 </div>
               </div>
+               <div class="card" formGroupName="bongkar">
 
+              <div class="card-header card-header-tabs" data-background-color="rose">
+                  <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                          <ul class="nav nav-tabs">
+                              <li class="active">
+                                  <a href="#">
+                                      <i class="material-icons">assignment</i>
+                                      SELESAI BONGKAR
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card-content">
+
+                  <div class="row">
+
+                     <div class="example-full-width col-md-6">
+                        <mat-form-field>
+                            <mat-label>Tanggal Bongkar</mat-label>
+                            <input
+                                matInput
+                                type="date"
+                                formControlName="tgl_bongkar">
+                        </mat-form-field>
+                    </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>B/L</mat-label>
+                              <input matInput formControlName="bill_of_landing">
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Sonding Muat</mat-label>
+                              <input matInput formControlName="sonding_muat">
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Terima</mat-label>
+                              <input matInput formControlName="berat_terima">
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Sonding Bongkar</mat-label>
+                              <input matInput formControlName="sonding_bongkar">
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Diff</mat-label>
+                              <input matInput formControlName="diff_terima" readonly>
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Diff</mat-label>
+                              <input matInput formControlName="diff_bongkar" readonly>
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>%</mat-label>
+                              <input matInput formControlName="diff_percent_terima" readonly>
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>%</mat-label>
+                              <input matInput formControlName="diff_percent_bongkar" readonly>
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Sesuai Toleransi</mat-label>
+                              <input matInput formControlName="toleransi_terima" readonly>
+                          </mat-form-field>
+                      </div>
+
+                      <div class="example-full-width col-md-6">
+                          <mat-form-field>
+                              <mat-label>Sesuai Toleransi</mat-label>
+                              <input matInput formControlName="toleransi_bongkar" readonly>
+                          </mat-form-field>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
               <div class="row">
 
                 <div class="col-md-12 mb-2">

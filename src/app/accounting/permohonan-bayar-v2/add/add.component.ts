@@ -110,7 +110,23 @@ export class AddComponent implements OnInit, AfterViewInit {
 
 
 
-      details: this.builder.array([])
+      details: this.builder.array([]),
+
+      bongkar: this.builder.group({
+
+      tgl_bongkar: [''],
+      bill_of_landing: [0],
+      berat_terima: [0],
+      diff_terima: [0],
+      diff_percent_terima: [0],
+      toleransi_terima: [''],
+      sonding_muat: [0],
+      sonding_bongkar: [0],
+      diff_bongkar: [0],
+      diff_percent_bongkar: [0],
+      toleransi_bongkar: ['']
+
+   }),
     });
 
   }
@@ -282,7 +298,7 @@ export class AddComponent implements OnInit, AfterViewInit {
         x.jumlah = parseFloat(x.jumlah.replace(/[^\d\.\-]/g, ""));
       }
     });
-    //  console.log(frmData);
+      console.log(frmData);
     this.accPermohonanBayarService.create(frmData).subscribe(data => {
       if (data['status'] == 'OK') {
         console.log('ok');
