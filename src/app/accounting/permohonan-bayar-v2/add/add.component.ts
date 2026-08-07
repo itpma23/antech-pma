@@ -114,7 +114,7 @@ export class AddComponent implements OnInit, AfterViewInit {
 
       bongkar: this.builder.group({
 
-      tgl_bongkar: [''],
+      tgl_bongkar: [null],
       bill_of_landing: [0],
       berat_terima: [0],
       diff_terima: [0],

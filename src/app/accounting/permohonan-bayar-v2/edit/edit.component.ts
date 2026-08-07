@@ -113,7 +113,7 @@ export class EditComponent implements OnInit, AfterViewInit {
       details: this.builder.array([]),
 
       bongkar: this.builder.group({
-      tgl_bongkar: [''],
+      tgl_bongkar: [null],
       bill_of_landing: [0],
       berat_terima: [0],
       diff_terima: [0],
