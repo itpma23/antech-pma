@@ -1,4 +1,22 @@
 
+## v2.1.0 - 2026-08-18
+
+### ✨ Features
+- feature(accSalesInvoice) menambahkan sales invoice tidak autonumber (Rimunanda Ma'arif Parinduri)
+
+### 🐞 Fixes
+- fix(permohonan bayar) duplicate formcontroll declaration (Rimunanda Ma'arif Parinduri)
+
+### 🧰 Others
+- update PP (triwidiyanto)
+- update invoice bapp (triwidiyanto)
+- update invoice sales (triwidiyanto)
+- update invoice sales (triwidiyanto)
+- update kasbank(laporan kasbank)menambah kolom penerima (triwidiyanto)
+- update kasbank(laporan kasbank)menambah kolom penerima (triwidiyanto)
+- view permohonan bayar v2 (triwidiyanto)
+- Merge branch 'main' of https://github.com/itpma23/antech-pma (Rimunanda Ma'arif Parinduri)
+
 ## v2.0.2 - 2026-07-01
 
 ### ✨ Features
